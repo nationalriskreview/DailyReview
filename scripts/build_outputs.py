@@ -10,7 +10,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
-SCHEMA_VERSION = "1.3"
+SCHEMA_VERSION = "1.4"
 
 OUTPUT_NOTES = {
     "transit": (
@@ -18,6 +18,17 @@ OUTPUT_NOTES = {
         "active now, route-level scope, non-planned). Coverage is limited to "
         "the ~8 major US transit agencies configured in reference/transit_agencies.json."
     ),
+}
+
+DATA_WINDOWS = {
+    "weather": "live",
+    "bank_robbery": "24h",
+    "protest": "24h",
+    "wildfires": "active (EONET open events, last 14d)",
+    "transit": "live",
+    "fema": "30d",
+    "national.cdc_han": "7d",
+    "national.who_don": "7d",
 }
 
 
@@ -95,6 +106,7 @@ def write_all(
             fema_by_fips.get(c["fips"], []),
         )
         rec["date"] = today
+        rec["generated_at"] = now.isoformat()
         records.append(rec)
         by_fips[c["fips"]] = rec
 
@@ -104,6 +116,7 @@ def write_all(
         "schema_version": SCHEMA_VERSION,
         "generated_at": now.isoformat(),
         "date": today,
+        "data_windows": DATA_WINDOWS,
         "notes": OUTPUT_NOTES,
         "counties_total": len(records),
         "counties_with_alerts": len(flagged),
@@ -116,6 +129,7 @@ def write_all(
         "schema_version": SCHEMA_VERSION,
         "generated_at": now.isoformat(),
         "date": today,
+        "data_windows": DATA_WINDOWS,
         "notes": OUTPUT_NOTES,
         "counties_total": len(records),
         "counties_with_alerts": len(flagged),
@@ -128,6 +142,10 @@ def write_all(
         "schema_version": SCHEMA_VERSION,
         "generated_at": now.isoformat(),
         "date": today,
+        "data_windows": {
+            "national.cdc_han": DATA_WINDOWS["national.cdc_han"],
+            "national.who_don": DATA_WINDOWS["national.who_don"],
+        },
         **national,
     })
 
