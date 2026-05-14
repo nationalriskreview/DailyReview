@@ -1,208 +1,178 @@
-"""GDELT DOC 2.0 — combined query per county, post-classify locally."""
+"""GDELT via BigQuery — single SQL query against the public GKG dataset.
+
+Replaces the rate-limited GDELT DOC 2.0 HTTP API. One query returns all US-tagged
+articles in the last 24 hours matching protest/robbery/transport themes. Python
+parses the V2Locations field to bucket articles by county FIPS.
+
+Auth: reads service-account JSON from the GCP_SA_KEY_JSON env var (workflow
+injects from the GCP_SA_KEY secret).
+"""
 
 from __future__ import annotations
 
-import asyncio
+import json
 import logging
 import os
 import re
-import urllib.parse
 from collections import defaultdict
 from typing import Iterable
 
-import aiohttp
-
-from geography import state_full
-
-GDELT_URL = "https://api.gdeltproject.org/api/v2/doc/doc"
-USER_AGENT = os.environ.get(
-    "USER_AGENT",
-    "DailyReview/1.0 (https://github.com/nationalriskreview/DailyReview)",
-)
-
-COMBINED_KEYWORDS = (
-    '"bank robbery" OR "protest" OR "demonstration" '
-    'OR "road closure" OR "bridge closed" OR "freeway closed" '
-    'OR "transit suspended" OR "highway shutdown"'
-)
-
-BANK_KW = ("bank robbery", "bank")
-PROTEST_KW = ("protest", "demonstration", "march", "rally")
-PROTEST_EXCLUDE_KW = ("super bowl", "concert", "game", "stadium", "playoff",
-                       "halftime", "festival")
-TRANSPORT_KW = ("road closure", "bridge closed", "freeway closed",
-                 "transit suspended", "highway shutdown", "highway closed",
-                 "interstate closed")
-TRANSPORT_REQUIRED = ("clos", "shut", "suspend", "block")
-
 log = logging.getLogger(__name__)
 
+SERVICE_ACCOUNT_ENV = "GCP_SA_KEY_JSON"
 
-def _build_query(place: str, state_postal: str) -> str:
-    state = state_full(state_postal)
-    return f'({COMBINED_KEYWORDS}) "{place}" "{state}"'
+STATE_POSTAL_TO_FIPS = {
+    "AL": "01", "AK": "02", "AZ": "04", "AR": "05", "CA": "06", "CO": "08",
+    "CT": "09", "DE": "10", "DC": "11", "FL": "12", "GA": "13", "HI": "15",
+    "ID": "16", "IL": "17", "IN": "18", "IA": "19", "KS": "20", "KY": "21",
+    "LA": "22", "ME": "23", "MD": "24", "MA": "25", "MI": "26", "MN": "27",
+    "MS": "28", "MO": "29", "MT": "30", "NE": "31", "NV": "32", "NH": "33",
+    "NJ": "34", "NM": "35", "NY": "36", "NC": "37", "ND": "38", "OH": "39",
+    "OK": "40", "OR": "41", "PA": "42", "RI": "44", "SC": "45", "SD": "46",
+    "TN": "47", "TX": "48", "UT": "49", "VT": "50", "VA": "51", "WA": "53",
+    "WV": "54", "WI": "55", "WY": "56",
+    "PR": "72", "VI": "78", "GU": "66", "AS": "60", "MP": "69",
+}
 
+THEME_CATEGORIES = {
+    "bank_robbery": ("BANK_ROBBERY", "CRIME_ROBBERY", "ROBBERY"),
+    "protest": ("PROTEST",),
+    "transportation": (
+        "ROAD_CLOSURE", "INFRASTRUCTURE_BAD_ROADS", "TRANSPORT_BLOCKED",
+        "BRIDGE_CLOSED", "HIGHWAY_CLOSED", "TRANSIT_SUSPENDED",
+    ),
+}
 
-async def _fetch_articles(
-    session: aiohttp.ClientSession, query: str
-) -> list[dict]:
-    params = {
-        "query": query,
-        "mode": "artlist",
-        "maxrecords": "25",
-        "timespan": "1d",
-        "format": "json",
-        "sort": "datedesc",
-    }
-    url = f"{GDELT_URL}?{urllib.parse.urlencode(params)}"
-    headers = {"User-Agent": USER_AGENT}
-    try:
-        async with session.get(url, headers=headers,
-                               timeout=aiohttp.ClientTimeout(total=30)) as r:
-            if r.status != 200:
-                return []
-            try:
-                payload = await r.json(content_type=None)
-            except Exception:
-                return []
-    except (aiohttp.ClientError, asyncio.TimeoutError):
-        return []
-    return payload.get("articles", []) or []
+QUERY = """
+SELECT
+  DocumentIdentifier AS url,
+  SourceCommonName   AS domain,
+  V2Themes           AS themes,
+  V2Locations        AS locations,
+  Extras             AS extras,
+  DATE               AS date_int
+FROM `gdelt-bq.gdeltv2.gkg_partitioned`
+WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
+  AND _PARTITIONTIME <  CURRENT_TIMESTAMP()
+  AND V2Locations LIKE '%#US#%'
+  AND (
+       V2Themes LIKE '%PROTEST%'
+    OR V2Themes LIKE '%ROBBERY%'
+    OR V2Themes LIKE '%ROAD_CLOSURE%'
+    OR V2Themes LIKE '%TRANSPORT_BLOCKED%'
+    OR V2Themes LIKE '%BRIDGE_CLOSED%'
+    OR V2Themes LIKE '%HIGHWAY_CLOSED%'
+    OR V2Themes LIKE '%TRANSIT_SUSPENDED%'
+  )
+LIMIT 100000
+"""
 
-
-def _classify(article: dict) -> list[str]:
-    title = (article.get("title") or "").lower()
-    buckets: list[str] = []
-
-    if any(k in title for k in BANK_KW):
-        if "bank" in title:
-            buckets.append("bank_robbery")
-
-    if any(k in title for k in PROTEST_KW):
-        if not any(ex in title for ex in PROTEST_EXCLUDE_KW):
-            buckets.append("protest")
-
-    if any(k in title for k in TRANSPORT_KW) or (
-        any(req in title for req in TRANSPORT_REQUIRED)
-        and any(t in title for t in ("road", "highway", "bridge", "freeway",
-                                       "transit", "interstate"))
-    ):
-        buckets.append("transportation")
-
-    return buckets
+US_ADM2_PATTERN = re.compile(r"3#[^#]*#US#US[A-Z]{2}#([A-Z]{2})(\d{3})#")
+PAGE_TITLE_PATTERN = re.compile(r"<PAGE_TITLE>(.*?)</PAGE_TITLE>", re.DOTALL)
 
 
-def _normalize_title(title: str) -> str:
-    t = re.sub(r"[^\w\s]", "", (title or "").lower())
-    words = [w for w in t.split() if len(w) > 3]
-    return " ".join(words[:6])
+def _build_client():
+    from google.cloud import bigquery
+    from google.oauth2 import service_account
+
+    raw = os.environ.get(SERVICE_ACCOUNT_ENV)
+    if not raw:
+        raise RuntimeError(
+            f"{SERVICE_ACCOUNT_ENV} env var is empty — workflow must inject the "
+            f"service-account JSON from the GCP_SA_KEY secret."
+        )
+    info = json.loads(raw)
+    creds = service_account.Credentials.from_service_account_info(info)
+    return bigquery.Client(credentials=creds, project=info["project_id"])
 
 
-def _dedup_by_domain(articles: list[dict]) -> list[dict]:
-    """Group near-identical titles; keep only events with ≥2 distinct domains."""
-    groups: dict[str, list[dict]] = defaultdict(list)
-    for a in articles:
-        groups[_normalize_title(a.get("title", ""))].append(a)
-    kept: list[dict] = []
-    for group in groups.values():
-        domains = {a.get("domain", "") for a in group if a.get("domain")}
-        if len(domains) >= 2:
-            kept.append(group[0])
-    return kept
+def _county_fips(state_postal: str, county_3digit: str) -> str | None:
+    state_fips = STATE_POSTAL_TO_FIPS.get(state_postal)
+    if not state_fips:
+        return None
+    return f"{state_fips}{county_3digit}"
 
 
-def _shape(article: dict) -> dict:
+def _extract_counties(locations: str) -> set[str]:
+    found: set[str] = set()
+    if not locations:
+        return found
+    for m in US_ADM2_PATTERN.finditer(locations):
+        fips = _county_fips(m.group(1), m.group(2))
+        if fips:
+            found.add(fips)
+    return found
+
+
+def _classify_categories(themes: str) -> set[str]:
+    if not themes:
+        return set()
+    upper = themes.upper()
     return {
-        "title": article.get("title", ""),
-        "url": article.get("url", ""),
-        "domain": article.get("domain", ""),
-        "seendate": article.get("seendate", ""),
-        "language": article.get("language", ""),
+        cat for cat, patterns in THEME_CATEGORIES.items()
+        if any(p in upper for p in patterns)
     }
 
 
-async def fetch_for_place(
-    session: aiohttp.ClientSession,
-    place: str,
-    state_postal: str,
-) -> dict[str, list[dict]]:
-    """Return {bank_robbery, protest, transportation} → list of articles."""
-    articles = await _fetch_articles(session, _build_query(place, state_postal))
-    buckets: dict[str, list[dict]] = {
-        "bank_robbery": [],
-        "protest": [],
-        "transportation": [],
+def _extract_title(extras: str) -> str:
+    if not extras:
+        return ""
+    m = PAGE_TITLE_PATTERN.search(extras)
+    if not m:
+        return ""
+    return m.group(1).strip()[:300]
+
+
+def _shape_article(row) -> dict:
+    return {
+        "title": _extract_title(row.extras or ""),
+        "url": row.url or "",
+        "domain": row.domain or "",
+        "seendate": str(row.date_int) if row.date_int else "",
+        "language": "",
     }
-    for a in articles:
-        for cat in _classify(a):
-            buckets[cat].append(a)
-    return {cat: _dedup_by_domain(arts) for cat, arts in buckets.items()}
 
 
-def _merge_buckets(
-    a: dict[str, list[dict]], b: dict[str, list[dict]]
-) -> dict[str, list[dict]]:
-    out: dict[str, list[dict]] = {}
-    for cat in ("bank_robbery", "protest", "transportation"):
-        seen_urls = set()
-        merged = []
-        for art in (a.get(cat, []) + b.get(cat, [])):
-            url = art.get("url", "")
-            if url and url in seen_urls:
-                continue
-            seen_urls.add(url)
-            merged.append(art)
-        out[cat] = merged
-    return out
+def collect_gdelt_by_county() -> dict[str, dict[str, list[dict]]]:
+    """Single BigQuery call → FIPS → {bank_robbery, protest, transportation}."""
+    client = _build_client()
+    log.info("GDELT BigQuery: running query against gdelt-bq.gdeltv2.gkg_partitioned")
+    job = client.query(QUERY)
+    rows = list(job)
+    log.info("GDELT BigQuery: %d rows returned, scanned %.2f GB",
+             len(rows), (job.total_bytes_processed or 0) / 1e9)
 
+    by_county: dict[str, dict[str, list[dict]]] = defaultdict(
+        lambda: {"bank_robbery": [], "protest": [], "transportation": []}
+    )
+    seen: dict[tuple[str, str], set[str]] = defaultdict(set)
 
-async def fetch_for_counties(
-    counties: Iterable[dict],
-    concurrency: int = 20,
-    delay: float = 0.05,
-) -> dict[str, dict[str, list[dict]]]:
-    sem = asyncio.Semaphore(concurrency)
-    results: dict[str, dict[str, list[dict]]] = {}
+    for row in rows:
+        cats = _classify_categories(row.themes)
+        if not cats:
+            continue
+        counties = _extract_counties(row.locations)
+        if not counties:
+            continue
+        shaped = _shape_article(row)
+        url = shaped["url"]
+        for fips in counties:
+            for cat in cats:
+                if url and url in seen[(fips, cat)]:
+                    continue
+                seen[(fips, cat)].add(url)
+                by_county[fips][cat].append(shaped)
 
-    async with aiohttp.ClientSession() as session:
-        async def worker(county: dict):
-            async with sem:
-                buckets = await fetch_for_place(session, county["name"], county["state"])
-                shaped = {k: [_shape(a) for a in v] for k, v in buckets.items()}
-                if any(shaped.values()):
-                    results[county["fips"]] = shaped
-                await asyncio.sleep(delay)
-
-        await asyncio.gather(*(worker(c) for c in counties))
-    return results
-
-
-async def fetch_for_boroughs(
-    boroughs: Iterable[dict],
-    concurrency: int = 5,
-    delay: float = 0.1,
-) -> dict[str, dict[str, list[dict]]]:
-    """Returns {fips: borough_buckets}. Each borough is queried by its name."""
-    sem = asyncio.Semaphore(concurrency)
-    results: dict[str, dict[str, list[dict]]] = {}
-
-    async with aiohttp.ClientSession() as session:
-        async def worker(b: dict):
-            async with sem:
-                buckets = await fetch_for_place(session, b["borough"], "NY")
-                shaped = {k: [_shape(a) for a in v] for k, v in buckets.items()}
-                results[b["fips"]] = shaped
-                await asyncio.sleep(delay)
-
-        await asyncio.gather(*(worker(b) for b in boroughs))
-    return results
+    nonzero = {k: v for k, v in by_county.items()
+               if any(len(arts) for arts in v.values())}
+    return nonzero
 
 
 def merge_borough_into_county(
     county_results: dict[str, dict[str, list[dict]]],
-    borough_results: dict[str, dict[str, list[dict]]],
+    boroughs: Iterable[dict],
 ) -> dict[str, dict[str, list[dict]]]:
-    for fips, borough_buckets in borough_results.items():
-        existing = county_results.get(fips, {"bank_robbery": [], "protest": [], "transportation": []})
-        county_results[fips] = _merge_buckets(existing, borough_buckets)
+    """No-op for the BigQuery path — GKG location tagging already attributes
+    Manhattan articles to FIPS 36061, etc. Kept for API compatibility.
+    """
     return county_results

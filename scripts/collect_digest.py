@@ -18,9 +18,7 @@ from geography import load_counties, load_boroughs
 from fetch_nws import (
     fetch_active_alerts, bucket_alerts_by_county, fetch_forecasts_for_counties,
 )
-from fetch_gdelt import (
-    fetch_for_counties, fetch_for_boroughs, merge_borough_into_county,
-)
+from fetch_gdelt import collect_gdelt_by_county
 from fetch_disease import fetch_national
 from build_outputs import write_all
 
@@ -58,13 +56,15 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
     if skip_gdelt:
         log.info("GDELT: skipped (--skip-gdelt)")
     else:
-        log.info("GDELT: querying %d counties (combined OR'd query)", len(counties))
-        gdelt_by_fips = await fetch_for_counties(counties, concurrency=20, delay=0.05)
-        log.info("GDELT: %d counties had matches", len(gdelt_by_fips))
-
-        log.info("GDELT: querying %d NYC boroughs", len(boroughs))
-        borough_results = await fetch_for_boroughs(boroughs, concurrency=5, delay=0.05)
-        gdelt_by_fips = merge_borough_into_county(gdelt_by_fips, borough_results)
+        log.info("GDELT: querying BigQuery (single SQL, gkg_partitioned 24h)")
+        try:
+            gdelt_by_fips = await asyncio.get_event_loop().run_in_executor(
+                None, collect_gdelt_by_county
+            )
+            log.info("GDELT: %d counties had matches", len(gdelt_by_fips))
+        except Exception as e:
+            log.error("GDELT BigQuery failed (continuing with empty): %s", e)
+            gdelt_by_fips = {}
 
     log.info("Disease: fetching CDC HAN + WHO DON")
     national = await fetch_national()
