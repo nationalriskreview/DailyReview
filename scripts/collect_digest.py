@@ -14,14 +14,16 @@ import aiohttp
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from geography import load_counties, load_boroughs
+from geography import load_counties, load_boroughs, index_by_fips
 from fetch_nws import (
     fetch_active_alerts, bucket_alerts_by_county, fetch_forecasts_for_counties,
 )
 from fetch_gdelt import collect_gdelt_by_county
 from fetch_eonet import fetch_wildfires_by_county
 from fetch_transit import fetch_transit_by_county
+from fetch_fema import fetch_fema_by_county
 from fetch_disease import fetch_national
+from llm_filter import filter_gdelt_results
 from build_outputs import write_all
 
 
@@ -68,6 +70,15 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
             log.error("GDELT BigQuery failed (continuing with empty): %s", e)
             gdelt_by_fips = {}
 
+        if gdelt_by_fips:
+            try:
+                gdelt_by_fips = await asyncio.get_event_loop().run_in_executor(
+                    None, filter_gdelt_results, gdelt_by_fips, index_by_fips(counties)
+                )
+                log.info("GDELT (post-LLM): %d counties remain", len(gdelt_by_fips))
+            except Exception as e:
+                log.error("LLM filter failed (continuing with unfiltered): %s", e)
+
     log.info("EONET: fetching active wildfires")
     try:
         wildfires_by_fips = await asyncio.get_event_loop().run_in_executor(
@@ -88,6 +99,16 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
         log.error("Transit fetch failed (continuing with empty): %s", e)
         transit_by_fips = {}
 
+    log.info("FEMA: fetching disaster declarations")
+    try:
+        fema_by_fips = await asyncio.get_event_loop().run_in_executor(
+            None, fetch_fema_by_county
+        )
+        log.info("FEMA: %d counties have active declarations", len(fema_by_fips))
+    except Exception as e:
+        log.error("FEMA fetch failed (continuing with empty): %s", e)
+        fema_by_fips = {}
+
     log.info("Disease: fetching CDC HAN + WHO DON")
     national = await fetch_national()
     log.info("Disease: %d HAN items, %d WHO items",
@@ -102,6 +123,7 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
         gdelt_by_fips=gdelt_by_fips,
         wildfires_by_fips=wildfires_by_fips,
         transit_by_fips=transit_by_fips,
+        fema_by_fips=fema_by_fips,
         national=national,
     )
 

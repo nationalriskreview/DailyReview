@@ -10,7 +10,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
-SCHEMA_VERSION = "1.2"
+SCHEMA_VERSION = "1.3"
 
 OUTPUT_NOTES = {
     "transit": (
@@ -28,6 +28,7 @@ def _county_record(
     gdelt: dict[str, list[dict]] | None,
     wildfires: list[dict] | None,
     transit: list[dict] | None,
+    fema: list[dict] | None,
 ) -> dict:
     alerts = {
         "weather": (weather or []) + (forecast or []),
@@ -35,6 +36,7 @@ def _county_record(
         "protest": (gdelt or {}).get("protest", []),
         "wildfires": wildfires or [],
         "transit": transit or [],
+        "fema": fema or [],
     }
     alert_count = sum(len(v) for v in alerts.values())
     return {
@@ -74,6 +76,7 @@ def write_all(
     gdelt_by_fips: dict[str, dict[str, list[dict]]],
     wildfires_by_fips: dict[str, list[dict]],
     transit_by_fips: dict[str, list[dict]],
+    fema_by_fips: dict[str, list[dict]],
     national: dict[str, list[dict]],
 ) -> None:
     now = datetime.now(timezone.utc)
@@ -89,6 +92,7 @@ def write_all(
             gdelt_by_fips.get(c["fips"]),
             wildfires_by_fips.get(c["fips"], []),
             transit_by_fips.get(c["fips"], []),
+            fema_by_fips.get(c["fips"], []),
         )
         rec["date"] = today
         records.append(rec)
