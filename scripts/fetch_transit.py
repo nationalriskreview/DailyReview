@@ -367,7 +367,8 @@ def _fetch_agency(agency: dict) -> list[dict]:
         if not key:
             log.info("Transit %s: env %s not set, skipping", agency["name"], env_var)
             return []
-        headers[auth.get("header", "x-api-key")] = key
+        prefix = auth.get("prefix", "")
+        headers[auth.get("header", "x-api-key")] = f"{prefix}{key}"
 
     content = _http_get(agency["alerts_url"], headers=headers)
     if not content:
