@@ -28,7 +28,7 @@ Each county object exposes alerts in these buckets:
 - **`bank_robbery`** — News reports of bank robberies (GDELT GKG, strict title filter: requires `bank` plus a robbery verb in the headline).
 - **`protest`** — Protests / demonstrations (GDELT Events table, CAMEO root code 14). Extracted events with actor + location attribution.
 - **`wildfires`** — Active wildfires within ~50 miles of the county centroid (NASA EONET feed).
-- **`transportation`** — Empty in v1. See `notes.transportation` at the top of `today.json`.
+- **`transit`** — Severe mass-transit outages: GTFS-Realtime alerts with `effect=NO_SERVICE`, active now, route-level scope, non-planned. Covers ~8 major US transit agencies (configured in `reference/transit_agencies.json`). `system_outage: true` flags agency-wide shutdowns.
 
 National alerts in `national.json`:
 

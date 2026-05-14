@@ -20,6 +20,7 @@ from fetch_nws import (
 )
 from fetch_gdelt import collect_gdelt_by_county
 from fetch_eonet import fetch_wildfires_by_county
+from fetch_transit import fetch_transit_by_county
 from fetch_disease import fetch_national
 from build_outputs import write_all
 
@@ -77,6 +78,16 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
         log.error("EONET fetch failed (continuing with empty): %s", e)
         wildfires_by_fips = {}
 
+    log.info("Transit: fetching severe-outage alerts")
+    try:
+        transit_by_fips = await asyncio.get_event_loop().run_in_executor(
+            None, fetch_transit_by_county
+        )
+        log.info("Transit: %d counties had severe outages", len(transit_by_fips))
+    except Exception as e:
+        log.error("Transit fetch failed (continuing with empty): %s", e)
+        transit_by_fips = {}
+
     log.info("Disease: fetching CDC HAN + WHO DON")
     national = await fetch_national()
     log.info("Disease: %d HAN items, %d WHO items",
@@ -90,6 +101,7 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
         forecast_by_fips=forecast_by_fips,
         gdelt_by_fips=gdelt_by_fips,
         wildfires_by_fips=wildfires_by_fips,
+        transit_by_fips=transit_by_fips,
         national=national,
     )
 

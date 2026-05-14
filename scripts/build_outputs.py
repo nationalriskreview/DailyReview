@@ -10,13 +10,13 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
-SCHEMA_VERSION = "1.1"
+SCHEMA_VERSION = "1.2"
 
 OUTPUT_NOTES = {
-    "transportation": (
-        "Transportation disruption is not collected in v1. GDELT does not "
-        "provide high-precision transportation-incident data; planned for a "
-        "future release via state 511 / DOT feeds."
+    "transit": (
+        "Transit alerts cover severe outages only (GTFS-RT effect=NO_SERVICE, "
+        "active now, route-level scope, non-planned). Coverage is limited to "
+        "the ~8 major US transit agencies configured in reference/transit_agencies.json."
     ),
 }
 
@@ -27,20 +27,16 @@ def _county_record(
     forecast: list[dict],
     gdelt: dict[str, list[dict]] | None,
     wildfires: list[dict] | None,
+    transit: list[dict] | None,
 ) -> dict:
     alerts = {
         "weather": (weather or []) + (forecast or []),
         "bank_robbery": (gdelt or {}).get("bank_robbery", []),
         "protest": (gdelt or {}).get("protest", []),
         "wildfires": wildfires or [],
-        "transportation": [],
+        "transit": transit or [],
     }
-    alert_count = (
-        len(alerts["weather"])
-        + len(alerts["bank_robbery"])
-        + len(alerts["protest"])
-        + len(alerts["wildfires"])
-    )
+    alert_count = sum(len(v) for v in alerts.values())
     return {
         "schema_version": SCHEMA_VERSION,
         "fips": county["fips"],
@@ -77,6 +73,7 @@ def write_all(
     forecast_by_fips: dict[str, list[dict]],
     gdelt_by_fips: dict[str, dict[str, list[dict]]],
     wildfires_by_fips: dict[str, list[dict]],
+    transit_by_fips: dict[str, list[dict]],
     national: dict[str, list[dict]],
 ) -> None:
     now = datetime.now(timezone.utc)
@@ -91,6 +88,7 @@ def write_all(
             forecast_by_fips.get(c["fips"], []),
             gdelt_by_fips.get(c["fips"]),
             wildfires_by_fips.get(c["fips"], []),
+            transit_by_fips.get(c["fips"], []),
         )
         rec["date"] = today
         records.append(rec)
