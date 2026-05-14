@@ -1,11 +1,15 @@
-"""GDELT via BigQuery — single SQL query against the public GKG dataset.
+"""GDELT via BigQuery — precision-focused collection.
 
-Replaces the rate-limited GDELT DOC 2.0 HTTP API. One query returns all US-tagged
-articles in the last 24 hours matching protest/robbery/transport themes. Python
-parses the V2Locations field to bucket articles by county FIPS.
+- Bank robberies: GKG themes (CRIME_ROBBERY) + strict title filter requiring
+  "bank" AND a robbery verb. Articles without titles are dropped.
+- Protests: GDELT Events table, EventRootCode='14' (CAMEO Protest). Extracted
+  events with actor + location attribution; far more precise than topic-based
+  GKG matching.
+- Transportation: not collected in v1 (GDELT does not have high-precision
+  transportation-disruption coverage). Field remains in output as an empty
+  array with a top-level note.
 
-Auth: reads service-account JSON from the GCP_SA_KEY_JSON env var (workflow
-injects from the GCP_SA_KEY secret).
+Auth: service-account JSON in GCP_SA_KEY_JSON env var.
 """
 
 from __future__ import annotations
@@ -16,6 +20,7 @@ import os
 import re
 from collections import defaultdict
 from typing import Iterable
+from urllib.parse import urlparse
 
 log = logging.getLogger(__name__)
 
@@ -34,16 +39,7 @@ STATE_POSTAL_TO_FIPS = {
     "PR": "72", "VI": "78", "GU": "66", "AS": "60", "MP": "69",
 }
 
-THEME_CATEGORIES = {
-    "bank_robbery": ("BANK_ROBBERY", "CRIME_ROBBERY", "ROBBERY"),
-    "protest": ("PROTEST",),
-    "transportation": (
-        "ROAD_CLOSURE", "INFRASTRUCTURE_BAD_ROADS", "TRANSPORT_BLOCKED",
-        "BRIDGE_CLOSED", "HIGHWAY_CLOSED", "TRANSIT_SUSPENDED",
-    ),
-}
-
-QUERY = """
+QUERY_GKG_ROBBERIES = """
 SELECT
   DocumentIdentifier AS url,
   SourceCommonName   AS domain,
@@ -55,20 +51,35 @@ FROM `gdelt-bq.gdeltv2.gkg_partitioned`
 WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
   AND _PARTITIONTIME <  CURRENT_TIMESTAMP()
   AND V2Locations LIKE '%#US#%'
-  AND (
-       V2Themes LIKE '%PROTEST%'
-    OR V2Themes LIKE '%ROBBERY%'
-    OR V2Themes LIKE '%ROAD_CLOSURE%'
-    OR V2Themes LIKE '%TRANSPORT_BLOCKED%'
-    OR V2Themes LIKE '%BRIDGE_CLOSED%'
-    OR V2Themes LIKE '%HIGHWAY_CLOSED%'
-    OR V2Themes LIKE '%TRANSIT_SUSPENDED%'
-  )
-LIMIT 100000
+  AND (V2Themes LIKE '%CRIME_ROBBERY%' OR V2Themes LIKE '%BANK_ROBBERY%')
+LIMIT 50000
+"""
+
+QUERY_EVENTS_PROTESTS = """
+SELECT
+  GLOBALEVENTID,
+  SQLDATE,
+  EventCode,
+  ActionGeo_ADM1Code,
+  ActionGeo_ADM2Code,
+  ActionGeo_FullName,
+  ActionGeo_Lat,
+  ActionGeo_Long,
+  SOURCEURL
+FROM `gdelt-bq.gdeltv2.events_partitioned`
+WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
+  AND _PARTITIONTIME <  CURRENT_TIMESTAMP()
+  AND EventRootCode = '14'
+  AND ActionGeo_CountryCode = 'US'
+  AND ActionGeo_Type IN (3, 4)
+LIMIT 50000
 """
 
 US_ADM2_PATTERN = re.compile(r"3#[^#]*#US#US[A-Z]{2}#([A-Z]{2})(\d{3})#")
+EVENTS_ADM2_PATTERN = re.compile(r"^([A-Z]{2})(\d{3})$")
 PAGE_TITLE_PATTERN = re.compile(r"<PAGE_TITLE>(.*?)</PAGE_TITLE>", re.DOTALL)
+
+BANK_ROBBERY_VERBS = ("robbery", "robbed", "robber", "robbers", "heist", "stick-up", "stickup")
 
 
 def _build_client():
@@ -93,10 +104,10 @@ def _county_fips(state_postal: str, county_3digit: str) -> str | None:
     return f"{state_fips}{county_3digit}"
 
 
-def _extract_counties(locations: str) -> set[str]:
-    found: set[str] = set()
+def _extract_counties_from_locations(locations: str) -> set[str]:
     if not locations:
-        return found
+        return set()
+    found: set[str] = set()
     for m in US_ADM2_PATTERN.finditer(locations):
         fips = _county_fips(m.group(1), m.group(2))
         if fips:
@@ -104,14 +115,13 @@ def _extract_counties(locations: str) -> set[str]:
     return found
 
 
-def _classify_categories(themes: str) -> set[str]:
-    if not themes:
-        return set()
-    upper = themes.upper()
-    return {
-        cat for cat, patterns in THEME_CATEGORIES.items()
-        if any(p in upper for p in patterns)
-    }
+def _county_from_events_adm2(adm2_code: str) -> str | None:
+    if not adm2_code:
+        return None
+    m = EVENTS_ADM2_PATTERN.match(adm2_code.strip())
+    if not m:
+        return None
+    return _county_fips(m.group(1), m.group(2))
 
 
 def _extract_title(extras: str) -> str:
@@ -123,56 +133,109 @@ def _extract_title(extras: str) -> str:
     return m.group(1).strip()[:300]
 
 
-def _shape_article(row) -> dict:
-    return {
-        "title": _extract_title(row.extras or ""),
-        "url": row.url or "",
-        "domain": row.domain or "",
-        "seendate": str(row.date_int) if row.date_int else "",
-        "language": "",
-    }
+def _domain_from_url(url: str) -> str:
+    if not url:
+        return ""
+    try:
+        host = urlparse(url).hostname or ""
+        return host.lower().lstrip("www.")
+    except Exception:
+        return ""
+
+
+def _title_passes_bank_robbery(title: str) -> bool:
+    if not title:
+        return False
+    t = title.lower()
+    return "bank" in t and any(v in t for v in BANK_ROBBERY_VERBS)
+
+
+def _collect_robberies(client) -> dict[str, list[dict]]:
+    job = client.query(QUERY_GKG_ROBBERIES)
+    rows = list(job)
+    log.info("GDELT GKG robberies: %d rows, scanned %.2f GB",
+             len(rows), (job.total_bytes_processed or 0) / 1e9)
+
+    by_county: dict[str, list[dict]] = defaultdict(list)
+    seen: dict[str, set[str]] = defaultdict(set)
+    for row in rows:
+        title = _extract_title(row.extras or "")
+        if not _title_passes_bank_robbery(title):
+            continue
+        counties = _extract_counties_from_locations(row.locations or "")
+        if not counties:
+            continue
+        article = {
+            "title": title,
+            "url": row.url or "",
+            "domain": row.domain or "",
+            "seendate": str(row.date_int) if row.date_int else "",
+        }
+        url = article["url"]
+        for fips in counties:
+            if url and url in seen[fips]:
+                continue
+            seen[fips].add(url)
+            by_county[fips].append(article)
+    log.info("GDELT robberies: %d counties had post-filter matches",
+             sum(1 for v in by_county.values() if v))
+    return dict(by_county)
+
+
+def _collect_protests(client) -> dict[str, list[dict]]:
+    job = client.query(QUERY_EVENTS_PROTESTS)
+    rows = list(job)
+    log.info("GDELT Events protests (CAMEO 14): %d rows, scanned %.2f GB",
+             len(rows), (job.total_bytes_processed or 0) / 1e9)
+
+    by_county: dict[str, list[dict]] = defaultdict(list)
+    seen: dict[str, set[str]] = defaultdict(set)
+    for row in rows:
+        fips = _county_from_events_adm2(row.ActionGeo_ADM2Code or "")
+        if not fips:
+            continue
+        url = row.SOURCEURL or ""
+        if url and url in seen[fips]:
+            continue
+        seen[fips].add(url)
+        by_county[fips].append({
+            "title": "",
+            "url": url,
+            "domain": _domain_from_url(url),
+            "event_code": str(row.EventCode) if row.EventCode else "",
+            "event_id": str(row.GLOBALEVENTID) if row.GLOBALEVENTID else "",
+            "location": row.ActionGeo_FullName or "",
+            "seendate": str(row.SQLDATE) if row.SQLDATE else "",
+        })
+    log.info("GDELT protests: %d counties had matches",
+             sum(1 for v in by_county.values() if v))
+    return dict(by_county)
 
 
 def collect_gdelt_by_county() -> dict[str, dict[str, list[dict]]]:
-    """Single BigQuery call → FIPS → {bank_robbery, protest, transportation}."""
+    """Run both BigQuery queries; return FIPS → {bank_robbery, protest}.
+
+    Transportation is intentionally absent — surfaced as empty in output by
+    build_outputs alongside a top-level note.
+    """
     client = _build_client()
-    log.info("GDELT BigQuery: running query against gdelt-bq.gdeltv2.gkg_partitioned")
-    job = client.query(QUERY)
-    rows = list(job)
-    log.info("GDELT BigQuery: %d rows returned, scanned %.2f GB",
-             len(rows), (job.total_bytes_processed or 0) / 1e9)
+    robberies = _collect_robberies(client)
+    protests = _collect_protests(client)
 
     by_county: dict[str, dict[str, list[dict]]] = defaultdict(
-        lambda: {"bank_robbery": [], "protest": [], "transportation": []}
+        lambda: {"bank_robbery": [], "protest": []}
     )
-    seen: dict[tuple[str, str], set[str]] = defaultdict(set)
+    for fips, arts in robberies.items():
+        by_county[fips]["bank_robbery"] = arts
+    for fips, arts in protests.items():
+        by_county[fips]["protest"] = arts
 
-    for row in rows:
-        cats = _classify_categories(row.themes)
-        if not cats:
-            continue
-        counties = _extract_counties(row.locations)
-        if not counties:
-            continue
-        shaped = _shape_article(row)
-        url = shaped["url"]
-        for fips in counties:
-            for cat in cats:
-                if url and url in seen[(fips, cat)]:
-                    continue
-                seen[(fips, cat)].add(url)
-                by_county[fips][cat].append(shaped)
-
-    nonzero = {k: v for k, v in by_county.items()
-               if any(len(arts) for arts in v.values())}
-    return nonzero
+    return {k: v for k, v in by_county.items() if any(v.values())}
 
 
 def merge_borough_into_county(
     county_results: dict[str, dict[str, list[dict]]],
     boroughs: Iterable[dict],
 ) -> dict[str, dict[str, list[dict]]]:
-    """No-op for the BigQuery path — GKG location tagging already attributes
-    Manhattan articles to FIPS 36061, etc. Kept for API compatibility.
-    """
+    """No-op — GDELT location tagging already attributes events to NYC county FIPS."""
     return county_results

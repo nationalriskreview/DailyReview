@@ -24,15 +24,16 @@ CDN alternative: `https://cdn.jsdelivr.net/gh/nationalriskreview/DailyReview@mai
 
 Each county object exposes alerts in these buckets:
 
-- **`weather`** — NWS Warnings, Hurricane/Tropical/Winter Storm Watches, and 24h forecast exceeding 1" rain or 6" snow.
-- **`bank_robbery`** — News reports of bank robberies in the county (GDELT, ≥2 source domains).
-- **`protest`** — Protests/demonstrations (GDELT, sports/entertainment context excluded).
-- **`transportation`** — Major road/bridge/transit closures (GDELT, keyword-filtered).
+- **`weather`** — NWS Warnings, Hurricane/Tropical/Winter Storm Watches, and 24h gridpoint forecast exceeding 1" rain or 6" snow.
+- **`bank_robbery`** — News reports of bank robberies (GDELT GKG, strict title filter: requires `bank` plus a robbery verb in the headline).
+- **`protest`** — Protests / demonstrations (GDELT Events table, CAMEO root code 14). Extracted events with actor + location attribution.
+- **`wildfires`** — Active wildfires within ~50 miles of the county centroid (NASA EONET feed).
+- **`transportation`** — Empty in v1. See `notes.transportation` at the top of `today.json`.
 
 National alerts in `national.json`:
 
-- **CDC HAN** — Health Alert Network notices at Alert/Advisory level, last 48h.
-- **WHO Disease Outbreak News** — last 48h.
+- **CDC HAN** — Health Alert Network notices at Alert/Advisory level (collector stub; URL not currently set).
+- **WHO outbreak news** — Outbreak-keyword-filtered items from the WHO news feed, last 7 days.
 
 ## Schedule
 
