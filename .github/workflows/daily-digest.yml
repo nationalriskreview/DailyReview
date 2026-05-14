@@ -31,6 +31,8 @@ jobs:
         run: python scripts/collect_digest.py
         env:
           USER_AGENT: "DailyReview (https://github.com/nationalriskreview/DailyReview)"
+          GCP_SA_KEY_JSON: ${{ secrets.GCP_SA_KEY }}
+          GCP_PROJECT: dailyreview-496300
 
       - name: Commit results
         run: |
