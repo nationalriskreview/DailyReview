@@ -46,6 +46,12 @@ WMATA_SEVERE_KEYWORDS = (
     "shut down", "shutdown", "evacuat",
 )
 
+CTA_RAIL_SERVICE_TYPES = {"T", "R"}
+CTA_RAIL_LINE_NAMES = {
+    "red", "blue", "brown", "green", "orange", "purple", "pink", "yellow",
+}
+CTA_SEVERE_SCORE = 70
+
 
 def load_agencies() -> list[dict]:
     return json.loads((REFERENCE_DIR / "transit_agencies.json").read_text())
@@ -209,6 +215,73 @@ def _parse_wmata_incidents(content: bytes, agency: dict, now_ts: int) -> list[di
     return out
 
 
+def _cta_affects_rail(alert: dict) -> tuple[bool, list[str]]:
+    imp = alert.get("ImpactedService") or {}
+    services = imp.get("Service") or []
+    if isinstance(services, dict):
+        services = [services]
+    rail_lines: list[str] = []
+    for s in services:
+        stype = (s.get("ServiceType") or "").strip().upper()
+        sname = (s.get("ServiceName") or "").strip()
+        if stype in CTA_RAIL_SERVICE_TYPES or sname.lower() in CTA_RAIL_LINE_NAMES:
+            rail_lines.append(sname or s.get("ServiceId") or "")
+    return (len(rail_lines) > 0, rail_lines)
+
+
+def _cta_is_severe(alert: dict) -> bool:
+    impact = (alert.get("Impact") or "").lower()
+    if "planned" in impact or "minor" in impact:
+        return False
+    if str(alert.get("MajorAlert", "0")) == "1":
+        return True
+    try:
+        score = int(alert.get("SeverityScore", "0") or 0)
+    except (TypeError, ValueError):
+        score = 0
+    if score >= CTA_SEVERE_SCORE:
+        return True
+    text = f"{alert.get('Headline','')} {alert.get('ShortDescription','')}".lower()
+    return any(k in text for k in WMATA_SEVERE_KEYWORDS)
+
+
+def _parse_cta_alerts(content: bytes, agency: dict, now_ts: int) -> list[dict]:
+    try:
+        payload = json.loads(content)
+    except (ValueError, json.JSONDecodeError) as e:
+        log.warning("Transit %s: JSON parse failed: %s", agency["name"], e)
+        return []
+
+    root = payload.get("CTAAlerts") or {}
+    alerts = root.get("Alert") or []
+    if isinstance(alerts, dict):
+        alerts = [alerts]
+
+    out: list[dict] = []
+    for a in alerts:
+        is_rail, rail_lines = _cta_affects_rail(a)
+        if not is_rail:
+            continue
+        if not _cta_is_severe(a):
+            continue
+        route = "/".join(rail_lines) if rail_lines else "ALL"
+        out.append({
+            "agency": agency["name"],
+            "agency_id": agency["id"],
+            "route": route,
+            "system_outage": len(rail_lines) >= 6,
+            "effect": "NO_SERVICE",
+            "header": (a.get("Headline") or "")[:200],
+            "description": (a.get("ShortDescription") or a.get("FullDescription") or "")[:1000],
+            "start": a.get("EventStart") or "",
+            "end": a.get("EventEnd") or "",
+            "source": a.get("AlertURL") or agency["alerts_url"],
+            "alert_id": a.get("AlertId") or a.get("GUID") or "",
+            "severity_score": a.get("SeverityScore") or "",
+        })
+    return out
+
+
 def _fetch_agency(agency: dict) -> list[dict]:
     auth = agency.get("auth")
     headers: dict[str, str] = {}
@@ -231,6 +304,8 @@ def _fetch_agency(agency: dict) -> list[dict]:
     now_ts = int(time.time())
     if fmt == "wmata-incidents":
         return _parse_wmata_incidents(content, agency, now_ts)
+    if fmt == "cta-alerts":
+        return _parse_cta_alerts(content, agency, now_ts)
     return _parse_feed(content, agency, now_ts)
 
 
