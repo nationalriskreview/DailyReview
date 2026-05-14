@@ -19,6 +19,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 import time
 import urllib.request
 from datetime import datetime, timezone
@@ -51,6 +52,17 @@ CTA_RAIL_LINE_NAMES = {
     "red", "blue", "brown", "green", "orange", "purple", "pink", "yellow",
 }
 CTA_SEVERE_SCORE = 70
+
+PATH_SEVERE_KEYWORDS = (
+    "suspend", "no service", "no trains", "service halted",
+    "shut down", "shutdown", "evacuat", "no train service",
+)
+PATH_PLANNED_KEYWORDS = (
+    "planned", "scheduled", "overnight", "weekend",
+    "single-tracking", "single tracking",
+    "construction", "track work", "advisory",
+    "may leave up to", "delay of up to", "delays of up to",
+)
 
 
 def load_agencies() -> list[dict]:
@@ -282,6 +294,67 @@ def _parse_cta_alerts(content: bytes, agency: dict, now_ts: int) -> list[dict]:
     return out
 
 
+_PATH_MS_DATE = re.compile(r"/Date\((\d+)\)/")
+
+
+def _path_parse_ms_date(s: str) -> str:
+    if not s:
+        return ""
+    m = _PATH_MS_DATE.search(s)
+    if not m:
+        return ""
+    try:
+        return datetime.fromtimestamp(int(m.group(1)) / 1000, tz=timezone.utc).isoformat()
+    except (OSError, ValueError):
+        return ""
+
+
+def _path_is_severe(subject: str, message: str) -> bool:
+    text = f"{subject} {message}".lower()
+    if any(p in text for p in PATH_PLANNED_KEYWORDS):
+        return False
+    return any(k in text for k in PATH_SEVERE_KEYWORDS)
+
+
+def _parse_path_alerts(content: bytes, agency: dict, now_ts: int) -> list[dict]:
+    try:
+        payload = json.loads(content)
+    except (ValueError, json.JSONDecodeError) as e:
+        log.warning("Transit %s: JSON parse failed: %s", agency["name"], e)
+        return []
+
+    if not isinstance(payload, list):
+        return []
+
+    out: list[dict] = []
+    seen_ids: set[str] = set()
+    for msg in payload:
+        subject = msg.get("Subject") or ""
+        body = msg.get("SentMessage") or ""
+        if not _path_is_severe(subject, body):
+            continue
+        mid = str(msg.get("messageid") or "")
+        if mid and mid in seen_ids:
+            continue
+        if mid:
+            seen_ids.add(mid)
+        out.append({
+            "agency": agency["name"],
+            "agency_id": agency["id"],
+            "route": "ALL",
+            "system_outage": True,
+            "effect": "NO_SERVICE",
+            "header": subject[:200],
+            "description": body[:1000],
+            "start": _path_parse_ms_date(msg.get("sentdate2", "")),
+            "end": "",
+            "source": agency["alerts_url"],
+            "message_id": mid,
+            "template": msg.get("TemplateName", ""),
+        })
+    return out
+
+
 def _fetch_agency(agency: dict) -> list[dict]:
     auth = agency.get("auth")
     headers: dict[str, str] = {}
@@ -306,6 +379,8 @@ def _fetch_agency(agency: dict) -> list[dict]:
         return _parse_wmata_incidents(content, agency, now_ts)
     if fmt == "cta-alerts":
         return _parse_cta_alerts(content, agency, now_ts)
+    if fmt == "path-alerts":
+        return _parse_path_alerts(content, agency, now_ts)
     return _parse_feed(content, agency, now_ts)
 
 
