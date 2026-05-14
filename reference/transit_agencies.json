@@ -1,0 +1,51 @@
+[
+  {
+    "id": "mbta",
+    "name": "MBTA",
+    "city": "Boston, MA",
+    "alerts_url": "https://cdn.mbta.com/realtime/Alerts.pb",
+    "counties": ["25025", "25017", "25021", "25023", "25009"],
+    "auth": null
+  },
+  {
+    "id": "mta-subway",
+    "name": "MTA NYC Subway",
+    "city": "New York, NY",
+    "alerts_url": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fsubway-alerts",
+    "counties": ["36005", "36047", "36061", "36081", "36085"],
+    "auth": null
+  },
+  {
+    "id": "mta-bus",
+    "name": "MTA NYC Bus",
+    "city": "New York, NY",
+    "alerts_url": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fbus-alerts",
+    "counties": ["36005", "36047", "36061", "36081", "36085"],
+    "auth": null
+  },
+  {
+    "id": "bart",
+    "name": "BART",
+    "city": "San Francisco Bay Area, CA",
+    "alerts_url": "https://api.bart.gov/gtfsrt/alerts.aspx",
+    "counties": ["06001", "06013", "06075", "06081"],
+    "auth": null
+  },
+  {
+    "id": "wmata-rail",
+    "name": "WMATA Metrorail",
+    "city": "Washington, DC",
+    "alerts_url": "https://api.wmata.com/Incidents.svc/json/Incidents",
+    "format": "wmata-incidents",
+    "counties": ["11001", "24031", "24033", "51013", "51059", "51510", "51107", "51153"],
+    "auth": {"env": "WMATA_API_KEY", "header": "api_key"}
+  },
+  {
+    "id": "njtransit-rail",
+    "name": "NJ Transit Rail",
+    "city": "Newark, NJ",
+    "alerts_url": "https://raildata.njtransit.com/api/GTFSRT/getAlerts",
+    "counties": ["34003", "34013", "34017", "34031", "34039", "34025", "34027", "34029", "34035", "34037"],
+    "auth": {"env": "NJT_API_KEY", "header": "Authorization"}
+  }
+]
