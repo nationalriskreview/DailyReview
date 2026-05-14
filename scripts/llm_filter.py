@@ -30,7 +30,7 @@ MODEL = os.environ.get("GEMINI_MODEL", "gemini-2.0-flash")
 ENDPOINT = (
     f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
 )
-DELAY_BETWEEN_CALLS = float(os.environ.get("GEMINI_DELAY_SEC", "4.0"))
+DELAY_BETWEEN_CALLS = float(os.environ.get("GEMINI_DELAY_SEC", "4.5"))
 MAX_CALLS_PER_RUN = int(os.environ.get("GEMINI_MAX_CALLS", "500"))
 HTTP_TIMEOUT = 30
 
