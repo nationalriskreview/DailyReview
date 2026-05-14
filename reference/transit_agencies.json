@@ -32,6 +32,23 @@
     "auth": null
   },
   {
+    "id": "cta-rail",
+    "name": "CTA 'L'",
+    "city": "Chicago, IL",
+    "alerts_url": "https://www.transitchicago.com/api/1.0/alerts.aspx?outputType=JSON",
+    "format": "cta-alerts",
+    "counties": ["17031"],
+    "auth": null
+  },
+  {
+    "id": "metra",
+    "name": "Metra",
+    "city": "Chicago, IL",
+    "alerts_url": "https://gtfsapi.metrarail.com/gtfs/raw/alerts.pb",
+    "counties": ["17031", "17043", "17097", "17089", "17197", "17111"],
+    "auth": {"env": "METRA_API_KEY", "header": "Authorization"}
+  },
+  {
     "id": "wmata-rail",
     "name": "WMATA Metrorail",
     "city": "Washington, DC",
