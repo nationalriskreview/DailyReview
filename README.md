@@ -24,16 +24,20 @@ CDN alternative: `https://cdn.jsdelivr.net/gh/nationalriskreview/DailyReview@mai
 
 Each county object exposes alerts in these buckets:
 
-- **`weather`** — NWS Warnings, Hurricane/Tropical/Winter Storm Watches, and 24h gridpoint forecast exceeding 1" rain or 6" snow.
-- **`bank_robbery`** — News reports of bank robberies (GDELT GKG, strict title filter: requires `bank` plus a robbery verb in the headline).
-- **`protest`** — Protests / demonstrations (GDELT Events table, CAMEO root code 14). Extracted events with actor + location attribution.
-- **`wildfires`** — Active wildfires within ~50 miles of the county centroid (NASA EONET feed).
+- **`weather`** — NWS Warnings, Hurricane/Tropical/Winter Storm Watches, and 24h gridpoint forecast exceeding 1" rain, 6" snow, >105°F heat, or <0°F cold.
+- **`bank_robbery`** — News reports of bank robberies (GDELT GKG, strict title filter + LLM confirmation). Includes `is_new` flag for reports within the last 12 hours.
+- **`protest`** — Protests / demonstrations (GDELT GKG, prospective filter + LLM confirmation). Includes `is_new` flag.
+- **`utility_outage`** — Significant disruptions to power or water (GDELT GKG, keyword filter + LLM confirmation). Includes `is_new` flag.
+- **`wildfires`** — Active wildfires within 50 miles (NASA EONET). Categorized by `threat_level` (`Immediate` <15mi, `Vicinity` <50mi) and includes `acreage` when available.
 - **`transit`** — Severe mass-transit outages: GTFS-Realtime alerts with `effect=NO_SERVICE`, active now, route-level scope, non-planned. Covers ~8 major US transit agencies (configured in `reference/transit_agencies.json`). `system_outage: true` flags agency-wide shutdowns.
-- **`fema`** — Active FEMA disaster declarations (DR / EM / FM) in the last 30 days, county-level. Source: OpenFEMA Disaster Declarations Summaries.
+- **`fema`** — Active FEMA disaster declarations (DR / EM / FM) in the last 30 days. Includes `is_new_today` flag for declarations issued in the past 24 hours.
+- **`disease`** — Positive pathogen detections (e.g., Measles) at the county level within the last 14 days, sourced from CDC National Wastewater Surveillance System.
+
+**Note on Geographic Precision:** For massive counties (>4,000 sq miles), weather forecasts and wildfire distances are evaluated against a 5-point bounding grid rather than a single centroid to ensure large jurisdictions do not miss border events.
 
 National alerts in `national.json`:
 
-- **CDC HAN** — Health Alert Network notices at Alert/Advisory level (collector stub; URL not currently set).
+- **CDC HAN** — Health Alert Network notices at Alert/Advisory level (collector stub; currently inactive pending CDC URL restructure).
 - **WHO outbreak news** — Outbreak-keyword-filtered items from the WHO news feed, last 7 days.
 
 ## Schedule
@@ -44,8 +48,11 @@ Workflow runs daily at **09:00 UTC** (~5 AM ET / 2 AM PT). Output `generated_at`
 
 - [NWS Alerts API](https://api.weather.gov/alerts/active)
 - [NWS Forecast API](https://www.weather.gov/documentation/services-web-api)
-- [GDELT DOC 2.0](https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/)
-- [CDC HAN](https://emergency.cdc.gov/han/)
+- [GDELT GKG via BigQuery](https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/)
+- [NASA EONET](https://eonet.gsfc.nasa.gov/)
+- [CDC NWSS Wastewater API](https://data.cdc.gov/resource/akvg-8vrb.json)
+- [OpenFEMA API](https://www.fema.gov/about/openfema/data-sets)
+- [CDC HAN](https://emergency.cdc.gov/han/) (Placeholder)
 - [WHO Disease Outbreak News](https://www.who.int/feeds/entity/csr/don/en/rss.xml)
 
 ## License

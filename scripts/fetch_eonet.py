@@ -93,13 +93,25 @@ def fetch_wildfires_by_county(
             "lon": round(lon, 4),
             "sources": sources,
         }
+        
+        magnitude = ev.get("magnitudeValue")
+        mag_unit = ev.get("magnitudeUnit", "").lower()
+        if magnitude is not None and "acre" in mag_unit:
+            record_base["acreage"] = magnitude
 
         for c in counties_list:
-            d = _haversine_miles(lat, lon, c["lat"], c["lon"])
-            if d > radius_miles:
+            grid_points = c.get("grid", [{"lat": c["lat"], "lon": c["lon"]}])
+            min_d = float('inf')
+            for pt in grid_points:
+                d = _haversine_miles(lat, lon, pt["lat"], pt["lon"])
+                if d < min_d:
+                    min_d = d
+            
+            if min_d > radius_miles:
                 continue
             record = dict(record_base)
-            record["distance_miles"] = round(d, 1)
+            record["distance_miles"] = round(min_d, 1)
+            record["threat_level"] = "Immediate" if min_d < 15 else "Vicinity"
             by_county.setdefault(c["fips"], []).append(record)
 
     log.info("EONET: %d counties within %d mi of an active wildfire",

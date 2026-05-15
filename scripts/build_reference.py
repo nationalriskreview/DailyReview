@@ -10,6 +10,7 @@ Usage:
 
 import io
 import json
+import math
 import sys
 import urllib.request
 import zipfile
@@ -63,12 +64,34 @@ def fetch_gazetteer() -> list[dict]:
         fields = [f.strip() for f in line.split("\t")]
         if len(fields) < len(header):
             continue
+
+        lat = float(fields[idx["INTPTLAT"]])
+        lon = float(fields[idx["INTPTLONG"]])
+        sqmi = float(fields[idx["ALAND_SQMI"]])
+
+        grid = [{"lat": lat, "lon": lon}]
+        if sqmi > 4000:
+            side_miles = math.sqrt(sqmi)
+            offset_miles = side_miles / 3.0
+            
+            lat_offset = offset_miles / 69.0
+            lon_offset = offset_miles / (69.0 * math.cos(math.radians(lat)))
+            
+            grid.extend([
+                {"lat": round(lat + lat_offset, 4), "lon": round(lon, 4)},
+                {"lat": round(lat - lat_offset, 4), "lon": round(lon, 4)},
+                {"lat": round(lat, 4), "lon": round(lon + lon_offset, 4)},
+                {"lat": round(lat, 4), "lon": round(lon - lon_offset, 4)},
+            ])
+
         counties.append({
             "fips": fields[idx["GEOID"]],
             "name": fields[idx["NAME"]],
             "state": fields[idx["USPS"]],
-            "lat": float(fields[idx["INTPTLAT"]]),
-            "lon": float(fields[idx["INTPTLONG"]]),
+            "lat": lat,
+            "lon": lon,
+            "sqmi": sqmi,
+            "grid": grid,
         })
     return counties
 
