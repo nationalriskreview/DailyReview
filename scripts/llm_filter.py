@@ -40,14 +40,35 @@ CATEGORY_DEFINITIONS = {
         "ATM, or branch) that took place at a specific named location"
     ),
     "protest": (
-        "an actual organized public protest, demonstration, march, rally, or "
-        "civil-unrest gathering that took place at a specific named location"
+        "an upcoming public protest, demonstration, march, rally, or "
+        "civil-unrest event that is planned, scheduled, or announced to take "
+        "place today or within the next 2 days at a specific named location"
+    ),
+}
+
+CATEGORY_QUESTIONS = {
+    "bank_robbery": (
+        'Does this article report an actual bank robbery that occurred in or '
+        'directly affecting {county_name}, {state}, within the past week?'
+    ),
+    "protest": (
+        'Does this article announce or describe an upcoming protest, '
+        'demonstration, march, or rally scheduled or expected to take place '
+        'today or within the next 2 days in or near {county_name}, {state}? '
+        'Answer YES only if the event has not yet happened and is upcoming.'
     ),
 }
 
 
 def _build_prompt(category: str, article: dict, county_name: str, state: str) -> str:
     definition = CATEGORY_DEFINITIONS.get(category, category)
+    question_tpl = CATEGORY_QUESTIONS.get(
+        category,
+        'Does this article report an actual "{category}" event in {county_name}, {state}?'
+    )
+    question = question_tpl.format(
+        category=category, county_name=county_name, state=state,
+    )
     title = article.get("title") or "(no title)"
     domain = article.get("domain") or ""
     url = article.get("url") or ""
@@ -59,8 +80,7 @@ def _build_prompt(category: str, article: dict, county_name: str, state: str) ->
         f"  Domain: {domain}\n"
         f"  URL: {url}\n"
         f"  Geographic context: tagged to {county_name}, {state}\n\n"
-        f'Does this article report an actual "{category}" event that occurred '
-        f"in or directly affecting {county_name}, {state}, within the past week?\n\n"
+        f"{question}\n\n"
         f"Reply with EXACTLY one word: YES or NO. No explanation."
     )
 

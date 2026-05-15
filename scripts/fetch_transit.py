@@ -35,10 +35,12 @@ USER_AGENT = os.environ.get(
 )
 
 EFFECT_NO_SERVICE = 1
+GTFS_RT_MAX_AGE_DAYS = int(os.environ.get("GTFS_RT_MAX_AGE_DAYS", "30"))
 
 PLANNED_KEYWORDS = (
-    "weekend", "this sunday", "this saturday", "scheduled maintenance",
-    "planned maintenance", "track work", "construction project",
+    "weekend", "this sunday", "this saturday",
+    "scheduled maintenance", "planned maintenance", "track work",
+    "construction",
     "advance notice", "future change", "upcoming",
 )
 
@@ -96,6 +98,20 @@ def _is_active(active_periods, now_ts: int) -> bool:
     return False
 
 
+def _is_stale_permanent(active_periods, now_ts: int) -> bool:
+    """Alert started >N days ago with no end date — treat as permanent fixture, not a severe outage."""
+    if not active_periods:
+        return False
+    p = active_periods[0]
+    start = p.start if p.HasField("start") else 0
+    has_end = p.HasField("end") and p.end > 0
+    if has_end:
+        return False
+    if start <= 0:
+        return False
+    return (now_ts - start) > GTFS_RT_MAX_AGE_DAYS * 86400
+
+
 def _has_route_scope(informed_entities) -> bool:
     return any(e.route_id for e in informed_entities)
 
@@ -148,6 +164,8 @@ def _parse_feed(content: bytes, agency: dict, now_ts: int) -> list[dict]:
         if alert.effect != EFFECT_NO_SERVICE:
             continue
         if not _is_active(alert.active_period, now_ts):
+            continue
+        if _is_stale_permanent(alert.active_period, now_ts):
             continue
         if not _has_route_scope(alert.informed_entity):
             continue

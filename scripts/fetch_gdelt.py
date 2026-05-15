@@ -1,13 +1,12 @@
 """GDELT via BigQuery — precision-focused collection.
 
 - Bank robberies: GKG themes (CRIME_ROBBERY) + strict title filter requiring
-  "bank" AND a robbery verb. Articles without titles are dropped.
-- Protests: GDELT Events table, EventRootCode='14' (CAMEO Protest). Extracted
-  events with actor + location attribution; far more precise than topic-based
-  GKG matching.
-- Transportation: not collected in v1 (GDELT does not have high-precision
-  transportation-disruption coverage). Field remains in output as an empty
-  array with a top-level note.
+  "bank" AND a robbery verb. Retrospective ("did a robbery happen?").
+- Protests: GKG themes (PROTEST) + forward-looking title filter. Prospective
+  ("is a protest announced for today / next 1–2 days?"). The Events table
+  was tried originally but it has no titles and is retrospective by design.
+- Transportation: not collected (GDELT lacks high-precision transportation
+  coverage). Field remains in output as empty + top-level note.
 
 Auth: service-account JSON in GCP_SA_KEY_JSON env var.
 """
@@ -20,7 +19,6 @@ import os
 import re
 from collections import defaultdict
 from typing import Iterable
-from urllib.parse import urlparse
 
 log = logging.getLogger(__name__)
 
@@ -55,31 +53,42 @@ WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
 LIMIT 50000
 """
 
-QUERY_EVENTS_PROTESTS = """
+QUERY_GKG_PROTESTS = """
 SELECT
-  GLOBALEVENTID,
-  SQLDATE,
-  EventCode,
-  ActionGeo_ADM1Code,
-  ActionGeo_ADM2Code,
-  ActionGeo_FullName,
-  ActionGeo_Lat,
-  ActionGeo_Long,
-  SOURCEURL
-FROM `gdelt-bq.gdeltv2.events_partitioned`
+  DocumentIdentifier AS url,
+  SourceCommonName   AS domain,
+  V2Themes           AS themes,
+  V2Locations        AS locations,
+  Extras             AS extras,
+  DATE               AS date_int
+FROM `gdelt-bq.gdeltv2.gkg_partitioned`
 WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
   AND _PARTITIONTIME <  CURRENT_TIMESTAMP()
-  AND EventRootCode = '14'
-  AND ActionGeo_CountryCode = 'US'
-  AND ActionGeo_Type IN (3, 4)
-LIMIT 50000
+  AND V2Locations LIKE '%#US#%'
+  AND V2Themes LIKE '%PROTEST%'
+LIMIT 20000
 """
 
 US_ADM2_PATTERN = re.compile(r"3#[^#]*#US#US[A-Z]{2}#([A-Z]{2})(\d{3})#")
-EVENTS_ADM2_PATTERN = re.compile(r"^([A-Z]{2})(\d{3})$")
 PAGE_TITLE_PATTERN = re.compile(r"<PAGE_TITLE>(.*?)</PAGE_TITLE>", re.DOTALL)
 
 BANK_ROBBERY_VERBS = ("robbery", "robbed", "robber", "robbers", "heist", "stick-up", "stickup")
+
+PROTEST_FORWARD_KEYWORDS = (
+    "planned", "planning", "plans to",
+    "scheduled", "schedule for",
+    "tomorrow", "tonight",
+    "this weekend", "this saturday", "this sunday", "this friday",
+    "this monday", "this tuesday", "this wednesday", "this thursday",
+    "upcoming", "set for", "set to",
+    "expected to", "ahead of",
+    "announces", "announced",
+    "will rally", "will gather", "will march", "will protest", "will demonstrate",
+    "to rally", "to gather", "to march", "to protest", "to demonstrate",
+    "to take place", "to begin",
+    "later today", "this afternoon", "this evening", "this morning",
+    "next week",
+)
 
 
 def _build_client():
@@ -115,15 +124,6 @@ def _extract_counties_from_locations(locations: str) -> set[str]:
     return found
 
 
-def _county_from_events_adm2(adm2_code: str) -> str | None:
-    if not adm2_code:
-        return None
-    m = EVENTS_ADM2_PATTERN.match(adm2_code.strip())
-    if not m:
-        return None
-    return _county_fips(m.group(1), m.group(2))
-
-
 def _extract_title(extras: str) -> str:
     if not extras:
         return ""
@@ -133,16 +133,6 @@ def _extract_title(extras: str) -> str:
     return m.group(1).strip()[:300]
 
 
-def _domain_from_url(url: str) -> str:
-    if not url:
-        return ""
-    try:
-        host = urlparse(url).hostname or ""
-        return host.lower().lstrip("www.")
-    except Exception:
-        return ""
-
-
 def _title_passes_bank_robbery(title: str) -> bool:
     if not title:
         return False
@@ -150,11 +140,32 @@ def _title_passes_bank_robbery(title: str) -> bool:
     return "bank" in t and any(v in t for v in BANK_ROBBERY_VERBS)
 
 
+def _title_is_forward_looking_protest(title: str) -> bool:
+    if not title:
+        return False
+    t = title.lower()
+    return any(k in t for k in PROTEST_FORWARD_KEYWORDS)
+
+
+def _shape_article(row, title: str) -> dict:
+    return {
+        "title": title,
+        "url": row.url or "",
+        "domain": row.domain or "",
+        "seendate": str(row.date_int) if row.date_int else "",
+    }
+
+
 def _collect_robberies(client) -> dict[str, list[dict]]:
     job = client.query(QUERY_GKG_ROBBERIES)
     rows = list(job)
     log.info("GDELT GKG robberies: %d rows, scanned %.2f GB",
              len(rows), (job.total_bytes_processed or 0) / 1e9)
+    if not rows:
+        log.warning(
+            "GDELT GKG robberies: 0 rows — possible partition lag or "
+            "a quiet news day; investigate if it recurs."
+        )
 
     by_county: dict[str, list[dict]] = defaultdict(list)
     seen: dict[str, set[str]] = defaultdict(set)
@@ -165,12 +176,7 @@ def _collect_robberies(client) -> dict[str, list[dict]]:
         counties = _extract_counties_from_locations(row.locations or "")
         if not counties:
             continue
-        article = {
-            "title": title,
-            "url": row.url or "",
-            "domain": row.domain or "",
-            "seendate": str(row.date_int) if row.date_int else "",
-        }
+        article = _shape_article(row, title)
         url = article["url"]
         for fips in counties:
             if url and url in seen[fips]:
@@ -183,40 +189,47 @@ def _collect_robberies(client) -> dict[str, list[dict]]:
 
 
 def _collect_protests(client) -> dict[str, list[dict]]:
-    job = client.query(QUERY_EVENTS_PROTESTS)
+    job = client.query(QUERY_GKG_PROTESTS)
     rows = list(job)
-    log.info("GDELT Events protests (CAMEO 14): %d rows, scanned %.2f GB",
+    log.info("GDELT GKG protests: %d rows, scanned %.2f GB",
              len(rows), (job.total_bytes_processed or 0) / 1e9)
+    if not rows:
+        log.warning(
+            "GDELT GKG protests: 0 rows — possible partition lag; "
+            "investigate if it recurs."
+        )
 
     by_county: dict[str, list[dict]] = defaultdict(list)
     seen: dict[str, set[str]] = defaultdict(set)
+    forward_count = 0
     for row in rows:
-        fips = _county_from_events_adm2(row.ActionGeo_ADM2Code or "")
-        if not fips:
+        title = _extract_title(row.extras or "")
+        if not _title_is_forward_looking_protest(title):
             continue
-        url = row.SOURCEURL or ""
-        if url and url in seen[fips]:
+        forward_count += 1
+        counties = _extract_counties_from_locations(row.locations or "")
+        if not counties:
             continue
-        seen[fips].add(url)
-        by_county[fips].append({
-            "title": "",
-            "url": url,
-            "domain": _domain_from_url(url),
-            "event_code": str(row.EventCode) if row.EventCode else "",
-            "event_id": str(row.GLOBALEVENTID) if row.GLOBALEVENTID else "",
-            "location": row.ActionGeo_FullName or "",
-            "seendate": str(row.SQLDATE) if row.SQLDATE else "",
-        })
-    log.info("GDELT protests: %d counties had matches",
-             sum(1 for v in by_county.values() if v))
+        article = _shape_article(row, title)
+        url = article["url"]
+        for fips in counties:
+            if url and url in seen[fips]:
+                continue
+            seen[fips].add(url)
+            by_county[fips].append(article)
+    log.info(
+        "GDELT protests: %d articles passed forward-looking filter, "
+        "%d counties had matches",
+        forward_count, sum(1 for v in by_county.values() if v),
+    )
     return dict(by_county)
 
 
 def collect_gdelt_by_county() -> dict[str, dict[str, list[dict]]]:
-    """Run both BigQuery queries; return FIPS → {bank_robbery, protest}.
+    """Run both GKG queries; return FIPS → {bank_robbery, protest}.
 
-    Transportation is intentionally absent — surfaced as empty in output by
-    build_outputs alongside a top-level note.
+    bank_robbery is retrospective (past 24h). protest is prospective (upcoming
+    events announced in past-24h news). Transportation is intentionally absent.
     """
     client = _build_client()
     robberies = _collect_robberies(client)
@@ -237,5 +250,5 @@ def merge_borough_into_county(
     county_results: dict[str, dict[str, list[dict]]],
     boroughs: Iterable[dict],
 ) -> dict[str, dict[str, list[dict]]]:
-    """No-op — GDELT location tagging already attributes events to NYC county FIPS."""
+    """No-op — GKG location tagging already attributes events to NYC county FIPS."""
     return county_results
