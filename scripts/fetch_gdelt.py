@@ -18,6 +18,7 @@ import logging
 import os
 import re
 from collections import defaultdict
+from datetime import datetime, timedelta, timezone
 from typing import Iterable
 
 log = logging.getLogger(__name__)
@@ -69,6 +70,22 @@ WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
 LIMIT 20000
 """
 
+QUERY_GKG_UTILITY = """
+SELECT
+  DocumentIdentifier AS url,
+  SourceCommonName   AS domain,
+  V2Themes           AS themes,
+  V2Locations        AS locations,
+  Extras             AS extras,
+  DATE               AS date_int
+FROM `gdelt-bq.gdeltv2.gkg_partitioned`
+WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
+  AND _PARTITIONTIME <  CURRENT_TIMESTAMP()
+  AND V2Locations LIKE '%#US#%'
+  AND (V2Themes LIKE '%POWER_OUTAGE%' OR V2Themes LIKE '%WATER_SHORTAGE%')
+LIMIT 20000
+"""
+
 US_ADM2_PATTERN = re.compile(r"3#[^#]*#US#US[A-Z]{2}#([A-Z]{2})(\d{3})#")
 PAGE_TITLE_PATTERN = re.compile(r"<PAGE_TITLE>(.*?)</PAGE_TITLE>", re.DOTALL)
 
@@ -90,6 +107,11 @@ PROTEST_FORWARD_KEYWORDS = (
     "next week",
 )
 
+UTILITY_KEYWORDS = (
+    "power outage", "power outages", "blackout", "blackouts", "grid failure",
+    "without power", "lost power", "losing power",
+    "boil water", "water main break", "water shortage", "no water"
+)
 
 def _build_client():
     from google.cloud import bigquery
@@ -146,13 +168,34 @@ def _title_is_forward_looking_protest(title: str) -> bool:
     t = title.lower()
     return any(k in t for k in PROTEST_FORWARD_KEYWORDS)
 
+def _title_is_utility(title: str) -> bool:
+    if not title:
+        return False
+    t = title.lower()
+    return any(k in t for k in UTILITY_KEYWORDS)
 
 def _shape_article(row, title: str) -> dict:
+    # GDELT date_int is YYYYMMDDHHMMSS
+    is_new = False
+    if row.date_int:
+        try:
+            s = str(row.date_int)
+            dt = datetime(
+                int(s[0:4]), int(s[4:6]), int(s[6:8]),
+                int(s[8:10]), int(s[10:12]), int(s[12:14]),
+                tzinfo=timezone.utc
+            )
+            now = datetime.now(timezone.utc)
+            is_new = (now - dt) < timedelta(hours=12)
+        except (ValueError, IndexError):
+            pass
+
     return {
         "title": title,
         "url": row.url or "",
         "domain": row.domain or "",
         "seendate": str(row.date_int) if row.date_int else "",
+        "is_new": is_new,
     }
 
 
@@ -224,24 +267,59 @@ def _collect_protests(client) -> dict[str, list[dict]]:
     )
     return dict(by_county)
 
+def _collect_utilities(client) -> dict[str, list[dict]]:
+    job = client.query(QUERY_GKG_UTILITY)
+    rows = list(job)
+    log.info("GDELT GKG utilities: %d rows, scanned %.2f GB",
+             len(rows), (job.total_bytes_processed or 0) / 1e9)
+    if not rows:
+        log.warning(
+            "GDELT GKG utilities: 0 rows — possible partition lag; "
+            "investigate if it recurs."
+        )
+
+    by_county: dict[str, list[dict]] = defaultdict(list)
+    seen: dict[str, set[str]] = defaultdict(set)
+    for row in rows:
+        title = _extract_title(row.extras or "")
+        if not _title_is_utility(title):
+            continue
+        counties = _extract_counties_from_locations(row.locations or "")
+        if not counties:
+            continue
+        article = _shape_article(row, title)
+        url = article["url"]
+        for fips in counties:
+            if url and url in seen[fips]:
+                continue
+            seen[fips].add(url)
+            by_county[fips].append(article)
+    log.info("GDELT utilities: %d counties had matches",
+             sum(1 for v in by_county.values() if v))
+    return dict(by_county)
+
 
 def collect_gdelt_by_county() -> dict[str, dict[str, list[dict]]]:
-    """Run both GKG queries; return FIPS → {bank_robbery, protest}.
+    """Run both GKG queries; return FIPS → {bank_robbery, protest, utility_outage}.
 
     bank_robbery is retrospective (past 24h). protest is prospective (upcoming
-    events announced in past-24h news). Transportation is intentionally absent.
+    events announced in past-24h news). utility_outage is retrospective.
+    Transportation is intentionally absent.
     """
     client = _build_client()
     robberies = _collect_robberies(client)
     protests = _collect_protests(client)
+    utilities = _collect_utilities(client)
 
     by_county: dict[str, dict[str, list[dict]]] = defaultdict(
-        lambda: {"bank_robbery": [], "protest": []}
+        lambda: {"bank_robbery": [], "protest": [], "utility_outage": []}
     )
     for fips, arts in robberies.items():
         by_county[fips]["bank_robbery"] = arts
     for fips, arts in protests.items():
         by_county[fips]["protest"] = arts
+    for fips, arts in utilities.items():
+        by_county[fips]["utility_outage"] = arts
 
     return {k: v for k, v in by_county.items() if any(v.values())}
 

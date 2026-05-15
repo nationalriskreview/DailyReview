@@ -14,6 +14,7 @@ limit (8KB) rejects who.int's oversized Content-Security-Policy header.
 from __future__ import annotations
 
 import asyncio
+import json
 import logging
 import os
 import re
@@ -149,3 +150,50 @@ async def fetch_national() -> dict[str, list[dict]]:
         loop.run_in_executor(None, _fetch_who_don_sync),
     )
     return {"cdc_han": han, "who_don": who}
+
+
+async def fetch_county_disease() -> dict[str, list[dict]]:
+    """Fetch CDC NWSS wastewater measles detections."""
+    url = "https://data.cdc.gov/resource/akvg-8vrb.json"
+    loop = asyncio.get_event_loop()
+    text = await loop.run_in_executor(None, _http_get, url)
+    if not text:
+        return {}
+
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        return {}
+
+    by_county: dict[str, list[dict]] = {}
+    cutoff = datetime.now(timezone.utc) - timedelta(days=14)
+
+    for row in data:
+        # Columns: county_fips, pcr_target_detect, sample_collect_date
+        fips = row.get("county_fips")
+        detection = row.get("pcr_target_detect", "").lower()
+        if not fips or detection != "yes":
+            continue
+
+        date_str = row.get("sample_collect_date", "")
+        if date_str:
+            try:
+                # Socrata usually YYYY-MM-DD
+                dt = datetime.fromisoformat(date_str)
+                if dt.tzinfo is None:
+                    dt = dt.replace(tzinfo=timezone.utc)
+                if dt < cutoff:
+                    continue
+            except ValueError:
+                pass
+
+        by_county.setdefault(fips, []).append({
+            "event": "Measles Detected (Wastewater)",
+            "headline": f"Measles virus detected in wastewater sample on {date_str}",
+            "detection": "Positive",
+            "sampling_date": date_str,
+            "source": "CDC NWSS Wastewater",
+            "url": "https://www.cdc.gov/nwss/index.html",
+        })
+
+    return by_county

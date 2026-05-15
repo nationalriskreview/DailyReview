@@ -10,7 +10,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
-SCHEMA_VERSION = "1.4"
+SCHEMA_VERSION = "1.5"
 
 OUTPUT_NOTES = {
     "transit": (
@@ -24,9 +24,11 @@ DATA_WINDOWS = {
     "weather": "live",
     "bank_robbery": "24h",
     "protest": "24h",
+    "utility_outage": "24h",
     "wildfires": "active (EONET open events, last 14d)",
     "transit": "live",
     "fema": "30d",
+    "disease": "14d (wastewater)",
     "national.cdc_han": "7d",
     "national.who_don": "7d",
 }
@@ -40,14 +42,17 @@ def _county_record(
     wildfires: list[dict] | None,
     transit: list[dict] | None,
     fema: list[dict] | None,
+    disease: list[dict] | None,
 ) -> dict:
     alerts = {
         "weather": (weather or []) + (forecast or []),
         "bank_robbery": (gdelt or {}).get("bank_robbery", []),
         "protest": (gdelt or {}).get("protest", []),
+        "utility_outage": (gdelt or {}).get("utility_outage", []),
         "wildfires": wildfires or [],
         "transit": transit or [],
         "fema": fema or [],
+        "disease": disease or [],
     }
     alert_count = sum(len(v) for v in alerts.values())
     return {
@@ -88,6 +93,7 @@ def write_all(
     wildfires_by_fips: dict[str, list[dict]],
     transit_by_fips: dict[str, list[dict]],
     fema_by_fips: dict[str, list[dict]],
+    disease_by_fips: dict[str, list[dict]],
     national: dict[str, list[dict]],
 ) -> None:
     now = datetime.now(timezone.utc)
@@ -104,6 +110,7 @@ def write_all(
             wildfires_by_fips.get(c["fips"], []),
             transit_by_fips.get(c["fips"], []),
             fema_by_fips.get(c["fips"], []),
+            disease_by_fips.get(c["fips"], []),
         )
         rec["date"] = today
         rec["generated_at"] = now.isoformat()

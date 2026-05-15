@@ -44,6 +44,11 @@ CATEGORY_DEFINITIONS = {
         "civil-unrest event that is planned, scheduled, or announced to take "
         "place today or within the next 2 days at a specific named location"
     ),
+    "utility_outage": (
+        "a significant, currently ongoing or very recent (past 24h) disruption "
+        "to public utilities such as a power grid failure, major blackout, "
+        "water main break causing a boil water advisory, or severe water shortage"
+    ),
 }
 
 CATEGORY_QUESTIONS = {
@@ -56,6 +61,11 @@ CATEGORY_QUESTIONS = {
         'demonstration, march, or rally scheduled or expected to take place '
         'today or within the next 2 days in or near {county_name}, {state}? '
         'Answer YES only if the event has not yet happened and is upcoming.'
+    ),
+    "utility_outage": (
+        'Does this article report an actual, significant power outage, blackout, '
+        'or severe water disruption (like a boil water advisory) affecting '
+        '{county_name}, {state}?'
     ),
 }
 
@@ -73,7 +83,9 @@ def _build_prompt(category: str, article: dict, county_name: str, state: str) ->
     domain = article.get("domain") or ""
     url = article.get("url") or ""
     return (
-        f'You are evaluating news articles to identify real-world events.\n\n'
+        f'You are evaluating news articles to identify real-world events.\n'
+        f'Consider the domain\'s reputation. Prioritize local news, .gov, or .edu. '
+        f'Be highly skeptical of generic content aggregator sites.\n\n'
         f'Category "{category}" means: {definition}.\n\n'
         f"Article:\n"
         f"  Title: {title}\n"

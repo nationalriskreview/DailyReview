@@ -66,6 +66,7 @@ def fetch_fema_by_county() -> dict[str, list[dict]]:
     declarations = payload.get("DisasterDeclarationsSummaries", []) or []
     log.info("FEMA: %d records returned", len(declarations))
 
+    now = datetime.now(timezone.utc)
     by_county: dict[str, list[dict]] = {}
     seen: dict[str, set[str]] = {}
 
@@ -84,12 +85,23 @@ def fetch_fema_by_county() -> dict[str, list[dict]]:
             continue
         seen[fips].add(dedupe_key)
 
+        declared_at_str = d.get("declarationDate", "")
+        is_new = False
+        if declared_at_str:
+            try:
+                # OpenFEMA dates are 2026-05-15T...
+                dt = datetime.fromisoformat(declared_at_str.replace("z", "+00:00").replace("Z", "+00:00"))
+                is_new = (now - dt) < timedelta(hours=24)
+            except ValueError:
+                pass
+
         record = {
             "disaster_number": disaster_num,
             "declaration_type": decl_type,
             "declaration_title": d.get("declarationTitle", ""),
             "incident_type": d.get("incidentType", ""),
-            "declared_at": d.get("declarationDate", ""),
+            "declared_at": declared_at_str,
+            "is_new_today": is_new,
             "incident_begin": d.get("incidentBeginDate", ""),
             "incident_end": d.get("incidentEndDate"),
             "designated_area": d.get("designatedArea", ""),

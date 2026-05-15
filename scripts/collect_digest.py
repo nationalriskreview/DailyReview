@@ -22,7 +22,7 @@ from fetch_gdelt import collect_gdelt_by_county
 from fetch_eonet import fetch_wildfires_by_county
 from fetch_transit import fetch_transit_by_county
 from fetch_fema import fetch_fema_by_county
-from fetch_disease import fetch_national
+from fetch_disease import fetch_national, fetch_county_disease
 from llm_filter import filter_gdelt_results
 from build_outputs import write_all
 
@@ -109,10 +109,14 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
         log.error("FEMA fetch failed (continuing with empty): %s", e)
         fema_by_fips = {}
 
-    log.info("Disease: fetching CDC HAN + WHO DON")
-    national = await fetch_national()
-    log.info("Disease: %d HAN items, %d WHO items",
-             len(national.get("cdc_han", [])), len(national.get("who_don", [])))
+    log.info("Disease: fetching CDC HAN + WHO DON + Wastewater")
+    national, disease_by_fips = await asyncio.gather(
+        fetch_national(),
+        fetch_county_disease()
+    )
+    log.info("Disease: %d HAN, %d WHO, %d counties with detections",
+             len(national.get("cdc_han", [])), len(national.get("who_don", [])),
+             len(disease_by_fips))
 
     log.info("Writing outputs")
     write_all(
@@ -124,6 +128,7 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
         wildfires_by_fips=wildfires_by_fips,
         transit_by_fips=transit_by_fips,
         fema_by_fips=fema_by_fips,
+        disease_by_fips=disease_by_fips,
         national=national,
     )
 
