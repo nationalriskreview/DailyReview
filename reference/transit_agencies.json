@@ -12,7 +12,26 @@
     "name": "MTA NYC Subway",
     "city": "New York, NY",
     "alerts_url": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fsubway-alerts",
+    "format": "mta-alerts",
     "counties": ["36005", "36047", "36061", "36081", "36085"],
+    "auth": null
+  },
+  {
+    "id": "mta-lirr",
+    "name": "MTA Long Island Rail Road",
+    "city": "New York, NY",
+    "alerts_url": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Flirr-alerts",
+    "format": "mta-alerts",
+    "counties": ["36005", "36047", "36061", "36081", "36059", "36103"],
+    "auth": null
+  },
+  {
+    "id": "mta-mnr",
+    "name": "MTA Metro-North Railroad",
+    "city": "New York, NY",
+    "alerts_url": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fmnr-alerts",
+    "format": "mta-alerts",
+    "counties": ["36061", "36005", "36119", "36079", "36027", "36071", "36087", "09001", "09009"],
     "auth": null
   },
   {
@@ -31,6 +50,14 @@
     "alerts_url": "https://api.bart.gov/gtfsrt/alerts.aspx",
     "counties": ["06001", "06013", "06075", "06081"],
     "auth": null
+  },
+  {
+    "id": "caltrain",
+    "name": "Caltrain",
+    "city": "San Francisco Bay Area, CA",
+    "alerts_url": "https://api.511.org/transit/servicealerts?agency=CT",
+    "counties": ["06075", "06081", "06085"],
+    "auth": {"env": "BAY_511_API_KEY", "style": "query", "param": "api_key"}
   },
   {
     "id": "cta-rail",
@@ -59,11 +86,12 @@
     "auth": {"env": "WMATA_API_KEY", "header": "api_key"}
   },
   {
-    "id": "njtransit-rail",
+    "id": "njtransit-rail-rss",
     "name": "NJ Transit Rail",
     "city": "Newark, NJ",
-    "alerts_url": "https://raildata.njtransit.com/api/GTFSRT/getAlerts",
+    "alerts_url": "https://www.njtransit.com/rss/RailAdvisories_feed.xml",
+    "format": "njt-rss-advisories",
     "counties": ["34003", "34013", "34017", "34031", "34039", "34025", "34027", "34029", "34035", "34037"],
-    "auth": {"env": "NJT_API_KEY", "header": "Authorization"}
+    "auth": null
   }
 ]

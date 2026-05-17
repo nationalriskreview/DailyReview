@@ -5,8 +5,10 @@
 - Protests: GKG themes (PROTEST) + forward-looking title filter. Prospective
   ("is a protest announced for today / next 1–2 days?"). The Events table
   was tried originally but it has no titles and is retrospective by design.
-- Transportation: not collected (GDELT lacks high-precision transportation
-  coverage). Field remains in output as empty + top-level note.
+- Transit disruptions: GKG themes (STRIKE / TRANSPORT / INFRASTRUCTURE) +
+  strict title filter requiring a disruption verb AND a transit noun. Major
+  disruptions only (strikes, derailments, full service suspensions). LLM
+  precision pass drops false positives.
 
 Auth: service-account JSON in GCP_SA_KEY_JSON env var.
 """
@@ -86,6 +88,27 @@ WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
 LIMIT 20000
 """
 
+QUERY_GKG_TRANSIT_DISRUPTION = """
+SELECT
+  DocumentIdentifier AS url,
+  SourceCommonName   AS domain,
+  V2Themes           AS themes,
+  V2Locations        AS locations,
+  Extras             AS extras,
+  DATE               AS date_int
+FROM `gdelt-bq.gdeltv2.gkg_partitioned`
+WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
+  AND _PARTITIONTIME <  CURRENT_TIMESTAMP()
+  AND V2Locations LIKE '%#US#%'
+  AND (
+    V2Themes LIKE '%STRIKE%'
+    OR V2Themes LIKE '%TRANSPORT%'
+    OR V2Themes LIKE '%INFRASTRUCTURE%'
+    OR V2Themes LIKE '%MANMADE_DISASTER%'
+  )
+LIMIT 20000
+"""
+
 US_ADM2_PATTERN = re.compile(r"3#[^#]*#US#US[A-Z]{2}#([A-Z]{2})(\d{3})#")
 PAGE_TITLE_PATTERN = re.compile(r"<PAGE_TITLE>(.*?)</PAGE_TITLE>", re.DOTALL)
 
@@ -111,6 +134,51 @@ UTILITY_KEYWORDS = (
     "power outage", "power outages", "blackout", "blackouts", "grid failure",
     "without power", "lost power", "losing power",
     "boil water", "water main break", "water shortage", "no water"
+)
+
+# Transit disruption — title must contain both a disruption phrase AND a
+# transit noun. LLM pass downstream rejects remaining false positives.
+TRANSIT_DISRUPTION_VERBS = (
+    " strike", "strikes ", "striking",  # leading/trailing space avoids "struck", "strike out"
+    "shutdown", "shut down", "shuts down", "shutting down",
+    "service suspended", "suspends service", "suspending service",
+    "service halted", "service halt",
+    "no service",
+    "service shutdown",
+    "derail", "derails", "derailed", "derailment",
+    "evacuat",
+    "all service",
+    "halt service", "halts service",
+    "trains halted", "trains canceled", "trains cancelled",
+    "out of service",
+)
+TRANSIT_DISRUPTION_NOUNS = (
+    "lirr", "long island rail", "long island railroad",
+    " mta ", "metro-north", "metro north", " mnr ",
+    " bart ", " mbta ", "njt ", "nj transit", "nj-transit",
+    "amtrak", "caltrain", "septa", "marc train",
+    "subway", "subways",
+    "transit",
+    "railway", "railroad", "rail line", "rail service", "commuter rail",
+    "rail strike", "train strike",
+    " train ", " trains ",
+    "light rail",
+    "streetcar", "trolley",
+    "metro rail", "metrorail",
+    "commuter train",
+)
+
+TRANSIT_DISRUPTION_CONDITIONAL = (
+    "could be", "could cause", "could halt", "could suspend",
+    "may be ", "may cause", "may halt", "may suspend", "may impact",
+    "might be ", "might cause",
+    "possibly",
+    "threatens to", "threatening to",
+    " if ", "would ",
+    "averted", "avoided",
+    "deal reached", "agreement reached", "tentative agreement",
+    " ends", " ended", " resolved", "back on track",
+    " is over", " was over",
 )
 
 def _build_client():
@@ -173,6 +241,21 @@ def _title_is_utility(title: str) -> bool:
         return False
     t = title.lower()
     return any(k in t for k in UTILITY_KEYWORDS)
+
+
+def _title_passes_transit_disruption(title: str) -> bool:
+    """Strict filter: title needs disruption verb AND transit noun, no
+    conditional/forward-looking/resolution language. LLM does precision pass."""
+    if not title:
+        return False
+    t = " " + title.lower() + " "
+    if any(k in t for k in TRANSIT_DISRUPTION_CONDITIONAL):
+        return False
+    if not any(v in t for v in TRANSIT_DISRUPTION_VERBS):
+        return False
+    if not any(n in t for n in TRANSIT_DISRUPTION_NOUNS):
+        return False
+    return True
 
 def _shape_article(row, title: str) -> dict:
     # GDELT date_int is YYYYMMDDHHMMSS
@@ -299,20 +382,62 @@ def _collect_utilities(client) -> dict[str, list[dict]]:
     return dict(by_county)
 
 
-def collect_gdelt_by_county() -> dict[str, dict[str, list[dict]]]:
-    """Run both GKG queries; return FIPS → {bank_robbery, protest, utility_outage}.
+def _collect_transit_disruptions(client) -> dict[str, list[dict]]:
+    job = client.query(QUERY_GKG_TRANSIT_DISRUPTION)
+    rows = list(job)
+    log.info("GDELT GKG transit disruption: %d rows, scanned %.2f GB",
+             len(rows), (job.total_bytes_processed or 0) / 1e9)
+    if not rows:
+        log.warning(
+            "GDELT GKG transit disruption: 0 rows — possible partition lag; "
+            "investigate if it recurs."
+        )
 
-    bank_robbery is retrospective (past 24h). protest is prospective (upcoming
-    events announced in past-24h news). utility_outage is retrospective.
-    Transportation is intentionally absent.
+    by_county: dict[str, list[dict]] = defaultdict(list)
+    seen: dict[str, set[str]] = defaultdict(set)
+    passed = 0
+    for row in rows:
+        title = _extract_title(row.extras or "")
+        if not _title_passes_transit_disruption(title):
+            continue
+        passed += 1
+        counties = _extract_counties_from_locations(row.locations or "")
+        if not counties:
+            continue
+        article = _shape_article(row, title)
+        url = article["url"]
+        for fips in counties:
+            if url and url in seen[fips]:
+                continue
+            seen[fips].add(url)
+            by_county[fips].append(article)
+    log.info(
+        "GDELT transit disruption: %d articles passed strict filter, "
+        "%d counties had matches",
+        passed, sum(1 for v in by_county.values() if v),
+    )
+    return dict(by_county)
+
+
+def collect_gdelt_by_county() -> dict[str, dict[str, list[dict]]]:
+    """Run all GKG queries; return FIPS → {bank_robbery, protest,
+    utility_outage, transit_disruption}.
+
+    bank_robbery / utility_outage / transit_disruption are retrospective
+    (past 24h). protest is prospective (upcoming events announced in
+    past-24h news).
     """
     client = _build_client()
     robberies = _collect_robberies(client)
     protests = _collect_protests(client)
     utilities = _collect_utilities(client)
+    transit_disruptions = _collect_transit_disruptions(client)
 
     by_county: dict[str, dict[str, list[dict]]] = defaultdict(
-        lambda: {"bank_robbery": [], "protest": [], "utility_outage": []}
+        lambda: {
+            "bank_robbery": [], "protest": [],
+            "utility_outage": [], "transit_disruption": [],
+        }
     )
     for fips, arts in robberies.items():
         by_county[fips]["bank_robbery"] = arts
@@ -320,6 +445,8 @@ def collect_gdelt_by_county() -> dict[str, dict[str, list[dict]]]:
         by_county[fips]["protest"] = arts
     for fips, arts in utilities.items():
         by_county[fips]["utility_outage"] = arts
+    for fips, arts in transit_disruptions.items():
+        by_county[fips]["transit_disruption"] = arts
 
     return {k: v for k, v in by_county.items() if any(v.values())}
 

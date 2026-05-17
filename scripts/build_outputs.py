@@ -10,13 +10,48 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
-SCHEMA_VERSION = "1.5"
+SCHEMA_VERSION = "1.6"
 
 OUTPUT_NOTES = {
     "transit": (
-        "Transit alerts cover severe outages only (GTFS-RT effect=NO_SERVICE, "
-        "active now, route-level scope, non-planned). Coverage is limited to "
-        "the ~8 major US transit agencies configured in reference/transit_agencies.json."
+        "Transit alerts cover severe outages only (GTFS-RT effect=NO_SERVICE "
+        "or, for MTA/NJT, a text-based severity heuristic — strike, "
+        "system-wide suspension, derailment, etc.), active now, route-level "
+        "scope, non-planned. Coverage spans the ~10 major US transit agencies "
+        "configured in reference/transit_agencies.json (MTA Subway / LIRR / "
+        "Metro-North, MBTA, NJ Transit Rail, PATH, WMATA, BART, CTA, Metra)."
+    ),
+    "transit_disruption": (
+        "GDELT-news transit disruption signal — articles reporting major "
+        "transit disruptions (strikes, derailments, system shutdowns, mass "
+        "cancellations) in the past 24h. Strict title filter (disruption verb "
+        "+ transit noun) plus LLM precision pass. Complements `transit` "
+        "(GTFS-RT) by surfacing events that haven't yet been encoded in "
+        "structured agency feeds."
+    ),
+    "amtrak": (
+        "Amtrak service-stoppage and full-station-closure advisories scraped "
+        "from amtrak.com/service-alerts-and-notices. Severity-filtered: only "
+        "suspensions, cancellations, derailments, strikes, full route "
+        "shutdowns, and full station closures are surfaced. Routine schedule "
+        "adjustments, accessibility/equipment outages, baggage and waiting-"
+        "room issues are dropped. County fan-out via Amtrak's static GTFS "
+        "(route stops → nearest county centroid; station code → county). "
+        "Each entry has a `kind` field of `service_stoppage` or "
+        "`station_closure`. Same list is exposed at `national.amtrak_advisories`."
+    ),
+    "aviation": (
+        "FAA major-airport closures and ground stops from "
+        "nasstatus.faa.gov/api/airport-status-information. Allowlisted to "
+        "FAA Large Hubs (~30 commercial airports, configured in "
+        "reference/airports.json). Closure NOTAMs that restrict only "
+        "general-aviation or non-scheduled traffic are filtered out — only "
+        "airport-wide closures affecting commercial service are surfaced. "
+        "Routine Ground Delay Programs and arrival/departure delays are "
+        "skipped entirely. Each entry fans out to the airport's metro "
+        "service-area counties — e.g. a JFK closure tags Manhattan even "
+        "though JFK is in Queens. `kind` is `airport_closure` or "
+        "`ground_stop`. Same list is exposed at `national.faa_advisories`."
     ),
 }
 
@@ -25,12 +60,17 @@ DATA_WINDOWS = {
     "bank_robbery": "24h",
     "protest": "24h",
     "utility_outage": "24h",
+    "transit_disruption": "24h",
     "wildfires": "active (EONET open events, last 14d)",
     "transit": "live",
+    "amtrak": "active (effective today per Amtrak page)",
+    "aviation": "live (FAA NAS status)",
     "fema": "30d",
     "disease": "14d (wastewater)",
     "national.cdc_han": "7d",
     "national.who_don": "7d",
+    "national.amtrak_advisories": "active (effective today)",
+    "national.faa_advisories": "live",
 }
 
 
@@ -41,6 +81,8 @@ def _county_record(
     gdelt: dict[str, list[dict]] | None,
     wildfires: list[dict] | None,
     transit: list[dict] | None,
+    amtrak: list[dict] | None,
+    aviation: list[dict] | None,
     fema: list[dict] | None,
     disease: list[dict] | None,
 ) -> dict:
@@ -49,8 +91,11 @@ def _county_record(
         "bank_robbery": (gdelt or {}).get("bank_robbery", []),
         "protest": (gdelt or {}).get("protest", []),
         "utility_outage": (gdelt or {}).get("utility_outage", []),
+        "transit_disruption": (gdelt or {}).get("transit_disruption", []),
         "wildfires": wildfires or [],
         "transit": transit or [],
+        "amtrak": amtrak or [],
+        "aviation": aviation or [],
         "fema": fema or [],
         "disease": disease or [],
     }
@@ -92,10 +137,14 @@ def write_all(
     gdelt_by_fips: dict[str, dict[str, list[dict]]],
     wildfires_by_fips: dict[str, list[dict]],
     transit_by_fips: dict[str, list[dict]],
+    amtrak_by_fips: dict[str, list[dict]],
+    faa_by_fips: dict[str, list[dict]],
     fema_by_fips: dict[str, list[dict]],
     disease_by_fips: dict[str, list[dict]],
     national: dict[str, list[dict]],
+    data_sources: dict[str, dict] | None = None,
 ) -> None:
+    data_sources = data_sources or {}
     now = datetime.now(timezone.utc)
     today = now.date().isoformat()
 
@@ -109,6 +158,8 @@ def write_all(
             gdelt_by_fips.get(c["fips"]),
             wildfires_by_fips.get(c["fips"], []),
             transit_by_fips.get(c["fips"], []),
+            amtrak_by_fips.get(c["fips"], []),
+            faa_by_fips.get(c["fips"], []),
             fema_by_fips.get(c["fips"], []),
             disease_by_fips.get(c["fips"], []),
         )
@@ -125,6 +176,7 @@ def write_all(
         "date": today,
         "data_windows": DATA_WINDOWS,
         "notes": OUTPUT_NOTES,
+        "data_sources": data_sources,
         "counties_total": len(records),
         "counties_with_alerts": len(flagged),
         "national": national,
@@ -138,6 +190,7 @@ def write_all(
         "date": today,
         "data_windows": DATA_WINDOWS,
         "notes": OUTPUT_NOTES,
+        "data_sources": data_sources,
         "counties_total": len(records),
         "counties_with_alerts": len(flagged),
         "national": national,
@@ -152,7 +205,10 @@ def write_all(
         "data_windows": {
             "national.cdc_han": DATA_WINDOWS["national.cdc_han"],
             "national.who_don": DATA_WINDOWS["national.who_don"],
+            "national.amtrak_advisories": DATA_WINDOWS["national.amtrak_advisories"],
+            "national.faa_advisories": DATA_WINDOWS["national.faa_advisories"],
         },
+        "data_sources": data_sources,
         **national,
     })
 
