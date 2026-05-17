@@ -28,8 +28,11 @@ Each county object exposes alerts in these buckets:
 - **`bank_robbery`** — News reports of bank robberies (GDELT GKG, strict title filter + LLM confirmation). Includes `is_new` flag for reports within the last 12 hours.
 - **`protest`** — Protests / demonstrations (GDELT GKG, prospective filter + LLM confirmation). Includes `is_new` flag.
 - **`utility_outage`** — Significant disruptions to power or water (GDELT GKG, keyword filter + LLM confirmation). Includes `is_new` flag.
+- **`transit_disruption`** — Major transit disruptions reported in past-24h news (GDELT GKG, strict disruption-verb + transit-noun title filter, conditional/resolution language rejected, LLM precision pass). Covers strikes, derailments, system shutdowns, mass cancellations, evacuations. Complements `transit` by surfacing events before they are encoded in structured agency feeds.
 - **`wildfires`** — Active wildfires within 50 miles (NASA EONET). Categorized by `threat_level` (`Immediate` <15mi, `Vicinity` <50mi) and includes `acreage` when available.
-- **`transit`** — Severe mass-transit outages: GTFS-Realtime alerts with `effect=NO_SERVICE`, active now, route-level scope, non-planned. Covers ~8 major US transit agencies (configured in `reference/transit_agencies.json`). `system_outage: true` flags agency-wide shutdowns.
+- **`transit`** — Severe mass-transit outages from structured agency feeds: GTFS-Realtime alerts with `effect=NO_SERVICE` (active now, route-level scope, non-planned). Covers ~12 major US transit agency feeds (configured in `reference/transit_agencies.json`) — MTA NYC Subway, LIRR, and Metro-North; MBTA; NJ Transit Rail (public Rail Advisories RSS); PATH; WMATA; BART; Caltrain (via 511 SF Bay); CTA; Metra. MTA feeds tag every alert as `UNKNOWN_EFFECT`, so a text-based severity heuristic is used in their place (matches strike/system-wide/full-suspension language, rejects planned work and conditional notices). NJ Transit's RSS is filtered to strike/derailment/system-wide severity only; elevator/escalator/track-work entries are dropped. `system_outage: true` flags agency-wide shutdowns.
+- **`amtrak`** — Active Amtrak service-stoppage and full-station-closure advisories scraped from `amtrak.com/service-alerts-and-notices`, filtered to severity-only and fanned out per-county via Amtrak's static GTFS (passenger advisories → route stops → nearest county centroid; station advisories → station code → county). Surfaces only items where (a) the title indicates a service stoppage (strike/derailment/suspension/cancellation/shutdown) or full station closure, (b) the effective date range includes today, and (c) the route or station code can be matched in the GTFS map. Routine schedule adjustments, boarding changes, modified schedules, accessibility/equipment outages, baggage policy changes, and construction/renovation entries are dropped. Each entry has a `kind` field of `service_stoppage` or `station_closure`. The same severity-filtered list is exposed at `national.amtrak_advisories`.
+- **`aviation`** — FAA airport closures and ground stops at major commercial hubs from `nasstatus.faa.gov/api/airport-status-information`. Allowlisted to FAA Large Hubs (~30 airports configured in `reference/airports.json`). Closure NOTAMs that only restrict general-aviation or non-scheduled traffic (`CLSD TO NON SKED`, `CLSD TO ... GA ACFT`, `CLSD TO TRANSIENT`) are dropped — only airport-wide closures affecting commercial service are surfaced. Ground Delay Programs and routine arrival/departure delays are skipped entirely. Each advisory fans out to the airport's metro service-area counties, not just the physical county — so a JFK closure tags Manhattan even though the airport is in Queens. Each entry has a `kind` field of `airport_closure` or `ground_stop`. Same list is exposed at `national.faa_advisories`.
 - **`fema`** — Active FEMA disaster declarations (DR / EM / FM) in the last 30 days. Includes `is_new_today` flag for declarations issued in the past 24 hours.
 - **`disease`** — Positive pathogen detections (e.g., Measles) at the county level within the last 14 days, sourced from CDC National Wastewater Surveillance System.
 
@@ -39,6 +42,47 @@ National alerts in `national.json`:
 
 - **CDC HAN** — Health Alert Network notices at Alert/Advisory level (collector stub; currently inactive pending CDC URL restructure).
 - **WHO outbreak news** — Outbreak-keyword-filtered items from the WHO news feed, last 7 days.
+- **`amtrak_advisories`** — Active Amtrak service-stoppage and station-closure advisories, scraped daily from amtrak.com/service-alerts-and-notices. Severity-filtered; routine schedule changes and equipment-level station issues are excluded.
+- **`faa_advisories`** — FAA Large-Hub airport closures and ground stops, severity-filtered to exclude GA-only NOTAMs. From nasstatus.faa.gov/api/airport-status-information.
+
+## Run health (`data_sources`)
+
+Each top-level output (`today.json`, `today-summary.json`, `national.json`) includes a `data_sources` object reporting per-collector status for the current run. Use it to see at a glance which fetches worked and which silently returned empty.
+
+Per source: `status` is one of `ok`, `failed`, `skipped`, `partial`. `ok` means the fetch and parse succeeded (zero items is still `ok`). `failed` includes a truncated `error` string. `partial` is used for transit when some agencies succeeded and others failed.
+
+Transit additionally exposes a per-agency `agencies` array — each with `id`, `name`, `status`, and `items`. Per-agency status values:
+
+- `ok` — fetched and parsed
+- `skipped_no_auth` — agency requires an API key env var that wasn't set
+- `fetch_failed` — HTTP fetch returned an error or timed out
+- `config_error` — agency config is malformed (`auth.env` missing)
+- `error` — unhandled exception during parse (also has truncated `error` text)
+
+Examples:
+
+```json
+"transit": {
+  "status": "ok",
+  "agencies_total": 11,
+  "agencies_ok": 8,
+  "items_total": 1,
+  "counties_with_alerts": 6,
+  "agencies": [
+    {"id": "mta-lirr", "name": "MTA Long Island Rail Road", "status": "ok", "items": 1},
+    {"id": "caltrain", "name": "Caltrain", "status": "skipped_no_auth", "items": 0},
+    ...
+  ]
+}
+```
+
+```json
+"gdelt": {
+  "status": "ok",
+  "counties_with_matches": 12,
+  "items_pre_llm": {"bank_robbery": 3, "protest": 6, "utility_outage": 4, "transit_disruption": 5}
+}
+```
 
 ## Schedule
 
@@ -54,6 +98,8 @@ Workflow runs daily at **09:00 UTC** (~5 AM ET / 2 AM PT). Output `generated_at`
 - [OpenFEMA API](https://www.fema.gov/about/openfema/data-sets)
 - [CDC HAN](https://emergency.cdc.gov/han/) (Placeholder)
 - [WHO Disease Outbreak News](https://www.who.int/feeds/entity/csr/don/en/rss.xml)
+- [Amtrak Service Alerts & Notices](https://www.amtrak.com/service-alerts-and-notices) — scraped HTML; route→county mapping derived from Amtrak's [static GTFS](https://content.amtrak.com/content/gtfs/GTFS.zip)
+- [FAA NAS Airport Status](https://nasstatus.faa.gov/api/airport-status-information) — XML feed; airport→service-area mapping in `reference/airports.json`
 
 ## License
 

@@ -49,6 +49,14 @@ CATEGORY_DEFINITIONS = {
         "to public utilities such as a power grid failure, major blackout, "
         "water main break causing a boil water advisory, or severe water shortage"
     ),
+    "transit_disruption": (
+        "a major, currently active disruption to mass-transit service such as "
+        "a transit-worker strike, train derailment, full line or system "
+        "shutdown, mass cancellation of trains, or evacuation of a transit "
+        "facility. Routine delays, single-train mechanical issues, planned "
+        "weekend track work, and station-level accessibility outages do NOT "
+        "qualify."
+    ),
 }
 
 CATEGORY_QUESTIONS = {
@@ -66,6 +74,14 @@ CATEGORY_QUESTIONS = {
         'Does this article report an actual, significant power outage, blackout, '
         'or severe water disruption (like a boil water advisory) affecting '
         '{county_name}, {state}?'
+    ),
+    "transit_disruption": (
+        'Does this article report an actual major disruption to public-transit '
+        'service (transit strike, train derailment, line/system shutdown, mass '
+        'service halt, or evacuation) that is currently active and affecting '
+        '{county_name}, {state}? Answer YES only if a real transit service '
+        'outage is happening right now — not for a planned future event, '
+        'a resolved/averted event, or routine delays.'
     ),
 }
 
