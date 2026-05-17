@@ -1,13 +1,158 @@
 {
-  "schema_version": "1.5",
-  "generated_at": "2026-05-17T11:47:47.126757+00:00",
+  "schema_version": "1.6",
+  "generated_at": "2026-05-17T16:25:15.042678+00:00",
   "date": "2026-05-17",
   "data_windows": {
     "national.cdc_han": "7d",
-    "national.who_don": "7d"
+    "national.who_don": "7d",
+    "national.amtrak_advisories": "active (effective today)",
+    "national.faa_advisories": "live"
+  },
+  "data_sources": {
+    "weather_nws_alerts": {
+      "status": "ok",
+      "counties_with_alerts": 255
+    },
+    "weather_nws_forecast": {
+      "status": "ok",
+      "counties_queried": 3007,
+      "counties_over_threshold": 27
+    },
+    "gdelt": {
+      "status": "ok",
+      "counties_with_matches": 29,
+      "items_pre_llm": {
+        "bank_robbery": 0,
+        "protest": 21,
+        "utility_outage": 10,
+        "transit_disruption": 52
+      }
+    },
+    "llm_filter_gemini": {
+      "status": "ok",
+      "counties_with_matches": 10,
+      "items_post_llm": {
+        "bank_robbery": 0,
+        "protest": 0,
+        "utility_outage": 9,
+        "transit_disruption": 23
+      }
+    },
+    "wildfires_eonet": {
+      "status": "ok",
+      "counties_with_alerts": 121
+    },
+    "transit": {
+      "status": "ok",
+      "agencies_total": 11,
+      "agencies_ok": 10,
+      "items_total": 1,
+      "counties_with_alerts": 6,
+      "agencies": [
+        {
+          "id": "mbta",
+          "name": "MBTA",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "id": "mta-subway",
+          "name": "MTA NYC Subway",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "id": "mta-lirr",
+          "name": "MTA Long Island Rail Road",
+          "status": "ok",
+          "items": 1
+        },
+        {
+          "id": "mta-mnr",
+          "name": "MTA Metro-North Railroad",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "id": "path",
+          "name": "PATH",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "id": "bart",
+          "name": "BART",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "id": "caltrain",
+          "name": "Caltrain",
+          "status": "skipped_no_auth",
+          "items": 0
+        },
+        {
+          "id": "cta-rail",
+          "name": "CTA 'L'",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "id": "metra",
+          "name": "Metra",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "id": "wmata-rail",
+          "name": "WMATA Metrorail",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "id": "njtransit-rail-rss",
+          "name": "NJ Transit Rail",
+          "status": "ok",
+          "items": 0
+        }
+      ]
+    },
+    "fema": {
+      "status": "ok",
+      "counties_with_alerts": 12
+    },
+    "disease_cdc_han": {
+      "status": "ok",
+      "items": 0
+    },
+    "disease_who_don": {
+      "status": "ok",
+      "items": 2
+    },
+    "disease_wastewater": {
+      "status": "ok",
+      "counties_with_detections": 0
+    },
+    "amtrak": {
+      "status": "ok",
+      "national_items": 0,
+      "counties_with_alerts": 0
+    },
+    "aviation_faa": {
+      "status": "ok",
+      "national_items": 0,
+      "counties_with_alerts": 0
+    }
   },
   "cdc_han": [],
   "who_don": [
+    {
+      "title": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
+      "url": "https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern",
+      "published": "Sat, 16 May 2026 23:21:17 Z",
+      "summary": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
+      "source": "WHO News (outbreak-filtered)"
+    },
     {
       "title": "Follow-up message by the WHO Director-General to the people of Tenerife regarding the hantavirus response",
       "url": "https://www.who.int/news/item/14-05-2026-follow-up-message-by-the-who-director-general-to-the-people-of-tenerife-regarding-the-hantavirus-response",
@@ -15,5 +160,7 @@
       "summary": "A message from the Director-General of the World Health Organization expressing gratitude to the people of Tenerife for their solidarity and successful cooperation during the operation to safely disembark and care for over 120 passengers from 23 countries amid an outbreak of hantavirus.",
       "source": "WHO News (outbreak-filtered)"
     }
-  ]
+  ],
+  "amtrak_advisories": [],
+  "faa_advisories": []
 }

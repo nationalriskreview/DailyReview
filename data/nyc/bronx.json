@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.5",
-  "generated_at": "2026-05-17T11:47:47.126757+00:00",
+  "schema_version": "1.6",
+  "generated_at": "2026-05-17T16:25:15.042678+00:00",
   "date": "2026-05-17",
   "borough": "Bronx",
   "slug": "bronx",
@@ -11,11 +11,27 @@
     "bank_robbery": [],
     "protest": [],
     "utility_outage": [],
+    "transit_disruption": [],
     "wildfires": [],
-    "transit": [],
+    "transit": [
+      {
+        "agency": "MTA Long Island Rail Road",
+        "agency_id": "mta-lirr",
+        "route": "1",
+        "system_outage": true,
+        "effect": "NO_SERVICE",
+        "header": "Long Island Rail Road service is suspended because of a strike.",
+        "description": "You should work from home if possible.\n\nFor updates and travel alternatives, visit mta.info/lirrstrike.",
+        "start": "2026-05-16T04:12:35+00:00",
+        "end": "",
+        "source": ""
+      }
+    ],
+    "amtrak": [],
+    "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "note": "Includes events tagged 'Bronx' or 'Bronx County'"
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.5",
+  "schema_version": "1.6",
   "fips": "06029",
   "name": "Kern County",
   "state": "CA",
@@ -9,6 +9,17 @@
   },
   "alerts": {
     "weather": [
+      {
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued May 17 at 6:48AM PDT until May 17 at 11:00PM PDT by NWS Hanford CA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-05-17T06:48:00-07:00",
+        "expires": "2026-05-17T15:00:00-07:00",
+        "areaDesc": "Mojave Desert Slopes",
+        "id": "urn:oid:2.49.0.1.840.0.aba739a776e3f5259cfc040b24db7576522383b4.001.1",
+        "source": "nws_alert"
+      },
       {
         "event": "Red Flag Warning",
         "headline": "Red Flag Warning issued May 17 at 4:00AM PDT until May 18 at 8:00PM PDT by NWS Hanford CA",
@@ -30,22 +41,12 @@
         "areaDesc": "Indian Wells Valley; Kern County Desert",
         "id": "urn:oid:2.49.0.1.840.0.273b325a9a2cb618844a04e441462de66338ac0a.001.1",
         "source": "nws_alert"
-      },
-      {
-        "event": "High Wind Warning",
-        "headline": "High Wind Warning issued May 16 at 9:47PM PDT until May 17 at 11:00PM PDT by NWS Hanford CA",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-05-16T21:47:00-07:00",
-        "expires": "2026-05-17T07:00:00-07:00",
-        "areaDesc": "Mojave Desert Slopes",
-        "id": "urn:oid:2.49.0.1.840.0.99ee30db56ecd89327e6ce99346f7aa8b61d4e3f.001.1",
-        "source": "nws_alert"
       }
     ],
     "bank_robbery": [],
     "protest": [],
     "utility_outage": [],
+    "transit_disruption": [],
     "wildfires": [
       {
         "title": "NEURALIA Wildfire, Kern, California",
@@ -101,10 +102,12 @@
       }
     ],
     "transit": [],
+    "amtrak": [],
+    "aviation": [],
     "fema": [],
     "disease": []
   },
   "alert_count": 7,
   "date": "2026-05-17",
-  "generated_at": "2026-05-17T11:47:47.126757+00:00"
+  "generated_at": "2026-05-17T16:25:15.042678+00:00"
 }
