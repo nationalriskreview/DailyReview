@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-17T16:25:15.042678+00:00",
-  "date": "2026-05-17",
+  "generated_at": "2026-05-18T17:51:02.824574+00:00",
+  "date": "2026-05-18",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,49 +11,49 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 255
+      "counties_with_alerts": 251
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3007,
-      "counties_over_threshold": 27
+      "counties_queried": 2994,
+      "counties_over_threshold": 186
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 29,
+      "counties_with_matches": 37,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 21,
-        "utility_outage": 10,
-        "transit_disruption": 52
+        "protest": 85,
+        "utility_outage": 17,
+        "transit_disruption": 128
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 10,
+      "counties_with_matches": 21,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 0,
-        "utility_outage": 9,
-        "transit_disruption": 23
+        "protest": 4,
+        "utility_outage": 10,
+        "transit_disruption": 35
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 121
+      "counties_with_alerts": 114
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 1,
-      "counties_with_alerts": 6,
+      "items_total": 4,
+      "counties_with_alerts": 18,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 0
+          "items": 2
         },
         {
           "id": "mta-subway",
@@ -71,7 +71,7 @@
           "id": "mta-mnr",
           "name": "MTA Metro-North Railroad",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "id": "path",
