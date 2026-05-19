@@ -1,10 +1,10 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-18T17:51:02.824574+00:00",
-  "date": "2026-05-18",
+  "generated_at": "2026-05-19T18:13:00.049920+00:00",
+  "date": "2026-05-19",
   "state": "TX",
   "counties_total": 254,
-  "counties_with_alerts": 81,
+  "counties_with_alerts": 93,
   "counties": {
     "48001": {
       "fips": "48001",
@@ -30,19 +30,7 @@
       "name": "Andrews County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:38AM CDT until May 18 at 9:00PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:38:00-05:00",
-            "expires": "2026-05-18T13:45:00-05:00",
-            "areaDesc": "Andrews; Loving; Winkler; Van Horn and Highway 54 Corridor",
-            "id": "urn:oid:2.49.0.1.840.0.e684afed9326dc26c2457d5656c6a98e35cacb5e.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -54,7 +42,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48005": {
       "fips": "48005",
@@ -83,7 +71,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "More than 5,300 residents remain without power across Coastal Bend as storms moves out",
+            "url": "https://www.kiiitv.com/article/news/local/coastal-bend-power-outages-aep-restoration-storms-tuesday-morning/503-107eb82f-fd1a-492f-888b-5349b9e49b24",
+            "domain": "kiiitv.com",
+            "seendate": "20260519150000",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -92,7 +88,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48009": {
       "fips": "48009",
@@ -118,31 +114,59 @@
       "name": "Armstrong County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Kress Wildfire, Swisher, Texas",
+            "id": "EONET_20153",
+            "category": "wildfire",
+            "date": "2026-05-18T19:06:00Z",
+            "lat": 34.3865,
+            "lon": -101.7812,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/9b17d10e-20c4-4177-9b18-236dfae9d57d"
+            ],
+            "distance_miles": 46.6,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Stinky Wildfire, Potter, Texas",
+            "id": "EONET_20152",
+            "category": "wildfire",
+            "date": "2026-05-17T18:24:00Z",
+            "lat": 35.225,
+            "lon": -102.0169,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/fcccb1cd-f00f-484f-beeb-43874cb5fd86"
+            ],
+            "distance_miles": 41.4,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Hunggate Wildfire, Randall, Texas",
+            "id": "EONET_20166",
+            "category": "wildfire",
+            "date": "2026-05-14T19:40:00Z",
+            "lat": 34.9415,
+            "lon": -101.9551,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/96284682-5c28-4886-b9ea-d5db03e2a243"
+            ],
+            "distance_miles": 33.9,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 3
     },
     "48013": {
       "fips": "48013",
@@ -168,6 +192,43 @@
       "name": "Austin County",
       "state": "TX",
       "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "disabled aircraft on the runway",
+            "end": "1:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2
+    },
+    "48017": {
+      "fips": "48017",
+      "name": "Bailey County",
+      "state": "TX",
+      "alerts": {
         "weather": [],
         "bank_robbery": [],
         "protest": [],
@@ -181,37 +242,6 @@
         "disease": []
       },
       "alert_count": 0
-    },
-    "48017": {
-      "fips": "48017",
-      "name": "Bailey County",
-      "state": "TX",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
     },
     "48019": {
       "fips": "48019",
@@ -389,7 +419,14 @@
       "name": "Bowie County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -401,7 +438,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48039": {
       "fips": "48039",
@@ -416,18 +453,36 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "disabled aircraft on the runway",
+            "end": "1:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48041": {
       "fips": "48041",
       "name": "Brazos County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -439,7 +494,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48043": {
       "fips": "48043",
@@ -465,24 +520,26 @@
       "name": "Briscoe County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Kress Wildfire, Swisher, Texas",
+            "id": "EONET_20153",
+            "category": "wildfire",
+            "date": "2026-05-18T19:06:00Z",
+            "lat": 34.3865,
+            "lon": -101.7812,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/9b17d10e-20c4-4177-9b18-236dfae9d57d"
+            ],
+            "distance_miles": 34.1,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -499,7 +556,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -541,7 +598,14 @@
       "name": "Burleson County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -553,14 +617,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48053": {
       "fips": "48053",
       "name": "Burnet County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -572,7 +643,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48055": {
       "fips": "48055",
@@ -695,31 +766,46 @@
       "name": "Carson County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Stinky Wildfire, Potter, Texas",
+            "id": "EONET_20152",
+            "category": "wildfire",
+            "date": "2026-05-17T18:24:00Z",
+            "lat": 35.225,
+            "lon": -102.0169,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/fcccb1cd-f00f-484f-beeb-43874cb5fd86"
+            ],
+            "distance_miles": 39.3,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Hunggate Wildfire, Randall, Texas",
+            "id": "EONET_20166",
+            "category": "wildfire",
+            "date": "2026-05-14T19:40:00Z",
+            "lat": 34.9415,
+            "lon": -101.9551,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/96284682-5c28-4886-b9ea-d5db03e2a243"
+            ],
+            "distance_miles": 46.6,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "48067": {
       "fips": "48067",
@@ -759,31 +845,59 @@
       "name": "Castro County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Kress Wildfire, Swisher, Texas",
+            "id": "EONET_20153",
+            "category": "wildfire",
+            "date": "2026-05-18T19:06:00Z",
+            "lat": 34.3865,
+            "lon": -101.7812,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/9b17d10e-20c4-4177-9b18-236dfae9d57d"
+            ],
+            "distance_miles": 29.0,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Stinky Wildfire, Potter, Texas",
+            "id": "EONET_20152",
+            "category": "wildfire",
+            "date": "2026-05-17T18:24:00Z",
+            "lat": 35.225,
+            "lon": -102.0169,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/fcccb1cd-f00f-484f-beeb-43874cb5fd86"
+            ],
+            "distance_miles": 49.7,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Hunggate Wildfire, Randall, Texas",
+            "id": "EONET_20166",
+            "category": "wildfire",
+            "date": "2026-05-14T19:40:00Z",
+            "lat": 34.9415,
+            "lon": -101.9551,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/96284682-5c28-4886-b9ea-d5db03e2a243"
+            ],
+            "distance_miles": 33.0,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 3
     },
     "48071": {
       "fips": "48071",
@@ -828,19 +942,7 @@
       "name": "Childress County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Childress; Cottle",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -852,7 +954,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48077": {
       "fips": "48077",
@@ -878,16 +980,35 @@
       "name": "Cochran County",
       "state": "TX",
       "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
+    "48081": {
+      "fips": "48081",
+      "name": "Coke County",
+      "state": "TX",
+      "alerts": {
         "weather": [
           {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued May 19 at 12:26PM CDT until May 19 at 1:30PM CDT by NWS San Angelo TX",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
+            "urgency": "Immediate",
+            "effective": "2026-05-19T12:26:00-05:00",
+            "expires": "2026-05-19T13:30:00-05:00",
+            "areaDesc": "Coke, TX; Runnels, TX; Tom Green, TX",
+            "id": "urn:oid:2.49.0.1.840.0.a40a59ffb5acfd2197be14c3551e7225d5985d05.001.1",
             "source": "nws_alert"
           }
         ],
@@ -903,25 +1024,6 @@
         "disease": []
       },
       "alert_count": 1
-    },
-    "48081": {
-      "fips": "48081",
-      "name": "Coke County",
-      "state": "TX",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
     },
     "48083": {
       "fips": "48083",
@@ -955,46 +1057,26 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "48087": {
-      "fips": "48087",
-      "name": "Collingsworth County",
-      "state": "TX",
-      "alerts": {
-        "weather": [
+        "aviation": [
           {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
+            "kind": "ground_stop",
+            "code": "DFW",
+            "name": "Dallas/Fort Worth Intl",
+            "city": "Dallas/Fort Worth",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "2:00 pm CDT",
+            "source": "FAA NAS Status"
           }
         ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
         "fema": [],
         "disease": []
       },
       "alert_count": 1
     },
-    "48089": {
-      "fips": "48089",
-      "name": "Colorado County",
+    "48087": {
+      "fips": "48087",
+      "name": "Collingsworth County",
       "state": "TX",
       "alerts": {
         "weather": [],
@@ -1010,6 +1092,32 @@
         "disease": []
       },
       "alert_count": 0
+    },
+    "48089": {
+      "fips": "48089",
+      "name": "Colorado County",
+      "state": "TX",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
     },
     "48091": {
       "fips": "48091",
@@ -1054,7 +1162,14 @@
       "name": "Concho County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1066,14 +1181,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48097": {
       "fips": "48097",
       "name": "Cooke County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued May 19 at 12:01PM CDT until May 19 at 12:45PM CDT by NWS Fort Worth TX",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-19T12:01:00-05:00",
+            "expires": "2026-05-19T12:45:00-05:00",
+            "areaDesc": "Cooke, TX; Denton, TX; Wise, TX",
+            "id": "urn:oid:2.49.0.1.840.0.b1a52a1027d3a0cdcc90037fec2f88e19c5aae32.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued May 19 at 11:41AM CDT until May 19 at 2:00PM CDT by NWS Fort Worth TX",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-19T11:41:00-05:00",
+            "expires": "2026-05-19T14:00:00-05:00",
+            "areaDesc": "Cooke, TX; Grayson, TX",
+            "id": "urn:oid:2.49.0.1.840.0.f714ce45c77a5d98cf52d2984c6917f2577232b4.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1085,7 +1223,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "48099": {
       "fips": "48099",
@@ -1111,19 +1249,7 @@
       "name": "Cottle County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Childress; Cottle",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1135,7 +1261,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48103": {
       "fips": "48103",
@@ -1180,19 +1306,7 @@
       "name": "Crosby County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1204,37 +1318,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48109": {
       "fips": "48109",
       "name": "Culberson County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:38AM CDT until May 18 at 9:00PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:38:00-05:00",
-            "expires": "2026-05-18T13:45:00-05:00",
-            "areaDesc": "Andrews; Loving; Winkler; Van Horn and Highway 54 Corridor",
-            "id": "urn:oid:2.49.0.1.840.0.e684afed9326dc26c2457d5656c6a98e35cacb5e.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:38AM CDT until May 18 at 9:00PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:38:00-05:00",
-            "expires": "2026-05-18T13:45:00-05:00",
-            "areaDesc": "Sacramento Foothills and Guadalupe Mountains; Chaves County Plains; Eddy Plains; Lea; Gaines; Dawson; Guadalupe Mountains Above 7000 Feet; Guadalupe and Delaware Mountains; Eastern Culberson County",
-            "id": "urn:oid:2.49.0.1.840.0.e684afed9326dc26c2457d5656c6a98e35cacb5e.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1246,38 +1337,79 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "48111": {
       "fips": "48111",
       "name": "Dallam County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Sharpe Wildfire, Baca, Colorado",
+            "id": "EONET_20162",
+            "category": "wildfire",
+            "date": "2026-05-17T15:37:00Z",
+            "lat": 36.9968,
+            "lon": -102.6244,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/59686f08-125a-4dc7-91e9-af37f0968ccd"
+            ],
+            "distance_miles": 49.1,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Sharpe Wildfire, Cimarron, Oklahoma",
+            "id": "EONET_20163",
+            "category": "wildfire",
+            "date": "2026-05-16T20:54:00Z",
+            "lat": 36.8933,
+            "lon": -102.6667,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/6122eacf-706c-45a8-91b4-4f9eccf25098"
+            ],
+            "distance_miles": 42.1,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Tex-OK Wildfire, Cimarron, Oklahoma",
+            "id": "EONET_20165",
+            "category": "wildfire",
+            "date": "2026-05-16T09:28:00Z",
+            "lat": 36.6364,
+            "lon": -102.4322,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/e27ccb2e-b913-4916-a414-3bfe748138c7"
+            ],
+            "distance_miles": 25.8,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Ballard Wildfire, Cimarron, Oklahoma",
+            "id": "EONET_20164",
+            "category": "wildfire",
+            "date": "2026-05-15T17:32:00Z",
+            "lat": 36.9572,
+            "lon": -102.3725,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/21470b85-a0a9-4dc0-bfb4-6723802bff2e"
+            ],
+            "distance_miles": 48.0,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 4
     },
     "48113": {
       "fips": "48113",
@@ -1292,30 +1424,29 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "DFW",
+            "name": "Dallas/Fort Worth Intl",
+            "city": "Dallas/Fort Worth",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "2:00 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48115": {
       "fips": "48115",
       "name": "Dawson County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:38AM CDT until May 18 at 9:00PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:38:00-05:00",
-            "expires": "2026-05-18T13:45:00-05:00",
-            "areaDesc": "Sacramento Foothills and Guadalupe Mountains; Chaves County Plains; Eddy Plains; Lea; Gaines; Dawson; Guadalupe Mountains Above 7000 Feet; Guadalupe and Delaware Mountains; Eastern Culberson County",
-            "id": "urn:oid:2.49.0.1.840.0.e684afed9326dc26c2457d5656c6a98e35cacb5e.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1327,24 +1458,78 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48117": {
       "fips": "48117",
       "name": "Deaf Smith County",
       "state": "TX",
       "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [
+          {
+            "title": "Stinky Wildfire, Potter, Texas",
+            "id": "EONET_20152",
+            "category": "wildfire",
+            "date": "2026-05-17T18:24:00Z",
+            "lat": 35.225,
+            "lon": -102.0169,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/fcccb1cd-f00f-484f-beeb-43874cb5fd86"
+            ],
+            "distance_miles": 38.7,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Line Wildfire, Quay, New Mexico",
+            "id": "EONET_20187",
+            "category": "wildfire",
+            "date": "2026-05-14T20:17:00Z",
+            "lat": 35.4584,
+            "lon": -103.1274,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/bc32a0d5-e4e8-4553-b174-837c26c6e1ff"
+            ],
+            "distance_miles": 46.3,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Hunggate Wildfire, Randall, Texas",
+            "id": "EONET_20166",
+            "category": "wildfire",
+            "date": "2026-05-14T19:40:00Z",
+            "lat": 34.9415,
+            "lon": -101.9551,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/96284682-5c28-4886-b9ea-d5db03e2a243"
+            ],
+            "distance_miles": 37.0,
+            "threat_level": "Vicinity"
+          }
+        ],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 3
+    },
+    "48119": {
+      "fips": "48119",
+      "name": "Delta County",
+      "state": "TX",
+      "alerts": {
         "weather": [
           {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
           }
         ],
         "bank_robbery": [],
@@ -1360,31 +1545,24 @@
       },
       "alert_count": 1
     },
-    "48119": {
-      "fips": "48119",
-      "name": "Delta County",
-      "state": "TX",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
     "48121": {
       "fips": "48121",
       "name": "Denton County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued May 19 at 12:01PM CDT until May 19 at 12:45PM CDT by NWS Fort Worth TX",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-19T12:01:00-05:00",
+            "expires": "2026-05-19T12:45:00-05:00",
+            "areaDesc": "Cooke, TX; Denton, TX; Wise, TX",
+            "id": "urn:oid:2.49.0.1.840.0.b1a52a1027d3a0cdcc90037fec2f88e19c5aae32.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1392,11 +1570,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "DFW",
+            "name": "Dallas/Fort Worth Intl",
+            "city": "Dallas/Fort Worth",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "2:00 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "48123": {
       "fips": "48123",
@@ -1422,19 +1611,7 @@
       "name": "Dickens County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1446,21 +1623,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48127": {
       "fips": "48127",
       "name": "Dimmit County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1472,26 +1642,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48129": {
       "fips": "48129",
       "name": "Donley County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1503,7 +1661,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48131": {
       "fips": "48131",
@@ -1594,30 +1752,29 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "DFW",
+            "name": "Dallas/Fort Worth Intl",
+            "city": "Dallas/Fort Worth",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "2:00 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48141": {
       "fips": "48141",
       "name": "El Paso County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 8:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Southwest Mountains; Southwest Deserts and Lowlands; South Central Lowlands And Southern Rio Grande Valley; El Paso",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1629,7 +1786,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48143": {
       "fips": "48143",
@@ -1731,24 +1888,26 @@
       "name": "Floyd County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Kress Wildfire, Swisher, Texas",
+            "id": "EONET_20153",
+            "category": "wildfire",
+            "date": "2026-05-18T19:06:00Z",
+            "lat": 34.3865,
+            "lon": -101.7812,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/9b17d10e-20c4-4177-9b18-236dfae9d57d"
+            ],
+            "distance_miles": 34.8,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -1760,37 +1919,6 @@
     "48155": {
       "fips": "48155",
       "name": "Foard County",
-      "state": "TX",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:24AM CDT until May 18 at 9:00PM CDT by NWS Norman OK",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:24:00-05:00",
-            "expires": "2026-05-18T21:00:00-05:00",
-            "areaDesc": "Harper; Ellis; Roger Mills; Beckham; Harmon; Greer; Hardeman; Foard",
-            "id": "urn:oid:2.49.0.1.840.0.ddb21813af7e14c43f59938e0d5efc0220a84b54.002.2",
-            "source": "nws_alert"
-          }
-        ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
-    },
-    "48157": {
-      "fips": "48157",
-      "name": "Fort Bend County",
       "state": "TX",
       "alerts": {
         "weather": [],
@@ -1806,6 +1934,43 @@
         "disease": []
       },
       "alert_count": 0
+    },
+    "48157": {
+      "fips": "48157",
+      "name": "Fort Bend County",
+      "state": "TX",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "disabled aircraft on the runway",
+            "end": "1:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2
     },
     "48159": {
       "fips": "48159",
@@ -1883,19 +2048,7 @@
       "name": "Gaines County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:38AM CDT until May 18 at 9:00PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:38:00-05:00",
-            "expires": "2026-05-18T13:45:00-05:00",
-            "areaDesc": "Sacramento Foothills and Guadalupe Mountains; Chaves County Plains; Eddy Plains; Lea; Gaines; Dawson; Guadalupe Mountains Above 7000 Feet; Guadalupe and Delaware Mountains; Eastern Culberson County",
-            "id": "urn:oid:2.49.0.1.840.0.e684afed9326dc26c2457d5656c6a98e35cacb5e.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1907,13 +2060,50 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48167": {
       "fips": "48167",
       "name": "Galveston County",
       "state": "TX",
       "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "disabled aircraft on the runway",
+            "end": "1:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2
+    },
+    "48169": {
+      "fips": "48169",
+      "name": "Garza County",
+      "state": "TX",
+      "alerts": {
         "weather": [],
         "bank_robbery": [],
         "protest": [],
@@ -1928,22 +2118,17 @@
       },
       "alert_count": 0
     },
-    "48169": {
-      "fips": "48169",
-      "name": "Garza County",
+    "48171": {
+      "fips": "48171",
+      "name": "Gillespie County",
       "state": "TX",
       "alerts": {
         "weather": [
           {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
           }
         ],
         "bank_robbery": [],
@@ -1958,25 +2143,6 @@
         "disease": []
       },
       "alert_count": 1
-    },
-    "48171": {
-      "fips": "48171",
-      "name": "Gillespie County",
-      "state": "TX",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
     },
     "48173": {
       "fips": "48173",
@@ -2040,16 +2206,35 @@
       "name": "Gray County",
       "state": "TX",
       "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
+    "48181": {
+      "fips": "48181",
+      "name": "Grayson County",
+      "state": "TX",
+      "alerts": {
         "weather": [
           {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued May 19 at 11:41AM CDT until May 19 at 2:00PM CDT by NWS Fort Worth TX",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
+            "urgency": "Immediate",
+            "effective": "2026-05-19T11:41:00-05:00",
+            "expires": "2026-05-19T14:00:00-05:00",
+            "areaDesc": "Cooke, TX; Grayson, TX",
+            "id": "urn:oid:2.49.0.1.840.0.f714ce45c77a5d98cf52d2984c6917f2577232b4.001.1",
             "source": "nws_alert"
           }
         ],
@@ -2066,31 +2251,19 @@
       },
       "alert_count": 1
     },
-    "48181": {
-      "fips": "48181",
-      "name": "Grayson County",
-      "state": "TX",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
     "48183": {
       "fips": "48183",
       "name": "Gregg County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2116,14 +2289,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "48185": {
       "fips": "48185",
       "name": "Grimes County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.9\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2135,7 +2315,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48187": {
       "fips": "48187",
@@ -2161,24 +2341,26 @@
       "name": "Hale County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Kress Wildfire, Swisher, Texas",
+            "id": "EONET_20153",
+            "category": "wildfire",
+            "date": "2026-05-18T19:06:00Z",
+            "lat": 34.3865,
+            "lon": -101.7812,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/9b17d10e-20c4-4177-9b18-236dfae9d57d"
+            ],
+            "distance_miles": 22.1,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -2192,19 +2374,7 @@
       "name": "Hall County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2216,7 +2386,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48193": {
       "fips": "48193",
@@ -2242,19 +2412,7 @@
       "name": "Hansford County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2266,26 +2424,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48197": {
       "fips": "48197",
       "name": "Hardeman County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:24AM CDT until May 18 at 9:00PM CDT by NWS Norman OK",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:24:00-05:00",
-            "expires": "2026-05-18T21:00:00-05:00",
-            "areaDesc": "Harper; Ellis; Roger Mills; Beckham; Harmon; Greer; Hardeman; Foard",
-            "id": "urn:oid:2.49.0.1.840.0.ddb21813af7e14c43f59938e0d5efc0220a84b54.002.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2297,7 +2443,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48199": {
       "fips": "48199",
@@ -2323,7 +2469,14 @@
       "name": "Harris County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.6\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2331,11 +2484,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "disabled aircraft on the runway",
+            "end": "1:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "48203": {
       "fips": "48203",
@@ -2375,24 +2539,26 @@
       "name": "Hartley County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Line Wildfire, Quay, New Mexico",
+            "id": "EONET_20187",
+            "category": "wildfire",
+            "date": "2026-05-14T20:17:00Z",
+            "lat": 35.4584,
+            "lon": -103.1274,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/bc32a0d5-e4e8-4553-b174-837c26c6e1ff"
+            ],
+            "distance_miles": 39.2,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -2444,19 +2610,7 @@
       "name": "Hemphill County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2468,7 +2622,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48213": {
       "fips": "48213",
@@ -2539,19 +2693,7 @@
       "name": "Hockley County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2563,7 +2705,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48221": {
       "fips": "48221",
@@ -2589,7 +2731,14 @@
       "name": "Hopkins County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2615,14 +2764,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "48225": {
       "fips": "48225",
       "name": "Houston County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.6\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2634,7 +2790,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48227": {
       "fips": "48227",
@@ -2679,6 +2835,43 @@
       "name": "Hunt County",
       "state": "TX",
       "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "DFW",
+            "name": "Dallas/Fort Worth Intl",
+            "city": "Dallas/Fort Worth",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "2:00 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2
+    },
+    "48233": {
+      "fips": "48233",
+      "name": "Hutchinson County",
+      "state": "TX",
+      "alerts": {
         "weather": [],
         "bank_robbery": [],
         "protest": [],
@@ -2692,37 +2885,6 @@
         "disease": []
       },
       "alert_count": 0
-    },
-    "48233": {
-      "fips": "48233",
-      "name": "Hutchinson County",
-      "state": "TX",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
     },
     "48235": {
       "fips": "48235",
@@ -2862,14 +3024,7 @@
       "name": "Jim Wells County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2881,7 +3036,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48251": {
       "fips": "48251",
@@ -2896,11 +3051,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "DFW",
+            "name": "Dallas/Fort Worth Intl",
+            "city": "Dallas/Fort Worth",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "2:00 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48253": {
       "fips": "48253",
@@ -2945,7 +3111,14 @@
       "name": "Kaufman County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2953,11 +3126,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "DFW",
+            "name": "Dallas/Fort Worth Intl",
+            "city": "Dallas/Fort Worth",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "2:00 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "48259": {
       "fips": "48259",
@@ -2986,7 +3170,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -3009,19 +3193,7 @@
       "name": "Kent County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -3033,7 +3205,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48265": {
       "fips": "48265",
@@ -3154,7 +3326,14 @@
       "name": "Lamar County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -3166,31 +3345,33 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48279": {
       "fips": "48279",
       "name": "Lamb County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Kress Wildfire, Swisher, Texas",
+            "id": "EONET_20153",
+            "category": "wildfire",
+            "date": "2026-05-18T19:06:00Z",
+            "lat": 34.3865,
+            "lon": -101.7812,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/9b17d10e-20c4-4177-9b18-236dfae9d57d"
+            ],
+            "distance_miles": 39.1,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -3223,14 +3404,7 @@
       "name": "La Salle County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -3242,7 +3416,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48285": {
       "fips": "48285",
@@ -3306,7 +3480,14 @@
       "name": "Liberty County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.6\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -3314,11 +3495,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "disabled aircraft on the runway",
+            "end": "1:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "48293": {
       "fips": "48293",
@@ -3344,24 +3536,26 @@
       "name": "Lipscomb County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Cadilac Wildfire, Beaver, Oklahoma",
+            "id": "EONET_20169",
+            "category": "wildfire",
+            "date": "2026-05-15T21:57:00Z",
+            "lat": 36.94,
+            "lon": -100.5897,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/08840e8b-f884-4cd8-8a63-9fdac27ad726"
+            ],
+            "distance_miles": 48.9,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -3401,6 +3595,32 @@
       "name": "Llano County",
       "state": "TX",
       "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "48301": {
+      "fips": "48301",
+      "name": "Loving County",
+      "state": "TX",
+      "alerts": {
         "weather": [],
         "bank_robbery": [],
         "protest": [],
@@ -3415,55 +3635,12 @@
       },
       "alert_count": 0
     },
-    "48301": {
-      "fips": "48301",
-      "name": "Loving County",
-      "state": "TX",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:38AM CDT until May 18 at 9:00PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:38:00-05:00",
-            "expires": "2026-05-18T13:45:00-05:00",
-            "areaDesc": "Andrews; Loving; Winkler; Van Horn and Highway 54 Corridor",
-            "id": "urn:oid:2.49.0.1.840.0.e684afed9326dc26c2457d5656c6a98e35cacb5e.001.1",
-            "source": "nws_alert"
-          }
-        ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
-    },
     "48303": {
       "fips": "48303",
       "name": "Lubbock County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -3475,26 +3652,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48305": {
       "fips": "48305",
       "name": "Lynn County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -3506,7 +3671,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48307": {
       "fips": "48307",
@@ -3554,7 +3719,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -3577,7 +3742,14 @@
       "name": "Madison County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~3.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -3589,7 +3761,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48315": {
       "fips": "48315",
@@ -3800,7 +3972,19 @@
       "name": "Mitchell County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued May 19 at 10:41AM CDT until May 19 at 1:45PM CDT by NWS Midland/Odessa TX",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-19T10:41:00-05:00",
+            "expires": "2026-05-19T13:45:00-05:00",
+            "areaDesc": "Mitchell, TX",
+            "id": "urn:oid:2.49.0.1.840.0.8d63b3e091763bbafee08a98076ac4a073a56ad6.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -3812,7 +3996,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48337": {
       "fips": "48337",
@@ -3838,36 +4022,12 @@
       "name": "Montgomery County",
       "state": "TX",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "48341": {
-      "fips": "48341",
-      "name": "Moore County",
-      "state": "TX",
-      "alerts": {
         "weather": [
           {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
           }
         ],
         "bank_robbery": [],
@@ -3875,6 +4035,50 @@
         "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "disabled aircraft on the runway",
+            "end": "1:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2
+    },
+    "48341": {
+      "fips": "48341",
+      "name": "Moore County",
+      "state": "TX",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [
+          {
+            "title": "Stinky Wildfire, Potter, Texas",
+            "id": "EONET_20152",
+            "category": "wildfire",
+            "date": "2026-05-17T18:24:00Z",
+            "lat": 35.225,
+            "lon": -102.0169,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/fcccb1cd-f00f-484f-beeb-43874cb5fd86"
+            ],
+            "distance_miles": 42.8,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -3921,19 +4125,7 @@
       "name": "Motley County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -3945,7 +4137,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48347": {
       "fips": "48347",
@@ -4009,7 +4201,19 @@
       "name": "Nolan County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued May 19 at 11:07AM CDT until May 19 at 2:15PM CDT by NWS San Angelo TX",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-19T11:07:00-05:00",
+            "expires": "2026-05-19T14:15:00-05:00",
+            "areaDesc": "Nolan, TX",
+            "id": "urn:oid:2.49.0.1.840.0.e5ddb3092ae439dd75a9090a0279850225281632.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -4021,7 +4225,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48355": {
       "fips": "48355",
@@ -4031,7 +4235,22 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "More than 5,300 residents remain without power across Coastal Bend as storms moves out",
+            "url": "https://www.kiiitv.com/article/news/local/coastal-bend-power-outages-aep-restoration-storms-tuesday-morning/503-107eb82f-fd1a-492f-888b-5349b9e49b24",
+            "domain": "kiiitv.com",
+            "seendate": "20260519150000",
+            "is_new": true
+          },
+          {
+            "title": "Overnight storms leave more than 4,000 Coastal Bend residents without power",
+            "url": "https://www.kiiitv.com/article/news/local/coastal-bend-power-outages-overnight-storms-tuesday/503-107eb82f-fd1a-492f-888b-5349b9e49b24",
+            "domain": "kiiitv.com",
+            "seendate": "20260519100000",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -4040,31 +4259,33 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "48357": {
       "fips": "48357",
       "name": "Ochiltree County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Cadilac Wildfire, Beaver, Oklahoma",
+            "id": "EONET_20169",
+            "category": "wildfire",
+            "date": "2026-05-15T21:57:00Z",
+            "lat": 36.94,
+            "lon": -100.5897,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/08840e8b-f884-4cd8-8a63-9fdac27ad726"
+            ],
+            "distance_miles": 47.4,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -4078,31 +4299,59 @@
       "name": "Oldham County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Stinky Wildfire, Potter, Texas",
+            "id": "EONET_20152",
+            "category": "wildfire",
+            "date": "2026-05-17T18:24:00Z",
+            "lat": 35.225,
+            "lon": -102.0169,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/fcccb1cd-f00f-484f-beeb-43874cb5fd86"
+            ],
+            "distance_miles": 34.9,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Line Wildfire, Quay, New Mexico",
+            "id": "EONET_20187",
+            "category": "wildfire",
+            "date": "2026-05-14T20:17:00Z",
+            "lat": 35.4584,
+            "lon": -103.1274,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/bc32a0d5-e4e8-4553-b174-837c26c6e1ff"
+            ],
+            "distance_miles": 30.1,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Hunggate Wildfire, Randall, Texas",
+            "id": "EONET_20166",
+            "category": "wildfire",
+            "date": "2026-05-14T19:40:00Z",
+            "lat": 34.9415,
+            "lon": -101.9551,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/96284682-5c28-4886-b9ea-d5db03e2a243"
+            ],
+            "distance_miles": 48.3,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 3
     },
     "48361": {
       "fips": "48361",
@@ -4174,30 +4423,29 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "DFW",
+            "name": "Dallas/Fort Worth Intl",
+            "city": "Dallas/Fort Worth",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "2:00 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48369": {
       "fips": "48369",
       "name": "Parmer County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -4209,7 +4457,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48371": {
       "fips": "48371",
@@ -4235,36 +4483,12 @@
       "name": "Polk County",
       "state": "TX",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "48375": {
-      "fips": "48375",
-      "name": "Potter County",
-      "state": "TX",
-      "alerts": {
         "weather": [
           {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
           }
         ],
         "bank_robbery": [],
@@ -4279,6 +4503,52 @@
         "disease": []
       },
       "alert_count": 1
+    },
+    "48375": {
+      "fips": "48375",
+      "name": "Potter County",
+      "state": "TX",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [
+          {
+            "title": "Stinky Wildfire, Potter, Texas",
+            "id": "EONET_20152",
+            "category": "wildfire",
+            "date": "2026-05-17T18:24:00Z",
+            "lat": 35.225,
+            "lon": -102.0169,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/fcccb1cd-f00f-484f-beeb-43874cb5fd86"
+            ],
+            "distance_miles": 13.9,
+            "threat_level": "Immediate"
+          },
+          {
+            "title": "Hunggate Wildfire, Randall, Texas",
+            "id": "EONET_20166",
+            "category": "wildfire",
+            "date": "2026-05-14T19:40:00Z",
+            "lat": 34.9415,
+            "lon": -101.9551,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/96284682-5c28-4886-b9ea-d5db03e2a243"
+            ],
+            "distance_miles": 31.8,
+            "threat_level": "Vicinity"
+          }
+        ],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2
     },
     "48377": {
       "fips": "48377",
@@ -4304,7 +4574,14 @@
       "name": "Rains County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -4330,52 +4607,66 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "48381": {
       "fips": "48381",
       "name": "Randall County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Kress Wildfire, Swisher, Texas",
+            "id": "EONET_20153",
+            "category": "wildfire",
+            "date": "2026-05-18T19:06:00Z",
+            "lat": 34.3865,
+            "lon": -101.7812,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/9b17d10e-20c4-4177-9b18-236dfae9d57d"
+            ],
+            "distance_miles": 40.3,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Stinky Wildfire, Potter, Texas",
+            "id": "EONET_20152",
+            "category": "wildfire",
+            "date": "2026-05-17T18:24:00Z",
+            "lat": 35.225,
+            "lon": -102.0169,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/fcccb1cd-f00f-484f-beeb-43874cb5fd86"
+            ],
+            "distance_miles": 19.4,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Hunggate Wildfire, Randall, Texas",
+            "id": "EONET_20166",
+            "category": "wildfire",
+            "date": "2026-05-14T19:40:00Z",
+            "lat": 34.9415,
+            "lon": -101.9551,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/96284682-5c28-4886-b9ea-d5db03e2a243"
+            ],
+            "distance_miles": 3.7,
+            "threat_level": "Immediate"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
-        "fema": [
-          {
-            "disaster_number": "5633",
-            "declaration_type": "FM",
-            "declaration_title": "HUNGGATE FIRE",
-            "incident_type": "Fire",
-            "declared_at": "2026-05-14T00:00:00.000Z",
-            "is_new_today": false,
-            "incident_begin": "2026-05-14T00:00:00.000Z",
-            "incident_end": null,
-            "designated_area": "Randall (County)",
-            "fema_declaration_string": "FM-5633-TX",
-            "source": "https://www.fema.gov/disaster/5633"
-          }
-        ],
+        "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 3
     },
     "48383": {
       "fips": "48383",
@@ -4461,7 +4752,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "More than 5,300 residents remain without power across Coastal Bend as storms moves out",
+            "url": "https://www.kiiitv.com/article/news/local/coastal-bend-power-outages-aep-restoration-storms-tuesday-morning/503-107eb82f-fd1a-492f-888b-5349b9e49b24",
+            "domain": "kiiitv.com",
+            "seendate": "20260519150000",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -4470,26 +4769,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48393": {
       "fips": "48393",
       "name": "Roberts County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -4501,7 +4788,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48395": {
       "fips": "48395",
@@ -4527,7 +4814,14 @@
       "name": "Rockwall County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -4535,18 +4829,41 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "DFW",
+            "name": "Dallas/Fort Worth Intl",
+            "city": "Dallas/Fort Worth",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "2:00 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "48399": {
       "fips": "48399",
       "name": "Runnels County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued May 19 at 12:26PM CDT until May 19 at 1:30PM CDT by NWS San Angelo TX",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-19T12:26:00-05:00",
+            "expires": "2026-05-19T13:30:00-05:00",
+            "areaDesc": "Coke, TX; Runnels, TX; Tom Green, TX",
+            "id": "urn:oid:2.49.0.1.840.0.a40a59ffb5acfd2197be14c3551e7225d5985d05.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -4558,7 +4875,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48401": {
       "fips": "48401",
@@ -4636,7 +4953,14 @@
       "name": "San Jacinto County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -4648,7 +4972,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48409": {
       "fips": "48409",
@@ -4665,7 +4989,15 @@
         ],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "More than 5,300 residents remain without power across Coastal Bend as storms moves out",
+            "url": "https://www.kiiitv.com/article/news/local/coastal-bend-power-outages-aep-restoration-storms-tuesday-morning/503-107eb82f-fd1a-492f-888b-5349b9e49b24",
+            "domain": "kiiitv.com",
+            "seendate": "20260519150000",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -4674,7 +5006,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "48411": {
       "fips": "48411",
@@ -4776,24 +5108,26 @@
       "name": "Sherman County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Tex-OK Wildfire, Cimarron, Oklahoma",
+            "id": "EONET_20165",
+            "category": "wildfire",
+            "date": "2026-05-16T09:28:00Z",
+            "lat": 36.6364,
+            "lon": -102.4322,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/e27ccb2e-b913-4916-a414-3bfe748138c7"
+            ],
+            "distance_miles": 38.6,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -4807,7 +5141,14 @@
       "name": "Smith County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -4833,7 +5174,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "48425": {
       "fips": "48425",
@@ -4862,7 +5203,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -4961,31 +5302,46 @@
       "name": "Swisher County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Kress Wildfire, Swisher, Texas",
+            "id": "EONET_20153",
+            "category": "wildfire",
+            "date": "2026-05-18T19:06:00Z",
+            "lat": 34.3865,
+            "lon": -101.7812,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/9b17d10e-20c4-4177-9b18-236dfae9d57d"
+            ],
+            "distance_miles": 9.9,
+            "threat_level": "Immediate"
+          },
+          {
+            "title": "Hunggate Wildfire, Randall, Texas",
+            "id": "EONET_20166",
+            "category": "wildfire",
+            "date": "2026-05-14T19:40:00Z",
+            "lat": 34.9415,
+            "lon": -101.9551,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/96284682-5c28-4886-b9ea-d5db03e2a243"
+            ],
+            "distance_miles": 31.1,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "48439": {
       "fips": "48439",
@@ -4995,16 +5351,35 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Terrifying video shows Six Flags patrons walking down rollercoaster drop after power outage",
+            "url": "https://www.independent.co.uk/news/world/americas/six-flags-texas-power-outage-b2979038.html",
+            "domain": "independent.co.uk",
+            "seendate": "20260519011500",
+            "is_new": false
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "DFW",
+            "name": "Dallas/Fort Worth Intl",
+            "city": "Dallas/Fort Worth",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "2:00 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "48441": {
       "fips": "48441",
@@ -5049,19 +5424,7 @@
       "name": "Terry County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -5073,7 +5436,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48447": {
       "fips": "48447",
@@ -5132,7 +5495,19 @@
       "name": "Tom Green County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued May 19 at 12:26PM CDT until May 19 at 1:30PM CDT by NWS San Angelo TX",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-19T12:26:00-05:00",
+            "expires": "2026-05-19T13:30:00-05:00",
+            "areaDesc": "Coke, TX; Runnels, TX; Tom Green, TX",
+            "id": "urn:oid:2.49.0.1.840.0.a40a59ffb5acfd2197be14c3551e7225d5985d05.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -5144,14 +5519,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48453": {
       "fips": "48453",
       "name": "Travis County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -5163,14 +5545,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48455": {
       "fips": "48455",
       "name": "Trinity County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -5182,7 +5571,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48457": {
       "fips": "48457",
@@ -5208,7 +5597,14 @@
       "name": "Upshur County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -5234,7 +5630,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "48461": {
       "fips": "48461",
@@ -5298,7 +5694,14 @@
       "name": "Van Zandt County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -5324,7 +5727,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "48469": {
       "fips": "48469",
@@ -5350,7 +5753,14 @@
       "name": "Walker County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -5362,14 +5772,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48473": {
       "fips": "48473",
       "name": "Waller County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -5377,11 +5794,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "disabled aircraft on the runway",
+            "end": "1:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "48475": {
       "fips": "48475",
@@ -5407,89 +5835,12 @@
       "name": "Washington County",
       "state": "TX",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "48479": {
-      "fips": "48479",
-      "name": "Webb County",
-      "state": "TX",
-      "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.8\" rain expected in next 24h",
+            "severity": "Moderate",
             "source": "nws_forecast"
-          }
-        ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [
-          {
-            "title": "Strong winds cause scattered power outages in Laredo, surrounding areas",
-            "url": "https://www.kgns.tv/2026/05/18/strong-winds-cause-scattered-power-outages-laredo-surrounding-areas/",
-            "domain": "kgns.tv",
-            "seendate": "20260518074500",
-            "is_new": true
-          }
-        ],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 2
-    },
-    "48481": {
-      "fips": "48481",
-      "name": "Wharton County",
-      "state": "TX",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "48483": {
-      "fips": "48483",
-      "name": "Wheeler County",
-      "state": "TX",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 5:15AM CDT until May 19 at 12:00AM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T05:15:00-05:00",
-            "expires": "2026-05-18T15:00:00-05:00",
-            "areaDesc": "Cimarron; Texas; Beaver; Dallam; Sherman; Hansford; Ochiltree; Lipscomb; Hartley; Moore; Hutchinson; Roberts; Hemphill; Oldham; Potter; Carson; Gray; Wheeler; Deaf Smith; Randall; Armstrong; Donley; Collingsworth; Palo Duro Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.08ec7d9bb4950e9dea5b3f7f61ed8b5e7f6162a5.001.1",
-            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -5504,6 +5855,70 @@
         "disease": []
       },
       "alert_count": 1
+    },
+    "48479": {
+      "fips": "48479",
+      "name": "Webb County",
+      "state": "TX",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
+    "48481": {
+      "fips": "48481",
+      "name": "Wharton County",
+      "state": "TX",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "48483": {
+      "fips": "48483",
+      "name": "Wheeler County",
+      "state": "TX",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
     },
     "48485": {
       "fips": "48485",
@@ -5551,7 +5966,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -5574,7 +5989,14 @@
       "name": "Williamson County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -5586,7 +6008,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48493": {
       "fips": "48493",
@@ -5612,37 +6034,6 @@
       "name": "Winkler County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:38AM CDT until May 18 at 9:00PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:38:00-05:00",
-            "expires": "2026-05-18T13:45:00-05:00",
-            "areaDesc": "Andrews; Loving; Winkler; Van Horn and Highway 54 Corridor",
-            "id": "urn:oid:2.49.0.1.840.0.e684afed9326dc26c2457d5656c6a98e35cacb5e.001.1",
-            "source": "nws_alert"
-          }
-        ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
-    },
-    "48497": {
-      "fips": "48497",
-      "name": "Wise County",
-      "state": "TX",
-      "alerts": {
         "weather": [],
         "bank_robbery": [],
         "protest": [],
@@ -5656,6 +6047,48 @@
         "disease": []
       },
       "alert_count": 0
+    },
+    "48497": {
+      "fips": "48497",
+      "name": "Wise County",
+      "state": "TX",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued May 19 at 12:01PM CDT until May 19 at 12:45PM CDT by NWS Fort Worth TX",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-19T12:01:00-05:00",
+            "expires": "2026-05-19T12:45:00-05:00",
+            "areaDesc": "Cooke, TX; Denton, TX; Wise, TX",
+            "id": "urn:oid:2.49.0.1.840.0.b1a52a1027d3a0cdcc90037fec2f88e19c5aae32.001.1",
+            "source": "nws_alert"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "DFW",
+            "name": "Dallas/Fort Worth Intl",
+            "city": "Dallas/Fort Worth",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "2:00 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2
     },
     "48499": {
       "fips": "48499",
@@ -5695,19 +6128,7 @@
       "name": "Yoakum County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 17 at 8:56PM CDT until May 18 at 10:00PM CDT by NWS Lubbock TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-17T20:56:00-05:00",
-            "expires": "2026-05-18T22:00:00-05:00",
-            "areaDesc": "Parmer; Castro; Swisher; Briscoe; Hall; Bailey; Lamb; Hale; Floyd; Motley; Cochran; Hockley; Lubbock; Crosby; Dickens; Yoakum; Terry; Lynn; Garza; Kent",
-            "id": "urn:oid:2.49.0.1.840.0.d7bed2cf355a424acada1d167113ebf7b66da961.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -5719,7 +6140,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48503": {
       "fips": "48503",
@@ -5745,14 +6166,7 @@
       "name": "Zapata County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -5764,7 +6178,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48507": {
       "fips": "48507",

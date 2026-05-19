@@ -1,10 +1,10 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-18T17:51:02.824574+00:00",
-  "date": "2026-05-18",
+  "generated_at": "2026-05-19T18:13:00.049920+00:00",
+  "date": "2026-05-19",
   "state": "AK",
   "counties_total": 30,
-  "counties_with_alerts": 4,
+  "counties_with_alerts": 6,
   "counties": {
     "02013": {
       "fips": "02013",
@@ -106,7 +106,20 @@
       "name": "Chugach Census Area",
       "state": "AK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.6\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          },
+          {
+            "event": "Heavy Snow Forecast",
+            "headline": "~12.5\" snow expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -118,7 +131,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "02066": {
       "fips": "02066",
@@ -128,7 +141,7 @@
         "weather": [
           {
             "event": "Extreme Cold Forecast",
-            "headline": "Apparent temperature expected to drop to -6.0°F in next 24h",
+            "headline": "Apparent temperature expected to drop to -7.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -265,7 +278,14 @@
       "name": "Kenai Peninsula Borough",
       "state": "AK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Snow Forecast",
+            "headline": "~9.1\" snow expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -277,7 +297,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "02130": {
       "fips": "02130",
@@ -325,13 +345,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 18 at 8:02AM AKDT until May 19 at 10:00PM AKDT by NWS Fairbanks AK",
+            "headline": "Flood Warning issued May 18 at 9:38AM AKDT until May 19 at 10:00PM AKDT by NWS Fairbanks AK",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T08:02:00-08:00",
+            "urgency": "Immediate",
+            "effective": "2026-05-18T09:38:00-08:00",
             "expires": "2026-05-19T22:00:00-08:00",
             "areaDesc": "Lower Yukon River",
-            "id": "urn:oid:2.49.0.1.840.0.e884e139aa4f109f1d1e1009794eabcf41e8347c.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.87dd0012abc9b4f418e8b53af2b1204ac6fc6dca.001.1",
             "source": "nws_alert"
           }
         ],
@@ -596,13 +616,24 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 17 at 8:12PM AKDT until May 18 at 10:00PM AKDT by NWS Fairbanks AK",
+            "headline": "Flood Warning issued May 18 at 9:37AM AKDT until May 19 at 10:00PM AKDT by NWS Fairbanks AK",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-05-17T20:12:00-08:00",
-            "expires": "2026-05-18T22:00:00-08:00",
-            "areaDesc": "Middle Yukon Valley",
-            "id": "urn:oid:2.49.0.1.840.0.6945a8562fef1f254796a29c4b06445e0cf648c6.001.1",
+            "effective": "2026-05-18T09:37:00-08:00",
+            "expires": "2026-05-19T22:00:00-08:00",
+            "areaDesc": "Lower Yukon and Innoko Valleys",
+            "id": "urn:oid:2.49.0.1.840.0.96d2986ff22e90b20863ddf32c51380d0edd133d.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued May 18 at 9:35AM AKDT until May 19 at 10:00PM AKDT by NWS Fairbanks AK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-05-18T09:35:00-08:00",
+            "expires": "2026-05-19T22:00:00-08:00",
+            "areaDesc": "Lower Yukon and Innoko Valleys",
+            "id": "urn:oid:2.49.0.1.840.0.c854e195f67dc9661e844291948211b2f4cd74dd.001.1",
             "source": "nws_alert"
           }
         ],
@@ -617,7 +648,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     }
   }
 }

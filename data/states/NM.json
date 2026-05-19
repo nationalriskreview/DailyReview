@@ -1,10 +1,10 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-18T17:51:02.824574+00:00",
-  "date": "2026-05-18",
+  "generated_at": "2026-05-19T18:13:00.049920+00:00",
+  "date": "2026-05-19",
   "state": "NM",
   "counties_total": 33,
-  "counties_with_alerts": 30,
+  "counties_with_alerts": 15,
   "counties": {
     "35001": {
       "fips": "35001",
@@ -14,13 +14,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
+            "headline": "Red Flag Warning issued May 19 at 1:03AM MDT until May 19 at 7:00PM MDT by NWS Albuquerque NM",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
+            "effective": "2026-05-19T01:03:00-06:00",
+            "expires": "2026-05-19T19:00:00-06:00",
+            "areaDesc": "Middle Rio Grande Valley",
+            "id": "urn:oid:2.49.0.1.840.0.abd76da893f9138ad8e84b9b7a12cfe64ea31ba6.001.1",
             "source": "nws_alert"
           }
         ],
@@ -42,30 +42,7 @@
       "name": "Catron County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 8:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Southwest Mountains; Southwest Deserts and Lowlands; South Central Lowlands And Southern Rio Grande Valley; El Paso",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -77,49 +54,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "35005": {
       "fips": "35005",
       "name": "Chaves County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:38AM CDT until May 18 at 9:00PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:38:00-05:00",
-            "expires": "2026-05-18T13:45:00-05:00",
-            "areaDesc": "Sacramento Foothills and Guadalupe Mountains; Chaves County Plains; Eddy Plains; Lea; Gaines; Dawson; Guadalupe Mountains Above 7000 Feet; Guadalupe and Delaware Mountains; Eastern Culberson County",
-            "id": "urn:oid:2.49.0.1.840.0.e684afed9326dc26c2457d5656c6a98e35cacb5e.002.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 11:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Capitan And Sacramento Mountains",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "SEVEN CABINS Wildfire, Lincoln, New Mexico",
+            "id": "EONET_20156",
+            "category": "wildfire",
+            "date": "2026-05-14T07:42:00Z",
+            "lat": 33.6064,
+            "lon": -105.3575,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/cee6fe44-48eb-42fa-b351-5f3d8dfe5a2f"
+            ],
+            "distance_miles": 30.3,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "35006": {
       "fips": "35006",
@@ -129,13 +97,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
+            "headline": "Red Flag Warning issued May 19 at 1:03AM MDT until May 19 at 7:00PM MDT by NWS Albuquerque NM",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
+            "effective": "2026-05-19T01:03:00-06:00",
+            "expires": "2026-05-19T19:00:00-06:00",
+            "areaDesc": "Middle Rio Grande Valley",
+            "id": "urn:oid:2.49.0.1.840.0.abd76da893f9138ad8e84b9b7a12cfe64ea31ba6.001.1",
             "source": "nws_alert"
           }
         ],
@@ -157,19 +125,7 @@
       "name": "Colfax County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -181,31 +137,33 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35009": {
       "fips": "35009",
       "name": "Curry County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Mimms Wildfire, Quay, New Mexico",
+            "id": "EONET_20186",
+            "category": "wildfire",
+            "date": "2026-05-14T18:06:00Z",
+            "lat": 34.8184,
+            "lon": -103.9346,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/df424a1d-f6d6-4095-8786-dd329a7fb229"
+            ],
+            "distance_miles": 37.5,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -219,24 +177,26 @@
       "name": "De Baca County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Mimms Wildfire, Quay, New Mexico",
+            "id": "EONET_20186",
+            "category": "wildfire",
+            "date": "2026-05-14T18:06:00Z",
+            "lat": 34.8184,
+            "lon": -103.9346,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/df424a1d-f6d6-4095-8786-dd329a7fb229"
+            ],
+            "distance_miles": 40.2,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -250,19 +210,7 @@
       "name": "DoÃ±a Ana County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 8:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Southwest Mountains; Southwest Deserts and Lowlands; South Central Lowlands And Southern Rio Grande Valley; El Paso",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -274,37 +222,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35015": {
       "fips": "35015",
       "name": "Eddy County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:38AM CDT until May 18 at 9:00PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:38:00-05:00",
-            "expires": "2026-05-18T13:45:00-05:00",
-            "areaDesc": "Sacramento Foothills and Guadalupe Mountains; Chaves County Plains; Eddy Plains; Lea; Gaines; Dawson; Guadalupe Mountains Above 7000 Feet; Guadalupe and Delaware Mountains; Eastern Culberson County",
-            "id": "urn:oid:2.49.0.1.840.0.e684afed9326dc26c2457d5656c6a98e35cacb5e.002.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 8:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Southwest Mountains; Southwest Deserts and Lowlands; South Central Lowlands And Southern Rio Grande Valley; El Paso",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -316,26 +241,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "35017": {
       "fips": "35017",
       "name": "Grant County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 8:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Southwest Mountains; Southwest Deserts and Lowlands; South Central Lowlands And Southern Rio Grande Valley; El Paso",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -347,31 +260,33 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35019": {
       "fips": "35019",
       "name": "Guadalupe County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Mimms Wildfire, Quay, New Mexico",
+            "id": "EONET_20186",
+            "category": "wildfire",
+            "date": "2026-05-14T18:06:00Z",
+            "lat": 34.8184,
+            "lon": -103.9346,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/df424a1d-f6d6-4095-8786-dd329a7fb229"
+            ],
+            "distance_miles": 48.4,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -385,24 +300,26 @@
       "name": "Harding County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Line Wildfire, Quay, New Mexico",
+            "id": "EONET_20187",
+            "category": "wildfire",
+            "date": "2026-05-14T20:17:00Z",
+            "lat": 35.4584,
+            "lon": -103.1274,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/bc32a0d5-e4e8-4553-b174-837c26c6e1ff"
+            ],
+            "distance_miles": 49.3,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -416,19 +333,7 @@
       "name": "Hidalgo County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 8:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Southwest Mountains; Southwest Deserts and Lowlands; South Central Lowlands And Southern Rio Grande Valley; El Paso",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -440,31 +345,52 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35025": {
       "fips": "35025",
       "name": "Lea County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:38AM CDT until May 18 at 9:00PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:38:00-05:00",
-            "expires": "2026-05-18T13:45:00-05:00",
-            "areaDesc": "Sacramento Foothills and Guadalupe Mountains; Chaves County Plains; Eddy Plains; Lea; Gaines; Dawson; Guadalupe Mountains Above 7000 Feet; Guadalupe and Delaware Mountains; Eastern Culberson County",
-            "id": "urn:oid:2.49.0.1.840.0.e684afed9326dc26c2457d5656c6a98e35cacb5e.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
+    "35027": {
+      "fips": "35027",
+      "name": "Lincoln County",
+      "state": "NM",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [
+          {
+            "title": "SEVEN CABINS Wildfire, Lincoln, New Mexico",
+            "id": "EONET_20156",
+            "category": "wildfire",
+            "date": "2026-05-14T07:42:00Z",
+            "lat": 33.6064,
+            "lon": -105.3575,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/cee6fe44-48eb-42fa-b351-5f3d8dfe5a2f"
+            ],
+            "distance_miles": 10.7,
+            "threat_level": "Immediate"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -472,70 +398,6 @@
         "disease": []
       },
       "alert_count": 1
-    },
-    "35027": {
-      "fips": "35027",
-      "name": "Lincoln County",
-      "state": "NM",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:38AM CDT until May 18 at 9:00PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:38:00-05:00",
-            "expires": "2026-05-18T13:45:00-05:00",
-            "areaDesc": "Sacramento Foothills and Guadalupe Mountains; Chaves County Plains; Eddy Plains; Lea; Gaines; Dawson; Guadalupe Mountains Above 7000 Feet; Guadalupe and Delaware Mountains; Eastern Culberson County",
-            "id": "urn:oid:2.49.0.1.840.0.e684afed9326dc26c2457d5656c6a98e35cacb5e.002.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 8:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Southwest Mountains; Southwest Deserts and Lowlands; South Central Lowlands And Southern Rio Grande Valley; El Paso",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.001.2",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 11:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Capitan And Sacramento Mountains",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.002.1",
-            "source": "nws_alert"
-          }
-        ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 4
     },
     "35028": {
       "fips": "35028",
@@ -561,19 +423,7 @@
       "name": "Luna County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 8:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Southwest Mountains; Southwest Deserts and Lowlands; South Central Lowlands And Southern Rio Grande Valley; El Paso",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -585,7 +435,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35031": {
       "fips": "35031",
@@ -611,19 +461,7 @@
       "name": "Mora County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -635,110 +473,93 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35035": {
       "fips": "35035",
       "name": "Otero County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:38AM CDT until May 18 at 9:00PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:38:00-05:00",
-            "expires": "2026-05-18T13:45:00-05:00",
-            "areaDesc": "Sacramento Foothills and Guadalupe Mountains; Chaves County Plains; Eddy Plains; Lea; Gaines; Dawson; Guadalupe Mountains Above 7000 Feet; Guadalupe and Delaware Mountains; Eastern Culberson County",
-            "id": "urn:oid:2.49.0.1.840.0.e684afed9326dc26c2457d5656c6a98e35cacb5e.002.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 8:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Southwest Mountains; Southwest Deserts and Lowlands; South Central Lowlands And Southern Rio Grande Valley; El Paso",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.001.2",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 11:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Capitan And Sacramento Mountains",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "SEVEN CABINS Wildfire, Lincoln, New Mexico",
+            "id": "EONET_20156",
+            "category": "wildfire",
+            "date": "2026-05-14T07:42:00Z",
+            "lat": 33.6064,
+            "lon": -105.3575,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/cee6fe44-48eb-42fa-b351-5f3d8dfe5a2f"
+            ],
+            "distance_miles": 47.2,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 1
     },
     "35037": {
       "fips": "35037",
       "name": "Quay County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Line Wildfire, Quay, New Mexico",
+            "id": "EONET_20187",
+            "category": "wildfire",
+            "date": "2026-05-14T20:17:00Z",
+            "lat": 35.4584,
+            "lon": -103.1274,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/bc32a0d5-e4e8-4553-b174-837c26c6e1ff"
+            ],
+            "distance_miles": 33.9,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Mimms Wildfire, Quay, New Mexico",
+            "id": "EONET_20186",
+            "category": "wildfire",
+            "date": "2026-05-14T18:06:00Z",
+            "lat": 34.8184,
+            "lon": -103.9346,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/df424a1d-f6d6-4095-8786-dd329a7fb229"
+            ],
+            "distance_miles": 29.6,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "35039": {
       "fips": "35039",
       "name": "Rio Arriba County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -750,26 +571,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35041": {
       "fips": "35041",
       "name": "Roosevelt County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -781,7 +590,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35043": {
       "fips": "35043",
@@ -791,13 +600,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
+            "headline": "Red Flag Warning issued May 19 at 1:03AM MDT until May 19 at 7:00PM MDT by NWS Albuquerque NM",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
+            "effective": "2026-05-19T01:03:00-06:00",
+            "expires": "2026-05-19T19:00:00-06:00",
+            "areaDesc": "Middle Rio Grande Valley",
+            "id": "urn:oid:2.49.0.1.840.0.abd76da893f9138ad8e84b9b7a12cfe64ea31ba6.001.1",
             "source": "nws_alert"
           }
         ],
@@ -838,19 +647,7 @@
       "name": "San Miguel County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -862,7 +659,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35049": {
       "fips": "35049",
@@ -872,13 +669,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
+            "headline": "Red Flag Warning issued May 19 at 1:03AM MDT until May 19 at 7:00PM MDT by NWS Albuquerque NM",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
+            "effective": "2026-05-19T01:03:00-06:00",
+            "expires": "2026-05-19T19:00:00-06:00",
+            "areaDesc": "Middle Rio Grande Valley",
+            "id": "urn:oid:2.49.0.1.840.0.abd76da893f9138ad8e84b9b7a12cfe64ea31ba6.001.1",
             "source": "nws_alert"
           }
         ],
@@ -900,19 +697,7 @@
       "name": "Sierra County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 12:04AM MDT until May 18 at 8:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T00:04:00-06:00",
-            "expires": "2026-05-18T20:00:00-06:00",
-            "areaDesc": "Southwest Mountains; Southwest Deserts and Lowlands; South Central Lowlands And Southern Rio Grande Valley; El Paso",
-            "id": "urn:oid:2.49.0.1.840.0.7ca8564230944a6085f819a16ad66c57d50661cb.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -924,7 +709,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35053": {
       "fips": "35053",
@@ -934,13 +719,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
+            "headline": "Red Flag Warning issued May 19 at 1:03AM MDT until May 19 at 7:00PM MDT by NWS Albuquerque NM",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
+            "effective": "2026-05-19T01:03:00-06:00",
+            "expires": "2026-05-19T19:00:00-06:00",
+            "areaDesc": "Middle Rio Grande Valley",
+            "id": "urn:oid:2.49.0.1.840.0.abd76da893f9138ad8e84b9b7a12cfe64ea31ba6.001.1",
             "source": "nws_alert"
           }
         ],
@@ -962,19 +747,7 @@
       "name": "Taos County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -986,7 +759,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35057": {
       "fips": "35057",
@@ -996,13 +769,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
+            "headline": "Red Flag Warning issued May 19 at 1:03AM MDT until May 19 at 7:00PM MDT by NWS Albuquerque NM",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
+            "effective": "2026-05-19T01:03:00-06:00",
+            "expires": "2026-05-19T19:00:00-06:00",
+            "areaDesc": "Middle Rio Grande Valley",
+            "id": "urn:oid:2.49.0.1.840.0.abd76da893f9138ad8e84b9b7a12cfe64ea31ba6.001.1",
             "source": "nws_alert"
           }
         ],
@@ -1024,19 +797,7 @@
       "name": "Union County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1048,7 +809,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35061": {
       "fips": "35061",
@@ -1058,13 +819,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:36AM MDT until May 18 at 9:00PM MDT by NWS Albuquerque NM",
+            "headline": "Red Flag Warning issued May 19 at 1:03AM MDT until May 19 at 7:00PM MDT by NWS Albuquerque NM",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-05-18T01:36:00-06:00",
-            "expires": "2026-05-18T21:00:00-06:00",
-            "areaDesc": "Northeast Plains; Middle Rio Grande Valley; West Central Basin and Range; Upper Rio Grande Valley and Lower Chama River Valley; Sangre de Cristo Mountains; Northeast Highlands; Sandia and Manzano Mountains; Central Highlands; East Central Plains",
-            "id": "urn:oid:2.49.0.1.840.0.4a40a53800f4c751343964cac10cec46e7bc1bf8.001.1",
+            "effective": "2026-05-19T01:03:00-06:00",
+            "expires": "2026-05-19T19:00:00-06:00",
+            "areaDesc": "Middle Rio Grande Valley",
+            "id": "urn:oid:2.49.0.1.840.0.abd76da893f9138ad8e84b9b7a12cfe64ea31ba6.001.1",
             "source": "nws_alert"
           }
         ],
