@@ -1,10 +1,10 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-18T17:51:02.824574+00:00",
-  "date": "2026-05-18",
+  "generated_at": "2026-05-19T18:13:00.049920+00:00",
+  "date": "2026-05-19",
   "state": "CO",
   "counties_total": 64,
-  "counties_with_alerts": 17,
+  "counties_with_alerts": 5,
   "counties": {
     "08001": {
       "fips": "08001",
@@ -30,30 +30,7 @@
       "name": "Alamosa County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "High Wind Warning",
-            "headline": "High Wind Warning issued May 18 at 11:11AM MDT until May 18 at 4:00PM MDT by NWS Pueblo CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T11:11:00-06:00",
-            "expires": "2026-05-18T18:00:00-06:00",
-            "areaDesc": "Alamosa  Vicinity/Central San Luis Valley Below 8500 Ft; Southern San Luis Valley",
-            "id": "urn:oid:2.49.0.1.840.0.198002643bfc2bc07fc10165e441c7ac15bbeca7.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Blowing Dust Warning",
-            "headline": "Blowing Dust Warning issued May 18 at 11:11AM MDT until May 18 at 6:00PM MDT by NWS Pueblo CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T11:11:00-06:00",
-            "expires": "2026-05-18T18:00:00-06:00",
-            "areaDesc": "Alamosa  Vicinity/Central San Luis Valley Below 8500 Ft; Southern San Luis Valley",
-            "id": "urn:oid:2.49.0.1.840.0.198002643bfc2bc07fc10165e441c7ac15bbeca7.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65,7 +42,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "08005": {
       "fips": "08005",
@@ -110,31 +87,85 @@
       "name": "Baca County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:04AM MDT until May 18 at 8:00PM MDT by NWS Pueblo CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:04:00-06:00",
-            "expires": "2026-05-18T17:15:00-06:00",
-            "areaDesc": "Baca County Including Springfield and Eastern Comanche Grasslands",
-            "id": "urn:oid:2.49.0.1.840.0.20a4d1c100ba605a68f82bd11807327b3601bd37.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Sharpe Wildfire, Baca, Colorado",
+            "id": "EONET_20162",
+            "category": "wildfire",
+            "date": "2026-05-17T15:37:00Z",
+            "lat": 36.9968,
+            "lon": -102.6244,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/59686f08-125a-4dc7-91e9-af37f0968ccd"
+            ],
+            "distance_miles": 22.1,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Sharpe Wildfire, Cimarron, Oklahoma",
+            "id": "EONET_20163",
+            "category": "wildfire",
+            "date": "2026-05-16T20:54:00Z",
+            "lat": 36.8933,
+            "lon": -102.6667,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/6122eacf-706c-45a8-91b4-4f9eccf25098"
+            ],
+            "distance_miles": 29.6,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Tex-OK Wildfire, Cimarron, Oklahoma",
+            "id": "EONET_20165",
+            "category": "wildfire",
+            "date": "2026-05-16T09:28:00Z",
+            "lat": 36.6364,
+            "lon": -102.4322,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/e27ccb2e-b913-4916-a414-3bfe748138c7"
+            ],
+            "distance_miles": 46.9,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Ballard Wildfire, Cimarron, Oklahoma",
+            "id": "EONET_20164",
+            "category": "wildfire",
+            "date": "2026-05-15T17:32:00Z",
+            "lat": 36.9572,
+            "lon": -102.3725,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/21470b85-a0a9-4dc0-bfb4-6723802bff2e"
+            ],
+            "distance_miles": 26.1,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "51 Wildfire, Morton, Kansas",
+            "id": "EONET_20155",
+            "category": "wildfire",
+            "date": "2026-05-14T18:17:00Z",
+            "lat": 37.1806,
+            "lon": -101.6552,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/c2dcb1c7-e144-4031-9c3b-0d9d3438ab58"
+            ],
+            "distance_miles": 49.7,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 5
     },
     "08011": {
       "fips": "08011",
@@ -160,19 +191,7 @@
       "name": "Boulder County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued May 18 at 9:06AM MDT until May 18 at 9:00PM MDT by NWS Denver CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T09:06:00-06:00",
-            "expires": "2026-05-18T17:15:00-06:00",
-            "areaDesc": "South and East Jackson/Larimer/North and Northeast Grand/Northwest Boulder Counties Above 9000 Feet",
-            "id": "urn:oid:2.49.0.1.840.0.9c53389fa0fa0b5a0ae1f74fa9b2719024e91559.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -184,7 +203,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "08014": {
       "fips": "08014",
@@ -248,14 +267,7 @@
       "name": "Clear Creek County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Snow Forecast",
-            "headline": "~7.8\" snow expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -267,37 +279,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "08021": {
       "fips": "08021",
       "name": "Conejos County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "High Wind Warning",
-            "headline": "High Wind Warning issued May 18 at 11:11AM MDT until May 18 at 4:00PM MDT by NWS Pueblo CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T11:11:00-06:00",
-            "expires": "2026-05-18T18:00:00-06:00",
-            "areaDesc": "Alamosa  Vicinity/Central San Luis Valley Below 8500 Ft; Southern San Luis Valley",
-            "id": "urn:oid:2.49.0.1.840.0.198002643bfc2bc07fc10165e441c7ac15bbeca7.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Blowing Dust Warning",
-            "headline": "Blowing Dust Warning issued May 18 at 11:11AM MDT until May 18 at 6:00PM MDT by NWS Pueblo CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T11:11:00-06:00",
-            "expires": "2026-05-18T18:00:00-06:00",
-            "areaDesc": "Alamosa  Vicinity/Central San Luis Valley Below 8500 Ft; Southern San Luis Valley",
-            "id": "urn:oid:2.49.0.1.840.0.198002643bfc2bc07fc10165e441c7ac15bbeca7.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -309,37 +298,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "08023": {
       "fips": "08023",
       "name": "Costilla County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "High Wind Warning",
-            "headline": "High Wind Warning issued May 18 at 11:11AM MDT until May 18 at 4:00PM MDT by NWS Pueblo CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T11:11:00-06:00",
-            "expires": "2026-05-18T18:00:00-06:00",
-            "areaDesc": "Alamosa  Vicinity/Central San Luis Valley Below 8500 Ft; Southern San Luis Valley",
-            "id": "urn:oid:2.49.0.1.840.0.198002643bfc2bc07fc10165e441c7ac15bbeca7.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Blowing Dust Warning",
-            "headline": "Blowing Dust Warning issued May 18 at 11:11AM MDT until May 18 at 6:00PM MDT by NWS Pueblo CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T11:11:00-06:00",
-            "expires": "2026-05-18T18:00:00-06:00",
-            "areaDesc": "Alamosa  Vicinity/Central San Luis Valley Below 8500 Ft; Southern San Luis Valley",
-            "id": "urn:oid:2.49.0.1.840.0.198002643bfc2bc07fc10165e441c7ac15bbeca7.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -351,7 +317,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "08025": {
       "fips": "08025",
@@ -551,13 +517,13 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued May 18 at 10:50AM MDT until May 19 at 10:00AM MDT by NWS Grand Junction CO",
+            "headline": "Freeze Warning issued May 19 at 9:19AM MDT until May 20 at 9:00AM MDT by NWS Grand Junction CO",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-05-18T10:50:00-06:00",
-            "expires": "2026-05-19T07:00:00-06:00",
+            "effective": "2026-05-19T09:19:00-06:00",
+            "expires": "2026-05-19T22:00:00-06:00",
             "areaDesc": "Lower Yampa River Basin; Central Yampa River Basin",
-            "id": "urn:oid:2.49.0.1.840.0.0a2acdb4e7203c05824325fe1301c4acc2d464a1.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.945807725ba11d9c322e91b3bf4fc7b05f68966f.001.2",
             "source": "nws_alert"
           }
         ],
@@ -579,14 +545,7 @@
       "name": "Gilpin County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Snow Forecast",
-            "headline": "~7.4\" snow expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -598,26 +557,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "08049": {
       "fips": "08049",
       "name": "Grand County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued May 18 at 9:06AM MDT until May 18 at 9:00PM MDT by NWS Denver CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T09:06:00-06:00",
-            "expires": "2026-05-18T17:15:00-06:00",
-            "areaDesc": "South and East Jackson/Larimer/North and Northeast Grand/Northwest Boulder Counties Above 9000 Feet",
-            "id": "urn:oid:2.49.0.1.840.0.9c53389fa0fa0b5a0ae1f74fa9b2719024e91559.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -629,7 +576,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "08051": {
       "fips": "08051",
@@ -693,19 +640,7 @@
       "name": "Jackson County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued May 18 at 9:06AM MDT until May 18 at 9:00PM MDT by NWS Denver CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T09:06:00-06:00",
-            "expires": "2026-05-18T17:15:00-06:00",
-            "areaDesc": "South and East Jackson/Larimer/North and Northeast Grand/Northwest Boulder Counties Above 9000 Feet",
-            "id": "urn:oid:2.49.0.1.840.0.9c53389fa0fa0b5a0ae1f74fa9b2719024e91559.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -717,7 +652,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "08059": {
       "fips": "08059",
@@ -819,19 +754,7 @@
       "name": "Larimer County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued May 18 at 9:06AM MDT until May 18 at 9:00PM MDT by NWS Denver CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T09:06:00-06:00",
-            "expires": "2026-05-18T17:15:00-06:00",
-            "areaDesc": "South and East Jackson/Larimer/North and Northeast Grand/Northwest Boulder Counties Above 9000 Feet",
-            "id": "urn:oid:2.49.0.1.840.0.9c53389fa0fa0b5a0ae1f74fa9b2719024e91559.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -843,26 +766,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "08071": {
       "fips": "08071",
       "name": "Las Animas County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued May 18 at 1:04AM MDT until May 18 at 8:00PM MDT by NWS Pueblo CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T01:04:00-06:00",
-            "expires": "2026-05-18T17:15:00-06:00",
-            "areaDesc": "Western Las Animas County Including Trinidad and Thatcher; Eastern Las Animas County Including Pinon Canyon",
-            "id": "urn:oid:2.49.0.1.840.0.20a4d1c100ba605a68f82bd11807327b3601bd37.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -874,7 +785,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "08073": {
       "fips": "08073",
@@ -960,13 +871,13 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued May 18 at 10:50AM MDT until May 19 at 10:00AM MDT by NWS Grand Junction CO",
+            "headline": "Freeze Warning issued May 19 at 9:19AM MDT until May 20 at 9:00AM MDT by NWS Grand Junction CO",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-05-18T10:50:00-06:00",
-            "expires": "2026-05-19T07:00:00-06:00",
+            "effective": "2026-05-19T09:19:00-06:00",
+            "expires": "2026-05-19T22:00:00-06:00",
             "areaDesc": "Lower Yampa River Basin; Central Yampa River Basin",
-            "id": "urn:oid:2.49.0.1.840.0.0a2acdb4e7203c05824325fe1301c4acc2d464a1.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.945807725ba11d9c322e91b3bf4fc7b05f68966f.001.2",
             "source": "nws_alert"
           }
         ],
@@ -1181,13 +1092,13 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued May 18 at 10:50AM MDT until May 19 at 10:00AM MDT by NWS Grand Junction CO",
+            "headline": "Freeze Warning issued May 19 at 9:19AM MDT until May 20 at 9:00AM MDT by NWS Grand Junction CO",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-05-18T10:50:00-06:00",
-            "expires": "2026-05-19T07:00:00-06:00",
+            "effective": "2026-05-19T09:19:00-06:00",
+            "expires": "2026-05-19T22:00:00-06:00",
             "areaDesc": "Lower Yampa River Basin; Central Yampa River Basin",
-            "id": "urn:oid:2.49.0.1.840.0.0a2acdb4e7203c05824325fe1301c4acc2d464a1.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.945807725ba11d9c322e91b3bf4fc7b05f68966f.001.2",
             "source": "nws_alert"
           }
         ],
@@ -1209,41 +1120,7 @@
       "name": "Rio Grande County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "High Wind Warning",
-            "headline": "High Wind Warning issued May 18 at 11:11AM MDT until May 18 at 4:00PM MDT by NWS Pueblo CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T11:11:00-06:00",
-            "expires": "2026-05-18T18:00:00-06:00",
-            "areaDesc": "Alamosa  Vicinity/Central San Luis Valley Below 8500 Ft; Southern San Luis Valley",
-            "id": "urn:oid:2.49.0.1.840.0.198002643bfc2bc07fc10165e441c7ac15bbeca7.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Blowing Dust Warning",
-            "headline": "Blowing Dust Warning issued May 18 at 11:11AM MDT until May 18 at 6:00PM MDT by NWS Pueblo CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T11:11:00-06:00",
-            "expires": "2026-05-18T18:00:00-06:00",
-            "areaDesc": "Del Norte Vicinity/Northern San Luis Valley Below 8500 Ft",
-            "id": "urn:oid:2.49.0.1.840.0.198002643bfc2bc07fc10165e441c7ac15bbeca7.002.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Blowing Dust Warning",
-            "headline": "Blowing Dust Warning issued May 18 at 11:11AM MDT until May 18 at 6:00PM MDT by NWS Pueblo CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T11:11:00-06:00",
-            "expires": "2026-05-18T18:00:00-06:00",
-            "areaDesc": "Alamosa  Vicinity/Central San Luis Valley Below 8500 Ft; Southern San Luis Valley",
-            "id": "urn:oid:2.49.0.1.840.0.198002643bfc2bc07fc10165e441c7ac15bbeca7.001.2",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1255,7 +1132,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 0
     },
     "08107": {
       "fips": "08107",
@@ -1265,13 +1142,13 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued May 18 at 10:50AM MDT until May 19 at 10:00AM MDT by NWS Grand Junction CO",
+            "headline": "Freeze Warning issued May 19 at 9:19AM MDT until May 20 at 9:00AM MDT by NWS Grand Junction CO",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-05-18T10:50:00-06:00",
-            "expires": "2026-05-19T07:00:00-06:00",
+            "effective": "2026-05-19T09:19:00-06:00",
+            "expires": "2026-05-19T22:00:00-06:00",
             "areaDesc": "Lower Yampa River Basin; Central Yampa River Basin",
-            "id": "urn:oid:2.49.0.1.840.0.0a2acdb4e7203c05824325fe1301c4acc2d464a1.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.945807725ba11d9c322e91b3bf4fc7b05f68966f.001.2",
             "source": "nws_alert"
           }
         ],
@@ -1293,19 +1170,7 @@
       "name": "Saguache County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "Blowing Dust Warning",
-            "headline": "Blowing Dust Warning issued May 18 at 11:11AM MDT until May 18 at 6:00PM MDT by NWS Pueblo CO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-18T11:11:00-06:00",
-            "expires": "2026-05-18T18:00:00-06:00",
-            "areaDesc": "Del Norte Vicinity/Northern San Luis Valley Below 8500 Ft",
-            "id": "urn:oid:2.49.0.1.840.0.198002643bfc2bc07fc10165e441c7ac15bbeca7.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1317,7 +1182,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "08111": {
       "fips": "08111",

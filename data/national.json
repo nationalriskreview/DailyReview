@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-18T17:51:02.824574+00:00",
-  "date": "2026-05-18",
+  "generated_at": "2026-05-19T18:13:00.049920+00:00",
+  "date": "2026-05-19",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,43 +11,43 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 251
+      "counties_with_alerts": 170
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 2994,
-      "counties_over_threshold": 186
+      "counties_queried": 3078,
+      "counties_over_threshold": 63
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 37,
+      "counties_with_matches": 79,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 85,
-        "utility_outage": 17,
-        "transit_disruption": 128
+        "protest": 165,
+        "utility_outage": 59,
+        "transit_disruption": 170
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 21,
+      "counties_with_matches": 61,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 4,
-        "utility_outage": 10,
-        "transit_disruption": 35
+        "protest": 13,
+        "utility_outage": 59,
+        "transit_disruption": 23
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 114
+      "counties_with_alerts": 207
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 4,
-      "counties_with_alerts": 18,
+      "items_total": 2,
+      "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
@@ -65,13 +65,13 @@
           "id": "mta-lirr",
           "name": "MTA Long Island Rail Road",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "mta-mnr",
           "name": "MTA Metro-North Railroad",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "path",
@@ -119,7 +119,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 12
+      "counties_with_alerts": 0
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 2
+      "items": 3
     },
     "disease_wastewater": {
       "status": "ok",
@@ -140,12 +140,19 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 2,
+      "counties_with_alerts": 19
     }
   },
   "cdc_han": [],
   "who_don": [
+    {
+      "title": "Director-General presents Award for Global Health to four distinguished leaders",
+      "url": "https://www.who.int/news/item/18-05-2026-director-general-presents-award-for-global-health-to-four-distinguished-leaders",
+      "published": "Mon, 18 May 2026 13:30:25 Z",
+      "summary": "<p>At the Seventy-ninth World Health Assembly in Geneva, WHO Director-General Dr Tedros Adhanom Ghebreyesus has presented four distinguished leaders with the Award for Global Health, recognizing their lifetime achievements and exceptional contributions to improving the health and well-being of communities worldwide.</p><p>This year&rsquo;s laureates are Dr Tore Godal, Dr Merceline Dahl-Regis, Dr Mike Ryan and Dr Heba El Sewedy. They were celebrated during the High-Level Welcome of the World Heal",
+      "source": "WHO News (outbreak-filtered)"
+    },
     {
       "title": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
       "url": "https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern",
@@ -162,5 +169,26 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": []
+  "faa_advisories": [
+    {
+      "kind": "ground_stop",
+      "code": "IAH",
+      "name": "George Bush Intercontinental",
+      "city": "Houston",
+      "state": "TX",
+      "reason": "disabled aircraft on the runway",
+      "end": "1:45 pm CDT",
+      "source": "FAA NAS Status"
+    },
+    {
+      "kind": "ground_stop",
+      "code": "DFW",
+      "name": "Dallas/Fort Worth Intl",
+      "city": "Dallas/Fort Worth",
+      "state": "TX",
+      "reason": "thunderstorms",
+      "end": "2:00 pm CDT",
+      "source": "FAA NAS Status"
+    }
+  ]
 }
