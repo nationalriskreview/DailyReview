@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-20T18:25:32.973715+00:00",
-  "date": "2026-05-20",
+  "generated_at": "2026-05-21T17:39:39.089694+00:00",
+  "date": "2026-05-21",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,31 +11,31 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 107
+      "counties_with_alerts": 96
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3147,
-      "counties_over_threshold": 47
+      "counties_queried": 3148,
+      "counties_over_threshold": 50
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 53,
+      "counties_with_matches": 57,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 110,
-        "utility_outage": 42,
-        "transit_disruption": 6
+        "protest": 154,
+        "utility_outage": 28,
+        "transit_disruption": 5
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 22,
+      "counties_with_matches": 23,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 0,
-        "utility_outage": 30,
-        "transit_disruption": 1
+        "protest": 3,
+        "utility_outage": 26,
+        "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
@@ -119,7 +119,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 14
+      "counties_with_alerts": 15
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -140,12 +140,19 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 10
+      "national_items": 0,
+      "counties_with_alerts": 0
     }
   },
   "cdc_han": [],
   "who_don": [
+    {
+      "title": "Seventy-ninth World Health Assembly honours global champions advancing primary health care",
+      "url": "https://www.who.int/news/item/20-05-2026-seventy-ninth-world-health-assembly-honours-global-champions-advancing-primary-health-care",
+      "published": "Wed, 20 May 2026 10:57:07 Z",
+      "summary": "<p>Today, the World Health Assembly recognized individuals and institutions whose contributions to global health have gone far beyond the call of duty. <a href=\"https://www.who.int/news-room/feature-stories/detail/primary-health-care-champions-celebrated-at-the-seventy-ninth-world-health-assembly\">Six laureates</a> representing diverse backgrounds and contexts were honoured by the President of the Seventy-ninth World Health Assembly, Dr V&iacute;ctor Elias Atallah Lajam of Dominican Republic, to",
+      "source": "WHO News (outbreak-filtered)"
+    },
     {
       "title": "Director-General presents Award for Global Health to four distinguished leaders",
       "url": "https://www.who.int/news/item/18-05-2026-director-general-presents-award-for-global-health-to-four-distinguished-leaders",
@@ -159,26 +166,8 @@
       "published": "Sat, 16 May 2026 23:21:17 Z",
       "summary": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
       "source": "WHO News (outbreak-filtered)"
-    },
-    {
-      "title": "Follow-up message by the WHO Director-General to the people of Tenerife regarding the hantavirus response",
-      "url": "https://www.who.int/news/item/14-05-2026-follow-up-message-by-the-who-director-general-to-the-people-of-tenerife-regarding-the-hantavirus-response",
-      "published": "Thu, 14 May 2026 13:27:15 Z",
-      "summary": "A message from the Director-General of the World Health Organization expressing gratitude to the people of Tenerife for their solidarity and successful cooperation during the operation to safely disembark and care for over 120 passengers from 23 countries amid an outbreak of hantavirus.",
-      "source": "WHO News (outbreak-filtered)"
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "ground_stop",
-      "code": "PHL",
-      "name": "Philadelphia Intl",
-      "city": "Philadelphia",
-      "state": "PA",
-      "reason": "thunderstorms",
-      "end": "3:15 pm EDT",
-      "source": "FAA NAS Status"
-    }
-  ]
+  "faa_advisories": []
 }
