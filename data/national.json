@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-23T11:48:19.784216+00:00",
-  "date": "2026-05-23",
+  "generated_at": "2026-05-24T11:54:54.881646+00:00",
+  "date": "2026-05-24",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,30 +11,30 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 93
+      "counties_with_alerts": 78
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3151,
-      "counties_over_threshold": 168
+      "counties_queried": 3182,
+      "counties_over_threshold": 57
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 8,
+      "counties_with_matches": 2,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 3,
-        "utility_outage": 6,
-        "transit_disruption": 3
+        "protest": 2,
+        "utility_outage": 0,
+        "transit_disruption": 0
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 4,
+      "counties_with_matches": 0,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 4,
+        "utility_outage": 0,
         "transit_disruption": 0
       }
     },
@@ -46,8 +46,8 @@
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 2,
-      "counties_with_alerts": 5,
+      "items_total": 3,
+      "counties_with_alerts": 10,
       "agencies": [
         {
           "id": "mbta",
@@ -59,7 +59,7 @@
           "id": "mta-subway",
           "name": "MTA NYC Subway",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "id": "mta-lirr",
@@ -119,7 +119,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 10
+      "counties_with_alerts": 4
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 4
+      "items": 3
     },
     "disease_wastewater": {
       "status": "ok",
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 1,
+      "counties_with_alerts": 9
     }
   },
   "cdc_han": [],
@@ -166,15 +166,19 @@
       "published": "Mon, 18 May 2026 13:30:25 Z",
       "summary": "<p>At the Seventy-ninth World Health Assembly in Geneva, WHO Director-General Dr Tedros Adhanom Ghebreyesus has presented four distinguished leaders with the Award for Global Health, recognizing their lifetime achievements and exceptional contributions to improving the health and well-being of communities worldwide.</p><p>This year&rsquo;s laureates are Dr Tore Godal, Dr Merceline Dahl-Regis, Dr Mike Ryan and Dr Heba El Sewedy. They were celebrated during the High-Level Welcome of the World Heal",
       "source": "WHO News (outbreak-filtered)"
-    },
-    {
-      "title": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
-      "url": "https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern",
-      "published": "Sat, 16 May 2026 23:21:17 Z",
-      "summary": "Epidemic of Ebola Disease caused by Bundibugyo virus in the Democratic Republic of the Congo and Uganda determined a public health emergency of international concern",
-      "source": "WHO News (outbreak-filtered)"
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": []
+  "faa_advisories": [
+    {
+      "kind": "ground_stop",
+      "code": "ORD",
+      "name": "Chicago O'Hare Intl",
+      "city": "Chicago",
+      "state": "IL",
+      "reason": "thunderstorms",
+      "end": "8:00 am CDT",
+      "source": "FAA NAS Status"
+    }
+  ]
 }
