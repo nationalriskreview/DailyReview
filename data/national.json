@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-24T11:54:54.881646+00:00",
-  "date": "2026-05-24",
+  "generated_at": "2026-05-25T16:18:17.624684+00:00",
+  "date": "2026-05-25",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,43 +11,43 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 78
+      "counties_with_alerts": 101
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3182,
-      "counties_over_threshold": 57
+      "counties_queried": 3163,
+      "counties_over_threshold": 46
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 2,
+      "counties_with_matches": 10,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 2,
-        "utility_outage": 0,
+        "protest": 8,
+        "utility_outage": 4,
         "transit_disruption": 0
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 0,
+      "counties_with_matches": 1,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 0,
+        "utility_outage": 1,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 199
+      "counties_with_alerts": 187
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 3,
-      "counties_with_alerts": 10,
+      "items_total": 2,
+      "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
@@ -59,7 +59,7 @@
           "id": "mta-subway",
           "name": "MTA NYC Subway",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "mta-lirr",
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 3
+      "items": 2
     },
     "disease_wastewater": {
       "status": "ok",
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 9
+      "national_items": 0,
+      "counties_with_alerts": 0
     }
   },
   "cdc_han": [],
@@ -159,26 +159,8 @@
       "published": "Wed, 20 May 2026 10:57:07 Z",
       "summary": "<p>Today, the World Health Assembly recognized individuals and institutions whose contributions to global health have gone far beyond the call of duty. <a href=\"https://www.who.int/news-room/feature-stories/detail/primary-health-care-champions-celebrated-at-the-seventy-ninth-world-health-assembly\">Six laureates</a> representing diverse backgrounds and contexts were honoured by the President of the Seventy-ninth World Health Assembly, Dr V&iacute;ctor Elias Atallah Lajam of Dominican Republic, to",
       "source": "WHO News (outbreak-filtered)"
-    },
-    {
-      "title": "Director-General presents Award for Global Health to four distinguished leaders",
-      "url": "https://www.who.int/news/item/18-05-2026-director-general-presents-award-for-global-health-to-four-distinguished-leaders",
-      "published": "Mon, 18 May 2026 13:30:25 Z",
-      "summary": "<p>At the Seventy-ninth World Health Assembly in Geneva, WHO Director-General Dr Tedros Adhanom Ghebreyesus has presented four distinguished leaders with the Award for Global Health, recognizing their lifetime achievements and exceptional contributions to improving the health and well-being of communities worldwide.</p><p>This year&rsquo;s laureates are Dr Tore Godal, Dr Merceline Dahl-Regis, Dr Mike Ryan and Dr Heba El Sewedy. They were celebrated during the High-Level Welcome of the World Heal",
-      "source": "WHO News (outbreak-filtered)"
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "ground_stop",
-      "code": "ORD",
-      "name": "Chicago O'Hare Intl",
-      "city": "Chicago",
-      "state": "IL",
-      "reason": "thunderstorms",
-      "end": "8:00 am CDT",
-      "source": "FAA NAS Status"
-    }
-  ]
+  "faa_advisories": []
 }
