@@ -1,10 +1,10 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-26T18:16:52.287213+00:00",
-  "date": "2026-05-26",
+  "generated_at": "2026-05-27T18:19:56.466279+00:00",
+  "date": "2026-05-27",
   "state": "IL",
   "counties_total": 102,
-  "counties_with_alerts": 0,
+  "counties_with_alerts": 1,
   "counties": {
     "17001": {
       "fips": "17001",
@@ -302,13 +302,46 @@
         "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "CTA 'L'",
+            "agency_id": "cta-rail",
+            "route": "Pink Line",
+            "system_outage": false,
+            "effect": "NO_SERVICE",
+            "header": "No trains between Clinton and Polk",
+            "description": "Pink Line service has been temporarily suspended between Clinton and Polk due to a raised bridge at the Chicago River, downtown.",
+            "start": "2026-05-27T11:37:00",
+            "end": "",
+            "source": {
+              "#cdata-section": "http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=115175"
+            },
+            "alert_id": "115175",
+            "severity_score": "84"
+          },
+          {
+            "agency": "CTA 'L'",
+            "agency_id": "cta-rail",
+            "route": "Green Line",
+            "system_outage": false,
+            "effect": "NO_SERVICE",
+            "header": "No trains between Clinton and Clark/Lake",
+            "description": "Green Line service has been temporarily suspended between Clinton and Clark/Lake due to a raised bridge at the Chicago River, downtown.",
+            "start": "2026-05-27T11:47:00",
+            "end": "",
+            "source": {
+              "#cdata-section": "http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=115176"
+            },
+            "alert_id": "115176",
+            "severity_score": "84"
+          }
+        ],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "17033": {
       "fips": "17033",
