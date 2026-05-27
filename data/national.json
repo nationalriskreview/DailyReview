@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-26T18:16:52.287213+00:00",
-  "date": "2026-05-26",
+  "generated_at": "2026-05-27T18:19:56.466279+00:00",
+  "date": "2026-05-27",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,43 +11,43 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 92
+      "counties_with_alerts": 105
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3149,
-      "counties_over_threshold": 49
+      "counties_queried": 3130,
+      "counties_over_threshold": 32
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 18,
+      "counties_with_matches": 35,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 31,
-        "utility_outage": 3,
-        "transit_disruption": 3
+        "protest": 45,
+        "utility_outage": 30,
+        "transit_disruption": 0
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 4,
+      "counties_with_matches": 6,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 0,
-        "utility_outage": 2,
-        "transit_disruption": 2
+        "protest": 1,
+        "utility_outage": 5,
+        "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 144
+      "counties_with_alerts": 188
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 3,
-      "counties_with_alerts": 5,
+      "items_total": 5,
+      "counties_with_alerts": 6,
       "agencies": [
         {
           "id": "mbta",
@@ -95,7 +95,7 @@
           "id": "cta-rail",
           "name": "CTA 'L'",
           "status": "ok",
-          "items": 0
+          "items": 2
         },
         {
           "id": "metra",
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 2
+      "items": 1
     },
     "disease_wastewater": {
       "status": "ok",
@@ -151,13 +151,6 @@
       "url": "https://www.who.int/news/item/22-05-2026-first-meeting-of-the-ihr-emergency-committee-regarding-the-epidemic-of-ebola-bundibugyo-virus-disease-in-the-democratic-republic-of-the-congo-and-uganda-2026-temporary-recommendations",
       "published": "Fri, 22 May 2026 15:22:03 Z",
       "summary": "The Committee’s advice aligned with the determination by the WHO Director-General that the event constitutes a public health emergency of international concern (PHEIC), but does not meet the criteria for pandemic emergency. The DG, considering the advice of the Committee, he is hereby issuing the following temporary recommendations to all States Parties.",
-      "source": "WHO News (outbreak-filtered)"
-    },
-    {
-      "title": "Seventy-ninth World Health Assembly honours global champions advancing primary health care",
-      "url": "https://www.who.int/news/item/20-05-2026-seventy-ninth-world-health-assembly-honours-global-champions-advancing-primary-health-care",
-      "published": "Wed, 20 May 2026 10:57:07 Z",
-      "summary": "<p>Today, the World Health Assembly recognized individuals and institutions whose contributions to global health have gone far beyond the call of duty. <a href=\"https://www.who.int/news-room/feature-stories/detail/primary-health-care-champions-celebrated-at-the-seventy-ninth-world-health-assembly\">Six laureates</a> representing diverse backgrounds and contexts were honoured by the President of the Seventy-ninth World Health Assembly, Dr V&iacute;ctor Elias Atallah Lajam of Dominican Republic, to",
       "source": "WHO News (outbreak-filtered)"
     }
   ],
