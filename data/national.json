@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-28T18:33:57.518068+00:00",
-  "date": "2026-05-28",
+  "generated_at": "2026-05-29T18:36:48.777158+00:00",
+  "date": "2026-05-29",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,49 +11,49 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 113
+      "counties_with_alerts": 101
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3115,
-      "counties_over_threshold": 51
+      "counties_queried": 3159,
+      "counties_over_threshold": 16
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 32,
+      "counties_with_matches": 46,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 58,
-        "utility_outage": 5,
-        "transit_disruption": 2
+        "protest": 122,
+        "utility_outage": 20,
+        "transit_disruption": 12
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 5,
+      "counties_with_matches": 12,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 5,
-        "transit_disruption": 0
+        "utility_outage": 13,
+        "transit_disruption": 3
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 151
+      "counties_with_alerts": 144
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 3,
+      "items_total": 4,
       "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 3
+          "items": 4
         },
         {
           "id": "mta-subway",
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 1
+      "items": 2
     },
     "disease_wastewater": {
       "status": "ok",
@@ -147,10 +147,17 @@
   "cdc_han": [],
   "who_don": [
     {
-      "title": "First meeting of the IHR Emergency Committee regarding the epidemic of Ebola Bundibugyo virus disease in the Democratic Republic of the Congo and Uganda 2026 – Temporary recommendations",
-      "url": "https://www.who.int/news/item/22-05-2026-first-meeting-of-the-ihr-emergency-committee-regarding-the-epidemic-of-ebola-bundibugyo-virus-disease-in-the-democratic-republic-of-the-congo-and-uganda-2026-temporary-recommendations",
-      "published": "Fri, 22 May 2026 15:22:03 Z",
-      "summary": "The Committee’s advice aligned with the determination by the WHO Director-General that the event constitutes a public health emergency of international concern (PHEIC), but does not meet the criteria for pandemic emergency. The DG, considering the advice of the Committee, he is hereby issuing the following temporary recommendations to all States Parties.",
+      "title": "Experts convened by WHO advise on candidate treatments and vaccines for Ebola disease caused by Bundibugyo virus",
+      "url": "https://www.who.int/news/item/28-05-2026-experts-convened-by-who-advise-on-candidate-treatments-and-vaccines-for-ebola-disease-caused-by-bundibugyo-virus",
+      "published": "Thu, 28 May 2026 19:10:18 Z",
+      "summary": "In response to the current outbreak of Ebola disease caused by Bundibugyo virus occurring in the Democratic Republic of the Congo, with cases also reported in Uganda, WHO convened several of its expert and advisory groups. These groups assessed potential vaccines and therapeutics for both prevention and treatment of Bundibugyo virus disease (BVD).",
+      "source": "WHO News (outbreak-filtered)"
+    },
+    {
+      "title": "Message by the WHO Director-General to the people of the Democratic Republic of the Congo",
+      "url": "https://www.who.int/news/item/28-05-2026-message-by-the-who-director-general-to-the-people-of-the-democratic-republic-of-the-congo",
+      "published": "Thu, 28 May 2026 12:17:30 Z",
+      "summary": "<p>To the people of DRC, especially to the people of Ituri&nbsp;</p><p>Jambo kwenu wakahaji wa Ituri&nbsp;</p><p>Mbote na bino, bato ya Ituri&nbsp;</p><p>My name is Tedros, and I am the Director-General of the World Health Organization (WHO). But today, I am not writing to you as an official. I am writing to you as someone who knows your region, who has walked your streets, and who cares deeply about what happens to you and your families.&nbsp;</p><p>I am writing because I want to be with you in",
       "source": "WHO News (outbreak-filtered)"
     }
   ],
