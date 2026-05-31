@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-05-30T12:02:05.569714+00:00",
-  "date": "2026-05-30",
+  "generated_at": "2026-05-31T12:09:12.265611+00:00",
+  "date": "2026-05-31",
   "data_windows": {
     "weather": "live",
     "bank_robbery": "24h",
@@ -28,49 +28,49 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 89
+      "counties_with_alerts": 61
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3181,
-      "counties_over_threshold": 18
+      "counties_queried": 3188,
+      "counties_over_threshold": 52
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 12,
+      "counties_with_matches": 11,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 10,
-        "utility_outage": 5,
+        "protest": 17,
+        "utility_outage": 6,
         "transit_disruption": 0
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 3,
+      "counties_with_matches": 5,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 3,
+        "utility_outage": 6,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 139
+      "counties_with_alerts": 133
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 4,
+      "items_total": 3,
       "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 4
+          "items": 3
         },
         {
           "id": "mta-subway",
@@ -162,7 +162,7 @@
     }
   },
   "counties_total": 3222,
-  "counties_with_alerts": 195,
+  "counties_with_alerts": 220,
   "national": {
     "cdc_han": [],
     "who_don": [
@@ -430,19 +430,6 @@
             ],
             "distance_miles": 46.0,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 441 RX Prescribed Fire, Wayne, Mississippi",
-            "id": "EONET_20197",
-            "category": "wildfire",
-            "date": "2026-05-16T09:19:00Z",
-            "lat": 31.4806,
-            "lon": -88.6589,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/3188e40e-94b5-4173-b061-4f32aba3ea05"
-            ],
-            "distance_miles": 42.7,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -451,7 +438,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "01025": {
       "fips": "01025",
@@ -800,7 +787,14 @@
       "name": "Geneva County",
       "state": "AL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -812,7 +806,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "01063": {
       "fips": "01063",
@@ -1173,19 +1167,6 @@
             ],
             "distance_miles": 45.7,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "DeSoto BB 8366 2 RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20183",
-            "category": "wildfire",
-            "date": "2026-05-16T11:04:00Z",
-            "lat": 30.6717,
-            "lon": -88.995,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/257458bd-c716-4ba4-b76b-5f0ae3cacf51"
-            ],
-            "distance_miles": 47.5,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -1194,7 +1175,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "01099": {
       "fips": "01099",
@@ -1543,19 +1524,6 @@
             ],
             "distance_miles": 35.6,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 441 RX Prescribed Fire, Wayne, Mississippi",
-            "id": "EONET_20197",
-            "category": "wildfire",
-            "date": "2026-05-16T09:19:00Z",
-            "lat": 31.4806,
-            "lon": -88.6589,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/3188e40e-94b5-4173-b061-4f32aba3ea05"
-            ],
-            "distance_miles": 26.8,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -1564,7 +1532,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 5
+      "alert_count": 4
     },
     "01131": {
       "fips": "01131",
@@ -1723,7 +1691,14 @@
       "name": "Copper River Census Area",
       "state": "AK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Cold Forecast",
+            "headline": "Apparent temperature expected to drop to -2.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1735,7 +1710,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "02068": {
       "fips": "02068",
@@ -3108,13 +3083,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 7:52PM CDT by NWS Little Rock AR",
+            "headline": "Flood Warning issued May 30 at 7:53PM CDT by NWS Little Rock AR",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T19:52:00-05:00",
-            "expires": "2026-05-30T20:00:00-05:00",
+            "effective": "2026-05-30T19:53:00-05:00",
+            "expires": "2026-05-31T20:00:00-05:00",
             "areaDesc": "Jackson, AR; Woodruff, AR",
-            "id": "urn:oid:2.49.0.1.840.0.157883bd02ee67f8ba225113ab5875f0114ae769.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.2f6b1a48cc9a3cedc8f1450a32daf3a09430999d.001.1",
             "source": "nws_alert"
           }
         ],
@@ -3880,13 +3855,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 7:52PM CDT by NWS Little Rock AR",
+            "headline": "Flood Warning issued May 30 at 7:53PM CDT by NWS Little Rock AR",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T19:52:00-05:00",
-            "expires": "2026-05-30T20:00:00-05:00",
+            "effective": "2026-05-30T19:53:00-05:00",
+            "expires": "2026-05-31T20:00:00-05:00",
             "areaDesc": "Jackson, AR; Woodruff, AR",
-            "id": "urn:oid:2.49.0.1.840.0.157883bd02ee67f8ba225113ab5875f0114ae769.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.2f6b1a48cc9a3cedc8f1450a32daf3a09430999d.001.1",
             "source": "nws_alert"
           }
         ],
@@ -5382,32 +5357,6 @@
             ],
             "distance_miles": 22.1,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "Sharpe Wildfire, Cimarron, Oklahoma",
-            "id": "EONET_20163",
-            "category": "wildfire",
-            "date": "2026-05-16T20:54:00Z",
-            "lat": 36.8933,
-            "lon": -102.6667,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/6122eacf-706c-45a8-91b4-4f9eccf25098"
-            ],
-            "distance_miles": 29.6,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Tex-OK Wildfire, Cimarron, Oklahoma",
-            "id": "EONET_20165",
-            "category": "wildfire",
-            "date": "2026-05-16T09:28:00Z",
-            "lat": 36.6364,
-            "lon": -102.4322,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/e27ccb2e-b913-4916-a414-3bfe748138c7"
-            ],
-            "distance_miles": 46.9,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -5416,7 +5365,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 1
     },
     "08011": {
       "fips": "08011",
@@ -7400,7 +7349,14 @@
       "name": "Hamilton County",
       "state": "FL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -7412,7 +7368,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "12049": {
       "fips": "12049",
@@ -9010,7 +8966,19 @@
       "name": "Burke County",
       "state": "GA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued May 31 at 7:40AM EDT until May 31 at 10:45AM EDT by NWS Columbia SC",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-31T07:40:00-04:00",
+            "expires": "2026-05-31T10:45:00-04:00",
+            "areaDesc": "Burke, GA",
+            "id": "urn:oid:2.49.0.1.840.0.2ac4c27845269382207f4956c1556f835b4199cb.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -9022,7 +8990,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "13035": {
       "fips": "13035",
@@ -9333,7 +9301,14 @@
       "name": "Coffee County",
       "state": "GA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -9345,7 +9320,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "13071": {
       "fips": "13071",
@@ -9637,7 +9612,14 @@
       "name": "Echols County",
       "state": "GA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -9649,7 +9631,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "13103": {
       "fips": "13103",
@@ -10150,7 +10132,14 @@
       "name": "Irwin County",
       "state": "GA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -10162,7 +10151,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "13157": {
       "fips": "13157",
@@ -10587,7 +10576,14 @@
       "name": "Miller County",
       "state": "GA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -10599,7 +10595,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "13205": {
       "fips": "13205",
@@ -10929,7 +10925,14 @@
       "name": "Quitman County",
       "state": "GA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -10941,7 +10944,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "13241": {
       "fips": "13241",
@@ -11252,7 +11255,14 @@
       "name": "Terrell County",
       "state": "GA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -11264,7 +11274,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "13275": {
       "fips": "13275",
@@ -11290,7 +11300,14 @@
       "name": "Tift County",
       "state": "GA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -11302,7 +11319,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "13279": {
       "fips": "13279",
@@ -11385,7 +11402,14 @@
       "name": "Turner County",
       "state": "GA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -11397,7 +11421,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "13289": {
       "fips": "13289",
@@ -11651,7 +11675,14 @@
       "name": "Wilcox County",
       "state": "GA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -11663,7 +11694,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "13317": {
       "fips": "13317",
@@ -11991,15 +12022,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Thousands without power after North Idaho storm",
-            "url": "https://www.kxly.com/news/thousands-without-power-after-north-idaho-storm/article_f10329b9-af9d-4baa-843e-94eca8c626b4.html",
-            "domain": "kxly.com",
-            "seendate": "20260530033000",
-            "is_new": true
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -12008,7 +12031,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "16019": {
       "fips": "16019",
@@ -12037,15 +12060,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Thousands without power after North Idaho storm",
-            "url": "https://www.kxly.com/news/thousands-without-power-after-north-idaho-storm/article_f10329b9-af9d-4baa-843e-94eca8c626b4.html",
-            "domain": "kxly.com",
-            "seendate": "20260530033000",
-            "is_new": true
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -12054,7 +12069,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "16023": {
       "fips": "16023",
@@ -12476,15 +12491,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Thousands without power after North Idaho storm",
-            "url": "https://www.kxly.com/news/thousands-without-power-after-north-idaho-storm/article_f10329b9-af9d-4baa-843e-94eca8c626b4.html",
-            "domain": "kxly.com",
-            "seendate": "20260530033000",
-            "is_new": true
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -12493,7 +12500,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "16057": {
       "fips": "16057",
@@ -13467,13 +13474,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:54AM CDT until May 31 at 7:00PM CDT by NWS Paducah KY",
+            "headline": "Flood Warning issued May 30 at 11:09AM CDT until June 2 at 7:00AM CDT by NWS Paducah KY",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T10:54:00-05:00",
-            "expires": "2026-05-30T13:00:00-05:00",
+            "effective": "2026-05-30T11:09:00-05:00",
+            "expires": "2026-05-31T13:15:00-05:00",
             "areaDesc": "Gallatin, IL; Hardin, IL; Crittenden, KY; Union, KY",
-            "id": "urn:oid:2.49.0.1.840.0.2bf10a4bdf0ce923cb65e87b05d4694ea1c4f57c.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.b2cf1d6d40ffde59c41ebf78c72197f4c33f8eff.001.1",
             "source": "nws_alert"
           }
         ],
@@ -13574,13 +13581,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:54AM CDT until May 31 at 7:00PM CDT by NWS Paducah KY",
+            "headline": "Flood Warning issued May 30 at 11:09AM CDT until June 2 at 7:00AM CDT by NWS Paducah KY",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T10:54:00-05:00",
-            "expires": "2026-05-30T13:00:00-05:00",
+            "effective": "2026-05-30T11:09:00-05:00",
+            "expires": "2026-05-31T13:15:00-05:00",
             "areaDesc": "Gallatin, IL; Hardin, IL; Crittenden, KY; Union, KY",
-            "id": "urn:oid:2.49.0.1.840.0.2bf10a4bdf0ce923cb65e87b05d4694ea1c4f57c.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.b2cf1d6d40ffde59c41ebf78c72197f4c33f8eff.001.1",
             "source": "nws_alert"
           }
         ],
@@ -15125,13 +15132,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:33PM EDT until June 2 at 9:00AM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued May 30 at 10:41PM EDT until June 2 at 6:17AM EDT by NWS Indianapolis IN",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T22:33:00-04:00",
-            "expires": "2026-05-30T14:00:00-04:00",
+            "effective": "2026-05-30T22:41:00-04:00",
+            "expires": "2026-05-31T14:00:00-04:00",
             "areaDesc": "Daviess, IN; Gibson, IN; Knox, IN; Pike, IN",
-            "id": "urn:oid:2.49.0.1.840.0.769fee684c5fc290fd81719a81eb1e69c96fe01e.003.1",
+            "id": "urn:oid:2.49.0.1.840.0.24323c6d5ba117fd97cfada645396ad6806b425c.003.1",
             "source": "nws_alert"
           }
         ],
@@ -15365,24 +15372,24 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:33PM EDT until June 2 at 9:00AM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued May 30 at 10:41PM EDT until June 2 at 6:17AM EDT by NWS Indianapolis IN",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T22:33:00-04:00",
-            "expires": "2026-05-30T14:00:00-04:00",
+            "effective": "2026-05-30T22:41:00-04:00",
+            "expires": "2026-05-31T14:00:00-04:00",
             "areaDesc": "Daviess, IN; Gibson, IN; Knox, IN; Pike, IN",
-            "id": "urn:oid:2.49.0.1.840.0.769fee684c5fc290fd81719a81eb1e69c96fe01e.003.1",
+            "id": "urn:oid:2.49.0.1.840.0.24323c6d5ba117fd97cfada645396ad6806b425c.003.1",
             "source": "nws_alert"
           },
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:33PM EDT until June 3 at 2:00PM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued May 30 at 10:41PM EDT until June 3 at 3:30PM EDT by NWS Indianapolis IN",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T22:33:00-04:00",
-            "expires": "2026-05-30T14:00:00-04:00",
+            "effective": "2026-05-30T22:41:00-04:00",
+            "expires": "2026-05-31T14:00:00-04:00",
             "areaDesc": "Gibson, IN; Knox, IN",
-            "id": "urn:oid:2.49.0.1.840.0.769fee684c5fc290fd81719a81eb1e69c96fe01e.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.24323c6d5ba117fd97cfada645396ad6806b425c.002.1",
             "source": "nws_alert"
           }
         ],
@@ -15578,13 +15585,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:33PM EDT until May 31 at 7:00PM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued May 30 at 10:41PM EDT until May 31 at 2:00PM EDT by NWS Indianapolis IN",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T22:33:00-04:00",
-            "expires": "2026-05-30T14:00:00-04:00",
+            "effective": "2026-05-30T22:41:00-04:00",
+            "expires": "2026-05-31T14:00:00-04:00",
             "areaDesc": "Jackson, IN; Lawrence, IN; Washington, IN",
-            "id": "urn:oid:2.49.0.1.840.0.769fee684c5fc290fd81719a81eb1e69c96fe01e.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.24323c6d5ba117fd97cfada645396ad6806b425c.001.1",
             "source": "nws_alert"
           }
         ],
@@ -15704,24 +15711,24 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:33PM EDT until June 2 at 9:00AM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued May 30 at 10:41PM EDT until June 2 at 6:17AM EDT by NWS Indianapolis IN",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T22:33:00-04:00",
-            "expires": "2026-05-30T14:00:00-04:00",
+            "effective": "2026-05-30T22:41:00-04:00",
+            "expires": "2026-05-31T14:00:00-04:00",
             "areaDesc": "Daviess, IN; Gibson, IN; Knox, IN; Pike, IN",
-            "id": "urn:oid:2.49.0.1.840.0.769fee684c5fc290fd81719a81eb1e69c96fe01e.003.1",
+            "id": "urn:oid:2.49.0.1.840.0.24323c6d5ba117fd97cfada645396ad6806b425c.003.1",
             "source": "nws_alert"
           },
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:33PM EDT until June 3 at 2:00PM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued May 30 at 10:41PM EDT until June 3 at 3:30PM EDT by NWS Indianapolis IN",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T22:33:00-04:00",
-            "expires": "2026-05-30T14:00:00-04:00",
+            "effective": "2026-05-30T22:41:00-04:00",
+            "expires": "2026-05-31T14:00:00-04:00",
             "areaDesc": "Gibson, IN; Knox, IN",
-            "id": "urn:oid:2.49.0.1.840.0.769fee684c5fc290fd81719a81eb1e69c96fe01e.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.24323c6d5ba117fd97cfada645396ad6806b425c.002.1",
             "source": "nws_alert"
           }
         ],
@@ -15822,24 +15829,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:33PM EDT until May 31 at 7:00PM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued May 30 at 10:41PM EDT until May 31 at 2:00PM EDT by NWS Indianapolis IN",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T22:33:00-04:00",
-            "expires": "2026-05-30T14:00:00-04:00",
+            "effective": "2026-05-30T22:41:00-04:00",
+            "expires": "2026-05-31T14:00:00-04:00",
             "areaDesc": "Jackson, IN; Lawrence, IN; Washington, IN",
-            "id": "urn:oid:2.49.0.1.840.0.769fee684c5fc290fd81719a81eb1e69c96fe01e.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:33PM EDT until May 30 at 4:00PM EDT by NWS Indianapolis IN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T22:33:00-04:00",
-            "expires": "2026-05-30T14:00:00-04:00",
-            "areaDesc": "Lawrence, IN; Martin, IN",
-            "id": "urn:oid:2.49.0.1.840.0.769fee684c5fc290fd81719a81eb1e69c96fe01e.004.1",
+            "id": "urn:oid:2.49.0.1.840.0.24323c6d5ba117fd97cfada645396ad6806b425c.001.1",
             "source": "nws_alert"
           }
         ],
@@ -15854,7 +15850,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "18095": {
       "fips": "18095",
@@ -15918,19 +15914,7 @@
       "name": "Martin County",
       "state": "IN",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:33PM EDT until May 30 at 4:00PM EDT by NWS Indianapolis IN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T22:33:00-04:00",
-            "expires": "2026-05-30T14:00:00-04:00",
-            "areaDesc": "Lawrence, IN; Martin, IN",
-            "id": "urn:oid:2.49.0.1.840.0.769fee684c5fc290fd81719a81eb1e69c96fe01e.004.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -15942,7 +15926,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "18103": {
       "fips": "18103",
@@ -16161,13 +16145,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:33PM EDT until June 2 at 9:00AM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued May 30 at 10:41PM EDT until June 2 at 6:17AM EDT by NWS Indianapolis IN",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T22:33:00-04:00",
-            "expires": "2026-05-30T14:00:00-04:00",
+            "effective": "2026-05-30T22:41:00-04:00",
+            "expires": "2026-05-31T14:00:00-04:00",
             "areaDesc": "Daviess, IN; Gibson, IN; Knox, IN; Pike, IN",
-            "id": "urn:oid:2.49.0.1.840.0.769fee684c5fc290fd81719a81eb1e69c96fe01e.003.1",
+            "id": "urn:oid:2.49.0.1.840.0.24323c6d5ba117fd97cfada645396ad6806b425c.003.1",
             "source": "nws_alert"
           }
         ],
@@ -16648,13 +16632,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:33PM EDT until May 31 at 7:00PM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued May 30 at 10:41PM EDT until May 31 at 2:00PM EDT by NWS Indianapolis IN",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T22:33:00-04:00",
-            "expires": "2026-05-30T14:00:00-04:00",
+            "effective": "2026-05-30T22:41:00-04:00",
+            "expires": "2026-05-31T14:00:00-04:00",
             "areaDesc": "Jackson, IN; Lawrence, IN; Washington, IN",
-            "id": "urn:oid:2.49.0.1.840.0.769fee684c5fc290fd81719a81eb1e69c96fe01e.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.24323c6d5ba117fd97cfada645396ad6806b425c.001.1",
             "source": "nws_alert"
           }
         ],
@@ -18826,7 +18810,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "1,000+ without power in Southeast Kansas due to storms",
+            "url": "https://www.koamnewsnow.com/news/local-news/1-000-without-power-in-southeast-kansas-due-to-storms/article_71be6aca-3298-4d28-b085-bd0580b7eb62.html",
+            "domain": "koamnewsnow.com",
+            "seendate": "20260531001500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -18835,7 +18827,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20023": {
       "fips": "20023",
@@ -19006,7 +18998,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "1,000+ without power in Southeast Kansas due to storms",
+            "url": "https://www.koamnewsnow.com/news/local-news/1-000-without-power-in-southeast-kansas-due-to-storms/article_71be6aca-3298-4d28-b085-bd0580b7eb62.html",
+            "domain": "koamnewsnow.com",
+            "seendate": "20260531001500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -19015,7 +19015,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20039": {
       "fips": "20039",
@@ -19691,7 +19691,19 @@
       "name": "Lincoln County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued May 31 at 1:00AM CDT until May 31 at 8:00AM CDT by NWS Wichita KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-05-31T01:00:00-05:00",
+            "expires": "2026-05-31T08:00:00-05:00",
+            "areaDesc": "Lincoln, KS; Russell, KS",
+            "id": "urn:oid:2.49.0.1.840.0.51a594d14e9c6aa55b729d0e1c206209514e75d7.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19703,7 +19715,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20107": {
       "fips": "20107",
@@ -19988,7 +20000,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "1,000+ without power in Southeast Kansas due to storms",
+            "url": "https://www.koamnewsnow.com/news/local-news/1-000-without-power-in-southeast-kansas-due-to-storms/article_71be6aca-3298-4d28-b085-bd0580b7eb62.html",
+            "domain": "koamnewsnow.com",
+            "seendate": "20260531001500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -19997,7 +20017,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20135": {
       "fips": "20135",
@@ -20083,13 +20103,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 5:43PM CDT until May 30 at 1:44PM CDT by NWS Topeka KS",
+            "headline": "Flood Warning issued May 31 at 6:13AM CDT until June 1 at 7:00AM CDT by NWS Topeka KS",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-05-29T17:43:00-05:00",
-            "expires": "2026-05-30T08:45:00-05:00",
-            "areaDesc": "Ottawa, KS; Saline, KS",
-            "id": "urn:oid:2.49.0.1.840.0.4802e0e2e36ea8e20da6fa1a72b9b61e7f1789e0.001.1",
+            "effective": "2026-05-31T06:13:00-05:00",
+            "expires": "2026-06-01T07:00:00-05:00",
+            "areaDesc": "Ottawa, KS",
+            "id": "urn:oid:2.49.0.1.840.0.82fe2f644acbdce3bab448c431439660a461a4c5.001.1",
             "source": "nws_alert"
           }
         ],
@@ -20320,35 +20340,16 @@
       "name": "Russell County",
       "state": "KS",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "20169": {
-      "fips": "20169",
-      "name": "Saline County",
-      "state": "KS",
-      "alerts": {
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 5:43PM CDT until May 30 at 1:44PM CDT by NWS Topeka KS",
+            "headline": "Flood Warning issued May 31 at 1:00AM CDT until May 31 at 8:00AM CDT by NWS Wichita KS",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-05-29T17:43:00-05:00",
-            "expires": "2026-05-30T08:45:00-05:00",
-            "areaDesc": "Ottawa, KS; Saline, KS",
-            "id": "urn:oid:2.49.0.1.840.0.4802e0e2e36ea8e20da6fa1a72b9b61e7f1789e0.001.1",
+            "effective": "2026-05-31T01:00:00-05:00",
+            "expires": "2026-05-31T08:00:00-05:00",
+            "areaDesc": "Lincoln, KS; Russell, KS",
+            "id": "urn:oid:2.49.0.1.840.0.51a594d14e9c6aa55b729d0e1c206209514e75d7.001.1",
             "source": "nws_alert"
           }
         ],
@@ -20364,6 +20365,25 @@
         "disease": []
       },
       "alert_count": 1
+    },
+    "20169": {
+      "fips": "20169",
+      "name": "Saline County",
+      "state": "KS",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
     },
     "20171": {
       "fips": "20171",
@@ -21049,19 +21069,7 @@
       "name": "Butler County",
       "state": "KY",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued May 30 at 4:38AM CDT until May 30 at 7:30AM CDT by NWS Louisville KY",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-30T04:38:00-05:00",
-            "expires": "2026-05-30T07:30:00-05:00",
-            "areaDesc": "Butler, KY",
-            "id": "urn:oid:2.49.0.1.840.0.15d6a636173420c01886feed02233bf30aded57a.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -21073,7 +21081,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "21033": {
       "fips": "21033",
@@ -21292,13 +21300,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:54AM CDT until May 31 at 7:00PM CDT by NWS Paducah KY",
+            "headline": "Flood Warning issued May 30 at 11:09AM CDT until June 2 at 7:00AM CDT by NWS Paducah KY",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T10:54:00-05:00",
-            "expires": "2026-05-30T13:00:00-05:00",
+            "effective": "2026-05-30T11:09:00-05:00",
+            "expires": "2026-05-31T13:15:00-05:00",
             "areaDesc": "Gallatin, IL; Hardin, IL; Crittenden, KY; Union, KY",
-            "id": "urn:oid:2.49.0.1.840.0.2bf10a4bdf0ce923cb65e87b05d4694ea1c4f57c.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.b2cf1d6d40ffde59c41ebf78c72197f4c33f8eff.001.1",
             "source": "nws_alert"
           }
         ],
@@ -22919,13 +22927,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:54AM CDT until May 31 at 7:00PM CDT by NWS Paducah KY",
+            "headline": "Flood Warning issued May 30 at 11:09AM CDT until June 2 at 7:00AM CDT by NWS Paducah KY",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T10:54:00-05:00",
-            "expires": "2026-05-30T13:00:00-05:00",
+            "effective": "2026-05-30T11:09:00-05:00",
+            "expires": "2026-05-31T13:15:00-05:00",
             "areaDesc": "Gallatin, IL; Hardin, IL; Crittenden, KY; Union, KY",
-            "id": "urn:oid:2.49.0.1.840.0.2bf10a4bdf0ce923cb65e87b05d4694ea1c4f57c.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.b2cf1d6d40ffde59c41ebf78c72197f4c33f8eff.001.1",
             "source": "nws_alert"
           }
         ],
@@ -23265,19 +23273,7 @@
       "name": "Calcasieu Parish",
       "state": "LA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:14PM CDT until May 31 at 7:00PM CDT by NWS Lake Charles LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T20:14:00-05:00",
-            "expires": "2026-05-30T20:15:00-05:00",
-            "areaDesc": "Calcasieu, LA",
-            "id": "urn:oid:2.49.0.1.840.0.7eb955b1acda604fec216beac417c08a42e3d794.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -23289,7 +23285,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "22021": {
       "fips": "22021",
@@ -24027,13 +24023,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:14PM CDT by NWS Lake Charles LA",
+            "headline": "Flood Warning issued May 30 at 8:18PM CDT until June 2 at 10:00AM CDT by NWS Lake Charles LA",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T20:14:00-05:00",
-            "expires": "2026-05-30T20:15:00-05:00",
+            "effective": "2026-05-30T20:18:00-05:00",
+            "expires": "2026-05-31T20:30:00-05:00",
             "areaDesc": "Rapides, LA",
-            "id": "urn:oid:2.49.0.1.840.0.7eb955b1acda604fec216beac417c08a42e3d794.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.8e4cc10e5f095e29311f9888edb20cfd9abc1523.001.1",
             "source": "nws_alert"
           }
         ],
@@ -24295,13 +24291,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:05PM CDT until June 3 at 1:00PM CDT by NWS New Orleans LA",
+            "headline": "Flood Warning issued May 30 at 7:35PM CDT until June 2 at 1:00PM CDT by NWS New Orleans LA",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T20:05:00-05:00",
-            "expires": "2026-05-30T12:15:00-05:00",
+            "effective": "2026-05-30T19:35:00-05:00",
+            "expires": "2026-05-31T11:45:00-05:00",
             "areaDesc": "St. Tammany, LA; Hancock, MS; Pearl River, MS",
-            "id": "urn:oid:2.49.0.1.840.0.b5563aa371093f0eca8359dc318e608b5e84c6e4.003.1",
+            "id": "urn:oid:2.49.0.1.840.0.0a33024947675a123b7b3e632cb9db15b397e8fb.001.1",
             "source": "nws_alert"
           }
         ],
@@ -24616,19 +24612,7 @@
       "name": "Cumberland County",
       "state": "ME",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:13PM EDT until May 30 at 10:18PM EDT by NWS Gray ME",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T22:13:00-04:00",
-            "expires": "2026-05-30T10:15:00-04:00",
-            "areaDesc": "Cumberland, ME; Oxford, ME; Carroll, NH",
-            "id": "urn:oid:2.49.0.1.840.0.d9bf38ddc735c9ca16bd983c1392ba100de23e2c.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -24640,7 +24624,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "23007": {
       "fips": "23007",
@@ -24742,19 +24726,7 @@
       "name": "Oxford County",
       "state": "ME",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:13PM EDT until May 30 at 10:18PM EDT by NWS Gray ME",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T22:13:00-04:00",
-            "expires": "2026-05-30T10:15:00-04:00",
-            "areaDesc": "Cumberland, ME; Oxford, ME; Carroll, NH",
-            "id": "urn:oid:2.49.0.1.840.0.d9bf38ddc735c9ca16bd983c1392ba100de23e2c.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -24766,7 +24738,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "23019": {
       "fips": "23019",
@@ -24887,14 +24859,7 @@
       "name": "York County",
       "state": "ME",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.6\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -24906,7 +24871,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "24001": {
       "fips": "24001",
@@ -25369,19 +25334,7 @@
       "name": "Barnstable County",
       "state": "MA",
       "alerts": {
-        "weather": [
-          {
-            "event": "High Wind Warning",
-            "headline": "High Wind Warning issued May 30 at 2:52AM EDT until May 30 at 8:00PM EDT by NWS Boston/Norton MA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-30T02:52:00-04:00",
-            "expires": "2026-05-30T20:00:00-04:00",
-            "areaDesc": "Barnstable; Nantucket",
-            "id": "urn:oid:2.49.0.1.840.0.c2475528a903fa534459abcd68bc6b80c4129969.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -25393,7 +25346,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "25003": {
       "fips": "25003",
@@ -25499,18 +25452,6 @@
             "start": "2026-05-18T07:00:00+00:00",
             "end": "2026-07-11T07:00:00+00:00",
             "source": "https://www.mbta.com/news/2026-04-16/mbta-announces-may-service-changes"
-          },
-          {
-            "agency": "MBTA",
-            "agency_id": "mbta",
-            "route": "Boat-F2H",
-            "system_outage": false,
-            "effect": "NO_SERVICE",
-            "header": "Hingham/Hull Ferry: Service to/from Georges Island will be suspended on Saturday, May 30, due to weather conditions.",
-            "description": "Affected ferries:\r\nHingham/Hull Ferry",
-            "start": "2026-05-30T07:00:00+00:00",
-            "end": "2026-05-31T07:00:00+00:00",
-            "source": ""
           }
         ],
         "amtrak": [],
@@ -25518,7 +25459,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 3
     },
     "25011": {
       "fips": "25011",
@@ -25624,18 +25565,6 @@
             "start": "2026-05-18T07:00:00+00:00",
             "end": "2026-07-11T07:00:00+00:00",
             "source": "https://www.mbta.com/news/2026-04-16/mbta-announces-may-service-changes"
-          },
-          {
-            "agency": "MBTA",
-            "agency_id": "mbta",
-            "route": "Boat-F2H",
-            "system_outage": false,
-            "effect": "NO_SERVICE",
-            "header": "Hingham/Hull Ferry: Service to/from Georges Island will be suspended on Saturday, May 30, due to weather conditions.",
-            "description": "Affected ferries:\r\nHingham/Hull Ferry",
-            "start": "2026-05-30T07:00:00+00:00",
-            "end": "2026-05-31T07:00:00+00:00",
-            "source": ""
           }
         ],
         "amtrak": [],
@@ -25643,26 +25572,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 3
     },
     "25019": {
       "fips": "25019",
       "name": "Nantucket County",
       "state": "MA",
       "alerts": {
-        "weather": [
-          {
-            "event": "High Wind Warning",
-            "headline": "High Wind Warning issued May 30 at 2:52AM EDT until May 30 at 8:00PM EDT by NWS Boston/Norton MA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-05-30T02:52:00-04:00",
-            "expires": "2026-05-30T20:00:00-04:00",
-            "areaDesc": "Barnstable; Nantucket",
-            "id": "urn:oid:2.49.0.1.840.0.c2475528a903fa534459abcd68bc6b80c4129969.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -25674,7 +25591,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "25021": {
       "fips": "25021",
@@ -25723,18 +25640,6 @@
             "start": "2026-05-18T07:00:00+00:00",
             "end": "2026-07-11T07:00:00+00:00",
             "source": "https://www.mbta.com/news/2026-04-16/mbta-announces-may-service-changes"
-          },
-          {
-            "agency": "MBTA",
-            "agency_id": "mbta",
-            "route": "Boat-F2H",
-            "system_outage": false,
-            "effect": "NO_SERVICE",
-            "header": "Hingham/Hull Ferry: Service to/from Georges Island will be suspended on Saturday, May 30, due to weather conditions.",
-            "description": "Affected ferries:\r\nHingham/Hull Ferry",
-            "start": "2026-05-30T07:00:00+00:00",
-            "end": "2026-05-31T07:00:00+00:00",
-            "source": ""
           }
         ],
         "amtrak": [],
@@ -25742,7 +25647,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 3
     },
     "25023": {
       "fips": "25023",
@@ -25791,18 +25696,6 @@
             "start": "2026-05-18T07:00:00+00:00",
             "end": "2026-07-11T07:00:00+00:00",
             "source": "https://www.mbta.com/news/2026-04-16/mbta-announces-may-service-changes"
-          },
-          {
-            "agency": "MBTA",
-            "agency_id": "mbta",
-            "route": "Boat-F2H",
-            "system_outage": false,
-            "effect": "NO_SERVICE",
-            "header": "Hingham/Hull Ferry: Service to/from Georges Island will be suspended on Saturday, May 30, due to weather conditions.",
-            "description": "Affected ferries:\r\nHingham/Hull Ferry",
-            "start": "2026-05-30T07:00:00+00:00",
-            "end": "2026-05-31T07:00:00+00:00",
-            "source": ""
           }
         ],
         "amtrak": [],
@@ -25810,7 +25703,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 3
     },
     "25025": {
       "fips": "25025",
@@ -25820,7 +25713,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Thousands without power after high winds down trees, branches across Mass. - Boston News, Weather, Sports",
+            "url": "https://whdh.com/news/thousands-without-power-after-high-winds-down-trees-branches-across-mass/",
+            "domain": "whdh.com",
+            "seendate": "20260531033000",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [
@@ -25859,18 +25760,6 @@
             "start": "2026-05-18T07:00:00+00:00",
             "end": "2026-07-11T07:00:00+00:00",
             "source": "https://www.mbta.com/news/2026-04-16/mbta-announces-may-service-changes"
-          },
-          {
-            "agency": "MBTA",
-            "agency_id": "mbta",
-            "route": "Boat-F2H",
-            "system_outage": false,
-            "effect": "NO_SERVICE",
-            "header": "Hingham/Hull Ferry: Service to/from Georges Island will be suspended on Saturday, May 30, due to weather conditions.",
-            "description": "Affected ferries:\r\nHingham/Hull Ferry",
-            "start": "2026-05-30T07:00:00+00:00",
-            "end": "2026-05-31T07:00:00+00:00",
-            "source": ""
           }
         ],
         "amtrak": [],
@@ -27486,28 +27375,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Flanders Wildfire, Crow Wing, Minnesota",
-            "id": "EONET_20161",
-            "category": "wildfire",
-            "date": "2026-05-16T14:45:00Z",
-            "lat": 46.5982,
-            "lon": -94.0819,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/ec401d4a-7195-4dff-9b6e-c72f2e15594e"
-            ],
-            "distance_miles": 31.4,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "27003": {
       "fips": "27003",
@@ -27690,28 +27565,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Flanders Wildfire, Crow Wing, Minnesota",
-            "id": "EONET_20161",
-            "category": "wildfire",
-            "date": "2026-05-16T14:45:00Z",
-            "lat": 46.5982,
-            "lon": -94.0819,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/ec401d4a-7195-4dff-9b6e-c72f2e15594e"
-            ],
-            "distance_miles": 27.2,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "27023": {
       "fips": "27023",
@@ -27837,28 +27698,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Flanders Wildfire, Crow Wing, Minnesota",
-            "id": "EONET_20161",
-            "category": "wildfire",
-            "date": "2026-05-16T14:45:00Z",
-            "lat": 46.5982,
-            "lon": -94.0819,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/ec401d4a-7195-4dff-9b6e-c72f2e15594e"
-            ],
-            "distance_miles": 7.4,
-            "threat_level": "Immediate"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "27037": {
       "fips": "27037",
@@ -28440,28 +28287,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Flanders Wildfire, Crow Wing, Minnesota",
-            "id": "EONET_20161",
-            "category": "wildfire",
-            "date": "2026-05-16T14:45:00Z",
-            "lat": 46.5982,
-            "lon": -94.0819,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/ec401d4a-7195-4dff-9b6e-c72f2e15594e"
-            ],
-            "distance_miles": 40.9,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "27099": {
       "fips": "27099",
@@ -29043,28 +28876,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Flanders Wildfire, Crow Wing, Minnesota",
-            "id": "EONET_20161",
-            "category": "wildfire",
-            "date": "2026-05-16T14:45:00Z",
-            "lat": 46.5982,
-            "lon": -94.0819,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/ec401d4a-7195-4dff-9b6e-c72f2e15594e"
-            ],
-            "distance_miles": 43.1,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "27161": {
       "fips": "27161",
@@ -29457,19 +29276,6 @@
             ],
             "distance_miles": 37.0,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 441 RX Prescribed Fire, Wayne, Mississippi",
-            "id": "EONET_20197",
-            "category": "wildfire",
-            "date": "2026-05-16T09:19:00Z",
-            "lat": 31.4806,
-            "lon": -88.6589,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/3188e40e-94b5-4173-b061-4f32aba3ea05"
-            ],
-            "distance_miles": 39.1,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -29478,7 +29284,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 3
     },
     "28025": {
       "fips": "28025",
@@ -29677,32 +29483,6 @@
             ],
             "distance_miles": 35.4,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "DeSoto BB 8366 2 RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20183",
-            "category": "wildfire",
-            "date": "2026-05-16T11:04:00Z",
-            "lat": 30.6717,
-            "lon": -88.995,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/257458bd-c716-4ba4-b76b-5f0ae3cacf51"
-            ],
-            "distance_miles": 39.0,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 441 RX Prescribed Fire, Wayne, Mississippi",
-            "id": "EONET_20197",
-            "category": "wildfire",
-            "date": "2026-05-16T09:19:00Z",
-            "lat": 31.4806,
-            "lon": -88.6589,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/3188e40e-94b5-4173-b061-4f32aba3ea05"
-            ],
-            "distance_miles": 40.8,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -29711,7 +29491,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 7
+      "alert_count": 5
     },
     "28037": {
       "fips": "28037",
@@ -29740,35 +29520,35 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:23PM CDT until June 1 at 4:00AM CDT by NWS Mobile AL",
+            "headline": "Flood Warning issued May 30 at 7:37PM CDT until May 31 at 3:00PM CDT by NWS Mobile AL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T20:23:00-05:00",
-            "expires": "2026-05-30T08:30:00-05:00",
+            "effective": "2026-05-30T19:37:00-05:00",
+            "expires": "2026-05-31T07:45:00-05:00",
             "areaDesc": "George, MS; Greene, MS; Jackson, MS",
-            "id": "urn:oid:2.49.0.1.840.0.57e1d11ab2d973c0445730ca7621d2704f72fcfa.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.6f17d4231d51f79238c148094189619a5d9f567f.001.1",
             "source": "nws_alert"
           },
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:21PM CDT until June 2 at 11:30AM CDT by NWS Mobile AL",
+            "headline": "Flood Warning issued May 30 at 7:36PM CDT until May 31 at 10:00AM CDT by NWS Mobile AL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T20:21:00-05:00",
-            "expires": "2026-05-30T08:30:00-05:00",
-            "areaDesc": "George, MS; Greene, MS",
-            "id": "urn:oid:2.49.0.1.840.0.120cfd1814b558693452a255f77c3f0aec463acd.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:20PM CDT until May 31 at 5:30PM CDT by NWS Mobile AL",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T20:20:00-05:00",
-            "expires": "2026-05-30T08:30:00-05:00",
+            "effective": "2026-05-30T19:36:00-05:00",
+            "expires": "2026-05-31T07:45:00-05:00",
             "areaDesc": "George, MS; Greene, MS; Perry, MS",
-            "id": "urn:oid:2.49.0.1.840.0.1e47b078ef2a8bab336568f06c230c098b64fe9c.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.7bf034f56d7148239bb74af7656041b4540ec05b.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued May 30 at 7:36PM CDT until June 2 at 11:30PM CDT by NWS Mobile AL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-30T19:36:00-05:00",
+            "expires": "2026-05-31T07:45:00-05:00",
+            "areaDesc": "George, MS; Greene, MS",
+            "id": "urn:oid:2.49.0.1.840.0.160185026294e0af3863abb8964734ea979715dc.001.1",
             "source": "nws_alert"
           }
         ],
@@ -29841,32 +29621,6 @@
             ],
             "distance_miles": 46.8,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "DeSoto BB 8366 2 RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20183",
-            "category": "wildfire",
-            "date": "2026-05-16T11:04:00Z",
-            "lat": 30.6717,
-            "lon": -88.995,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/257458bd-c716-4ba4-b76b-5f0ae3cacf51"
-            ],
-            "distance_miles": 24.5,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 441 RX Prescribed Fire, Wayne, Mississippi",
-            "id": "EONET_20197",
-            "category": "wildfire",
-            "date": "2026-05-16T09:19:00Z",
-            "lat": 31.4806,
-            "lon": -88.6589,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/3188e40e-94b5-4173-b061-4f32aba3ea05"
-            ],
-            "distance_miles": 43.2,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -29875,7 +29629,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 10
+      "alert_count": 8
     },
     "28041": {
       "fips": "28041",
@@ -29885,35 +29639,35 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:23PM CDT until June 1 at 4:00AM CDT by NWS Mobile AL",
+            "headline": "Flood Warning issued May 30 at 7:37PM CDT until May 31 at 3:00PM CDT by NWS Mobile AL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T20:23:00-05:00",
-            "expires": "2026-05-30T08:30:00-05:00",
+            "effective": "2026-05-30T19:37:00-05:00",
+            "expires": "2026-05-31T07:45:00-05:00",
             "areaDesc": "George, MS; Greene, MS; Jackson, MS",
-            "id": "urn:oid:2.49.0.1.840.0.57e1d11ab2d973c0445730ca7621d2704f72fcfa.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.6f17d4231d51f79238c148094189619a5d9f567f.001.1",
             "source": "nws_alert"
           },
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:21PM CDT until June 2 at 11:30AM CDT by NWS Mobile AL",
+            "headline": "Flood Warning issued May 30 at 7:36PM CDT until May 31 at 10:00AM CDT by NWS Mobile AL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T20:21:00-05:00",
-            "expires": "2026-05-30T08:30:00-05:00",
-            "areaDesc": "George, MS; Greene, MS",
-            "id": "urn:oid:2.49.0.1.840.0.120cfd1814b558693452a255f77c3f0aec463acd.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:20PM CDT until May 31 at 5:30PM CDT by NWS Mobile AL",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T20:20:00-05:00",
-            "expires": "2026-05-30T08:30:00-05:00",
+            "effective": "2026-05-30T19:36:00-05:00",
+            "expires": "2026-05-31T07:45:00-05:00",
             "areaDesc": "George, MS; Greene, MS; Perry, MS",
-            "id": "urn:oid:2.49.0.1.840.0.1e47b078ef2a8bab336568f06c230c098b64fe9c.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.7bf034f56d7148239bb74af7656041b4540ec05b.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued May 30 at 7:36PM CDT until June 2 at 11:30PM CDT by NWS Mobile AL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-30T19:36:00-05:00",
+            "expires": "2026-05-31T07:45:00-05:00",
+            "areaDesc": "George, MS; Greene, MS",
+            "id": "urn:oid:2.49.0.1.840.0.160185026294e0af3863abb8964734ea979715dc.001.1",
             "source": "nws_alert"
           }
         ],
@@ -29986,32 +29740,6 @@
             ],
             "distance_miles": 23.4,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "DeSoto BB 8366 2 RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20183",
-            "category": "wildfire",
-            "date": "2026-05-16T11:04:00Z",
-            "lat": 30.6717,
-            "lon": -88.995,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/257458bd-c716-4ba4-b76b-5f0ae3cacf51"
-            ],
-            "distance_miles": 43.1,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 441 RX Prescribed Fire, Wayne, Mississippi",
-            "id": "EONET_20197",
-            "category": "wildfire",
-            "date": "2026-05-16T09:19:00Z",
-            "lat": 31.4806,
-            "lon": -88.6589,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/3188e40e-94b5-4173-b061-4f32aba3ea05"
-            ],
-            "distance_miles": 18.6,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -30020,7 +29748,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 10
+      "alert_count": 8
     },
     "28043": {
       "fips": "28043",
@@ -30049,13 +29777,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:05PM CDT until June 3 at 1:00PM CDT by NWS New Orleans LA",
+            "headline": "Flood Warning issued May 30 at 7:35PM CDT until June 2 at 1:00PM CDT by NWS New Orleans LA",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T20:05:00-05:00",
-            "expires": "2026-05-30T12:15:00-05:00",
+            "effective": "2026-05-30T19:35:00-05:00",
+            "expires": "2026-05-31T11:45:00-05:00",
             "areaDesc": "St. Tammany, LA; Hancock, MS; Pearl River, MS",
-            "id": "urn:oid:2.49.0.1.840.0.b5563aa371093f0eca8359dc318e608b5e84c6e4.003.1",
+            "id": "urn:oid:2.49.0.1.840.0.0a33024947675a123b7b3e632cb9db15b397e8fb.001.1",
             "source": "nws_alert"
           }
         ],
@@ -30076,19 +29804,6 @@
             ],
             "distance_miles": 33.0,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "DeSoto BB 8366 2 RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20183",
-            "category": "wildfire",
-            "date": "2026-05-16T11:04:00Z",
-            "lat": 30.6717,
-            "lon": -88.995,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/257458bd-c716-4ba4-b76b-5f0ae3cacf51"
-            ],
-            "distance_miles": 34.9,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -30097,7 +29812,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "28047": {
       "fips": "28047",
@@ -30107,24 +29822,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:09PM CDT until May 30 at 10:00PM CDT by NWS New Orleans LA",
+            "headline": "Flood Warning issued May 30 at 7:50PM CDT until June 1 at 1:00AM CDT by NWS New Orleans LA",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T20:09:00-05:00",
-            "expires": "2026-05-30T12:15:00-05:00",
+            "effective": "2026-05-30T19:50:00-05:00",
+            "expires": "2026-05-31T12:00:00-05:00",
             "areaDesc": "Harrison, MS",
-            "id": "urn:oid:2.49.0.1.840.0.cb880adfeb1a9cf64d4819ed1faa9fca03b4cb9f.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:09PM CDT until June 1 at 9:00PM CDT by NWS New Orleans LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T20:09:00-05:00",
-            "expires": "2026-05-30T12:15:00-05:00",
-            "areaDesc": "Harrison, MS",
-            "id": "urn:oid:2.49.0.1.840.0.cb880adfeb1a9cf64d4819ed1faa9fca03b4cb9f.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.bf97294c6d715e0025452242e3c42c4855b9a9f1.001.1",
             "source": "nws_alert"
           }
         ],
@@ -30158,19 +29862,6 @@
             ],
             "distance_miles": 44.1,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "DeSoto BB 8366 2 RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20183",
-            "category": "wildfire",
-            "date": "2026-05-16T11:04:00Z",
-            "lat": 30.6717,
-            "lon": -88.995,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/257458bd-c716-4ba4-b76b-5f0ae3cacf51"
-            ],
-            "distance_miles": 18.4,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -30179,7 +29870,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 5
+      "alert_count": 3
     },
     "28049": {
       "fips": "28049",
@@ -30284,24 +29975,24 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:23PM CDT until June 1 at 4:00AM CDT by NWS Mobile AL",
+            "headline": "Flood Warning issued May 30 at 7:38PM CDT until June 2 at 1:00PM CDT by NWS New Orleans LA",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T20:23:00-05:00",
-            "expires": "2026-05-30T08:30:00-05:00",
-            "areaDesc": "George, MS; Greene, MS; Jackson, MS",
-            "id": "urn:oid:2.49.0.1.840.0.57e1d11ab2d973c0445730ca7621d2704f72fcfa.001.1",
+            "effective": "2026-05-30T19:38:00-05:00",
+            "expires": "2026-05-31T11:45:00-05:00",
+            "areaDesc": "Jackson, MS",
+            "id": "urn:oid:2.49.0.1.840.0.4482f167fc61e6dc66adab25c37b3c95ae0a6f55.001.1",
             "source": "nws_alert"
           },
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:07PM CDT by NWS New Orleans LA",
+            "headline": "Flood Warning issued May 30 at 7:37PM CDT until May 31 at 3:00PM CDT by NWS Mobile AL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T20:07:00-05:00",
-            "expires": "2026-05-30T12:15:00-05:00",
-            "areaDesc": "Jackson, MS",
-            "id": "urn:oid:2.49.0.1.840.0.11f98742c5a224b10b34ed6d59e281571b006a5a.001.1",
+            "effective": "2026-05-30T19:37:00-05:00",
+            "expires": "2026-05-31T07:45:00-05:00",
+            "areaDesc": "George, MS; Greene, MS; Jackson, MS",
+            "id": "urn:oid:2.49.0.1.840.0.6f17d4231d51f79238c148094189619a5d9f567f.001.1",
             "source": "nws_alert"
           }
         ],
@@ -30335,19 +30026,6 @@
             ],
             "distance_miles": 41.6,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "DeSoto BB 8366 2 RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20183",
-            "category": "wildfire",
-            "date": "2026-05-16T11:04:00Z",
-            "lat": 30.6717,
-            "lon": -88.995,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/257458bd-c716-4ba4-b76b-5f0ae3cacf51"
-            ],
-            "distance_miles": 26.6,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -30356,7 +30034,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 5
+      "alert_count": 4
     },
     "28061": {
       "fips": "28061",
@@ -30407,19 +30085,6 @@
             ],
             "distance_miles": 39.1,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 441 RX Prescribed Fire, Wayne, Mississippi",
-            "id": "EONET_20197",
-            "category": "wildfire",
-            "date": "2026-05-16T09:19:00Z",
-            "lat": 31.4806,
-            "lon": -88.6589,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/3188e40e-94b5-4173-b061-4f32aba3ea05"
-            ],
-            "distance_miles": 45.9,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -30428,7 +30093,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 3
     },
     "28063": {
       "fips": "28063",
@@ -30530,19 +30195,6 @@
             ],
             "distance_miles": 22.6,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 441 RX Prescribed Fire, Wayne, Mississippi",
-            "id": "EONET_20197",
-            "category": "wildfire",
-            "date": "2026-05-16T09:19:00Z",
-            "lat": 31.4806,
-            "lon": -88.6589,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/3188e40e-94b5-4173-b061-4f32aba3ea05"
-            ],
-            "distance_miles": 31.4,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -30551,7 +30203,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 5
+      "alert_count": 4
     },
     "28069": {
       "fips": "28069",
@@ -30653,19 +30305,6 @@
             ],
             "distance_miles": 47.1,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "DeSoto BB 8366 2 RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20183",
-            "category": "wildfire",
-            "date": "2026-05-16T11:04:00Z",
-            "lat": 30.6717,
-            "lon": -88.995,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/257458bd-c716-4ba4-b76b-5f0ae3cacf51"
-            ],
-            "distance_miles": 47.3,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -30674,7 +30313,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 5
+      "alert_count": 4
     },
     "28075": {
       "fips": "28075",
@@ -30700,7 +30339,14 @@
       "name": "Lawrence County",
       "state": "MS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -30712,7 +30358,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "28079": {
       "fips": "28079",
@@ -30833,7 +30479,14 @@
       "name": "Marion County",
       "state": "MS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -30845,7 +30498,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "28093": {
       "fips": "28093",
@@ -31007,35 +30660,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:05PM CDT until June 3 at 1:00PM CDT by NWS New Orleans LA",
+            "headline": "Flood Warning issued May 30 at 7:35PM CDT until June 2 at 1:00PM CDT by NWS New Orleans LA",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T20:05:00-05:00",
-            "expires": "2026-05-30T12:15:00-05:00",
+            "effective": "2026-05-30T19:35:00-05:00",
+            "expires": "2026-05-31T11:45:00-05:00",
             "areaDesc": "St. Tammany, LA; Hancock, MS; Pearl River, MS",
-            "id": "urn:oid:2.49.0.1.840.0.b5563aa371093f0eca8359dc318e608b5e84c6e4.003.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:05PM CDT until May 31 at 10:36PM CDT by NWS New Orleans LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T20:05:00-05:00",
-            "expires": "2026-05-30T12:15:00-05:00",
-            "areaDesc": "Pearl River, MS",
-            "id": "urn:oid:2.49.0.1.840.0.b5563aa371093f0eca8359dc318e608b5e84c6e4.002.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:05PM CDT until May 31 at 4:00AM CDT by NWS New Orleans LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T20:05:00-05:00",
-            "expires": "2026-05-30T12:15:00-05:00",
-            "areaDesc": "Pearl River, MS",
-            "id": "urn:oid:2.49.0.1.840.0.b5563aa371093f0eca8359dc318e608b5e84c6e4.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.0a33024947675a123b7b3e632cb9db15b397e8fb.001.1",
             "source": "nws_alert"
           }
         ],
@@ -31069,19 +30700,6 @@
             ],
             "distance_miles": 46.5,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "DeSoto BB 8366 2 RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20183",
-            "category": "wildfire",
-            "date": "2026-05-16T11:04:00Z",
-            "lat": 30.6717,
-            "lon": -88.995,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/257458bd-c716-4ba4-b76b-5f0ae3cacf51"
-            ],
-            "distance_miles": 35.9,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -31090,7 +30708,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 6
+      "alert_count": 3
     },
     "28111": {
       "fips": "28111",
@@ -31100,13 +30718,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 8:20PM CDT until May 31 at 5:30PM CDT by NWS Mobile AL",
+            "headline": "Flood Warning issued May 30 at 7:36PM CDT until May 31 at 10:00AM CDT by NWS Mobile AL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-05-29T20:20:00-05:00",
-            "expires": "2026-05-30T08:30:00-05:00",
+            "effective": "2026-05-30T19:36:00-05:00",
+            "expires": "2026-05-31T07:45:00-05:00",
             "areaDesc": "George, MS; Greene, MS; Perry, MS",
-            "id": "urn:oid:2.49.0.1.840.0.1e47b078ef2a8bab336568f06c230c098b64fe9c.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.7bf034f56d7148239bb74af7656041b4540ec05b.001.1",
             "source": "nws_alert"
           }
         ],
@@ -31179,32 +30797,6 @@
             ],
             "distance_miles": 26.6,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "DeSoto BB 8366 2 RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20183",
-            "category": "wildfire",
-            "date": "2026-05-16T11:04:00Z",
-            "lat": 30.6717,
-            "lon": -88.995,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/257458bd-c716-4ba4-b76b-5f0ae3cacf51"
-            ],
-            "distance_miles": 34.4,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 441 RX Prescribed Fire, Wayne, Mississippi",
-            "id": "EONET_20197",
-            "category": "wildfire",
-            "date": "2026-05-16T09:19:00Z",
-            "lat": 31.4806,
-            "lon": -88.6589,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/3188e40e-94b5-4173-b061-4f32aba3ea05"
-            ],
-            "distance_miles": 29.0,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -31213,7 +30805,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 8
+      "alert_count": 6
     },
     "28113": {
       "fips": "28113",
@@ -31435,19 +31027,6 @@
             ],
             "distance_miles": 47.6,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "DeSoto BB 8366 2 RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20183",
-            "category": "wildfire",
-            "date": "2026-05-16T11:04:00Z",
-            "lat": 30.6717,
-            "lon": -88.995,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/257458bd-c716-4ba4-b76b-5f0ae3cacf51"
-            ],
-            "distance_miles": 10.8,
-            "threat_level": "Immediate"
           }
         ],
         "transit": [],
@@ -31456,7 +31035,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 3
     },
     "28133": {
       "fips": "28133",
@@ -31596,7 +31175,14 @@
       "name": "Walthall County",
       "state": "MS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -31608,7 +31194,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "28149": {
       "fips": "28149",
@@ -31710,19 +31296,6 @@
             ],
             "distance_miles": 11.2,
             "threat_level": "Immediate"
-          },
-          {
-            "title": "Chickasawhay CPT 441 RX Prescribed Fire, Wayne, Mississippi",
-            "id": "EONET_20197",
-            "category": "wildfire",
-            "date": "2026-05-16T09:19:00Z",
-            "lat": 31.4806,
-            "lon": -88.6589,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/3188e40e-94b5-4173-b061-4f32aba3ea05"
-            ],
-            "distance_miles": 11.2,
-            "threat_level": "Immediate"
           }
         ],
         "transit": [],
@@ -31731,7 +31304,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 5
+      "alert_count": 4
     },
     "28155": {
       "fips": "28155",
@@ -32308,7 +31881,19 @@
       "name": "Cole County",
       "state": "MO",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued May 31 at 6:22AM CDT until June 1 at 9:31PM CDT by NWS St Louis MO",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-31T06:22:00-05:00",
+            "expires": "2026-06-01T18:30:00-05:00",
+            "areaDesc": "Cole, MO",
+            "id": "urn:oid:2.49.0.1.840.0.6e530d14896799e2b24e4f56324333d756cc3b1e.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -32320,14 +31905,26 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "29053": {
       "fips": "29053",
       "name": "Cooper County",
       "state": "MO",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued May 31 at 3:31AM CDT until June 1 at 5:08PM CDT by NWS Kansas City/Pleasant Hill MO",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-31T03:31:00-05:00",
+            "expires": "2026-06-01T03:45:00-05:00",
+            "areaDesc": "Cooper, MO",
+            "id": "urn:oid:2.49.0.1.840.0.4e9189b2b36072601eb4765e39cb3d4d2530c3bd.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -32339,7 +31936,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "29055": {
       "fips": "29055",
@@ -33581,7 +33178,19 @@
       "name": "St. Clair County",
       "state": "MO",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued May 30 at 8:14PM CDT until June 2 at 10:00PM CDT by NWS Springfield MO",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-30T20:14:00-05:00",
+            "expires": "2026-05-31T20:15:00-05:00",
+            "areaDesc": "St. Clair, MO; Vernon, MO",
+            "id": "urn:oid:2.49.0.1.840.0.dc12eaf75afa177ac9aac2ec000b5c4e4f6a165a.002.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -33593,7 +33202,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "29186": {
       "fips": "29186",
@@ -33866,7 +33475,41 @@
       "name": "Vernon County",
       "state": "MO",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued May 30 at 8:14PM CDT until June 2 at 9:51AM CDT by NWS Springfield MO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-05-30T20:14:00-05:00",
+            "expires": "2026-05-31T20:15:00-05:00",
+            "areaDesc": "Vernon, MO",
+            "id": "urn:oid:2.49.0.1.840.0.0490127c4bd47da4d6d145623fe1a4f9ef297e25.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued May 30 at 8:14PM CDT until June 2 at 10:00PM CDT by NWS Springfield MO",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-30T20:14:00-05:00",
+            "expires": "2026-05-31T20:15:00-05:00",
+            "areaDesc": "St. Clair, MO; Vernon, MO",
+            "id": "urn:oid:2.49.0.1.840.0.dc12eaf75afa177ac9aac2ec000b5c4e4f6a165a.002.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued May 30 at 8:14PM CDT until June 1 at 7:00PM CDT by NWS Springfield MO",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-05-30T20:14:00-05:00",
+            "expires": "2026-05-31T20:15:00-05:00",
+            "areaDesc": "Vernon, MO",
+            "id": "urn:oid:2.49.0.1.840.0.dc12eaf75afa177ac9aac2ec000b5c4e4f6a165a.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -33878,7 +33521,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 3
     },
     "29219": {
       "fips": "29219",
@@ -34132,7 +33775,14 @@
       "name": "Cascade County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.8\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34144,14 +33794,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "30015": {
       "fips": "30015",
       "name": "Chouteau County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34163,14 +33820,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "30017": {
       "fips": "30017",
       "name": "Custer County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34182,7 +33846,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "30019": {
       "fips": "30019",
@@ -34284,7 +33948,14 @@
       "name": "Flathead County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.9\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34296,21 +33967,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "30031": {
       "fips": "30031",
       "name": "Gallatin County",
       "state": "MT",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34336,7 +34000,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "30033": {
       "fips": "30033",
@@ -34362,7 +34026,14 @@
       "name": "Glacier County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34374,7 +34045,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "30037": {
       "fips": "30037",
@@ -34476,7 +34147,14 @@
       "name": "Lake County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34488,7 +34166,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "30049": {
       "fips": "30049",
@@ -34571,14 +34249,7 @@
       "name": "Madison County",
       "state": "MT",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34604,7 +34275,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "30059": {
       "fips": "30059",
@@ -34687,14 +34358,7 @@
       "name": "Park County",
       "state": "MT",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34720,7 +34384,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "30069": {
       "fips": "30069",
@@ -34765,7 +34429,14 @@
       "name": "Pondera County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34777,7 +34448,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "30075": {
       "fips": "30075",
@@ -34898,7 +34569,14 @@
       "name": "Rosebud County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34910,7 +34588,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "30089": {
       "fips": "30089",
@@ -35012,7 +34690,14 @@
       "name": "Teton County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -35024,7 +34709,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "30101": {
       "fips": "30101",
@@ -35525,14 +35210,7 @@
       "name": "Custer County",
       "state": "NE",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -35544,7 +35222,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "31043": {
       "fips": "31043",
@@ -35592,7 +35270,22 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Severe weather causes power outage in Dawson County",
+            "url": "https://www.ksnblocal4.com/2026/05/31/severe-weather-causes-power-outage-lexington/",
+            "domain": "ksnblocal4.com",
+            "seendate": "20260531054500",
+            "is_new": true
+          },
+          {
+            "title": "Severe weather causes power outage in Dawson County",
+            "url": "https://www.knopnews2.com/2026/05/31/severe-weather-causes-power-outage-lexington/",
+            "domain": "knopnews2.com",
+            "seendate": "20260531044500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -35601,7 +35294,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "31049": {
       "fips": "31049",
@@ -37284,14 +36977,7 @@
       "name": "Belknap County",
       "state": "NH",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -37303,26 +36989,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "33003": {
       "fips": "33003",
       "name": "Carroll County",
       "state": "NH",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 10:13PM EDT until May 30 at 10:18PM EDT by NWS Gray ME",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T22:13:00-04:00",
-            "expires": "2026-05-30T10:15:00-04:00",
-            "areaDesc": "Cumberland, ME; Oxford, ME; Carroll, NH",
-            "id": "urn:oid:2.49.0.1.840.0.d9bf38ddc735c9ca16bd983c1392ba100de23e2c.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -37334,7 +37008,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "33005": {
       "fips": "33005",
@@ -37436,14 +37110,7 @@
       "name": "Rockingham County",
       "state": "NH",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -37455,21 +37122,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "33017": {
       "fips": "33017",
       "name": "Strafford County",
       "state": "NH",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.6\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -37481,7 +37141,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "33019": {
       "fips": "33019",
@@ -44662,32 +44322,6 @@
             ],
             "distance_miles": 18.2,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "Sharpe Wildfire, Cimarron, Oklahoma",
-            "id": "EONET_20163",
-            "category": "wildfire",
-            "date": "2026-05-16T20:54:00Z",
-            "lat": 36.8933,
-            "lon": -102.6667,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/6122eacf-706c-45a8-91b4-4f9eccf25098"
-            ],
-            "distance_miles": 13.0,
-            "threat_level": "Immediate"
-          },
-          {
-            "title": "Tex-OK Wildfire, Cimarron, Oklahoma",
-            "id": "EONET_20165",
-            "category": "wildfire",
-            "date": "2026-05-16T09:28:00Z",
-            "lat": 36.6364,
-            "lon": -102.4322,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/e27ccb2e-b913-4916-a414-3bfe748138c7"
-            ],
-            "distance_miles": 9.1,
-            "threat_level": "Immediate"
           }
         ],
         "transit": [],
@@ -44696,7 +44330,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 1
     },
     "40027": {
       "fips": "40027",
@@ -50211,30 +49845,7 @@
       "name": "Anderson County",
       "state": "TN",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued May 30 at 5:08AM EDT until May 30 at 9:15AM EDT by NWS Morristown TN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-30T05:08:00-04:00",
-            "expires": "2026-05-30T09:15:00-04:00",
-            "areaDesc": "Anderson, TN; Campbell, TN; Morgan, TN; Scott, TN",
-            "id": "urn:oid:2.49.0.1.840.0.2a2b12381b761c9d48d523e1464d29b48b87c836.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued May 30 at 4:25AM EDT until May 30 at 8:30AM EDT by NWS Morristown TN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-30T04:25:00-04:00",
-            "expires": "2026-05-30T08:30:00-04:00",
-            "areaDesc": "Anderson, TN; Morgan, TN",
-            "id": "urn:oid:2.49.0.1.840.0.4493bcea62cf3b649c13f7acf100d8a2eea44c21.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -50246,7 +49857,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "47003": {
       "fips": "47003",
@@ -50348,19 +49959,7 @@
       "name": "Campbell County",
       "state": "TN",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued May 30 at 5:08AM EDT until May 30 at 9:15AM EDT by NWS Morristown TN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-30T05:08:00-04:00",
-            "expires": "2026-05-30T09:15:00-04:00",
-            "areaDesc": "Anderson, TN; Campbell, TN; Morgan, TN; Scott, TN",
-            "id": "urn:oid:2.49.0.1.840.0.2a2b12381b761c9d48d523e1464d29b48b87c836.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -50372,7 +49971,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "47015": {
       "fips": "47015",
@@ -50797,19 +50396,7 @@
       "name": "Greene County",
       "state": "TN",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued May 30 at 7:26AM EDT until May 30 at 10:00AM EDT by NWS Morristown TN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-30T07:26:00-04:00",
-            "expires": "2026-05-30T10:00:00-04:00",
-            "areaDesc": "Greene, TN",
-            "id": "urn:oid:2.49.0.1.840.0.090357cab7eb615e66323166b9a75a7625d7e3e3.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -50821,7 +50408,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "47061": {
       "fips": "47061",
@@ -51265,19 +50852,7 @@
       "name": "McMinn County",
       "state": "TN",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued May 30 at 5:49AM EDT until May 30 at 10:00AM EDT by NWS Morristown TN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-30T05:49:00-04:00",
-            "expires": "2026-05-30T10:00:00-04:00",
-            "areaDesc": "McMinn, TN",
-            "id": "urn:oid:2.49.0.1.840.0.cbb34a70da51c954ba82ab6807b7572600050078.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -51289,7 +50864,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "47109": {
       "fips": "47109",
@@ -51486,30 +51061,7 @@
       "name": "Morgan County",
       "state": "TN",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued May 30 at 5:08AM EDT until May 30 at 9:15AM EDT by NWS Morristown TN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-30T05:08:00-04:00",
-            "expires": "2026-05-30T09:15:00-04:00",
-            "areaDesc": "Anderson, TN; Campbell, TN; Morgan, TN; Scott, TN",
-            "id": "urn:oid:2.49.0.1.840.0.2a2b12381b761c9d48d523e1464d29b48b87c836.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued May 30 at 4:25AM EDT until May 30 at 8:30AM EDT by NWS Morristown TN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-30T04:25:00-04:00",
-            "expires": "2026-05-30T08:30:00-04:00",
-            "areaDesc": "Anderson, TN; Morgan, TN",
-            "id": "urn:oid:2.49.0.1.840.0.4493bcea62cf3b649c13f7acf100d8a2eea44c21.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -51521,7 +51073,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "47131": {
       "fips": "47131",
@@ -51718,19 +51270,7 @@
       "name": "Scott County",
       "state": "TN",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued May 30 at 5:08AM EDT until May 30 at 9:15AM EDT by NWS Morristown TN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-30T05:08:00-04:00",
-            "expires": "2026-05-30T09:15:00-04:00",
-            "areaDesc": "Anderson, TN; Campbell, TN; Morgan, TN; Scott, TN",
-            "id": "urn:oid:2.49.0.1.840.0.2a2b12381b761c9d48d523e1464d29b48b87c836.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -51742,7 +51282,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "47153": {
       "fips": "47153",
@@ -52170,13 +51710,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 9:15PM CDT until May 31 at 3:48AM CDT by NWS Corpus Christi TX",
+            "headline": "Flood Warning issued May 30 at 9:47PM CDT until June 1 at 7:00PM CDT by NWS Corpus Christi TX",
             "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T21:15:00-05:00",
-            "expires": "2026-05-30T12:15:00-05:00",
+            "urgency": "Expected",
+            "effective": "2026-05-30T21:47:00-05:00",
+            "expires": "2026-05-31T13:00:00-05:00",
             "areaDesc": "Aransas, TX; Refugio, TX",
-            "id": "urn:oid:2.49.0.1.840.0.4cc0cfecf252e05781cb38c3b0b59fe49356a35a.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.cd5fbcdf968c6d0646ca7a3453a94b87ea674df9.001.1",
             "source": "nws_alert"
           }
         ],
@@ -53267,32 +52807,6 @@
             ],
             "distance_miles": 49.1,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "Sharpe Wildfire, Cimarron, Oklahoma",
-            "id": "EONET_20163",
-            "category": "wildfire",
-            "date": "2026-05-16T20:54:00Z",
-            "lat": 36.8933,
-            "lon": -102.6667,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/6122eacf-706c-45a8-91b4-4f9eccf25098"
-            ],
-            "distance_miles": 42.1,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Tex-OK Wildfire, Cimarron, Oklahoma",
-            "id": "EONET_20165",
-            "category": "wildfire",
-            "date": "2026-05-16T09:28:00Z",
-            "lat": 36.6364,
-            "lon": -102.4322,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/e27ccb2e-b913-4916-a414-3bfe748138c7"
-            ],
-            "distance_miles": 25.8,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -53301,7 +52815,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 1
     },
     "48113": {
       "fips": "48113",
@@ -55862,14 +55376,7 @@
       "name": "Polk County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -55881,7 +55388,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48375": {
       "fips": "48375",
@@ -56112,13 +55619,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 9:15PM CDT until May 31 at 3:48AM CDT by NWS Corpus Christi TX",
+            "headline": "Flood Warning issued May 30 at 9:47PM CDT until June 1 at 7:00PM CDT by NWS Corpus Christi TX",
             "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T21:15:00-05:00",
-            "expires": "2026-05-30T12:15:00-05:00",
+            "urgency": "Expected",
+            "effective": "2026-05-30T21:47:00-05:00",
+            "expires": "2026-05-31T13:00:00-05:00",
             "areaDesc": "Aransas, TX; Refugio, TX",
-            "id": "urn:oid:2.49.0.1.840.0.4cc0cfecf252e05781cb38c3b0b59fe49356a35a.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.cd5fbcdf968c6d0646ca7a3453a94b87ea674df9.001.1",
             "source": "nws_alert"
           }
         ],
@@ -56411,28 +55918,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Tex-OK Wildfire, Cimarron, Oklahoma",
-            "id": "EONET_20165",
-            "category": "wildfire",
-            "date": "2026-05-16T09:28:00Z",
-            "lat": 36.6364,
-            "lon": -102.4322,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/e27ccb2e-b913-4916-a414-3bfe748138c7"
-            ],
-            "distance_miles": 38.6,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48423": {
       "fips": "48423",
@@ -57886,14 +57379,7 @@
       "name": "Caledonia County",
       "state": "VT",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -57905,7 +57391,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "50007": {
       "fips": "50007",
@@ -57988,14 +57474,7 @@
       "name": "Lamoille County",
       "state": "VT",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -58007,7 +57486,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "50017": {
       "fips": "50017",
@@ -58071,14 +57550,7 @@
       "name": "Washington County",
       "state": "VT",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -58090,7 +57562,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "50025": {
       "fips": "50025",
@@ -60733,19 +60205,7 @@
       "name": "Chelan County",
       "state": "WA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued May 29 at 9:52AM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-05-29T09:52:00-07:00",
-            "expires": "2026-05-30T12:00:00-07:00",
-            "areaDesc": "Chelan, WA",
-            "id": "urn:oid:2.49.0.1.840.0.2cafef32120da88355c5574e7105f8166c8617f0.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -60757,7 +60217,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "53009": {
       "fips": "53009",
@@ -63884,7 +63344,19 @@
       "name": "Albany County",
       "state": "WY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "High Wind Warning",
+            "headline": "High Wind Warning issued May 31 at 3:11AM MDT until May 31 at 9:00AM MDT by NWS Cheyenne WY",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-05-31T03:11:00-06:00",
+            "expires": "2026-05-31T09:00:00-06:00",
+            "areaDesc": "North Snowy Range Foothills",
+            "id": "urn:oid:2.49.0.1.840.0.a6f5a960d65f2e9fd0af0db87ec03806bcbcf373.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -63896,7 +63368,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "56003": {
       "fips": "56003",
@@ -63941,7 +63413,19 @@
       "name": "Carbon County",
       "state": "WY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "High Wind Warning",
+            "headline": "High Wind Warning issued May 31 at 3:11AM MDT until May 31 at 9:00AM MDT by NWS Cheyenne WY",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-05-31T03:11:00-06:00",
+            "expires": "2026-05-31T09:00:00-06:00",
+            "areaDesc": "North Snowy Range Foothills",
+            "id": "urn:oid:2.49.0.1.840.0.a6f5a960d65f2e9fd0af0db87ec03806bcbcf373.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -63953,7 +63437,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "56009": {
       "fips": "56009",
@@ -64340,7 +63824,20 @@
       "name": "Aguada Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          },
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -64352,14 +63849,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "72005": {
       "fips": "72005",
       "name": "Aguadilla Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -64371,7 +63875,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72007": {
       "fips": "72007",
@@ -64418,8 +63922,14 @@
       "alerts": {
         "weather": [
           {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          },
+          {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 112.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -64435,7 +63945,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "72013": {
       "fips": "72013",
@@ -64444,8 +63954,14 @@
       "alerts": {
         "weather": [
           {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          },
+          {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 111.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -64461,7 +63977,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "72015": {
       "fips": "72015",
@@ -64489,8 +64005,14 @@
       "alerts": {
         "weather": [
           {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          },
+          {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 112.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -64506,7 +64028,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "72019": {
       "fips": "72019",
@@ -64589,7 +64111,14 @@
       "name": "Camuy Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -64601,7 +64130,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72029": {
       "fips": "72029",
@@ -64646,7 +64175,14 @@
       "name": "CataÃ±o Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -64658,7 +64194,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72035": {
       "fips": "72035",
@@ -64703,7 +64239,14 @@
       "name": "Ciales Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -64715,7 +64258,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72041": {
       "fips": "72041",
@@ -64820,7 +64363,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 111.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -64862,7 +64405,14 @@
       "name": "Florida Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -64874,7 +64424,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72055": {
       "fips": "72055",
@@ -64976,7 +64526,14 @@
       "name": "Hatillo Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -64988,14 +64545,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72067": {
       "fips": "72067",
       "name": "Hormigueros Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65007,7 +64571,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72069": {
       "fips": "72069",
@@ -65033,7 +64597,14 @@
       "name": "Isabela Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65045,7 +64616,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72073": {
       "fips": "72073",
@@ -65128,7 +64699,14 @@
       "name": "Lares Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65140,14 +64718,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72083": {
       "fips": "72083",
       "name": "Las MarÃ­as Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65159,7 +64744,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72085": {
       "fips": "72085",
@@ -65223,7 +64808,20 @@
       "name": "ManatÃ­ Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          },
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65235,7 +64833,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "72093": {
       "fips": "72093",
@@ -65301,8 +64899,14 @@
       "alerts": {
         "weather": [
           {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          },
+          {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 114.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -65318,14 +64922,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "72101": {
       "fips": "72101",
       "name": "Morovis Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65337,7 +64948,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72103": {
       "fips": "72103",
@@ -65458,7 +65069,14 @@
       "name": "Quebradillas Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65470,14 +65088,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72117": {
       "fips": "72117",
       "name": "RincÃ³n Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65489,7 +65114,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72119": {
       "fips": "72119",
@@ -65515,7 +65140,14 @@
       "name": "Sabana Grande Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65527,7 +65159,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72123": {
       "fips": "72123",
@@ -65553,7 +65185,14 @@
       "name": "San GermÃ¡n Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65565,7 +65204,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72127": {
       "fips": "72127",
@@ -65610,7 +65249,20 @@
       "name": "San SebastiÃ¡n Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          },
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65622,7 +65274,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "72133": {
       "fips": "72133",
@@ -65648,7 +65300,14 @@
       "name": "Toa Alta Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65660,14 +65319,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72137": {
       "fips": "72137",
       "name": "Toa Baja Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65679,7 +65345,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72139": {
       "fips": "72139",
@@ -65705,7 +65371,14 @@
       "name": "Utuado Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65717,14 +65390,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72143": {
       "fips": "72143",
       "name": "Vega Alta Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -65736,7 +65416,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "72145": {
       "fips": "72145",
@@ -65746,7 +65426,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 112.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
