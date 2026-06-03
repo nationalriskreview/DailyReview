@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-02T20:19:11.040883+00:00",
-  "date": "2026-06-02",
+  "generated_at": "2026-06-03T20:21:10.144048+00:00",
+  "date": "2026-06-03",
   "data_windows": {
     "weather": "live",
     "bank_robbery": "24h",
@@ -28,36 +28,36 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 77
+      "counties_with_alerts": 46
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3170,
-      "counties_over_threshold": 14
+      "counties_queried": 3191,
+      "counties_over_threshold": 10
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 60,
+      "counties_with_matches": 42,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 176,
-        "utility_outage": 25,
-        "transit_disruption": 0
+        "protest": 61,
+        "utility_outage": 6,
+        "transit_disruption": 7
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 17,
+      "counties_with_matches": 9,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 1,
-        "utility_outage": 25,
+        "protest": 3,
+        "utility_outage": 6,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 107
+      "counties_with_alerts": 76
     },
     "transit": {
       "status": "ok",
@@ -157,12 +157,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 2,
+      "counties_with_alerts": 24
     }
   },
   "counties_total": 3222,
-  "counties_with_alerts": 205,
+  "counties_with_alerts": 170,
   "national": {
     "cdc_han": [],
     "who_don": [
@@ -189,7 +189,28 @@
       }
     ],
     "amtrak_advisories": [],
-    "faa_advisories": []
+    "faa_advisories": [
+      {
+        "kind": "ground_stop",
+        "code": "LGA",
+        "name": "LaGuardia",
+        "city": "New York",
+        "state": "NY",
+        "reason": "runway maintenance",
+        "end": "5:15 pm EDT",
+        "source": "FAA NAS Status"
+      },
+      {
+        "kind": "ground_stop",
+        "code": "IAH",
+        "name": "George Bush Intercontinental",
+        "city": "Houston",
+        "state": "TX",
+        "reason": "thunderstorms",
+        "end": "3:45 pm CDT",
+        "source": "FAA NAS Status"
+      }
+    ]
   },
   "counties": {
     "01001": {
@@ -257,22 +278,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Over 100,000 Without Power As Windy Storms March Through Alabama",
-            "url": "https://953thebear.com/ixp/993/p/over-100000-without-power-storms-monday/",
-            "domain": "953thebear.com",
-            "seendate": "20260602003000",
-            "is_new": false
-          },
-          {
-            "title": "Over 100,000 Without Power As Windy Storms March Through Alabama",
-            "url": "https://wtug.com/ixp/993/p/over-100000-without-power-storms-monday/",
-            "domain": "wtug.com",
-            "seendate": "20260602013000",
-            "is_new": false
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -281,7 +287,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "01009": {
       "fips": "01009",
@@ -348,15 +354,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Thousands remain without power Tuesday morning after storms knock down trees, power lines",
-            "url": "https://www.wbrc.com/2026/06/02/thousands-remain-without-power-tuesday-morning-after-storms-knock-down-trees-power-lines/",
-            "domain": "wbrc.com",
-            "seendate": "20260602130000",
-            "is_new": true
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -365,7 +363,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "01017": {
       "fips": "01017",
@@ -434,28 +432,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Chickasawhay CPT 451 452 RX Prescribed Fire, Greene, Mississippi",
-            "id": "EONET_20229",
-            "category": "wildfire",
-            "date": "2026-05-20T09:22:00Z",
-            "lat": 31.4154,
-            "lon": -88.6597,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/29128400-a817-4d78-a1a7-3a5bb5b597fd"
-            ],
-            "distance_miles": 46.5,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "01025": {
       "fips": "01025",
@@ -503,15 +487,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Thousands remain without power Tuesday morning after storms knock down trees, power lines",
-            "url": "https://www.wbrc.com/2026/06/02/thousands-remain-without-power-tuesday-morning-after-storms-knock-down-trees-power-lines/",
-            "domain": "wbrc.com",
-            "seendate": "20260602130000",
-            "is_new": true
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -520,7 +496,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "01031": {
       "fips": "01031",
@@ -777,22 +753,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Over 100,000 Without Power As Windy Storms March Through Alabama",
-            "url": "https://953thebear.com/ixp/993/p/over-100000-without-power-storms-monday/",
-            "domain": "953thebear.com",
-            "seendate": "20260602003000",
-            "is_new": false
-          },
-          {
-            "title": "Over 100,000 Without Power As Windy Storms March Through Alabama",
-            "url": "https://wtug.com/ixp/993/p/over-100000-without-power-storms-monday/",
-            "domain": "wtug.com",
-            "seendate": "20260602013000",
-            "is_new": false
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -801,7 +762,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "01059": {
       "fips": "01059",
@@ -944,29 +905,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Over 100,000 Without Power As Windy Storms March Through Alabama",
-            "url": "https://953thebear.com/ixp/993/p/over-100000-without-power-storms-monday/",
-            "domain": "953thebear.com",
-            "seendate": "20260602003000",
-            "is_new": false
-          },
-          {
-            "title": "Over 100,000 Without Power As Windy Storms March Through Alabama",
-            "url": "https://wtug.com/ixp/993/p/over-100000-without-power-storms-monday/",
-            "domain": "wtug.com",
-            "seendate": "20260602013000",
-            "is_new": false
-          },
-          {
-            "title": "Thousands remain without power Tuesday morning after storms knock down trees, power lines",
-            "url": "https://www.wbrc.com/2026/06/02/thousands-remain-without-power-tuesday-morning-after-storms-knock-down-trees-power-lines/",
-            "domain": "wbrc.com",
-            "seendate": "20260602130000",
-            "is_new": true
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -975,7 +914,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 0
     },
     "01075": {
       "fips": "01075",
@@ -1061,15 +1000,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Decatur Utilities reports power outages after storm",
-            "url": "https://www.decaturdaily.com/news/morgan_county/decatur/decatur-utilities-reports-power-outages-after-storm/article_456250f3-d4e8-4aca-95a6-cad622bdb606.html",
-            "domain": "decaturdaily.com",
-            "seendate": "20260602001500",
-            "is_new": false
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -1078,7 +1009,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "01085": {
       "fips": "01085",
@@ -1204,28 +1135,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "DeSoto BB 8374 S RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20230",
-            "category": "wildfire",
-            "date": "2026-05-20T11:12:00Z",
-            "lat": 30.6733,
-            "lon": -89.0353,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/0aa79001-67d5-4ffb-aa44-82feeb972f29"
-            ],
-            "distance_miles": 49.8,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "01099": {
       "fips": "01099",
@@ -1273,22 +1190,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Decatur Utilities reports power outages after storm",
-            "url": "https://www.decaturdaily.com/news/morgan_county/decatur/decatur-utilities-reports-power-outages-after-storm/article_456250f3-d4e8-4aca-95a6-cad622bdb606.html",
-            "domain": "decaturdaily.com",
-            "seendate": "20260602001500",
-            "is_new": false
-          },
-          {
-            "title": "Severe storms leave 1,200 without power, topple dozens of trees in Morgan County",
-            "url": "https://www.waff.com/2026/06/02/severe-storms-leave-1200-without-power-topple-dozens-trees-morgan-county/",
-            "domain": "waff.com",
-            "seendate": "20260602083000",
-            "is_new": true
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -1297,7 +1199,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "01105": {
       "fips": "01105",
@@ -1326,22 +1228,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Over 100,000 Without Power As Windy Storms March Through Alabama",
-            "url": "https://953thebear.com/ixp/993/p/over-100000-without-power-storms-monday/",
-            "domain": "953thebear.com",
-            "seendate": "20260602003000",
-            "is_new": false
-          },
-          {
-            "title": "Over 100,000 Without Power As Windy Storms March Through Alabama",
-            "url": "https://wtug.com/ixp/993/p/over-100000-without-power-storms-monday/",
-            "domain": "wtug.com",
-            "seendate": "20260602013000",
-            "is_new": false
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -1350,7 +1237,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "01109": {
       "fips": "01109",
@@ -1436,15 +1323,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Thousands remain without power Tuesday morning after storms knock down trees, power lines",
-            "url": "https://www.wbrc.com/2026/06/02/thousands-remain-without-power-tuesday-morning-after-storms-knock-down-trees-power-lines/",
-            "domain": "wbrc.com",
-            "seendate": "20260602130000",
-            "is_new": true
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -1453,7 +1332,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "01119": {
       "fips": "01119",
@@ -1520,29 +1399,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Over 100,000 Without Power As Windy Storms March Through Alabama",
-            "url": "https://953thebear.com/ixp/993/p/over-100000-without-power-storms-monday/",
-            "domain": "953thebear.com",
-            "seendate": "20260602003000",
-            "is_new": false
-          },
-          {
-            "title": "Over 100,000 Without Power As Windy Storms March Through Alabama",
-            "url": "https://wtug.com/ixp/993/p/over-100000-without-power-storms-monday/",
-            "domain": "wtug.com",
-            "seendate": "20260602013000",
-            "is_new": false
-          },
-          {
-            "title": "Thousands remain without power Tuesday morning after storms knock down trees, power lines",
-            "url": "https://www.wbrc.com/2026/06/02/thousands-remain-without-power-tuesday-morning-after-storms-knock-down-trees-power-lines/",
-            "domain": "wbrc.com",
-            "seendate": "20260602130000",
-            "is_new": true
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -1551,7 +1408,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 0
     },
     "01127": {
       "fips": "01127",
@@ -1561,22 +1418,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Over 100,000 Without Power As Windy Storms March Through Alabama",
-            "url": "https://953thebear.com/ixp/993/p/over-100000-without-power-storms-monday/",
-            "domain": "953thebear.com",
-            "seendate": "20260602003000",
-            "is_new": false
-          },
-          {
-            "title": "Over 100,000 Without Power As Windy Storms March Through Alabama",
-            "url": "https://wtug.com/ixp/993/p/over-100000-without-power-storms-monday/",
-            "domain": "wtug.com",
-            "seendate": "20260602013000",
-            "is_new": false
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -1585,7 +1427,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "01129": {
       "fips": "01129",
@@ -1597,28 +1439,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Chickasawhay CPT 451 452 RX Prescribed Fire, Greene, Mississippi",
-            "id": "EONET_20229",
-            "category": "wildfire",
-            "date": "2026-05-20T09:22:00Z",
-            "lat": 31.4154,
-            "lon": -88.6597,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/29128400-a817-4d78-a1a7-3a5bb5b597fd"
-            ],
-            "distance_miles": 26.4,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "01131": {
       "fips": "01131",
@@ -1948,14 +1776,7 @@
       "name": "Kodiak Island Borough",
       "state": "AK",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1967,7 +1788,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "02158": {
       "fips": "02158",
@@ -2506,11 +2327,11 @@
         "protest": [],
         "utility_outage": [
           {
-            "title": "Power outage affects Prescott Valley; full restoration by 2:30",
-            "url": "https://www.dcourier.com/news/power-outage-affects-prescott-valley-full-restoration-by-2-30/article_0525e7ef-6d40-4b1e-9c77-68f857aa3a1c.html",
+            "title": "Power outage affects Prescott Valley on Tuesday",
+            "url": "https://www.dcourier.com/news/power-outage-affects-prescott-valley-on-tuesday/article_0525e7ef-6d40-4b1e-9c77-68f857aa3a1c.html",
             "domain": "dcourier.com",
-            "seendate": "20260602184500",
-            "is_new": true
+            "seendate": "20260603003000",
+            "is_new": false
           }
         ],
         "transit_disruption": [],
@@ -2794,19 +2615,7 @@
       "name": "Columbia County",
       "state": "AR",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:22PM CDT until June 2 at 3:15PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:22:00-05:00",
-            "expires": "2026-06-02T15:15:00-05:00",
-            "areaDesc": "Columbia, AR; Lafayette, AR; Miller, AR; Nevada, AR",
-            "id": "urn:oid:2.49.0.1.840.0.7c4d28b7c69db1a3d268458651fb9f54e8098c7f.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2818,7 +2627,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "05029": {
       "fips": "05029",
@@ -2999,15 +2808,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Over 4,000 without power in Sebastian, Franklin counties",
-            "url": "https://www.5newsonline.com/article/news/local/thousands-without-power-sebastian-franklin-counties/527-b60cdf2d-06b9-4362-9220-90b6d254486e",
-            "domain": "5newsonline.com",
-            "seendate": "20260602061500",
-            "is_new": false
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -3016,7 +2817,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "05049": {
       "fips": "05049",
@@ -3197,13 +2998,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 10:36AM CDT until June 8 at 7:00AM CDT by NWS Little Rock AR",
+            "headline": "Flood Warning issued June 3 at 9:19AM CDT until June 7 at 7:00PM CDT by NWS Little Rock AR",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-02T10:36:00-05:00",
-            "expires": "2026-06-03T10:45:00-05:00",
+            "effective": "2026-06-03T09:19:00-05:00",
+            "expires": "2026-06-04T09:30:00-05:00",
             "areaDesc": "Jackson, AR; Woodruff, AR",
-            "id": "urn:oid:2.49.0.1.840.0.39251ed7f921ba764d869c556bba77dea4f13fcc.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.14eafa353fcee22b7fb757eb1c3dd7777124de10.001.1",
             "source": "nws_alert"
           }
         ],
@@ -3263,19 +3064,7 @@
       "name": "Lafayette County",
       "state": "AR",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:22PM CDT until June 2 at 3:15PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:22:00-05:00",
-            "expires": "2026-06-02T15:15:00-05:00",
-            "areaDesc": "Columbia, AR; Lafayette, AR; Miller, AR; Nevada, AR",
-            "id": "urn:oid:2.49.0.1.840.0.7c4d28b7c69db1a3d268458651fb9f54e8098c7f.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -3287,7 +3076,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "05075": {
       "fips": "05075",
@@ -3446,19 +3235,7 @@
       "name": "Miller County",
       "state": "AR",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:22PM CDT until June 2 at 3:15PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:22:00-05:00",
-            "expires": "2026-06-02T15:15:00-05:00",
-            "areaDesc": "Columbia, AR; Lafayette, AR; Miller, AR; Nevada, AR",
-            "id": "urn:oid:2.49.0.1.840.0.7c4d28b7c69db1a3d268458651fb9f54e8098c7f.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -3470,7 +3247,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "05093": {
       "fips": "05093",
@@ -3534,19 +3311,7 @@
       "name": "Nevada County",
       "state": "AR",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:22PM CDT until June 2 at 3:15PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:22:00-05:00",
-            "expires": "2026-06-02T15:15:00-05:00",
-            "areaDesc": "Columbia, AR; Lafayette, AR; Miller, AR; Nevada, AR",
-            "id": "urn:oid:2.49.0.1.840.0.7c4d28b7c69db1a3d268458651fb9f54e8098c7f.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -3558,7 +3323,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "05101": {
       "fips": "05101",
@@ -3853,15 +3618,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Over 4,000 without power in Sebastian, Franklin counties",
-            "url": "https://www.5newsonline.com/article/news/local/thousands-without-power-sebastian-franklin-counties/527-b60cdf2d-06b9-4362-9220-90b6d254486e",
-            "domain": "5newsonline.com",
-            "seendate": "20260602061500",
-            "is_new": false
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -3870,7 +3627,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "05133": {
       "fips": "05133",
@@ -4013,13 +3770,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 10:36AM CDT until June 8 at 7:00AM CDT by NWS Little Rock AR",
+            "headline": "Flood Warning issued June 3 at 9:19AM CDT until June 7 at 7:00PM CDT by NWS Little Rock AR",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-02T10:36:00-05:00",
-            "expires": "2026-06-03T10:45:00-05:00",
+            "effective": "2026-06-03T09:19:00-05:00",
+            "expires": "2026-06-04T09:30:00-05:00",
             "areaDesc": "Jackson, AR; Woodruff, AR",
-            "id": "urn:oid:2.49.0.1.840.0.39251ed7f921ba764d869c556bba77dea4f13fcc.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.14eafa353fcee22b7fb757eb1c3dd7777124de10.001.1",
             "source": "nws_alert"
           }
         ],
@@ -4293,28 +4050,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "MTZ/SDU/TUSIL Wildfire, San Diego, California",
-            "id": "EONET_20238",
-            "category": "wildfire",
-            "date": "2026-05-19T16:17:00Z",
-            "lat": 32.7329,
-            "lon": -116.3628,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/86678603-6464-406f-bd21-065bbb15a368"
-            ],
-            "distance_miles": 42.5,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "06027": {
       "fips": "06027",
@@ -4345,28 +4088,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Foothill Wildfire, Santa Barbara, California",
-            "id": "EONET_20232",
-            "category": "wildfire",
-            "date": "2026-05-19T19:16:00Z",
-            "lat": 34.8297,
-            "lon": -119.6036,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/fe13eac3-abc4-49be-87bf-1cc7b095ec74"
-            ],
-            "distance_miles": 40.6,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "06031": {
       "fips": "06031",
@@ -4435,28 +4164,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "BAIN Wildfire, Riverside, California",
-            "id": "EONET_20233",
-            "category": "wildfire",
-            "date": "2026-05-19T15:16:00Z",
-            "lat": 33.9754,
-            "lon": -117.5059,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/a7c6f956-f17f-4a90-9fe7-011addde290c"
-            ],
-            "distance_miles": 26.8,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "06039": {
       "fips": "06039",
@@ -4658,34 +4373,7 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "VERONA Wildfire, Riverside, California",
-            "id": "EONET_20234",
-            "category": "wildfire",
-            "date": "2026-05-19T15:21:00Z",
-            "lat": 33.7627,
-            "lon": -117.0844,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/5fa51a06-a7d8-4926-84cb-c4a1f2bbb6a8"
-            ],
-            "distance_miles": 40.3,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "BAIN Wildfire, Riverside, California",
-            "id": "EONET_20233",
-            "category": "wildfire",
-            "date": "2026-05-19T15:16:00Z",
-            "lat": 33.9754,
-            "lon": -117.5059,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/a7c6f956-f17f-4a90-9fe7-011addde290c"
-            ],
-            "distance_miles": 25.9,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -4706,7 +4394,7 @@
         ],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 1
     },
     "06061": {
       "fips": "06061",
@@ -4756,34 +4444,7 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "MTZ/SDU/TUSIL Wildfire, San Diego, California",
-            "id": "EONET_20238",
-            "category": "wildfire",
-            "date": "2026-05-19T16:17:00Z",
-            "lat": 32.7329,
-            "lon": -116.3628,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/86678603-6464-406f-bd21-065bbb15a368"
-            ],
-            "distance_miles": 45.6,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "VERONA Wildfire, Riverside, California",
-            "id": "EONET_20234",
-            "category": "wildfire",
-            "date": "2026-05-19T15:21:00Z",
-            "lat": 33.7627,
-            "lon": -117.0844,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/5fa51a06-a7d8-4926-84cb-c4a1f2bbb6a8"
-            ],
-            "distance_miles": 33.9,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -4804,7 +4465,7 @@
         ],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 1
     },
     "06067": {
       "fips": "06067",
@@ -4873,41 +4534,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "MTZ/SDU/TUSIL Wildfire, San Diego, California",
-            "id": "EONET_20238",
-            "category": "wildfire",
-            "date": "2026-05-19T16:17:00Z",
-            "lat": 32.7329,
-            "lon": -116.3628,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/86678603-6464-406f-bd21-065bbb15a368"
-            ],
-            "distance_miles": 20.2,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "VERONA Wildfire, Riverside, California",
-            "id": "EONET_20234",
-            "category": "wildfire",
-            "date": "2026-05-19T15:21:00Z",
-            "lat": 33.7627,
-            "lon": -117.0844,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/5fa51a06-a7d8-4926-84cb-c4a1f2bbb6a8"
-            ],
-            "distance_miles": 34.4,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "06075": {
       "fips": "06075",
@@ -4995,28 +4629,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Foothill Wildfire, Santa Barbara, California",
-            "id": "EONET_20232",
-            "category": "wildfire",
-            "date": "2026-05-19T19:16:00Z",
-            "lat": 34.8297,
-            "lon": -119.6036,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/fe13eac3-abc4-49be-87bf-1cc7b095ec74"
-            ],
-            "distance_miles": 31.9,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "06085": {
       "fips": "06085",
@@ -5275,21 +4895,7 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Foothill Wildfire, Santa Barbara, California",
-            "id": "EONET_20232",
-            "category": "wildfire",
-            "date": "2026-05-19T19:16:00Z",
-            "lat": 34.8297,
-            "lon": -119.6036,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/fe13eac3-abc4-49be-87bf-1cc7b095ec74"
-            ],
-            "distance_miles": 42.1,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -5310,7 +4916,7 @@
         ],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "06113": {
       "fips": "06113",
@@ -5792,7 +5398,19 @@
       "name": "Garfield County",
       "state": "CO",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-03T10:10:00-06:00",
+            "expires": "2026-06-03T18:15:00-06:00",
+            "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
+            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -5804,7 +5422,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "08047": {
       "fips": "08047",
@@ -6134,7 +5752,19 @@
       "name": "Moffat County",
       "state": "CO",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-03T10:10:00-06:00",
+            "expires": "2026-06-03T18:15:00-06:00",
+            "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
+            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -6146,7 +5776,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "08083": {
       "fips": "08083",
@@ -6343,7 +5973,19 @@
       "name": "Rio Blanco County",
       "state": "CO",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-03T10:10:00-06:00",
+            "expires": "2026-06-03T18:15:00-06:00",
+            "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
+            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -6355,7 +5997,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "08105": {
       "fips": "08105",
@@ -6381,7 +6023,19 @@
       "name": "Routt County",
       "state": "CO",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-03T10:10:00-06:00",
+            "expires": "2026-06-03T18:15:00-06:00",
+            "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
+            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -6393,7 +6047,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "08109": {
       "fips": "08109",
@@ -6941,14 +6595,7 @@
       "name": "Broward County",
       "state": "FL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -6987,7 +6634,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "12013": {
       "fips": "12013",
@@ -7115,19 +6762,6 @@
             ],
             "distance_miles": 39.4,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "Rifle Range Rd Wildfire, Collier, Florida",
-            "id": "EONET_20236",
-            "category": "wildfire",
-            "date": "2026-05-19T22:10:00Z",
-            "lat": 26.1156,
-            "lon": -81.6369,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/66bfa6ae-29e9-4cde-b0e0-27aa4ec8cee0"
-            ],
-            "distance_miles": 14.6,
-            "threat_level": "Immediate"
           }
         ],
         "transit": [],
@@ -7136,7 +6770,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "12023": {
       "fips": "12023",
@@ -7519,19 +7153,6 @@
             ],
             "distance_miles": 36.0,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "Rifle Range Rd Wildfire, Collier, Florida",
-            "id": "EONET_20236",
-            "category": "wildfire",
-            "date": "2026-05-19T22:10:00Z",
-            "lat": 26.1156,
-            "lon": -81.6369,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/66bfa6ae-29e9-4cde-b0e0-27aa4ec8cee0"
-            ],
-            "distance_miles": 42.0,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -7540,7 +7161,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "12053": {
       "fips": "12053",
@@ -7779,28 +7400,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Rifle Range Rd Wildfire, Collier, Florida",
-            "id": "EONET_20236",
-            "category": "wildfire",
-            "date": "2026-05-19T22:10:00Z",
-            "lat": 26.1156,
-            "lon": -81.6369,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/66bfa6ae-29e9-4cde-b0e0-27aa4ec8cee0"
-            ],
-            "distance_miles": 37.7,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "12073": {
       "fips": "12073",
@@ -8145,14 +7752,7 @@
       "name": "Orange County",
       "state": "FL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -8178,7 +7778,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "12097": {
       "fips": "12097",
@@ -8218,19 +7818,7 @@
       "name": "Palm Beach County",
       "state": "FL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 3:51PM EDT until June 2 at 4:00PM EDT by NWS Miami FL",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T15:51:00-04:00",
-            "expires": "2026-06-02T16:00:00-04:00",
-            "areaDesc": "Palm Beach, FL",
-            "id": "urn:oid:2.49.0.1.840.0.3a2f218c349b97a502e13cadb83c3e484c870fc0.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -8269,7 +7857,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "12101": {
       "fips": "12101",
@@ -8456,14 +8044,7 @@
       "name": "Seminole County",
       "state": "FL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -8489,7 +8070,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "12119": {
       "fips": "12119",
@@ -11182,13 +10763,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 2:53PM EDT until June 3 at 8:00PM EDT by NWS Charleston SC",
+            "headline": "Flood Warning issued June 3 at 10:18AM EDT until June 5 at 12:00AM EDT by NWS Charleston SC",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-02T14:53:00-04:00",
-            "expires": "2026-06-03T15:00:00-04:00",
+            "urgency": "Immediate",
+            "effective": "2026-06-03T10:18:00-04:00",
+            "expires": "2026-06-04T10:30:00-04:00",
             "areaDesc": "Tattnall, GA; Toombs, GA",
-            "id": "urn:oid:2.49.0.1.840.0.373d1629b9b2e5f7f109ce3c2f2302fbb51f059b.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.42927de63ee19c03585f538a223a3b89df46c2c4.001.1",
             "source": "nws_alert"
           }
         ],
@@ -11308,13 +10889,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 2:53PM EDT until June 3 at 8:00PM EDT by NWS Charleston SC",
+            "headline": "Flood Warning issued June 3 at 10:18AM EDT until June 5 at 12:00AM EDT by NWS Charleston SC",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-02T14:53:00-04:00",
-            "expires": "2026-06-03T15:00:00-04:00",
+            "urgency": "Immediate",
+            "effective": "2026-06-03T10:18:00-04:00",
+            "expires": "2026-06-04T10:30:00-04:00",
             "areaDesc": "Tattnall, GA; Toombs, GA",
-            "id": "urn:oid:2.49.0.1.840.0.373d1629b9b2e5f7f109ce3c2f2302fbb51f059b.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.42927de63ee19c03585f538a223a3b89df46c2c4.001.1",
             "source": "nws_alert"
           }
         ],
@@ -11735,14 +11316,7 @@
       "name": "Hawaii County",
       "state": "HI",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -11754,7 +11328,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "15003": {
       "fips": "15003",
@@ -11840,13 +11414,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 2 at 12:52PM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
+            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-02T12:52:00-06:00",
-            "expires": "2026-06-02T21:00:00-06:00",
+            "effective": "2026-06-03T08:26:00-06:00",
+            "expires": "2026-06-03T21:00:00-06:00",
             "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.0b9c423e1f810d4ced4927e4b4e7f762fd2bf0de.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
             "source": "nws_alert"
           }
         ],
@@ -12113,13 +11687,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 2 at 12:52PM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
+            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-02T12:52:00-06:00",
-            "expires": "2026-06-02T21:00:00-06:00",
+            "effective": "2026-06-03T08:26:00-06:00",
+            "expires": "2026-06-03T21:00:00-06:00",
             "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.0b9c423e1f810d4ced4927e4b4e7f762fd2bf0de.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
             "source": "nws_alert"
           }
         ],
@@ -12253,13 +11827,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 2 at 12:52PM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
+            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-02T12:52:00-06:00",
-            "expires": "2026-06-02T21:00:00-06:00",
+            "effective": "2026-06-03T08:26:00-06:00",
+            "expires": "2026-06-03T21:00:00-06:00",
             "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.0b9c423e1f810d4ced4927e4b4e7f762fd2bf0de.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
             "source": "nws_alert"
           }
         ],
@@ -12355,13 +11929,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 2 at 12:52PM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
+            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-02T12:52:00-06:00",
-            "expires": "2026-06-02T21:00:00-06:00",
+            "effective": "2026-06-03T08:26:00-06:00",
+            "expires": "2026-06-03T21:00:00-06:00",
             "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.0b9c423e1f810d4ced4927e4b4e7f762fd2bf0de.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
             "source": "nws_alert"
           }
         ],
@@ -12451,13 +12025,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 2 at 12:52PM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
+            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-02T12:52:00-06:00",
-            "expires": "2026-06-02T21:00:00-06:00",
+            "effective": "2026-06-03T08:26:00-06:00",
+            "expires": "2026-06-03T21:00:00-06:00",
             "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.0b9c423e1f810d4ced4927e4b4e7f762fd2bf0de.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
             "source": "nws_alert"
           }
         ],
@@ -12598,13 +12172,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 2 at 12:52PM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
+            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-02T12:52:00-06:00",
-            "expires": "2026-06-02T21:00:00-06:00",
+            "effective": "2026-06-03T08:26:00-06:00",
+            "expires": "2026-06-03T21:00:00-06:00",
             "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.0b9c423e1f810d4ced4927e4b4e7f762fd2bf0de.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
             "source": "nws_alert"
           }
         ],
@@ -12746,13 +12320,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 2 at 12:52PM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
+            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-02T12:52:00-06:00",
-            "expires": "2026-06-02T21:00:00-06:00",
+            "effective": "2026-06-03T08:26:00-06:00",
+            "expires": "2026-06-03T21:00:00-06:00",
             "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.0b9c423e1f810d4ced4927e4b4e7f762fd2bf0de.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
             "source": "nws_alert"
           }
         ],
@@ -12867,13 +12441,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 2 at 12:52PM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
+            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-02T12:52:00-06:00",
-            "expires": "2026-06-02T21:00:00-06:00",
+            "effective": "2026-06-03T08:26:00-06:00",
+            "expires": "2026-06-03T21:00:00-06:00",
             "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.0b9c423e1f810d4ced4927e4b4e7f762fd2bf0de.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
             "source": "nws_alert"
           }
         ],
@@ -13511,19 +13085,7 @@
       "name": "Gallatin County",
       "state": "IL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 11:40AM CDT until June 2 at 6:07PM CDT by NWS Paducah KY",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T11:40:00-05:00",
-            "expires": "2026-06-02T18:15:00-05:00",
-            "areaDesc": "Gallatin, IL; Hardin, IL; Crittenden, KY; Union, KY",
-            "id": "urn:oid:2.49.0.1.840.0.c443be5a792a98808867775a8072483bf724a667.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -13535,7 +13097,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "17061": {
       "fips": "17061",
@@ -13618,19 +13180,7 @@
       "name": "Hardin County",
       "state": "IL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 11:40AM CDT until June 2 at 6:07PM CDT by NWS Paducah KY",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T11:40:00-05:00",
-            "expires": "2026-06-02T18:15:00-05:00",
-            "areaDesc": "Gallatin, IL; Hardin, IL; Crittenden, KY; Union, KY",
-            "id": "urn:oid:2.49.0.1.840.0.c443be5a792a98808867775a8072483bf724a667.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -13642,7 +13192,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "17071": {
       "fips": "17071",
@@ -15397,19 +14947,7 @@
       "name": "Gibson County",
       "state": "IN",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 12:17PM EDT until June 4 at 6:00AM EDT by NWS Indianapolis IN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T12:17:00-04:00",
-            "expires": "2026-06-03T00:15:00-04:00",
-            "areaDesc": "Gibson, IN; Knox, IN",
-            "id": "urn:oid:2.49.0.1.840.0.a23996423bc02a2d72a0a98cb65cd1796e4906c7.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -15421,7 +14959,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "18053": {
       "fips": "18053",
@@ -15713,19 +15251,7 @@
       "name": "Knox County",
       "state": "IN",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 12:17PM EDT until June 4 at 6:00AM EDT by NWS Indianapolis IN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T12:17:00-04:00",
-            "expires": "2026-06-03T00:15:00-04:00",
-            "areaDesc": "Gibson, IN; Knox, IN",
-            "id": "urn:oid:2.49.0.1.840.0.a23996423bc02a2d72a0a98cb65cd1796e4906c7.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -15737,7 +15263,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "18085": {
       "fips": "18085",
@@ -18350,7 +17876,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Power outage knocks out  access to library tech services",
+            "url": "https://www.crestonnews.com:443/article/428,power-outage-knocks-out-access-to-library-tech-services",
+            "domain": "crestonnews.com",
+            "seendate": "20260603190000",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -18359,7 +17893,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19177": {
       "fips": "19177",
@@ -19050,14 +18584,7 @@
       "name": "Ellis County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19069,7 +18596,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20053": {
       "fips": "20053",
@@ -19589,19 +19116,7 @@
       "name": "Linn County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 10:17AM CDT until June 3 at 8:00PM CDT by NWS Kansas City/Pleasant Hill MO",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T10:17:00-05:00",
-            "expires": "2026-06-03T10:30:00-05:00",
-            "areaDesc": "Linn, KS",
-            "id": "urn:oid:2.49.0.1.840.0.ebf7dc14fbe64e4289c3b4c72e67b80166546add.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19613,7 +19128,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20109": {
       "fips": "20109",
@@ -21158,19 +20673,7 @@
       "name": "Crittenden County",
       "state": "KY",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 11:40AM CDT until June 2 at 6:07PM CDT by NWS Paducah KY",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T11:40:00-05:00",
-            "expires": "2026-06-02T18:15:00-05:00",
-            "areaDesc": "Gallatin, IL; Hardin, IL; Crittenden, KY; Union, KY",
-            "id": "urn:oid:2.49.0.1.840.0.c443be5a792a98808867775a8072483bf724a667.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -21182,7 +20685,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "21057": {
       "fips": "21057",
@@ -22953,19 +22456,7 @@
       "name": "Union County",
       "state": "KY",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 11:40AM CDT until June 2 at 6:07PM CDT by NWS Paducah KY",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T11:40:00-05:00",
-            "expires": "2026-06-02T18:15:00-05:00",
-            "areaDesc": "Gallatin, IL; Hardin, IL; Crittenden, KY; Union, KY",
-            "id": "urn:oid:2.49.0.1.840.0.c443be5a792a98808867775a8072483bf724a667.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -22977,7 +22468,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "21227": {
       "fips": "21227",
@@ -23278,19 +22769,7 @@
       "name": "Bossier Parish",
       "state": "LA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:36PM CDT until June 2 at 3:15PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:36:00-05:00",
-            "expires": "2026-06-02T15:15:00-05:00",
-            "areaDesc": "Bossier, LA; Caddo, LA",
-            "id": "urn:oid:2.49.0.1.840.0.d7c1d66094ff47a91f5ae4e966cfdfa8a4d97daf.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -23302,37 +22781,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "22017": {
       "fips": "22017",
       "name": "Caddo Parish",
       "state": "LA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:36PM CDT until June 2 at 3:15PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:36:00-05:00",
-            "expires": "2026-06-02T15:15:00-05:00",
-            "areaDesc": "Bossier, LA; Caddo, LA",
-            "id": "urn:oid:2.49.0.1.840.0.d7c1d66094ff47a91f5ae4e966cfdfa8a4d97daf.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:24PM CDT until June 2 at 3:15PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:24:00-05:00",
-            "expires": "2026-06-02T15:15:00-05:00",
-            "areaDesc": "Caddo, LA; Panola, TX",
-            "id": "urn:oid:2.49.0.1.840.0.e17147ef83fdd7e20a514a51d9b2ef7ae059c8b4.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -23344,7 +22800,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "22019": {
       "fips": "22019",
@@ -23487,7 +22943,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Over 6,000 reported without power in multiple southeast Louisiana parishes",
+            "url": "https://www.wbrz.com/news/over-6-000-reported-without-power-in-multiple-southeast-louisiana-parishes",
+            "domain": "wbrz.com",
+            "seendate": "20260603040000",
+            "is_new": false
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -23496,7 +22960,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "22035": {
       "fips": "22035",
@@ -23525,7 +22989,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Over 6,000 reported without power in multiple southeast Louisiana parishes",
+            "url": "https://www.wbrz.com/news/over-6-000-reported-without-power-in-multiple-southeast-louisiana-parishes",
+            "domain": "wbrz.com",
+            "seendate": "20260603040000",
+            "is_new": false
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -23534,7 +23006,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "22039": {
       "fips": "22039",
@@ -23712,7 +23184,14 @@
       "name": "Lafourche Parish",
       "state": "LA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -23724,7 +23203,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "22059": {
       "fips": "22059",
@@ -26288,15 +25767,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Nearly 6,000 Consumers Energy customers without power Monday night",
-            "url": "https://www.wilx.com/2026/06/01/nearly-6000-consumers-energy-customers-without-power-monday-night/",
-            "domain": "wilx.com",
-            "seendate": "20260602001500",
-            "is_new": false
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -26305,7 +25776,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "26067": {
       "fips": "26067",
@@ -29241,28 +28712,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Chickasawhay CPT 451 452 RX Prescribed Fire, Greene, Mississippi",
-            "id": "EONET_20229",
-            "category": "wildfire",
-            "date": "2026-05-20T09:22:00Z",
-            "lat": 31.4154,
-            "lon": -88.6597,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/29128400-a817-4d78-a1a7-3a5bb5b597fd"
-            ],
-            "distance_miles": 43.6,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "28025": {
       "fips": "28025",
@@ -29369,41 +28826,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "DeSoto BB 8374 S RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20230",
-            "category": "wildfire",
-            "date": "2026-05-20T11:12:00Z",
-            "lat": 30.6733,
-            "lon": -89.0353,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/0aa79001-67d5-4ffb-aa44-82feeb972f29"
-            ],
-            "distance_miles": 38.0,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 451 452 RX Prescribed Fire, Greene, Mississippi",
-            "id": "EONET_20229",
-            "category": "wildfire",
-            "date": "2026-05-20T09:22:00Z",
-            "lat": 31.4154,
-            "lon": -88.6597,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/29128400-a817-4d78-a1a7-3a5bb5b597fd"
-            ],
-            "distance_miles": 38.7,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "28037": {
       "fips": "28037",
@@ -29434,41 +28864,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "DeSoto BB 8374 S RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20230",
-            "category": "wildfire",
-            "date": "2026-05-20T11:12:00Z",
-            "lat": 30.6733,
-            "lon": -89.0353,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/0aa79001-67d5-4ffb-aa44-82feeb972f29"
-            ],
-            "distance_miles": 26.5,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 451 452 RX Prescribed Fire, Greene, Mississippi",
-            "id": "EONET_20229",
-            "category": "wildfire",
-            "date": "2026-05-20T09:22:00Z",
-            "lat": 31.4154,
-            "lon": -88.6597,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/29128400-a817-4d78-a1a7-3a5bb5b597fd"
-            ],
-            "distance_miles": 38.7,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "28041": {
       "fips": "28041",
@@ -29480,41 +28883,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "DeSoto BB 8374 S RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20230",
-            "category": "wildfire",
-            "date": "2026-05-20T11:12:00Z",
-            "lat": 30.6733,
-            "lon": -89.0353,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/0aa79001-67d5-4ffb-aa44-82feeb972f29"
-            ],
-            "distance_miles": 44.2,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 451 452 RX Prescribed Fire, Greene, Mississippi",
-            "id": "EONET_20229",
-            "category": "wildfire",
-            "date": "2026-05-20T09:22:00Z",
-            "lat": 31.4154,
-            "lon": -88.6597,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/29128400-a817-4d78-a1a7-3a5bb5b597fd"
-            ],
-            "distance_miles": 14.1,
-            "threat_level": "Immediate"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "28043": {
       "fips": "28043",
@@ -29545,28 +28921,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "DeSoto BB 8374 S RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20230",
-            "category": "wildfire",
-            "date": "2026-05-20T11:12:00Z",
-            "lat": 30.6733,
-            "lon": -89.0353,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/0aa79001-67d5-4ffb-aa44-82feeb972f29"
-            ],
-            "distance_miles": 33.0,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "28047": {
       "fips": "28047",
@@ -29578,28 +28940,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "DeSoto BB 8374 S RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20230",
-            "category": "wildfire",
-            "date": "2026-05-20T11:12:00Z",
-            "lat": 30.6733,
-            "lon": -89.0353,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/0aa79001-67d5-4ffb-aa44-82feeb972f29"
-            ],
-            "distance_miles": 18.0,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "28049": {
       "fips": "28049",
@@ -29701,45 +29049,19 @@
       "name": "Jackson County",
       "state": "MS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 8:26AM CDT until June 2 at 7:00PM CDT by NWS New Orleans LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T08:26:00-05:00",
-            "expires": "2026-06-02T19:00:00-05:00",
-            "areaDesc": "Jackson, MS",
-            "id": "urn:oid:2.49.0.1.840.0.3afb554d7c8cb27e043142ece681b216ed014c9c.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "DeSoto BB 8374 S RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20230",
-            "category": "wildfire",
-            "date": "2026-05-20T11:12:00Z",
-            "lat": 30.6733,
-            "lon": -89.0353,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/0aa79001-67d5-4ffb-aa44-82feeb972f29"
-            ],
-            "distance_miles": 28.7,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "28061": {
       "fips": "28061",
@@ -29751,28 +29073,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Chickasawhay CPT 451 452 RX Prescribed Fire, Greene, Mississippi",
-            "id": "EONET_20229",
-            "category": "wildfire",
-            "date": "2026-05-20T09:22:00Z",
-            "lat": 31.4154,
-            "lon": -88.6597,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/29128400-a817-4d78-a1a7-3a5bb5b597fd"
-            ],
-            "distance_miles": 49.6,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "28063": {
       "fips": "28063",
@@ -29822,28 +29130,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Chickasawhay CPT 451 452 RX Prescribed Fire, Greene, Mississippi",
-            "id": "EONET_20229",
-            "category": "wildfire",
-            "date": "2026-05-20T09:22:00Z",
-            "lat": 31.4154,
-            "lon": -88.6597,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/29128400-a817-4d78-a1a7-3a5bb5b597fd"
-            ],
-            "distance_miles": 33.0,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "28069": {
       "fips": "28069",
@@ -29893,28 +29187,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "DeSoto BB 8374 S RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20230",
-            "category": "wildfire",
-            "date": "2026-05-20T11:12:00Z",
-            "lat": 30.6733,
-            "lon": -89.0353,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/0aa79001-67d5-4ffb-aa44-82feeb972f29"
-            ],
-            "distance_miles": 45.7,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "28075": {
       "fips": "28075",
@@ -30057,15 +29337,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Storms leave thousands without power in Mississippi",
-            "url": "https://thebeatofthecapital.com/2026/06/01/storms-leave-thousands-without-power-in-mississippi/",
-            "domain": "thebeatofthecapital.com",
-            "seendate": "20260602013000",
-            "is_new": false
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -30074,7 +29346,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "28091": {
       "fips": "28091",
@@ -30257,28 +29529,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "DeSoto BB 8374 S RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20230",
-            "category": "wildfire",
-            "date": "2026-05-20T11:12:00Z",
-            "lat": 30.6733,
-            "lon": -89.0353,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/0aa79001-67d5-4ffb-aa44-82feeb972f29"
-            ],
-            "distance_miles": 33.5,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "28111": {
       "fips": "28111",
@@ -30290,41 +29548,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "DeSoto BB 8374 S RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20230",
-            "category": "wildfire",
-            "date": "2026-05-20T11:12:00Z",
-            "lat": 30.6733,
-            "lon": -89.0353,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/0aa79001-67d5-4ffb-aa44-82feeb972f29"
-            ],
-            "distance_miles": 34.4,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Chickasawhay CPT 451 452 RX Prescribed Fire, Greene, Mississippi",
-            "id": "EONET_20229",
-            "category": "wildfire",
-            "date": "2026-05-20T09:22:00Z",
-            "lat": 31.4154,
-            "lon": -88.6597,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/29128400-a817-4d78-a1a7-3a5bb5b597fd"
-            ],
-            "distance_miles": 25.8,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "28113": {
       "fips": "28113",
@@ -30507,28 +29738,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "DeSoto BB 8374 S RX Prescribed Fire, Harrison, Mississippi",
-            "id": "EONET_20230",
-            "category": "wildfire",
-            "date": "2026-05-20T11:12:00Z",
-            "lat": 30.6733,
-            "lon": -89.0353,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/0aa79001-67d5-4ffb-aa44-82feeb972f29"
-            ],
-            "distance_miles": 9.3,
-            "threat_level": "Immediate"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "28133": {
       "fips": "28133",
@@ -30730,28 +29947,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Chickasawhay CPT 451 452 RX Prescribed Fire, Greene, Mississippi",
-            "id": "EONET_20229",
-            "category": "wildfire",
-            "date": "2026-05-20T09:22:00Z",
-            "lat": 31.4154,
-            "lon": -88.6597,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/29128400-a817-4d78-a1a7-3a5bb5b597fd"
-            ],
-            "distance_miles": 15.7,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "28155": {
       "fips": "28155",
@@ -31577,7 +30780,15 @@
       "alerts": {
         "weather": [],
         "bank_robbery": [],
-        "protest": [],
+        "protest": [
+          {
+            "title": "Pride event becomes planned protest in Mansfield",
+            "url": "https://www.ksmu.org/news/2026-06-03/pride-event-becomes-planned-protest-in-mansfield",
+            "domain": "ksmu.org",
+            "seendate": "20260603173000",
+            "is_new": true
+          }
+        ],
         "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
@@ -31587,7 +30798,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "29079": {
       "fips": "29079",
@@ -31710,7 +30921,15 @@
       "alerts": {
         "weather": [],
         "bank_robbery": [],
-        "protest": [],
+        "protest": [
+          {
+            "title": "Pride event becomes planned protest in Mansfield",
+            "url": "https://www.ksmu.org/news/2026-06-03/pride-event-becomes-planned-protest-in-mansfield",
+            "domain": "ksmu.org",
+            "seendate": "20260603173000",
+            "is_new": true
+          }
+        ],
         "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
@@ -31720,7 +30939,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "29093": {
       "fips": "29093",
@@ -32604,13 +31823,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 2:17PM CDT until June 4 at 1:00PM CDT by NWS Springfield MO",
+            "headline": "Flood Warning issued June 3 at 8:00AM CDT until June 4 at 10:00PM CDT by NWS Springfield MO",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-02T14:17:00-05:00",
-            "expires": "2026-06-03T10:15:00-05:00",
+            "urgency": "Immediate",
+            "effective": "2026-06-03T08:00:00-05:00",
+            "expires": "2026-06-04T08:00:00-05:00",
             "areaDesc": "St. Clair, MO; Vernon, MO",
-            "id": "urn:oid:2.49.0.1.840.0.6b36be47c9f295ce8ffd171fd98ef5a94b178a41.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.bdb345cd2a1b6acb4bd696e7589147fa2025cb5b.001.1",
             "source": "nws_alert"
           }
         ],
@@ -32901,24 +32120,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 2:30PM CDT until June 3 at 2:00PM CDT by NWS Springfield MO",
+            "headline": "Flood Warning issued June 3 at 8:00AM CDT until June 4 at 10:00PM CDT by NWS Springfield MO",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-02T14:30:00-05:00",
-            "expires": "2026-06-03T10:00:00-05:00",
-            "areaDesc": "Vernon, MO",
-            "id": "urn:oid:2.49.0.1.840.0.d56bcf1130db19ce138153a7b544fc1eb80e637d.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 2:17PM CDT until June 4 at 1:00PM CDT by NWS Springfield MO",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-02T14:17:00-05:00",
-            "expires": "2026-06-03T10:15:00-05:00",
+            "effective": "2026-06-03T08:00:00-05:00",
+            "expires": "2026-06-04T08:00:00-05:00",
             "areaDesc": "St. Clair, MO; Vernon, MO",
-            "id": "urn:oid:2.49.0.1.840.0.6b36be47c9f295ce8ffd171fd98ef5a94b178a41.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.bdb345cd2a1b6acb4bd696e7589147fa2025cb5b.001.1",
             "source": "nws_alert"
           }
         ],
@@ -32933,7 +32141,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "29219": {
       "fips": "29219",
@@ -33037,7 +32245,15 @@
       "alerts": {
         "weather": [],
         "bank_robbery": [],
-        "protest": [],
+        "protest": [
+          {
+            "title": "Pride event becomes planned protest in Mansfield",
+            "url": "https://www.ksmu.org/news/2026-06-03/pride-event-becomes-planned-protest-in-mansfield",
+            "domain": "ksmu.org",
+            "seendate": "20260603173000",
+            "is_new": true
+          }
+        ],
         "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
@@ -33047,7 +32263,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "29510": {
       "fips": "29510",
@@ -33339,19 +32555,7 @@
       "name": "Flathead County",
       "state": "MT",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 7:15AM MDT until June 2 at 6:00PM MDT by NWS Missoula MT",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-02T07:15:00-06:00",
-            "expires": "2026-06-02T18:00:00-06:00",
-            "areaDesc": "Flathead, MT; Lake, MT; Sanders, MT",
-            "id": "urn:oid:2.49.0.1.840.0.7b19094a6232d22aee76a1f7159e5bbc8b9ff9ec.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -33363,7 +32567,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "30031": {
       "fips": "30031",
@@ -33522,19 +32726,7 @@
       "name": "Lake County",
       "state": "MT",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 7:15AM MDT until June 2 at 6:00PM MDT by NWS Missoula MT",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-02T07:15:00-06:00",
-            "expires": "2026-06-02T18:00:00-06:00",
-            "areaDesc": "Flathead, MT; Lake, MT; Sanders, MT",
-            "id": "urn:oid:2.49.0.1.840.0.7b19094a6232d22aee76a1f7159e5bbc8b9ff9ec.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -33546,7 +32738,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "30049": {
       "fips": "30049",
@@ -33933,19 +33125,7 @@
       "name": "Sanders County",
       "state": "MT",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 7:15AM MDT until June 2 at 6:00PM MDT by NWS Missoula MT",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-02T07:15:00-06:00",
-            "expires": "2026-06-02T18:00:00-06:00",
-            "areaDesc": "Flathead, MT; Lake, MT; Sanders, MT",
-            "id": "urn:oid:2.49.0.1.840.0.7b19094a6232d22aee76a1f7159e5bbc8b9ff9ec.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -33957,7 +33137,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "30091": {
       "fips": "30091",
@@ -34306,7 +33486,14 @@
       "name": "Boyd County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34318,7 +33505,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "31017": {
       "fips": "31017",
@@ -34743,7 +33930,19 @@
       "name": "Franklin County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued June 3 at 2:55PM CDT until June 3 at 3:15PM CDT by NWS Hastings NE",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-03T14:55:00-05:00",
+            "expires": "2026-06-03T15:15:00-05:00",
+            "areaDesc": "Franklin, NE; Harlan, NE; Kearney, NE; Phelps, NE",
+            "id": "urn:oid:2.49.0.1.840.0.43ab20ad88afd7bc3dd97296867cc64e53dc98a1.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34755,7 +33954,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "31063": {
       "fips": "31063",
@@ -34952,7 +34151,19 @@
       "name": "Harlan County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued June 3 at 2:55PM CDT until June 3 at 3:15PM CDT by NWS Hastings NE",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-03T14:55:00-05:00",
+            "expires": "2026-06-03T15:15:00-05:00",
+            "areaDesc": "Franklin, NE; Harlan, NE; Kearney, NE; Phelps, NE",
+            "id": "urn:oid:2.49.0.1.840.0.43ab20ad88afd7bc3dd97296867cc64e53dc98a1.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34964,7 +34175,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "31085": {
       "fips": "31085",
@@ -35009,7 +34220,14 @@
       "name": "Holt County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -35021,7 +34239,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "31091": {
       "fips": "31091",
@@ -35104,7 +34322,19 @@
       "name": "Kearney County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued June 3 at 2:55PM CDT until June 3 at 3:15PM CDT by NWS Hastings NE",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-03T14:55:00-05:00",
+            "expires": "2026-06-03T15:15:00-05:00",
+            "areaDesc": "Franklin, NE; Harlan, NE; Kearney, NE; Phelps, NE",
+            "id": "urn:oid:2.49.0.1.840.0.43ab20ad88afd7bc3dd97296867cc64e53dc98a1.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -35116,7 +34346,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "31101": {
       "fips": "31101",
@@ -35180,7 +34410,14 @@
       "name": "Knox County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -35192,7 +34429,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "31109": {
       "fips": "31109",
@@ -35465,7 +34702,19 @@
       "name": "Phelps County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued June 3 at 2:55PM CDT until June 3 at 3:15PM CDT by NWS Hastings NE",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-03T14:55:00-05:00",
+            "expires": "2026-06-03T15:15:00-05:00",
+            "areaDesc": "Franklin, NE; Harlan, NE; Kearney, NE; Phelps, NE",
+            "id": "urn:oid:2.49.0.1.840.0.43ab20ad88afd7bc3dd97296867cc64e53dc98a1.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -35477,7 +34726,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "31139": {
       "fips": "31139",
@@ -35579,7 +34828,14 @@
       "name": "Rock County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -35591,7 +34847,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "31151": {
       "fips": "31151",
@@ -36522,11 +35778,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "34005": {
       "fips": "34005",
@@ -36617,11 +35884,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "34015": {
       "fips": "34015",
@@ -36655,11 +35933,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "34019": {
       "fips": "34019",
@@ -36731,11 +36020,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "34027": {
       "fips": "34027",
@@ -36750,11 +36050,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "34029": {
       "fips": "34029",
@@ -36788,11 +36099,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "34033": {
       "fips": "34033",
@@ -36864,11 +36186,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "34041": {
       "fips": "34041",
@@ -37112,19 +36445,7 @@
       "name": "Guadalupe County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 1:50PM MDT until June 2 at 2:30PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T13:50:00-06:00",
-            "expires": "2026-06-02T14:30:00-06:00",
-            "areaDesc": "Guadalupe, NM; San Miguel, NM",
-            "id": "urn:oid:2.49.0.1.840.0.5f81ebceed53ebb7ce4fa93101a2ca7237d76429.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -37136,7 +36457,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35021": {
       "fips": "35021",
@@ -37228,7 +36549,19 @@
       "name": "Lincoln County",
       "state": "NM",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued June 3 at 2:03PM MDT until June 3 at 3:15PM MDT by NWS Albuquerque NM",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-03T14:03:00-06:00",
+            "expires": "2026-06-03T15:15:00-06:00",
+            "areaDesc": "Lincoln, NM",
+            "id": "urn:oid:2.49.0.1.840.0.ea37b13a970a1cc13c39ecbae36cd8954633137f.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -37240,7 +36573,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "35028": {
       "fips": "35028",
@@ -37326,24 +36659,13 @@
         "weather": [
           {
             "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 1:31PM MDT until June 2 at 2:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
+            "headline": "Severe Thunderstorm Warning issued June 3 at 2:09PM MDT until June 3 at 3:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-02T13:31:00-06:00",
-            "expires": "2026-06-02T14:00:00-06:00",
+            "effective": "2026-06-03T14:09:00-06:00",
+            "expires": "2026-06-03T15:00:00-06:00",
             "areaDesc": "Otero, NM",
-            "id": "urn:oid:2.49.0.1.840.0.abf70390629ddb84a590d16cf2a0fdfaef903bf4.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued June 2 at 12:21PM MDT until June 2 at 3:15PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T12:21:00-06:00",
-            "expires": "2026-06-02T15:15:00-06:00",
-            "areaDesc": "Otero, NM",
-            "id": "urn:oid:2.49.0.1.840.0.00da8e21beeb118307644a89c8a6e1f18672efd3.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.639f711438780eb215937fab62ed2bdf41f4d43a.001.1",
             "source": "nws_alert"
           }
         ],
@@ -37358,7 +36680,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "35037": {
       "fips": "35037",
@@ -37476,14 +36798,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 1:50PM MDT until June 2 at 2:30PM MDT by NWS Albuquerque NM",
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued June 3 at 1:48PM MDT until June 3 at 4:45PM MDT by NWS Albuquerque NM",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-02T13:50:00-06:00",
-            "expires": "2026-06-02T14:30:00-06:00",
-            "areaDesc": "Guadalupe, NM; San Miguel, NM",
-            "id": "urn:oid:2.49.0.1.840.0.5f81ebceed53ebb7ce4fa93101a2ca7237d76429.001.1",
+            "effective": "2026-06-03T13:48:00-06:00",
+            "expires": "2026-06-03T16:45:00-06:00",
+            "areaDesc": "San Miguel, NM",
+            "id": "urn:oid:2.49.0.1.840.0.ff7a8f6691f00887e62cc8a66166282bed05176f.001.1",
             "source": "nws_alert"
           }
         ],
@@ -37698,11 +37020,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "36007": {
       "fips": "36007",
@@ -38097,11 +37430,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "36049": {
       "fips": "36049",
@@ -38211,11 +37555,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "36061": {
       "fips": "36061",
@@ -38230,11 +37585,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "36063": {
       "fips": "36063",
@@ -38420,11 +37786,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "36083": {
       "fips": "36083",
@@ -38458,11 +37835,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "36087": {
       "fips": "36087",
@@ -38629,11 +38017,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "36105": {
       "fips": "36105",
@@ -38781,11 +38180,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "runway maintenance",
+            "end": "5:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "36121": {
       "fips": "36121",
@@ -38949,28 +38359,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "CADDUGGEN Wildfire, Carteret, North Carolina",
-            "id": "EONET_20231",
-            "category": "wildfire",
-            "date": "2026-05-20T07:59:00Z",
-            "lat": 34.926,
-            "lon": -76.3853,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/7dafe704-220a-4c5e-a9e6-d883cb9a7c35"
-            ],
-            "distance_miles": 46.3,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "37015": {
       "fips": "37015",
@@ -39134,28 +38530,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "CADDUGGEN Wildfire, Carteret, North Carolina",
-            "id": "EONET_20231",
-            "category": "wildfire",
-            "date": "2026-05-20T07:59:00Z",
-            "lat": 34.926,
-            "lon": -76.3853,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/7dafe704-220a-4c5e-a9e6-d883cb9a7c35"
-            ],
-            "distance_miles": 9.7,
-            "threat_level": "Immediate"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "37033": {
       "fips": "37033",
@@ -39319,28 +38701,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "CADDUGGEN Wildfire, Carteret, North Carolina",
-            "id": "EONET_20231",
-            "category": "wildfire",
-            "date": "2026-05-20T07:59:00Z",
-            "lat": 34.926,
-            "lon": -76.3853,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/7dafe704-220a-4c5e-a9e6-d883cb9a7c35"
-            ],
-            "distance_miles": 41.5,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "37051": {
       "fips": "37051",
@@ -39770,28 +39138,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "CADDUGGEN Wildfire, Carteret, North Carolina",
-            "id": "EONET_20231",
-            "category": "wildfire",
-            "date": "2026-05-20T07:59:00Z",
-            "lat": 34.926,
-            "lon": -76.3853,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/7dafe704-220a-4c5e-a9e6-d883cb9a7c35"
-            ],
-            "distance_miles": 35.8,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "37097": {
       "fips": "37097",
@@ -40183,28 +39537,14 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "CADDUGGEN Wildfire, Carteret, North Carolina",
-            "id": "EONET_20231",
-            "category": "wildfire",
-            "date": "2026-05-20T07:59:00Z",
-            "lat": 34.926,
-            "lon": -76.3853,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/7dafe704-220a-4c5e-a9e6-d883cb9a7c35"
-            ],
-            "distance_miles": 22.0,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "37139": {
       "fips": "37139",
@@ -40838,14 +40178,7 @@
       "name": "Benson County",
       "state": "ND",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -40857,7 +40190,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "38007": {
       "fips": "38007",
@@ -40978,14 +40311,7 @@
       "name": "Cavalier County",
       "state": "ND",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -40997,7 +40323,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "38021": {
       "fips": "38021",
@@ -41061,14 +40387,7 @@
       "name": "Eddy County",
       "state": "ND",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -41080,7 +40399,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "38029": {
       "fips": "38029",
@@ -41277,19 +40596,7 @@
       "name": "McHenry County",
       "state": "ND",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:45PM CDT until June 2 at 3:15PM CDT by NWS Bismarck ND",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:45:00-05:00",
-            "expires": "2026-06-02T15:15:00-05:00",
-            "areaDesc": "McHenry, ND; Ward, ND",
-            "id": "urn:oid:2.49.0.1.840.0.1dba3289a158d4e8c00579a91ab4d26b4ba6c7c4.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -41301,7 +40608,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "38051": {
       "fips": "38051",
@@ -41384,14 +40691,7 @@
       "name": "Morton County",
       "state": "ND",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -41403,7 +40703,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "38061": {
       "fips": "38061",
@@ -41505,14 +40805,7 @@
       "name": "Ramsey County",
       "state": "ND",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -41524,7 +40817,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "38073": {
       "fips": "38073",
@@ -41740,30 +41033,7 @@
       "name": "Towner County",
       "state": "ND",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:53PM CDT until June 2 at 3:45PM CDT by NWS Grand Forks ND",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:53:00-05:00",
-            "expires": "2026-06-02T15:45:00-05:00",
-            "areaDesc": "Towner, ND",
-            "id": "urn:oid:2.49.0.1.840.0.b15735a94b0f33348a9c93eb6dd0c8ea8bf372fa.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:52PM CDT until June 2 at 4:00PM CDT by NWS Grand Forks ND",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:52:00-05:00",
-            "expires": "2026-06-02T16:00:00-05:00",
-            "areaDesc": "Towner, ND",
-            "id": "urn:oid:2.49.0.1.840.0.e92a3c41454429605dbd43b622c528166a2370d0.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -41775,7 +41045,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "38097": {
       "fips": "38097",
@@ -41820,19 +41090,7 @@
       "name": "Ward County",
       "state": "ND",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:45PM CDT until June 2 at 3:15PM CDT by NWS Bismarck ND",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:45:00-05:00",
-            "expires": "2026-06-02T15:15:00-05:00",
-            "areaDesc": "McHenry, ND; Ward, ND",
-            "id": "urn:oid:2.49.0.1.840.0.1dba3289a158d4e8c00579a91ab4d26b4ba6c7c4.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -41844,7 +41102,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "38103": {
       "fips": "38103",
@@ -43618,7 +42876,19 @@
       "name": "Beaver County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued June 3 at 3:07PM CDT until June 3 at 3:45PM CDT by NWS Amarillo TX",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-03T15:07:00-05:00",
+            "expires": "2026-06-03T15:45:00-05:00",
+            "areaDesc": "Beaver, OK",
+            "id": "urn:oid:2.49.0.1.840.0.4a8fd2cfc3892b7cbd5e9d28c936be1b2ca897d1.002.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -43630,7 +42900,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "40009": {
       "fips": "40009",
@@ -46260,15 +45530,7 @@
       "alerts": {
         "weather": [],
         "bank_robbery": [],
-        "protest": [
-          {
-            "title": "Healthcare workers hold a vigil to protest federal healthcare cuts",
-            "url": "https://www.fox43.com/article/news/local/dauphin-county/healthcare-workers-hold-a-vigil-to-protest-federal-healthcare-cuts/521-4509f791-a885-461e-9ce9-2a1e217ba595",
-            "domain": "fox43.com",
-            "seendate": "20260602080000",
-            "is_new": true
-          }
-        ],
+        "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
@@ -46278,7 +45540,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "42045": {
       "fips": "42045",
@@ -48945,7 +48207,14 @@
       "name": "Marshall County",
       "state": "SD",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -48957,7 +48226,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "46093": {
       "fips": "46093",
@@ -49135,7 +48404,14 @@
       "name": "Roberts County",
       "state": "SD",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -49147,7 +48423,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "46111": {
       "fips": "46111",
@@ -51309,11 +50585,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "3:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48017": {
       "fips": "48017",
@@ -51537,11 +50824,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "3:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48041": {
       "fips": "48041",
@@ -51567,19 +50865,7 @@
       "name": "Brewster County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued June 2 at 2:39PM CDT until June 2 at 5:45PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:39:00-05:00",
-            "expires": "2026-06-02T17:45:00-05:00",
-            "areaDesc": "Brewster, TX; Presidio, TX",
-            "id": "urn:oid:2.49.0.1.840.0.e18d499ea1be72dd30206217652f277e719f1e79.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -51591,7 +50877,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48045": {
       "fips": "48045",
@@ -51769,19 +51055,7 @@
       "name": "Camp County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:28PM CDT until June 2 at 3:30PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:28:00-05:00",
-            "expires": "2026-06-02T15:30:00-05:00",
-            "areaDesc": "Camp, TX; Marion, TX; Morris, TX; Titus, TX; Upshur, TX",
-            "id": "urn:oid:2.49.0.1.840.0.62e229651eb4fbeb1d06d5e6ea3417c09bcaaff1.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -51793,7 +51067,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48065": {
       "fips": "48065",
@@ -51876,19 +51150,7 @@
       "name": "Cherokee County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:41PM CDT until June 2 at 3:30PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:41:00-05:00",
-            "expires": "2026-06-02T15:30:00-05:00",
-            "areaDesc": "Cherokee, TX; Smith, TX",
-            "id": "urn:oid:2.49.0.1.840.0.00e1093b561167433628b46b8ea22909b9bda809.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -51900,7 +51162,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48075": {
       "fips": "48075",
@@ -52480,7 +51742,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "400+ homes without power in Pleasant Farms",
+            "url": "https://www.firstalert7.com/2026/06/03/400-homes-without-power-pleasant-farms/",
+            "domain": "firstalert7.com",
+            "seendate": "20260603131500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -52489,7 +51759,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48137": {
       "fips": "48137",
@@ -52694,11 +51964,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "3:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48159": {
       "fips": "48159",
@@ -52781,7 +52062,14 @@
       "name": "Galveston County",
       "state": "TX",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -52789,11 +52077,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "3:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "48169": {
       "fips": "48169",
@@ -53107,16 +52406,35 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Houston power outage tracker: Over 14,000 customers without power in Houston area following afternoon storms",
+            "url": "https://www.fox26houston.com/news/houston-power-outage-tracker-over-29000-customers-without-power-houston-area-following-afternoon-storms",
+            "domain": "fox26houston.com",
+            "seendate": "20260603014500",
+            "is_new": false
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "3:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "48203": {
       "fips": "48203",
@@ -53967,11 +53285,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "3:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48293": {
       "fips": "48293",
@@ -54152,13 +53481,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 6:33AM CDT until June 4 at 11:00PM CDT by NWS Corpus Christi TX",
+            "headline": "Flood Warning issued June 3 at 1:30PM CDT until June 4 at 11:00PM CDT by NWS Corpus Christi TX",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-02T06:33:00-05:00",
-            "expires": "2026-06-02T21:45:00-05:00",
+            "urgency": "Immediate",
+            "effective": "2026-06-03T13:30:00-05:00",
+            "expires": "2026-06-04T04:30:00-05:00",
             "areaDesc": "McMullen, TX",
-            "id": "urn:oid:2.49.0.1.840.0.74a35783690d12ef5480b1e427094afcaa8597c3.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.33b66676b9d9a941b5a0ef7f60c3fde8e64a1ac9.001.1",
             "source": "nws_alert"
           }
         ],
@@ -54199,19 +53528,7 @@
       "name": "Marion County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:28PM CDT until June 2 at 3:30PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:28:00-05:00",
-            "expires": "2026-06-02T15:30:00-05:00",
-            "areaDesc": "Camp, TX; Marion, TX; Morris, TX; Titus, TX; Upshur, TX",
-            "id": "urn:oid:2.49.0.1.840.0.62e229651eb4fbeb1d06d5e6ea3417c09bcaaff1.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -54223,7 +53540,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48317": {
       "fips": "48317",
@@ -54447,11 +53764,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "3:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48341": {
       "fips": "48341",
@@ -54477,19 +53805,7 @@
       "name": "Morris County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:28PM CDT until June 2 at 3:30PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:28:00-05:00",
-            "expires": "2026-06-02T15:30:00-05:00",
-            "areaDesc": "Camp, TX; Marion, TX; Morris, TX; Titus, TX; Upshur, TX",
-            "id": "urn:oid:2.49.0.1.840.0.62e229651eb4fbeb1d06d5e6ea3417c09bcaaff1.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -54501,7 +53817,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48345": {
       "fips": "48345",
@@ -54698,19 +54014,7 @@
       "name": "Panola County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:24PM CDT until June 2 at 3:15PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:24:00-05:00",
-            "expires": "2026-06-02T15:15:00-05:00",
-            "areaDesc": "Caddo, LA; Panola, TX",
-            "id": "urn:oid:2.49.0.1.840.0.e17147ef83fdd7e20a514a51d9b2ef7ae059c8b4.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -54722,7 +54026,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48367": {
       "fips": "48367",
@@ -54838,19 +54142,7 @@
       "name": "Presidio County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued June 2 at 2:39PM CDT until June 2 at 5:45PM CDT by NWS Midland/Odessa TX",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:39:00-05:00",
-            "expires": "2026-06-02T17:45:00-05:00",
-            "areaDesc": "Brewster, TX; Presidio, TX",
-            "id": "urn:oid:2.49.0.1.840.0.e18d499ea1be72dd30206217652f277e719f1e79.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -54862,7 +54154,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48379": {
       "fips": "48379",
@@ -55301,30 +54593,7 @@
       "name": "Smith County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued June 2 at 2:53PM CDT until June 2 at 6:00PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:53:00-05:00",
-            "expires": "2026-06-02T18:00:00-05:00",
-            "areaDesc": "Smith, TX",
-            "id": "urn:oid:2.49.0.1.840.0.132d1a118fd30967d49318b217d0e8d808631b6f.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:41PM CDT until June 2 at 3:30PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:41:00-05:00",
-            "expires": "2026-06-02T15:30:00-05:00",
-            "areaDesc": "Cherokee, TX; Smith, TX",
-            "id": "urn:oid:2.49.0.1.840.0.00e1093b561167433628b46b8ea22909b9bda809.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -55336,7 +54605,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "48425": {
       "fips": "48425",
@@ -55571,19 +54840,7 @@
       "name": "Titus County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:28PM CDT until June 2 at 3:30PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:28:00-05:00",
-            "expires": "2026-06-02T15:30:00-05:00",
-            "areaDesc": "Camp, TX; Marion, TX; Morris, TX; Titus, TX; Upshur, TX",
-            "id": "urn:oid:2.49.0.1.840.0.62e229651eb4fbeb1d06d5e6ea3417c09bcaaff1.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -55595,7 +54852,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48451": {
       "fips": "48451",
@@ -55678,19 +54935,7 @@
       "name": "Upshur County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 2 at 2:28PM CDT until June 2 at 3:30PM CDT by NWS Shreveport LA",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T14:28:00-05:00",
-            "expires": "2026-06-02T15:30:00-05:00",
-            "areaDesc": "Camp, TX; Marion, TX; Morris, TX; Titus, TX; Upshur, TX",
-            "id": "urn:oid:2.49.0.1.840.0.62e229651eb4fbeb1d06d5e6ea3417c09bcaaff1.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -55702,7 +54947,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48461": {
       "fips": "48461",
@@ -55831,11 +55076,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "IAH",
+            "name": "George Bush Intercontinental",
+            "city": "Houston",
+            "state": "TX",
+            "reason": "thunderstorms",
+            "end": "3:45 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "48475": {
       "fips": "48475",
@@ -56255,7 +55511,19 @@
       "name": "Daggett County",
       "state": "UT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-03T10:10:00-06:00",
+            "expires": "2026-06-03T18:15:00-06:00",
+            "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
+            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -56267,7 +55535,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "49011": {
       "fips": "49011",
@@ -56350,7 +55618,19 @@
       "name": "Grand County",
       "state": "UT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-03T10:10:00-06:00",
+            "expires": "2026-06-03T18:15:00-06:00",
+            "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
+            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -56362,7 +55642,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "49021": {
       "fips": "49021",
@@ -56616,7 +55896,19 @@
       "name": "Uintah County",
       "state": "UT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-03T10:10:00-06:00",
+            "expires": "2026-06-03T18:15:00-06:00",
+            "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
+            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -56628,7 +55920,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "49049": {
       "fips": "49049",
@@ -59597,13 +58889,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 2 at 12:07PM PDT by NWS Spokane WA",
+            "headline": "Flood Warning issued June 3 at 12:19PM PDT by NWS Spokane WA",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-02T12:07:00-07:00",
-            "expires": "2026-06-03T12:45:00-07:00",
+            "effective": "2026-06-03T12:19:00-07:00",
+            "expires": "2026-06-04T12:30:00-07:00",
             "areaDesc": "Chelan, WA",
-            "id": "urn:oid:2.49.0.1.840.0.7ed28794f7db71d9ef26866ba28d8e497c99899f.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.ca76b569853153e15d4e263fa8e0e644f6bf9409.001.1",
             "source": "nws_alert"
           }
         ],
@@ -62772,19 +62064,7 @@
       "name": "Albany County",
       "state": "WY",
       "alerts": {
-        "weather": [
-          {
-            "event": "Tornado Warning",
-            "headline": "Tornado Warning issued June 2 at 1:51PM MDT until June 2 at 2:15PM MDT by NWS Cheyenne WY",
-            "severity": "Extreme",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T13:51:00-06:00",
-            "expires": "2026-06-02T14:15:00-06:00",
-            "areaDesc": "Albany, WY; Laramie, WY",
-            "id": "urn:oid:2.49.0.1.840.0.7ada998ca2e84d705121bcfb171e5311c1999f8a.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -62796,7 +62076,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "56003": {
       "fips": "56003",
@@ -62974,19 +62254,7 @@
       "name": "Laramie County",
       "state": "WY",
       "alerts": {
-        "weather": [
-          {
-            "event": "Tornado Warning",
-            "headline": "Tornado Warning issued June 2 at 1:51PM MDT until June 2 at 2:15PM MDT by NWS Cheyenne WY",
-            "severity": "Extreme",
-            "urgency": "Immediate",
-            "effective": "2026-06-02T13:51:00-06:00",
-            "expires": "2026-06-02T14:15:00-06:00",
-            "areaDesc": "Albany, WY; Laramie, WY",
-            "id": "urn:oid:2.49.0.1.840.0.7ada998ca2e84d705121bcfb171e5311c1999f8a.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -62998,7 +62266,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "56023": {
       "fips": "56023",
@@ -63331,7 +62599,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -64190,14 +63458,7 @@
       "name": "Moca Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -64209,7 +63470,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "72101": {
       "fips": "72101",
@@ -64637,7 +63898,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }

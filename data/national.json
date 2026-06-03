@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-02T20:19:11.040883+00:00",
-  "date": "2026-06-02",
+  "generated_at": "2026-06-03T20:21:10.144048+00:00",
+  "date": "2026-06-03",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,36 +11,36 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 77
+      "counties_with_alerts": 46
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3170,
-      "counties_over_threshold": 14
+      "counties_queried": 3191,
+      "counties_over_threshold": 10
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 60,
+      "counties_with_matches": 42,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 176,
-        "utility_outage": 25,
-        "transit_disruption": 0
+        "protest": 61,
+        "utility_outage": 6,
+        "transit_disruption": 7
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 17,
+      "counties_with_matches": 9,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 1,
-        "utility_outage": 25,
+        "protest": 3,
+        "utility_outage": 6,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 107
+      "counties_with_alerts": 76
     },
     "transit": {
       "status": "ok",
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 2,
+      "counties_with_alerts": 24
     }
   },
   "cdc_han": [],
@@ -169,5 +169,26 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": []
+  "faa_advisories": [
+    {
+      "kind": "ground_stop",
+      "code": "LGA",
+      "name": "LaGuardia",
+      "city": "New York",
+      "state": "NY",
+      "reason": "runway maintenance",
+      "end": "5:15 pm EDT",
+      "source": "FAA NAS Status"
+    },
+    {
+      "kind": "ground_stop",
+      "code": "IAH",
+      "name": "George Bush Intercontinental",
+      "city": "Houston",
+      "state": "TX",
+      "reason": "thunderstorms",
+      "end": "3:45 pm CDT",
+      "source": "FAA NAS Status"
+    }
+  ]
 }
