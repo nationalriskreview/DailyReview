@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-03T20:21:10.144048+00:00",
-  "date": "2026-06-03",
+  "generated_at": "2026-06-04T18:04:45.756596+00:00",
+  "date": "2026-06-04",
   "data_windows": {
     "weather": "live",
     "bank_robbery": "24h",
@@ -28,31 +28,31 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 46
+      "counties_with_alerts": 33
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3191,
-      "counties_over_threshold": 10
+      "counties_queried": 3196,
+      "counties_over_threshold": 44
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 42,
+      "counties_with_matches": 28,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 61,
-        "utility_outage": 6,
-        "transit_disruption": 7
+        "protest": 56,
+        "utility_outage": 5,
+        "transit_disruption": 81
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 9,
+      "counties_with_matches": 7,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 3,
-        "utility_outage": 6,
-        "transit_disruption": 0
+        "protest": 1,
+        "utility_outage": 4,
+        "transit_disruption": 2
       }
     },
     "wildfires_eonet": {
@@ -144,7 +144,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 3
+      "items": 2
     },
     "disease_wastewater": {
       "status": "ok",
@@ -157,12 +157,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 2,
-      "counties_with_alerts": 24
+      "national_items": 0,
+      "counties_with_alerts": 0
     }
   },
   "counties_total": 3222,
-  "counties_with_alerts": 170,
+  "counties_with_alerts": 181,
   "national": {
     "cdc_han": [],
     "who_don": [
@@ -179,38 +179,10 @@
         "published": "Thu, 28 May 2026 19:10:18 Z",
         "summary": "In response to the current outbreak of Ebola disease caused by Bundibugyo virus occurring in the Democratic Republic of the Congo, with cases also reported in Uganda, WHO convened several of its expert and advisory groups. These groups assessed potential vaccines and therapeutics for both prevention and treatment of Bundibugyo virus disease (BVD).",
         "source": "WHO News (outbreak-filtered)"
-      },
-      {
-        "title": "Message by the WHO Director-General to the people of the Democratic Republic of the Congo",
-        "url": "https://www.who.int/news/item/28-05-2026-message-by-the-who-director-general-to-the-people-of-the-democratic-republic-of-the-congo",
-        "published": "Thu, 28 May 2026 12:17:30 Z",
-        "summary": "<p>To the people of DRC, especially to the people of Ituri&nbsp;</p><p>Jambo kwenu wakahaji wa Ituri&nbsp;</p><p>Mbote na bino, bato ya Ituri&nbsp;</p><p>My name is Tedros, and I am the Director-General of the World Health Organization (WHO). But today, I am not writing to you as an official. I am writing to you as someone who knows your region, who has walked your streets, and who cares deeply about what happens to you and your families.&nbsp;</p><p>I am writing because I want to be with you in",
-        "source": "WHO News (outbreak-filtered)"
       }
     ],
     "amtrak_advisories": [],
-    "faa_advisories": [
-      {
-        "kind": "ground_stop",
-        "code": "LGA",
-        "name": "LaGuardia",
-        "city": "New York",
-        "state": "NY",
-        "reason": "runway maintenance",
-        "end": "5:15 pm EDT",
-        "source": "FAA NAS Status"
-      },
-      {
-        "kind": "ground_stop",
-        "code": "IAH",
-        "name": "George Bush Intercontinental",
-        "city": "Houston",
-        "state": "TX",
-        "reason": "thunderstorms",
-        "end": "3:45 pm CDT",
-        "source": "FAA NAS Status"
-      }
-    ]
+    "faa_advisories": []
   },
   "counties": {
     "01001": {
@@ -1643,7 +1615,19 @@
       "name": "Dillingham Census Area",
       "state": "AK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued June 4 at 3:55AM AKDT until June 4 at 9:00PM AKDT by NWS Anchorage AK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T03:55:00-08:00",
+            "expires": "2026-06-04T21:00:00-08:00",
+            "areaDesc": "Inland Bristol Bay",
+            "id": "urn:oid:2.49.0.1.840.0.bfb1278b59030e7450cb6536ae5fe763b7210ff8.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1655,7 +1639,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "02090": {
       "fips": "02090",
@@ -1719,7 +1703,14 @@
       "name": "Juneau City and Borough",
       "state": "AK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1731,7 +1722,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "02122": {
       "fips": "02122",
@@ -1814,7 +1805,19 @@
       "name": "Lake and Peninsula Borough",
       "state": "AK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued June 4 at 3:55AM AKDT until June 4 at 9:00PM AKDT by NWS Anchorage AK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T03:55:00-08:00",
+            "expires": "2026-06-04T21:00:00-08:00",
+            "areaDesc": "Lake Iliamna / Nila Vena / Nanvarpak",
+            "id": "urn:oid:2.49.0.1.840.0.bfb1278b59030e7450cb6536ae5fe763b7210ff8.002.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1826,7 +1829,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "02170": {
       "fips": "02170",
@@ -2325,15 +2328,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Power outage affects Prescott Valley on Tuesday",
-            "url": "https://www.dcourier.com/news/power-outage-affects-prescott-valley-on-tuesday/article_0525e7ef-6d40-4b1e-9c77-68f857aa3a1c.html",
-            "domain": "dcourier.com",
-            "seendate": "20260603003000",
-            "is_new": false
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -2342,7 +2337,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "04027": {
       "fips": "04027",
@@ -2998,13 +2993,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 3 at 9:19AM CDT until June 7 at 7:00PM CDT by NWS Little Rock AR",
+            "headline": "Flood Warning issued June 3 at 8:06PM CDT until June 7 at 7:00AM CDT by NWS Little Rock AR",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-03T09:19:00-05:00",
-            "expires": "2026-06-04T09:30:00-05:00",
+            "effective": "2026-06-03T20:06:00-05:00",
+            "expires": "2026-06-04T20:15:00-05:00",
             "areaDesc": "Jackson, AR; Woodruff, AR",
-            "id": "urn:oid:2.49.0.1.840.0.14eafa353fcee22b7fb757eb1c3dd7777124de10.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.3ae7087e6cbe4d980bb09eac539ee88e2fdfbc52.001.1",
             "source": "nws_alert"
           }
         ],
@@ -3618,7 +3613,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Central City residents report costly damages after power outage impacts thousands",
+            "url": "https://www.5newsonline.com/article/news/central-city-residents-report-costly-damages-after-power-outage-impacts-thousands/527-54a3db10-0577-481b-8518-90503326ce5e",
+            "domain": "5newsonline.com",
+            "seendate": "20260604151500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -3627,7 +3630,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "05133": {
       "fips": "05133",
@@ -3770,13 +3773,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 3 at 9:19AM CDT until June 7 at 7:00PM CDT by NWS Little Rock AR",
+            "headline": "Flood Warning issued June 3 at 8:06PM CDT until June 7 at 7:00AM CDT by NWS Little Rock AR",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-03T09:19:00-05:00",
-            "expires": "2026-06-04T09:30:00-05:00",
+            "effective": "2026-06-03T20:06:00-05:00",
+            "expires": "2026-06-04T20:15:00-05:00",
             "areaDesc": "Jackson, AR; Woodruff, AR",
-            "id": "urn:oid:2.49.0.1.840.0.14eafa353fcee22b7fb757eb1c3dd7777124de10.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.3ae7087e6cbe4d980bb09eac539ee88e2fdfbc52.001.1",
             "source": "nws_alert"
           }
         ],
@@ -4352,7 +4355,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Thousands of customers without power in Nevada County",
+            "url": "https://www.kcra.com/article/thousands-of-customers-without-power-in-nevada-county/71488703",
+            "domain": "kcra.com",
+            "seendate": "20260604031500",
+            "is_new": false
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -4361,7 +4372,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "06059": {
       "fips": "06059",
@@ -4442,7 +4453,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Outages in Palm Springs briefly leaves over 15K customers without power",
+            "url": "https://kesq.com/news/2026/06/03/thousands-of-customers-impacted-by-power-outages-in-palm-springs/",
+            "domain": "kesq.com",
+            "seendate": "20260604061500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -4465,7 +4484,7 @@
         ],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "06067": {
       "fips": "06067",
@@ -5401,13 +5420,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "headline": "Red Flag Warning issued June 4 at 11:25AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-03T10:10:00-06:00",
-            "expires": "2026-06-03T18:15:00-06:00",
+            "effective": "2026-06-04T11:25:00-06:00",
+            "expires": "2026-06-04T19:30:00-06:00",
             "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
-            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.043a0ea93889704a197ec63f516bdec1aa2834c2.001.2",
             "source": "nws_alert"
           }
         ],
@@ -5755,13 +5774,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "headline": "Red Flag Warning issued June 4 at 11:25AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-03T10:10:00-06:00",
-            "expires": "2026-06-03T18:15:00-06:00",
+            "effective": "2026-06-04T11:25:00-06:00",
+            "expires": "2026-06-04T19:30:00-06:00",
             "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
-            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.043a0ea93889704a197ec63f516bdec1aa2834c2.001.2",
             "source": "nws_alert"
           }
         ],
@@ -5976,13 +5995,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "headline": "Red Flag Warning issued June 4 at 11:25AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-03T10:10:00-06:00",
-            "expires": "2026-06-03T18:15:00-06:00",
+            "effective": "2026-06-04T11:25:00-06:00",
+            "expires": "2026-06-04T19:30:00-06:00",
             "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
-            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.043a0ea93889704a197ec63f516bdec1aa2834c2.001.2",
             "source": "nws_alert"
           }
         ],
@@ -6026,13 +6045,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "headline": "Red Flag Warning issued June 4 at 11:25AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-03T10:10:00-06:00",
-            "expires": "2026-06-03T18:15:00-06:00",
+            "effective": "2026-06-04T11:25:00-06:00",
+            "expires": "2026-06-04T19:30:00-06:00",
             "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
-            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.043a0ea93889704a197ec63f516bdec1aa2834c2.001.2",
             "source": "nws_alert"
           }
         ],
@@ -10763,13 +10782,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 3 at 10:18AM EDT until June 5 at 12:00AM EDT by NWS Charleston SC",
+            "headline": "Flood Warning issued June 4 at 10:09AM EDT until June 5 at 10:24AM EDT by NWS Charleston SC",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-03T10:18:00-04:00",
-            "expires": "2026-06-04T10:30:00-04:00",
+            "effective": "2026-06-04T10:09:00-04:00",
+            "expires": "2026-06-05T10:15:00-04:00",
             "areaDesc": "Tattnall, GA; Toombs, GA",
-            "id": "urn:oid:2.49.0.1.840.0.42927de63ee19c03585f538a223a3b89df46c2c4.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.bcedebba90895c71e2fec77126fbae923c94953e.001.1",
             "source": "nws_alert"
           }
         ],
@@ -10889,13 +10908,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 3 at 10:18AM EDT until June 5 at 12:00AM EDT by NWS Charleston SC",
+            "headline": "Flood Warning issued June 4 at 10:09AM EDT until June 5 at 10:24AM EDT by NWS Charleston SC",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-03T10:18:00-04:00",
-            "expires": "2026-06-04T10:30:00-04:00",
+            "effective": "2026-06-04T10:09:00-04:00",
+            "expires": "2026-06-05T10:15:00-04:00",
             "areaDesc": "Tattnall, GA; Toombs, GA",
-            "id": "urn:oid:2.49.0.1.840.0.42927de63ee19c03585f538a223a3b89df46c2c4.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.bcedebba90895c71e2fec77126fbae923c94953e.001.1",
             "source": "nws_alert"
           }
         ],
@@ -11411,19 +11430,7 @@
       "name": "Ada County",
       "state": "ID",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-03T08:26:00-06:00",
-            "expires": "2026-06-03T21:00:00-06:00",
-            "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -11435,7 +11442,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "16003": {
       "fips": "16003",
@@ -11684,19 +11691,7 @@
       "name": "Canyon County",
       "state": "ID",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-03T08:26:00-06:00",
-            "expires": "2026-06-03T21:00:00-06:00",
-            "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -11708,7 +11703,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "16029": {
       "fips": "16029",
@@ -11824,19 +11819,7 @@
       "name": "Elmore County",
       "state": "ID",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-03T08:26:00-06:00",
-            "expires": "2026-06-03T21:00:00-06:00",
-            "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -11862,7 +11845,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "16041": {
       "fips": "16041",
@@ -11926,19 +11909,7 @@
       "name": "Gooding County",
       "state": "ID",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-03T08:26:00-06:00",
-            "expires": "2026-06-03T21:00:00-06:00",
-            "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -11977,7 +11948,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "16049": {
       "fips": "16049",
@@ -12022,19 +11993,7 @@
       "name": "Jerome County",
       "state": "ID",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-03T08:26:00-06:00",
-            "expires": "2026-06-03T21:00:00-06:00",
-            "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -12086,7 +12045,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 3
     },
     "16055": {
       "fips": "16055",
@@ -12169,19 +12128,7 @@
       "name": "Lincoln County",
       "state": "ID",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-03T08:26:00-06:00",
-            "expires": "2026-06-03T21:00:00-06:00",
-            "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -12207,7 +12154,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "16065": {
       "fips": "16065",
@@ -12317,19 +12264,7 @@
       "name": "Owyhee County",
       "state": "ID",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-03T08:26:00-06:00",
-            "expires": "2026-06-03T21:00:00-06:00",
-            "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -12355,7 +12290,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "16075": {
       "fips": "16075",
@@ -12438,19 +12373,7 @@
       "name": "Twin Falls County",
       "state": "ID",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 8:26AM MDT until June 3 at 9:00PM MDT by NWS Boise ID",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-03T08:26:00-06:00",
-            "expires": "2026-06-03T21:00:00-06:00",
-            "areaDesc": "Owyhee Mountains; Western Twin Falls BLM; Southern Highlands",
-            "id": "urn:oid:2.49.0.1.840.0.5267568e90d754d3a4b87cefbfed66707fda0895.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -12489,7 +12412,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "16085": {
       "fips": "16085",
@@ -16220,7 +16143,14 @@
       "name": "Adair County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -16232,14 +16162,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19003": {
       "fips": "19003",
       "name": "Adams County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -16251,7 +16188,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19005": {
       "fips": "19005",
@@ -16353,7 +16290,14 @@
       "name": "Boone County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -16365,7 +16309,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19017": {
       "fips": "19017",
@@ -16581,7 +16525,14 @@
       "name": "Clarke County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -16593,7 +16544,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19041": {
       "fips": "19041",
@@ -16676,7 +16627,14 @@
       "name": "Dallas County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -16688,7 +16646,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19051": {
       "fips": "19051",
@@ -16714,7 +16672,14 @@
       "name": "Decatur County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -16726,7 +16691,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19055": {
       "fips": "19055",
@@ -16885,7 +16850,14 @@
       "name": "Fremont County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -16897,7 +16869,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19073": {
       "fips": "19073",
@@ -16942,7 +16914,14 @@
       "name": "Guthrie County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -16954,7 +16933,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19079": {
       "fips": "19079",
@@ -17151,7 +17130,14 @@
       "name": "Jasper County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -17163,7 +17149,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19101": {
       "fips": "19101",
@@ -17360,7 +17346,14 @@
       "name": "Madison County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -17372,7 +17365,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19123": {
       "fips": "19123",
@@ -17417,7 +17410,14 @@
       "name": "Marshall County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.7\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -17429,14 +17429,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19129": {
       "fips": "19129",
       "name": "Mills County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -17448,7 +17455,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19131": {
       "fips": "19131",
@@ -17512,7 +17519,14 @@
       "name": "Montgomery County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -17524,7 +17538,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19139": {
       "fips": "19139",
@@ -17588,7 +17602,14 @@
       "name": "Page County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.9\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -17600,7 +17621,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19147": {
       "fips": "19147",
@@ -17664,11 +17685,26 @@
       "name": "Polk County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
-        "transit_disruption": [],
+        "transit_disruption": [
+          {
+            "title": "One dead and another injured after train strikes semi-truck in Iowa",
+            "url": "https://www.standardspeaker.com/2026/06/03/iowa-train-derailment/",
+            "domain": "standardspeaker.com",
+            "seendate": "20260604014500",
+            "is_new": false
+          }
+        ],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -17676,7 +17712,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "19155": {
       "fips": "19155",
@@ -17706,7 +17742,15 @@
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
-        "transit_disruption": [],
+        "transit_disruption": [
+          {
+            "title": "One dead, another airlifted after train derailment crash in Poweshiek County",
+            "url": "https://www.ktiv.com/2026/06/03/one-dead-another-airlifted-after-train-derailment-crash-poweshiek-county/",
+            "domain": "ktiv.com",
+            "seendate": "20260604030000",
+            "is_new": false
+          }
+        ],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -17714,14 +17758,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19159": {
       "fips": "19159",
       "name": "Ringgold County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -17733,7 +17784,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19161": {
       "fips": "19161",
@@ -17816,7 +17867,14 @@
       "name": "Story County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -17828,7 +17886,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19171": {
       "fips": "19171",
@@ -17854,7 +17912,14 @@
       "name": "Taylor County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.8\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -17866,25 +17931,24 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19175": {
       "fips": "19175",
       "name": "Union County",
       "state": "IA",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [
+        "weather": [
           {
-            "title": "Power outage knocks out  access to library tech services",
-            "url": "https://www.crestonnews.com:443/article/428,power-outage-knocks-out-access-to-library-tech-services",
-            "domain": "crestonnews.com",
-            "seendate": "20260603190000",
-            "is_new": true
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.8\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
           }
         ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -17938,7 +18002,14 @@
       "name": "Warren County",
       "state": "IA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -17950,7 +18021,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "19183": {
       "fips": "19183",
@@ -18223,7 +18294,14 @@
       "name": "Brown County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.9\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -18235,7 +18313,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20015": {
       "fips": "20015",
@@ -18356,7 +18434,19 @@
       "name": "Clay County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 9:23AM CDT until June 6 at 7:00AM CDT by NWS Topeka KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T09:23:00-05:00",
+            "expires": "2026-06-05T00:30:00-05:00",
+            "areaDesc": "Clay, KS",
+            "id": "urn:oid:2.49.0.1.840.0.44ee52907362ccf0ccaec1846fd8a1d27721d663.004.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -18368,14 +18458,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20029": {
       "fips": "20029",
       "name": "Cloud County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.8\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -18387,7 +18484,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20031": {
       "fips": "20031",
@@ -18489,7 +18586,19 @@
       "name": "Dickinson County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 9:23AM CDT until June 8 at 2:09AM CDT by NWS Topeka KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T09:23:00-05:00",
+            "expires": "2026-06-05T00:30:00-05:00",
+            "areaDesc": "Dickinson, KS; Ottawa, KS; Saline, KS",
+            "id": "urn:oid:2.49.0.1.840.0.44ee52907362ccf0ccaec1846fd8a1d27721d663.003.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -18501,7 +18610,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20043": {
       "fips": "20043",
@@ -18679,7 +18788,14 @@
       "name": "Geary County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -18691,7 +18807,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20063": {
       "fips": "20063",
@@ -19097,7 +19213,19 @@
       "name": "Lincoln County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 8:25AM CDT until June 5 at 8:58AM CDT by NWS Wichita KS",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-04T08:25:00-05:00",
+            "expires": "2026-06-04T20:30:00-05:00",
+            "areaDesc": "Lincoln, KS",
+            "id": "urn:oid:2.49.0.1.840.0.b590aebee4bd5036e0579e45a74c3ef453e97c00.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19109,7 +19237,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20107": {
       "fips": "20107",
@@ -19211,7 +19339,19 @@
       "name": "Marshall County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 9:23AM CDT until June 7 at 11:55AM CDT by NWS Topeka KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T09:23:00-05:00",
+            "expires": "2026-06-05T00:30:00-05:00",
+            "areaDesc": "Marshall, KS",
+            "id": "urn:oid:2.49.0.1.840.0.44ee52907362ccf0ccaec1846fd8a1d27721d663.002.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19223,7 +19363,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20119": {
       "fips": "20119",
@@ -19268,7 +19408,19 @@
       "name": "Mitchell County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 11:21AM CDT until June 4 at 8:00PM CDT by NWS Hastings NE",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T11:21:00-05:00",
+            "expires": "2026-06-04T20:00:00-05:00",
+            "areaDesc": "Mitchell, KS; Osborne, KS",
+            "id": "urn:oid:2.49.0.1.840.0.da21cb41fc476d8502f292b23213d01ba5138561.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19280,7 +19432,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20125": {
       "fips": "20125",
@@ -19344,7 +19496,14 @@
       "name": "Nemaha County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19356,7 +19515,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20133": {
       "fips": "20133",
@@ -19439,7 +19598,30 @@
       "name": "Osborne County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 11:21AM CDT until June 4 at 8:00PM CDT by NWS Hastings NE",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T11:21:00-05:00",
+            "expires": "2026-06-04T20:00:00-05:00",
+            "areaDesc": "Mitchell, KS; Osborne, KS",
+            "id": "urn:oid:2.49.0.1.840.0.da21cb41fc476d8502f292b23213d01ba5138561.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 8:47AM CDT until June 5 at 10:00PM CDT by NWS Hastings NE",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-04T08:47:00-05:00",
+            "expires": "2026-06-04T21:00:00-05:00",
+            "areaDesc": "Osborne, KS",
+            "id": "urn:oid:2.49.0.1.840.0.6e3634505a0bbf36cc4a3b66c3e168ef948c513a.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19451,14 +19633,59 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "20143": {
       "fips": "20143",
       "name": "Ottawa County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 9:23AM CDT until June 6 at 7:26AM CDT by NWS Topeka KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T09:23:00-05:00",
+            "expires": "2026-06-05T00:30:00-05:00",
+            "areaDesc": "Ottawa, KS",
+            "id": "urn:oid:2.49.0.1.840.0.44ee52907362ccf0ccaec1846fd8a1d27721d663.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 9:23AM CDT by NWS Topeka KS",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-04T09:23:00-05:00",
+            "expires": "2026-06-05T00:30:00-05:00",
+            "areaDesc": "Ottawa, KS",
+            "id": "urn:oid:2.49.0.1.840.0.ca81da7ee8153f85b29c80d374c633ba3721d376.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 9:23AM CDT until June 7 at 2:06AM CDT by NWS Topeka KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T09:23:00-05:00",
+            "expires": "2026-06-05T00:30:00-05:00",
+            "areaDesc": "Ottawa, KS; Saline, KS",
+            "id": "urn:oid:2.49.0.1.840.0.44ee52907362ccf0ccaec1846fd8a1d27721d663.005.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 9:23AM CDT until June 8 at 2:09AM CDT by NWS Topeka KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T09:23:00-05:00",
+            "expires": "2026-06-05T00:30:00-05:00",
+            "areaDesc": "Dickinson, KS; Ottawa, KS; Saline, KS",
+            "id": "urn:oid:2.49.0.1.840.0.44ee52907362ccf0ccaec1846fd8a1d27721d663.003.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19470,7 +19697,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 4
     },
     "20145": {
       "fips": "20145",
@@ -19515,7 +19742,14 @@
       "name": "Pottawatomie County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19527,7 +19761,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20151": {
       "fips": "20151",
@@ -19591,7 +19825,14 @@
       "name": "Republic County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19603,7 +19844,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20159": {
       "fips": "20159",
@@ -19629,7 +19870,14 @@
       "name": "Riley County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19641,7 +19889,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20163": {
       "fips": "20163",
@@ -19705,7 +19953,30 @@
       "name": "Saline County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 9:23AM CDT until June 7 at 2:06AM CDT by NWS Topeka KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T09:23:00-05:00",
+            "expires": "2026-06-05T00:30:00-05:00",
+            "areaDesc": "Ottawa, KS; Saline, KS",
+            "id": "urn:oid:2.49.0.1.840.0.44ee52907362ccf0ccaec1846fd8a1d27721d663.005.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 9:23AM CDT until June 8 at 2:09AM CDT by NWS Topeka KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T09:23:00-05:00",
+            "expires": "2026-06-05T00:30:00-05:00",
+            "areaDesc": "Dickinson, KS; Ottawa, KS; Saline, KS",
+            "id": "urn:oid:2.49.0.1.840.0.44ee52907362ccf0ccaec1846fd8a1d27721d663.003.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -19717,7 +19988,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "20171": {
       "fips": "20171",
@@ -20009,7 +20280,14 @@
       "name": "Washington County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -20021,7 +20299,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20203": {
       "fips": "20203",
@@ -22943,15 +23221,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Over 6,000 reported without power in multiple southeast Louisiana parishes",
-            "url": "https://www.wbrz.com/news/over-6-000-reported-without-power-in-multiple-southeast-louisiana-parishes",
-            "domain": "wbrz.com",
-            "seendate": "20260603040000",
-            "is_new": false
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -22960,7 +23230,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "22035": {
       "fips": "22035",
@@ -22989,15 +23259,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Over 6,000 reported without power in multiple southeast Louisiana parishes",
-            "url": "https://www.wbrz.com/news/over-6-000-reported-without-power-in-multiple-southeast-louisiana-parishes",
-            "domain": "wbrz.com",
-            "seendate": "20260603040000",
-            "is_new": false
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -23006,7 +23268,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "22039": {
       "fips": "22039",
@@ -23184,14 +23446,7 @@
       "name": "Lafourche Parish",
       "state": "LA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -23203,7 +23458,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "22059": {
       "fips": "22059",
@@ -30094,7 +30349,14 @@
       "name": "Atchison County",
       "state": "MO",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.9\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -30106,7 +30368,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "29007": {
       "fips": "29007",
@@ -30759,6 +31021,32 @@
       "name": "Gentry County",
       "state": "MO",
       "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "29077": {
+      "fips": "29077",
+      "name": "Greene County",
+      "state": "MO",
+      "alerts": {
         "weather": [],
         "bank_robbery": [],
         "protest": [],
@@ -30772,33 +31060,6 @@
         "disease": []
       },
       "alert_count": 0
-    },
-    "29077": {
-      "fips": "29077",
-      "name": "Greene County",
-      "state": "MO",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [
-          {
-            "title": "Pride event becomes planned protest in Mansfield",
-            "url": "https://www.ksmu.org/news/2026-06-03/pride-event-becomes-planned-protest-in-mansfield",
-            "domain": "ksmu.org",
-            "seendate": "20260603173000",
-            "is_new": true
-          }
-        ],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
     },
     "29079": {
       "fips": "29079",
@@ -30824,7 +31085,14 @@
       "name": "Harrison County",
       "state": "MO",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -30836,7 +31104,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "29083": {
       "fips": "29083",
@@ -30881,7 +31149,14 @@
       "name": "Holt County",
       "state": "MO",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.6\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -30893,7 +31168,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "29089": {
       "fips": "29089",
@@ -30921,15 +31196,7 @@
       "alerts": {
         "weather": [],
         "bank_robbery": [],
-        "protest": [
-          {
-            "title": "Pride event becomes planned protest in Mansfield",
-            "url": "https://www.ksmu.org/news/2026-06-03/pride-event-becomes-planned-protest-in-mansfield",
-            "domain": "ksmu.org",
-            "seendate": "20260603173000",
-            "is_new": true
-          }
-        ],
+        "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
@@ -30939,7 +31206,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "29093": {
       "fips": "29093",
@@ -31459,7 +31726,14 @@
       "name": "Nodaway County",
       "state": "MO",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.9\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -31471,7 +31745,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "29149": {
       "fips": "29149",
@@ -31823,13 +32097,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 3 at 8:00AM CDT until June 4 at 10:00PM CDT by NWS Springfield MO",
+            "headline": "Flood Warning issued June 4 at 7:47AM CDT until June 5 at 2:12AM CDT by NWS Springfield MO",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-03T08:00:00-05:00",
-            "expires": "2026-06-04T08:00:00-05:00",
+            "effective": "2026-06-04T07:47:00-05:00",
+            "expires": "2026-06-05T02:15:00-05:00",
             "areaDesc": "St. Clair, MO; Vernon, MO",
-            "id": "urn:oid:2.49.0.1.840.0.bdb345cd2a1b6acb4bd696e7589147fa2025cb5b.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.79c8fb405e0eb03200c08183ba1ba07c7aeb6308.001.1",
             "source": "nws_alert"
           }
         ],
@@ -32120,13 +32394,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 3 at 8:00AM CDT until June 4 at 10:00PM CDT by NWS Springfield MO",
+            "headline": "Flood Warning issued June 4 at 7:47AM CDT until June 5 at 2:12AM CDT by NWS Springfield MO",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-03T08:00:00-05:00",
-            "expires": "2026-06-04T08:00:00-05:00",
+            "effective": "2026-06-04T07:47:00-05:00",
+            "expires": "2026-06-05T02:15:00-05:00",
             "areaDesc": "St. Clair, MO; Vernon, MO",
-            "id": "urn:oid:2.49.0.1.840.0.bdb345cd2a1b6acb4bd696e7589147fa2025cb5b.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.79c8fb405e0eb03200c08183ba1ba07c7aeb6308.001.1",
             "source": "nws_alert"
           }
         ],
@@ -32224,6 +32498,32 @@
       "name": "Worth County",
       "state": "MO",
       "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "29229": {
+      "fips": "29229",
+      "name": "Wright County",
+      "state": "MO",
+      "alerts": {
         "weather": [],
         "bank_robbery": [],
         "protest": [],
@@ -32237,33 +32537,6 @@
         "disease": []
       },
       "alert_count": 0
-    },
-    "29229": {
-      "fips": "29229",
-      "name": "Wright County",
-      "state": "MO",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [
-          {
-            "title": "Pride event becomes planned protest in Mansfield",
-            "url": "https://www.ksmu.org/news/2026-06-03/pride-event-becomes-planned-protest-in-mansfield",
-            "domain": "ksmu.org",
-            "seendate": "20260603173000",
-            "is_new": true
-          }
-        ],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
     },
     "29510": {
       "fips": "29510",
@@ -33486,14 +33759,7 @@
       "name": "Boyd County",
       "state": "NE",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -33505,7 +33771,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "31017": {
       "fips": "31017",
@@ -33930,19 +34196,7 @@
       "name": "Franklin County",
       "state": "NE",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 3 at 2:55PM CDT until June 3 at 3:15PM CDT by NWS Hastings NE",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-03T14:55:00-05:00",
-            "expires": "2026-06-03T15:15:00-05:00",
-            "areaDesc": "Franklin, NE; Harlan, NE; Kearney, NE; Phelps, NE",
-            "id": "urn:oid:2.49.0.1.840.0.43ab20ad88afd7bc3dd97296867cc64e53dc98a1.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -33954,7 +34208,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "31063": {
       "fips": "31063",
@@ -33999,7 +34253,14 @@
       "name": "Gage County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34011,7 +34272,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "31069": {
       "fips": "31069",
@@ -34151,19 +34412,7 @@
       "name": "Harlan County",
       "state": "NE",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 3 at 2:55PM CDT until June 3 at 3:15PM CDT by NWS Hastings NE",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-03T14:55:00-05:00",
-            "expires": "2026-06-03T15:15:00-05:00",
-            "areaDesc": "Franklin, NE; Harlan, NE; Kearney, NE; Phelps, NE",
-            "id": "urn:oid:2.49.0.1.840.0.43ab20ad88afd7bc3dd97296867cc64e53dc98a1.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34175,7 +34424,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "31085": {
       "fips": "31085",
@@ -34220,14 +34469,7 @@
       "name": "Holt County",
       "state": "NE",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34239,7 +34481,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "31091": {
       "fips": "31091",
@@ -34284,55 +34526,12 @@
       "name": "Jefferson County",
       "state": "NE",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "31097": {
-      "fips": "31097",
-      "name": "Johnson County",
-      "state": "NE",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "31099": {
-      "fips": "31099",
-      "name": "Kearney County",
-      "state": "NE",
-      "alerts": {
         "weather": [
           {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 3 at 2:55PM CDT until June 3 at 3:15PM CDT by NWS Hastings NE",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-03T14:55:00-05:00",
-            "expires": "2026-06-03T15:15:00-05:00",
-            "areaDesc": "Franklin, NE; Harlan, NE; Kearney, NE; Phelps, NE",
-            "id": "urn:oid:2.49.0.1.840.0.43ab20ad88afd7bc3dd97296867cc64e53dc98a1.001.1",
-            "source": "nws_alert"
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
           }
         ],
         "bank_robbery": [],
@@ -34347,6 +34546,51 @@
         "disease": []
       },
       "alert_count": 1
+    },
+    "31097": {
+      "fips": "31097",
+      "name": "Johnson County",
+      "state": "NE",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "31099": {
+      "fips": "31099",
+      "name": "Kearney County",
+      "state": "NE",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
     },
     "31101": {
       "fips": "31101",
@@ -34410,14 +34654,7 @@
       "name": "Knox County",
       "state": "NE",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34429,7 +34666,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "31109": {
       "fips": "31109",
@@ -34607,7 +34844,14 @@
       "name": "Nemaha County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34619,7 +34863,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "31129": {
       "fips": "31129",
@@ -34645,7 +34889,14 @@
       "name": "Otoe County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34657,14 +34908,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "31133": {
       "fips": "31133",
       "name": "Pawnee County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34676,7 +34934,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "31135": {
       "fips": "31135",
@@ -34702,19 +34960,7 @@
       "name": "Phelps County",
       "state": "NE",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 3 at 2:55PM CDT until June 3 at 3:15PM CDT by NWS Hastings NE",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-03T14:55:00-05:00",
-            "expires": "2026-06-03T15:15:00-05:00",
-            "areaDesc": "Franklin, NE; Harlan, NE; Kearney, NE; Phelps, NE",
-            "id": "urn:oid:2.49.0.1.840.0.43ab20ad88afd7bc3dd97296867cc64e53dc98a1.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34726,7 +34972,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "31139": {
       "fips": "31139",
@@ -34809,29 +35055,10 @@
       "name": "Richardson County",
       "state": "NE",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "31149": {
-      "fips": "31149",
-      "name": "Rock County",
-      "state": "NE",
-      "alerts": {
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
+            "headline": "~2.4\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -34849,9 +35076,9 @@
       },
       "alert_count": 1
     },
-    "31151": {
-      "fips": "31151",
-      "name": "Saline County",
+    "31149": {
+      "fips": "31149",
+      "name": "Rock County",
       "state": "NE",
       "alerts": {
         "weather": [],
@@ -34868,12 +35095,19 @@
       },
       "alert_count": 0
     },
-    "31153": {
-      "fips": "31153",
-      "name": "Sarpy County",
+    "31151": {
+      "fips": "31151",
+      "name": "Saline County",
       "state": "NE",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -34885,7 +35119,33 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
+    },
+    "31153": {
+      "fips": "31153",
+      "name": "Sarpy County",
+      "state": "NE",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
     },
     "31155": {
       "fips": "31155",
@@ -35778,22 +36038,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "34005": {
       "fips": "34005",
@@ -35884,22 +36133,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "34015": {
       "fips": "34015",
@@ -35933,22 +36171,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "34019": {
       "fips": "34019",
@@ -36020,22 +36247,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "34027": {
       "fips": "34027",
@@ -36050,22 +36266,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "34029": {
       "fips": "34029",
@@ -36099,22 +36304,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "34033": {
       "fips": "34033",
@@ -36186,22 +36380,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "34041": {
       "fips": "34041",
@@ -36549,19 +36732,7 @@
       "name": "Lincoln County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued June 3 at 2:03PM MDT until June 3 at 3:15PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-03T14:03:00-06:00",
-            "expires": "2026-06-03T15:15:00-06:00",
-            "areaDesc": "Lincoln, NM",
-            "id": "urn:oid:2.49.0.1.840.0.ea37b13a970a1cc13c39ecbae36cd8954633137f.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -36573,7 +36744,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35028": {
       "fips": "35028",
@@ -36656,19 +36827,7 @@
       "name": "Otero County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 3 at 2:09PM MDT until June 3 at 3:00PM MDT by NWS El Paso Tx/Santa Teresa NM",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-03T14:09:00-06:00",
-            "expires": "2026-06-03T15:00:00-06:00",
-            "areaDesc": "Otero, NM",
-            "id": "urn:oid:2.49.0.1.840.0.639f711438780eb215937fab62ed2bdf41f4d43a.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -36680,7 +36839,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "35037": {
       "fips": "35037",
@@ -36796,19 +36955,7 @@
       "name": "San Miguel County",
       "state": "NM",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued June 3 at 1:48PM MDT until June 3 at 4:45PM MDT by NWS Albuquerque NM",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-03T13:48:00-06:00",
-            "expires": "2026-06-03T16:45:00-06:00",
-            "areaDesc": "San Miguel, NM",
-            "id": "urn:oid:2.49.0.1.840.0.ff7a8f6691f00887e62cc8a66166282bed05176f.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -36834,7 +36981,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "35049": {
       "fips": "35049",
@@ -37020,22 +37167,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "36007": {
       "fips": "36007",
@@ -37430,22 +37566,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "36049": {
       "fips": "36049",
@@ -37555,22 +37680,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "36061": {
       "fips": "36061",
@@ -37585,22 +37699,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "36063": {
       "fips": "36063",
@@ -37786,22 +37889,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "36083": {
       "fips": "36083",
@@ -37835,22 +37927,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "36087": {
       "fips": "36087",
@@ -38017,22 +38098,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "36105": {
       "fips": "36105",
@@ -38180,22 +38250,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "LGA",
-            "name": "LaGuardia",
-            "city": "New York",
-            "state": "NY",
-            "reason": "runway maintenance",
-            "end": "5:15 pm EDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "36121": {
       "fips": "36121",
@@ -42876,19 +42935,7 @@
       "name": "Beaver County",
       "state": "OK",
       "alerts": {
-        "weather": [
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 3 at 3:07PM CDT until June 3 at 3:45PM CDT by NWS Amarillo TX",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-03T15:07:00-05:00",
-            "expires": "2026-06-03T15:45:00-05:00",
-            "areaDesc": "Beaver, OK",
-            "id": "urn:oid:2.49.0.1.840.0.4a8fd2cfc3892b7cbd5e9d28c936be1b2ca897d1.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -42900,7 +42947,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "40009": {
       "fips": "40009",
@@ -47447,7 +47494,19 @@
       "name": "Brookings County",
       "state": "SD",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 12:20PM CDT by NWS Sioux Falls SD",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T12:20:00-05:00",
+            "expires": "2026-06-05T14:30:00-05:00",
+            "areaDesc": "Brookings, SD; Hamlin, SD",
+            "id": "urn:oid:2.49.0.1.840.0.03f7a75e58c293c0cdfc1ec431605795a971afc6.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -47459,7 +47518,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "46013": {
       "fips": "46013",
@@ -47884,7 +47943,19 @@
       "name": "Hamlin County",
       "state": "SD",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 4 at 12:20PM CDT by NWS Sioux Falls SD",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-04T12:20:00-05:00",
+            "expires": "2026-06-05T14:30:00-05:00",
+            "areaDesc": "Brookings, SD; Hamlin, SD",
+            "id": "urn:oid:2.49.0.1.840.0.03f7a75e58c293c0cdfc1ec431605795a971afc6.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -47896,7 +47967,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "46059": {
       "fips": "46059",
@@ -48207,14 +48278,7 @@
       "name": "Marshall County",
       "state": "SD",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -48226,7 +48290,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "46093": {
       "fips": "46093",
@@ -48404,14 +48468,7 @@
       "name": "Roberts County",
       "state": "SD",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -48423,7 +48480,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "46111": {
       "fips": "46111",
@@ -50585,22 +50642,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "IAH",
-            "name": "George Bush Intercontinental",
-            "city": "Houston",
-            "state": "TX",
-            "reason": "thunderstorms",
-            "end": "3:45 pm CDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48017": {
       "fips": "48017",
@@ -50824,22 +50870,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "IAH",
-            "name": "George Bush Intercontinental",
-            "city": "Houston",
-            "state": "TX",
-            "reason": "thunderstorms",
-            "end": "3:45 pm CDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48041": {
       "fips": "48041",
@@ -51742,15 +51777,7 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "400+ homes without power in Pleasant Farms",
-            "url": "https://www.firstalert7.com/2026/06/03/400-homes-without-power-pleasant-farms/",
-            "domain": "firstalert7.com",
-            "seendate": "20260603131500",
-            "is_new": true
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -51759,7 +51786,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48137": {
       "fips": "48137",
@@ -51964,22 +51991,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "IAH",
-            "name": "George Bush Intercontinental",
-            "city": "Houston",
-            "state": "TX",
-            "reason": "thunderstorms",
-            "end": "3:45 pm CDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48159": {
       "fips": "48159",
@@ -52062,14 +52078,7 @@
       "name": "Galveston County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -52077,22 +52086,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "IAH",
-            "name": "George Bush Intercontinental",
-            "city": "Houston",
-            "state": "TX",
-            "reason": "thunderstorms",
-            "end": "3:45 pm CDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "48169": {
       "fips": "48169",
@@ -52408,10 +52406,10 @@
         "protest": [],
         "utility_outage": [
           {
-            "title": "Houston power outage tracker: Over 14,000 customers without power in Houston area following afternoon storms",
-            "url": "https://www.fox26houston.com/news/houston-power-outage-tracker-over-29000-customers-without-power-houston-area-following-afternoon-storms",
-            "domain": "fox26houston.com",
-            "seendate": "20260603014500",
+            "title": "Multiple power outages reported across Houston area due to severe weather",
+            "url": "https://www.click2houston.com/news/local/2026/06/03/multiple-power-outages-reported-across-houston-area-due-to-severe-weather/",
+            "domain": "click2houston.com",
+            "seendate": "20260604031500",
             "is_new": false
           }
         ],
@@ -52419,22 +52417,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "IAH",
-            "name": "George Bush Intercontinental",
-            "city": "Houston",
-            "state": "TX",
-            "reason": "thunderstorms",
-            "end": "3:45 pm CDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "48203": {
       "fips": "48203",
@@ -53285,22 +53272,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "IAH",
-            "name": "George Bush Intercontinental",
-            "city": "Houston",
-            "state": "TX",
-            "reason": "thunderstorms",
-            "end": "3:45 pm CDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48293": {
       "fips": "48293",
@@ -53478,19 +53454,7 @@
       "name": "McMullen County",
       "state": "TX",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 3 at 1:30PM CDT until June 4 at 11:00PM CDT by NWS Corpus Christi TX",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-03T13:30:00-05:00",
-            "expires": "2026-06-04T04:30:00-05:00",
-            "areaDesc": "McMullen, TX",
-            "id": "urn:oid:2.49.0.1.840.0.33b66676b9d9a941b5a0ef7f60c3fde8e64a1ac9.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -53502,7 +53466,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48313": {
       "fips": "48313",
@@ -53764,22 +53728,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "IAH",
-            "name": "George Bush Intercontinental",
-            "city": "Houston",
-            "state": "TX",
-            "reason": "thunderstorms",
-            "end": "3:45 pm CDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48341": {
       "fips": "48341",
@@ -55076,22 +55029,11 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [
-          {
-            "kind": "ground_stop",
-            "code": "IAH",
-            "name": "George Bush Intercontinental",
-            "city": "Houston",
-            "state": "TX",
-            "reason": "thunderstorms",
-            "end": "3:45 pm CDT",
-            "source": "FAA NAS Status"
-          }
-        ],
+        "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "48475": {
       "fips": "48475",
@@ -55514,13 +55456,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "headline": "Red Flag Warning issued June 4 at 11:25AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-03T10:10:00-06:00",
-            "expires": "2026-06-03T18:15:00-06:00",
+            "effective": "2026-06-04T11:25:00-06:00",
+            "expires": "2026-06-04T19:30:00-06:00",
             "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
-            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.043a0ea93889704a197ec63f516bdec1aa2834c2.001.2",
             "source": "nws_alert"
           }
         ],
@@ -55621,13 +55563,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "headline": "Red Flag Warning issued June 4 at 11:25AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-03T10:10:00-06:00",
-            "expires": "2026-06-03T18:15:00-06:00",
+            "effective": "2026-06-04T11:25:00-06:00",
+            "expires": "2026-06-04T19:30:00-06:00",
             "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
-            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.043a0ea93889704a197ec63f516bdec1aa2834c2.001.2",
             "source": "nws_alert"
           }
         ],
@@ -55899,13 +55841,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued June 3 at 10:10AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
+            "headline": "Red Flag Warning issued June 4 at 11:25AM MDT until June 4 at 7:00PM MDT by NWS Grand Junction CO",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-06-03T10:10:00-06:00",
-            "expires": "2026-06-03T18:15:00-06:00",
+            "effective": "2026-06-04T11:25:00-06:00",
+            "expires": "2026-06-04T19:30:00-06:00",
             "areaDesc": "Little Snake; White River; Eastern Uintah Basin; Book Cliffs",
-            "id": "urn:oid:2.49.0.1.840.0.91802fef15fe37908214d0f6828c32d33635f4c9.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.043a0ea93889704a197ec63f516bdec1aa2834c2.001.2",
             "source": "nws_alert"
           }
         ],
@@ -60850,7 +60792,15 @@
       "alerts": {
         "weather": [],
         "bank_robbery": [],
-        "protest": [],
+        "protest": [
+          {
+            "title": "3rd Congressional District Democrats: Democratic and progressive groups will be working together to protest President Trump's Eau Claire trip",
+            "url": "https://www.wispolitics.com/2026/3rd-congressional-district-democrats-democratic-and-progressive-groups-will-be-working-together-to-protest-president-trumps-eau-claire-trip/",
+            "domain": "wispolitics.com",
+            "seendate": "20260604164500",
+            "is_new": true
+          }
+        ],
         "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
@@ -60860,7 +60810,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "55019": {
       "fips": "55019",
@@ -62596,14 +62546,7 @@
       "name": "AÃ±asco Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -62615,7 +62558,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "72013": {
       "fips": "72013",
@@ -63895,14 +63838,7 @@
       "name": "Vega Baja Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -63914,7 +63850,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "72147": {
       "fips": "72147",
