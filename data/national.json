@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-03T20:21:10.144048+00:00",
-  "date": "2026-06-03",
+  "generated_at": "2026-06-04T18:04:45.756596+00:00",
+  "date": "2026-06-04",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,31 +11,31 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 46
+      "counties_with_alerts": 33
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3191,
-      "counties_over_threshold": 10
+      "counties_queried": 3196,
+      "counties_over_threshold": 44
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 42,
+      "counties_with_matches": 28,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 61,
-        "utility_outage": 6,
-        "transit_disruption": 7
+        "protest": 56,
+        "utility_outage": 5,
+        "transit_disruption": 81
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 9,
+      "counties_with_matches": 7,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 3,
-        "utility_outage": 6,
-        "transit_disruption": 0
+        "protest": 1,
+        "utility_outage": 4,
+        "transit_disruption": 2
       }
     },
     "wildfires_eonet": {
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 3
+      "items": 2
     },
     "disease_wastewater": {
       "status": "ok",
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 2,
-      "counties_with_alerts": 24
+      "national_items": 0,
+      "counties_with_alerts": 0
     }
   },
   "cdc_han": [],
@@ -159,36 +159,8 @@
       "published": "Thu, 28 May 2026 19:10:18 Z",
       "summary": "In response to the current outbreak of Ebola disease caused by Bundibugyo virus occurring in the Democratic Republic of the Congo, with cases also reported in Uganda, WHO convened several of its expert and advisory groups. These groups assessed potential vaccines and therapeutics for both prevention and treatment of Bundibugyo virus disease (BVD).",
       "source": "WHO News (outbreak-filtered)"
-    },
-    {
-      "title": "Message by the WHO Director-General to the people of the Democratic Republic of the Congo",
-      "url": "https://www.who.int/news/item/28-05-2026-message-by-the-who-director-general-to-the-people-of-the-democratic-republic-of-the-congo",
-      "published": "Thu, 28 May 2026 12:17:30 Z",
-      "summary": "<p>To the people of DRC, especially to the people of Ituri&nbsp;</p><p>Jambo kwenu wakahaji wa Ituri&nbsp;</p><p>Mbote na bino, bato ya Ituri&nbsp;</p><p>My name is Tedros, and I am the Director-General of the World Health Organization (WHO). But today, I am not writing to you as an official. I am writing to you as someone who knows your region, who has walked your streets, and who cares deeply about what happens to you and your families.&nbsp;</p><p>I am writing because I want to be with you in",
-      "source": "WHO News (outbreak-filtered)"
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "ground_stop",
-      "code": "LGA",
-      "name": "LaGuardia",
-      "city": "New York",
-      "state": "NY",
-      "reason": "runway maintenance",
-      "end": "5:15 pm EDT",
-      "source": "FAA NAS Status"
-    },
-    {
-      "kind": "ground_stop",
-      "code": "IAH",
-      "name": "George Bush Intercontinental",
-      "city": "Houston",
-      "state": "TX",
-      "reason": "thunderstorms",
-      "end": "3:45 pm CDT",
-      "source": "FAA NAS Status"
-    }
-  ]
+  "faa_advisories": []
 }
