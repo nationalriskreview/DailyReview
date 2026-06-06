@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-05T16:56:16.857158+00:00",
-  "date": "2026-06-05",
+  "generated_at": "2026-06-06T12:08:40.476869+00:00",
+  "date": "2026-06-06",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,30 +11,30 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 61
+      "counties_with_alerts": 153
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3172,
-      "counties_over_threshold": 11
+      "counties_queried": 3081,
+      "counties_over_threshold": 55
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 34,
+      "counties_with_matches": 14,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 95,
-        "utility_outage": 2,
-        "transit_disruption": 4
+        "protest": 30,
+        "utility_outage": 4,
+        "transit_disruption": 0
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 1,
+      "counties_with_matches": 3,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 1,
+        "utility_outage": 4,
         "transit_disruption": 0
       }
     },
@@ -46,14 +46,14 @@
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 5,
+      "items_total": 3,
       "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 5
+          "items": 3
         },
         {
           "id": "mta-subway",
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 1
+      "items": 2
     },
     "disease_wastewater": {
       "status": "ok",
@@ -146,6 +146,13 @@
   },
   "cdc_han": [],
   "who_don": [
+    {
+      "title": "Africa CDC and WHO launch joint continental Ebola response plan",
+      "url": "https://www.who.int/news/item/05-06-2026-africa-cdc-and-who-launch-joint-continental-ebola-response-plan",
+      "published": "Fri, 05 Jun 2026 12:28:26 Z",
+      "summary": "<p>The Africa Centres for Disease Control and Prevention (Africa CDC) and the World Health Organization (WHO) today launched a joint <a href=\"https://www.afro.who.int/publications/bundibugyo-ebola-virus-continental-preparedness-and-response-plan-june-november-2026\">continental preparedness and response plan</a> on the ongoing Ebola outbreak caused by the Bundibugyo virus. The plan aims to raise US$&nbsp;518&nbsp;million to support African countries together with partners to prepare for, rapidly ",
+      "source": "WHO News (outbreak-filtered)"
+    },
     {
       "title": "Joint statement by the Government of the Democratic Republic of the Congo and WHO concerning the outbreak of Ebola disease caused by the Bundibugyo virus",
       "url": "https://www.who.int/news/item/31-05-2026-joint-statement-by-the-government-of-the-democratic-republic-of-the-congo-and-who-concerning-the-outbreak-of-ebola-disease-caused-by-the-bundibugyo-virus",
