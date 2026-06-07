@@ -10,10 +10,15 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.4\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued June 7 at 7:16AM CDT until June 7 at 10:15AM CDT by NWS Fort Worth TX",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-06-07T07:16:00-05:00",
+        "expires": "2026-06-07T10:15:00-05:00",
+        "areaDesc": "Hood, TX; Johnson, TX; Parker, TX; Tarrant, TX",
+        "id": "urn:oid:2.49.0.1.840.0.af88bfcaaf757809fb06cae187f692e2da69ac22.001.1",
+        "source": "nws_alert"
       }
     ],
     "bank_robbery": [],
@@ -23,11 +28,22 @@
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "ground_stop",
+        "code": "DFW",
+        "name": "Dallas/Fort Worth Intl",
+        "city": "Dallas/Fort Worth",
+        "state": "TX",
+        "reason": "thunderstorms",
+        "end": "7:45 am CDT",
+        "source": "FAA NAS Status"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
-  "date": "2026-06-06",
-  "generated_at": "2026-06-06T12:08:40.476869+00:00"
+  "alert_count": 2,
+  "date": "2026-06-07",
+  "generated_at": "2026-06-07T12:31:17.668811+00:00"
 }
