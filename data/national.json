@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-06T12:08:40.476869+00:00",
-  "date": "2026-06-06",
+  "generated_at": "2026-06-07T12:31:17.668811+00:00",
+  "date": "2026-06-07",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,31 +11,31 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 153
+      "counties_with_alerts": 126
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3081,
-      "counties_over_threshold": 55
+      "counties_queried": 3101,
+      "counties_over_threshold": 66
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 14,
+      "counties_with_matches": 27,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 30,
-        "utility_outage": 4,
-        "transit_disruption": 0
+        "protest": 14,
+        "utility_outage": 17,
+        "transit_disruption": 4
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 3,
+      "counties_with_matches": 9,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 4,
-        "transit_disruption": 0
+        "utility_outage": 14,
+        "transit_disruption": 1
       }
     },
     "wildfires_eonet": {
@@ -46,8 +46,8 @@
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 3,
-      "counties_with_alerts": 5,
+      "items_total": 4,
+      "counties_with_alerts": 15,
       "agencies": [
         {
           "id": "mbta",
@@ -113,7 +113,7 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 0
+          "items": 1
         }
       ]
     },
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 1,
+      "counties_with_alerts": 11
     }
   },
   "cdc_han": [],
@@ -162,5 +162,16 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": []
+  "faa_advisories": [
+    {
+      "kind": "ground_stop",
+      "code": "DFW",
+      "name": "Dallas/Fort Worth Intl",
+      "city": "Dallas/Fort Worth",
+      "state": "TX",
+      "reason": "thunderstorms",
+      "end": "7:45 am CDT",
+      "source": "FAA NAS Status"
+    }
+  ]
 }
