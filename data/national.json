@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-07T12:31:17.668811+00:00",
-  "date": "2026-06-07",
+  "generated_at": "2026-06-08T18:21:44.626659+00:00",
+  "date": "2026-06-08",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,43 +11,43 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 126
+      "counties_with_alerts": 177
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3101,
-      "counties_over_threshold": 66
+      "counties_queried": 3056,
+      "counties_over_threshold": 95
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 27,
+      "counties_with_matches": 35,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 14,
-        "utility_outage": 17,
-        "transit_disruption": 4
+        "protest": 70,
+        "utility_outage": 9,
+        "transit_disruption": 3
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 9,
+      "counties_with_matches": 5,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 14,
+        "utility_outage": 7,
         "transit_disruption": 1
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 0
+      "counties_with_alerts": 39
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 4,
-      "counties_with_alerts": 15,
+      "items_total": 3,
+      "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
@@ -113,7 +113,7 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     },
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 2
+      "items": 1
     },
     "disease_wastewater": {
       "status": "ok",
@@ -141,7 +141,7 @@
     "aviation_faa": {
       "status": "ok",
       "national_items": 1,
-      "counties_with_alerts": 11
+      "counties_with_alerts": 9
     }
   },
   "cdc_han": [],
@@ -152,25 +152,18 @@
       "published": "Fri, 05 Jun 2026 12:28:26 Z",
       "summary": "<p>The Africa Centres for Disease Control and Prevention (Africa CDC) and the World Health Organization (WHO) today launched a joint <a href=\"https://www.afro.who.int/publications/bundibugyo-ebola-virus-continental-preparedness-and-response-plan-june-november-2026\">continental preparedness and response plan</a> on the ongoing Ebola outbreak caused by the Bundibugyo virus. The plan aims to raise US$&nbsp;518&nbsp;million to support African countries together with partners to prepare for, rapidly ",
       "source": "WHO News (outbreak-filtered)"
-    },
-    {
-      "title": "Joint statement by the Government of the Democratic Republic of the Congo and WHO concerning the outbreak of Ebola disease caused by the Bundibugyo virus",
-      "url": "https://www.who.int/news/item/31-05-2026-joint-statement-by-the-government-of-the-democratic-republic-of-the-congo-and-who-concerning-the-outbreak-of-ebola-disease-caused-by-the-bundibugyo-virus",
-      "published": "Sun, 31 May 2026 21:49:21 Z",
-      "summary": "<p>The Government of the Democratic Republic of the Congo (DRC) and the World Health Organization (WHO) reaffirm their strong partnership and shared commitment to protect the health and well-being of the people of Ituri Province and the nation at large, following the joint mission to Bunia led by Dr Samuel Roger Kamba, Minister of Health, Mr. Patrick Muyaya Katembwe, Minister of Communication and Medias, and the visit of WHO Director-General Dr Tedros Adhanom Ghebreyesus. </p><p>This high-level ",
-      "source": "WHO News (outbreak-filtered)"
     }
   ],
   "amtrak_advisories": [],
   "faa_advisories": [
     {
       "kind": "ground_stop",
-      "code": "DFW",
-      "name": "Dallas/Fort Worth Intl",
-      "city": "Dallas/Fort Worth",
-      "state": "TX",
-      "reason": "thunderstorms",
-      "end": "7:45 am CDT",
+      "code": "SFO",
+      "name": "San Francisco Intl",
+      "city": "San Francisco",
+      "state": "CA",
+      "reason": "other",
+      "end": "11:45 am PDT",
       "source": "FAA NAS Status"
     }
   ]
