@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-08T18:21:44.626659+00:00",
-  "date": "2026-06-08",
+  "generated_at": "2026-06-09T17:25:19.841066+00:00",
+  "date": "2026-06-09",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,36 +11,36 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 177
+      "counties_with_alerts": 190
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3056,
-      "counties_over_threshold": 95
+      "counties_queried": 3037,
+      "counties_over_threshold": 110
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 35,
+      "counties_with_matches": 56,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 70,
-        "utility_outage": 9,
-        "transit_disruption": 3
+        "protest": 78,
+        "utility_outage": 27,
+        "transit_disruption": 5
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 5,
+      "counties_with_matches": 24,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 0,
-        "utility_outage": 7,
-        "transit_disruption": 1
+        "protest": 3,
+        "utility_outage": 23,
+        "transit_disruption": 3
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 39
+      "counties_with_alerts": 43
     },
     "transit": {
       "status": "ok",
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 9
+      "national_items": 0,
+      "counties_with_alerts": 0
     }
   },
   "cdc_han": [],
@@ -155,16 +155,5 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "ground_stop",
-      "code": "SFO",
-      "name": "San Francisco Intl",
-      "city": "San Francisco",
-      "state": "CA",
-      "reason": "other",
-      "end": "11:45 am PDT",
-      "source": "FAA NAS Status"
-    }
-  ]
+  "faa_advisories": []
 }
