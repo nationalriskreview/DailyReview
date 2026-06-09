@@ -1,10 +1,10 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-08T18:21:44.626659+00:00",
-  "date": "2026-06-08",
+  "generated_at": "2026-06-09T17:25:19.841066+00:00",
+  "date": "2026-06-09",
   "state": "AK",
   "counties_total": 30,
-  "counties_with_alerts": 0,
+  "counties_with_alerts": 2,
   "counties": {
     "02013": {
       "fips": "02013",
@@ -125,7 +125,14 @@
       "name": "Copper River Census Area",
       "state": "AK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Snow Forecast",
+            "headline": "~7.0\" snow expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -137,7 +144,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "02068": {
       "fips": "02068",
@@ -415,14 +422,28 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Kopshesut Wildfire, Northwest Arctic, Alaska",
+            "id": "EONET_20386",
+            "category": "wildfire",
+            "date": "2026-06-04T18:04:00Z",
+            "lat": 67.0925,
+            "lon": -157.9287,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/c798dd94-3c60-41ad-912b-157b8e4f5d90"
+            ],
+            "distance_miles": 8.9,
+            "threat_level": "Immediate"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "02195": {
       "fips": "02195",
