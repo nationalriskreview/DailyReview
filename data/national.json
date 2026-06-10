@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-09T17:25:19.841066+00:00",
-  "date": "2026-06-09",
+  "generated_at": "2026-06-10T18:19:46.715318+00:00",
+  "date": "2026-06-10",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,49 +11,49 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 190
+      "counties_with_alerts": 203
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3037,
-      "counties_over_threshold": 110
+      "counties_queried": 3028,
+      "counties_over_threshold": 87
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 56,
+      "counties_with_matches": 44,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 78,
-        "utility_outage": 27,
-        "transit_disruption": 5
+        "protest": 39,
+        "utility_outage": 16,
+        "transit_disruption": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 24,
+      "counties_with_matches": 13,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 3,
-        "utility_outage": 23,
-        "transit_disruption": 3
+        "protest": 1,
+        "utility_outage": 14,
+        "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 43
+      "counties_with_alerts": 41
     },
     "transit": {
-      "status": "ok",
+      "status": "partial",
       "agencies_total": 11,
-      "agencies_ok": 10,
-      "items_total": 3,
+      "agencies_ok": 9,
+      "items_total": 4,
       "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 3
+          "items": 4
         },
         {
           "id": "mta-subway",
@@ -76,7 +76,7 @@
         {
           "id": "path",
           "name": "PATH",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 1,
+      "counties_with_alerts": 14
     }
   },
   "cdc_han": [],
@@ -155,5 +155,16 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": []
+  "faa_advisories": [
+    {
+      "kind": "ground_stop",
+      "code": "IAD",
+      "name": "Washington Dulles Intl",
+      "city": "Dulles",
+      "state": "VA",
+      "reason": "thunderstorms",
+      "end": "3:45 pm EDT",
+      "source": "FAA NAS Status"
+    }
+  ]
 }
