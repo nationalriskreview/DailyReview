@@ -1,24 +1,17 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-10T18:19:46.715318+00:00",
-  "date": "2026-06-10",
+  "generated_at": "2026-06-11T19:00:00.678894+00:00",
+  "date": "2026-06-11",
   "state": "IL",
   "counties_total": 102,
-  "counties_with_alerts": 19,
+  "counties_with_alerts": 38,
   "counties": {
     "17001": {
       "fips": "17001",
       "name": "Adams County",
       "state": "IL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -30,7 +23,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "17003": {
       "fips": "17003",
@@ -75,7 +68,14 @@
       "name": "Boone County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.6\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -87,14 +87,26 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17009": {
       "fips": "17009",
       "name": "Brown County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 11:38AM CDT by NWS Lincoln IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-11T11:38:00-05:00",
+            "expires": "2026-06-12T03:45:00-05:00",
+            "areaDesc": "Brown, IL; Cass, IL; Morgan, IL; Schuyler, IL",
+            "id": "urn:oid:2.49.0.1.840.0.4e90696221999571f6db9b97d14338f612e08e35.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -106,7 +118,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17011": {
       "fips": "17011",
@@ -151,27 +163,46 @@
       "name": "Carroll County",
       "state": "IL",
       "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
+    "17017": {
+      "fips": "17017",
+      "name": "Cass County",
+      "state": "IL",
+      "alerts": {
         "weather": [
           {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 10 at 12:57PM CDT until June 10 at 2:00PM CDT by NWS Quad Cities IA IL",
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 11:38AM CDT by NWS Lincoln IL",
             "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-10T12:57:00-05:00",
-            "expires": "2026-06-10T14:00:00-05:00",
-            "areaDesc": "Carroll, IL; Jo Daviess, IL; Stephenson, IL; Whiteside, IL",
-            "id": "urn:oid:2.49.0.1.840.0.e7fe433f9cdd8ee02afb6f375e67e829d0109255.001.1",
+            "urgency": "Expected",
+            "effective": "2026-06-11T11:38:00-05:00",
+            "expires": "2026-06-12T03:45:00-05:00",
+            "areaDesc": "Brown, IL; Cass, IL; Morgan, IL; Schuyler, IL",
+            "id": "urn:oid:2.49.0.1.840.0.4e90696221999571f6db9b97d14338f612e08e35.001.1",
             "source": "nws_alert"
           },
           {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 10 at 12:35PM CDT until June 10 at 1:30PM CDT by NWS Quad Cities IA IL",
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 11:37AM CDT by NWS Lincoln IL",
             "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-10T12:35:00-05:00",
-            "expires": "2026-06-10T13:30:00-05:00",
-            "areaDesc": "Carroll, IL; Jo Daviess, IL; Stephenson, IL",
-            "id": "urn:oid:2.49.0.1.840.0.5860917d1e3aa7da4c27ec7c35f1da69a0e09c78.001.1",
+            "urgency": "Expected",
+            "effective": "2026-06-11T11:37:00-05:00",
+            "expires": "2026-06-12T03:45:00-05:00",
+            "areaDesc": "Cass, IL; Fulton, IL; Mason, IL",
+            "id": "urn:oid:2.49.0.1.840.0.d8e52656fe85168cae6787851dc8514465ff3b7d.001.1",
             "source": "nws_alert"
           }
         ],
@@ -187,25 +218,6 @@
         "disease": []
       },
       "alert_count": 2
-    },
-    "17017": {
-      "fips": "17017",
-      "name": "Cass County",
-      "state": "IL",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
     },
     "17019": {
       "fips": "17019",
@@ -253,13 +265,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 10 at 1:21PM EDT until June 15 at 6:00PM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued June 11 at 12:21PM EDT until June 17 at 5:00AM EDT by NWS Indianapolis IN",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-10T13:21:00-04:00",
-            "expires": "2026-06-10T23:15:00-04:00",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T12:21:00-04:00",
+            "expires": "2026-06-11T23:00:00-04:00",
             "areaDesc": "Clark, IL; Crawford, IL; Sullivan, IN; Vigo, IN",
-            "id": "urn:oid:2.49.0.1.840.0.e8e2cf0402a91c05115c1a7d056ca3ac973af5dd.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.ee49fceac9bd6a936f8769856065fce518e4e34c.002.1",
             "source": "nws_alert"
           }
         ],
@@ -338,19 +350,227 @@
       "name": "Cook County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "One Dead, Thousands Without Power After Tornadoes and Severe Storms Hit Midwest",
+            "url": "https://www.theyeshivaworld.com/news/general/2561237/one-dead-thousands-without-power-after-tornadoes-and-severe-storms-hit-midwest.html",
+            "domain": "theyeshivaworld.com",
+            "seendate": "20260611184500",
+            "is_new": true
+          },
+          {
+            "title": "Wisconsin, Illinois Severe Thunderstorm Warning: Power Outage Maps",
+            "url": "https://www.newsweek.com/severe-thunderstorm-warning-wisconsin-illinois-power-outage-map-12057186",
+            "domain": "newsweek.com",
+            "seendate": "20260611041500",
+            "is_new": false
+          },
+          {
+            "title": "After The Storm: Power Outages, Downed Wires And Road Closures Left In Storm's Wake",
+            "url": "https://patch.com/illinois/oaklawn/after-storm-power-outages-downed-wires-road-closures-left-storms-wake",
+            "domain": "patch.com",
+            "seendate": "20260611051500",
+            "is_new": false
+          },
+          {
+            "title": "Hundreds of thousands without power after Midwest storms, while East Coast braces for high heat",
+            "url": "http://www.idahopress.com/ap_news/us/hundreds-of-thousands-without-power-after-midwest-storms-while-east-coast-braces-for-high-heat/article_26d85c92-ac38-5052-9a83-94f204c2d207.html",
+            "domain": "idahopress.com",
+            "seendate": "20260611161500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.turnto23.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "turnto23.com",
+            "seendate": "20260611161500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.fox13now.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "fox13now.com",
+            "seendate": "20260611144500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.wtkr.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "wtkr.com",
+            "seendate": "20260611150000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.kztv10.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "kztv10.com",
+            "seendate": "20260611151500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest storms blamed for Iowa death, scores of power outages while dangerous heat hits the East",
+            "url": "https://mymotherlode.com/news/national/10911670/storms-knock-out-power-in-the-midwest-and-disrupt-chicago-flights.html",
+            "domain": "mymotherlode.com",
+            "seendate": "20260611174500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest storms blamed for Iowa death, scores of power outages while dangerous heat hits the East",
+            "url": "https://santamariatimes.com/ap/national/midwest-storms-blamed-for-iowa-death-scores-of-power-outages-while-dangerous-heat-hits-the/article_25d36602-2b27-571f-b224-0852e1c16d63.html",
+            "domain": "santamariatimes.com",
+            "seendate": "20260611174500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.abc15.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "abc15.com",
+            "seendate": "20260611170000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest storms blamed for Iowa death, scores of power outages while dangerous heat hits the East",
+            "url": "https://www.local10.com/news/2026/06/11/hundreds-of-thousands-without-power-after-midwest-storms-while-east-coast-braces-for-high-heat/",
+            "domain": "local10.com",
+            "seendate": "20260611173000",
+            "is_new": true
+          },
+          {
+            "title": "Tens of thousands without power across Chicago amid strong storms &#x2013; NBC Chicago",
+            "url": "https://www.nbcchicago.com/news/local/nearly-20000-without-power-across-the-chicago-area-as-powerful-storms-roll-through/3946633/",
+            "domain": "nbcchicago.com",
+            "seendate": "20260611000000",
+            "is_new": false
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.katc.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "katc.com",
+            "seendate": "20260611140000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.wptv.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "wptv.com",
+            "seendate": "20260611141500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.wtvr.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "wtvr.com",
+            "seendate": "20260611143000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.kjrh.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "kjrh.com",
+            "seendate": "20260611143000",
+            "is_new": true
+          },
+          {
+            "title": "Hundreds of thousands without power after storms in the Midwest",
+            "url": "https://www.wdbo.com/news/storms-knock-out/WQDHHTVJWIZ3VBBH3CZEFAMFGI/",
+            "domain": "wdbo.com",
+            "seendate": "20260611110000",
+            "is_new": true
+          },
+          {
+            "title": "Hundreds of thousands without power after storms in the Midwest",
+            "url": "https://www.wgauradio.com/news/storms-knock-out/WQDHHTVJWIZ3VBBH3CZEFAMFGI/",
+            "domain": "wgauradio.com",
+            "seendate": "20260611110000",
+            "is_new": true
+          },
+          {
+            "title": "Hundreds of thousands without power after storms in the Midwest",
+            "url": "https://www.wsbradio.com/news/storms-knock-out/WQDHHTVJWIZ3VBBH3CZEFAMFGI/",
+            "domain": "wsbradio.com",
+            "seendate": "20260611123000",
+            "is_new": true
+          },
+          {
+            "title": "Hundreds of thousands without power after storms in the Midwest",
+            "url": "https://www.wokv.com/news/storms-knock-out/WQDHHTVJWIZ3VBBH3CZEFAMFGI/",
+            "domain": "wokv.com",
+            "seendate": "20260611123000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.10news.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "10news.com",
+            "seendate": "20260611124500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.koaa.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "koaa.com",
+            "seendate": "20260611131500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.kxlf.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "kxlf.com",
+            "seendate": "20260611133000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.ktvh.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "ktvh.com",
+            "seendate": "20260611133000",
+            "is_new": true
+          },
+          {
+            "title": "Chicago, IL weather forecast: More severe thunderstorms expected Thursday with tornado risk after storms cause power outages",
+            "url": "https://abc7chicago.com/post/chicago-il-weather-forecast-more-severe-thunderstorms-expected-thursday-tornado-risk-storms-cause-power-outages/19274726/",
+            "domain": "abc7chicago.com",
+            "seendate": "20260611134500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.wcpo.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "wcpo.com",
+            "seendate": "20260611134500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "MDW",
+            "name": "Chicago Midway Intl",
+            "city": "Chicago",
+            "state": "IL",
+            "reason": "thunderstorms",
+            "end": "2:30 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 29
     },
     "17033": {
       "fips": "17033",
@@ -360,35 +580,35 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 10 at 1:21PM EDT until June 17 at 11:00PM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued June 11 at 12:21PM EDT until June 17 at 5:00AM EDT by NWS Indianapolis IN",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-10T13:21:00-04:00",
-            "expires": "2026-06-10T23:15:00-04:00",
-            "areaDesc": "Crawford, IL; Lawrence, IL; Knox, IN; Sullivan, IN",
-            "id": "urn:oid:2.49.0.1.840.0.e8e2cf0402a91c05115c1a7d056ca3ac973af5dd.003.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 10 at 1:21PM EDT until June 17 at 2:00PM EDT by NWS Indianapolis IN",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-10T13:21:00-04:00",
-            "expires": "2026-06-10T23:15:00-04:00",
-            "areaDesc": "Crawford, IL; Lawrence, IL; Knox, IN; Sullivan, IN",
-            "id": "urn:oid:2.49.0.1.840.0.e8e2cf0402a91c05115c1a7d056ca3ac973af5dd.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 10 at 1:21PM EDT until June 15 at 6:00PM EDT by NWS Indianapolis IN",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-10T13:21:00-04:00",
-            "expires": "2026-06-10T23:15:00-04:00",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T12:21:00-04:00",
+            "expires": "2026-06-11T23:00:00-04:00",
             "areaDesc": "Clark, IL; Crawford, IL; Sullivan, IN; Vigo, IN",
-            "id": "urn:oid:2.49.0.1.840.0.e8e2cf0402a91c05115c1a7d056ca3ac973af5dd.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.ee49fceac9bd6a936f8769856065fce518e4e34c.002.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 12:21PM EDT until June 19 at 6:17PM EDT by NWS Indianapolis IN",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T12:21:00-04:00",
+            "expires": "2026-06-11T23:00:00-04:00",
+            "areaDesc": "Crawford, IL; Lawrence, IL; Knox, IN; Sullivan, IN",
+            "id": "urn:oid:2.49.0.1.840.0.ee49fceac9bd6a936f8769856065fce518e4e34c.003.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 12:21PM EDT until June 19 at 8:40PM EDT by NWS Indianapolis IN",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T12:21:00-04:00",
+            "expires": "2026-06-11T23:00:00-04:00",
+            "areaDesc": "Crawford, IL; Lawrence, IL; Knox, IN; Sullivan, IN",
+            "id": "urn:oid:2.49.0.1.840.0.ee49fceac9bd6a936f8769856065fce518e4e34c.001.1",
             "source": "nws_alert"
           }
         ],
@@ -432,7 +652,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
+            "headline": "~1.5\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -493,19 +713,45 @@
       "name": "DuPage County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Tens of thousands without power across Chicago amid strong storms &#x2013; NBC Chicago",
+            "url": "https://www.nbcchicago.com/news/local/nearly-20000-without-power-across-the-chicago-area-as-powerful-storms-roll-through/3946633/",
+            "domain": "nbcchicago.com",
+            "seendate": "20260611000000",
+            "is_new": false
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "MDW",
+            "name": "Chicago Midway Intl",
+            "city": "Chicago",
+            "state": "IL",
+            "reason": "thunderstorms",
+            "end": "2:30 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 3
     },
     "17045": {
       "fips": "17045",
@@ -626,7 +872,30 @@
       "name": "Fulton County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 11:37AM CDT by NWS Lincoln IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-11T11:37:00-05:00",
+            "expires": "2026-06-12T03:45:00-05:00",
+            "areaDesc": "Cass, IL; Fulton, IL; Mason, IL",
+            "id": "urn:oid:2.49.0.1.840.0.d8e52656fe85168cae6787851dc8514465ff3b7d.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 9:54AM CDT until June 13 at 7:00AM CDT by NWS Lincoln IL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T09:54:00-05:00",
+            "expires": "2026-06-12T02:00:00-05:00",
+            "areaDesc": "Fulton, IL; Knox, IL",
+            "id": "urn:oid:2.49.0.1.840.0.2f8193607e2cdeaac8a077f27fa78e4273d0b937.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -638,7 +907,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "17059": {
       "fips": "17059",
@@ -683,7 +952,14 @@
       "name": "Grundy County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -695,7 +971,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17065": {
       "fips": "17065",
@@ -723,10 +999,15 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.5\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 9:55AM CDT until June 14 at 3:12AM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T09:55:00-05:00",
+            "expires": "2026-06-12T10:00:00-05:00",
+            "areaDesc": "Hancock, IL; McDonough, IL",
+            "id": "urn:oid:2.49.0.1.840.0.fe9dcc1394afee175d06bdd2b06fdc915578264e.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -769,7 +1050,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
+            "headline": "~1.1\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -794,15 +1075,46 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 9:52AM CDT until June 16 at 9:00AM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T09:52:00-05:00",
+            "expires": "2026-06-12T10:00:00-05:00",
+            "areaDesc": "Henry, IL; Rock Island, IL",
+            "id": "urn:oid:2.49.0.1.840.0.a14e5bde7f42f0edccdf16c15887487e7d77d903.006.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 9:52AM CDT until June 15 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T09:52:00-05:00",
+            "expires": "2026-06-12T10:00:00-05:00",
+            "areaDesc": "Henry, IL; Rock Island, IL; Whiteside, IL",
+            "id": "urn:oid:2.49.0.1.840.0.a14e5bde7f42f0edccdf16c15887487e7d77d903.005.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Thousands still without power following storms in Central IL",
+            "url": "https://www.933thedrive.com/2026/06/11/thousands-still-without-power-following-storms-in-central-il/",
+            "domain": "933thedrive.com",
+            "seendate": "20260611140000",
+            "is_new": true
+          },
+          {
+            "title": "Thousands still without power following storms in Central IL",
+            "url": "https://www.1049thewolf.com/2026/06/11/thousands-still-without-power-following-storms-in-central-il/",
+            "domain": "1049thewolf.com",
+            "seendate": "20260611141500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -811,7 +1123,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 4
     },
     "17075": {
       "fips": "17075",
@@ -915,42 +1227,23 @@
       "alerts": {
         "weather": [
           {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 10 at 1:08PM CDT until June 10 at 1:45PM CDT by NWS Quad Cities IA IL",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-10T13:08:00-05:00",
-            "expires": "2026-06-10T13:45:00-05:00",
-            "areaDesc": "Jo Daviess, IL; Stephenson, IL",
-            "id": "urn:oid:2.49.0.1.840.0.22df6611dd8c78a9fa8ddb162c056a57a80fba64.002.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 10 at 12:57PM CDT until June 10 at 2:00PM CDT by NWS Quad Cities IA IL",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-10T12:57:00-05:00",
-            "expires": "2026-06-10T14:00:00-05:00",
-            "areaDesc": "Carroll, IL; Jo Daviess, IL; Stephenson, IL; Whiteside, IL",
-            "id": "urn:oid:2.49.0.1.840.0.e7fe433f9cdd8ee02afb6f375e67e829d0109255.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 10 at 12:35PM CDT until June 10 at 1:30PM CDT by NWS Quad Cities IA IL",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-10T12:35:00-05:00",
-            "expires": "2026-06-10T13:30:00-05:00",
-            "areaDesc": "Carroll, IL; Jo Daviess, IL; Stephenson, IL",
-            "id": "urn:oid:2.49.0.1.840.0.5860917d1e3aa7da4c27ec7c35f1da69a0e09c78.001.1",
-            "source": "nws_alert"
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
           }
         ],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Tens of thousands without power across Chicago amid strong storms &#x2013; NBC Chicago",
+            "url": "https://www.nbcchicago.com/news/local/nearly-20000-without-power-across-the-chicago-area-as-powerful-storms-roll-through/3946633/",
+            "domain": "nbcchicago.com",
+            "seendate": "20260611000000",
+            "is_new": false
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -959,7 +1252,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "17087": {
       "fips": "17087",
@@ -985,7 +1278,14 @@
       "name": "Kane County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -993,11 +1293,22 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "MDW",
+            "name": "Chicago Midway Intl",
+            "city": "Chicago",
+            "state": "IL",
+            "reason": "thunderstorms",
+            "end": "2:30 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "17091": {
       "fips": "17091",
@@ -1007,7 +1318,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Chicago, IL weather forecast: More severe thunderstorms expected Thursday with tornado risk after storms cause power outages",
+            "url": "https://abc7chicago.com/post/chicago-il-weather-forecast-more-severe-thunderstorms-expected-thursday-tornado-risk-storms-cause-power-outages/19274726/",
+            "domain": "abc7chicago.com",
+            "seendate": "20260611134500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -1016,30 +1335,11 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17093": {
       "fips": "17093",
       "name": "Kendall County",
-      "state": "IL",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "17095": {
-      "fips": "17095",
-      "name": "Knox County",
       "state": "IL",
       "alerts": {
         "weather": [
@@ -1048,6 +1348,48 @@
             "headline": "~1.1\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "MDW",
+            "name": "Chicago Midway Intl",
+            "city": "Chicago",
+            "state": "IL",
+            "reason": "thunderstorms",
+            "end": "2:30 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2
+    },
+    "17095": {
+      "fips": "17095",
+      "name": "Knox County",
+      "state": "IL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 9:54AM CDT until June 13 at 7:00AM CDT by NWS Lincoln IL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T09:54:00-05:00",
+            "expires": "2026-06-12T02:00:00-05:00",
+            "areaDesc": "Fulton, IL; Knox, IL",
+            "id": "urn:oid:2.49.0.1.840.0.2f8193607e2cdeaac8a077f27fa78e4273d0b937.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -1068,19 +1410,150 @@
       "name": "Lake County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.turnto23.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "turnto23.com",
+            "seendate": "20260611161500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.fox13now.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "fox13now.com",
+            "seendate": "20260611144500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.wtkr.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "wtkr.com",
+            "seendate": "20260611150000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.kztv10.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "kztv10.com",
+            "seendate": "20260611151500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.abc15.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "abc15.com",
+            "seendate": "20260611170000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.katc.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "katc.com",
+            "seendate": "20260611140000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.wptv.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "wptv.com",
+            "seendate": "20260611141500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.wtvr.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "wtvr.com",
+            "seendate": "20260611143000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.kjrh.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "kjrh.com",
+            "seendate": "20260611143000",
+            "is_new": true
+          },
+          {
+            "title": "Hundreds of thousands without power after storms in the Midwest",
+            "url": "https://www.wdbo.com/news/storms-knock-out/WQDHHTVJWIZ3VBBH3CZEFAMFGI/",
+            "domain": "wdbo.com",
+            "seendate": "20260611110000",
+            "is_new": true
+          },
+          {
+            "title": "Hundreds of thousands without power after storms in the Midwest",
+            "url": "https://www.wgauradio.com/news/storms-knock-out/WQDHHTVJWIZ3VBBH3CZEFAMFGI/",
+            "domain": "wgauradio.com",
+            "seendate": "20260611110000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.10news.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "10news.com",
+            "seendate": "20260611124500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.koaa.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "koaa.com",
+            "seendate": "20260611131500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.kxlf.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "kxlf.com",
+            "seendate": "20260611133000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.ktvh.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "ktvh.com",
+            "seendate": "20260611133000",
+            "is_new": true
+          },
+          {
+            "title": "Midwest reels from tornadoes, damaging winds and widespread power outages",
+            "url": "https://www.wcpo.com/weather/midwest-reels-from-tornadoes-damaging-winds-and-widespread-power-outages",
+            "domain": "wcpo.com",
+            "seendate": "20260611134500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "MDW",
+            "name": "Chicago Midway Intl",
+            "city": "Chicago",
+            "state": "IL",
+            "reason": "thunderstorms",
+            "end": "2:30 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 18
     },
     "17099": {
       "fips": "17099",
@@ -1090,7 +1563,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Tens of thousands without power across Chicago amid strong storms &#x2013; NBC Chicago",
+            "url": "https://www.nbcchicago.com/news/local/nearly-20000-without-power-across-the-chicago-area-as-powerful-storms-roll-through/3946633/",
+            "domain": "nbcchicago.com",
+            "seendate": "20260611000000",
+            "is_new": false
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -1099,7 +1580,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17101": {
       "fips": "17101",
@@ -1109,24 +1590,24 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 10 at 1:21PM EDT until June 17 at 11:00PM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued June 11 at 12:21PM EDT until June 19 at 6:17PM EDT by NWS Indianapolis IN",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-10T13:21:00-04:00",
-            "expires": "2026-06-10T23:15:00-04:00",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T12:21:00-04:00",
+            "expires": "2026-06-11T23:00:00-04:00",
             "areaDesc": "Crawford, IL; Lawrence, IL; Knox, IN; Sullivan, IN",
-            "id": "urn:oid:2.49.0.1.840.0.e8e2cf0402a91c05115c1a7d056ca3ac973af5dd.003.1",
+            "id": "urn:oid:2.49.0.1.840.0.ee49fceac9bd6a936f8769856065fce518e4e34c.003.1",
             "source": "nws_alert"
           },
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 10 at 1:21PM EDT until June 17 at 2:00PM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued June 11 at 12:21PM EDT until June 19 at 8:40PM EDT by NWS Indianapolis IN",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-06-10T13:21:00-04:00",
-            "expires": "2026-06-10T23:15:00-04:00",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T12:21:00-04:00",
+            "expires": "2026-06-11T23:00:00-04:00",
             "areaDesc": "Crawford, IL; Lawrence, IL; Knox, IN; Sullivan, IN",
-            "id": "urn:oid:2.49.0.1.840.0.e8e2cf0402a91c05115c1a7d056ca3ac973af5dd.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.ee49fceac9bd6a936f8769856065fce518e4e34c.001.1",
             "source": "nws_alert"
           }
         ],
@@ -1151,7 +1632,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
+            "headline": "~1.3\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -1214,10 +1695,15 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 9:55AM CDT until June 14 at 3:12AM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T09:55:00-05:00",
+            "expires": "2026-06-12T10:00:00-05:00",
+            "areaDesc": "Hancock, IL; McDonough, IL",
+            "id": "urn:oid:2.49.0.1.840.0.fe9dcc1394afee175d06bdd2b06fdc915578264e.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -1238,7 +1724,14 @@
       "name": "McHenry County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1246,18 +1739,41 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "MDW",
+            "name": "Chicago Midway Intl",
+            "city": "Chicago",
+            "state": "IL",
+            "reason": "thunderstorms",
+            "end": "2:30 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "17113": {
       "fips": "17113",
       "name": "McLean County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 9:18AM CDT until June 12 at 7:00PM CDT by NWS Lincoln IL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T09:18:00-05:00",
+            "expires": "2026-06-12T01:30:00-05:00",
+            "areaDesc": "McLean, IL; Tazewell, IL; Woodford, IL",
+            "id": "urn:oid:2.49.0.1.840.0.a115e389a031119318cedcf71aa30fbb5d44194c.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1269,7 +1785,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17115": {
       "fips": "17115",
@@ -1355,7 +1871,22 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Thousands still without power following storms in Central IL",
+            "url": "https://www.933thedrive.com/2026/06/11/thousands-still-without-power-following-storms-in-central-il/",
+            "domain": "933thedrive.com",
+            "seendate": "20260611140000",
+            "is_new": true
+          },
+          {
+            "title": "Thousands still without power following storms in Central IL",
+            "url": "https://www.1049thewolf.com/2026/06/11/thousands-still-without-power-following-storms-in-central-il/",
+            "domain": "1049thewolf.com",
+            "seendate": "20260611141500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -1364,14 +1895,26 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "17125": {
       "fips": "17125",
       "name": "Mason County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 11:37AM CDT by NWS Lincoln IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-11T11:37:00-05:00",
+            "expires": "2026-06-12T03:45:00-05:00",
+            "areaDesc": "Cass, IL; Fulton, IL; Mason, IL",
+            "id": "urn:oid:2.49.0.1.840.0.d8e52656fe85168cae6787851dc8514465ff3b7d.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1383,7 +1926,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17127": {
       "fips": "17127",
@@ -1428,14 +1971,7 @@
       "name": "Mercer County",
       "state": "IL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.4\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1447,7 +1983,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "17133": {
       "fips": "17133",
@@ -1492,7 +2028,19 @@
       "name": "Morgan County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 11:38AM CDT by NWS Lincoln IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-11T11:38:00-05:00",
+            "expires": "2026-06-12T03:45:00-05:00",
+            "areaDesc": "Brown, IL; Cass, IL; Morgan, IL; Schuyler, IL",
+            "id": "urn:oid:2.49.0.1.840.0.4e90696221999571f6db9b97d14338f612e08e35.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1504,7 +2052,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17139": {
       "fips": "17139",
@@ -1533,7 +2081,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
+            "headline": "~1.4\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -1729,10 +2277,26 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 9:52AM CDT until June 16 at 9:00AM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T09:52:00-05:00",
+            "expires": "2026-06-12T10:00:00-05:00",
+            "areaDesc": "Henry, IL; Rock Island, IL",
+            "id": "urn:oid:2.49.0.1.840.0.a14e5bde7f42f0edccdf16c15887487e7d77d903.006.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 9:52AM CDT until June 15 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T09:52:00-05:00",
+            "expires": "2026-06-12T10:00:00-05:00",
+            "areaDesc": "Henry, IL; Rock Island, IL; Whiteside, IL",
+            "id": "urn:oid:2.49.0.1.840.0.a14e5bde7f42f0edccdf16c15887487e7d77d903.005.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -1746,7 +2310,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "17163": {
       "fips": "17163",
@@ -1794,7 +2358,43 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "One Dead, Thousands Without Power After Tornadoes and Severe Storms Hit Midwest",
+            "url": "https://www.theyeshivaworld.com/news/general/2561237/one-dead-thousands-without-power-after-tornadoes-and-severe-storms-hit-midwest.html",
+            "domain": "theyeshivaworld.com",
+            "seendate": "20260611184500",
+            "is_new": true
+          },
+          {
+            "title": "Hundreds of thousands without power after Midwest storms, while East Coast braces for high heat",
+            "url": "http://www.idahopress.com/ap_news/us/hundreds-of-thousands-without-power-after-midwest-storms-while-east-coast-braces-for-high-heat/article_26d85c92-ac38-5052-9a83-94f204c2d207.html",
+            "domain": "idahopress.com",
+            "seendate": "20260611161500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest storms blamed for Iowa death, scores of power outages while dangerous heat hits the East",
+            "url": "https://mymotherlode.com/news/national/10911670/storms-knock-out-power-in-the-midwest-and-disrupt-chicago-flights.html",
+            "domain": "mymotherlode.com",
+            "seendate": "20260611174500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest storms blamed for Iowa death, scores of power outages while dangerous heat hits the East",
+            "url": "https://santamariatimes.com/ap/national/midwest-storms-blamed-for-iowa-death-scores-of-power-outages-while-dangerous-heat-hits-the/article_25d36602-2b27-571f-b224-0852e1c16d63.html",
+            "domain": "santamariatimes.com",
+            "seendate": "20260611174500",
+            "is_new": true
+          },
+          {
+            "title": "Midwest storms blamed for Iowa death, scores of power outages while dangerous heat hits the East",
+            "url": "https://www.local10.com/news/2026/06/11/hundreds-of-thousands-without-power-after-midwest-storms-while-east-coast-braces-for-high-heat/",
+            "domain": "local10.com",
+            "seendate": "20260611173000",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -1803,14 +2403,26 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 5
     },
     "17169": {
       "fips": "17169",
       "name": "Schuyler County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 11:38AM CDT by NWS Lincoln IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-11T11:38:00-05:00",
+            "expires": "2026-06-12T03:45:00-05:00",
+            "areaDesc": "Brown, IL; Cass, IL; Morgan, IL; Schuyler, IL",
+            "id": "urn:oid:2.49.0.1.840.0.4e90696221999571f6db9b97d14338f612e08e35.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1822,7 +2434,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17171": {
       "fips": "17171",
@@ -1888,37 +2500,10 @@
       "alerts": {
         "weather": [
           {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 10 at 1:08PM CDT until June 10 at 1:45PM CDT by NWS Quad Cities IA IL",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-10T13:08:00-05:00",
-            "expires": "2026-06-10T13:45:00-05:00",
-            "areaDesc": "Jo Daviess, IL; Stephenson, IL",
-            "id": "urn:oid:2.49.0.1.840.0.22df6611dd8c78a9fa8ddb162c056a57a80fba64.002.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 10 at 12:57PM CDT until June 10 at 2:00PM CDT by NWS Quad Cities IA IL",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-10T12:57:00-05:00",
-            "expires": "2026-06-10T14:00:00-05:00",
-            "areaDesc": "Carroll, IL; Jo Daviess, IL; Stephenson, IL; Whiteside, IL",
-            "id": "urn:oid:2.49.0.1.840.0.e7fe433f9cdd8ee02afb6f375e67e829d0109255.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 10 at 12:35PM CDT until June 10 at 1:30PM CDT by NWS Quad Cities IA IL",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-10T12:35:00-05:00",
-            "expires": "2026-06-10T13:30:00-05:00",
-            "areaDesc": "Carroll, IL; Jo Daviess, IL; Stephenson, IL",
-            "id": "urn:oid:2.49.0.1.840.0.5860917d1e3aa7da4c27ec7c35f1da69a0e09c78.001.1",
-            "source": "nws_alert"
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
           }
         ],
         "bank_robbery": [],
@@ -1932,17 +2517,44 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 1
     },
     "17179": {
       "fips": "17179",
       "name": "Tazewell County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 9:18AM CDT until June 12 at 7:00PM CDT by NWS Lincoln IL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T09:18:00-05:00",
+            "expires": "2026-06-12T01:30:00-05:00",
+            "areaDesc": "McLean, IL; Tazewell, IL; Woodford, IL",
+            "id": "urn:oid:2.49.0.1.840.0.a115e389a031119318cedcf71aa30fbb5d44194c.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Thousands still without power following storms in Central IL",
+            "url": "https://www.933thedrive.com/2026/06/11/thousands-still-without-power-following-storms-in-central-il/",
+            "domain": "933thedrive.com",
+            "seendate": "20260611140000",
+            "is_new": true
+          },
+          {
+            "title": "Thousands still without power following storms in Central IL",
+            "url": "https://www.1049thewolf.com/2026/06/11/thousands-still-without-power-following-storms-in-central-il/",
+            "domain": "1049thewolf.com",
+            "seendate": "20260611141500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -1951,7 +2563,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 3
     },
     "17181": {
       "fips": "17181",
@@ -2015,14 +2627,7 @@
       "name": "Warren County",
       "state": "IL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2034,7 +2639,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "17189": {
       "fips": "17189",
@@ -2100,14 +2705,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Severe Thunderstorm Warning",
-            "headline": "Severe Thunderstorm Warning issued June 10 at 12:57PM CDT until June 10 at 2:00PM CDT by NWS Quad Cities IA IL",
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 9:52AM CDT until June 15 at 9:00PM CDT by NWS Quad Cities IA IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-10T12:57:00-05:00",
-            "expires": "2026-06-10T14:00:00-05:00",
-            "areaDesc": "Carroll, IL; Jo Daviess, IL; Stephenson, IL; Whiteside, IL",
-            "id": "urn:oid:2.49.0.1.840.0.e7fe433f9cdd8ee02afb6f375e67e829d0109255.001.1",
+            "effective": "2026-06-11T09:52:00-05:00",
+            "expires": "2026-06-12T10:00:00-05:00",
+            "areaDesc": "Henry, IL; Rock Island, IL; Whiteside, IL",
+            "id": "urn:oid:2.49.0.1.840.0.a14e5bde7f42f0edccdf16c15887487e7d77d903.005.1",
             "source": "nws_alert"
           }
         ],
@@ -2132,16 +2737,42 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Tens of thousands without power across Chicago amid strong storms &#x2013; NBC Chicago",
+            "url": "https://www.nbcchicago.com/news/local/nearly-20000-without-power-across-the-chicago-area-as-powerful-storms-roll-through/3946633/",
+            "domain": "nbcchicago.com",
+            "seendate": "20260611000000",
+            "is_new": false
+          },
+          {
+            "title": "Chicago, IL weather forecast: More severe thunderstorms expected Thursday with tornado risk after storms cause power outages",
+            "url": "https://abc7chicago.com/post/chicago-il-weather-forecast-more-severe-thunderstorms-expected-thursday-tornado-risk-storms-cause-power-outages/19274726/",
+            "domain": "abc7chicago.com",
+            "seendate": "20260611134500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "MDW",
+            "name": "Chicago Midway Intl",
+            "city": "Chicago",
+            "state": "IL",
+            "reason": "thunderstorms",
+            "end": "2:30 pm CDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 3
     },
     "17199": {
       "fips": "17199",
@@ -2167,7 +2798,14 @@
       "name": "Winnebago County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.9\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2179,14 +2817,26 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17203": {
       "fips": "17203",
       "name": "Woodford County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 11 at 9:18AM CDT until June 12 at 7:00PM CDT by NWS Lincoln IL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-11T09:18:00-05:00",
+            "expires": "2026-06-12T01:30:00-05:00",
+            "areaDesc": "McLean, IL; Tazewell, IL; Woodford, IL",
+            "id": "urn:oid:2.49.0.1.840.0.a115e389a031119318cedcf71aa30fbb5d44194c.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2198,7 +2848,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     }
   }
 }

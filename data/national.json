@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-10T18:19:46.715318+00:00",
-  "date": "2026-06-10",
+  "generated_at": "2026-06-11T19:00:00.678894+00:00",
+  "date": "2026-06-11",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,49 +11,49 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 203
+      "counties_with_alerts": 190
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3028,
-      "counties_over_threshold": 87
+      "counties_queried": 3057,
+      "counties_over_threshold": 166
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 44,
+      "counties_with_matches": 90,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 39,
-        "utility_outage": 16,
+        "protest": 83,
+        "utility_outage": 143,
         "transit_disruption": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 13,
+      "counties_with_matches": 60,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 1,
-        "utility_outage": 14,
+        "protest": 0,
+        "utility_outage": 123,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 41
+      "counties_with_alerts": 100
     },
     "transit": {
-      "status": "partial",
+      "status": "ok",
       "agencies_total": 11,
-      "agencies_ok": 9,
+      "agencies_ok": 10,
       "items_total": 4,
-      "counties_with_alerts": 5,
+      "counties_with_alerts": 15,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 4
+          "items": 3
         },
         {
           "id": "mta-subway",
@@ -76,7 +76,7 @@
         {
           "id": "path",
           "name": "PATH",
-          "status": "fetch_failed",
+          "status": "ok",
           "items": 0
         },
         {
@@ -113,13 +113,13 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 0
+          "items": 1
         }
       ]
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 25
+      "counties_with_alerts": 27
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -141,7 +141,7 @@
     "aviation_faa": {
       "status": "ok",
       "national_items": 1,
-      "counties_with_alerts": 14
+      "counties_with_alerts": 8
     }
   },
   "cdc_han": [],
@@ -158,12 +158,12 @@
   "faa_advisories": [
     {
       "kind": "ground_stop",
-      "code": "IAD",
-      "name": "Washington Dulles Intl",
-      "city": "Dulles",
-      "state": "VA",
+      "code": "MDW",
+      "name": "Chicago Midway Intl",
+      "city": "Chicago",
+      "state": "IL",
       "reason": "thunderstorms",
-      "end": "3:45 pm EDT",
+      "end": "2:30 pm CDT",
       "source": "FAA NAS Status"
     }
   ]
