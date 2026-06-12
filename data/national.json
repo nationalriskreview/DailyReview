@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-11T19:00:00.678894+00:00",
-  "date": "2026-06-11",
+  "generated_at": "2026-06-12T17:47:49.970066+00:00",
+  "date": "2026-06-12",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,43 +11,43 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 190
+      "counties_with_alerts": 172
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3057,
-      "counties_over_threshold": 166
+      "counties_queried": 3079,
+      "counties_over_threshold": 147
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 90,
+      "counties_with_matches": 98,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 83,
-        "utility_outage": 143,
+        "protest": 89,
+        "utility_outage": 93,
         "transit_disruption": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 60,
+      "counties_with_matches": 57,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 123,
-        "transit_disruption": 0
+        "utility_outage": 64,
+        "transit_disruption": 1
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 100
+      "counties_with_alerts": 87
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 4,
-      "counties_with_alerts": 15,
+      "items_total": 3,
+      "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
@@ -113,13 +113,13 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 27
+      "counties_with_alerts": 29
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 1
+      "items": 0
     },
     "disease_wastewater": {
       "status": "ok",
@@ -140,31 +140,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 8
+      "national_items": 0,
+      "counties_with_alerts": 0
     }
   },
   "cdc_han": [],
-  "who_don": [
-    {
-      "title": "Africa CDC and WHO launch joint continental Ebola response plan",
-      "url": "https://www.who.int/news/item/05-06-2026-africa-cdc-and-who-launch-joint-continental-ebola-response-plan",
-      "published": "Fri, 05 Jun 2026 12:28:26 Z",
-      "summary": "<p>The Africa Centres for Disease Control and Prevention (Africa CDC) and the World Health Organization (WHO) today launched a joint <a href=\"https://www.afro.who.int/publications/bundibugyo-ebola-virus-continental-preparedness-and-response-plan-june-november-2026\">continental preparedness and response plan</a> on the ongoing Ebola outbreak caused by the Bundibugyo virus. The plan aims to raise US$&nbsp;518&nbsp;million to support African countries together with partners to prepare for, rapidly ",
-      "source": "WHO News (outbreak-filtered)"
-    }
-  ],
+  "who_don": [],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "ground_stop",
-      "code": "MDW",
-      "name": "Chicago Midway Intl",
-      "city": "Chicago",
-      "state": "IL",
-      "reason": "thunderstorms",
-      "end": "2:30 pm CDT",
-      "source": "FAA NAS Status"
-    }
-  ]
+  "faa_advisories": []
 }
