@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-12T17:47:49.970066+00:00",
-  "date": "2026-06-12",
+  "generated_at": "2026-06-13T10:17:03.981993+00:00",
+  "date": "2026-06-13",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,49 +11,49 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 172
+      "counties_with_alerts": 128
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3079,
-      "counties_over_threshold": 147
+      "counties_queried": 3123,
+      "counties_over_threshold": 195
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 98,
+      "counties_with_matches": 34,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 89,
-        "utility_outage": 93,
-        "transit_disruption": 2
+        "protest": 33,
+        "utility_outage": 10,
+        "transit_disruption": 3
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 57,
+      "counties_with_matches": 6,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 64,
-        "transit_disruption": 1
+        "utility_outage": 10,
+        "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 87
+      "counties_with_alerts": 0
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 3,
-      "counties_with_alerts": 5,
+      "items_total": 5,
+      "counties_with_alerts": 15,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 3
+          "items": 4
         },
         {
           "id": "mta-subway",
@@ -113,7 +113,7 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 0
+          "items": 1
         }
       ]
     },
