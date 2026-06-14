@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-13T10:17:03.981993+00:00",
-  "date": "2026-06-13",
+  "generated_at": "2026-06-14T10:38:36.401879+00:00",
+  "date": "2026-06-14",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,30 +11,30 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 128
+      "counties_with_alerts": 148
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3123,
-      "counties_over_threshold": 195
+      "counties_queried": 3092,
+      "counties_over_threshold": 148
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 34,
+      "counties_with_matches": 18,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 33,
-        "utility_outage": 10,
-        "transit_disruption": 3
+        "protest": 4,
+        "utility_outage": 15,
+        "transit_disruption": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 6,
+      "counties_with_matches": 11,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 10,
+        "utility_outage": 12,
         "transit_disruption": 0
       }
     },
@@ -46,8 +46,8 @@
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 5,
-      "counties_with_alerts": 15,
+      "items_total": 4,
+      "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
@@ -113,13 +113,13 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 29
+      "counties_with_alerts": 28
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -140,12 +140,24 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 1,
+      "counties_with_alerts": 1
     }
   },
   "cdc_han": [],
   "who_don": [],
   "amtrak_advisories": [],
-  "faa_advisories": []
+  "faa_advisories": [
+    {
+      "kind": "airport_closure",
+      "code": "SAN",
+      "name": "San Diego Intl",
+      "city": "San Diego",
+      "state": "CA",
+      "reason": "!SAN 06/026 SAN AD AP CLSD 2606140800-2606141300",
+      "start": "Jun 14 at 08:00 UTC.",
+      "reopen": "Jun 14 at 13:00 UTC.",
+      "source": "FAA NAS Status"
+    }
+  ]
 }

@@ -1,10 +1,10 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-13T10:17:03.981993+00:00",
-  "date": "2026-06-13",
+  "generated_at": "2026-06-14T10:38:36.401879+00:00",
+  "date": "2026-06-14",
   "state": "KS",
   "counties_total": 105,
-  "counties_with_alerts": 31,
+  "counties_with_alerts": 17,
   "counties": {
     "20001": {
       "fips": "20001",
@@ -13,15 +13,28 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~2.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 13 at 10:03PM CDT until June 14 at 8:00AM CDT by NWS Wichita KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-13T22:03:00-05:00",
+            "expires": "2026-06-14T08:00:00-05:00",
+            "areaDesc": "Allen, KS; Neosho, KS; Wilson, KS; Woodson, KS",
+            "id": "urn:oid:2.49.0.1.840.0.24b00cf71eccbeaadb30c5e8ae2ce62a9f064c36.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Severe weather brings widespread damage, power outages to 4-state area",
+            "url": "https://www.koamnewsnow.com/weather/severe-weather-brings-widespread-damage-power-outages-to-4-state-area/article_fdfe5634-0cc9-4ba4-ad22-fdc6b64b1ff3.html",
+            "domain": "koamnewsnow.com",
+            "seendate": "20260614084500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -30,37 +43,11 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "20003": {
       "fips": "20003",
       "name": "Anderson County",
-      "state": "KS",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.6\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
-    },
-    "20005": {
-      "fips": "20005",
-      "name": "Atchison County",
       "state": "KS",
       "alerts": {
         "weather": [
@@ -83,6 +70,25 @@
         "disease": []
       },
       "alert_count": 1
+    },
+    "20005": {
+      "fips": "20005",
+      "name": "Atchison County",
+      "state": "KS",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
     },
     "20007": {
       "fips": "20007",
@@ -129,10 +135,26 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.5\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 14 at 4:50AM CDT until June 14 at 11:42PM CDT by NWS Springfield MO",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-14T04:50:00-05:00",
+            "expires": "2026-06-14T23:45:00-05:00",
+            "areaDesc": "Bourbon, KS",
+            "id": "urn:oid:2.49.0.1.840.0.14f5a208c520c3126b6215a7108d1e87f924388f.003.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 14 at 4:37AM CDT until June 15 at 4:30AM CDT by NWS Springfield MO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-14T04:37:00-05:00",
+            "expires": "2026-06-15T04:30:00-05:00",
+            "areaDesc": "Bourbon, KS; Cherokee, KS; Crawford, KS; Barry, MO; Barton, MO; Benton, MO; Camden, MO; Cedar, MO; Christian, MO; Dade, MO; Dallas, MO; Douglas, MO; Greene, MO; Hickory, MO; Jasper, MO; Laclede, MO; Lawrence, MO; Miller, MO; Morgan, MO; Newton, MO; Polk, MO; Pulaski, MO; St. Clair, MO; Stone, MO; Texas, MO; Vernon, MO; Webster, MO; Wright, MO",
+            "id": "urn:oid:2.49.0.1.840.0.15486610d223e972d07d30cc40ae18eafde24a2c.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -146,7 +168,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "20013": {
       "fips": "20013",
@@ -172,29 +194,10 @@
       "name": "Butler County",
       "state": "KS",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "20017": {
-      "fips": "20017",
-      "name": "Chase County",
-      "state": "KS",
-      "alerts": {
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
+            "headline": "~1.4\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -212,6 +215,25 @@
       },
       "alert_count": 1
     },
+    "20017": {
+      "fips": "20017",
+      "name": "Chase County",
+      "state": "KS",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
     "20019": {
       "fips": "20019",
       "name": "Chautauqua County",
@@ -220,7 +242,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
+            "headline": "~1.4\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -245,15 +267,39 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 14 at 4:37AM CDT until June 15 at 4:30AM CDT by NWS Springfield MO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-14T04:37:00-05:00",
+            "expires": "2026-06-15T04:30:00-05:00",
+            "areaDesc": "Bourbon, KS; Cherokee, KS; Crawford, KS; Barry, MO; Barton, MO; Benton, MO; Camden, MO; Cedar, MO; Christian, MO; Dade, MO; Dallas, MO; Douglas, MO; Greene, MO; Hickory, MO; Jasper, MO; Laclede, MO; Lawrence, MO; Miller, MO; Morgan, MO; Newton, MO; Polk, MO; Pulaski, MO; St. Clair, MO; Stone, MO; Texas, MO; Vernon, MO; Webster, MO; Wright, MO",
+            "id": "urn:oid:2.49.0.1.840.0.15486610d223e972d07d30cc40ae18eafde24a2c.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 14 at 2:14AM CDT until June 16 at 11:26AM CDT by NWS Wichita KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-14T02:14:00-05:00",
+            "expires": "2026-06-14T16:00:00-05:00",
+            "areaDesc": "Cherokee, KS; Labette, KS",
+            "id": "urn:oid:2.49.0.1.840.0.74fd88e0f04c811e1dff39f761ab972e2a3adc78.002.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Severe weather brings widespread damage, power outages to 4-state area",
+            "url": "https://www.koamnewsnow.com/weather/severe-weather-brings-widespread-damage-power-outages-to-4-state-area/article_fdfe5634-0cc9-4ba4-ad22-fdc6b64b1ff3.html",
+            "domain": "koamnewsnow.com",
+            "seendate": "20260614084500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -262,7 +308,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 3
     },
     "20023": {
       "fips": "20023",
@@ -310,7 +356,15 @@
         "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Storm topples massive tree in Liberty, injures driver and causes power outages",
+            "url": "https://www.kmbc.com/article/liberty-missouri-storm-damage-fallen-tree-driver-injured/71580207",
+            "domain": "kmbc.com",
+            "seendate": "20260614060000",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -319,7 +373,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20029": {
       "fips": "20029",
@@ -345,14 +399,7 @@
       "name": "Coffey County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.8\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -364,7 +411,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20033": {
       "fips": "20033",
@@ -411,15 +458,28 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.7\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 14 at 4:37AM CDT until June 15 at 4:30AM CDT by NWS Springfield MO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-14T04:37:00-05:00",
+            "expires": "2026-06-15T04:30:00-05:00",
+            "areaDesc": "Bourbon, KS; Cherokee, KS; Crawford, KS; Barry, MO; Barton, MO; Benton, MO; Camden, MO; Cedar, MO; Christian, MO; Dade, MO; Dallas, MO; Douglas, MO; Greene, MO; Hickory, MO; Jasper, MO; Laclede, MO; Lawrence, MO; Miller, MO; Morgan, MO; Newton, MO; Polk, MO; Pulaski, MO; St. Clair, MO; Stone, MO; Texas, MO; Vernon, MO; Webster, MO; Wright, MO",
+            "id": "urn:oid:2.49.0.1.840.0.15486610d223e972d07d30cc40ae18eafde24a2c.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Severe weather brings widespread damage, power outages to 4-state area",
+            "url": "https://www.koamnewsnow.com/weather/severe-weather-brings-widespread-damage-power-outages-to-4-state-area/article_fdfe5634-0cc9-4ba4-ad22-fdc6b64b1ff3.html",
+            "domain": "koamnewsnow.com",
+            "seendate": "20260614084500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -428,7 +488,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "20039": {
       "fips": "20039",
@@ -492,14 +552,7 @@
       "name": "Douglas County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.4\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -511,7 +564,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20047": {
       "fips": "20047",
@@ -540,7 +593,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
+            "headline": "~1.8\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -639,14 +692,7 @@
       "name": "Franklin County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.6\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -658,7 +704,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20061": {
       "fips": "20061",
@@ -782,7 +828,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
+            "headline": "~1.7\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -824,7 +870,14 @@
       "name": "Harper County",
       "state": "KS",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -836,7 +889,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "20079": {
       "fips": "20079",
@@ -900,14 +953,7 @@
       "name": "Jackson County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.4\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -919,21 +965,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20087": {
       "fips": "20087",
       "name": "Jefferson County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.4\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -945,7 +984,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20089": {
       "fips": "20089",
@@ -971,14 +1010,7 @@
       "name": "Johnson County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -990,7 +1022,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20093": {
       "fips": "20093",
@@ -1056,10 +1088,26 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.9\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 14 at 2:14AM CDT until June 16 at 11:26AM CDT by NWS Wichita KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-14T02:14:00-05:00",
+            "expires": "2026-06-14T16:00:00-05:00",
+            "areaDesc": "Cherokee, KS; Labette, KS",
+            "id": "urn:oid:2.49.0.1.840.0.74fd88e0f04c811e1dff39f761ab972e2a3adc78.002.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 14 at 2:14AM CDT until June 15 at 7:00PM CDT by NWS Wichita KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-14T02:14:00-05:00",
+            "expires": "2026-06-14T16:00:00-05:00",
+            "areaDesc": "Labette, KS; Neosho, KS",
+            "id": "urn:oid:2.49.0.1.840.0.74fd88e0f04c811e1dff39f761ab972e2a3adc78.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -1073,7 +1121,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "20101": {
       "fips": "20101",
@@ -1099,14 +1147,7 @@
       "name": "Leavenworth County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1118,7 +1159,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20105": {
       "fips": "20105",
@@ -1144,14 +1185,7 @@
       "name": "Linn County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.5\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1163,7 +1197,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20109": {
       "fips": "20109",
@@ -1189,14 +1223,7 @@
       "name": "Lyon County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.7\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1208,7 +1235,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20113": {
       "fips": "20113",
@@ -1291,14 +1318,7 @@
       "name": "Miami County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.5\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1310,7 +1330,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20123": {
       "fips": "20123",
@@ -1339,14 +1359,22 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.8\" rain expected in next 24h",
+            "headline": "~2.0\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
         ],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Severe weather brings widespread damage, power outages to 4-state area",
+            "url": "https://www.koamnewsnow.com/weather/severe-weather-brings-widespread-damage-power-outages-to-4-state-area/article_fdfe5634-0cc9-4ba4-ad22-fdc6b64b1ff3.html",
+            "domain": "koamnewsnow.com",
+            "seendate": "20260614084500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -1355,21 +1383,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "20127": {
       "fips": "20127",
       "name": "Morris County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1381,7 +1402,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20129": {
       "fips": "20129",
@@ -1428,10 +1449,26 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~2.6\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 14 at 2:14AM CDT until June 15 at 7:00PM CDT by NWS Wichita KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-14T02:14:00-05:00",
+            "expires": "2026-06-14T16:00:00-05:00",
+            "areaDesc": "Labette, KS; Neosho, KS",
+            "id": "urn:oid:2.49.0.1.840.0.74fd88e0f04c811e1dff39f761ab972e2a3adc78.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 13 at 10:03PM CDT until June 14 at 8:00AM CDT by NWS Wichita KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-13T22:03:00-05:00",
+            "expires": "2026-06-14T08:00:00-05:00",
+            "areaDesc": "Allen, KS; Neosho, KS; Wilson, KS; Woodson, KS",
+            "id": "urn:oid:2.49.0.1.840.0.24b00cf71eccbeaadb30c5e8ae2ce62a9f064c36.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -1445,7 +1482,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "20135": {
       "fips": "20135",
@@ -1490,14 +1527,7 @@
       "name": "Osage County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.4\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1509,7 +1539,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20141": {
       "fips": "20141",
@@ -1535,19 +1565,7 @@
       "name": "Ottawa County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 12 at 8:40PM CDT until June 13 at 9:00PM CDT by NWS Topeka KS",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-12T20:40:00-05:00",
-            "expires": "2026-06-13T11:45:00-05:00",
-            "areaDesc": "Ottawa, KS",
-            "id": "urn:oid:2.49.0.1.840.0.ea8c91c27292f81952ef607d5ada0306fbf05bb7.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1559,7 +1577,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20145": {
       "fips": "20145",
@@ -1870,14 +1888,7 @@
       "name": "Shawnee County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1889,7 +1900,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20179": {
       "fips": "20179",
@@ -2067,14 +2078,7 @@
       "name": "Wabaunsee County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.5\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2086,7 +2090,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "20199": {
       "fips": "20199",
@@ -2152,10 +2156,15 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~2.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 13 at 10:03PM CDT until June 14 at 8:00AM CDT by NWS Wichita KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-13T22:03:00-05:00",
+            "expires": "2026-06-14T08:00:00-05:00",
+            "areaDesc": "Allen, KS; Neosho, KS; Wilson, KS; Woodson, KS",
+            "id": "urn:oid:2.49.0.1.840.0.24b00cf71eccbeaadb30c5e8ae2ce62a9f064c36.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -2178,15 +2187,28 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~2.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 13 at 10:03PM CDT until June 14 at 8:00AM CDT by NWS Wichita KS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-13T22:03:00-05:00",
+            "expires": "2026-06-14T08:00:00-05:00",
+            "areaDesc": "Allen, KS; Neosho, KS; Wilson, KS; Woodson, KS",
+            "id": "urn:oid:2.49.0.1.840.0.24b00cf71eccbeaadb30c5e8ae2ce62a9f064c36.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Severe weather brings widespread damage, power outages to 4-state area",
+            "url": "https://www.koamnewsnow.com/weather/severe-weather-brings-widespread-damage-power-outages-to-4-state-area/article_fdfe5634-0cc9-4ba4-ad22-fdc6b64b1ff3.html",
+            "domain": "koamnewsnow.com",
+            "seendate": "20260614084500",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
@@ -2195,24 +2217,25 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "20209": {
       "fips": "20209",
       "name": "Wyandotte County",
       "state": "KS",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Thousands without power as severe storms hit Kansas City metro",
+            "url": "https://www.kctv5.com/2026/06/14/thousands-without-power-severe-storms-hit-kansas-city-metro/",
+            "domain": "kctv5.com",
+            "seendate": "20260614070000",
+            "is_new": true
+          }
+        ],
         "transit_disruption": [],
         "wildfires": [],
         "transit": [],
