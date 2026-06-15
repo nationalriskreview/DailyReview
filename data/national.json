@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-14T10:38:36.401879+00:00",
-  "date": "2026-06-14",
+  "generated_at": "2026-06-15T13:43:08.455586+00:00",
+  "date": "2026-06-15",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,36 +11,36 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 148
+      "counties_with_alerts": 169
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3092,
-      "counties_over_threshold": 148
+      "counties_queried": 3055,
+      "counties_over_threshold": 143
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 18,
+      "counties_with_matches": 23,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 4,
-        "utility_outage": 15,
-        "transit_disruption": 2
+        "protest": 97,
+        "utility_outage": 20,
+        "transit_disruption": 1
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 11,
+      "counties_with_matches": 10,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 12,
-        "transit_disruption": 0
+        "utility_outage": 19,
+        "transit_disruption": 1
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 0
+      "counties_with_alerts": 78
     },
     "transit": {
       "status": "ok",
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 0
+      "items": 1
     },
     "disease_wastewater": {
       "status": "ok",
@@ -140,24 +140,20 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 1
+      "national_items": 0,
+      "counties_with_alerts": 0
     }
   },
   "cdc_han": [],
-  "who_don": [],
-  "amtrak_advisories": [],
-  "faa_advisories": [
+  "who_don": [
     {
-      "kind": "airport_closure",
-      "code": "SAN",
-      "name": "San Diego Intl",
-      "city": "San Diego",
-      "state": "CA",
-      "reason": "!SAN 06/026 SAN AD AP CLSD 2606140800-2606141300",
-      "start": "Jun 14 at 08:00 UTC.",
-      "reopen": "Jun 14 at 13:00 UTC.",
-      "source": "FAA NAS Status"
+      "title": "Open letter to leaders of G7, G20, BRICS and all nations on finalizing the WHO Pandemic Agreement’s Pathogen Access and Benefit Sharing annex",
+      "url": "https://www.who.int/news/item/15-06-2026-open-letter-to-leaders-of-g7-g20-brics-and-all-nations-on-finalizing-the-who-pandemic-agreement-s-pathogen-access-and-benefit-sharing-annex",
+      "published": "Mon, 15 Jun 2026 09:05:36 Z",
+      "summary": "<p>Dear Leaders of the G7, the G20, BRICS and of all nations,</p><p>We write to you together, from Geneva and from Bras&iacute;lia, with one shared conviction: that the world must finish what it started, and that you can help it do so.</p><p>We begin not with an institution or an annex, but with a memory the whole world shares. Not so long ago, our hospitals overflowed. Families said goodbye to the people they loved through glass, or by telephone, or not at all. Children lost grandparents. Docto",
+      "source": "WHO News (outbreak-filtered)"
     }
-  ]
+  ],
+  "amtrak_advisories": [],
+  "faa_advisories": []
 }
