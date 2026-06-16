@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-15T13:43:08.455586+00:00",
-  "date": "2026-06-15",
+  "generated_at": "2026-06-16T12:28:35.410958+00:00",
+  "date": "2026-06-16",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,49 +11,49 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 169
+      "counties_with_alerts": 242
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3055,
+      "counties_queried": 2988,
       "counties_over_threshold": 143
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 23,
+      "counties_with_matches": 13,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 97,
-        "utility_outage": 20,
-        "transit_disruption": 1
+        "protest": 9,
+        "utility_outage": 3,
+        "transit_disruption": 4
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 10,
+      "counties_with_matches": 3,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 19,
-        "transit_disruption": 1
+        "utility_outage": 3,
+        "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 78
+      "counties_with_alerts": 117
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 4,
+      "items_total": 3,
       "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 4
+          "items": 3
         },
         {
           "id": "mta-subway",
