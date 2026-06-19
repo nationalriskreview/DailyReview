@@ -1,10 +1,10 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-18T11:40:39.574946+00:00",
-  "date": "2026-06-18",
+  "generated_at": "2026-06-19T11:48:34.400784+00:00",
+  "date": "2026-06-19",
   "state": "AK",
   "counties_total": 30,
-  "counties_with_alerts": 0,
+  "counties_with_alerts": 3,
   "counties": {
     "02013": {
       "fips": "02013",
@@ -68,7 +68,19 @@
       "name": "Bethel Census Area",
       "state": "AK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued June 19 at 1:59AM AKDT until June 20 at 1:00AM AKDT by NWS Anchorage AK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-19T01:59:00-08:00",
+            "expires": "2026-06-20T01:00:00-08:00",
+            "areaDesc": "Lime Village",
+            "id": "urn:oid:2.49.0.1.840.0.ae87d40a59d507ca7076d459487b9f7d9cc99689.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -80,7 +92,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "02060": {
       "fips": "02060",
@@ -353,7 +365,19 @@
       "name": "Matanuska-Susitna Borough",
       "state": "AK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued June 19 at 1:52AM AKDT until June 20 at 1:00AM AKDT by NWS Anchorage AK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-19T01:52:00-08:00",
+            "expires": "2026-06-20T01:00:00-08:00",
+            "areaDesc": "Lower Matanuska Valley; Western Susitna Valley; Southern Susitna Valley; Central Susitna Valley; Northern Susitna Valley",
+            "id": "urn:oid:2.49.0.1.840.0.3dcb2ab312832d424ac12fa6d18c2d79deb4a130.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -365,7 +389,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "02180": {
       "fips": "02180",
@@ -567,14 +591,28 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Kilolitna Wildfire, Yukon-Koyukuk, Alaska",
+            "id": "EONET_20522",
+            "category": "wildfire",
+            "date": "2026-06-12T12:12:00Z",
+            "lat": 66.048,
+            "lon": -151.8056,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2b964609-cd9a-49ca-9cfd-7f619752086e"
+            ],
+            "distance_miles": 46.9,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     }
   }
 }
