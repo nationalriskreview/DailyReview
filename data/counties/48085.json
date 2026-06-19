@@ -10,9 +10,9 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
-        "severity": "Severe",
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.2\" rain expected in next 24h",
+        "severity": "Moderate",
         "source": "nws_forecast"
       }
     ],
@@ -23,11 +23,22 @@
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "ground_stop",
+        "code": "DFW",
+        "name": "Dallas/Fort Worth Intl",
+        "city": "Dallas/Fort Worth",
+        "state": "TX",
+        "reason": "thunderstorms",
+        "end": "8:00 am CDT",
+        "source": "FAA NAS Status"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
-  "date": "2026-06-18",
-  "generated_at": "2026-06-18T11:40:39.574946+00:00"
+  "alert_count": 2,
+  "date": "2026-06-19",
+  "generated_at": "2026-06-19T11:48:34.400784+00:00"
 }
