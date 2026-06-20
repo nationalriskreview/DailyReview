@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-19T11:48:34.400784+00:00",
-  "date": "2026-06-19",
+  "generated_at": "2026-06-20T10:19:41.833038+00:00",
+  "date": "2026-06-20",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,36 +11,36 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 231
+      "counties_with_alerts": 253
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3011,
-      "counties_over_threshold": 252
+      "counties_queried": 2969,
+      "counties_over_threshold": 53
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 28,
+      "counties_with_matches": 13,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 11,
-        "utility_outage": 29,
-        "transit_disruption": 0
+        "protest": 16,
+        "utility_outage": 4,
+        "transit_disruption": 1
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 19,
+      "counties_with_matches": 2,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 27,
+        "utility_outage": 2,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 133
+      "counties_with_alerts": 127
     },
     "transit": {
       "status": "ok",
@@ -119,7 +119,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 27
+      "counties_with_alerts": 26
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 11
+      "national_items": 0,
+      "counties_with_alerts": 0
     }
   },
   "cdc_han": [],
@@ -162,16 +162,5 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "ground_stop",
-      "code": "DFW",
-      "name": "Dallas/Fort Worth Intl",
-      "city": "Dallas/Fort Worth",
-      "state": "TX",
-      "reason": "thunderstorms",
-      "end": "8:00 am CDT",
-      "source": "FAA NAS Status"
-    }
-  ]
+  "faa_advisories": []
 }
