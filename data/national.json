@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-20T10:19:41.833038+00:00",
-  "date": "2026-06-20",
+  "generated_at": "2026-06-21T10:52:48.892936+00:00",
+  "date": "2026-06-21",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,36 +11,36 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 253
+      "counties_with_alerts": 189
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 2969,
-      "counties_over_threshold": 53
+      "counties_queried": 3044,
+      "counties_over_threshold": 321
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 13,
+      "counties_with_matches": 9,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 16,
-        "utility_outage": 4,
-        "transit_disruption": 1
+        "protest": 9,
+        "utility_outage": 1,
+        "transit_disruption": 0
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 2,
+      "counties_with_matches": 0,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 2,
+        "utility_outage": 0,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 127
+      "counties_with_alerts": 122
     },
     "transit": {
       "status": "ok",
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 1,
+      "counties_with_alerts": 1
     }
   },
   "cdc_han": [],
@@ -162,5 +162,17 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": []
+  "faa_advisories": [
+    {
+      "kind": "airport_closure",
+      "code": "SAN",
+      "name": "San Diego Intl",
+      "city": "San Diego",
+      "state": "CA",
+      "reason": "!SAN 06/052 SAN AD AP CLSD 2606210800-2606211300",
+      "start": "Jun 21 at 08:00 UTC.",
+      "reopen": "Jun 21 at 13:00 UTC.",
+      "source": "FAA NAS Status"
+    }
+  ]
 }
