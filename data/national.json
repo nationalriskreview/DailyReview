@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-21T10:52:48.892936+00:00",
-  "date": "2026-06-21",
+  "generated_at": "2026-06-22T13:12:39.839825+00:00",
+  "date": "2026-06-22",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,49 +11,49 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 189
+      "counties_with_alerts": 217
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3044,
-      "counties_over_threshold": 321
+      "counties_queried": 3007,
+      "counties_over_threshold": 296
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 9,
+      "counties_with_matches": 22,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 9,
-        "utility_outage": 1,
-        "transit_disruption": 0
+        "protest": 18,
+        "utility_outage": 6,
+        "transit_disruption": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 0,
+      "counties_with_matches": 4,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 0,
+        "utility_outage": 5,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 122
+      "counties_with_alerts": 118
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 4,
+      "items_total": 6,
       "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 4
+          "items": 6
         },
         {
           "id": "mta-subway",
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 2
+      "items": 1
     },
     "disease_wastewater": {
       "status": "ok",
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 1
+      "national_items": 0,
+      "counties_with_alerts": 0
     }
   },
   "cdc_han": [],
@@ -152,27 +152,8 @@
       "published": "Wed, 17 Jun 2026 13:30:57 Z",
       "summary": "As the Democratic Republic of the Congo is battling an Ebola disease outbreak caused by the Bundibugyo virus, the World Health Organization (WHO) has released its first comprehensive guidelines for the clinical management of filovirus disease which include all types of Ebola and Marburg viruses. The new guidelines highlight the importance of early supportive care to improve patient survival and health outcomes, outlining 16 evidence-based recommendations.",
       "source": "WHO News (outbreak-filtered)"
-    },
-    {
-      "title": "Open letter to leaders of G7, G20, BRICS and all nations on finalizing the WHO Pandemic Agreement’s Pathogen Access and Benefit Sharing annex",
-      "url": "https://www.who.int/news/item/15-06-2026-open-letter-to-leaders-of-g7-g20-brics-and-all-nations-on-finalizing-the-who-pandemic-agreement-s-pathogen-access-and-benefit-sharing-annex",
-      "published": "Mon, 15 Jun 2026 09:05:36 Z",
-      "summary": "<p>Dear Leaders of the G7, the G20, BRICS and of all nations,</p><p>We write to you together, from Geneva and from Bras&iacute;lia, with one shared conviction: that the world must finish what it started, and that you can help it do so.</p><p>We begin not with an institution or an annex, but with a memory the whole world shares. Not so long ago, our hospitals overflowed. Families said goodbye to the people they loved through glass, or by telephone, or not at all. Children lost grandparents. Docto",
-      "source": "WHO News (outbreak-filtered)"
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "airport_closure",
-      "code": "SAN",
-      "name": "San Diego Intl",
-      "city": "San Diego",
-      "state": "CA",
-      "reason": "!SAN 06/052 SAN AD AP CLSD 2606210800-2606211300",
-      "start": "Jun 21 at 08:00 UTC.",
-      "reopen": "Jun 21 at 13:00 UTC.",
-      "source": "FAA NAS Status"
-    }
-  ]
+  "faa_advisories": []
 }
