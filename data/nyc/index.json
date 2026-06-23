@@ -1,56 +1,71 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-22T13:12:39.839825+00:00",
-  "date": "2026-06-22",
+  "generated_at": "2026-06-23T10:50:48.012654+00:00",
+  "date": "2026-06-23",
   "boroughs": [
     {
       "schema_version": "1.6",
-      "generated_at": "2026-06-22T13:12:39.839825+00:00",
-      "date": "2026-06-22",
+      "generated_at": "2026-06-23T10:50:48.012654+00:00",
+      "date": "2026-06-23",
       "borough": "Manhattan",
       "slug": "manhattan",
       "fips": "36061",
       "county_name": "New York County",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "PATH",
+            "agency_id": "path",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "PATHAlert Update: Track Condition",
+            "description": "06:06 AM: HOB-33 suspended. HOB-WTC, JSQ-33, NWK-WTC operating. Crew reported a track condition at HOB. NJT rail cross honoring PATH at HOB. We apologize for the inconvenience. ",
+            "start": "2026-06-23T10:06:53.907000+00:00",
+            "end": "",
+            "source": "https://www.panynj.gov/bin/portauthority/alerts?agency=PATH",
+            "message_id": "97229",
+            "template": "PATH - Track Condition"
+          },
+          {
+            "agency": "PATH",
+            "agency_id": "path",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "PATHAlert: Track Condition",
+            "description": "05:36 AM: HOB-33 suspended. JSQ-HOB, NWK-WTC operating. Crew reported a track condition at HOB. NJT rail cross honoring PATH at HOB. We apologize for the inconvenience.",
+            "start": "2026-06-23T09:36:13.616000+00:00",
+            "end": "",
+            "source": "https://www.panynj.gov/bin/portauthority/alerts?agency=PATH",
+            "message_id": "97225",
+            "template": "PATH - Track Condition"
+          }
+        ],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "note": "Includes events tagged 'Manhattan' or 'New York County'"
     },
     {
       "schema_version": "1.6",
-      "generated_at": "2026-06-22T13:12:39.839825+00:00",
-      "date": "2026-06-22",
+      "generated_at": "2026-06-23T10:50:48.012654+00:00",
+      "date": "2026-06-23",
       "borough": "Brooklyn",
       "slug": "brooklyn",
       "fips": "36047",
       "county_name": "Kings County",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -62,26 +77,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "note": "Includes events tagged 'Brooklyn' or 'Kings County'"
     },
     {
       "schema_version": "1.6",
-      "generated_at": "2026-06-22T13:12:39.839825+00:00",
-      "date": "2026-06-22",
+      "generated_at": "2026-06-23T10:50:48.012654+00:00",
+      "date": "2026-06-23",
       "borough": "Queens",
       "slug": "queens",
       "fips": "36081",
       "county_name": "Queens County",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -93,13 +101,13 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "note": "Includes events tagged 'Queens' or 'Queens County'"
     },
     {
       "schema_version": "1.6",
-      "generated_at": "2026-06-22T13:12:39.839825+00:00",
-      "date": "2026-06-22",
+      "generated_at": "2026-06-23T10:50:48.012654+00:00",
+      "date": "2026-06-23",
       "borough": "Bronx",
       "slug": "bronx",
       "fips": "36005",
@@ -122,21 +130,14 @@
     },
     {
       "schema_version": "1.6",
-      "generated_at": "2026-06-22T13:12:39.839825+00:00",
-      "date": "2026-06-22",
+      "generated_at": "2026-06-23T10:50:48.012654+00:00",
+      "date": "2026-06-23",
       "borough": "Staten Island",
       "slug": "staten-island",
       "fips": "36085",
       "county_name": "Richmond County",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -148,7 +149,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "note": "Includes events tagged 'Staten Island' or 'Richmond County'"
     }
   ]
