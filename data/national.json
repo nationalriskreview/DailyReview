@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-23T10:50:48.012654+00:00",
-  "date": "2026-06-23",
+  "generated_at": "2026-06-24T10:37:53.935408+00:00",
+  "date": "2026-06-24",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,49 +11,49 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 220
+      "counties_with_alerts": 136
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3006,
-      "counties_over_threshold": 164
+      "counties_queried": 3092,
+      "counties_over_threshold": 40
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 17,
+      "counties_with_matches": 10,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 33,
-        "utility_outage": 0,
+        "protest": 51,
+        "utility_outage": 5,
         "transit_disruption": 0
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 0,
+      "counties_with_matches": 1,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 0,
+        "utility_outage": 2,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 0
+      "counties_with_alerts": 99
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 8,
-      "counties_with_alerts": 8,
+      "items_total": 5,
+      "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 6
+          "items": 5
         },
         {
           "id": "mta-subway",
@@ -77,7 +77,7 @@
           "id": "path",
           "name": "PATH",
           "status": "ok",
-          "items": 2
+          "items": 0
         },
         {
           "id": "bart",
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 1
+      "items": 2
     },
     "disease_wastewater": {
       "status": "ok",
@@ -146,6 +146,13 @@
   },
   "cdc_han": [],
   "who_don": [
+    {
+      "title": "WHO urges scale up of newborn screening to improve early detection and care of birth defects",
+      "url": "https://www.who.int/news/item/23-06-2026-who-urges-scale-up-of-newborn-screening-to-improve-early-detection-and-care-of-birth-defects",
+      "published": "Tue, 23 Jun 2026 10:01:11 Z",
+      "summary": "<p>The World Health Organization (WHO) today calls on countries to expand newborn screening for birth defects, highlighting how early detection and treatment can save lives and reduce lifelong disability for millions of children.</p><p>A new WHO report, <a href=\"https://www.who.int/publications/i/item/9789240122086\">Strengthening capacity for newborn screening, diagnosis and management of birth defects</a>, identifies newborn screening as an important opportunity to accelerate progress in child ",
+      "source": "WHO News (outbreak-filtered)"
+    },
     {
       "title": "WHO issues comprehensive guidelines on filovirus disease, including Ebola and Marburg disease",
       "url": "https://www.who.int/news/item/17-06-2026-who-issues-comprehensive-guidelines-on-filovirus-disease--including-ebola-and-marburg-disease",
