@@ -1,10 +1,10 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-26T10:34:47.743445+00:00",
-  "date": "2026-06-26",
+  "generated_at": "2026-06-27T09:38:25.150231+00:00",
+  "date": "2026-06-27",
   "state": "OK",
   "counties_total": 77,
-  "counties_with_alerts": 17,
+  "counties_with_alerts": 31,
   "counties": {
     "40001": {
       "fips": "40001",
@@ -30,7 +30,14 @@
       "name": "Alfalfa County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -42,7 +49,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "40005": {
       "fips": "40005",
@@ -87,10 +94,29 @@
       "name": "Beckham County",
       "state": "OK",
       "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
+    "40011": {
+      "fips": "40011",
+      "name": "Blaine County",
+      "state": "OK",
+      "alerts": {
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~2.0\" rain expected in next 24h",
+            "headline": "~1.6\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -107,25 +133,6 @@
         "disease": []
       },
       "alert_count": 1
-    },
-    "40011": {
-      "fips": "40011",
-      "name": "Blaine County",
-      "state": "OK",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
     },
     "40013": {
       "fips": "40013",
@@ -170,7 +177,14 @@
       "name": "Canadian County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.8\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -182,7 +196,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "40019": {
       "fips": "40019",
@@ -343,10 +357,26 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 27 at 1:30AM CDT until June 27 at 7:00AM CDT by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-27T01:30:00-05:00",
+            "expires": "2026-06-27T07:00:00-05:00",
+            "areaDesc": "Craig, OK; Nowata, OK; Washington, OK",
+            "id": "urn:oid:2.49.0.1.840.0.7648725620ff3ed80670d510417d649e9bf8db31.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued June 27 at 12:24AM CDT until June 27 at 5:00AM CDT by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T00:24:00-05:00",
+            "expires": "2026-06-27T05:00:00-05:00",
+            "areaDesc": "Craig, OK; Delaware, OK; Ottawa, OK",
+            "id": "urn:oid:2.49.0.1.840.0.ca2841935f676847eb394707c4e67b4ed2ae5b9a.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -360,38 +390,24 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "40037": {
       "fips": "40037",
       "name": "Creek County",
       "state": "OK",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "40039": {
-      "fips": "40039",
-      "name": "Custer County",
-      "state": "OK",
-      "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued June 27 at 3:44AM CDT until June 27 at 8:00AM CDT by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T03:44:00-05:00",
+            "expires": "2026-06-27T08:00:00-05:00",
+            "areaDesc": "Creek, OK; Muskogee, OK; Okfuskee, OK; Okmulgee, OK; Tulsa, OK; Wagoner, OK",
+            "id": "urn:oid:2.49.0.1.840.0.d12720239c76ef109764b41e476f787107e42a1f.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -407,9 +423,9 @@
       },
       "alert_count": 1
     },
-    "40041": {
-      "fips": "40041",
-      "name": "Delaware County",
+    "40039": {
+      "fips": "40039",
+      "name": "Custer County",
       "state": "OK",
       "alerts": {
         "weather": [],
@@ -425,6 +441,37 @@
         "disease": []
       },
       "alert_count": 0
+    },
+    "40041": {
+      "fips": "40041",
+      "name": "Delaware County",
+      "state": "OK",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued June 27 at 12:24AM CDT until June 27 at 5:00AM CDT by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T00:24:00-05:00",
+            "expires": "2026-06-27T05:00:00-05:00",
+            "areaDesc": "Craig, OK; Delaware, OK; Ottawa, OK",
+            "id": "urn:oid:2.49.0.1.840.0.ca2841935f676847eb394707c4e67b4ed2ae5b9a.001.1",
+            "source": "nws_alert"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
     },
     "40043": {
       "fips": "40043",
@@ -469,7 +516,14 @@
       "name": "Garfield County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -481,7 +535,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "40049": {
       "fips": "40049",
@@ -529,13 +583,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 2:22AM CDT until June 27 at 2:00PM CDT by NWS Norman OK",
+            "headline": "Flood Warning issued June 27 at 1:46AM CDT until June 27 at 10:17PM CDT by NWS Norman OK",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T02:22:00-05:00",
-            "expires": "2026-06-26T14:30:00-05:00",
+            "effective": "2026-06-27T01:46:00-05:00",
+            "expires": "2026-06-27T14:00:00-05:00",
             "areaDesc": "Grant, OK; Kay, OK",
-            "id": "urn:oid:2.49.0.1.840.0.fc0151243750310fb005c57eee6df690bde1d502.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.a3cca2b2ea15eb3beb328d50bc024173e25c03b3.001.1",
             "source": "nws_alert"
           }
         ],
@@ -559,12 +613,6 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~2.4\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          },
-          {
             "event": "Extreme Heat Forecast",
             "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
             "severity": "Severe",
@@ -582,7 +630,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "40057": {
       "fips": "40057",
@@ -668,7 +716,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -691,7 +739,14 @@
       "name": "Jefferson County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -703,7 +758,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "40069": {
       "fips": "40069",
@@ -732,13 +787,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 2:22AM CDT until June 27 at 2:00PM CDT by NWS Norman OK",
+            "headline": "Flood Warning issued June 27 at 1:46AM CDT until June 27 at 10:17PM CDT by NWS Norman OK",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T02:22:00-05:00",
-            "expires": "2026-06-26T14:30:00-05:00",
+            "effective": "2026-06-27T01:46:00-05:00",
+            "expires": "2026-06-27T14:00:00-05:00",
             "areaDesc": "Grant, OK; Kay, OK",
-            "id": "urn:oid:2.49.0.1.840.0.fc0151243750310fb005c57eee6df690bde1d502.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.a3cca2b2ea15eb3beb328d50bc024173e25c03b3.001.1",
             "source": "nws_alert"
           }
         ],
@@ -760,30 +815,17 @@
       "name": "Kingfisher County",
       "state": "OK",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "40075": {
-      "fips": "40075",
-      "name": "Kiowa County",
-      "state": "OK",
-      "alerts": {
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.5\" rain expected in next 24h",
+            "headline": "~2.3\" rain expected in next 24h",
             "severity": "Moderate",
+            "source": "nws_forecast"
+          },
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
@@ -798,7 +840,26 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
+    },
+    "40075": {
+      "fips": "40075",
+      "name": "Kiowa County",
+      "state": "OK",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
     },
     "40077": {
       "fips": "40077",
@@ -843,7 +904,14 @@
       "name": "Lincoln County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -855,14 +923,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "40083": {
       "fips": "40083",
       "name": "Logan County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 27 at 2:49AM CDT until June 27 at 5:45AM CDT by NWS Norman OK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-27T02:49:00-05:00",
+            "expires": "2026-06-27T05:45:00-05:00",
+            "areaDesc": "Logan, OK",
+            "id": "urn:oid:2.49.0.1.840.0.6ca1e4d1b1ce97206f9a79d6fc9789edc2c5e559.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 27 at 2:03AM CDT until June 27 at 5:00AM CDT by NWS Norman OK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-27T02:03:00-05:00",
+            "expires": "2026-06-27T05:00:00-05:00",
+            "areaDesc": "Logan, OK",
+            "id": "urn:oid:2.49.0.1.840.0.26f42db8aba6c1338e0d59a6a0f89346b927dfd0.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -874,7 +965,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "40085": {
       "fips": "40085",
@@ -957,7 +1048,14 @@
       "name": "Major County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -969,7 +1067,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "40095": {
       "fips": "40095",
@@ -1033,7 +1131,19 @@
       "name": "Muskogee County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued June 27 at 3:44AM CDT until June 27 at 8:00AM CDT by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T03:44:00-05:00",
+            "expires": "2026-06-27T08:00:00-05:00",
+            "areaDesc": "Creek, OK; Muskogee, OK; Okfuskee, OK; Okmulgee, OK; Tulsa, OK; Wagoner, OK",
+            "id": "urn:oid:2.49.0.1.840.0.d12720239c76ef109764b41e476f787107e42a1f.001.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1045,14 +1155,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "40103": {
       "fips": "40103",
       "name": "Noble County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1064,7 +1181,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "40105": {
       "fips": "40105",
@@ -1074,143 +1191,24 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 2:11AM CDT until June 28 at 3:00AM CDT by NWS Tulsa OK",
+            "headline": "Flood Warning issued June 27 at 1:44AM CDT until June 28 at 3:12PM CDT by NWS Tulsa OK",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T02:11:00-05:00",
-            "expires": "2026-06-26T14:15:00-05:00",
+            "effective": "2026-06-27T01:44:00-05:00",
+            "expires": "2026-06-27T13:45:00-05:00",
             "areaDesc": "Nowata, OK",
-            "id": "urn:oid:2.49.0.1.840.0.3b1069727fd4ae0e61d905ef640b345bb5e3f402.001.1",
-            "source": "nws_alert"
-          }
-        ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
-    },
-    "40107": {
-      "fips": "40107",
-      "name": "Okfuskee County",
-      "state": "OK",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "40109": {
-      "fips": "40109",
-      "name": "Oklahoma County",
-      "state": "OK",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "40111": {
-      "fips": "40111",
-      "name": "Okmulgee County",
-      "state": "OK",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "40113": {
-      "fips": "40113",
-      "name": "Osage County",
-      "state": "OK",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 2:14AM CDT until June 27 at 2:30AM CDT by NWS Tulsa OK",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T02:14:00-05:00",
-            "expires": "2026-06-26T14:15:00-05:00",
-            "areaDesc": "Osage, OK; Pawnee, OK",
-            "id": "urn:oid:2.49.0.1.840.0.f12f62b140f3a1159bdf97cfe3b6f48f8134b869.001.1",
-            "source": "nws_alert"
-          }
-        ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
-    },
-    "40115": {
-      "fips": "40115",
-      "name": "Ottawa County",
-      "state": "OK",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 3:26AM CDT until June 27 at 1:00PM CDT by NWS Tulsa OK",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T03:26:00-05:00",
-            "expires": "2026-06-26T15:30:00-05:00",
-            "areaDesc": "Ottawa, OK",
-            "id": "urn:oid:2.49.0.1.840.0.ac16983acfb2e6c76f27509965d13a08fddece2d.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.3e505e60a3de22522654a1453cddd31c4633ca05.001.1",
             "source": "nws_alert"
           },
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 3:11AM CDT by NWS Tulsa OK",
+            "headline": "Flood Warning issued June 27 at 1:30AM CDT until June 27 at 7:00AM CDT by NWS Tulsa OK",
             "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T03:11:00-05:00",
-            "expires": "2026-06-26T15:15:00-05:00",
-            "areaDesc": "Ottawa, OK",
-            "id": "urn:oid:2.49.0.1.840.0.04dcf1563b73215d2cb07f4a1406a4fd223bb5a2.001.1",
+            "urgency": "Expected",
+            "effective": "2026-06-27T01:30:00-05:00",
+            "expires": "2026-06-27T07:00:00-05:00",
+            "areaDesc": "Craig, OK; Nowata, OK; Washington, OK",
+            "id": "urn:oid:2.49.0.1.840.0.7648725620ff3ed80670d510417d649e9bf8db31.001.1",
             "source": "nws_alert"
           }
         ],
@@ -1227,6 +1225,166 @@
       },
       "alert_count": 2
     },
+    "40107": {
+      "fips": "40107",
+      "name": "Okfuskee County",
+      "state": "OK",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued June 27 at 3:44AM CDT until June 27 at 8:00AM CDT by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T03:44:00-05:00",
+            "expires": "2026-06-27T08:00:00-05:00",
+            "areaDesc": "Creek, OK; Muskogee, OK; Okfuskee, OK; Okmulgee, OK; Tulsa, OK; Wagoner, OK",
+            "id": "urn:oid:2.49.0.1.840.0.d12720239c76ef109764b41e476f787107e42a1f.001.1",
+            "source": "nws_alert"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "40109": {
+      "fips": "40109",
+      "name": "Oklahoma County",
+      "state": "OK",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~3.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "40111": {
+      "fips": "40111",
+      "name": "Okmulgee County",
+      "state": "OK",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued June 27 at 3:44AM CDT until June 27 at 8:00AM CDT by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T03:44:00-05:00",
+            "expires": "2026-06-27T08:00:00-05:00",
+            "areaDesc": "Creek, OK; Muskogee, OK; Okfuskee, OK; Okmulgee, OK; Tulsa, OK; Wagoner, OK",
+            "id": "urn:oid:2.49.0.1.840.0.d12720239c76ef109764b41e476f787107e42a1f.001.1",
+            "source": "nws_alert"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "40113": {
+      "fips": "40113",
+      "name": "Osage County",
+      "state": "OK",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
+    "40115": {
+      "fips": "40115",
+      "name": "Ottawa County",
+      "state": "OK",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 27 at 2:05AM CDT until June 28 at 3:28AM CDT by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T02:05:00-05:00",
+            "expires": "2026-06-27T14:15:00-05:00",
+            "areaDesc": "Ottawa, OK",
+            "id": "urn:oid:2.49.0.1.840.0.dbd11266c9499911ec2d326880c4225f6128bdba.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 27 at 2:04AM CDT until June 30 at 6:18PM CDT by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T02:04:00-05:00",
+            "expires": "2026-06-27T14:15:00-05:00",
+            "areaDesc": "Ottawa, OK",
+            "id": "urn:oid:2.49.0.1.840.0.c3fac3b6a10a5796c173b8c82adf8f398a0d6f67.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued June 27 at 12:24AM CDT until June 27 at 5:00AM CDT by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T00:24:00-05:00",
+            "expires": "2026-06-27T05:00:00-05:00",
+            "areaDesc": "Craig, OK; Delaware, OK; Ottawa, OK",
+            "id": "urn:oid:2.49.0.1.840.0.ca2841935f676847eb394707c4e67b4ed2ae5b9a.001.1",
+            "source": "nws_alert"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 3
+    },
     "40117": {
       "fips": "40117",
       "name": "Pawnee County",
@@ -1234,15 +1392,10 @@
       "alerts": {
         "weather": [
           {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 2:14AM CDT until June 27 at 2:30AM CDT by NWS Tulsa OK",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T02:14:00-05:00",
-            "expires": "2026-06-26T14:15:00-05:00",
-            "areaDesc": "Osage, OK; Pawnee, OK",
-            "id": "urn:oid:2.49.0.1.840.0.f12f62b140f3a1159bdf97cfe3b6f48f8134b869.001.1",
-            "source": "nws_alert"
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
           }
         ],
         "bank_robbery": [],
@@ -1263,7 +1416,20 @@
       "name": "Payne County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          },
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1275,7 +1441,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "40121": {
       "fips": "40121",
@@ -1380,13 +1546,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 2:25AM CDT until June 28 at 11:20PM CDT by NWS Tulsa OK",
+            "headline": "Flood Warning issued June 27 at 3:31AM CDT until June 30 at 8:05AM CDT by NWS Tulsa OK",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T02:25:00-05:00",
-            "expires": "2026-06-26T14:30:00-05:00",
+            "effective": "2026-06-27T03:31:00-05:00",
+            "expires": "2026-06-27T15:45:00-05:00",
             "areaDesc": "Rogers, OK; Tulsa, OK",
-            "id": "urn:oid:2.49.0.1.840.0.fa8e27010576ed6e079b41086b2d466f688c76a4.003.1",
+            "id": "urn:oid:2.49.0.1.840.0.5308902304fea8fcf306a0c3a1ca6cf5dbbac7c3.001.1",
             "source": "nws_alert"
           }
         ],
@@ -1446,14 +1612,7 @@
       "name": "Stephens County",
       "state": "OK",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1465,7 +1624,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "40139": {
       "fips": "40139",
@@ -1491,12 +1650,47 @@
       "name": "Tillman County",
       "state": "OK",
       "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
+    "40143": {
+      "fips": "40143",
+      "name": "Tulsa County",
+      "state": "OK",
+      "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued June 27 at 3:44AM CDT until June 27 at 8:00AM CDT by NWS Tulsa OK",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Immediate",
+            "effective": "2026-06-27T03:44:00-05:00",
+            "expires": "2026-06-27T08:00:00-05:00",
+            "areaDesc": "Creek, OK; Muskogee, OK; Okfuskee, OK; Okmulgee, OK; Tulsa, OK; Wagoner, OK",
+            "id": "urn:oid:2.49.0.1.840.0.d12720239c76ef109764b41e476f787107e42a1f.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 27 at 3:31AM CDT until June 30 at 8:05AM CDT by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T03:31:00-05:00",
+            "expires": "2026-06-27T15:45:00-05:00",
+            "areaDesc": "Rogers, OK; Tulsa, OK",
+            "id": "urn:oid:2.49.0.1.840.0.5308902304fea8fcf306a0c3a1ca6cf5dbbac7c3.001.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -1510,23 +1704,23 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
-    "40143": {
-      "fips": "40143",
-      "name": "Tulsa County",
+    "40145": {
+      "fips": "40145",
+      "name": "Wagoner County",
       "state": "OK",
       "alerts": {
         "weather": [
           {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 2:25AM CDT until June 28 at 11:20PM CDT by NWS Tulsa OK",
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued June 27 at 3:44AM CDT until June 27 at 8:00AM CDT by NWS Tulsa OK",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T02:25:00-05:00",
-            "expires": "2026-06-26T14:30:00-05:00",
-            "areaDesc": "Rogers, OK; Tulsa, OK",
-            "id": "urn:oid:2.49.0.1.840.0.fa8e27010576ed6e079b41086b2d466f688c76a4.003.1",
+            "effective": "2026-06-27T03:44:00-05:00",
+            "expires": "2026-06-27T08:00:00-05:00",
+            "areaDesc": "Creek, OK; Muskogee, OK; Okfuskee, OK; Okmulgee, OK; Tulsa, OK; Wagoner, OK",
+            "id": "urn:oid:2.49.0.1.840.0.d12720239c76ef109764b41e476f787107e42a1f.001.1",
             "source": "nws_alert"
           }
         ],
@@ -1543,25 +1737,6 @@
       },
       "alert_count": 1
     },
-    "40145": {
-      "fips": "40145",
-      "name": "Wagoner County",
-      "state": "OK",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
     "40147": {
       "fips": "40147",
       "name": "Washington County",
@@ -1570,13 +1745,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 2:25AM CDT until June 27 at 9:00PM CDT by NWS Tulsa OK",
+            "headline": "Flood Warning issued June 27 at 1:30AM CDT until June 27 at 7:00AM CDT by NWS Tulsa OK",
             "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T02:25:00-05:00",
-            "expires": "2026-06-26T14:30:00-05:00",
-            "areaDesc": "Washington, OK",
-            "id": "urn:oid:2.49.0.1.840.0.fa8e27010576ed6e079b41086b2d466f688c76a4.002.1",
+            "urgency": "Expected",
+            "effective": "2026-06-27T01:30:00-05:00",
+            "expires": "2026-06-27T07:00:00-05:00",
+            "areaDesc": "Craig, OK; Nowata, OK; Washington, OK",
+            "id": "urn:oid:2.49.0.1.840.0.7648725620ff3ed80670d510417d649e9bf8db31.001.1",
             "source": "nws_alert"
           }
         ],
@@ -1598,7 +1773,14 @@
       "name": "Washita County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1610,14 +1792,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "40151": {
       "fips": "40151",
       "name": "Woods County",
       "state": "OK",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1629,7 +1818,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "40153": {
       "fips": "40153",
