@@ -1,10 +1,10 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-27T09:38:25.150231+00:00",
-  "date": "2026-06-27",
+  "generated_at": "2026-06-28T10:11:33.642200+00:00",
+  "date": "2026-06-28",
   "state": "IL",
   "counties_total": 102,
-  "counties_with_alerts": 29,
+  "counties_with_alerts": 53,
   "counties": {
     "17001": {
       "fips": "17001",
@@ -30,11 +30,30 @@
       "name": "Alexander County",
       "state": "IL",
       "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
+    "17005": {
+      "fips": "17005",
+      "name": "Bond County",
+      "state": "IL",
+      "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
@@ -50,25 +69,6 @@
         "disease": []
       },
       "alert_count": 1
-    },
-    "17005": {
-      "fips": "17005",
-      "name": "Bond County",
-      "state": "IL",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
     },
     "17007": {
       "fips": "17007",
@@ -97,24 +97,24 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:00PM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 9:14PM CDT by NWS St Louis MO",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:00:00-05:00",
-            "expires": "2026-06-27T13:00:00-05:00",
-            "areaDesc": "Brown, IL; Cass, IL; Morgan, IL; Schuyler, IL",
-            "id": "urn:oid:2.49.0.1.840.0.684b8677bddc815c94619a8d2d599028a0b212c2.003.1",
+            "effective": "2026-06-27T21:14:00-05:00",
+            "expires": "2026-06-29T09:15:00-05:00",
+            "areaDesc": "Brown, IL",
+            "id": "urn:oid:2.49.0.1.840.0.69a31adbf0b33a321647aeff53d815bed394dd9a.003.1",
             "source": "nws_alert"
           },
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 8:59PM CDT by NWS St Louis MO",
+            "headline": "Flood Warning issued June 27 at 9:13PM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T20:59:00-05:00",
-            "expires": "2026-06-28T09:00:00-05:00",
-            "areaDesc": "Brown, IL",
-            "id": "urn:oid:2.49.0.1.840.0.2d555301cd203edf1d9689badab9f0c2e591ca87.002.1",
+            "effective": "2026-06-27T21:13:00-05:00",
+            "expires": "2026-06-28T13:15:00-05:00",
+            "areaDesc": "Brown, IL; Cass, IL; Morgan, IL; Schuyler, IL",
+            "id": "urn:oid:2.49.0.1.840.0.3d4b5282a2202bb6709597731914256aaccc9ebf.003.1",
             "source": "nws_alert"
           }
         ],
@@ -138,14 +138,25 @@
       "alerts": {
         "weather": [
           {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Buchanan; Delaware; Dubuque; Jones; Jackson; Clinton; Jo Daviess; Stephenson; Carroll; Whiteside; Henry; Bureau; Putnam",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.001.2",
+            "source": "nws_alert"
+          },
+          {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:16PM CDT until June 29 at 7:00AM CDT by NWS Chicago IL",
+            "headline": "Flood Warning issued June 27 at 9:18PM CDT until June 29 at 4:00AM CDT by NWS Chicago IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:16:00-05:00",
-            "expires": "2026-06-27T11:15:00-05:00",
+            "effective": "2026-06-27T21:18:00-05:00",
+            "expires": "2026-06-28T11:30:00-05:00",
             "areaDesc": "Bureau, IL; La Salle, IL; Putnam, IL",
-            "id": "urn:oid:2.49.0.1.840.0.97aaa1e0edab06567f351fc816c5b897fd3b63de.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.3cd1ed642a4bf782dfe4104e895ec0c8e74fd547.001.1",
             "source": "nws_alert"
           }
         ],
@@ -160,7 +171,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "17013": {
       "fips": "17013",
@@ -170,13 +181,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 8:59PM CDT by NWS St Louis MO",
+            "headline": "Flood Warning issued June 27 at 9:14PM CDT until July 5 at 7:00PM CDT by NWS St Louis MO",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T20:59:00-05:00",
-            "expires": "2026-06-28T09:00:00-05:00",
+            "effective": "2026-06-27T21:14:00-05:00",
+            "expires": "2026-06-29T09:15:00-05:00",
             "areaDesc": "Calhoun, IL; Greene, IL; Jersey, IL",
-            "id": "urn:oid:2.49.0.1.840.0.2d555301cd203edf1d9689badab9f0c2e591ca87.004.1",
+            "id": "urn:oid:2.49.0.1.840.0.69a31adbf0b33a321647aeff53d815bed394dd9a.001.1",
             "source": "nws_alert"
           }
         ],
@@ -198,7 +209,19 @@
       "name": "Carroll County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Buchanan; Delaware; Dubuque; Jones; Jackson; Clinton; Jo Daviess; Stephenson; Carroll; Whiteside; Henry; Bureau; Putnam",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.001.2",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -210,7 +233,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17017": {
       "fips": "17017",
@@ -220,24 +243,24 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:00PM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 9:13PM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:00:00-05:00",
-            "expires": "2026-06-27T13:00:00-05:00",
-            "areaDesc": "Brown, IL; Cass, IL; Morgan, IL; Schuyler, IL",
-            "id": "urn:oid:2.49.0.1.840.0.684b8677bddc815c94619a8d2d599028a0b212c2.003.1",
+            "effective": "2026-06-27T21:13:00-05:00",
+            "expires": "2026-06-28T13:15:00-05:00",
+            "areaDesc": "Cass, IL; Fulton, IL; Mason, IL",
+            "id": "urn:oid:2.49.0.1.840.0.3d4b5282a2202bb6709597731914256aaccc9ebf.004.1",
             "source": "nws_alert"
           },
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:00PM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 9:13PM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:00:00-05:00",
-            "expires": "2026-06-27T13:00:00-05:00",
-            "areaDesc": "Cass, IL; Fulton, IL; Mason, IL",
-            "id": "urn:oid:2.49.0.1.840.0.684b8677bddc815c94619a8d2d599028a0b212c2.004.1",
+            "effective": "2026-06-27T21:13:00-05:00",
+            "expires": "2026-06-28T13:15:00-05:00",
+            "areaDesc": "Brown, IL; Cass, IL; Morgan, IL; Schuyler, IL",
+            "id": "urn:oid:2.49.0.1.840.0.3d4b5282a2202bb6709597731914256aaccc9ebf.003.1",
             "source": "nws_alert"
           }
         ],
@@ -319,13 +342,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:04PM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 8:44PM CDT until July 2 at 11:48PM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:04:00-05:00",
-            "expires": "2026-06-27T13:15:00-05:00",
+            "effective": "2026-06-27T20:44:00-05:00",
+            "expires": "2026-06-28T12:45:00-05:00",
             "areaDesc": "Clay, IL; Richland, IL",
-            "id": "urn:oid:2.49.0.1.840.0.a40fec57d146ec901e931a407724e7e50db7fd58.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.f4fd3d0707ae2989e4e1a51fb5ee3bc9783a77b3.001.1",
             "source": "nws_alert"
           }
         ],
@@ -347,7 +370,19 @@
       "name": "Clinton County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 2:00AM CDT until July 3 at 12:00AM CDT by NWS St Louis MO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T02:00:00-05:00",
+            "expires": "2026-06-28T17:00:00-05:00",
+            "areaDesc": "Clinton; Washington; Randolph; Warren; Franklin; Ste. Genevieve",
+            "id": "urn:oid:2.49.0.1.840.0.56c3c88f7d62cee72c952b3ab4c8730c9d0b1285.001.2",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -359,7 +394,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17029": {
       "fips": "17029",
@@ -540,13 +575,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:54PM EDT until July 1 at 3:30AM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued June 27 at 9:34PM EDT until July 3 at 9:30AM EDT by NWS Indianapolis IN",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:54:00-04:00",
-            "expires": "2026-06-27T14:00:00-04:00",
+            "effective": "2026-06-27T21:34:00-04:00",
+            "expires": "2026-06-28T14:00:00-04:00",
             "areaDesc": "Edwards, IL; Gallatin, IL; Wabash, IL; White, IL; Gibson, IN; Knox, IN; Posey, IN",
-            "id": "urn:oid:2.49.0.1.840.0.53ae89431bc3ed7016e03b3d7a5ca68fc82c1f24.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.2b10b7ab7633ea4de0987687aed75e531551d850.002.1",
             "source": "nws_alert"
           }
         ],
@@ -625,7 +660,14 @@
       "name": "Franklin County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -637,7 +679,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17057": {
       "fips": "17057",
@@ -647,13 +689,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:00PM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 9:13PM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:00:00-05:00",
-            "expires": "2026-06-27T13:00:00-05:00",
+            "effective": "2026-06-27T21:13:00-05:00",
+            "expires": "2026-06-28T13:15:00-05:00",
             "areaDesc": "Cass, IL; Fulton, IL; Mason, IL",
-            "id": "urn:oid:2.49.0.1.840.0.684b8677bddc815c94619a8d2d599028a0b212c2.004.1",
+            "id": "urn:oid:2.49.0.1.840.0.3d4b5282a2202bb6709597731914256aaccc9ebf.004.1",
             "source": "nws_alert"
           }
         ],
@@ -678,35 +720,24 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:38PM CDT until July 3 at 7:00PM CDT by NWS Paducah KY",
+            "headline": "Flood Warning issued June 27 at 9:34PM EDT until July 3 at 9:30AM EDT by NWS Indianapolis IN",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:38:00-05:00",
-            "expires": "2026-06-27T23:45:00-05:00",
-            "areaDesc": "Gallatin, IL; Wayne, IL; White, IL",
-            "id": "urn:oid:2.49.0.1.840.0.ce99cbe6b074aa99d0d2c86600ebab40bc1176eb.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:28PM CDT until July 1 at 5:00PM CDT by NWS Paducah KY",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T21:28:00-05:00",
-            "expires": "2026-06-27T23:30:00-05:00",
-            "areaDesc": "Gallatin, IL; Wabash, IL; White, IL; Gibson, IN; Posey, IN",
-            "id": "urn:oid:2.49.0.1.840.0.6b7fae72f6688427fc73cc9f3a1668f3db56f57f.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:54PM EDT until July 1 at 3:30AM EDT by NWS Indianapolis IN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T21:54:00-04:00",
-            "expires": "2026-06-27T14:00:00-04:00",
+            "effective": "2026-06-27T21:34:00-04:00",
+            "expires": "2026-06-28T14:00:00-04:00",
             "areaDesc": "Edwards, IL; Gallatin, IL; Wabash, IL; White, IL; Gibson, IN; Knox, IN; Posey, IN",
-            "id": "urn:oid:2.49.0.1.840.0.53ae89431bc3ed7016e03b3d7a5ca68fc82c1f24.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.2b10b7ab7633ea4de0987687aed75e531551d850.002.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 27 at 6:33PM CDT until July 2 at 5:00PM CDT by NWS Paducah KY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T18:33:00-05:00",
+            "expires": "2026-06-28T20:45:00-05:00",
+            "areaDesc": "Gallatin, IL; Wabash, IL; White, IL; Gibson, IN; Posey, IN",
+            "id": "urn:oid:2.49.0.1.840.0.068d478ddbd0c3dce1873d17149d982849c347e4.001.1",
             "source": "nws_alert"
           }
         ],
@@ -721,7 +752,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "17061": {
       "fips": "17061",
@@ -731,13 +762,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 8:59PM CDT by NWS St Louis MO",
+            "headline": "Flood Warning issued June 27 at 9:14PM CDT until July 5 at 7:00PM CDT by NWS St Louis MO",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T20:59:00-05:00",
-            "expires": "2026-06-28T09:00:00-05:00",
+            "effective": "2026-06-27T21:14:00-05:00",
+            "expires": "2026-06-29T09:15:00-05:00",
             "areaDesc": "Calhoun, IL; Greene, IL; Jersey, IL",
-            "id": "urn:oid:2.49.0.1.840.0.2d555301cd203edf1d9689badab9f0c2e591ca87.004.1",
+            "id": "urn:oid:2.49.0.1.840.0.69a31adbf0b33a321647aeff53d815bed394dd9a.001.1",
             "source": "nws_alert"
           }
         ],
@@ -797,7 +828,19 @@
       "name": "Hancock County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Benton; Linn; Iowa; Johnson; Cedar; Muscatine; Scott; Keokuk; Washington; Louisa; Jefferson; Henry; Des Moines; Van Buren; Lee; Rock Island; Mercer; Henderson; Warren; Hancock; McDonough; Scotland; Clark",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.002.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -809,7 +852,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17069": {
       "fips": "17069",
@@ -835,7 +878,19 @@
       "name": "Henderson County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Benton; Linn; Iowa; Johnson; Cedar; Muscatine; Scott; Keokuk; Washington; Louisa; Jefferson; Henry; Des Moines; Van Buren; Lee; Rock Island; Mercer; Henderson; Warren; Hancock; McDonough; Scotland; Clark",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.002.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -847,14 +902,26 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17073": {
       "fips": "17073",
       "name": "Henry County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Buchanan; Delaware; Dubuque; Jones; Jackson; Clinton; Jo Daviess; Stephenson; Carroll; Whiteside; Henry; Bureau; Putnam",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.001.2",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -866,7 +933,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17075": {
       "fips": "17075",
@@ -894,9 +961,9 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
@@ -937,7 +1004,14 @@
       "name": "Jefferson County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -949,7 +1023,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17083": {
       "fips": "17083",
@@ -959,13 +1033,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 8:59PM CDT by NWS St Louis MO",
+            "headline": "Flood Warning issued June 27 at 9:14PM CDT until July 5 at 7:00PM CDT by NWS St Louis MO",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T20:59:00-05:00",
-            "expires": "2026-06-28T09:00:00-05:00",
+            "effective": "2026-06-27T21:14:00-05:00",
+            "expires": "2026-06-29T09:15:00-05:00",
             "areaDesc": "Calhoun, IL; Greene, IL; Jersey, IL",
-            "id": "urn:oid:2.49.0.1.840.0.2d555301cd203edf1d9689badab9f0c2e591ca87.004.1",
+            "id": "urn:oid:2.49.0.1.840.0.69a31adbf0b33a321647aeff53d815bed394dd9a.001.1",
             "source": "nws_alert"
           }
         ],
@@ -987,7 +1061,19 @@
       "name": "Jo Daviess County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Buchanan; Delaware; Dubuque; Jones; Jackson; Clinton; Jo Daviess; Stephenson; Carroll; Whiteside; Henry; Bureau; Putnam",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.001.2",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -999,14 +1085,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17087": {
       "fips": "17087",
       "name": "Johnson County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1018,7 +1111,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17089": {
       "fips": "17089",
@@ -1123,13 +1216,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:16PM CDT until June 29 at 7:00AM CDT by NWS Chicago IL",
+            "headline": "Flood Warning issued June 27 at 9:18PM CDT until June 29 at 4:00AM CDT by NWS Chicago IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:16:00-05:00",
-            "expires": "2026-06-27T11:15:00-05:00",
+            "effective": "2026-06-27T21:18:00-05:00",
+            "expires": "2026-06-28T11:30:00-05:00",
             "areaDesc": "Bureau, IL; La Salle, IL; Putnam, IL",
-            "id": "urn:oid:2.49.0.1.840.0.97aaa1e0edab06567f351fc816c5b897fd3b63de.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.3cd1ed642a4bf782dfe4104e895ec0c8e74fd547.001.1",
             "source": "nws_alert"
           }
         ],
@@ -1154,24 +1247,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:54PM EDT until June 29 at 4:00AM EDT by NWS Indianapolis IN",
+            "headline": "Flood Warning issued June 27 at 8:45PM CDT until July 2 at 10:00AM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:54:00-04:00",
-            "expires": "2026-06-27T14:00:00-04:00",
-            "areaDesc": "Lawrence, IL; Wabash, IL; Knox, IN",
-            "id": "urn:oid:2.49.0.1.840.0.53ae89431bc3ed7016e03b3d7a5ca68fc82c1f24.003.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 8:25PM CDT until July 2 at 1:00PM CDT by NWS Lincoln IL",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T20:25:00-05:00",
-            "expires": "2026-06-27T12:30:00-05:00",
+            "effective": "2026-06-27T20:45:00-05:00",
+            "expires": "2026-06-28T12:45:00-05:00",
             "areaDesc": "Lawrence, IL",
-            "id": "urn:oid:2.49.0.1.840.0.63c76317218f336015b4a098c24de88091a23751.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.bc0dfc384d0b57913626ef8d69b3a3ee027075d3.001.1",
             "source": "nws_alert"
           }
         ],
@@ -1186,7 +1268,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "17103": {
       "fips": "17103",
@@ -1250,7 +1332,19 @@
       "name": "McDonough County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Benton; Linn; Iowa; Johnson; Cedar; Muscatine; Scott; Keokuk; Washington; Louisa; Jefferson; Henry; Des Moines; Van Buren; Lee; Rock Island; Mercer; Henderson; Warren; Hancock; McDonough; Scotland; Clark",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.002.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1262,7 +1356,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17111": {
       "fips": "17111",
@@ -1345,7 +1439,19 @@
       "name": "Madison County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 2:00AM CDT until July 3 at 12:00AM CDT by NWS St Louis MO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T02:00:00-05:00",
+            "expires": "2026-06-28T17:00:00-05:00",
+            "areaDesc": "Madison; St. Clair; Monroe; St. Charles; St. Louis; St. Louis City; Jefferson",
+            "id": "urn:oid:2.49.0.1.840.0.56c3c88f7d62cee72c952b3ab4c8730c9d0b1285.002.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1357,7 +1463,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17121": {
       "fips": "17121",
@@ -1386,13 +1492,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:00PM CDT until June 29 at 1:00AM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 9:13PM CDT until June 29 at 1:00AM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:00:00-05:00",
-            "expires": "2026-06-27T13:00:00-05:00",
+            "effective": "2026-06-27T21:13:00-05:00",
+            "expires": "2026-06-28T13:15:00-05:00",
             "areaDesc": "Marshall, IL; Putnam, IL",
-            "id": "urn:oid:2.49.0.1.840.0.684b8677bddc815c94619a8d2d599028a0b212c2.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.3d4b5282a2202bb6709597731914256aaccc9ebf.001.1",
             "source": "nws_alert"
           }
         ],
@@ -1417,13 +1523,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:00PM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 9:13PM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:00:00-05:00",
-            "expires": "2026-06-27T13:00:00-05:00",
+            "effective": "2026-06-27T21:13:00-05:00",
+            "expires": "2026-06-28T13:15:00-05:00",
             "areaDesc": "Cass, IL; Fulton, IL; Mason, IL",
-            "id": "urn:oid:2.49.0.1.840.0.684b8677bddc815c94619a8d2d599028a0b212c2.004.1",
+            "id": "urn:oid:2.49.0.1.840.0.3d4b5282a2202bb6709597731914256aaccc9ebf.004.1",
             "source": "nws_alert"
           }
         ],
@@ -1445,7 +1551,14 @@
       "name": "Massac County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1457,7 +1570,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17129": {
       "fips": "17129",
@@ -1483,7 +1596,19 @@
       "name": "Mercer County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Benton; Linn; Iowa; Johnson; Cedar; Muscatine; Scott; Keokuk; Washington; Louisa; Jefferson; Henry; Des Moines; Van Buren; Lee; Rock Island; Mercer; Henderson; Warren; Hancock; McDonough; Scotland; Clark",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.002.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1495,14 +1620,26 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17133": {
       "fips": "17133",
       "name": "Monroe County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 2:00AM CDT until July 3 at 12:00AM CDT by NWS St Louis MO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T02:00:00-05:00",
+            "expires": "2026-06-28T17:00:00-05:00",
+            "areaDesc": "Madison; St. Clair; Monroe; St. Charles; St. Louis; St. Louis City; Jefferson",
+            "id": "urn:oid:2.49.0.1.840.0.56c3c88f7d62cee72c952b3ab4c8730c9d0b1285.002.1",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1514,7 +1651,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17135": {
       "fips": "17135",
@@ -1543,24 +1680,24 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:00PM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 9:14PM CDT by NWS St Louis MO",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:00:00-05:00",
-            "expires": "2026-06-27T13:00:00-05:00",
-            "areaDesc": "Brown, IL; Cass, IL; Morgan, IL; Schuyler, IL",
-            "id": "urn:oid:2.49.0.1.840.0.684b8677bddc815c94619a8d2d599028a0b212c2.003.1",
+            "effective": "2026-06-27T21:14:00-05:00",
+            "expires": "2026-06-29T09:15:00-05:00",
+            "areaDesc": "Morgan, IL; Pike, IL",
+            "id": "urn:oid:2.49.0.1.840.0.69a31adbf0b33a321647aeff53d815bed394dd9a.002.1",
             "source": "nws_alert"
           },
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 8:59PM CDT by NWS St Louis MO",
+            "headline": "Flood Warning issued June 27 at 9:13PM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T20:59:00-05:00",
-            "expires": "2026-06-28T09:00:00-05:00",
-            "areaDesc": "Morgan, IL; Pike, IL",
-            "id": "urn:oid:2.49.0.1.840.0.2d555301cd203edf1d9689badab9f0c2e591ca87.001.1",
+            "effective": "2026-06-27T21:13:00-05:00",
+            "expires": "2026-06-28T13:15:00-05:00",
+            "areaDesc": "Brown, IL; Cass, IL; Morgan, IL; Schuyler, IL",
+            "id": "urn:oid:2.49.0.1.840.0.3d4b5282a2202bb6709597731914256aaccc9ebf.003.1",
             "source": "nws_alert"
           }
         ],
@@ -1623,13 +1760,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:00PM CDT until July 2 at 1:00PM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 9:13PM CDT until July 2 at 10:00AM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:00:00-05:00",
-            "expires": "2026-06-27T13:00:00-05:00",
+            "effective": "2026-06-27T21:13:00-05:00",
+            "expires": "2026-06-28T13:15:00-05:00",
             "areaDesc": "Peoria, IL; Tazewell, IL; Woodford, IL",
-            "id": "urn:oid:2.49.0.1.840.0.684b8677bddc815c94619a8d2d599028a0b212c2.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.3d4b5282a2202bb6709597731914256aaccc9ebf.002.1",
             "source": "nws_alert"
           }
         ],
@@ -1651,7 +1788,14 @@
       "name": "Perry County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1663,7 +1807,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17147": {
       "fips": "17147",
@@ -1692,24 +1836,24 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 8:59PM CDT by NWS St Louis MO",
+            "headline": "Flood Warning issued June 27 at 9:14PM CDT by NWS St Louis MO",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T20:59:00-05:00",
-            "expires": "2026-06-28T09:00:00-05:00",
+            "effective": "2026-06-27T21:14:00-05:00",
+            "expires": "2026-06-29T09:15:00-05:00",
             "areaDesc": "Pike, IL; Scott, IL",
-            "id": "urn:oid:2.49.0.1.840.0.2d555301cd203edf1d9689badab9f0c2e591ca87.003.1",
+            "id": "urn:oid:2.49.0.1.840.0.69a31adbf0b33a321647aeff53d815bed394dd9a.004.1",
             "source": "nws_alert"
           },
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 8:59PM CDT by NWS St Louis MO",
+            "headline": "Flood Warning issued June 27 at 9:14PM CDT by NWS St Louis MO",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T20:59:00-05:00",
-            "expires": "2026-06-28T09:00:00-05:00",
+            "effective": "2026-06-27T21:14:00-05:00",
+            "expires": "2026-06-29T09:15:00-05:00",
             "areaDesc": "Morgan, IL; Pike, IL",
-            "id": "urn:oid:2.49.0.1.840.0.2d555301cd203edf1d9689badab9f0c2e591ca87.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.69a31adbf0b33a321647aeff53d815bed394dd9a.002.1",
             "source": "nws_alert"
           }
         ],
@@ -1731,7 +1875,14 @@
       "name": "Pope County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1743,14 +1894,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17153": {
       "fips": "17153",
       "name": "Pulaski County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1762,7 +1920,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17155": {
       "fips": "17155",
@@ -1771,25 +1929,36 @@
       "alerts": {
         "weather": [
           {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:16PM CDT until June 29 at 7:00AM CDT by NWS Chicago IL",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
             "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T21:16:00-05:00",
-            "expires": "2026-06-27T11:15:00-05:00",
-            "areaDesc": "Bureau, IL; La Salle, IL; Putnam, IL",
-            "id": "urn:oid:2.49.0.1.840.0.97aaa1e0edab06567f351fc816c5b897fd3b63de.001.1",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Buchanan; Delaware; Dubuque; Jones; Jackson; Clinton; Jo Daviess; Stephenson; Carroll; Whiteside; Henry; Bureau; Putnam",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.001.2",
             "source": "nws_alert"
           },
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:00PM CDT until June 29 at 1:00AM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 9:18PM CDT until June 29 at 4:00AM CDT by NWS Chicago IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:00:00-05:00",
-            "expires": "2026-06-27T13:00:00-05:00",
+            "effective": "2026-06-27T21:18:00-05:00",
+            "expires": "2026-06-28T11:30:00-05:00",
+            "areaDesc": "Bureau, IL; La Salle, IL; Putnam, IL",
+            "id": "urn:oid:2.49.0.1.840.0.3cd1ed642a4bf782dfe4104e895ec0c8e74fd547.001.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 27 at 9:13PM CDT until June 29 at 1:00AM CDT by NWS Lincoln IL",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T21:13:00-05:00",
+            "expires": "2026-06-28T13:15:00-05:00",
             "areaDesc": "Marshall, IL; Putnam, IL",
-            "id": "urn:oid:2.49.0.1.840.0.684b8677bddc815c94619a8d2d599028a0b212c2.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.3d4b5282a2202bb6709597731914256aaccc9ebf.001.1",
             "source": "nws_alert"
           }
         ],
@@ -1804,14 +1973,26 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 3
     },
     "17157": {
       "fips": "17157",
       "name": "Randolph County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 2:00AM CDT until July 3 at 12:00AM CDT by NWS St Louis MO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T02:00:00-05:00",
+            "expires": "2026-06-28T17:00:00-05:00",
+            "areaDesc": "Clinton; Washington; Randolph; Warren; Franklin; Ste. Genevieve",
+            "id": "urn:oid:2.49.0.1.840.0.56c3c88f7d62cee72c952b3ab4c8730c9d0b1285.001.2",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -1823,7 +2004,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17159": {
       "fips": "17159",
@@ -1833,13 +2014,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:04PM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 8:44PM CDT until July 2 at 11:48PM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:04:00-05:00",
-            "expires": "2026-06-27T13:15:00-05:00",
+            "effective": "2026-06-27T20:44:00-05:00",
+            "expires": "2026-06-28T12:45:00-05:00",
             "areaDesc": "Clay, IL; Richland, IL",
-            "id": "urn:oid:2.49.0.1.840.0.a40fec57d146ec901e931a407724e7e50db7fd58.001.1",
+            "id": "urn:oid:2.49.0.1.840.0.f4fd3d0707ae2989e4e1a51fb5ee3bc9783a77b3.001.1",
             "source": "nws_alert"
           }
         ],
@@ -1861,50 +2042,17 @@
       "name": "Rock Island County",
       "state": "IL",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "17163": {
-      "fips": "17163",
-      "name": "St. Clair County",
-      "state": "IL",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "17165": {
-      "fips": "17165",
-      "name": "Saline County",
-      "state": "IL",
-      "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Benton; Linn; Iowa; Johnson; Cedar; Muscatine; Scott; Keokuk; Washington; Louisa; Jefferson; Henry; Des Moines; Van Buren; Lee; Rock Island; Mercer; Henderson; Warren; Hancock; McDonough; Scotland; Clark",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.002.1",
+            "source": "nws_alert"
           }
         ],
         "bank_robbery": [],
@@ -1919,6 +2067,56 @@
         "disease": []
       },
       "alert_count": 1
+    },
+    "17163": {
+      "fips": "17163",
+      "name": "St. Clair County",
+      "state": "IL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 2:00AM CDT until July 3 at 12:00AM CDT by NWS St Louis MO",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T02:00:00-05:00",
+            "expires": "2026-06-28T17:00:00-05:00",
+            "areaDesc": "Madison; St. Clair; Monroe; St. Charles; St. Louis; St. Louis City; Jefferson",
+            "id": "urn:oid:2.49.0.1.840.0.56c3c88f7d62cee72c952b3ab4c8730c9d0b1285.002.1",
+            "source": "nws_alert"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "17165": {
+      "fips": "17165",
+      "name": "Saline County",
+      "state": "IL",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
     },
     "17167": {
       "fips": "17167",
@@ -1947,13 +2145,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:00PM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 9:13PM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:00:00-05:00",
-            "expires": "2026-06-27T13:00:00-05:00",
+            "effective": "2026-06-27T21:13:00-05:00",
+            "expires": "2026-06-28T13:15:00-05:00",
             "areaDesc": "Brown, IL; Cass, IL; Morgan, IL; Schuyler, IL",
-            "id": "urn:oid:2.49.0.1.840.0.684b8677bddc815c94619a8d2d599028a0b212c2.003.1",
+            "id": "urn:oid:2.49.0.1.840.0.3d4b5282a2202bb6709597731914256aaccc9ebf.003.1",
             "source": "nws_alert"
           }
         ],
@@ -1978,13 +2176,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 8:59PM CDT by NWS St Louis MO",
+            "headline": "Flood Warning issued June 27 at 9:14PM CDT by NWS St Louis MO",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T20:59:00-05:00",
-            "expires": "2026-06-28T09:00:00-05:00",
+            "effective": "2026-06-27T21:14:00-05:00",
+            "expires": "2026-06-29T09:15:00-05:00",
             "areaDesc": "Pike, IL; Scott, IL",
-            "id": "urn:oid:2.49.0.1.840.0.2d555301cd203edf1d9689badab9f0c2e591ca87.003.1",
+            "id": "urn:oid:2.49.0.1.840.0.69a31adbf0b33a321647aeff53d815bed394dd9a.004.1",
             "source": "nws_alert"
           }
         ],
@@ -2044,7 +2242,19 @@
       "name": "Stephenson County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Buchanan; Delaware; Dubuque; Jones; Jackson; Clinton; Jo Daviess; Stephenson; Carroll; Whiteside; Henry; Bureau; Putnam",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.001.2",
+            "source": "nws_alert"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2056,7 +2266,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17179": {
       "fips": "17179",
@@ -2066,13 +2276,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:00PM CDT until July 2 at 1:00PM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 9:13PM CDT until July 2 at 10:00AM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:00:00-05:00",
-            "expires": "2026-06-27T13:00:00-05:00",
+            "effective": "2026-06-27T21:13:00-05:00",
+            "expires": "2026-06-28T13:15:00-05:00",
             "areaDesc": "Peoria, IL; Tazewell, IL; Woodford, IL",
-            "id": "urn:oid:2.49.0.1.840.0.684b8677bddc815c94619a8d2d599028a0b212c2.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.3d4b5282a2202bb6709597731914256aaccc9ebf.002.1",
             "source": "nws_alert"
           }
         ],
@@ -2094,7 +2304,14 @@
       "name": "Union County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2106,7 +2323,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17183": {
       "fips": "17183",
@@ -2134,47 +2351,25 @@
       "alerts": {
         "weather": [
           {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued June 27 at 3:23AM CDT until June 27 at 6:00AM CDT by NWS Paducah KY",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-27T03:23:00-05:00",
-            "expires": "2026-06-27T06:00:00-05:00",
-            "areaDesc": "Wabash, IL; Gibson, IN",
-            "id": "urn:oid:2.49.0.1.840.0.a7303f2025b9cfc201b3d1cc75e464dd56762fc4.001.1",
-            "source": "nws_alert"
-          },
-          {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:28PM CDT until July 1 at 5:00PM CDT by NWS Paducah KY",
+            "headline": "Flood Warning issued June 27 at 9:34PM EDT until July 3 at 9:30AM EDT by NWS Indianapolis IN",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:28:00-05:00",
-            "expires": "2026-06-27T23:30:00-05:00",
-            "areaDesc": "Gallatin, IL; Wabash, IL; White, IL; Gibson, IN; Posey, IN",
-            "id": "urn:oid:2.49.0.1.840.0.6b7fae72f6688427fc73cc9f3a1668f3db56f57f.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:54PM EDT until June 29 at 4:00AM EDT by NWS Indianapolis IN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T21:54:00-04:00",
-            "expires": "2026-06-27T14:00:00-04:00",
-            "areaDesc": "Lawrence, IL; Wabash, IL; Knox, IN",
-            "id": "urn:oid:2.49.0.1.840.0.53ae89431bc3ed7016e03b3d7a5ca68fc82c1f24.003.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:54PM EDT until July 1 at 3:30AM EDT by NWS Indianapolis IN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T21:54:00-04:00",
-            "expires": "2026-06-27T14:00:00-04:00",
+            "effective": "2026-06-27T21:34:00-04:00",
+            "expires": "2026-06-28T14:00:00-04:00",
             "areaDesc": "Edwards, IL; Gallatin, IL; Wabash, IL; White, IL; Gibson, IN; Knox, IN; Posey, IN",
-            "id": "urn:oid:2.49.0.1.840.0.53ae89431bc3ed7016e03b3d7a5ca68fc82c1f24.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.2b10b7ab7633ea4de0987687aed75e531551d850.002.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 27 at 6:33PM CDT until July 2 at 5:00PM CDT by NWS Paducah KY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T18:33:00-05:00",
+            "expires": "2026-06-28T20:45:00-05:00",
+            "areaDesc": "Gallatin, IL; Wabash, IL; White, IL; Gibson, IN; Posey, IN",
+            "id": "urn:oid:2.49.0.1.840.0.068d478ddbd0c3dce1873d17149d982849c347e4.001.1",
             "source": "nws_alert"
           }
         ],
@@ -2189,61 +2384,23 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 2
     },
     "17187": {
       "fips": "17187",
       "name": "Warren County",
       "state": "IL",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "17189": {
-      "fips": "17189",
-      "name": "Washington County",
-      "state": "IL",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "17191": {
-      "fips": "17191",
-      "name": "Wayne County",
-      "state": "IL",
-      "alerts": {
         "weather": [
           {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:38PM CDT until July 3 at 7:00PM CDT by NWS Paducah KY",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
             "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T21:38:00-05:00",
-            "expires": "2026-06-27T23:45:00-05:00",
-            "areaDesc": "Gallatin, IL; Wayne, IL; White, IL",
-            "id": "urn:oid:2.49.0.1.840.0.ce99cbe6b074aa99d0d2c86600ebab40bc1176eb.001.1",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Benton; Linn; Iowa; Johnson; Cedar; Muscatine; Scott; Keokuk; Washington; Louisa; Jefferson; Henry; Des Moines; Van Buren; Lee; Rock Island; Mercer; Henderson; Warren; Hancock; McDonough; Scotland; Clark",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.002.1",
             "source": "nws_alert"
           }
         ],
@@ -2260,43 +2417,21 @@
       },
       "alert_count": 1
     },
-    "17193": {
-      "fips": "17193",
-      "name": "White County",
+    "17189": {
+      "fips": "17189",
+      "name": "Washington County",
       "state": "IL",
       "alerts": {
         "weather": [
           {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:38PM CDT until July 3 at 7:00PM CDT by NWS Paducah KY",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 2:00AM CDT until July 3 at 12:00AM CDT by NWS St Louis MO",
             "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T21:38:00-05:00",
-            "expires": "2026-06-27T23:45:00-05:00",
-            "areaDesc": "Gallatin, IL; Wayne, IL; White, IL",
-            "id": "urn:oid:2.49.0.1.840.0.ce99cbe6b074aa99d0d2c86600ebab40bc1176eb.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:28PM CDT until July 1 at 5:00PM CDT by NWS Paducah KY",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T21:28:00-05:00",
-            "expires": "2026-06-27T23:30:00-05:00",
-            "areaDesc": "Gallatin, IL; Wabash, IL; White, IL; Gibson, IN; Posey, IN",
-            "id": "urn:oid:2.49.0.1.840.0.6b7fae72f6688427fc73cc9f3a1668f3db56f57f.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:54PM EDT until July 1 at 3:30AM EDT by NWS Indianapolis IN",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-06-26T21:54:00-04:00",
-            "expires": "2026-06-27T14:00:00-04:00",
-            "areaDesc": "Edwards, IL; Gallatin, IL; Wabash, IL; White, IL; Gibson, IN; Knox, IN; Posey, IN",
-            "id": "urn:oid:2.49.0.1.840.0.53ae89431bc3ed7016e03b3d7a5ca68fc82c1f24.002.1",
+            "urgency": "Expected",
+            "effective": "2026-06-28T02:00:00-05:00",
+            "expires": "2026-06-28T17:00:00-05:00",
+            "areaDesc": "Clinton; Washington; Randolph; Warren; Franklin; Ste. Genevieve",
+            "id": "urn:oid:2.49.0.1.840.0.56c3c88f7d62cee72c952b3ab4c8730c9d0b1285.001.2",
             "source": "nws_alert"
           }
         ],
@@ -2311,11 +2446,11 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 1
     },
-    "17195": {
-      "fips": "17195",
-      "name": "Whiteside County",
+    "17191": {
+      "fips": "17191",
+      "name": "Wayne County",
       "state": "IL",
       "alerts": {
         "weather": [],
@@ -2331,6 +2466,79 @@
         "disease": []
       },
       "alert_count": 0
+    },
+    "17193": {
+      "fips": "17193",
+      "name": "White County",
+      "state": "IL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 27 at 9:34PM EDT until July 3 at 9:30AM EDT by NWS Indianapolis IN",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T21:34:00-04:00",
+            "expires": "2026-06-28T14:00:00-04:00",
+            "areaDesc": "Edwards, IL; Gallatin, IL; Wabash, IL; White, IL; Gibson, IN; Knox, IN; Posey, IN",
+            "id": "urn:oid:2.49.0.1.840.0.2b10b7ab7633ea4de0987687aed75e531551d850.002.1",
+            "source": "nws_alert"
+          },
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued June 27 at 6:33PM CDT until July 2 at 5:00PM CDT by NWS Paducah KY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-06-27T18:33:00-05:00",
+            "expires": "2026-06-28T20:45:00-05:00",
+            "areaDesc": "Gallatin, IL; Wabash, IL; White, IL; Gibson, IN; Posey, IN",
+            "id": "urn:oid:2.49.0.1.840.0.068d478ddbd0c3dce1873d17149d982849c347e4.001.1",
+            "source": "nws_alert"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2
+    },
+    "17195": {
+      "fips": "17195",
+      "name": "Whiteside County",
+      "state": "IL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued June 28 at 1:21AM CDT until June 30 at 9:00PM CDT by NWS Quad Cities IA IL",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-06-28T01:21:00-05:00",
+            "expires": "2026-06-28T09:30:00-05:00",
+            "areaDesc": "Buchanan; Delaware; Dubuque; Jones; Jackson; Clinton; Jo Daviess; Stephenson; Carroll; Whiteside; Henry; Bureau; Putnam",
+            "id": "urn:oid:2.49.0.1.840.0.590923ffbcd4ec73bdf262b7f4cda9b50ebd6f53.001.2",
+            "source": "nws_alert"
+          }
+        ],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
     },
     "17197": {
       "fips": "17197",
@@ -2356,7 +2564,14 @@
       "name": "Williamson County",
       "state": "IL",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -2368,7 +2583,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "17201": {
       "fips": "17201",
@@ -2397,13 +2612,13 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued June 26 at 9:00PM CDT until July 2 at 1:00PM CDT by NWS Lincoln IL",
+            "headline": "Flood Warning issued June 27 at 9:13PM CDT until July 2 at 10:00AM CDT by NWS Lincoln IL",
             "severity": "Severe",
             "urgency": "Immediate",
-            "effective": "2026-06-26T21:00:00-05:00",
-            "expires": "2026-06-27T13:00:00-05:00",
+            "effective": "2026-06-27T21:13:00-05:00",
+            "expires": "2026-06-28T13:15:00-05:00",
             "areaDesc": "Peoria, IL; Tazewell, IL; Woodford, IL",
-            "id": "urn:oid:2.49.0.1.840.0.684b8677bddc815c94619a8d2d599028a0b212c2.002.1",
+            "id": "urn:oid:2.49.0.1.840.0.3d4b5282a2202bb6709597731914256aaccc9ebf.002.1",
             "source": "nws_alert"
           }
         ],
