@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-06-29T12:16:22.145733+00:00",
-  "date": "2026-06-29",
+  "generated_at": "2026-06-30T10:45:28.275366+00:00",
+  "date": "2026-06-30",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,20 +11,20 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 607
+      "counties_with_alerts": 928
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 2639,
-      "counties_over_threshold": 423
+      "counties_queried": 2309,
+      "counties_over_threshold": 316
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 10,
+      "counties_with_matches": 17,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 21,
-        "utility_outage": 6,
+        "protest": 27,
+        "utility_outage": 3,
         "transit_disruption": 0
       }
     },
@@ -40,20 +40,20 @@
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 0
+      "counties_with_alerts": 24
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 6,
+      "items_total": 5,
       "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 6
+          "items": 5
         },
         {
           "id": "mta-subway",
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 1
+      "items": 0
     },
     "disease_wastewater": {
       "status": "ok",
@@ -140,20 +140,24 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 1,
+      "counties_with_alerts": 1
     }
   },
   "cdc_han": [],
-  "who_don": [
-    {
-      "title": "WHO urges scale up of newborn screening to improve early detection and care of birth defects",
-      "url": "https://www.who.int/news/item/23-06-2026-who-urges-scale-up-of-newborn-screening-to-improve-early-detection-and-care-of-birth-defects",
-      "published": "Tue, 23 Jun 2026 10:01:11 Z",
-      "summary": "<p>The World Health Organization (WHO) today calls on countries to expand newborn screening for birth defects, highlighting how early detection and treatment can save lives and reduce lifelong disability for millions of children.</p><p>A new WHO report, <a href=\"https://www.who.int/publications/i/item/9789240122086\">Strengthening capacity for newborn screening, diagnosis and management of birth defects</a>, identifies newborn screening as an important opportunity to accelerate progress in child ",
-      "source": "WHO News (outbreak-filtered)"
-    }
-  ],
+  "who_don": [],
   "amtrak_advisories": [],
-  "faa_advisories": []
+  "faa_advisories": [
+    {
+      "kind": "airport_closure",
+      "code": "HNL",
+      "name": "Daniel K. Inouye Intl Honolulu",
+      "city": "Honolulu",
+      "state": "HI",
+      "reason": "!HNL 06/658 HNL AD AP CLSD TO F-35 VTOL 2606291921-2612301800",
+      "start": "Jun 29 at 19:21 UTC.",
+      "reopen": "Dec 30 at 18:00 UTC.",
+      "source": "FAA NAS Status"
+    }
+  ]
 }
