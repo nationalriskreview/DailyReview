@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-07-06T11:54:01.003794+00:00",
-  "date": "2026-07-06",
+  "generated_at": "2026-07-07T10:39:56.451379+00:00",
+  "date": "2026-07-07",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,31 +11,31 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 68
+      "counties_with_alerts": 111
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3165,
-      "counties_over_threshold": 160
+      "counties_queried": 3127,
+      "counties_over_threshold": 156
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 47,
+      "counties_with_matches": 22,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 17,
-        "utility_outage": 46,
-        "transit_disruption": 15
+        "protest": 14,
+        "utility_outage": 29,
+        "transit_disruption": 1
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 35,
+      "counties_with_matches": 7,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 40,
-        "transit_disruption": 7
+        "utility_outage": 7,
+        "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
@@ -46,8 +46,8 @@
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 3,
-      "counties_with_alerts": 15,
+      "items_total": 2,
+      "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
@@ -113,13 +113,13 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 0
+      "counties_with_alerts": 109
     },
     "disease_cdc_han": {
       "status": "ok",
