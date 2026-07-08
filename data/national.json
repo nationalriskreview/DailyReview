@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-07-07T10:39:56.451379+00:00",
-  "date": "2026-07-07",
+  "generated_at": "2026-07-08T09:44:58.148526+00:00",
+  "date": "2026-07-08",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,36 +11,36 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 111
+      "counties_with_alerts": 110
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3127,
-      "counties_over_threshold": 156
+      "counties_queried": 3126,
+      "counties_over_threshold": 210
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 22,
+      "counties_with_matches": 21,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 14,
-        "utility_outage": 29,
-        "transit_disruption": 1
+        "protest": 3,
+        "utility_outage": 13,
+        "transit_disruption": 7
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 7,
+      "counties_with_matches": 12,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 7,
+        "utility_outage": 12,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 0
+      "counties_with_alerts": 98
     },
     "transit": {
       "status": "ok",
@@ -119,7 +119,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 109
+      "counties_with_alerts": 110
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 1
+      "national_items": 2,
+      "counties_with_alerts": 17
     }
   },
   "cdc_han": [],
@@ -163,6 +163,17 @@
   ],
   "amtrak_advisories": [],
   "faa_advisories": [
+    {
+      "kind": "airport_closure",
+      "code": "LGA",
+      "name": "LaGuardia",
+      "city": "New York",
+      "state": "NY",
+      "reason": "!LGA 07/110 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2607080607-2607081000",
+      "start": "Jul 08 at 06:07 UTC.",
+      "reopen": "Jul 08 at 10:00 UTC.",
+      "source": "FAA NAS Status"
+    },
     {
       "kind": "airport_closure",
       "code": "HNL",
