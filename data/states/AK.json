@@ -1,10 +1,10 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-07-11T09:06:22.128209+00:00",
-  "date": "2026-07-11",
+  "generated_at": "2026-07-12T09:22:59.403949+00:00",
+  "date": "2026-07-12",
   "state": "AK",
   "counties_total": 30,
-  "counties_with_alerts": 2,
+  "counties_with_alerts": 1,
   "counties": {
     "02013": {
       "fips": "02013",
@@ -125,19 +125,7 @@
       "name": "Copper River Census Area",
       "state": "AK",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 11 at 12:27AM AKDT until July 11 at 7:00PM AKDT by NWS Anchorage AK",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-11T00:27:00-08:00",
-            "expires": "2026-07-11T19:00:00-08:00",
-            "areaDesc": "Central Copper Valley; Southern Copper Valley; McCarthy",
-            "id": "urn:oid:2.49.0.1.840.0.97a5cba39ed9ab73ac281ff4b98ded7b6e79f37d.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -149,7 +137,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "02068": {
       "fips": "02068",
@@ -574,24 +562,26 @@
       "name": "Yukon-Koyukuk Census Area",
       "state": "AK",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 10:21PM AKDT until July 11 at 11:00PM AKDT by NWS Fairbanks AK",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T22:21:00-08:00",
-            "expires": "2026-07-11T16:00:00-08:00",
-            "areaDesc": "Yukon Flats",
-            "id": "urn:oid:2.49.0.1.840.0.c7fd3e608d61a32271f40bee573233d2f3b316e9.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire Ishtalitna, Yukon-Koyukuk, Alaska",
+            "id": "EONET_21247",
+            "category": "wildfire",
+            "date": "2026-07-04T17:39:00Z",
+            "lat": 65.8547,
+            "lon": -151.5748,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-AKTAD-000354"
+            ],
+            "distance_miles": 33.1,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],

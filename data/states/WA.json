@@ -1,29 +1,17 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-07-11T09:06:22.128209+00:00",
-  "date": "2026-07-11",
+  "generated_at": "2026-07-12T09:22:59.403949+00:00",
+  "date": "2026-07-12",
   "state": "WA",
   "counties_total": 39,
-  "counties_with_alerts": 9,
+  "counties_with_alerts": 11,
   "counties": {
     "53001": {
       "fips": "53001",
       "name": "Adams County",
       "state": "WA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 11:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Waterville Plateau; Western Columbia Basin",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -35,7 +23,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "53003": {
       "fips": "53003",
@@ -66,38 +54,21 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "53007": {
-      "fips": "53007",
-      "name": "Chelan County",
-      "state": "WA",
-      "alerts": {
-        "weather": [
+        "wildfires": [
           {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 11:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Waterville Plateau; Western Columbia Basin",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.001.1",
-            "source": "nws_alert"
+            "title": "Wildfire LAMBDIN, Walla Walla, Washington",
+            "id": "EONET_21037",
+            "category": "wildfire",
+            "date": "2026-06-29T14:11:00Z",
+            "lat": 46.0516,
+            "lon": -118.8726,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WAMCR-260297"
+            ],
+            "distance_miles": 33.2,
+            "threat_level": "Vicinity"
           }
         ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -105,6 +76,52 @@
         "disease": []
       },
       "alert_count": 1
+    },
+    "53007": {
+      "fips": "53007",
+      "name": "Chelan County",
+      "state": "WA",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [
+          {
+            "title": "Wildfire NAVARRE COULEE, Chelan, Washington",
+            "id": "EONET_21010",
+            "category": "wildfire",
+            "date": "2026-07-05T02:01:00Z",
+            "lat": 47.7732,
+            "lon": -120.1852,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WASES-260329"
+            ],
+            "distance_miles": 21.0,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Wildfire CHELAN HILLS, Douglas, Washington",
+            "id": "EONET_21000",
+            "category": "wildfire",
+            "date": "2026-07-04T08:58:00Z",
+            "lat": 47.7996,
+            "lon": -119.9766,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WASES-260321"
+            ],
+            "distance_miles": 30.1,
+            "threat_level": "Vicinity"
+          }
+        ],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2
     },
     "53009": {
       "fips": "53009",
@@ -154,14 +171,28 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire LAMBDIN, Walla Walla, Washington",
+            "id": "EONET_21037",
+            "category": "wildfire",
+            "date": "2026-06-29T14:11:00Z",
+            "lat": 46.0516,
+            "lon": -118.8726,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WAMCR-260297"
+            ],
+            "distance_miles": 48.9,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "53015": {
       "fips": "53015",
@@ -187,88 +218,50 @@
       "name": "Douglas County",
       "state": "WA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 11:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Waterville Plateau; Western Columbia Basin",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 9:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Colville Reservation",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.003.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 9:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Okanogan Valley",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire NAVARRE COULEE, Chelan, Washington",
+            "id": "EONET_21010",
+            "category": "wildfire",
+            "date": "2026-07-05T02:01:00Z",
+            "lat": 47.7732,
+            "lon": -120.1852,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WASES-260329"
+            ],
+            "distance_miles": 22.9,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Wildfire CHELAN HILLS, Douglas, Washington",
+            "id": "EONET_21000",
+            "category": "wildfire",
+            "date": "2026-07-04T08:58:00Z",
+            "lat": 47.7996,
+            "lon": -119.9766,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WASES-260321"
+            ],
+            "distance_miles": 13.7,
+            "threat_level": "Immediate"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "53019": {
       "fips": "53019",
       "name": "Ferry County",
-      "state": "WA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 9:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Colville Reservation",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.003.1",
-            "source": "nws_alert"
-          }
-        ],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
-    },
-    "53021": {
-      "fips": "53021",
-      "name": "Franklin County",
       "state": "WA",
       "alerts": {
         "weather": [],
@@ -284,6 +277,39 @@
         "disease": []
       },
       "alert_count": 0
+    },
+    "53021": {
+      "fips": "53021",
+      "name": "Franklin County",
+      "state": "WA",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [
+          {
+            "title": "Wildfire LAMBDIN, Walla Walla, Washington",
+            "id": "EONET_21037",
+            "category": "wildfire",
+            "date": "2026-06-29T14:11:00Z",
+            "lat": 46.0516,
+            "lon": -118.8726,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WAMCR-260297"
+            ],
+            "distance_miles": 33.6,
+            "threat_level": "Vicinity"
+          }
+        ],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
     },
     "53023": {
       "fips": "53023",
@@ -309,35 +335,39 @@
       "name": "Grant County",
       "state": "WA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 11:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Waterville Plateau; Western Columbia Basin",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 9:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Colville Reservation",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.003.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire RYEGRASS COULEE, Kittitas, Washington",
+            "id": "EONET_21243",
+            "category": "wildfire",
+            "date": "2026-07-08T20:13:00Z",
+            "lat": 46.9491,
+            "lon": -120.0208,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WASES-260359"
+            ],
+            "distance_miles": 31.8,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Wildfire CHELAN HILLS, Douglas, Washington",
+            "id": "EONET_21000",
+            "category": "wildfire",
+            "date": "2026-07-04T08:58:00Z",
+            "lat": 47.7996,
+            "lon": -119.9766,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WASES-260321"
+            ],
+            "distance_miles": 46.9,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -451,14 +481,28 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire RYEGRASS COULEE, Kittitas, Washington",
+            "id": "EONET_21243",
+            "category": "wildfire",
+            "date": "2026-07-08T20:13:00Z",
+            "lat": 46.9491,
+            "lon": -120.0208,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WASES-260359"
+            ],
+            "distance_miles": 33.2,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "53039": {
       "fips": "53039",
@@ -503,19 +547,7 @@
       "name": "Lincoln County",
       "state": "WA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 9:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Colville Reservation",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.003.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -527,7 +559,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "53045": {
       "fips": "53045",
@@ -553,53 +585,46 @@
       "name": "Okanogan County",
       "state": "WA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 11:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Waterville Plateau; Western Columbia Basin",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.001.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 9:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Colville Reservation",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.003.1",
-            "source": "nws_alert"
-          },
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 9:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Okanogan Valley",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.002.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire NAVARRE COULEE, Chelan, Washington",
+            "id": "EONET_21010",
+            "category": "wildfire",
+            "date": "2026-07-05T02:01:00Z",
+            "lat": 47.7732,
+            "lon": -120.1852,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WASES-260329"
+            ],
+            "distance_miles": 35.8,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Wildfire CHELAN HILLS, Douglas, Washington",
+            "id": "EONET_21000",
+            "category": "wildfire",
+            "date": "2026-07-04T08:58:00Z",
+            "lat": 47.7996,
+            "lon": -119.9766,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WASES-260321"
+            ],
+            "distance_miles": 29.6,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 2
     },
     "53049": {
       "fips": "53049",
@@ -772,19 +797,7 @@
       "name": "Stevens County",
       "state": "WA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued July 10 at 6:37PM PDT until July 11 at 9:00PM PDT by NWS Spokane WA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-10T18:37:00-07:00",
-            "expires": "2026-07-11T12:30:00-07:00",
-            "areaDesc": "Colville Reservation",
-            "id": "urn:oid:2.49.0.1.840.0.a1d06606fc57170123d2a88dae9c05afbfb60744.003.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -796,7 +809,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "53067": {
       "fips": "53067",
@@ -846,14 +859,41 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire North Cayuse, Umatilla, Oregon",
+            "id": "EONET_21005",
+            "category": "wildfire",
+            "date": "2026-07-04T18:37:00Z",
+            "lat": 45.6831,
+            "lon": -118.4806,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-OR973S-000206"
+            ],
+            "distance_miles": 39.5,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Wildfire LAMBDIN, Walla Walla, Washington",
+            "id": "EONET_21037",
+            "category": "wildfire",
+            "date": "2026-06-29T14:11:00Z",
+            "lat": 46.0516,
+            "lon": -118.8726,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WAMCR-260297"
+            ],
+            "distance_miles": 23.4,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "53073": {
       "fips": "53073",
@@ -903,14 +943,28 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire RYEGRASS COULEE, Kittitas, Washington",
+            "id": "EONET_21243",
+            "category": "wildfire",
+            "date": "2026-07-08T20:13:00Z",
+            "lat": 46.9491,
+            "lon": -120.0208,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-WASES-260359"
+            ],
+            "distance_miles": 36.1,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     }
   }
 }

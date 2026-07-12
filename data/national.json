@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-07-11T09:06:22.128209+00:00",
-  "date": "2026-07-11",
+  "generated_at": "2026-07-12T09:22:59.403949+00:00",
+  "date": "2026-07-12",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,21 +11,21 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 211
+      "counties_with_alerts": 247
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3012,
-      "counties_over_threshold": 265
+      "counties_queried": 2977,
+      "counties_over_threshold": 93
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 20,
+      "counties_with_matches": 11,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 8,
-        "utility_outage": 16,
-        "transit_disruption": 0
+        "protest": 1,
+        "utility_outage": 11,
+        "transit_disruption": 1
       }
     },
     "llm_filter_gemini": {
@@ -34,13 +34,13 @@
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 10,
+        "utility_outage": 11,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 0
+      "counties_with_alerts": 118
     },
     "transit": {
       "status": "ok",
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 2,
-      "counties_with_alerts": 17
+      "national_items": 3,
+      "counties_with_alerts": 18
     }
   },
   "cdc_han": [],
@@ -162,9 +162,20 @@
       "name": "LaGuardia",
       "city": "New York",
       "state": "NY",
-      "reason": "!LGA 07/179 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2607110706-2607111000",
-      "start": "Jul 11 at 07:06 UTC.",
-      "reopen": "Jul 11 at 10:00 UTC.",
+      "reason": "!LGA 07/181 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2607120531-2607121000",
+      "start": "Jul 12 at 05:31 UTC.",
+      "reopen": "Jul 12 at 10:00 UTC.",
+      "source": "FAA NAS Status"
+    },
+    {
+      "kind": "airport_closure",
+      "code": "SAN",
+      "name": "San Diego Intl",
+      "city": "San Diego",
+      "state": "CA",
+      "reason": "!SAN 07/020 SAN AD AP CLSD 2607120800-2607121300",
+      "start": "Jul 12 at 08:00 UTC.",
+      "reopen": "Jul 12 at 13:00 UTC.",
       "source": "FAA NAS Status"
     },
     {
