@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-07-14T09:24:11.846985+00:00",
-  "date": "2026-07-14",
+  "generated_at": "2026-07-15T09:29:00.385960+00:00",
+  "date": "2026-07-15",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,36 +11,36 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 252
+      "counties_with_alerts": 121
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 2983,
-      "counties_over_threshold": 100
+      "counties_queried": 3103,
+      "counties_over_threshold": 59
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 16,
+      "counties_with_matches": 18,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 24,
-        "utility_outage": 4,
-        "transit_disruption": 0
+        "protest": 20,
+        "utility_outage": 9,
+        "transit_disruption": 4
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 4,
+      "counties_with_matches": 3,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 1,
-        "utility_outage": 3,
-        "transit_disruption": 0
+        "protest": 0,
+        "utility_outage": 1,
+        "transit_disruption": 2
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 128
+      "counties_with_alerts": 121
     },
     "transit": {
       "status": "ok",
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 1
+      "national_items": 2,
+      "counties_with_alerts": 6
     }
   },
   "cdc_han": [],
@@ -156,6 +156,17 @@
   ],
   "amtrak_advisories": [],
   "faa_advisories": [
+    {
+      "kind": "airport_closure",
+      "code": "SNA",
+      "name": "John Wayne / Orange County",
+      "city": "Santa Ana",
+      "state": "CA",
+      "reason": "!SNA 07/023 SNA AD AP CLSD DLY 0630-1315 2607150630-2607181315",
+      "start": "Jul 15 at 06:30 UTC.",
+      "reopen": "Jul 18 at 13:15 UTC.",
+      "source": "FAA NAS Status"
+    },
     {
       "kind": "airport_closure",
       "code": "HNL",
