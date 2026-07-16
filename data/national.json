@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-07-15T09:29:00.385960+00:00",
-  "date": "2026-07-15",
+  "generated_at": "2026-07-16T09:35:21.213079+00:00",
+  "date": "2026-07-16",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,31 +11,31 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 121
+      "counties_with_alerts": 111
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3103,
-      "counties_over_threshold": 59
+      "counties_queried": 3112,
+      "counties_over_threshold": 69
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 18,
+      "counties_with_matches": 14,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 20,
-        "utility_outage": 9,
-        "transit_disruption": 4
+        "protest": 15,
+        "utility_outage": 10,
+        "transit_disruption": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 3,
+      "counties_with_matches": 8,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 0,
-        "utility_outage": 1,
-        "transit_disruption": 2
+        "protest": 3,
+        "utility_outage": 6,
+        "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
@@ -127,7 +127,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 1
+      "items": 2
     },
     "disease_wastewater": {
       "status": "ok",
@@ -140,17 +140,24 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 2,
-      "counties_with_alerts": 6
+      "national_items": 3,
+      "counties_with_alerts": 22
     }
   },
   "cdc_han": [],
   "who_don": [
     {
-      "title": "WHO calls for urgent action as new cancer cases are projected to nearly double by 2050",
-      "url": "https://www.who.int/news/item/08-07-2026-who-calls-for-urgent-action-as-new-cancer-cases-are-projected-to-nearly-double-by-2050",
-      "published": "Wed, 08 Jul 2026 11:51:29 Z",
-      "summary": "Millions of people are facing physical, emotional and financial toll of cancer, a disease that claims more than 26 000 lives every day, according to a report released today by the World Health Organization (WHO). With an estimated 20.6 million new cases and close to 10 million deaths annually, cancer remains the second leading cause of death globally, after cardiovascular disease.",
+      "title": "New WHO guidelines: up to 45% of dementia risk could be prevented or delayed",
+      "url": "https://www.who.int/news/item/15-07-2026-new-who-guidelines--up-to-45--of-dementia-risk-could-be-prevented-or-delayed",
+      "published": "Wed, 15 Jul 2026 12:15:58 Z",
+      "summary": "<p>The World Health Organization (WHO) today released <a href=\"https://www.who.int/publications/i/item/9789240123557\">updated guidelines on reducing the risk of cognitive decline and dementia</a>, providing countries with evidence-based recommendations to help prevent or delay the onset of dementia across the life course. </p><p><span style=\"background-color: transparent; text-align: inherit; white-space: inherit;\">Dementia is a condition caused by brain diseases and affects memory, thinking and",
+      "source": "WHO News (outbreak-filtered)"
+    },
+    {
+      "title": "Global childhood immunization coverage inches forward despite conflict and hesitancy – UNICEF, WHO",
+      "url": "https://www.who.int/news/item/15-07-2026-global-childhood-immunization-coverage-inches-forward-despite-conflict-and-hesitancy---unicef--who",
+      "published": "Wed, 15 Jul 2026 00:01:54 Z",
+      "summary": "<p>In 2025, 90% of infants globally &ndash; or nearly 116 million &ndash; received at least one dose of a diphtheria, tetanus and pertussis (DTP) vaccine, and 85% &ndash; or 110 million &ndash; completed the full three-dose series, according to the annual WHO-UNICEF Estimates of National Immunization Coverage (WUENIC) released today.&nbsp;&nbsp;</p><p>While both indicators rose by one percentage point from the previous year, global coverage remains one point below 2019 levels &ndash; hovering wi",
       "source": "WHO News (outbreak-filtered)"
     }
   ],
@@ -165,6 +172,17 @@
       "reason": "!SNA 07/023 SNA AD AP CLSD DLY 0630-1315 2607150630-2607181315",
       "start": "Jul 15 at 06:30 UTC.",
       "reopen": "Jul 18 at 13:15 UTC.",
+      "source": "FAA NAS Status"
+    },
+    {
+      "kind": "airport_closure",
+      "code": "LGA",
+      "name": "LaGuardia",
+      "city": "New York",
+      "state": "NY",
+      "reason": "!LGA 07/261 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2607160617-2607161000",
+      "start": "Jul 16 at 06:17 UTC.",
+      "reopen": "Jul 16 at 10:00 UTC.",
       "source": "FAA NAS Status"
     },
     {
