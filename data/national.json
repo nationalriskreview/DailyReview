@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-07-16T09:35:21.213079+00:00",
-  "date": "2026-07-16",
+  "generated_at": "2026-07-17T09:27:21.644656+00:00",
+  "date": "2026-07-17",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,36 +11,36 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 111
+      "counties_with_alerts": 124
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3112,
-      "counties_over_threshold": 69
+      "counties_queried": 3119,
+      "counties_over_threshold": 150
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 14,
+      "counties_with_matches": 9,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 15,
-        "utility_outage": 10,
-        "transit_disruption": 2
+        "protest": 16,
+        "utility_outage": 3,
+        "transit_disruption": 3
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 8,
+      "counties_with_matches": 2,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 3,
-        "utility_outage": 6,
+        "protest": 0,
+        "utility_outage": 2,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 121
+      "counties_with_alerts": 155
     },
     "transit": {
       "status": "ok",
@@ -165,6 +165,17 @@
   "faa_advisories": [
     {
       "kind": "airport_closure",
+      "code": "LGA",
+      "name": "LaGuardia",
+      "city": "New York",
+      "state": "NY",
+      "reason": "!LGA 07/288 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2607170543-2607171000",
+      "start": "Jul 17 at 05:43 UTC.",
+      "reopen": "Jul 17 at 10:00 UTC.",
+      "source": "FAA NAS Status"
+    },
+    {
+      "kind": "airport_closure",
       "code": "SNA",
       "name": "John Wayne / Orange County",
       "city": "Santa Ana",
@@ -172,17 +183,6 @@
       "reason": "!SNA 07/023 SNA AD AP CLSD DLY 0630-1315 2607150630-2607181315",
       "start": "Jul 15 at 06:30 UTC.",
       "reopen": "Jul 18 at 13:15 UTC.",
-      "source": "FAA NAS Status"
-    },
-    {
-      "kind": "airport_closure",
-      "code": "LGA",
-      "name": "LaGuardia",
-      "city": "New York",
-      "state": "NY",
-      "reason": "!LGA 07/261 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2607160617-2607161000",
-      "start": "Jul 16 at 06:17 UTC.",
-      "reopen": "Jul 16 at 10:00 UTC.",
       "source": "FAA NAS Status"
     },
     {
