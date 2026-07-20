@@ -1,7 +1,7 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-07-19T09:25:15.804092+00:00",
-  "date": "2026-07-19",
+  "generated_at": "2026-07-20T10:23:47.063757+00:00",
+  "date": "2026-07-20",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.who_don": "7d",
@@ -11,49 +11,49 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 29
+      "counties_with_alerts": 142
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 3200,
-      "counties_over_threshold": 183
+      "counties_queried": 3103,
+      "counties_over_threshold": 446
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 17,
+      "counties_with_matches": 7,
       "items_pre_llm": {
         "bank_robbery": 0,
-        "protest": 14,
-        "utility_outage": 11,
-        "transit_disruption": 1
+        "protest": 7,
+        "utility_outage": 6,
+        "transit_disruption": 0
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 9,
+      "counties_with_matches": 3,
       "items_post_llm": {
         "bank_robbery": 0,
         "protest": 0,
-        "utility_outage": 10,
+        "utility_outage": 4,
         "transit_disruption": 0
       }
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 153
+      "counties_with_alerts": 151
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 0,
-      "counties_with_alerts": 0,
+      "items_total": 1,
+      "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "id": "mta-subway",
@@ -119,7 +119,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 136
+      "counties_with_alerts": 141
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -140,8 +140,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 2,
-      "counties_with_alerts": 2
+      "national_items": 3,
+      "counties_with_alerts": 7
     }
   },
   "cdc_han": [],
@@ -165,13 +165,24 @@
   "faa_advisories": [
     {
       "kind": "airport_closure",
+      "code": "SNA",
+      "name": "John Wayne / Orange County",
+      "city": "Santa Ana",
+      "state": "CA",
+      "reason": "!SNA 07/029 SNA AD AP CLSD DLY 0630-1315 2607200630-2607261315",
+      "start": "Jul 20 at 06:30 UTC.",
+      "reopen": "Jul 26 at 13:15 UTC.",
+      "source": "FAA NAS Status"
+    },
+    {
+      "kind": "airport_closure",
       "code": "SAN",
       "name": "San Diego Intl",
       "city": "San Diego",
       "state": "CA",
-      "reason": "!SAN 07/057 SAN AD AP CLSD 2607190800-2607191200",
-      "start": "Jul 19 at 08:00 UTC.",
-      "reopen": "Jul 19 at 12:00 UTC.",
+      "reason": "!SAN 07/056 SAN AD AP CLSD 2607200800-2607201300",
+      "start": "Jul 20 at 08:00 UTC.",
+      "reopen": "Jul 20 at 13:00 UTC.",
       "source": "FAA NAS Status"
     },
     {
