@@ -1,10 +1,10 @@
 {
   "schema_version": "1.6",
-  "generated_at": "2026-07-20T10:23:47.063757+00:00",
-  "date": "2026-07-20",
+  "generated_at": "2026-07-21T09:46:29.341210+00:00",
+  "date": "2026-07-21",
   "state": "AK",
   "counties_total": 30,
-  "counties_with_alerts": 5,
+  "counties_with_alerts": 4,
   "counties": {
     "02013": {
       "fips": "02013",
@@ -49,14 +49,7 @@
       "name": "Anchorage Municipality",
       "state": "AK",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -68,7 +61,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "02050": {
       "fips": "02050",
@@ -116,7 +109,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~3.4\" rain expected in next 24h",
+            "headline": "~2.1\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -158,10 +151,29 @@
       "name": "Denali Borough",
       "state": "AK",
       "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
+    "02070": {
+      "fips": "02070",
+      "name": "Dillingham Census Area",
+      "state": "AK",
+      "alerts": {
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
+            "headline": "~1.1\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -178,25 +190,6 @@
         "disease": []
       },
       "alert_count": 1
-    },
-    "02070": {
-      "fips": "02070",
-      "name": "Dillingham Census Area",
-      "state": "AK",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
     },
     "02090": {
       "fips": "02090",
@@ -279,19 +272,7 @@
       "name": "Kenai Peninsula Borough",
       "state": "AK",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flood Warning",
-            "headline": "Flood Warning issued July 19 at 11:09AM AKDT until July 21 at 10:00AM AKDT by NWS Anchorage AK",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-07-19T11:09:00-08:00",
-            "expires": "2026-07-21T10:00:00-08:00",
-            "areaDesc": "Southern Kenai Mtns",
-            "id": "urn:oid:2.49.0.1.840.0.98591c5d5cc70c213167d01bf351837e00c4ebb1.001.1",
-            "source": "nws_alert"
-          }
-        ],
+        "weather": [],
         "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
@@ -303,7 +284,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "02130": {
       "fips": "02130",
@@ -367,29 +348,10 @@
       "name": "Lake and Peninsula Borough",
       "state": "AK",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "02170": {
-      "fips": "02170",
-      "name": "Matanuska-Susitna Borough",
-      "state": "AK",
-      "alerts": {
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.7\" rain expected in next 24h",
+            "headline": "~1.5\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast"
           }
@@ -406,6 +368,25 @@
         "disease": []
       },
       "alert_count": 1
+    },
+    "02170": {
+      "fips": "02170",
+      "name": "Matanuska-Susitna Borough",
+      "state": "AK",
+      "alerts": {
+        "weather": [],
+        "bank_robbery": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
     },
     "02180": {
       "fips": "02180",
@@ -607,14 +588,28 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire Nutmeg, Yukon-Koyukuk, Alaska",
+            "id": "EONET_21436",
+            "category": "wildfire",
+            "date": "2026-07-10T01:44:00Z",
+            "lat": 67.4474,
+            "lon": -150.2539,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-AKTAD-000397"
+            ],
+            "distance_miles": 38.6,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     }
   }
 }
