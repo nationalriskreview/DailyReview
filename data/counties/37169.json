@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "fips": "37169",
   "name": "Stokes County",
   "state": "NC",
@@ -8,7 +8,14 @@
     "lon": -80.269921
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.2\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast"
+      }
+    ],
     "bank_robbery": [],
     "protest": [],
     "utility_outage": [],
@@ -20,7 +27,29 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
+  "conditions": {
+    "forecast": {
+      "precip_in_24h": 1.17,
+      "snow_in_24h": 0.0,
+      "high_apparent_temp_f": 84.0,
+      "low_apparent_temp_f": 67.0,
+      "window": "next 24h",
+      "source": "nws_gridpoint"
+    },
+    "air_quality": {
+      "us_aqi": 37,
+      "category": "Good",
+      "aqi_24h_max": 43,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 7.3,
+      "pm10": 9.2,
+      "ozone": 61.0,
+      "nitrogen_dioxide": 2.2,
+      "observed_at": "2026-07-22T16:00",
+      "source": "Open-Meteo Air Quality (US EPA AQI)"
+    }
+  },
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T09:46:56.526008+00:00"
+  "generated_at": "2026-07-22T16:49:01.700246+00:00"
 }

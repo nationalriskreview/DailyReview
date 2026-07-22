@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "fips": "12075",
   "name": "Levy County",
   "state": "FL",
@@ -8,7 +8,14 @@
     "lon": -82.831233
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Heat Forecast",
+        "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+        "severity": "Severe",
+        "source": "nws_forecast"
+      }
+    ],
     "bank_robbery": [],
     "protest": [],
     "utility_outage": [],
@@ -20,7 +27,29 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
+  "conditions": {
+    "forecast": {
+      "precip_in_24h": 0.0,
+      "snow_in_24h": 0.0,
+      "high_apparent_temp_f": 106.0,
+      "low_apparent_temp_f": 76.0,
+      "window": "next 24h",
+      "source": "nws_gridpoint"
+    },
+    "air_quality": {
+      "us_aqi": 63,
+      "category": "Moderate",
+      "aqi_24h_max": 63,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 11.4,
+      "pm10": 18.3,
+      "ozone": 67.0,
+      "nitrogen_dioxide": 0.5,
+      "observed_at": "2026-07-22T16:00",
+      "source": "Open-Meteo Air Quality (US EPA AQI)"
+    }
+  },
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T09:46:56.526008+00:00"
+  "generated_at": "2026-07-22T16:49:01.700246+00:00"
 }

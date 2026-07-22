@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "fips": "53059",
   "name": "Skamania County",
   "state": "WA",
@@ -8,7 +8,19 @@
     "lon": -121.953232
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued July 22 at 3:48AM PDT until July 23 at 2:00PM PDT by NWS Seattle WA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-07-22T03:48:00-07:00",
+        "expires": "2026-07-22T16:00:00-07:00",
+        "areaDesc": "Black Hills and Southwest Interior Lowlands; West Slopes of the Central Cascades Generally above 1500 Feet",
+        "id": "urn:oid:2.49.0.1.840.0.1422165c2b22570fb5320f987c90e640d1dca9e9.001.2",
+        "source": "nws_alert"
+      }
+    ],
     "bank_robbery": [],
     "protest": [],
     "utility_outage": [],
@@ -20,7 +32,18 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
+  "conditions": {
+    "forecast": {
+      "precip_in_24h": 0.01,
+      "snow_in_24h": 0.0,
+      "high_apparent_temp_f": 88.0,
+      "low_apparent_temp_f": 70.0,
+      "window": "next 24h",
+      "source": "nws_gridpoint"
+    },
+    "air_quality": null
+  },
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T09:46:56.526008+00:00"
+  "generated_at": "2026-07-22T16:49:01.700246+00:00"
 }

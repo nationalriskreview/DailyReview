@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "fips": "04005",
   "name": "Coconino County",
   "state": "AZ",
@@ -10,14 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Flash Flood Warning",
-        "headline": "Flash Flood Warning issued July 22 at 2:08AM MST until July 22 at 5:00AM MST by NWS Flagstaff AZ",
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued July 22 at 9:12AM MST until July 22 at 6:00PM MST by NWS Flagstaff AZ",
         "severity": "Severe",
-        "urgency": "Immediate",
-        "effective": "2026-07-22T02:08:00-07:00",
-        "expires": "2026-07-22T05:00:00-07:00",
+        "urgency": "Expected",
+        "effective": "2026-07-22T09:12:00-07:00",
+        "expires": "2026-07-22T18:00:00-07:00",
         "areaDesc": "Coconino, AZ",
-        "id": "urn:oid:2.49.0.1.840.0.3034e4dc8a45c58cfb8c0e513032ff12d58024df.001.1",
+        "id": "urn:oid:2.49.0.1.840.0.1f3c728fdcd4e5b4212586d020b20828640af7fa.001.1",
         "source": "nws_alert"
       }
     ],
@@ -33,6 +33,28 @@
     "disease": []
   },
   "alert_count": 1,
+  "conditions": {
+    "forecast": {
+      "precip_in_24h": 0.27,
+      "snow_in_24h": 0.0,
+      "high_apparent_temp_f": 84.0,
+      "low_apparent_temp_f": 52.0,
+      "window": "next 24h",
+      "source": "nws_gridpoint"
+    },
+    "air_quality": {
+      "us_aqi": 24,
+      "category": "Good",
+      "aqi_24h_max": 58,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 3.6,
+      "pm10": 5.5,
+      "ozone": 81.0,
+      "nitrogen_dioxide": 0.8,
+      "observed_at": "2026-07-22T16:00",
+      "source": "Open-Meteo Air Quality (US EPA AQI)"
+    }
+  },
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T09:46:56.526008+00:00"
+  "generated_at": "2026-07-22T16:49:01.700246+00:00"
 }

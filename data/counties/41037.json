@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "fips": "41037",
   "name": "Lake County",
   "state": "OR",
@@ -11,6 +11,28 @@
     "weather": [
       {
         "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued July 22 at 8:02AM MDT until July 23 at 12:00AM MDT by NWS Boise ID",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-07-22T08:02:00-06:00",
+        "expires": "2026-07-23T00:00:00-06:00",
+        "areaDesc": "Burns BLM; Steens Mountain; Southern Grasslands",
+        "id": "urn:oid:2.49.0.1.840.0.7da664939012fabcecea1192e6f040ca4383a5cc.001.1",
+        "source": "nws_alert"
+      },
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued July 22 at 6:50AM PDT until July 22 at 11:00PM PDT by NWS Pendleton OR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-07-22T06:50:00-07:00",
+        "expires": "2026-07-22T23:00:00-07:00",
+        "areaDesc": "Southern Blue Mountains; Central Mountains of Oregon; Southern Deschutes National Forest",
+        "id": "urn:oid:2.49.0.1.840.0.f3271c54b9c05e19d135146ee48479b5f5900f7e.001.1",
+        "source": "nws_alert"
+      },
+      {
+        "event": "Red Flag Warning",
         "headline": "Red Flag Warning issued July 22 at 1:07AM PDT until July 22 at 11:00PM PDT by NWS Medford OR",
         "severity": "Severe",
         "urgency": "Expected",
@@ -18,17 +40,6 @@
         "expires": "2026-07-22T23:00:00-07:00",
         "areaDesc": "Klamath Basin and the Fremont-Winema National Forest; South Central Oregon Desert including the BLM Land in Eastern Lake and Western Harney Counties",
         "id": "urn:oid:2.49.0.1.840.0.a3edae6248c9fbc840716a8a66893b96522853e1.001.2",
-        "source": "nws_alert"
-      },
-      {
-        "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued July 21 at 2:59PM PDT until July 22 at 11:00PM PDT by NWS Pendleton OR",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-07-21T14:59:00-07:00",
-        "expires": "2026-07-22T07:00:00-07:00",
-        "areaDesc": "Southern Blue Mountains; Central Mountains of Oregon; Southern Deschutes National Forest",
-        "id": "urn:oid:2.49.0.1.840.0.1890bfcbdc6990b3a0247ecdcc72db68edc3e41e.001.1",
         "source": "nws_alert"
       }
     ],
@@ -43,7 +54,29 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 3,
+  "conditions": {
+    "forecast": {
+      "precip_in_24h": 0.02,
+      "snow_in_24h": 0.0,
+      "high_apparent_temp_f": 88.0,
+      "low_apparent_temp_f": 55.0,
+      "window": "next 24h",
+      "source": "nws_gridpoint"
+    },
+    "air_quality": {
+      "us_aqi": 55,
+      "category": "Moderate",
+      "aqi_24h_max": 73,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 6.7,
+      "pm10": 8.4,
+      "ozone": 35.0,
+      "nitrogen_dioxide": 3.4,
+      "observed_at": "2026-07-22T16:00",
+      "source": "Open-Meteo Air Quality (US EPA AQI)"
+    }
+  },
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T09:46:56.526008+00:00"
+  "generated_at": "2026-07-22T16:49:01.700246+00:00"
 }

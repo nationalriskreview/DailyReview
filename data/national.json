@@ -1,41 +1,47 @@
 {
-  "schema_version": "1.6",
-  "generated_at": "2026-07-22T09:46:56.526008+00:00",
+  "schema_version": "1.7",
+  "generated_at": "2026-07-22T16:49:01.700246+00:00",
   "date": "2026-07-22",
   "data_windows": {
     "national.cdc_han": "7d",
-    "national.who_don": "7d",
+    "national.who_don": "30d (WHO Disease Outbreak News)",
     "national.amtrak_advisories": "active (effective today)",
     "national.faa_advisories": "live"
   },
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 332
+      "counties_with_alerts": 343
     },
     "weather_nws_forecast": {
       "status": "ok",
-      "counties_queried": 2953,
-      "counties_over_threshold": 293
+      "counties_queried": 3222,
+      "counties_with_conditions": 3222,
+      "counties_over_threshold": 305
+    },
+    "air_quality_open_meteo": {
+      "status": "ok",
+      "counties_queried": 3222,
+      "counties_with_readings": 1200
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 19,
+      "counties_with_matches": 47,
       "items_pre_llm": {
-        "bank_robbery": 0,
-        "protest": 10,
-        "utility_outage": 17,
-        "transit_disruption": 1
+        "bank_robbery": 104,
+        "protest": 88,
+        "utility_outage": 21,
+        "transit_disruption": 3
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 9,
+      "counties_with_matches": 13,
       "items_post_llm": {
         "bank_robbery": 0,
-        "protest": 0,
+        "protest": 2,
         "utility_outage": 9,
-        "transit_disruption": 0
+        "transit_disruption": 2
       }
     },
     "wildfires_eonet": {
@@ -46,14 +52,14 @@
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 1,
-      "counties_with_alerts": 5,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "mta-subway",
@@ -119,7 +125,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 143
+      "counties_with_alerts": 142
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -127,7 +133,7 @@
     },
     "disease_who_don": {
       "status": "ok",
-      "items": 2
+      "items": 5
     },
     "disease_wastewater": {
       "status": "ok",
@@ -147,18 +153,39 @@
   "cdc_han": [],
   "who_don": [
     {
-      "title": "WHO Member States continue negotiations on the Pathogen Access and Benefit Sharing Annex",
-      "url": "https://www.who.int/news/item/20-07-2026-who-member-states-continue-negotiations-on-the-pathogen-access-and-benefit-sharing-annex",
-      "published": "Sat, 18 Jul 2026 07:27:54 Z",
-      "summary": "WHO Member States have advanced negotiations on the Pathogen Access and Benefit Sharing (PABS) annex, a central component of the WHO Pandemic Agreement, while agreeing that continued discussions are needed to finalize a framework that supports a faster, more effective and equitable response to future pandemics.",
-      "source": "WHO News (outbreak-filtered)"
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON613",
+      "published": "2026-07-17T16:13:00Z",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo remains active, with sustained transmission driving increases in reported cases and deaths. As of 15 July 2026, a cumulative total of 2124 confirmed cases, including 828 deaths, have been reported from the Democratic Republic of the Congo. On 13 July 2026, German authorities informed WHO of a laboratory-confirmed case of Ebola disease caused by Bundibugyo virus in a humanitarian worker from the United States of A",
+      "source": "WHO Disease Outbreak News"
     },
     {
-      "title": "New WHO guidelines: up to 45% of dementia risk could be prevented or delayed",
-      "url": "https://www.who.int/news/item/15-07-2026-new-who-guidelines--up-to-45--of-dementia-risk-could-be-prevented-or-delayed",
-      "published": "Wed, 15 Jul 2026 12:15:58 Z",
-      "summary": "<p>The World Health Organization (WHO) today released <a href=\"https://www.who.int/publications/i/item/9789240123557\">updated guidelines on reducing the risk of cognitive decline and dementia</a>, providing countries with evidence-based recommendations to help prevent or delay the onset of dementia across the life course. </p><p><span style=\"background-color: transparent; text-align: inherit; white-space: inherit;\">Dementia is a condition caused by brain diseases and affects memory, thinking and",
-      "source": "WHO News (outbreak-filtered)"
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo & Uganda",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON612",
+      "published": "2026-07-03T15:13:57Z",
+      "summary": "The Bundibugyo virus disease (BVD) outbreak in the Democratic Republic of the Congo continues to evolve rapidly, with sustained transmission and increasing numbers of reported cases. As of 1 July, a cumulative of 1460 confirmed cases, including 452 deaths, have been reported from the Democratic Republic of the Congo. As of 2 July, Uganda has reported 20 confirmed cases including two deaths, as well as one probable case who has died. In addition, on 24 June 2026, French authorities notified WHO o",
+      "source": "WHO Disease Outbreak News"
+    },
+    {
+      "title": "Hantavirus outbreak linked to cruise ship travel, Multi-locations",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON611",
+      "published": "2026-07-02T18:00:00Z",
+      "summary": "This is the fifth Disease Outbreak News posting on the Andes hantavirus (ANDV) outbreak linked to the cruise ship M/V Hondius. The outbreak identification followed the notification to the World Health Organization (WHO) on 2 May 2026 of severe acute respiratory illness cases onboard. Since the previous Disease Outbreak News was published on 28 May 2026, one of the probable cases from Tristan da Cunha, an Overseas Territory of the United Kingdom of Great Britain and Northern Ireland (hereafter re",
+      "source": "WHO Disease Outbreak News"
+    },
+    {
+      "title": "Nipah virus disease - India",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON609",
+      "published": "2026-06-25T18:00:00Z",
+      "summary": "On 11 June 2026, the Kerala State Health Department confirmed one laboratory confirmed case of Nipah virus (NiV) infection in Kozhikode district, Kerala State, India. \r\nThe case is an adult male who developed symptoms on 30 May 2026 and was hospitalized on 10 June 2026. He presented with neurological manifestations and at the time of reporting is on ventilatory support in an intensive care unit (ICU).\r\nAs of 18 June 2026, a total of 104 contacts had been identified and were under monitoring, inc",
+      "source": "WHO Disease Outbreak News"
+    },
+    {
+      "title": "Yellow fever - Global",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON610",
+      "published": "2026-06-24T18:00:00Z",
+      "summary": "Yellow fever is a viral disease found in areas of Africa and the Americas, spread by infected mosquitoes. Following an increase of cases in the Americas in 2025, transmission activity remained into 2026. From 1 January to 26 May 2026, six countries reported a total of 79 human infections along with multiple epizootics, indicating active sylvatic circulation. In Africa, sustained activity continued across parts of the region, affecting 13 high-risk countries (as per classification in the Eliminat",
+      "source": "WHO Disease Outbreak News"
     }
   ],
   "amtrak_advisories": [],

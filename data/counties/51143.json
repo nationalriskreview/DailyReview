@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "fips": "51143",
   "name": "Pittsylvania County",
   "state": "VA",
@@ -10,10 +10,26 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.2\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Severe Thunderstorm Warning",
+        "headline": "Severe Thunderstorm Warning issued July 22 at 12:13PM EDT until July 22 at 1:15PM EDT by NWS Blacksburg VA",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-07-22T12:13:00-04:00",
+        "expires": "2026-07-22T13:15:00-04:00",
+        "areaDesc": "Halifax, VA; Pittsylvania, VA; City of Danville, VA",
+        "id": "urn:oid:2.49.0.1.840.0.cc624bb574b50b521c2bd4006d8a25ec0a3b7e31.001.1",
+        "source": "nws_alert"
+      },
+      {
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued July 22 at 12:12PM EDT until July 22 at 6:15PM EDT by NWS Blacksburg VA",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-07-22T12:12:00-04:00",
+        "expires": "2026-07-22T18:15:00-04:00",
+        "areaDesc": "Henry, VA; Pittsylvania, VA; City of Martinsville, VA",
+        "id": "urn:oid:2.49.0.1.840.0.526e9c0435acdb90802e3b8db6bfa4c1fa7ebc00.001.1",
+        "source": "nws_alert"
       }
     ],
     "bank_robbery": [],
@@ -27,7 +43,18 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
+  "conditions": {
+    "forecast": {
+      "precip_in_24h": 0.98,
+      "snow_in_24h": 0.0,
+      "high_apparent_temp_f": 90.0,
+      "low_apparent_temp_f": 67.0,
+      "window": "next 24h",
+      "source": "nws_gridpoint"
+    },
+    "air_quality": null
+  },
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T09:46:56.526008+00:00"
+  "generated_at": "2026-07-22T16:49:01.700246+00:00"
 }

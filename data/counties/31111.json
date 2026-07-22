@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "fips": "31111",
   "name": "Lincoln County",
   "state": "NE",
@@ -8,7 +8,14 @@
     "lon": -100.744481
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Cold Forecast",
+        "headline": "Apparent temperature expected to drop to -100.0°F in next 24h",
+        "severity": "Severe",
+        "source": "nws_forecast"
+      }
+    ],
     "bank_robbery": [],
     "protest": [],
     "utility_outage": [],
@@ -34,7 +41,29 @@
     ],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
+  "conditions": {
+    "forecast": {
+      "precip_in_24h": 0.07,
+      "snow_in_24h": 0.0,
+      "high_apparent_temp_f": 84.0,
+      "low_apparent_temp_f": -100.0,
+      "window": "next 24h",
+      "source": "nws_gridpoint"
+    },
+    "air_quality": {
+      "us_aqi": 54,
+      "category": "Moderate",
+      "aqi_24h_max": 55,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 7.3,
+      "pm10": 7.7,
+      "ozone": 74.0,
+      "nitrogen_dioxide": 2.0,
+      "observed_at": "2026-07-22T16:00",
+      "source": "Open-Meteo Air Quality (US EPA AQI)"
+    }
+  },
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T09:46:56.526008+00:00"
+  "generated_at": "2026-07-22T16:49:01.700246+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "fips": "12063",
   "name": "Jackson County",
   "state": "FL",
@@ -19,17 +19,6 @@
         "areaDesc": "North Walton; Central Walton; Holmes; Washington; Jackson; Inland Bay; Calhoun; Inland Gulf; Inland Franklin; Gadsden; Leon; Inland Jefferson; Inland Wakulla; South Walton; Coastal Bay; Coastal Gulf; Coastal Franklin; Coastal Jefferson; Coastal Wakulla; Northern Liberty; Southern Liberty",
         "id": "urn:oid:2.49.0.1.840.0.ab8b76aacf58b05364ed6778d2e24d20a6f06d71.001.1",
         "source": "nws_alert"
-      },
-      {
-        "event": "Tropical Cyclone Local Statement",
-        "headline": "Tropical Cyclone Local Statement issued July 21 at 11:17PM EDT by NWS Tallahassee FL",
-        "severity": "Moderate",
-        "urgency": "Expected",
-        "effective": "2026-07-21T23:17:00-04:00",
-        "expires": "2026-07-22T07:30:00-04:00",
-        "areaDesc": "North Walton; Central Walton; Holmes; Washington; Jackson; Inland Bay; Calhoun; Inland Gulf; Inland Franklin; Gadsden; Leon; Inland Jefferson; Inland Wakulla; South Walton; Coastal Bay; Coastal Gulf; Coastal Franklin; Coastal Jefferson; Coastal Wakulla; Northern Liberty; Southern Liberty",
-        "id": "urn:oid:2.49.0.1.840.0.53ddb3b8a8387253ebbaa91dee412bb8a783417b.001.1",
-        "source": "nws_alert"
       }
     ],
     "bank_robbery": [],
@@ -43,7 +32,29 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 1,
+  "conditions": {
+    "forecast": {
+      "precip_in_24h": 0.1,
+      "snow_in_24h": 0.0,
+      "high_apparent_temp_f": 106.0,
+      "low_apparent_temp_f": 75.0,
+      "window": "next 24h",
+      "source": "nws_gridpoint"
+    },
+    "air_quality": {
+      "us_aqi": 64,
+      "category": "Moderate",
+      "aqi_24h_max": 67,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 16.6,
+      "pm10": 25.4,
+      "ozone": 61.0,
+      "nitrogen_dioxide": 0.5,
+      "observed_at": "2026-07-22T16:00",
+      "source": "Open-Meteo Air Quality (US EPA AQI)"
+    }
+  },
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T09:46:56.526008+00:00"
+  "generated_at": "2026-07-22T16:49:01.700246+00:00"
 }

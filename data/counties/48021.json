@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "fips": "48021",
   "name": "Bastrop County",
   "state": "TX",
@@ -10,10 +10,15 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 114.0°F in next 24h",
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued July 22 at 9:07AM CDT until July 22 at 8:00PM CDT by NWS Austin/San Antonio TX",
         "severity": "Severe",
-        "source": "nws_forecast"
+        "urgency": "Expected",
+        "effective": "2026-07-22T09:07:00-05:00",
+        "expires": "2026-07-23T05:00:00-05:00",
+        "areaDesc": "Williamson; Travis; Bastrop; Lee; Fayette; Lavaca",
+        "id": "urn:oid:2.49.0.1.840.0.56fe7424f8fafb6b77f929dbbef54cb83c1d6e24.001.2",
+        "source": "nws_alert"
       }
     ],
     "bank_robbery": [],
@@ -28,6 +33,17 @@
     "disease": []
   },
   "alert_count": 1,
+  "conditions": {
+    "forecast": {
+      "precip_in_24h": 0.0,
+      "snow_in_24h": 0.0,
+      "high_apparent_temp_f": 115.0,
+      "low_apparent_temp_f": 79.0,
+      "window": "next 24h",
+      "source": "nws_gridpoint"
+    },
+    "air_quality": null
+  },
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T09:46:56.526008+00:00"
+  "generated_at": "2026-07-22T16:49:01.700246+00:00"
 }
