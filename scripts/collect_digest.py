@@ -23,6 +23,7 @@ from geography import load_counties, load_boroughs, index_by_fips
 from fetch_nws import (
     fetch_active_alerts, bucket_alerts_by_county, fetch_forecasts_for_counties,
 )
+from fetch_airquality import fetch_air_quality_for_counties
 from fetch_gdelt import collect_gdelt_by_county
 from fetch_eonet import fetch_wildfires_by_county
 from fetch_transit import fetch_transit_by_county
@@ -74,23 +75,55 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
         }
 
     # --- Forecast (NWS gridpoint) ---
-    forecast_targets = [c for c in counties if c["fips"] not in weather_by_fips]
-    log.info("Forecast: querying %d counties (skipping those with warnings)",
-             len(forecast_targets))
+    # Queried for ALL counties so every county carries forecast conditions.
+    # Synthetic threshold *alerts* are still suppressed for counties that
+    # already have an active NWS warning, to avoid double-surfacing.
+    log.info("Forecast: querying %d counties for conditions + thresholds",
+             len(counties))
     try:
-        forecast_by_fips = await fetch_forecasts_for_counties(
-            forecast_targets, concurrency=20
+        forecast_results = await fetch_forecasts_for_counties(
+            counties, concurrency=20
         )
-        log.info("Forecast: %d counties exceeded thresholds", len(forecast_by_fips))
+        forecast_conditions_by_fips = {
+            f: r["forecast"] for f, r in forecast_results.items()
+            if r.get("forecast")
+        }
+        forecast_by_fips = {
+            f: r["alerts"] for f, r in forecast_results.items()
+            if r.get("alerts") and f not in weather_by_fips
+        }
+        log.info("Forecast: %d counties with conditions, %d over threshold",
+                 len(forecast_conditions_by_fips), len(forecast_by_fips))
         data_sources["weather_nws_forecast"] = {
             "status": "ok",
-            "counties_queried": len(forecast_targets),
+            "counties_queried": len(counties),
+            "counties_with_conditions": len(forecast_conditions_by_fips),
             "counties_over_threshold": len(forecast_by_fips),
         }
     except Exception as e:
         log.error("Forecast fetch failed (continuing with empty): %s", e)
         forecast_by_fips = {}
+        forecast_conditions_by_fips = {}
         data_sources["weather_nws_forecast"] = {
+            "status": "failed", "error": _truncate_error(e),
+        }
+
+    # --- Air quality (Open-Meteo, US AQI + pollutants), all counties ---
+    log.info("Air quality: querying %d counties", len(counties))
+    try:
+        air_quality_by_fips = await fetch_air_quality_for_counties(
+            counties, concurrency=20
+        )
+        log.info("Air quality: %d counties with readings", len(air_quality_by_fips))
+        data_sources["air_quality_open_meteo"] = {
+            "status": "ok",
+            "counties_queried": len(counties),
+            "counties_with_readings": len(air_quality_by_fips),
+        }
+    except Exception as e:
+        log.error("Air quality fetch failed (continuing with empty): %s", e)
+        air_quality_by_fips = {}
+        data_sources["air_quality_open_meteo"] = {
             "status": "failed", "error": _truncate_error(e),
         }
 
@@ -299,6 +332,8 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
         boroughs=boroughs,
         weather_by_fips=weather_by_fips,
         forecast_by_fips=forecast_by_fips,
+        forecast_conditions_by_fips=forecast_conditions_by_fips,
+        air_quality_by_fips=air_quality_by_fips,
         gdelt_by_fips=gdelt_by_fips,
         wildfires_by_fips=wildfires_by_fips,
         transit_by_fips=transit_by_fips,

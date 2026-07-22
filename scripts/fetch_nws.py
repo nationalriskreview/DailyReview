@@ -100,12 +100,15 @@ async def _fetch_json(session: aiohttp.ClientSession, url: str) -> dict | None:
         return None
 
 
-async def fetch_county_forecast_threshold(
+async def fetch_county_forecast(
     session: aiohttp.ClientSession, county: dict
-) -> list[dict]:
-    """Return synthetic forecast alerts if 24h precip/snow/temps exceed thresholds.
+) -> dict:
+    """Return {"forecast": {...} | None, "alerts": [...]} for a county.
 
-    Uses NWS gridpoint forecast for quantitative precipitation, snowfall, and apparent temperature.
+    `forecast` is the raw 24h NWS gridpoint summary (peak precip/snow, high/low
+    apparent temperature) — surfaced for every county as ambient conditions.
+    `alerts` are the synthetic threshold breaches (>1" rain, >6" snow, >105°F,
+    <0°F), surfaced only when a threshold is crossed.
     """
     grid_points = county.get("grid", [{"lat": county["lat"], "lon": county["lon"]}])
 
@@ -113,6 +116,7 @@ async def fetch_county_forecast_threshold(
     max_snow_in = 0.0
     highest_temp_f = None
     lowest_temp_f = None
+    have_grid = False
 
     for pt in grid_points:
         point = await _fetch_json(
@@ -127,6 +131,7 @@ async def fetch_county_forecast_threshold(
         if not grid:
             continue
 
+        have_grid = True
         grid_props = grid.get("properties", {})
         precip_mm = _sum_first_24h(grid_props.get("quantitativePrecipitation"))
         snow_mm = _sum_first_24h(grid_props.get("snowfallAmount"))
@@ -148,6 +153,17 @@ async def fetch_county_forecast_threshold(
         if min_app_temp_f is not None:
             if lowest_temp_f is None or min_app_temp_f < lowest_temp_f:
                 lowest_temp_f = min_app_temp_f
+
+    forecast = None
+    if have_grid:
+        forecast = {
+            "precip_in_24h": round(max_precip_in, 2),
+            "snow_in_24h": round(max_snow_in, 2),
+            "high_apparent_temp_f": round(highest_temp_f, 1) if highest_temp_f is not None else None,
+            "low_apparent_temp_f": round(lowest_temp_f, 1) if lowest_temp_f is not None else None,
+            "window": "next 24h",
+            "source": "nws_gridpoint",
+        }
 
     alerts = []
     if max_precip_in > PRECIP_THRESHOLD_INCHES:
@@ -178,7 +194,7 @@ async def fetch_county_forecast_threshold(
             "severity": "Severe",
             "source": "nws_forecast",
         })
-    return alerts
+    return {"forecast": forecast, "alerts": alerts}
 
 
 def _sum_first_24h(field: dict | None) -> float:
@@ -286,16 +302,21 @@ def _min_first_24h(field: dict | None) -> float | None:
 async def fetch_forecasts_for_counties(
     counties: Iterable[dict],
     concurrency: int = 20,
-) -> dict[str, list[dict]]:
+) -> dict[str, dict]:
+    """FIPS → {"forecast": {...} | None, "alerts": [...]}.
+
+    Included for every county that returned gridpoint data OR crossed a
+    threshold; counties with no NWS grid coverage are simply absent.
+    """
     sem = asyncio.Semaphore(concurrency)
-    results: dict[str, list[dict]] = {}
+    results: dict[str, dict] = {}
 
     async with aiohttp.ClientSession() as session:
         async def worker(county):
             async with sem:
-                alerts = await fetch_county_forecast_threshold(session, county)
-                if alerts:
-                    results[county["fips"]] = alerts
+                res = await fetch_county_forecast(session, county)
+                if res["forecast"] is not None or res["alerts"]:
+                    results[county["fips"]] = res
 
         await asyncio.gather(*(worker(c) for c in counties))
     return results

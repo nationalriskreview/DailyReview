@@ -10,7 +10,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
-SCHEMA_VERSION = "1.6"
+SCHEMA_VERSION = "1.7"
 
 OUTPUT_NOTES = {
     "transit": (
@@ -67,8 +67,10 @@ DATA_WINDOWS = {
     "aviation": "live (FAA NAS status)",
     "fema": "30d",
     "disease": "14d (wastewater)",
+    "conditions.forecast": "next 24h (NWS gridpoint)",
+    "conditions.air_quality": "current + next 24h peak (Open-Meteo US AQI)",
     "national.cdc_han": "7d",
-    "national.who_don": "7d",
+    "national.who_don": "30d (WHO Disease Outbreak News)",
     "national.amtrak_advisories": "active (effective today)",
     "national.faa_advisories": "live",
 }
@@ -85,6 +87,8 @@ def _county_record(
     aviation: list[dict] | None,
     fema: list[dict] | None,
     disease: list[dict] | None,
+    forecast_conditions: dict | None,
+    air_quality: dict | None,
 ) -> dict:
     alerts = {
         "weather": (weather or []) + (forecast or []),
@@ -100,6 +104,11 @@ def _county_record(
         "disease": disease or [],
     }
     alert_count = sum(len(v) for v in alerts.values())
+    # Ambient conditions — reported for every county regardless of alert state.
+    conditions = {
+        "forecast": forecast_conditions,
+        "air_quality": air_quality,
+    }
     return {
         "schema_version": SCHEMA_VERSION,
         "fips": county["fips"],
@@ -108,6 +117,7 @@ def _county_record(
         "centroid": {"lat": county["lat"], "lon": county["lon"]},
         "alerts": alerts,
         "alert_count": alert_count,
+        "conditions": conditions,
     }
 
 
@@ -134,6 +144,8 @@ def write_all(
     boroughs: list[dict],
     weather_by_fips: dict[str, list[dict]],
     forecast_by_fips: dict[str, list[dict]],
+    forecast_conditions_by_fips: dict[str, dict],
+    air_quality_by_fips: dict[str, dict],
     gdelt_by_fips: dict[str, dict[str, list[dict]]],
     wildfires_by_fips: dict[str, list[dict]],
     transit_by_fips: dict[str, list[dict]],
@@ -162,6 +174,8 @@ def write_all(
             faa_by_fips.get(c["fips"], []),
             fema_by_fips.get(c["fips"], []),
             disease_by_fips.get(c["fips"], []),
+            forecast_conditions_by_fips.get(c["fips"]),
+            air_quality_by_fips.get(c["fips"]),
         )
         rec["date"] = today
         rec["generated_at"] = now.isoformat()
@@ -180,7 +194,9 @@ def write_all(
         "counties_total": len(records),
         "counties_with_alerts": len(flagged),
         "national": national,
-        "counties": {r["fips"]: _strip_for_full(r) for r in records},
+        "counties": {
+            r["fips"]: _strip_for_full(r, include_conditions=True) for r in records
+        },
     }
     _write_json(DATA_DIR / "today.json", full)
 
@@ -251,6 +267,7 @@ def write_all(
             "county_name": b["county_name"],
             "alerts": county_rec["alerts"],
             "alert_count": county_rec["alert_count"],
+            "conditions": county_rec.get("conditions"),
             "note": f"Includes events tagged '{b['borough']}' or '{b['county_name']}'",
         }
         _write_json(nyc_dir / f"{b['slug']}.json", b_rec)
@@ -267,11 +284,14 @@ def write_all(
         _write_json(archive_path, summary)
 
 
-def _strip_for_full(rec: dict) -> dict:
-    return {
+def _strip_for_full(rec: dict, include_conditions: bool = False) -> dict:
+    out = {
         "fips": rec["fips"],
         "name": rec["name"],
         "state": rec["state"],
         "alerts": rec["alerts"],
         "alert_count": rec["alert_count"],
     }
+    if include_conditions:
+        out["conditions"] = rec.get("conditions")
+    return out

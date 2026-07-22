@@ -36,12 +36,19 @@ Each county object exposes alerts in these buckets:
 - **`fema`** — Active FEMA disaster declarations (DR / EM / FM) in the last 30 days. Includes `is_new_today` flag for declarations issued in the past 24 hours.
 - **`disease`** — Positive pathogen detections (e.g., Measles) at the county level within the last 14 days, sourced from CDC National Wastewater Surveillance System.
 
+## Conditions (every county)
+
+Separate from `alerts`, each county carries an always-on `conditions` object with ambient readings — present whether or not the county has any active alert. Exposed in `today.json`, `counties/{fips}.json`, and the NYC borough files; **omitted** from the lean `today-summary.json` and state roll-ups.
+
+- **`conditions.forecast`** — NWS gridpoint 24h summary: `precip_in_24h`, `snow_in_24h`, `high_apparent_temp_f`, `low_apparent_temp_f`. The same values still generate `alerts.weather` entries when they cross a threshold (>1" rain, >6" snow, >105°F, <0°F), but the raw numbers are now reported for every county. `null` where NWS has no grid coverage.
+- **`conditions.air_quality`** — Current US EPA AQI and pollutant concentrations from the Open-Meteo Air Quality API (keyless): `us_aqi`, `category`, next-24h peak (`aqi_24h_max` / `aqi_24h_max_category`), plus `pm2_5`, `pm10`, `ozone`, `nitrogen_dioxide` (µg/m³) and `observed_at`.
+
 **Note on Geographic Precision:** For massive counties (>4,000 sq miles), weather forecasts and wildfire distances are evaluated against a 5-point bounding grid rather than a single centroid to ensure large jurisdictions do not miss border events.
 
 National alerts in `national.json`:
 
 - **CDC HAN** — Health Alert Network notices at Alert/Advisory level (collector stub; currently inactive pending CDC URL restructure).
-- **WHO outbreak news** — Outbreak-keyword-filtered items from the WHO news feed, last 7 days.
+- **WHO outbreak news** (`who_don`) — Items from WHO's official Disease Outbreak News REST API (`/api/news/diseaseoutbreaknews`), last 30 days. Every item in that feed is a confirmed outbreak report, so no keyword filtering is applied. (Previously this filtered WHO's *general* news feed by outbreak keywords, which leaked policy/governance/guidance items — pandemic-treaty negotiations, risk-reduction guidelines, awards — that are not outbreaks.)
 - **`amtrak_advisories`** — Active Amtrak service-stoppage and station-closure advisories, scraped daily from amtrak.com/service-alerts-and-notices. Severity-filtered; routine schedule changes and equipment-level station issues are excluded.
 - **`faa_advisories`** — FAA Large-Hub airport closures and ground stops, severity-filtered to exclude GA-only NOTAMs. From nasstatus.faa.gov/api/airport-status-information.
 
