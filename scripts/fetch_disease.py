@@ -5,9 +5,13 @@ returns 404. CDC_HAN_URL is left as an env-overridable placeholder. When CDC
 publishes a stable scraping target again, set CDC_HAN_URL to the new endpoint.
 Until then, fetch_cdc_han() returns an empty list and logs a warning.
 
-WHO retired their CSR/DON-specific RSS. The general news feed at
-news-english.xml carries DON items as a subset; we filter by outbreak-related
-title keywords. We use urllib here because aiohttp's default header-size
+WHO retired their CSR/DON-specific RSS, but publishes an official Disease
+Outbreak News REST API at /api/news/diseaseoutbreaknews. Every item there is
+a confirmed outbreak report, so we consume it directly — no keyword filtering.
+This replaces the old approach of substring-matching outbreak keywords against
+WHO's *general* news feed, which leaked policy/governance/guidance items
+(pandemic-treaty negotiations, dementia-risk guidelines, awards, etc.) that
+are not outbreaks. We use urllib here because aiohttp's default header-size
 limit (8KB) rejects who.int's oversized Content-Security-Policy header.
 """
 
@@ -18,35 +22,27 @@ import json
 import logging
 import os
 import re
+import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
-from email.utils import parsedate_to_datetime
 
-import feedparser
 from bs4 import BeautifulSoup
 
 CDC_HAN_URL = os.environ.get("CDC_HAN_URL", "")
-WHO_RSS_URL = os.environ.get(
-    "WHO_RSS_URL",
-    "https://www.who.int/rss-feeds/news-english.xml",
+WHO_DON_API_URL = os.environ.get(
+    "WHO_DON_API_URL",
+    "https://www.who.int/api/news/diseaseoutbreaknews",
 )
+WHO_DON_ITEM_BASE = "https://www.who.int/emergencies/disease-outbreak-news/item/"
 USER_AGENT = os.environ.get(
     "USER_AGENT",
     "DailyReview/1.0 (https://github.com/nationalriskreview/DailyReview)",
 )
-RECENT_HOURS = int(os.environ.get("DISEASE_RECENT_HOURS", "168"))
+# DON is authoritative but low-volume (a handful of items per week), and an
+# active outbreak from a few weeks ago is still a live concern — so the window
+# is measured in days, not the tight 7d used for the old high-noise news feed.
+WHO_DON_RECENT_DAYS = int(os.environ.get("WHO_DON_RECENT_DAYS", "30"))
 HTTP_TIMEOUT = 30
-
-WHO_OUTBREAK_KEYWORDS = (
-    "outbreak", "epidemic", "pandemic", "disease",
-    "cholera", "ebola", "mpox", "monkeypox", "marburg", "lassa",
-    "influenza", "h5n1", "h1n1", "avian", "bird flu",
-    "polio", "measles", "yellow fever", "dengue", "zika", "chikungunya",
-    "rift valley", "nipah", "mers", "sars", "coronavirus", "covid",
-    "diphtheria", "meningitis", "plague", "rabies", "tuberculosis",
-    "typhoid", "salmonella", "listeria", "e. coli", "anthrax", "smallpox",
-    "hantavirus", "hepatitis", "malaria", "pertussis", "rsv", "norovirus",
-)
 
 log = logging.getLogger(__name__)
 
@@ -62,17 +58,24 @@ def _http_get(url: str) -> str | None:
         return None
 
 
-def _within_recent(dt: datetime | None) -> bool:
-    if not dt:
-        return False
+def _parse_iso(s: str | None) -> datetime | None:
+    if not s:
+        return None
+    try:
+        dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+    except ValueError:
+        return None
     if dt.tzinfo is None:
         dt = dt.replace(tzinfo=timezone.utc)
-    return (datetime.now(timezone.utc) - dt) <= timedelta(hours=RECENT_HOURS)
+    return dt
 
 
-def _is_outbreak_item(title: str, summary: str) -> bool:
-    text = f"{title} {summary}".lower()
-    return any(k in text for k in WHO_OUTBREAK_KEYWORDS)
+def _strip_html(s: str) -> str:
+    if not s:
+        return ""
+    if "<" not in s:
+        return s.strip()
+    return BeautifulSoup(s, "html.parser").get_text(" ", strip=True)
 
 
 def _fetch_cdc_han_sync() -> list[dict]:
@@ -115,30 +118,44 @@ def _fetch_cdc_han_sync() -> list[dict]:
 
 
 def _fetch_who_don_sync() -> list[dict]:
-    text = _http_get(WHO_RSS_URL)
+    """WHO Disease Outbreak News via the official DON REST API.
+
+    Every item in this feed is a confirmed outbreak report, so there is no
+    keyword filter — we simply take the most recent items within the window.
+    """
+    query = urllib.parse.urlencode({
+        "$orderby": "PublicationDateAndTime desc",
+        "$top": "40",
+    })
+    text = _http_get(f"{WHO_DON_API_URL}?{query}")
     if not text:
         return []
-    feed = feedparser.parse(text)
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        log.warning("WHO DON API returned non-JSON payload")
+        return []
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=WHO_DON_RECENT_DAYS)
     items: list[dict] = []
-    for entry in feed.entries:
-        published = None
-        if getattr(entry, "published", None):
-            try:
-                published = parsedate_to_datetime(entry.published)
-            except (TypeError, ValueError):
-                published = None
-        if not _within_recent(published):
+    for entry in data.get("value", []):
+        pub_raw = (entry.get("PublicationDateAndTime")
+                   or entry.get("PublicationDate") or "")
+        pub_dt = _parse_iso(pub_raw)
+        if pub_dt and pub_dt < cutoff:
             continue
-        title = entry.get("title", "")
-        summary = entry.get("summary", "") or ""
-        if not _is_outbreak_item(title, summary):
+        title = (entry.get("Title") or "").strip()
+        if not title:
             continue
+        url_name = (entry.get("UrlName")
+                    or (entry.get("ItemDefaultUrl") or "").lstrip("/"))
+        summary = _strip_html(entry.get("Summary") or entry.get("Overview") or "")
         items.append({
             "title": title,
-            "url": entry.get("link", ""),
-            "published": entry.get("published", ""),
+            "url": f"{WHO_DON_ITEM_BASE}{url_name}" if url_name else "",
+            "published": pub_raw,
             "summary": summary[:500],
-            "source": "WHO News (outbreak-filtered)",
+            "source": "WHO Disease Outbreak News",
         })
     return items
 
