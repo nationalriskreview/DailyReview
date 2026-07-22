@@ -42,6 +42,11 @@ PLANNED_KEYWORDS = (
     "scheduled maintenance", "planned maintenance", "track work",
     "construction",
     "advance notice", "future change", "upcoming",
+    "infrastructure upgrade", "infrastructure improvement",
+    "will not stop at", "trains will not stop",
+    "remain closed", "remains closed",
+    "service changes", "service change",
+    "modified service", "modified schedule",
 )
 
 WMATA_SEVERE_KEYWORDS = (
@@ -186,7 +191,15 @@ def _is_stale_permanent(active_periods, now_ts: int) -> bool:
 
 
 def _has_route_scope(informed_entities) -> bool:
-    return any(e.route_id for e in informed_entities)
+    """True when at least one entity is route-level (route_id set, no
+    stop_id, no trip). Entities with both route_id and stop_id are
+    stop-level — those are tracked stops on a route, not route-wide
+    outages, and shouldn't trip the severe-outage filter (MBTA emits
+    a lot of single-stop construction closures this way)."""
+    for e in informed_entities:
+        if e.route_id and not e.stop_id and not e.HasField("trip"):
+            return True
+    return False
 
 
 def _is_system_outage(informed_entities) -> bool:

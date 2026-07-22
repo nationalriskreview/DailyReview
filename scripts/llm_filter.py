@@ -40,9 +40,10 @@ CATEGORY_DEFINITIONS = {
         "ATM, or branch) that took place at a specific named location"
     ),
     "protest": (
-        "an upcoming public protest, demonstration, march, rally, or "
-        "civil-unrest event that is planned, scheduled, or announced to take "
-        "place today or within the next 2 days at a specific named location"
+        "a public protest, demonstration, march, rally, or civil-unrest event "
+        "that is either currently happening, just happened in the past 24h, "
+        "or is announced/scheduled for today or the next 2 days at a specific "
+        "named location"
     ),
     "utility_outage": (
         "a significant, currently ongoing or very recent (past 24h) disruption "
@@ -64,11 +65,14 @@ CATEGORY_QUESTIONS = {
         'Does this article report an actual bank robbery that occurred in or '
         'directly affecting {county_name}, {state}, within the past week?'
     ),
-    "protest": (
-        'Does this article announce or describe an upcoming protest, '
-        'demonstration, march, or rally scheduled or expected to take place '
-        'today or within the next 2 days in or near {county_name}, {state}? '
-        'Answer YES only if the event has not yet happened and is upcoming.'
+    'protest': (
+        'Does this article describe a real protest, demonstration, march, '
+        'rally, or civil-unrest event in or near {county_name}, {state} that '
+        'is either: (a) currently happening, (b) just happened in the past '
+        '24 hours, or (c) announced/scheduled for today or the next 2 days? '
+        'Answer YES for any of those. Answer NO only for opinion/analysis '
+        'pieces, historical retrospectives older than 24 hours, or articles '
+        'about protests in other locations.'
     ),
     "utility_outage": (
         'Does this article report an actual, significant power outage, blackout, '
