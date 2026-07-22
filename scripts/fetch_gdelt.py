@@ -52,7 +52,7 @@ FROM `gdelt-bq.gdeltv2.gkg_partitioned`
 WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
   AND _PARTITIONTIME <  CURRENT_TIMESTAMP()
   AND V2Locations LIKE '%#US#%'
-  AND (V2Themes LIKE '%CRIME_ROBBERY%' OR V2Themes LIKE '%BANK_ROBBERY%')
+  AND V2Themes LIKE '%ROBBERY%'
 LIMIT 50000
 """
 
@@ -128,6 +128,25 @@ PROTEST_FORWARD_KEYWORDS = (
     "to take place", "to begin",
     "later today", "this afternoon", "this evening", "this morning",
     "next week",
+)
+
+# Present/past protest-event indicators. Combined with PROTEST_FORWARD_KEYWORDS,
+# the title gate now admits protests that are upcoming, ongoing, OR just
+# happened (past 24h). The LLM pass confirms timing, reality, and location.
+PROTEST_EVENT_KEYWORDS = (
+    "protest", "protester", "protesters", "protestor", "protestors",
+    "demonstration", "demonstrations", "demonstrator", "demonstrators",
+    "rally", "rallies", "rallied",
+    "march ", "marches", "marched", "marching",
+    "sit-in", "walkout", "walk-out",
+    "picket", "picketing", "picket line",
+    "vigil",
+    "riot", "rioting", "rioters",
+    "unrest", "civil unrest",
+    "clash", "clashes", "clashed",
+    "took to the streets", "take to the streets",
+    "staged a", "stage a protest",
+    "uprising",
 )
 
 UTILITY_KEYWORDS = (
@@ -230,11 +249,15 @@ def _title_passes_bank_robbery(title: str) -> bool:
     return "bank" in t and any(v in t for v in BANK_ROBBERY_VERBS)
 
 
-def _title_is_forward_looking_protest(title: str) -> bool:
+def _title_is_protest_event(title: str) -> bool:
+    """Title indicates a protest/demonstration event — upcoming, ongoing, or
+    just-occurred (past 24h). The LLM pass downstream confirms timing, reality,
+    and location. Strictly broader than the old forward-looking-only gate."""
     if not title:
         return False
     t = title.lower()
-    return any(k in t for k in PROTEST_FORWARD_KEYWORDS)
+    return (any(k in t for k in PROTEST_EVENT_KEYWORDS)
+            or any(k in t for k in PROTEST_FORWARD_KEYWORDS))
 
 def _title_is_utility(title: str) -> bool:
     if not title:
@@ -327,12 +350,12 @@ def _collect_protests(client) -> dict[str, list[dict]]:
 
     by_county: dict[str, list[dict]] = defaultdict(list)
     seen: dict[str, set[str]] = defaultdict(set)
-    forward_count = 0
+    passed = 0
     for row in rows:
         title = _extract_title(row.extras or "")
-        if not _title_is_forward_looking_protest(title):
+        if not _title_is_protest_event(title):
             continue
-        forward_count += 1
+        passed += 1
         counties = _extract_counties_from_locations(row.locations or "")
         if not counties:
             continue
@@ -344,9 +367,9 @@ def _collect_protests(client) -> dict[str, list[dict]]:
             seen[fips].add(url)
             by_county[fips].append(article)
     log.info(
-        "GDELT protests: %d articles passed forward-looking filter, "
+        "GDELT protests: %d articles passed protest-event filter, "
         "%d counties had matches",
-        forward_count, sum(1 for v in by_county.values() if v),
+        passed, sum(1 for v in by_county.values() if v),
     )
     return dict(by_county)
 
@@ -424,8 +447,8 @@ def collect_gdelt_by_county() -> dict[str, dict[str, list[dict]]]:
     utility_outage, transit_disruption}.
 
     bank_robbery / utility_outage / transit_disruption are retrospective
-    (past 24h). protest is prospective (upcoming events announced in
-    past-24h news).
+    (past 24h). protest covers demonstrations that are upcoming, ongoing, or
+    occurred within the past 24h (per past-24h news).
     """
     client = _build_client()
     robberies = _collect_robberies(client)

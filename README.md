@@ -26,7 +26,7 @@ Each county object exposes alerts in these buckets:
 
 - **`weather`** — NWS Warnings, Hurricane/Tropical/Winter Storm Watches, and 24h gridpoint forecast exceeding 1" rain, 6" snow, >105°F heat, or <0°F cold.
 - **`bank_robbery`** — News reports of bank robberies (GDELT GKG, strict title filter + LLM confirmation). Includes `is_new` flag for reports within the last 12 hours.
-- **`protest`** — Protests / demonstrations (GDELT GKG, prospective filter + LLM confirmation). Includes `is_new` flag.
+- **`protest`** — Protests / demonstrations that are upcoming, ongoing, or occurred within the past 24h (GDELT GKG, protest-event title filter + LLM confirmation). Includes `is_new` flag.
 - **`utility_outage`** — Significant disruptions to power or water (GDELT GKG, keyword filter + LLM confirmation). Includes `is_new` flag.
 - **`transit_disruption`** — Major transit disruptions reported in past-24h news (GDELT GKG, strict disruption-verb + transit-noun title filter, conditional/resolution language rejected, LLM precision pass). Covers strikes, derailments, system shutdowns, mass cancellations, evacuations. Complements `transit` by surfacing events before they are encoded in structured agency feeds.
 - **`wildfires`** — Active wildfires within 50 miles (NASA EONET). Categorized by `threat_level` (`Immediate` <15mi, `Vicinity` <50mi) and includes `acreage` when available.
