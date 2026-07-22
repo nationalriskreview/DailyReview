@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "fips": "37181",
   "name": "Vance County",
   "state": "NC",
@@ -8,7 +8,14 @@
     "lon": -78.405434
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.0\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast"
+      }
+    ],
     "bank_robbery": [],
     "protest": [],
     "utility_outage": [],
@@ -20,7 +27,29 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
+  "conditions": {
+    "forecast": {
+      "precip_in_24h": 1.0,
+      "snow_in_24h": 0.0,
+      "high_apparent_temp_f": 89.0,
+      "low_apparent_temp_f": 72.0,
+      "window": "next 24h",
+      "source": "nws_gridpoint"
+    },
+    "air_quality": {
+      "us_aqi": 52,
+      "category": "Moderate",
+      "aqi_24h_max": 54,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 9.4,
+      "pm10": 12.0,
+      "ozone": 62.0,
+      "nitrogen_dioxide": 1.8,
+      "observed_at": "2026-07-22T16:00",
+      "source": "Open-Meteo Air Quality (US EPA AQI)"
+    }
+  },
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T09:46:56.526008+00:00"
+  "generated_at": "2026-07-22T16:49:01.700246+00:00"
 }

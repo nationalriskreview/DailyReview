@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.6",
+  "schema_version": "1.7",
   "fips": "31063",
   "name": "Frontier County",
   "state": "NE",
@@ -8,7 +8,14 @@
     "lon": -100.406683
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Cold Forecast",
+        "headline": "Apparent temperature expected to drop to -100.0°F in next 24h",
+        "severity": "Severe",
+        "source": "nws_forecast"
+      }
+    ],
     "bank_robbery": [],
     "protest": [],
     "utility_outage": [],
@@ -20,7 +27,29 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
+  "conditions": {
+    "forecast": {
+      "precip_in_24h": 0.01,
+      "snow_in_24h": 0.0,
+      "high_apparent_temp_f": 86.0,
+      "low_apparent_temp_f": -100.0,
+      "window": "next 24h",
+      "source": "nws_gridpoint"
+    },
+    "air_quality": {
+      "us_aqi": 51,
+      "category": "Moderate",
+      "aqi_24h_max": 52,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 5.7,
+      "pm10": 6.1,
+      "ozone": 84.0,
+      "nitrogen_dioxide": 2.2,
+      "observed_at": "2026-07-22T16:00",
+      "source": "Open-Meteo Air Quality (US EPA AQI)"
+    }
+  },
   "date": "2026-07-22",
-  "generated_at": "2026-07-22T09:46:56.526008+00:00"
+  "generated_at": "2026-07-22T16:49:01.700246+00:00"
 }
