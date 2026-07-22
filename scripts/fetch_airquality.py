@@ -24,6 +24,13 @@ USER_AGENT = os.environ.get(
     "DailyReview/1.0 (https://github.com/nationalriskreview/DailyReview)",
 )
 
+# Open-Meteo's free tier rate-limits by minute (~600/min); a naive burst of
+# 3,200 requests trips HTTP 429 and silently loses most counties. Pace request
+# starts to stay comfortably under that and retry the 429/5xx that still slip
+# through. ~8 starts/sec ≈ 480/min → full national sweep in ~7 minutes.
+AQ_REQUESTS_PER_SEC = float(os.environ.get("AQ_REQUESTS_PER_SEC", "8"))
+AQ_MAX_RETRIES = int(os.environ.get("AQ_MAX_RETRIES", "4"))
+
 # US EPA AQI breakpoints → category label.
 AQI_CATEGORIES = (
     (50, "Good"),
@@ -46,20 +53,47 @@ def aqi_category(aqi: float | None) -> str:
     return "Hazardous"
 
 
-async def _fetch_json(session: aiohttp.ClientSession, url: str, params: dict) -> dict | None:
+class _RateLimiter:
+    """Spaces request *starts* to a fixed rate across all concurrent workers."""
+
+    def __init__(self, rate_per_sec: float):
+        self._interval = 1.0 / rate_per_sec if rate_per_sec > 0 else 0.0
+        self._lock = asyncio.Lock()
+        self._next = 0.0
+
+    async def acquire(self) -> None:
+        loop = asyncio.get_event_loop()
+        async with self._lock:
+            target = max(self._next, loop.time()) + self._interval
+            self._next = target
+        delay = target - loop.time()
+        if delay > 0:
+            await asyncio.sleep(delay)
+
+
+async def _fetch_json(
+    session: aiohttp.ClientSession, url: str, params: dict,
+    limiter: _RateLimiter,
+) -> dict | None:
     headers = {"User-Agent": USER_AGENT}
-    try:
-        async with session.get(url, params=params, headers=headers,
-                               timeout=aiohttp.ClientTimeout(total=30)) as r:
-            if r.status != 200:
-                return None
-            return await r.json()
-    except (aiohttp.ClientError, asyncio.TimeoutError):
-        return None
+    for attempt in range(AQ_MAX_RETRIES):
+        await limiter.acquire()
+        try:
+            async with session.get(url, params=params, headers=headers,
+                                   timeout=aiohttp.ClientTimeout(total=30)) as r:
+                if r.status == 429 or r.status >= 500:
+                    await asyncio.sleep(1.5 * (attempt + 1))
+                    continue
+                if r.status != 200:
+                    return None
+                return await r.json()
+        except (aiohttp.ClientError, asyncio.TimeoutError):
+            await asyncio.sleep(1.0 * (attempt + 1))
+    return None
 
 
 async def fetch_county_air_quality(
-    session: aiohttp.ClientSession, county: dict
+    session: aiohttp.ClientSession, county: dict, limiter: _RateLimiter
 ) -> dict | None:
     """Current US AQI + pollutants for a county, plus next-24h peak AQI."""
     params = {
@@ -70,7 +104,7 @@ async def fetch_county_air_quality(
         "forecast_days": 1,
         "timezone": "UTC",
     }
-    data = await _fetch_json(session, AQ_URL, params)
+    data = await _fetch_json(session, AQ_URL, params, limiter)
     if not data:
         return None
 
@@ -99,15 +133,16 @@ async def fetch_county_air_quality(
 
 async def fetch_air_quality_for_counties(
     counties: Iterable[dict],
-    concurrency: int = 20,
+    concurrency: int = 12,
 ) -> dict[str, dict]:
     sem = asyncio.Semaphore(concurrency)
+    limiter = _RateLimiter(AQ_REQUESTS_PER_SEC)
     results: dict[str, dict] = {}
 
     async with aiohttp.ClientSession() as session:
         async def worker(county):
             async with sem:
-                aq = await fetch_county_air_quality(session, county)
+                aq = await fetch_county_air_quality(session, county, limiter)
                 if aq:
                     results[county["fips"]] = aq
 
