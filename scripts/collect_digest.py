@@ -111,14 +111,16 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
     # --- Air quality (Open-Meteo, US AQI + pollutants), all counties ---
     log.info("Air quality: querying %d counties", len(counties))
     try:
-        air_quality_by_fips = await fetch_air_quality_for_counties(
-            counties, concurrency=20
-        )
-        log.info("Air quality: %d counties with readings", len(air_quality_by_fips))
+        air_quality_by_fips = await fetch_air_quality_for_counties(counties)
+        readings = len(air_quality_by_fips)
+        # Flag silent under-coverage (e.g. rate-limiting) rather than masking it as "ok".
+        aq_status = "ok" if readings >= 0.95 * len(counties) else "partial"
+        log.info("Air quality: %d/%d counties with readings (%s)",
+                 readings, len(counties), aq_status)
         data_sources["air_quality_open_meteo"] = {
-            "status": "ok",
+            "status": aq_status,
             "counties_queried": len(counties),
-            "counties_with_readings": len(air_quality_by_fips),
+            "counties_with_readings": readings,
         }
     except Exception as e:
         log.error("Air quality fetch failed (continuing with empty): %s", e)
