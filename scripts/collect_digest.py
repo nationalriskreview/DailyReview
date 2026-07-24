@@ -130,7 +130,7 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
             "status": "failed", "error": _truncate_error(e),
         }
 
-    # --- GDELT (bank robbery, protest, utility outage, transit disruption) ---
+    # --- GDELT (protest, utility, transit, service-provider, hazmat, road) ---
     gdelt_by_fips: dict = {}
     if skip_gdelt:
         log.info("GDELT: skipped (--skip-gdelt)")
@@ -161,7 +161,7 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
 
         if gdelt_by_fips:
             try:
-                gdelt_by_fips = await asyncio.get_event_loop().run_in_executor(
+                gdelt_by_fips, llm_stats = await asyncio.get_event_loop().run_in_executor(
                     None, filter_gdelt_results, gdelt_by_fips, index_by_fips(counties)
                 )
                 log.info("GDELT (post-LLM): %d counties remain", len(gdelt_by_fips))
@@ -169,10 +169,12 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
                 for buckets in gdelt_by_fips.values():
                     for k in cat_totals_post:
                         cat_totals_post[k] += len(buckets.get(k, []))
+                # partial when the per-run call cap left some articles unfiltered
                 data_sources["llm_filter_gemini"] = {
-                    "status": "ok",
+                    "status": "partial" if llm_stats.get("cap_hit") else "ok",
                     "counties_with_matches": len(gdelt_by_fips),
                     "items_post_llm": cat_totals_post,
+                    **llm_stats,
                 }
             except Exception as e:
                 log.error("LLM filter failed (continuing with unfiltered): %s", e)

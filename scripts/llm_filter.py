@@ -75,77 +75,30 @@ CATEGORY_DEFINITIONS = {
     ),
 }
 
-CATEGORY_QUESTIONS = {
-    'protest': (
-        'Does this article describe a real protest, demonstration, march, '
-        'rally, or civil-unrest event in or near {county_name}, {state} that '
-        'is either: (a) currently happening, (b) just happened in the past '
-        '24 hours, or (c) announced/scheduled for today or the next 2 days? '
-        'Answer YES for any of those. Answer NO only for opinion/analysis '
-        'pieces, historical retrospectives older than 24 hours, or articles '
-        'about protests in other locations.'
-    ),
-    "utility_outage": (
-        'Does this article report an actual, significant power outage, blackout, '
-        'or severe water disruption (like a boil water advisory) affecting '
-        '{county_name}, {state}?'
-    ),
-    "transit_disruption": (
-        'Does this article report an actual major disruption to public-transit '
-        'service (transit strike, train derailment, line/system shutdown, mass '
-        'service halt, or evacuation) that is currently active and affecting '
-        '{county_name}, {state}? Answer YES only if a real transit service '
-        'outage is happening right now — not for a planned future event, '
-        'a resolved/averted event, or routine delays.'
-    ),
-    "service_provider_outage": (
-        'Does this article report an actual, current operational outage or '
-        'service disruption at a major technology, cloud, or telecom provider '
-        'that is affecting users (including users in {county_name}, {state})? '
-        'Answer YES only for a real ongoing/recent outage — not a product '
-        'announcement, earnings, acquisition, or security-update story.'
-    ),
-    "hazmat_incident": (
-        'Does this article report an actual hazardous-materials or industrial '
-        'accident (chemical spill/leak, plant or refinery explosion, toxic or '
-        'gas release, pipeline rupture) at or near {county_name}, {state} that '
-        'is causing evacuations, shelter-in-place, or closures? Answer YES only '
-        'for a real, current incident.'
-    ),
-    "road_closure": (
-        'Does this article report a major roadway closure — an interstate, '
-        'highway, freeway, or key bridge/tunnel closed or blocked (all lanes or '
-        'both directions) in or near {county_name}, {state} due to an incident, '
-        'crash, flooding, or damage? Answer NO for routine lane/ramp closures '
-        'or planned construction.'
-    ),
-}
-
-
-def _build_prompt(category: str, article: dict, county_name: str, state: str) -> str:
+def _build_prompt(category: str, article: dict) -> str:
+    """Location-agnostic event-type classification. We ask only whether the
+    article reports a real event of this category — geographic attribution to
+    counties is GDELT's job (V2Locations), so the same article is classified
+    once and the verdict is applied to every county it was tagged to."""
     definition = CATEGORY_DEFINITIONS.get(category, category)
-    question_tpl = CATEGORY_QUESTIONS.get(
-        category,
-        'Does this article report an actual "{category}" event in {county_name}, {state}?'
-    )
-    question = question_tpl.format(
-        category=category, county_name=county_name, state=state,
-    )
+    readable = category.replace("_", " ")
     title = article.get("title") or "(no title)"
     domain = article.get("domain") or ""
     url = article.get("url") or ""
     return (
-        f'You are evaluating news articles to identify real-world events.\n'
-        f'Consider the domain\'s reputation. Prioritize local news, .gov, or .edu. '
-        f'Be highly skeptical of generic content aggregator sites.\n\n'
+        'You are evaluating news articles to identify real-world events.\n'
+        "Consider the domain's reputation. Prioritize local news, .gov, or .edu. "
+        'Be highly skeptical of generic content aggregator sites.\n\n'
         f'Category "{category}" means: {definition}.\n\n'
-        f"Article:\n"
-        f"  Title: {title}\n"
-        f"  Domain: {domain}\n"
-        f"  URL: {url}\n"
-        f"  Geographic context: tagged to {county_name}, {state}\n\n"
-        f"{question}\n\n"
-        f"Reply with EXACTLY one word: YES or NO. No explanation."
+        'Article:\n'
+        f'  Title: {title}\n'
+        f'  Domain: {domain}\n'
+        f'  URL: {url}\n\n'
+        f'Does this article report a real, current {readable} event matching '
+        'that definition, at a specific location in the United States? Answer NO '
+        'for opinion/analysis, historical retrospectives, planned-then-cancelled '
+        'or resolved events, or unrelated topics.\n\n'
+        'Reply with EXACTLY one word: YES or NO. No explanation.'
     )
 
 
@@ -181,62 +134,81 @@ def _call_gemini(prompt: str) -> str | None:
     return ((parts[0].get("text") or "").strip().upper())
 
 
+def _article_key(category: str, art: dict) -> tuple[str, str]:
+    """Dedup key: an article is the same classification everywhere it is tagged.
+    Keyed by (category, url); falls back to title so url-less articles are still
+    classified individually rather than collapsing together."""
+    return (category, art.get("url") or art.get("title") or "")
+
+
 def filter_gdelt_results(
     gdelt_by_fips: dict[str, dict[str, list[dict]]],
     counties_by_fips: dict[str, dict],
-) -> dict[str, dict[str, list[dict]]]:
+) -> tuple[dict[str, dict[str, list[dict]]], dict]:
+    """Return (filtered, stats). stats carries unique_articles / calls_used /
+    cap_hit so the caller can surface incomplete filtering in run health."""
     if not API_KEY:
         log.info("LLM filter: GEMINI_API_KEY not set, skipping precision pass")
-        return gdelt_by_fips
+        return gdelt_by_fips, {"skipped_reason": "no_api_key",
+                               "unique_articles": 0, "calls_used": 0, "cap_hit": False}
     if not gdelt_by_fips:
-        return gdelt_by_fips
+        return gdelt_by_fips, {"unique_articles": 0, "calls_used": 0, "cap_hit": False}
 
-    log.info("LLM filter: starting precision pass (model=%s)", MODEL)
+    # 1. Collect each unique (category, article) once — an article tagged to N
+    #    counties would otherwise be classified N times with the same answer.
+    unique: dict[tuple[str, str], dict] = {}
+    for buckets in gdelt_by_fips.values():
+        for category, articles in buckets.items():
+            for art in articles:
+                unique.setdefault(_article_key(category, art), art | {"_category": category})
+
+    log.info("LLM filter: %d unique articles to classify (model=%s)", len(unique), MODEL)
+
+    # 2. Classify each unique article once, up to the per-run cap (fail-open).
+    verdicts: dict[tuple[str, str], bool] = {}
+    calls_used = 0
+    cap_hit = False
+    for key, art in unique.items():
+        category = art["_category"]
+        if calls_used >= MAX_CALLS_PER_RUN:
+            cap_hit = True
+            verdicts[key] = True  # cap reached: keep unclassified (fail-open)
+            continue
+        answer = _call_gemini(_build_prompt(category, art))
+        calls_used += 1
+        verdicts[key] = True if answer is None else answer.startswith("YES")
+        time.sleep(DELAY_BETWEEN_CALLS)
+
+    # 3. Rebuild the per-county structure, applying each article's verdict.
     filtered: dict[str, dict[str, list[dict]]] = {}
     total_in = 0
     total_kept = 0
-    total_calls = 0
-
     for fips, buckets in gdelt_by_fips.items():
-        county = counties_by_fips.get(fips)
-        if not county:
-            filtered[fips] = buckets
-            continue
-        county_name = county["name"]
-        state = county["state"]
-
         new_buckets: dict[str, list[dict]] = {}
         for category, articles in buckets.items():
-            if not articles:
-                new_buckets[category] = articles
-                continue
-            kept: list[dict] = []
+            kept = []
             for art in articles:
                 total_in += 1
-                if total_calls >= MAX_CALLS_PER_RUN:
+                if verdicts.get(_article_key(category, art), True):
                     kept.append(art)
-                    continue
-                prompt = _build_prompt(category, art, county_name, state)
-                answer = _call_gemini(prompt)
-                total_calls += 1
-                if answer is None:
-                    kept.append(art)
-                elif answer.startswith("YES"):
-                    kept.append(art)
-                time.sleep(DELAY_BETWEEN_CALLS)
-            total_kept += len(kept)
             new_buckets[category] = kept
+            total_kept += len(kept)
         if any(new_buckets.values()):
             filtered[fips] = new_buckets
 
     pass_rate = (100 * total_kept / total_in) if total_in else 0
     log.info(
-        "LLM filter: %d articles in -> %d kept (%.0f%% pass rate, %d calls used)",
-        total_in, total_kept, pass_rate, total_calls,
+        "LLM filter: %d unique classified (%d calls), %d county-items in -> %d kept (%.0f%%)",
+        len(unique), calls_used, total_in, total_kept, pass_rate,
     )
-    if total_calls >= MAX_CALLS_PER_RUN:
+    if cap_hit:
         log.warning(
-            "LLM filter: hit GEMINI_MAX_CALLS=%d; remaining articles passed through unfiltered",
-            MAX_CALLS_PER_RUN,
+            "LLM filter: hit GEMINI_MAX_CALLS=%d; %d unique articles passed through unfiltered",
+            MAX_CALLS_PER_RUN, len(unique) - calls_used,
         )
-    return filtered
+    return filtered, {
+        "unique_articles": len(unique),
+        "calls_used": calls_used,
+        "cap": MAX_CALLS_PER_RUN,
+        "cap_hit": cap_hit,
+    }
