@@ -70,7 +70,7 @@ DATA_WINDOWS = {
     "conditions.forecast": "next 24h (NWS gridpoint)",
     "conditions.air_quality": "current + next 24h peak (Open-Meteo US AQI)",
     "national.cdc_han": "7d",
-    "national.who_don": "30d (WHO Disease Outbreak News)",
+    "national.cdc_travel_notices": "active (CDC Travel Health Notices)",
     "national.amtrak_advisories": "active (effective today)",
     "national.faa_advisories": "live",
 }
@@ -220,7 +220,7 @@ def write_all(
         "date": today,
         "data_windows": {
             "national.cdc_han": DATA_WINDOWS["national.cdc_han"],
-            "national.who_don": DATA_WINDOWS["national.who_don"],
+            "national.cdc_travel_notices": DATA_WINDOWS["national.cdc_travel_notices"],
             "national.amtrak_advisories": DATA_WINDOWS["national.amtrak_advisories"],
             "national.faa_advisories": DATA_WINDOWS["national.faa_advisories"],
         },
