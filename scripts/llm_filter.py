@@ -35,10 +35,6 @@ MAX_CALLS_PER_RUN = int(os.environ.get("GEMINI_MAX_CALLS", "300"))
 HTTP_TIMEOUT = 30
 
 CATEGORY_DEFINITIONS = {
-    "bank_robbery": (
-        "an actual robbery of a financial institution (bank, credit union, "
-        "ATM, or branch) that took place at a specific named location"
-    ),
     "protest": (
         "a public protest, demonstration, march, rally, or civil-unrest event "
         "that is either currently happening, just happened in the past 24h, "
@@ -58,13 +54,28 @@ CATEGORY_DEFINITIONS = {
         "weekend track work, and station-level accessibility outages do NOT "
         "qualify."
     ),
+    "service_provider_outage": (
+        "a significant operational outage or service disruption at a major "
+        "technology, cloud, or telecom provider (e.g. Microsoft/Azure, Google "
+        "Cloud, AWS, Oracle, Cloudflare, Salesforce, Verizon, AT&T, T-Mobile, "
+        "Comcast) that is currently affecting users — not a product launch, "
+        "earnings, security-patch, or business-deal story"
+    ),
+    "hazmat_incident": (
+        "a hazardous-materials or industrial accident such as a chemical "
+        "spill/leak, plant or refinery explosion, gas or toxic release, or "
+        "pipeline rupture, that is causing evacuations, shelter-in-place, or "
+        "area closures at a specific named location"
+    ),
+    "road_closure": (
+        "a major roadway closure — an interstate, highway, freeway, key bridge "
+        "or tunnel closed or blocked in both directions or across all lanes due "
+        "to an incident, crash, flooding, or damage. Routine lane closures, "
+        "single-lane or ramp closures, and planned construction do NOT qualify."
+    ),
 }
 
 CATEGORY_QUESTIONS = {
-    "bank_robbery": (
-        'Does this article report an actual bank robbery that occurred in or '
-        'directly affecting {county_name}, {state}, within the past week?'
-    ),
     'protest': (
         'Does this article describe a real protest, demonstration, march, '
         'rally, or civil-unrest event in or near {county_name}, {state} that '
@@ -86,6 +97,27 @@ CATEGORY_QUESTIONS = {
         '{county_name}, {state}? Answer YES only if a real transit service '
         'outage is happening right now — not for a planned future event, '
         'a resolved/averted event, or routine delays.'
+    ),
+    "service_provider_outage": (
+        'Does this article report an actual, current operational outage or '
+        'service disruption at a major technology, cloud, or telecom provider '
+        'that is affecting users (including users in {county_name}, {state})? '
+        'Answer YES only for a real ongoing/recent outage — not a product '
+        'announcement, earnings, acquisition, or security-update story.'
+    ),
+    "hazmat_incident": (
+        'Does this article report an actual hazardous-materials or industrial '
+        'accident (chemical spill/leak, plant or refinery explosion, toxic or '
+        'gas release, pipeline rupture) at or near {county_name}, {state} that '
+        'is causing evacuations, shelter-in-place, or closures? Answer YES only '
+        'for a real, current incident.'
+    ),
+    "road_closure": (
+        'Does this article report a major roadway closure — an interstate, '
+        'highway, freeway, or key bridge/tunnel closed or blocked (all lanes or '
+        'both directions) in or near {county_name}, {state} due to an incident, '
+        'crash, flooding, or damage? Answer NO for routine lane/ramp closures '
+        'or planned construction.'
     ),
 }
 

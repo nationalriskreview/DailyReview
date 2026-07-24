@@ -25,10 +25,12 @@ CDN alternative: `https://cdn.jsdelivr.net/gh/nationalriskreview/DailyReview@mai
 Each county object exposes alerts in these buckets:
 
 - **`weather`** — NWS Warnings, Hurricane/Tropical/Winter Storm Watches, and 24h gridpoint forecast exceeding 1" rain, 6" snow, >105°F heat, or <0°F cold. Alerts of the same event type are consolidated into one entry per county (a hazard is often issued as many near-identical alerts across a county's NWS zones and neighboring offices): the merged entry keeps the highest severity/urgency, widens the window to `[earliest effective, latest expires]`, and reports `count` of merged source alerts.
-- **`bank_robbery`** — News reports of bank robberies (GDELT GKG, strict title filter + LLM confirmation). Includes `is_new` flag for reports within the last 12 hours.
 - **`protest`** — Protests / demonstrations that are upcoming, ongoing, or occurred within the past 24h (GDELT GKG, protest-event title filter + LLM confirmation). Includes `is_new` flag.
 - **`utility_outage`** — Significant disruptions to power or water (GDELT GKG, keyword filter + LLM confirmation). Includes `is_new` flag.
 - **`transit_disruption`** — Major transit disruptions reported in past-24h news (GDELT GKG, strict disruption-verb + transit-noun title filter, conditional/resolution language rejected, LLM precision pass). Covers strikes, derailments, system shutdowns, mass cancellations, evacuations. Complements `transit` by surfacing events before they are encoded in structured agency feeds.
+- **`service_provider_outage`** — Operational outages/disruptions at major cloud, telecom, and SaaS providers (Microsoft/Azure, Google Cloud, AWS, Oracle, Cloudflare, Salesforce, Verizon, AT&T, T-Mobile, Comcast, …) reported in past-24h news (GDELT GKG: provider-organization prefilter + provider-name + outage-word title filter + LLM confirmation). Product launches, earnings, and security-patch stories are rejected. Includes `is_new` flag.
+- **`hazmat_incident`** — Hazardous-materials / industrial accidents (chemical spill or leak, plant/refinery explosion, toxic or gas release, pipeline rupture) causing evacuations, shelter-in-place, or closures (GDELT GKG: `MANMADE_DISASTER` theme + hazmat title filter + LLM confirmation). Includes `is_new` flag.
+- **`road_closure`** — Major roadway closures — an interstate, highway, freeway, or key bridge/tunnel closed or blocked across all lanes / both directions due to an incident, crash, flooding, or damage (GDELT GKG: transport/infrastructure themes + highway-noun + closure-verb title filter; routine lane/ramp closures and planned construction rejected; LLM confirmation). Includes `is_new` flag.
 - **`wildfires`** — Active wildfires within 50 miles (NASA EONET). Categorized by `threat_level` (`Immediate` <15mi, `Vicinity` <50mi) and includes `acreage` when available.
 - **`transit`** — Severe mass-transit outages from structured agency feeds: GTFS-Realtime alerts with `effect=NO_SERVICE` (active now, route-level scope, non-planned). Covers ~12 major US transit agency feeds (configured in `reference/transit_agencies.json`) — MTA NYC Subway, LIRR, and Metro-North; MBTA; NJ Transit Rail (public Rail Advisories RSS); PATH; WMATA; BART; Caltrain (via 511 SF Bay); CTA; Metra. MTA feeds tag every alert as `UNKNOWN_EFFECT`, so a text-based severity heuristic is used in their place (matches strike/system-wide/full-suspension language, rejects planned work and conditional notices). NJ Transit's RSS is filtered to strike/derailment/system-wide severity only; elevator/escalator/track-work entries are dropped. `system_outage: true` flags agency-wide shutdowns.
 - **`amtrak`** — Active Amtrak service-stoppage and full-station-closure advisories scraped from `amtrak.com/service-alerts-and-notices`, filtered to severity-only and fanned out per-county via Amtrak's static GTFS (passenger advisories → route stops → nearest county centroid; station advisories → station code → county). Surfaces only items where (a) the title indicates a service stoppage (strike/derailment/suspension/cancellation/shutdown) or full station closure, (b) the effective date range includes today, and (c) the route or station code can be matched in the GTFS map. Routine schedule adjustments, boarding changes, modified schedules, accessibility/equipment outages, baggage policy changes, and construction/renovation entries are dropped. Each entry has a `kind` field of `service_stoppage` or `station_closure`. The same severity-filtered list is exposed at `national.amtrak_advisories`.
@@ -55,9 +57,19 @@ National alerts in `national.json`:
 
 ## Run health (`data_sources`)
 
-Each top-level output (`today.json`, `today-summary.json`, `national.json`) includes a `data_sources` object reporting per-collector status for the current run. Use it to see at a glance which fetches worked and which silently returned empty.
+Each top-level output (`today.json`, `today-summary.json`, `national.json`) includes a `data_sources` object reporting per-collector status for the current run, plus a `run_health` rollup for an at-a-glance verdict. Use them to see which fetches worked and which silently returned empty — the green GitHub Actions checkmark only means the script didn't crash, not that every source succeeded.
 
-Per source: `status` is one of `ok`, `failed`, `skipped`, `partial`. `ok` means the fetch and parse succeeded (zero items is still `ok`). `failed` includes a truncated `error` string. `partial` is used for transit when some agencies succeeded and others failed.
+`run_health` summarizes the whole run: `overall` is `ok` (every collector ok/skipped), `degraded` (some failed or returned partial data while others succeeded), or `failed` (nothing succeeded). It also carries `counts` and the names of the `failed`, `partial`, and `skipped` collectors, so a downstream monitor can alert on `overall != "ok"`.
+
+```json
+"run_health": {
+  "overall": "degraded",
+  "counts": {"ok": 12, "partial": 1, "failed": 0, "skipped": 1},
+  "failed": [], "partial": ["air_quality_open_meteo"], "skipped": ["gdelt"]
+}
+```
+
+Per source: `status` is one of `ok`, `failed`, `skipped`, `partial`. `ok` means the fetch and parse succeeded (zero items is still `ok`). `failed` includes a truncated `error` string. `partial` is used for air quality (coverage below 95%) and transit (some agencies succeeded, others failed).
 
 Transit additionally exposes a per-agency `agencies` array — each with `id`, `name`, `status`, and `items`. Per-agency status values:
 
@@ -88,7 +100,7 @@ Examples:
 "gdelt": {
   "status": "ok",
   "counties_with_matches": 12,
-  "items_pre_llm": {"bank_robbery": 3, "protest": 6, "utility_outage": 4, "transit_disruption": 5}
+  "items_pre_llm": {"protest": 6, "utility_outage": 4, "transit_disruption": 5, "service_provider_outage": 2, "hazmat_incident": 1, "road_closure": 3}
 }
 ```
 

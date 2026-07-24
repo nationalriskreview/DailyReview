@@ -57,10 +57,12 @@ OUTPUT_NOTES = {
 
 DATA_WINDOWS = {
     "weather": "live",
-    "bank_robbery": "24h",
     "protest": "24h",
     "utility_outage": "24h",
     "transit_disruption": "24h",
+    "service_provider_outage": "24h",
+    "hazmat_incident": "24h",
+    "road_closure": "24h",
     "wildfires": "active (EONET open events, last 14d)",
     "transit": "live",
     "amtrak": "active (effective today per Amtrak page)",
@@ -93,10 +95,12 @@ def _county_record(
 ) -> dict:
     alerts = {
         "weather": (weather or []) + (forecast or []),
-        "bank_robbery": (gdelt or {}).get("bank_robbery", []),
         "protest": (gdelt or {}).get("protest", []),
         "utility_outage": (gdelt or {}).get("utility_outage", []),
         "transit_disruption": (gdelt or {}).get("transit_disruption", []),
+        "service_provider_outage": (gdelt or {}).get("service_provider_outage", []),
+        "hazmat_incident": (gdelt or {}).get("hazmat_incident", []),
+        "road_closure": (gdelt or {}).get("road_closure", []),
         "wildfires": wildfires or [],
         "transit": transit or [],
         "amtrak": amtrak or [],
@@ -140,6 +144,48 @@ def _write_json(path: Path, obj) -> None:
     path.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n")
 
 
+def _compute_run_health(data_sources: dict) -> dict:
+    """Roll per-collector statuses up into one at-a-glance verdict.
+
+    overall is `ok` when every collector is ok/skipped, `degraded` when some
+    failed or returned partial data but others succeeded, and `failed` when
+    nothing succeeded. Lets a consumer (or an alert) judge the run without
+    scanning every collector — the green Actions checkmark only means the
+    script didn't crash, not that every source worked.
+    """
+    ok, partial, failed, skipped = [], [], [], []
+    for name, info in (data_sources or {}).items():
+        status = (info or {}).get("status", "unknown")
+        if status == "ok":
+            ok.append(name)
+        elif status == "partial":
+            partial.append(name)
+        elif status in ("skipped", "skipped_no_auth"):
+            skipped.append(name)
+        elif status == "failed":
+            failed.append(name)
+        else:  # unknown/unexpected — surface it rather than hide it
+            partial.append(name)
+
+    if failed and not ok:
+        overall = "failed"
+    elif failed or partial:
+        overall = "degraded"
+    else:
+        overall = "ok"
+
+    return {
+        "overall": overall,
+        "counts": {
+            "ok": len(ok), "partial": len(partial),
+            "failed": len(failed), "skipped": len(skipped),
+        },
+        "failed": sorted(failed),
+        "partial": sorted(partial),
+        "skipped": sorted(skipped),
+    }
+
+
 def write_all(
     counties: list[dict],
     boroughs: list[dict],
@@ -158,6 +204,7 @@ def write_all(
     data_sources: dict[str, dict] | None = None,
 ) -> None:
     data_sources = data_sources or {}
+    run_health = _compute_run_health(data_sources)
     now = datetime.now(timezone.utc)
     today = now.date().isoformat()
 
@@ -192,6 +239,7 @@ def write_all(
         "data_windows": DATA_WINDOWS,
         "notes": OUTPUT_NOTES,
         "data_sources": data_sources,
+        "run_health": run_health,
         "counties_total": len(records),
         "counties_with_alerts": len(flagged),
         "national": national,
@@ -208,6 +256,7 @@ def write_all(
         "data_windows": DATA_WINDOWS,
         "notes": OUTPUT_NOTES,
         "data_sources": data_sources,
+        "run_health": run_health,
         "counties_total": len(records),
         "counties_with_alerts": len(flagged),
         "national": national,
@@ -227,6 +276,7 @@ def write_all(
             "national.faa_advisories": DATA_WINDOWS["national.faa_advisories"],
         },
         "data_sources": data_sources,
+        "run_health": run_health,
         **national,
     })
 

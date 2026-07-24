@@ -24,7 +24,7 @@ from fetch_nws import (
     fetch_active_alerts, bucket_alerts_by_county, fetch_forecasts_for_counties,
 )
 from fetch_airquality import fetch_air_quality_for_counties
-from fetch_gdelt import collect_gdelt_by_county
+from fetch_gdelt import collect_gdelt_by_county, GDELT_CATEGORIES
 from fetch_eonet import fetch_wildfires_by_county
 from fetch_transit import fetch_transit_by_county
 from fetch_fema import fetch_fema_by_county
@@ -143,10 +143,7 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
                 None, collect_gdelt_by_county
             )
             log.info("GDELT: %d counties had matches", len(gdelt_by_fips))
-            cat_totals: dict[str, int] = {
-                "bank_robbery": 0, "protest": 0,
-                "utility_outage": 0, "transit_disruption": 0,
-            }
+            cat_totals: dict[str, int] = {c: 0 for c in GDELT_CATEGORIES}
             for buckets in gdelt_by_fips.values():
                 for k in cat_totals:
                     cat_totals[k] += len(buckets.get(k, []))
@@ -168,10 +165,7 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
                     None, filter_gdelt_results, gdelt_by_fips, index_by_fips(counties)
                 )
                 log.info("GDELT (post-LLM): %d counties remain", len(gdelt_by_fips))
-                cat_totals_post: dict[str, int] = {
-                    "bank_robbery": 0, "protest": 0,
-                    "utility_outage": 0, "transit_disruption": 0,
-                }
+                cat_totals_post: dict[str, int] = {c: 0 for c in GDELT_CATEGORIES}
                 for buckets in gdelt_by_fips.values():
                     for k in cat_totals_post:
                         cat_totals_post[k] += len(buckets.get(k, []))

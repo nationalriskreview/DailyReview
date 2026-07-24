@@ -1,14 +1,19 @@
 """GDELT via BigQuery — precision-focused collection.
 
-- Bank robberies: GKG themes (CRIME_ROBBERY) + strict title filter requiring
-  "bank" AND a robbery verb. Retrospective ("did a robbery happen?").
-- Protests: GKG themes (PROTEST) + forward-looking title filter. Prospective
-  ("is a protest announced for today / next 1–2 days?"). The Events table
-  was tried originally but it has no titles and is retrospective by design.
-- Transit disruptions: GKG themes (STRIKE / TRANSPORT / INFRASTRUCTURE) +
-  strict title filter requiring a disruption verb AND a transit noun. Major
-  disruptions only (strikes, derailments, full service suspensions). LLM
-  precision pass drops false positives.
+Each category: a BigQuery theme/organization prefilter over the last 24h of
+GKG, then a strict Python title filter, then an LLM precision pass.
+
+- Protests: GKG PROTEST theme + protest-event title filter (upcoming/ongoing/
+  past-24h).
+- Utility outages: POWER_OUTAGE / WATER_SHORTAGE themes + utility title filter.
+- Transit disruptions: STRIKE / TRANSPORT / INFRASTRUCTURE themes + disruption-
+  verb + transit-noun title filter (major disruptions only).
+- Service-provider outages: major cloud/telecom/SaaS org mentions + outage-word
+  title filter (Microsoft, Google, AWS, Oracle, Cloudflare, Verizon, ...).
+- Hazmat / industrial accidents: MANMADE_DISASTER theme + hazmat title filter
+  (chemical spill, plant explosion, gas leak, evacuation, ...).
+- Road/highway closures: TRANSPORT / INFRASTRUCTURE themes + highway-noun +
+  closure-verb title filter (major closures, planned/resolved rejected).
 
 Auth: service-account JSON in GCP_SA_KEY_JSON env var.
 """
@@ -40,7 +45,7 @@ STATE_POSTAL_TO_FIPS = {
     "PR": "72", "VI": "78", "GU": "66", "AS": "60", "MP": "69",
 }
 
-QUERY_GKG_ROBBERIES = """
+QUERY_GKG_SERVICE_OUTAGE = """
 SELECT
   DocumentIdentifier AS url,
   SourceCommonName   AS domain,
@@ -52,8 +57,63 @@ FROM `gdelt-bq.gdeltv2.gkg_partitioned`
 WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
   AND _PARTITIONTIME <  CURRENT_TIMESTAMP()
   AND V2Locations LIKE '%#US#%'
-  AND V2Themes LIKE '%ROBBERY%'
+  AND (
+    LOWER(V2Organizations) LIKE '%microsoft%'
+    OR LOWER(V2Organizations) LIKE '%google%'
+    OR LOWER(V2Organizations) LIKE '%amazon%'
+    OR LOWER(V2Organizations) LIKE '%oracle%'
+    OR LOWER(V2Organizations) LIKE '%cloudflare%'
+    OR LOWER(V2Organizations) LIKE '%salesforce%'
+    OR LOWER(V2Organizations) LIKE '%verizon%'
+    OR LOWER(V2Organizations) LIKE '%at&t%'
+    OR LOWER(V2Organizations) LIKE '%t-mobile%'
+    OR LOWER(V2Organizations) LIKE '%comcast%'
+    OR LOWER(V2Organizations) LIKE '%akamai%'
+    OR LOWER(V2Organizations) LIKE '%fastly%'
+    OR LOWER(V2Organizations) LIKE '%cisco%'
+    OR LOWER(V2Organizations) LIKE '%okta%'
+  )
 LIMIT 50000
+"""
+
+QUERY_GKG_HAZMAT = """
+SELECT
+  DocumentIdentifier AS url,
+  SourceCommonName   AS domain,
+  V2Themes           AS themes,
+  V2Locations        AS locations,
+  Extras             AS extras,
+  DATE               AS date_int
+FROM `gdelt-bq.gdeltv2.gkg_partitioned`
+WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
+  AND _PARTITIONTIME <  CURRENT_TIMESTAMP()
+  AND V2Locations LIKE '%#US#%'
+  AND (
+    V2Themes LIKE '%MANMADE_DISASTER%'
+    OR V2Themes LIKE '%ENV_OIL%'
+    OR V2Themes LIKE '%HAZMAT%'
+  )
+LIMIT 30000
+"""
+
+QUERY_GKG_ROAD_CLOSURE = """
+SELECT
+  DocumentIdentifier AS url,
+  SourceCommonName   AS domain,
+  V2Themes           AS themes,
+  V2Locations        AS locations,
+  Extras             AS extras,
+  DATE               AS date_int
+FROM `gdelt-bq.gdeltv2.gkg_partitioned`
+WHERE _PARTITIONTIME >= TIMESTAMP_SUB(CURRENT_TIMESTAMP(), INTERVAL 24 HOUR)
+  AND _PARTITIONTIME <  CURRENT_TIMESTAMP()
+  AND V2Locations LIKE '%#US#%'
+  AND (
+    V2Themes LIKE '%TRANSPORT%'
+    OR V2Themes LIKE '%INFRASTRUCTURE%'
+    OR V2Themes LIKE '%MANMADE_DISASTER%'
+  )
+LIMIT 30000
 """
 
 QUERY_GKG_PROTESTS = """
@@ -112,7 +172,47 @@ LIMIT 20000
 US_ADM2_PATTERN = re.compile(r"3#[^#]*#US#US[A-Z]{2}#([A-Z]{2})(\d{3})#")
 PAGE_TITLE_PATTERN = re.compile(r"<PAGE_TITLE>(.*?)</PAGE_TITLE>", re.DOTALL)
 
-BANK_ROBBERY_VERBS = ("robbery", "robbed", "robber", "robbers", "heist", "stick-up", "stickup")
+# --- Service-provider outage (cloud / telecom / SaaS) ---
+SERVICE_PROVIDER_NAMES = (
+    "microsoft", "azure", "office 365", "microsoft 365", "outlook", "teams",
+    "google", "gmail", "google cloud", "youtube", "amazon", "aws",
+    "amazon web services", "oracle", "cloudflare", "salesforce", "verizon",
+    "at&t", "at t ", "t-mobile", "comcast", "xfinity", "cisco", "akamai",
+    "fastly", "okta", "zoom", "slack", "github", "datadog",
+)
+SERVICE_OUTAGE_WORDS = (
+    "outage", "outages", " down ", " down.", " down,", "goes down", "went down",
+    "is down", "was down", "offline", "disruption", "disruptions", "not working",
+    "unavailable", "service interruption", "widespread", "users report",
+    "reports of issues", "major outage", "nationwide outage", "crashes", "crashed",
+)
+
+# --- Hazmat / industrial accidents ---
+HAZMAT_KEYWORDS = (
+    "chemical spill", "chemical leak", "chemical fire", "hazmat",
+    "toxic spill", "toxic leak", "toxic release", "industrial accident",
+    "plant explosion", "explosion at", "refinery fire", "refinery explosion",
+    "chemical plant", "gas leak", "ammonia leak", "chlorine leak",
+    "chlorine gas", "oil spill", "shelter in place", "shelter-in-place",
+    "evacuated after", "evacuation ordered", "pipeline explosion",
+    "pipeline rupture", "train carrying chemicals", "derailment spill",
+)
+
+# --- Road / highway closures ---
+ROAD_NOUNS = (
+    "highway", "interstate", "freeway", "expressway", "turnpike", "thruway",
+    "parkway", "beltway", "motorway", " i-", "u.s. route", "us route",
+    " route ", "bridge", "tunnel", "overpass", "on-ramp", "off-ramp",
+)
+ROAD_CLOSURE_WORDS = (
+    "closed", "closure", "shut down", "shutdown", "shuts down", "blocked",
+    "all lanes", "both directions", "impassable", "washed out",
+)
+ROAD_CLOSURE_REJECT = (
+    "could", "may ", "might", "scheduled", "planned", "will close",
+    "construction", "reopen", "reopens", "reopened", "back open", "cleared",
+    "lane closure", "single lane", "ramp closure",  # minor/partial, not major
+)
 
 PROTEST_FORWARD_KEYWORDS = (
     "planned", "planning", "plans to",
@@ -242,11 +342,32 @@ def _extract_title(extras: str) -> str:
     return m.group(1).strip()[:300]
 
 
-def _title_passes_bank_robbery(title: str) -> bool:
+def _title_passes_service_outage(title: str) -> bool:
+    """Title names a major service provider AND an outage/disruption word."""
+    if not title:
+        return False
+    t = " " + title.lower() + " "
+    return (any(p in t for p in SERVICE_PROVIDER_NAMES)
+            and any(w in t for w in SERVICE_OUTAGE_WORDS))
+
+
+def _title_passes_hazmat(title: str) -> bool:
     if not title:
         return False
     t = title.lower()
-    return "bank" in t and any(v in t for v in BANK_ROBBERY_VERBS)
+    return any(k in t for k in HAZMAT_KEYWORDS)
+
+
+def _title_passes_road_closure(title: str) -> bool:
+    """Title has a highway/road noun AND a closure word, with planned/partial/
+    resolved language rejected so only major active closures pass."""
+    if not title:
+        return False
+    t = " " + title.lower() + " "
+    if any(k in t for k in ROAD_CLOSURE_REJECT):
+        return False
+    return (any(n in t for n in ROAD_NOUNS)
+            and any(w in t for w in ROAD_CLOSURE_WORDS))
 
 
 def _title_is_protest_event(title: str) -> bool:
@@ -305,23 +426,24 @@ def _shape_article(row, title: str) -> dict:
     }
 
 
-def _collect_robberies(client) -> dict[str, list[dict]]:
-    job = client.query(QUERY_GKG_ROBBERIES)
+def _collect_by_title_filter(client, query: str, title_filter, label: str) -> dict[str, list[dict]]:
+    """Generic GKG collector: run query, keep rows whose title passes the
+    filter, fan out to counties. Used by the title-driven categories."""
+    job = client.query(query)
     rows = list(job)
-    log.info("GDELT GKG robberies: %d rows, scanned %.2f GB",
-             len(rows), (job.total_bytes_processed or 0) / 1e9)
+    log.info("GDELT GKG %s: %d rows, scanned %.2f GB",
+             label, len(rows), (job.total_bytes_processed or 0) / 1e9)
     if not rows:
-        log.warning(
-            "GDELT GKG robberies: 0 rows — possible partition lag or "
-            "a quiet news day; investigate if it recurs."
-        )
+        log.warning("GDELT GKG %s: 0 rows — possible partition lag or quiet day.", label)
 
     by_county: dict[str, list[dict]] = defaultdict(list)
     seen: dict[str, set[str]] = defaultdict(set)
+    passed = 0
     for row in rows:
         title = _extract_title(row.extras or "")
-        if not _title_passes_bank_robbery(title):
+        if not title_filter(title):
             continue
+        passed += 1
         counties = _extract_counties_from_locations(row.locations or "")
         if not counties:
             continue
@@ -332,8 +454,8 @@ def _collect_robberies(client) -> dict[str, list[dict]]:
                 continue
             seen[fips].add(url)
             by_county[fips].append(article)
-    log.info("GDELT robberies: %d counties had post-filter matches",
-             sum(1 for v in by_county.values() if v))
+    log.info("GDELT %s: %d titles passed filter, %d counties had matches",
+             label, passed, sum(1 for v in by_county.values() if v))
     return dict(by_county)
 
 
@@ -442,34 +564,40 @@ def _collect_transit_disruptions(client) -> dict[str, list[dict]]:
     return dict(by_county)
 
 
-def collect_gdelt_by_county() -> dict[str, dict[str, list[dict]]]:
-    """Run all GKG queries; return FIPS → {bank_robbery, protest,
-    utility_outage, transit_disruption}.
+GDELT_CATEGORIES = (
+    "protest", "utility_outage", "transit_disruption",
+    "service_provider_outage", "hazmat_incident", "road_closure",
+)
 
-    bank_robbery / utility_outage / transit_disruption are retrospective
-    (past 24h). protest covers demonstrations that are upcoming, ongoing, or
-    occurred within the past 24h (per past-24h news).
+
+def collect_gdelt_by_county() -> dict[str, dict[str, list[dict]]]:
+    """Run all GKG queries; return FIPS → {category: [articles]}.
+
+    utility_outage / transit_disruption / service_provider_outage /
+    hazmat_incident / road_closure are retrospective (past 24h). protest covers
+    demonstrations that are upcoming, ongoing, or occurred within the past 24h.
     """
     client = _build_client()
-    robberies = _collect_robberies(client)
-    protests = _collect_protests(client)
-    utilities = _collect_utilities(client)
-    transit_disruptions = _collect_transit_disruptions(client)
+    per_category = {
+        "protest": _collect_protests(client),
+        "utility_outage": _collect_utilities(client),
+        "transit_disruption": _collect_transit_disruptions(client),
+        "service_provider_outage": _collect_by_title_filter(
+            client, QUERY_GKG_SERVICE_OUTAGE, _title_passes_service_outage,
+            "service outage"),
+        "hazmat_incident": _collect_by_title_filter(
+            client, QUERY_GKG_HAZMAT, _title_passes_hazmat, "hazmat"),
+        "road_closure": _collect_by_title_filter(
+            client, QUERY_GKG_ROAD_CLOSURE, _title_passes_road_closure,
+            "road closure"),
+    }
 
     by_county: dict[str, dict[str, list[dict]]] = defaultdict(
-        lambda: {
-            "bank_robbery": [], "protest": [],
-            "utility_outage": [], "transit_disruption": [],
-        }
+        lambda: {cat: [] for cat in GDELT_CATEGORIES}
     )
-    for fips, arts in robberies.items():
-        by_county[fips]["bank_robbery"] = arts
-    for fips, arts in protests.items():
-        by_county[fips]["protest"] = arts
-    for fips, arts in utilities.items():
-        by_county[fips]["utility_outage"] = arts
-    for fips, arts in transit_disruptions.items():
-        by_county[fips]["transit_disruption"] = arts
+    for category, results in per_category.items():
+        for fips, arts in results.items():
+            by_county[fips][category] = arts
 
     return {k: v for k, v in by_county.items() if any(v.values())}
 
