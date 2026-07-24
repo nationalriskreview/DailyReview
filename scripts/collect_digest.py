@@ -29,6 +29,7 @@ from fetch_eonet import fetch_wildfires_by_county
 from fetch_transit import fetch_transit_by_county
 from fetch_fema import fetch_fema_by_county
 from fetch_disease import fetch_national, fetch_county_disease
+from fetch_nndss import fetch_notifiable_disease_alerts
 from fetch_amtrak import fetch_amtrak_advisories
 from fetch_faa import fetch_faa_advisories
 from llm_filter import filter_gdelt_results
@@ -259,33 +260,51 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
             "status": "failed", "error": _truncate_error(e),
         }
 
-    # --- Disease (CDC HAN + CDC Travel Health Notices + Wastewater) ---
-    log.info("Disease: fetching CDC HAN + CDC Travel Notices + Wastewater")
+    # --- Disease (CDC HAN + CDC US outbreaks + NNDSS elevation + Wastewater) ---
+    log.info("Disease: fetching CDC HAN + CDC outbreaks + NNDSS + Wastewater")
     try:
         national, disease_by_fips = await asyncio.gather(
             fetch_national(),
             fetch_county_disease(),
         )
-        log.info("Disease: %d HAN, %d CDC travel notices, %d counties with detections",
+        log.info("Disease: %d HAN, %d CDC outbreaks, %d counties with detections",
                  len(national.get("cdc_han", [])),
-                 len(national.get("cdc_travel_notices", [])),
+                 len(national.get("cdc_outbreaks", [])),
                  len(disease_by_fips))
         data_sources["disease_cdc_han"] = {
             "status": "ok", "items": len(national.get("cdc_han", [])),
         }
-        data_sources["disease_cdc_travel_notices"] = {
-            "status": "ok", "items": len(national.get("cdc_travel_notices", [])),
+        data_sources["disease_cdc_outbreaks"] = {
+            "status": "ok", "items": len(national.get("cdc_outbreaks", [])),
         }
         data_sources["disease_wastewater"] = {
             "status": "ok", "counties_with_detections": len(disease_by_fips),
         }
     except Exception as e:
         log.error("Disease fetch failed (continuing with empty): %s", e)
-        national, disease_by_fips = {"cdc_han": [], "cdc_travel_notices": []}, {}
+        national, disease_by_fips = {"cdc_han": [], "cdc_outbreaks": []}, {}
         err = _truncate_error(e)
         data_sources["disease_cdc_han"] = {"status": "failed", "error": err}
-        data_sources["disease_cdc_travel_notices"] = {"status": "failed", "error": err}
+        data_sources["disease_cdc_outbreaks"] = {"status": "failed", "error": err}
         data_sources["disease_wastewater"] = {"status": "failed", "error": err}
+
+    # --- NNDSS notifiable-disease elevation (state-level) ---
+    log.info("NNDSS: computing state-level notifiable-disease elevation")
+    try:
+        nndss_alerts = await asyncio.get_event_loop().run_in_executor(
+            None, fetch_notifiable_disease_alerts
+        )
+        log.info("NNDSS: %d elevated state+disease alert(s)", len(nndss_alerts))
+        data_sources["nndss_notifiable"] = {
+            "status": "ok", "alerts": len(nndss_alerts),
+        }
+    except Exception as e:
+        log.error("NNDSS fetch failed (continuing with empty): %s", e)
+        nndss_alerts = []
+        data_sources["nndss_notifiable"] = {
+            "status": "failed", "error": _truncate_error(e),
+        }
+    national["notifiable_disease_alerts"] = nndss_alerts
 
     # --- Amtrak ---
     log.info("Amtrak: scraping passenger advisories + building route map")

@@ -13,7 +13,7 @@ CDN alternative: `https://cdn.jsdelivr.net/gh/nationalriskreview/DailyReview@mai
 |---|---|
 | `today-summary.json` | Only counties with active alerts. Small, fast. The default choice for most consumers. |
 | `today.json` | Full national snapshot — all 3,143 counties, including those with no alerts. |
-| `national.json` | CDC HAN + CDC Travel Health Notices only. |
+| `national.json` | US disease/outbreak signals (CDC outbreaks + NNDSS elevation) + transit advisories. |
 | `counties/{fips}.json` | Single county detail (5-digit FIPS, e.g. `06037` for Los Angeles County, CA). |
 | `states/{abbr}.json` | State-level roll-up (e.g. `CA`, `NY`, `TX`). |
 | `nyc/index.json` | All five NYC boroughs in one file. |
@@ -48,7 +48,8 @@ Separate from `alerts`, each county carries an always-on `conditions` object wit
 National alerts in `national.json`:
 
 - **CDC HAN** — Health Alert Network notices at Alert/Advisory level (collector stub; currently inactive pending CDC URL restructure).
-- **CDC Travel Health Notices** (`cdc_travel_notices`) — US-government-curated outbreak/health-risk notices from CDC's Travelers' Health RSS feed, severity-graded (`Level 1 (Watch)` / `Level 2 (Alert)` / `Level 3 (Warning)`). This replaced the WHO Disease Outbreak News feed, which surfaced global outbreaks with no US relevance and exposed no country field to filter on. Note these notices concern outbreak *risk* (often at foreign destinations) as assessed by CDC; domestic per-county disease detections are handled separately by the `disease` category (CDC NWSS wastewater).
+- **CDC US-based outbreaks** (`cdc_outbreaks`) — Named US outbreaks from CDC's "US-Based Outbreaks" RSS feed, filtered to the person-to-person communicable diseases that disrupt a workplace (measles, TB, meningococcal, Legionellosis). Foodborne/enteric outbreaks (Listeria, Salmonella, E. coli, etc.) are dropped. This is the authoritative "CDC has named a US outbreak" layer.
+- **Notifiable-disease elevation** (`notifiable_disease_alerts`) — State-level early-warning signal derived from CDC NNDSS weekly surveillance. A state+disease pair (measles, TB, meningococcal, Legionellosis) is surfaced **only when it breaks its own baseline** — either the current week exceeds the state's previous-52-week maximum (`spike`), or year-to-date cases run ≥2× last year over a floor (`elevated_vs_last_year`). Routine case counts are not surfaced; an empty list means nothing is heating up. Each entry carries `this_week`, `prev_52wk_max`, `ytd`, and `ytd_last_year`. Replaces the earlier WHO / CDC Travel Health Notices sections, which were global/foreign and not US-workplace-relevant.
 - **`amtrak_advisories`** — Active Amtrak service-stoppage and station-closure advisories, scraped daily from amtrak.com/service-alerts-and-notices. Severity-filtered; routine schedule changes and equipment-level station issues are excluded.
 - **`faa_advisories`** — FAA Large-Hub airport closures and ground stops, severity-filtered to exclude GA-only NOTAMs. From nasstatus.faa.gov/api/airport-status-information.
 
@@ -104,7 +105,8 @@ Workflow runs daily at **09:00 UTC** (~5 AM ET / 2 AM PT). Output `generated_at`
 - [CDC NWSS Wastewater API](https://data.cdc.gov/resource/akvg-8vrb.json)
 - [OpenFEMA API](https://www.fema.gov/about/openfema/data-sets)
 - [CDC HAN](https://emergency.cdc.gov/han/) (Placeholder)
-- [CDC Travel Health Notices](https://wwwnc.cdc.gov/travel/rss/notices.xml)
+- [CDC US-Based Outbreaks RSS](https://tools.cdc.gov/api/v2/resources/media/285676.rss)
+- [CDC NNDSS Weekly Data](https://data.cdc.gov/resource/x9gk-5huc.json)
 - [Amtrak Service Alerts & Notices](https://www.amtrak.com/service-alerts-and-notices) — scraped HTML; route→county mapping derived from Amtrak's [static GTFS](https://content.amtrak.com/content/gtfs/GTFS.zip)
 - [FAA NAS Airport Status](https://nasstatus.faa.gov/api/airport-status-information) — XML feed; airport→service-area mapping in `reference/airports.json`
 
