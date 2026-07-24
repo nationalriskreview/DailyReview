@@ -48,15 +48,23 @@ def _haversine_miles(lat1: float, lon1: float, lat2: float, lon2: float) -> floa
     return 2 * R * math.asin(math.sqrt(a))
 
 
-def _latest_point(geometry: list[dict]) -> tuple[float, float, str] | None:
+def _latest_point(geometry: list[dict]) -> dict | None:
+    """Most recent geometry point. In EONET v3 the fire's size (magnitude)
+    lives on each geometry point and updates over time alongside location, so
+    we read it from here — not the event root, where it does not exist."""
     if not geometry:
         return None
     pt = geometry[-1]
     coords = pt.get("coordinates")
     if not coords or len(coords) < 2:
         return None
-    lon, lat = float(coords[0]), float(coords[1])
-    return lat, lon, pt.get("date", "")
+    return {
+        "lat": float(coords[1]),
+        "lon": float(coords[0]),
+        "date": pt.get("date", ""),
+        "magnitude_value": pt.get("magnitudeValue"),
+        "magnitude_unit": pt.get("magnitudeUnit", ""),
+    }
 
 
 def fetch_wildfires_by_county(
@@ -76,7 +84,7 @@ def fetch_wildfires_by_county(
         latest = _latest_point(ev.get("geometry", []))
         if not latest:
             continue
-        lat, lon, date = latest
+        lat, lon, date = latest["lat"], latest["lon"], latest["date"]
 
         sources = []
         for s in (ev.get("sources") or [])[:3]:
@@ -94,8 +102,8 @@ def fetch_wildfires_by_county(
             "sources": sources,
         }
         
-        magnitude = ev.get("magnitudeValue")
-        mag_unit = ev.get("magnitudeUnit", "").lower()
+        magnitude = latest.get("magnitude_value")
+        mag_unit = (latest.get("magnitude_unit") or "").lower()
         if magnitude is not None and "acre" in mag_unit:
             record_base["acreage"] = magnitude
 
