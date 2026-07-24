@@ -1,10 +1,10 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-24T09:50:16.774463+00:00",
+  "generated_at": "2026-07-24T22:54:46.685409+00:00",
   "date": "2026-07-24",
   "state": "MN",
   "counties_total": 87,
-  "counties_with_alerts": 24,
+  "counties_with_alerts": 33,
   "counties": {
     "27001": {
       "fips": "27001",
@@ -12,10 +12,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -30,11 +32,24 @@
       "name": "Anoka County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 27 at 6:00AM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -42,7 +57,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27005": {
       "fips": "27005",
@@ -50,44 +65,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Flowing 24, Clay, Minnesota",
-            "id": "EONET_21388",
-            "category": "wildfire",
-            "date": "2026-07-15T11:10:00Z",
-            "lat": 47.0151,
-            "lon": -96.4476,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX2593380"
-            ],
-            "acreage": 516.0,
-            "distance_miles": 33.7,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
-    },
-    "27007": {
-      "fips": "27007",
-      "name": "Beltrami County",
-      "state": "MN",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -96,6 +79,38 @@
         "disease": []
       },
       "alert_count": 0
+    },
+    "27007": {
+      "fips": "27007",
+      "name": "Beltrami County",
+      "state": "MN",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Tornado Warning",
+            "headline": "Tornado Warning issued July 24 at 5:23PM CDT until July 24 at 5:45PM CDT by NWS Grand Forks ND",
+            "severity": "Extreme",
+            "urgency": "Immediate",
+            "effective": "2026-07-24T17:23:00-05:00",
+            "expires": "2026-07-24T17:45:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
     },
     "27009": {
       "fips": "27009",
@@ -103,75 +118,20 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Leach Impact Area, Morrison, Minnesota",
-            "id": "EONET_21390",
-            "category": "wildfire",
-            "date": "2026-07-13T15:46:00Z",
-            "lat": 46.2701,
-            "lon": -94.3967,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259294"
-            ],
-            "acreage": 2094.0,
-            "distance_miles": 43.6,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Infantry Platoon Battle Course, Morrison, Minnesota",
-            "id": "EONET_21322",
-            "category": "wildfire",
-            "date": "2026-07-13T11:54:00Z",
-            "lat": 46.2469,
-            "lon": -94.3954,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259231"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 42.2,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX IPBC, Morrison, Minnesota",
-            "id": "EONET_21323",
-            "category": "wildfire",
-            "date": "2026-07-13T11:09:00Z",
-            "lat": 46.2465,
-            "lon": -94.4,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259215"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 42.3,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Center Range South, Morrison, Minnesota",
-            "id": "EONET_21324",
-            "category": "wildfire",
-            "date": "2026-07-13T11:07:00Z",
-            "lat": 46.162,
-            "lon": -94.4453,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259214"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 38.3,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 0
     },
     "27011": {
       "fips": "27011",
@@ -179,26 +139,45 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
+    "27013": {
+      "fips": "27013",
+      "name": "Blue Earth County",
+      "state": "MN",
+      "alerts": {
+        "weather": [
           {
-            "title": "Prescribed Fire RX Chippewa Bottoms, Chippewa, Minnesota",
-            "id": "EONET_21389",
-            "category": "wildfire",
-            "date": "2026-07-13T16:49:00Z",
-            "lat": 45.1387,
-            "lon": -96.0161,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259328"
-            ],
-            "acreage": 700.0,
-            "distance_miles": 27.0,
-            "threat_level": "Vicinity"
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -207,35 +186,29 @@
       },
       "alert_count": 1
     },
-    "27013": {
-      "fips": "27013",
-      "name": "Blue Earth County",
-      "state": "MN",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
     "27015": {
       "fips": "27015",
       "name": "Brown County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -243,7 +216,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27017": {
       "fips": "27017",
@@ -251,10 +224,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -269,11 +244,45 @@
       "name": "Carver County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 27 at 6:00AM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "27021": {
+      "fips": "27021",
+      "name": "Cass County",
+      "state": "MN",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -283,94 +292,30 @@
       },
       "alert_count": 0
     },
-    "27021": {
-      "fips": "27021",
-      "name": "Cass County",
-      "state": "MN",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Leach Impact Area, Morrison, Minnesota",
-            "id": "EONET_21390",
-            "category": "wildfire",
-            "date": "2026-07-13T15:46:00Z",
-            "lat": 46.2701,
-            "lon": -94.3967,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259294"
-            ],
-            "acreage": 2094.0,
-            "distance_miles": 47.2,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Infantry Platoon Battle Course, Morrison, Minnesota",
-            "id": "EONET_21322",
-            "category": "wildfire",
-            "date": "2026-07-13T11:54:00Z",
-            "lat": 46.2469,
-            "lon": -94.3954,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259231"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 48.8,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX IPBC, Morrison, Minnesota",
-            "id": "EONET_21323",
-            "category": "wildfire",
-            "date": "2026-07-13T11:09:00Z",
-            "lat": 46.2465,
-            "lon": -94.4,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259215"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 48.8,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 3
-    },
     "27023": {
       "fips": "27023",
       "name": "Chippewa County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Chippewa Bottoms, Chippewa, Minnesota",
-            "id": "EONET_21389",
-            "category": "wildfire",
-            "date": "2026-07-13T16:49:00Z",
-            "lat": 45.1387,
-            "lon": -96.0161,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259328"
-            ],
-            "acreage": 700.0,
-            "distance_miles": 23.3,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -385,10 +330,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -404,44 +351,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Flowing 24, Clay, Minnesota",
-            "id": "EONET_21388",
-            "category": "wildfire",
-            "date": "2026-07-15T11:10:00Z",
-            "lat": 47.0151,
-            "lon": -96.4476,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX2593380"
-            ],
-            "acreage": 516.0,
-            "distance_miles": 8.4,
-            "threat_level": "Immediate"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
-    },
-    "27029": {
-      "fips": "27029",
-      "name": "Clearwater County",
-      "state": "MN",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -451,32 +366,30 @@
       },
       "alert_count": 0
     },
-    "27031": {
-      "fips": "27031",
-      "name": "Cook County",
+    "27029": {
+      "fips": "27029",
+      "name": "Clearwater County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Tornado Warning",
+            "headline": "Tornado Warning issued July 24 at 5:23PM CDT until July 24 at 5:45PM CDT by NWS Grand Forks ND",
+            "severity": "Extreme",
+            "urgency": "Immediate",
+            "effective": "2026-07-24T17:23:00-05:00",
+            "expires": "2026-07-24T17:45:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire Little Knife, Lake, Minnesota",
-            "id": "EONET_21386",
-            "category": "wildfire",
-            "date": "2026-07-15T10:51:00Z",
-            "lat": 48.1611,
-            "lon": -91.1048,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-MNSUF-002510"
-            ],
-            "acreage": 6000.0,
-            "distance_miles": 44.9,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -485,16 +398,39 @@
       },
       "alert_count": 1
     },
+    "27031": {
+      "fips": "27031",
+      "name": "Cook County",
+      "state": "MN",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
     "27033": {
       "fips": "27033",
       "name": "Cottonwood County",
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -510,86 +446,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Leach Impact Area, Morrison, Minnesota",
-            "id": "EONET_21390",
-            "category": "wildfire",
-            "date": "2026-07-13T15:46:00Z",
-            "lat": 46.2701,
-            "lon": -94.3967,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259294"
-            ],
-            "acreage": 2094.0,
-            "distance_miles": 21.8,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Infantry Platoon Battle Course, Morrison, Minnesota",
-            "id": "EONET_21322",
-            "category": "wildfire",
-            "date": "2026-07-13T11:54:00Z",
-            "lat": 46.2469,
-            "lon": -94.3954,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259231"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 22.9,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX IPBC, Morrison, Minnesota",
-            "id": "EONET_21323",
-            "category": "wildfire",
-            "date": "2026-07-13T11:09:00Z",
-            "lat": 46.2465,
-            "lon": -94.4,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259215"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 23.1,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Center Range South, Morrison, Minnesota",
-            "id": "EONET_21324",
-            "category": "wildfire",
-            "date": "2026-07-13T11:07:00Z",
-            "lat": 46.162,
-            "lon": -94.4453,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259214"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 29.0,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 4
-    },
-    "27037": {
-      "fips": "27037",
-      "name": "Dakota County",
-      "state": "MN",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -599,16 +461,50 @@
       },
       "alert_count": 0
     },
+    "27037": {
+      "fips": "27037",
+      "name": "Dakota County",
+      "state": "MN",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 27 at 6:00AM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
     "27039": {
       "fips": "27039",
       "name": "Dodge County",
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -624,10 +520,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -642,11 +540,24 @@
       "name": "Faribault County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -654,7 +565,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27045": {
       "fips": "27045",
@@ -662,10 +573,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -680,11 +593,24 @@
       "name": "Freeborn County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -692,7 +618,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27049": {
       "fips": "27049",
@@ -700,10 +626,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -719,10 +647,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -737,11 +667,24 @@
       "name": "Hennepin County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 27 at 6:00AM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -749,7 +692,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27055": {
       "fips": "27055",
@@ -757,10 +700,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -776,10 +721,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -795,10 +742,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -814,10 +763,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -833,10 +784,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -852,10 +805,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -870,27 +825,25 @@
       "name": "Kandiyohi County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Chippewa Bottoms, Chippewa, Minnesota",
-            "id": "EONET_21389",
-            "category": "wildfire",
-            "date": "2026-07-13T16:49:00Z",
-            "lat": 45.1387,
-            "lon": -96.0161,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259328"
-            ],
-            "acreage": 700.0,
-            "distance_miles": 49.3,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -905,10 +858,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -924,10 +879,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -942,27 +899,25 @@
       "name": "Lac qui Parle County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Chippewa Bottoms, Chippewa, Minnesota",
-            "id": "EONET_21389",
-            "category": "wildfire",
-            "date": "2026-07-13T16:49:00Z",
-            "lat": 45.1387,
-            "lon": -96.0161,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259328"
-            ],
-            "acreage": 700.0,
-            "distance_miles": 12.4,
-            "threat_level": "Immediate"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -977,33 +932,20 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire Little Knife, Lake, Minnesota",
-            "id": "EONET_21386",
-            "category": "wildfire",
-            "date": "2026-07-15T10:51:00Z",
-            "lat": 48.1611,
-            "lon": -91.1048,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-MNSUF-002510"
-            ],
-            "acreage": 6000.0,
-            "distance_miles": 46.7,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "27077": {
       "fips": "27077",
@@ -1011,10 +953,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1029,11 +973,24 @@
       "name": "Le Sueur County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1041,7 +998,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27081": {
       "fips": "27081",
@@ -1049,10 +1006,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1068,10 +1027,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1086,11 +1047,45 @@
       "name": "McLeod County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "27087": {
+      "fips": "27087",
+      "name": "Mahnomen County",
+      "state": "MN",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1100,50 +1095,18 @@
       },
       "alert_count": 0
     },
-    "27087": {
-      "fips": "27087",
-      "name": "Mahnomen County",
-      "state": "MN",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Flowing 24, Clay, Minnesota",
-            "id": "EONET_21388",
-            "category": "wildfire",
-            "date": "2026-07-15T11:10:00Z",
-            "lat": 47.0151,
-            "lon": -96.4476,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX2593380"
-            ],
-            "acreage": 516.0,
-            "distance_miles": 36.9,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
-    },
     "27089": {
       "fips": "27089",
       "name": "Marshall County",
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1158,11 +1121,24 @@
       "name": "Martin County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1170,18 +1146,31 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27093": {
       "fips": "27093",
       "name": "Meeker County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1189,7 +1178,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27095": {
       "fips": "27095",
@@ -1197,75 +1186,20 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Leach Impact Area, Morrison, Minnesota",
-            "id": "EONET_21390",
-            "category": "wildfire",
-            "date": "2026-07-13T15:46:00Z",
-            "lat": 46.2701,
-            "lon": -94.3967,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259294"
-            ],
-            "acreage": 2094.0,
-            "distance_miles": 43.5,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Infantry Platoon Battle Course, Morrison, Minnesota",
-            "id": "EONET_21322",
-            "category": "wildfire",
-            "date": "2026-07-13T11:54:00Z",
-            "lat": 46.2469,
-            "lon": -94.3954,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259231"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 42.6,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX IPBC, Morrison, Minnesota",
-            "id": "EONET_21323",
-            "category": "wildfire",
-            "date": "2026-07-13T11:09:00Z",
-            "lat": 46.2465,
-            "lon": -94.4,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259215"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 42.8,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Center Range South, Morrison, Minnesota",
-            "id": "EONET_21324",
-            "category": "wildfire",
-            "date": "2026-07-13T11:07:00Z",
-            "lat": 46.162,
-            "lon": -94.4453,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259214"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 42.1,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 0
     },
     "27097": {
       "fips": "27097",
@@ -1273,75 +1207,20 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Leach Impact Area, Morrison, Minnesota",
-            "id": "EONET_21390",
-            "category": "wildfire",
-            "date": "2026-07-13T15:46:00Z",
-            "lat": 46.2701,
-            "lon": -94.3967,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259294"
-            ],
-            "acreage": 2094.0,
-            "distance_miles": 18.3,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Infantry Platoon Battle Course, Morrison, Minnesota",
-            "id": "EONET_21322",
-            "category": "wildfire",
-            "date": "2026-07-13T11:54:00Z",
-            "lat": 46.2469,
-            "lon": -94.3954,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259231"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 16.8,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX IPBC, Morrison, Minnesota",
-            "id": "EONET_21323",
-            "category": "wildfire",
-            "date": "2026-07-13T11:09:00Z",
-            "lat": 46.2465,
-            "lon": -94.4,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259215"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 16.9,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Center Range South, Morrison, Minnesota",
-            "id": "EONET_21324",
-            "category": "wildfire",
-            "date": "2026-07-13T11:07:00Z",
-            "lat": 46.162,
-            "lon": -94.4453,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259214"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 13.0,
-            "threat_level": "Immediate"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 0
     },
     "27099": {
       "fips": "27099",
@@ -1349,10 +1228,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1368,10 +1249,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1386,11 +1269,24 @@
       "name": "Nicollet County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1398,7 +1294,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27105": {
       "fips": "27105",
@@ -1406,10 +1302,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1425,33 +1323,20 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Flowing 24, Clay, Minnesota",
-            "id": "EONET_21388",
-            "category": "wildfire",
-            "date": "2026-07-15T11:10:00Z",
-            "lat": 47.0151,
-            "lon": -96.4476,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX2593380"
-            ],
-            "acreage": 516.0,
-            "distance_miles": 21.7,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "27109": {
       "fips": "27109",
@@ -1459,10 +1344,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1478,10 +1365,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1497,10 +1386,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1516,10 +1407,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1535,10 +1428,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1554,10 +1449,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1572,27 +1469,25 @@
       "name": "Pope County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Chippewa Bottoms, Chippewa, Minnesota",
-            "id": "EONET_21389",
-            "category": "wildfire",
-            "date": "2026-07-13T16:49:00Z",
-            "lat": 45.1387,
-            "lon": -96.0161,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259328"
-            ],
-            "acreage": 700.0,
-            "distance_miles": 41.7,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -1606,11 +1501,24 @@
       "name": "Ramsey County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 27 at 6:00AM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1618,7 +1526,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27125": {
       "fips": "27125",
@@ -1626,10 +1534,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1644,11 +1554,24 @@
       "name": "Redwood County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1656,18 +1579,31 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27129": {
       "fips": "27129",
       "name": "Renville County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1675,18 +1611,31 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27131": {
       "fips": "27131",
       "name": "Rice County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1694,7 +1643,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27133": {
       "fips": "27133",
@@ -1702,10 +1651,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1721,10 +1672,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1740,10 +1693,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1758,11 +1713,24 @@
       "name": "Scott County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 27 at 6:00AM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1770,7 +1738,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27141": {
       "fips": "27141",
@@ -1778,10 +1746,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1796,11 +1766,24 @@
       "name": "Sibley County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1808,7 +1791,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27145": {
       "fips": "27145",
@@ -1816,72 +1799,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Infantry Platoon Battle Course, Morrison, Minnesota",
-            "id": "EONET_21322",
-            "category": "wildfire",
-            "date": "2026-07-13T11:54:00Z",
-            "lat": 46.2469,
-            "lon": -94.3954,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259231"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 48.9,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX IPBC, Morrison, Minnesota",
-            "id": "EONET_21323",
-            "category": "wildfire",
-            "date": "2026-07-13T11:09:00Z",
-            "lat": 46.2465,
-            "lon": -94.4,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259215"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 48.8,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Center Range South, Morrison, Minnesota",
-            "id": "EONET_21324",
-            "category": "wildfire",
-            "date": "2026-07-13T11:07:00Z",
-            "lat": 46.162,
-            "lon": -94.4453,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259214"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 42.7,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 3
-    },
-    "27147": {
-      "fips": "27147",
-      "name": "Steele County",
-      "state": "MN",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1891,32 +1814,62 @@
       },
       "alert_count": 0
     },
+    "27147": {
+      "fips": "27147",
+      "name": "Steele County",
+      "state": "MN",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
     "27149": {
       "fips": "27149",
       "name": "Stevens County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Chippewa Bottoms, Chippewa, Minnesota",
-            "id": "EONET_21389",
-            "category": "wildfire",
-            "date": "2026-07-13T16:49:00Z",
-            "lat": 45.1387,
-            "lon": -96.0161,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259328"
-            ],
-            "acreage": 700.0,
-            "distance_miles": 31.4,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -1930,27 +1883,25 @@
       "name": "Swift County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Chippewa Bottoms, Chippewa, Minnesota",
-            "id": "EONET_21389",
-            "category": "wildfire",
-            "date": "2026-07-13T16:49:00Z",
-            "lat": 45.1387,
-            "lon": -96.0161,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259328"
-            ],
-            "acreage": 700.0,
-            "distance_miles": 18.5,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -1965,75 +1916,20 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Leach Impact Area, Morrison, Minnesota",
-            "id": "EONET_21390",
-            "category": "wildfire",
-            "date": "2026-07-13T15:46:00Z",
-            "lat": 46.2701,
-            "lon": -94.3967,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259294"
-            ],
-            "acreage": 2094.0,
-            "distance_miles": 27.9,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Infantry Platoon Battle Course, Morrison, Minnesota",
-            "id": "EONET_21322",
-            "category": "wildfire",
-            "date": "2026-07-13T11:54:00Z",
-            "lat": 46.2469,
-            "lon": -94.3954,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259231"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 27.2,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX IPBC, Morrison, Minnesota",
-            "id": "EONET_21323",
-            "category": "wildfire",
-            "date": "2026-07-13T11:09:00Z",
-            "lat": 46.2465,
-            "lon": -94.4,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259215"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 27.0,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Center Range South, Morrison, Minnesota",
-            "id": "EONET_21324",
-            "category": "wildfire",
-            "date": "2026-07-13T11:07:00Z",
-            "lat": 46.162,
-            "lon": -94.4453,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259214"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 22.8,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 0
     },
     "27155": {
       "fips": "27155",
@@ -2041,33 +1937,20 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Chippewa Bottoms, Chippewa, Minnesota",
-            "id": "EONET_21389",
-            "category": "wildfire",
-            "date": "2026-07-13T16:49:00Z",
-            "lat": 45.1387,
-            "lon": -96.0161,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259328"
-            ],
-            "acreage": 700.0,
-            "distance_miles": 49.0,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "27157": {
       "fips": "27157",
@@ -2075,10 +1958,12 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -2094,159 +1979,45 @@
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Leach Impact Area, Morrison, Minnesota",
-            "id": "EONET_21390",
-            "category": "wildfire",
-            "date": "2026-07-13T15:46:00Z",
-            "lat": 46.2701,
-            "lon": -94.3967,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259294"
-            ],
-            "acreage": 2094.0,
-            "distance_miles": 35.7,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Infantry Platoon Battle Course, Morrison, Minnesota",
-            "id": "EONET_21322",
-            "category": "wildfire",
-            "date": "2026-07-13T11:54:00Z",
-            "lat": 46.2469,
-            "lon": -94.3954,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259231"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 36.7,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX IPBC, Morrison, Minnesota",
-            "id": "EONET_21323",
-            "category": "wildfire",
-            "date": "2026-07-13T11:09:00Z",
-            "lat": 46.2465,
-            "lon": -94.4,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259215"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 36.6,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Prescribed Fire RX Center Range South, Morrison, Minnesota",
-            "id": "EONET_21324",
-            "category": "wildfire",
-            "date": "2026-07-13T11:07:00Z",
-            "lat": 46.162,
-            "lon": -94.4453,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259214"
-            ],
-            "acreage": 503.0,
-            "distance_miles": 39.2,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 4
+      "alert_count": 0
     },
     "27161": {
       "fips": "27161",
       "name": "Waseca County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "27163": {
-      "fips": "27163",
-      "name": "Washington County",
-      "state": "MN",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "27165": {
-      "fips": "27165",
-      "name": "Watonwan County",
-      "state": "MN",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0
-    },
-    "27167": {
-      "fips": "27167",
-      "name": "Wilkin County",
-      "state": "MN",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [
+        "weather": [
           {
-            "title": "Prescribed Fire RX Flowing 24, Clay, Minnesota",
-            "id": "EONET_21388",
-            "category": "wildfire",
-            "date": "2026-07-15T11:10:00Z",
-            "lat": 47.0151,
-            "lon": -96.4476,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX2593380"
-            ],
-            "acreage": 516.0,
-            "distance_miles": 45.1,
-            "threat_level": "Vicinity"
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -2255,16 +2026,103 @@
       },
       "alert_count": 1
     },
+    "27163": {
+      "fips": "27163",
+      "name": "Washington County",
+      "state": "MN",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 27 at 6:00AM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "27165": {
+      "fips": "27165",
+      "name": "Watonwan County",
+      "state": "MN",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
+    "27167": {
+      "fips": "27167",
+      "name": "Wilkin County",
+      "state": "MN",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
+    },
     "27169": {
       "fips": "27169",
       "name": "Winona County",
       "state": "MN",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -2279,11 +2137,24 @@
       "name": "Wright County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -2291,34 +2162,32 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "27173": {
       "fips": "27173",
       "name": "Yellow Medicine County",
       "state": "MN",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 24 at 12:59PM CDT until July 26 at 12:00PM CDT by NWS Twin Cities/Chanhassen MN",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-24T12:59:00-05:00",
+            "expires": "2026-07-25T01:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Prescribed Fire RX Chippewa Bottoms, Chippewa, Minnesota",
-            "id": "EONET_21389",
-            "category": "wildfire",
-            "date": "2026-07-13T16:49:00Z",
-            "lat": 45.1387,
-            "lon": -96.0161,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2025-MNMNS-RX259328"
-            ],
-            "acreage": 700.0,
-            "distance_miles": 30.2,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],

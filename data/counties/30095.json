@@ -10,20 +10,32 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Warning",
-        "headline": "Extreme Heat Warning issued July 24 at 1:28AM MDT until July 26 at 9:00PM MDT by NWS Billings MT",
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued July 24 at 1:09PM MDT until July 26 at 12:00AM MDT by NWS Billings MT",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-07-24T01:28:00-06:00",
-        "expires": "2026-07-25T01:30:00-06:00",
+        "effective": "2026-07-24T13:09:00-06:00",
+        "expires": "2026-07-25T13:15:00-06:00",
+        "source": "nws_alert",
+        "count": 1
+      },
+      {
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued July 24 at 12:35PM MDT until July 26 at 9:00PM MDT by NWS Billings MT",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-07-24T12:35:00-06:00",
+        "expires": "2026-07-25T12:45:00-06:00",
         "source": "nws_alert",
         "count": 1
       }
     ],
-    "bank_robbery": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
+    "service_provider_outage": [],
+    "hazmat_incident": [],
+    "road_closure": [],
     "wildfires": [],
     "transit": [],
     "amtrak": [],
@@ -31,29 +43,29 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
       "snow_in_24h": 0.0,
       "high_apparent_temp_f": 95.0,
-      "low_apparent_temp_f": 62.0,
+      "low_apparent_temp_f": 63.0,
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 42,
-      "category": "Good",
-      "aqi_24h_max": 46,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 4.9,
-      "pm10": 5.2,
-      "ozone": 32.0,
-      "nitrogen_dioxide": 8.1,
-      "observed_at": "2026-07-24T09:00",
+      "us_aqi": 53,
+      "category": "Moderate",
+      "aqi_24h_max": 53,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 8.1,
+      "pm10": 9.7,
+      "ozone": 96.0,
+      "nitrogen_dioxide": 0.3,
+      "observed_at": "2026-07-24T22:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
   "date": "2026-07-24",
-  "generated_at": "2026-07-24T09:50:16.774463+00:00"
+  "generated_at": "2026-07-24T22:54:46.685409+00:00"
 }
