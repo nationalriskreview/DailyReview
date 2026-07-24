@@ -8,7 +8,18 @@
     "lon": -121.225575
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued July 23 at 6:48PM PDT until July 25 at 8:00PM PDT by NWS Pendleton OR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-07-23T18:48:00-07:00",
+        "expires": "2026-07-23T21:00:00-07:00",
+        "source": "nws_alert",
+        "count": 2
+      }
+    ],
     "bank_robbery": [],
     "protest": [],
     "utility_outage": [],
@@ -24,6 +35,7 @@
         "sources": [
           "https://irwin.doi.gov/observer/incidents/2026-OROCF-000500"
         ],
+        "acreage": 15000.0,
         "distance_miles": 37.2,
         "threat_level": "Vicinity"
       },
@@ -37,6 +49,7 @@
         "sources": [
           "https://irwin.doi.gov/observer/incidents/2026-OR955S-000494"
         ],
+        "acreage": 6856.0,
         "distance_miles": 40.1,
         "threat_level": "Vicinity"
       },
@@ -50,6 +63,7 @@
         "sources": [
           "https://irwin.doi.gov/observer/incidents/2026-OR951S-000433"
         ],
+        "acreage": 17873.0,
         "distance_miles": 49.1,
         "threat_level": "Vicinity"
       }
@@ -57,32 +71,46 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [],
+    "fema": [
+      {
+        "disaster_number": "5647",
+        "declaration_type": "FM",
+        "declaration_title": "AKAWA BUTTE FIRE",
+        "incident_type": "Fire",
+        "declared_at": "2026-07-23T00:00:00.000Z",
+        "is_new_today": false,
+        "incident_begin": "2026-07-23T00:00:00.000Z",
+        "incident_end": null,
+        "designated_area": "Deschutes (County)",
+        "fema_declaration_string": "FM-5647-OR",
+        "source": "https://www.fema.gov/disaster/5647"
+      }
+    ],
     "disease": []
   },
-  "alert_count": 3,
+  "alert_count": 5,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.01,
+      "precip_in_24h": 0.0,
       "snow_in_24h": 0.0,
       "high_apparent_temp_f": 84.0,
-      "low_apparent_temp_f": 55.0,
+      "low_apparent_temp_f": 53.0,
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 73,
+      "us_aqi": 100,
       "category": "Moderate",
-      "aqi_24h_max": 74,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 9.0,
-      "pm10": 9.4,
-      "ozone": 54.0,
-      "nitrogen_dioxide": 5.0,
-      "observed_at": "2026-07-23T09:00",
+      "aqi_24h_max": 164,
+      "aqi_24h_max_category": "Unhealthy",
+      "pm2_5": 112.2,
+      "pm10": 115.3,
+      "ozone": 181.0,
+      "nitrogen_dioxide": 12.2,
+      "observed_at": "2026-07-24T02:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-23",
-  "generated_at": "2026-07-23T09:58:49.898693+00:00"
+  "date": "2026-07-24",
+  "generated_at": "2026-07-24T02:47:35.767884+00:00"
 }
