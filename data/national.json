@@ -1,23 +1,24 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-24T09:50:16.774463+00:00",
+  "generated_at": "2026-07-24T22:54:46.685409+00:00",
   "date": "2026-07-24",
   "data_windows": {
     "national.cdc_han": "7d",
-    "national.cdc_travel_notices": "active (CDC Travel Health Notices)",
+    "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
+    "national.notifiable_disease_alerts": "current MMWR week (CDC NNDSS elevation)",
     "national.amtrak_advisories": "active (effective today)",
     "national.faa_advisories": "live"
   },
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 132
+      "counties_with_alerts": 278
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
-      "counties_with_conditions": 3222,
-      "counties_over_threshold": 252
+      "counties_with_conditions": 3221,
+      "counties_over_threshold": 188
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -26,27 +27,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 27,
+      "counties_with_matches": 76,
       "items_pre_llm": {
-        "bank_robbery": 0,
-        "protest": 38,
-        "utility_outage": 12,
-        "transit_disruption": 0
+        "protest": 194,
+        "utility_outage": 13,
+        "transit_disruption": 14,
+        "service_provider_outage": 1,
+        "hazmat_incident": 5,
+        "road_closure": 11
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 8,
+      "counties_with_matches": 32,
       "items_post_llm": {
-        "bank_robbery": 0,
-        "protest": 9,
-        "utility_outage": 7,
-        "transit_disruption": 0
-      }
+        "protest": 68,
+        "utility_outage": 12,
+        "transit_disruption": 0,
+        "service_provider_outage": 0,
+        "hazmat_incident": 2,
+        "road_closure": 6
+      },
+      "unique_articles": 152,
+      "calls_used": 152,
+      "cap": 300,
+      "cap_hit": false
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 154
+      "counties_with_alerts": 0
     },
     "transit": {
       "status": "ok",
@@ -131,13 +140,17 @@
       "status": "ok",
       "items": 0
     },
-    "disease_cdc_travel_notices": {
+    "disease_cdc_outbreaks": {
       "status": "ok",
-      "items": 22
+      "items": 1
     },
     "disease_wastewater": {
       "status": "ok",
       "counties_with_detections": 0
+    },
+    "nndss_notifiable": {
+      "status": "ok",
+      "alerts": 14
     },
     "amtrak": {
       "status": "ok",
@@ -150,183 +163,224 @@
       "counties_with_alerts": 6
     }
   },
+  "run_health": {
+    "overall": "ok",
+    "counts": {
+      "ok": 14,
+      "partial": 0,
+      "failed": 0,
+      "skipped": 0
+    },
+    "failed": [],
+    "partial": [],
+    "skipped": []
+  },
   "cdc_han": [],
-  "cdc_travel_notices": [
+  "cdc_outbreaks": [
     {
-      "title": "Level 2 - Chikungunya in Costa Rica",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-costa-rica",
-      "level": "Level 2 (Alert)",
-      "published": "Thu, 16 Jul 2026 04:00:00 GMT",
-      "summary": "There is an outbreak of chikungunya in Guanacaste Province, Costa Rica. Most cases have been reported in Playa Langosta. You can protect yourself by preventing mosquito bites.",
-      "source": "CDC Travel Health Notices"
+      "title": "Measles Outbreaks 2025",
+      "url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=285676&c=396725",
+      "published": "Wed, 01 Jan 2025 13:10:00 GMT",
+      "summary": "Measles Outbreaks 2025",
+      "source": "CDC Outbreaks (US-based)"
+    }
+  ],
+  "notifiable_disease_alerts": [
+    {
+      "state": "Louisiana",
+      "state_abbr": "LA",
+      "disease": "Legionellosis",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 1,
+      "prev_52wk_max": 8,
+      "ytd": 42,
+      "ytd_last_year": 21,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 2 - Ebola Bundibugyo Virus Disease in the Democratic Republic of the Congo and Uganda",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/ebola-drc-uganda",
-      "level": "Level 2 (Alert)",
-      "published": "Wed, 15 Jul 2026 04:00:00 GMT",
-      "summary": "The Democratic Republic of the Congo (DRC) and Uganda are experiencing outbreaks of Bundibugyo virus disease (BVD). CDC recommends practicing enhanced precautions for travel to Uganda or to provinces in the DRC other than those affected by the outbreak.  Country List :  Democratic Republic of the Congo, Uganda Country List :  Democratic Republic of the Congo, Uganda",
-      "source": "CDC Travel Health Notices"
+      "state": "Kansas",
+      "state_abbr": "KS",
+      "disease": "Legionellosis",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 0,
+      "prev_52wk_max": 4,
+      "ytd": 26,
+      "ytd_last_year": 12,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 3 - Ebola Bundibugyo Virus Disease in Parts of the Democratic Republic of the Congo",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level3/ebola-democratic-republic-of-the-congo",
-      "level": "Level 3 (Warning)",
-      "published": "Wed, 15 Jul 2026 04:00:00 GMT",
-      "summary": "The Democratic Republic of the Congo (DRC) is experiencing an outbreak of Bundibugyo virus disease (BVD) in Haut-Uélé, Ituri, Nord-Kivu (North Kivu), and Tshopo provinces. CDC recommends avoiding nonessential travel to these provinces.",
-      "source": "CDC Travel Health Notices"
+      "state": "Maine",
+      "state_abbr": "ME",
+      "disease": "Legionellosis",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 0,
+      "prev_52wk_max": 3,
+      "ytd": 11,
+      "ytd_last_year": 5,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 1 - Diphtheria in Haiti",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level1/diphtheria-haiti",
-      "level": "Level 1 (Watch)",
-      "published": "Thu, 25 Jun 2026 04:00:00 GMT",
-      "summary": "There is an outbreak of diphtheria in Haiti. Vaccination against diphtheria is essential to protect against the disease.",
-      "source": "CDC Travel Health Notices"
+      "state": "South Carolina",
+      "state_abbr": "SC",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 0,
+      "prev_52wk_max": 214,
+      "ytd": 686,
+      "ytd_last_year": 1,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 1 - Global Dengue",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level1/dengue-global",
-      "level": "Level 1 (Watch)",
-      "published": "Tue, 23 Jun 2026 04:00:00 GMT",
-      "summary": "Dengue is a year-round risk in many parts of the world, with outbreaks commonly occurring every 2–5 years. Travelers to risk areas should prevent mosquito bites.                   Country List :  Colombia, Samoa, Mali, Vietnam, New Caledonia (France), Timor-Leste (East Timor), Guyana, Maldives, Bolivia, Tonga, Cambodia",
-      "source": "CDC Travel Health Notices"
+      "state": "Utah",
+      "state_abbr": "UT",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 0,
+      "prev_52wk_max": 58,
+      "ytd": 511,
+      "ytd_last_year": 10,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 2 - Malaria in Yemen",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/malaria-yemen",
-      "level": "Level 2 (Alert)",
-      "published": "Thu, 11 Jun 2026 04:00:00 GMT",
-      "summary": "Increased cases of malaria have been reported in Yemen, including in areas that were previously considered low-risk.",
-      "source": "CDC Travel Health Notices"
+      "state": "Virginia",
+      "state_abbr": "VA",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 0,
+      "prev_52wk_max": 33,
+      "ytd": 181,
+      "ytd_last_year": 3,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 1 - Hepatitis A in Canada",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level1/hepatitis-a-canada",
-      "level": "Level 1 (Watch)",
-      "published": "Thu, 04 Jun 2026 04:00:00 GMT",
-      "summary": "Manitoba, Canada is currently experiencing a hepatitis A virus (HAV) outbreak. HAV is contagious and spreads through close person-to-person contact and by eating contaminated food or drink.",
-      "source": "CDC Travel Health Notices"
+      "state": "Florida",
+      "state_abbr": "FL",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 0,
+      "prev_52wk_max": 51,
+      "ytd": 141,
+      "ytd_last_year": 4,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 2 - Chikungunya in French Guiana",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-french-guiana",
-      "level": "Level 2 (Alert)",
-      "published": "Thu, 04 Jun 2026 04:00:00 GMT",
-      "summary": "There is an outbreak of chikungunya in French Guiana. You can protect yourself by preventing mosquito bites.",
-      "source": "CDC Travel Health Notices"
+      "state": "Pennsylvania",
+      "state_abbr": "PA",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 6,
+      "prev_52wk_max": 21,
+      "ytd": 111,
+      "ytd_last_year": 15,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 2 - Malaria in Mayotte",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/malaria-mayotte",
-      "level": "Level 2 (Alert)",
-      "published": "Tue, 02 Jun 2026 04:00:00 GMT",
-      "summary": "Increased cases of malaria have been reported in Mayotte. Malaria is spread by the bite of infected mosquitoes.",
-      "source": "CDC Travel Health Notices"
+      "state": "Washington",
+      "state_abbr": "WA",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 0,
+      "prev_52wk_max": 10,
+      "ytd": 40,
+      "ytd_last_year": 10,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 1 - Diphtheria in Sub-Saharan Africa",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level1/diphtheria-sub-saharan-africa",
-      "level": "Level 1 (Watch)",
-      "published": "Tue, 02 Jun 2026 04:00:00 GMT",
-      "summary": "There are outbreaks of diphtheria in several countries in Africa. Vaccination against diphtheria is essential to protect against the disease.  Country List :  Chad, Guinea, Niger, Nigeria, Mali, Mauritania, Somalia Country List :  Chad, Guinea, Niger, Nigeria, Mali, Mauritania, Somalia Country List :  Chad, Guinea, Niger, Nigeria, Mali, Mauritania, Somalia",
-      "source": "CDC Travel Health Notices"
+      "state": "Oregon",
+      "state_abbr": "OR",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 2,
+      "prev_52wk_max": 7,
+      "ytd": 32,
+      "ytd_last_year": 1,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 2 - Chikungunya in Mauritius",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-mauritius",
-      "level": "Level 2 (Alert)",
-      "published": "Thu, 14 May 2026 04:00:00 GMT",
-      "summary": "There is an outbreak of chikungunya in Mauritius. You can protect yourself by preventing mosquito bites.",
-      "source": "CDC Travel Health Notices"
+      "state": "Arizona",
+      "state_abbr": "AZ",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 0,
+      "prev_52wk_max": 29,
+      "ytd": 24,
+      "ytd_last_year": 4,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 1 - Ciguatera Fish Poisoning in Vanuatu",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level1/ciguatera-fish-poisoning-vanuatu",
-      "level": "Level 1 (Watch)",
-      "published": "Thu, 07 May 2026 04:00:00 GMT",
-      "summary": "There is an outbreak of ciguatera fish poisoning in Vanuatu.",
-      "source": "CDC Travel Health Notices"
+      "state": "North Carolina",
+      "state_abbr": "NC",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 0,
+      "prev_52wk_max": 6,
+      "ytd": 20,
+      "ytd_last_year": 0,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 2 - Meningococcal Disease in the Democratic Republic of the Congo",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/meningococcal-drc",
-      "level": "Level 2 (Alert)",
-      "published": "Tue, 24 Mar 2026 04:00:00 GMT",
-      "summary": "There is an outbreak of meningococcal disease in the Mangembo Health Zone of Kongo Central Province. The best way to protect yourself is to get meningococcal vaccination.",
-      "source": "CDC Travel Health Notices"
+      "state": "Minnesota",
+      "state_abbr": "MN",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 0,
+      "prev_52wk_max": 11,
+      "ytd": 17,
+      "ytd_last_year": 5,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     },
     {
-      "title": "Level 2 - Yellow Fever in Venezuela",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/yellow-fever-venezuela",
-      "level": "Level 2 (Alert)",
-      "published": "Mon, 16 Mar 2026 04:00:00 GMT",
-      "summary": "An increased number of cases of yellow fever have been reported throughout Venezuela.",
-      "source": "CDC Travel Health Notices"
-    },
-    {
-      "title": "Level 2 - Global Polio",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/global-polio",
-      "level": "Level 2 (Alert)",
-      "published": "Mon, 09 Mar 2026 04:00:00 GMT",
-      "summary": "Some international destinations have circulating poliovirus. Before any international travel, make sure you are up to date on your polio vaccines.          Country List :  Afghanistan, Algeria, Benin, Cameroon, Chad, Côte d'Ivoire (Ivory Coast), Democratic Republic of the Congo, Niger, Nigeria, Pakistan, Somalia, Yemen, Sudan, Guinea, Angola, Senegal, Ethiopia, Republic of South Sudan, Djibouti, Israel, the West Bank and Gaza, Germany, Poland, United Kingdom, including England, Scotland, Wales, ",
-      "source": "CDC Travel Health Notices"
-    },
-    {
-      "title": "Level 2 - Chikungunya in Suriname",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-suriname",
-      "level": "Level 2 (Alert)",
-      "published": "Tue, 17 Feb 2026 05:00:00 GMT",
-      "summary": "There is an outbreak of chikungunya in Suriname. You can protect yourself by preventing mosquito bites.",
-      "source": "CDC Travel Health Notices"
-    },
-    {
-      "title": "Level 2 - Chikungunya in Bolivia",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-bolivia",
-      "level": "Level 2 (Alert)",
-      "published": "Wed, 11 Feb 2026 05:00:00 GMT",
-      "summary": "There is an outbreak of chikungunya in Santa Cruz and Cochabamba Departments, Bolivia. You can protect yourself by preventing mosquito bites.",
-      "source": "CDC Travel Health Notices"
-    },
-    {
-      "title": "Level 2 - Chikungunya in Seychelles",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/chikungunya-seychelles",
-      "level": "Level 2 (Alert)",
-      "published": "Thu, 05 Feb 2026 05:00:00 GMT",
-      "summary": "There is an outbreak of chikungunya in Seychelles. You can protect yourself by preventing mosquito bites.",
-      "source": "CDC Travel Health Notices"
-    },
-    {
-      "title": "Level 1 - Rocky Mountain Spotted Fever in Mexico",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level1/rmsf-mexico",
-      "level": "Level 1 (Watch)",
-      "published": "Tue, 23 Dec 2025 05:00:00 GMT",
-      "summary": "Illness and death due to Rocky Mountain spotted fever (RMSF) have been reported in the northern region of Mexico along the U.S. border, particularly in Baja California, Sonora, Chihuahua, Coahuila, and Nuevo León.",
-      "source": "CDC Travel Health Notices"
-    },
-    {
-      "title": "Level 2 - Yellow Fever in Colombia",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level2/yellow-fever-colombia",
-      "level": "Level 2 (Alert)",
-      "published": "Tue, 02 Sep 2025 04:00:00 GMT",
-      "summary": "An increased number of cases of yellow fever have been reported in Colombia.",
-      "source": "CDC Travel Health Notices"
-    },
-    {
-      "title": "Level 1 - Global Measles",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level1/measles-globe",
-      "level": "Level 1 (Watch)",
-      "published": "Wed, 28 May 2025 04:00:00 GMT",
-      "summary": "Measles cases are rising in many countries around the world. All international travelers should be fully vaccinated against measles with the measles-mumps-rubella (MMR) vaccine, according to CDC's measles vaccination recommendations for international travel. Country List :  Afghanistan, Benin, Cameroon, Central African Republic, Chad, Côte d'Ivoire (Ivory Coast), Democratic Republic of the Congo, Djibouti, Ethiopia, Indonesia, Liberia, Nigeria, Pakistan, Republic of the Congo , Senegal, Somalia,",
-      "source": "CDC Travel Health Notices"
-    },
-    {
-      "title": "Level 1 - Extensively Drug-Resistant Typhoid Fever in Pakistan",
-      "url": "https://wwwnc.cdc.gov/travel/notices/level1/xdr-typhoid-fever-pakistan",
-      "level": "Level 1 (Watch)",
-      "published": "Tue, 30 May 2023 04:00:00 GMT",
-      "summary": "An outbreak of extensively drug-resistant (XDR) typhoid fever in Pakistan is ongoing. Extensively drug-resistant infections do not respond to most antibiotics.",
-      "source": "CDC Travel Health Notices"
+      "state": "New York City",
+      "state_abbr": "NY",
+      "disease": "Meningococcal disease",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 0,
+      "prev_52wk_max": 2,
+      "ytd": 12,
+      "ytd_last_year": 3,
+      "mmwr_week": "2026-W28",
+      "source": "CDC NNDSS Weekly Data"
     }
   ],
   "amtrak_advisories": [],

@@ -1,11 +1,11 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-24T09:50:16.774463+00:00",
+  "generated_at": "2026-07-24T22:54:46.685409+00:00",
   "date": "2026-07-24",
   "boroughs": [
     {
       "schema_version": "1.7",
-      "generated_at": "2026-07-24T09:50:16.774463+00:00",
+      "generated_at": "2026-07-24T22:54:46.685409+00:00",
       "date": "2026-07-24",
       "borough": "Manhattan",
       "slug": "manhattan",
@@ -13,10 +13,12 @@
       "county_name": "New York County",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -29,21 +31,21 @@
         "forecast": {
           "precip_in_24h": 0.0,
           "snow_in_24h": 0.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 65.0,
+          "high_apparent_temp_f": 81.0,
+          "low_apparent_temp_f": 66.0,
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
-          "aqi_24h_max": 102,
+          "us_aqi": 123,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 132,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 19.9,
-          "pm10": 22.9,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 41.2,
-          "observed_at": "2026-07-24T09:00",
+          "pm2_5": 9.8,
+          "pm10": 10.3,
+          "ozone": 140.0,
+          "nitrogen_dioxide": 7.3,
+          "observed_at": "2026-07-24T22:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       },
@@ -51,7 +53,7 @@
     },
     {
       "schema_version": "1.7",
-      "generated_at": "2026-07-24T09:50:16.774463+00:00",
+      "generated_at": "2026-07-24T22:54:46.685409+00:00",
       "date": "2026-07-24",
       "borough": "Brooklyn",
       "slug": "brooklyn",
@@ -59,10 +61,108 @@
       "county_name": "Kings County",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "snow_in_24h": 0.0,
+          "high_apparent_temp_f": 81.0,
+          "low_apparent_temp_f": 66.0,
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 123,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 132,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 9.8,
+          "pm10": 10.3,
+          "ozone": 140.0,
+          "nitrogen_dioxide": 7.3,
+          "observed_at": "2026-07-24T22:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      },
+      "note": "Includes events tagged 'Brooklyn' or 'Kings County'"
+    },
+    {
+      "schema_version": "1.7",
+      "generated_at": "2026-07-24T22:54:46.685409+00:00",
+      "date": "2026-07-24",
+      "borough": "Queens",
+      "slug": "queens",
+      "fips": "36081",
+      "county_name": "Queens County",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "snow_in_24h": 0.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 66.0,
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 123,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 132,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 9.8,
+          "pm10": 10.3,
+          "ozone": 140.0,
+          "nitrogen_dioxide": 7.3,
+          "observed_at": "2026-07-24T22:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      },
+      "note": "Includes events tagged 'Queens' or 'Queens County'"
+    },
+    {
+      "schema_version": "1.7",
+      "generated_at": "2026-07-24T22:54:46.685409+00:00",
+      "date": "2026-07-24",
+      "borough": "Bronx",
+      "slug": "bronx",
+      "fips": "36005",
+      "county_name": "Bronx County",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -81,107 +181,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
-          "aqi_24h_max": 102,
+          "us_aqi": 123,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 132,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 19.9,
-          "pm10": 22.9,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 41.2,
-          "observed_at": "2026-07-24T09:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      },
-      "note": "Includes events tagged 'Brooklyn' or 'Kings County'"
-    },
-    {
-      "schema_version": "1.7",
-      "generated_at": "2026-07-24T09:50:16.774463+00:00",
-      "date": "2026-07-24",
-      "borough": "Queens",
-      "slug": "queens",
-      "fips": "36081",
-      "county_name": "Queens County",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "snow_in_24h": 0.0,
-          "high_apparent_temp_f": 81.0,
-          "low_apparent_temp_f": 67.0,
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
-          "aqi_24h_max": 102,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 19.9,
-          "pm10": 22.9,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 41.2,
-          "observed_at": "2026-07-24T09:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      },
-      "note": "Includes events tagged 'Queens' or 'Queens County'"
-    },
-    {
-      "schema_version": "1.7",
-      "generated_at": "2026-07-24T09:50:16.774463+00:00",
-      "date": "2026-07-24",
-      "borough": "Bronx",
-      "slug": "bronx",
-      "fips": "36005",
-      "county_name": "Bronx County",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "snow_in_24h": 0.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 65.0,
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
-          "aqi_24h_max": 102,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 19.9,
-          "pm10": 22.9,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 41.2,
-          "observed_at": "2026-07-24T09:00",
+          "pm2_5": 9.8,
+          "pm10": 10.3,
+          "ozone": 140.0,
+          "nitrogen_dioxide": 7.3,
+          "observed_at": "2026-07-24T22:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       },
@@ -189,7 +197,7 @@
     },
     {
       "schema_version": "1.7",
-      "generated_at": "2026-07-24T09:50:16.774463+00:00",
+      "generated_at": "2026-07-24T22:54:46.685409+00:00",
       "date": "2026-07-24",
       "borough": "Staten Island",
       "slug": "staten-island",
@@ -197,10 +205,12 @@
       "county_name": "Richmond County",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -213,21 +223,21 @@
         "forecast": {
           "precip_in_24h": 0.0,
           "snow_in_24h": 0.0,
-          "high_apparent_temp_f": 81.0,
+          "high_apparent_temp_f": 80.0,
           "low_apparent_temp_f": 65.0,
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
+          "us_aqi": 58,
           "category": "Moderate",
           "aqi_24h_max": 75,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.2,
-          "pm10": 13.9,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 15.7,
-          "observed_at": "2026-07-24T09:00",
+          "pm2_5": 5.7,
+          "pm10": 7.3,
+          "ozone": 113.0,
+          "nitrogen_dioxide": 6.5,
+          "observed_at": "2026-07-24T22:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       },

@@ -1,10 +1,10 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-24T09:50:16.774463+00:00",
+  "generated_at": "2026-07-24T22:54:46.685409+00:00",
   "date": "2026-07-24",
   "state": "FL",
   "counties_total": 67,
-  "counties_with_alerts": 32,
+  "counties_with_alerts": 30,
   "counties": {
     "12001": {
       "fips": "12001",
@@ -19,10 +19,12 @@
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -37,11 +39,20 @@
       "name": "Baker County",
       "state": "FL",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -49,18 +60,27 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "12005": {
       "fips": "12005",
       "name": "Bay County",
       "state": "FL",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -68,7 +88,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "12007": {
       "fips": "12007",
@@ -78,15 +98,17 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -102,10 +124,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -121,72 +145,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire BERGER (50), Palm Beach, Florida",
-            "id": "EONET_21415",
-            "category": "wildfire",
-            "date": "2026-07-17T19:18:00Z",
-            "lat": 26.4467,
-            "lon": -80.8444,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261800112"
-            ],
-            "acreage": 11200.0,
-            "distance_miles": 28.7,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Wildfire Mile Marker 40- Broward (06), Broward, Florida",
-            "id": "EONET_21432",
-            "category": "wildfire",
-            "date": "2026-07-16T16:36:00Z",
-            "lat": 26.2567,
-            "lon": -80.5406,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261800111"
-            ],
-            "acreage": 6750.0,
-            "distance_miles": 5.9,
-            "threat_level": "Immediate"
-          },
-          {
-            "title": "Wildfire Charger 2, Collier, Florida",
-            "id": "EONET_21395",
-            "category": "wildfire",
-            "date": "2026-07-15T11:57:00Z",
-            "lat": 25.9737,
-            "lon": -81.0615,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLBCP-002227"
-            ],
-            "acreage": 974.0,
-            "distance_miles": 39.3,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 3
-    },
-    "12013": {
-      "fips": "12013",
-      "name": "Calhoun County",
-      "state": "FL",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -196,16 +160,46 @@
       },
       "alert_count": 0
     },
+    "12013": {
+      "fips": "12013",
+      "name": "Calhoun County",
+      "state": "FL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
     "12015": {
       "fips": "12015",
       "name": "Charlotte County",
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -221,10 +215,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -242,15 +238,17 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -266,47 +264,20 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire BERGER (50), Palm Beach, Florida",
-            "id": "EONET_21415",
-            "category": "wildfire",
-            "date": "2026-07-17T19:18:00Z",
-            "lat": 26.4467,
-            "lon": -80.8444,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261800112"
-            ],
-            "acreage": 11200.0,
-            "distance_miles": 41.3,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Wildfire Charger 2, Collier, Florida",
-            "id": "EONET_21395",
-            "category": "wildfire",
-            "date": "2026-07-15T11:57:00Z",
-            "lat": 25.9737,
-            "lon": -81.0615,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLBCP-002227"
-            ],
-            "acreage": 974.0,
-            "distance_miles": 23.3,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "12023": {
       "fips": "12023",
@@ -316,15 +287,17 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -340,33 +313,20 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire BUCKET SHOP (53)~, Hillsborough, Florida",
-            "id": "EONET_21387",
-            "category": "wildfire",
-            "date": "2026-07-15T11:13:00Z",
-            "lat": 27.6689,
-            "lon": -82.0833,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261400379"
-            ],
-            "acreage": 553.0,
-            "distance_miles": 37.2,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "12029": {
       "fips": "12029",
@@ -376,15 +336,17 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -399,18 +361,13 @@
       "name": "Duval County",
       "state": "FL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "bank_robbery": [],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -418,7 +375,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "12033": {
       "fips": "12033",
@@ -426,10 +383,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -445,10 +404,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -464,10 +425,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -482,11 +445,20 @@
       "name": "Gadsden County",
       "state": "FL",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -494,7 +466,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "12041": {
       "fips": "12041",
@@ -509,10 +481,12 @@
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -528,44 +502,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire BERGER (50), Palm Beach, Florida",
-            "id": "EONET_21415",
-            "category": "wildfire",
-            "date": "2026-07-17T19:18:00Z",
-            "lat": 26.4467,
-            "lon": -80.8444,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261800112"
-            ],
-            "acreage": 11200.0,
-            "distance_miles": 41.1,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
-    },
-    "12045": {
-      "fips": "12045",
-      "name": "Gulf County",
-      "state": "FL",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -575,6 +517,34 @@
       },
       "alert_count": 0
     },
+    "12045": {
+      "fips": "12045",
+      "name": "Gulf County",
+      "state": "FL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
     "12047": {
       "fips": "12047",
       "name": "Hamilton County",
@@ -583,15 +553,17 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 111.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -606,41 +578,21 @@
       "name": "Hardee County",
       "state": "FL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "bank_robbery": [],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire BUCKET SHOP (53)~, Hillsborough, Florida",
-            "id": "EONET_21387",
-            "category": "wildfire",
-            "date": "2026-07-15T11:13:00Z",
-            "lat": 27.6689,
-            "lon": -82.0833,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261400379"
-            ],
-            "acreage": 553.0,
-            "distance_miles": 20.1,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "12051": {
       "fips": "12051",
@@ -648,61 +600,20 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire BERGER (50), Palm Beach, Florida",
-            "id": "EONET_21415",
-            "category": "wildfire",
-            "date": "2026-07-17T19:18:00Z",
-            "lat": 26.4467,
-            "lon": -80.8444,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261800112"
-            ],
-            "acreage": 11200.0,
-            "distance_miles": 20.1,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Wildfire Mile Marker 40- Broward (06), Broward, Florida",
-            "id": "EONET_21432",
-            "category": "wildfire",
-            "date": "2026-07-16T16:36:00Z",
-            "lat": 26.2567,
-            "lon": -80.5406,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261800111"
-            ],
-            "acreage": 6750.0,
-            "distance_miles": 42.6,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Wildfire Charger 2, Collier, Florida",
-            "id": "EONET_21395",
-            "category": "wildfire",
-            "date": "2026-07-15T11:57:00Z",
-            "lat": 25.9737,
-            "lon": -81.0615,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLBCP-002227"
-            ],
-            "acreage": 974.0,
-            "distance_miles": 39.5,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 3
+      "alert_count": 0
     },
     "12053": {
       "fips": "12053",
@@ -717,10 +628,12 @@
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -736,10 +649,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -762,33 +677,20 @@
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire BUCKET SHOP (53)~, Hillsborough, Florida",
-            "id": "EONET_21387",
-            "category": "wildfire",
-            "date": "2026-07-15T11:13:00Z",
-            "lat": 27.6689,
-            "lon": -82.0833,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261400379"
-            ],
-            "acreage": 553.0,
-            "distance_miles": 23.9,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "12059": {
       "fips": "12059",
@@ -796,10 +698,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -815,10 +719,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -834,10 +740,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -852,11 +760,20 @@
       "name": "Jefferson County",
       "state": "FL",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -864,7 +781,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "12067": {
       "fips": "12067",
@@ -872,10 +789,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -890,18 +809,13 @@
       "name": "Lake County",
       "state": "FL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "bank_robbery": [],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -909,7 +823,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "12071": {
       "fips": "12071",
@@ -917,10 +831,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -935,11 +851,20 @@
       "name": "Leon County",
       "state": "FL",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -947,7 +872,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "12075": {
       "fips": "12075",
@@ -962,10 +887,12 @@
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -980,11 +907,20 @@
       "name": "Liberty County",
       "state": "FL",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -992,18 +928,27 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "12079": {
       "fips": "12079",
       "name": "Madison County",
       "state": "FL",
       "alerts": {
-        "weather": [],
-        "bank_robbery": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1011,7 +956,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
     },
     "12081": {
       "fips": "12081",
@@ -1026,44 +971,12 @@
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire BUCKET SHOP (53)~, Hillsborough, Florida",
-            "id": "EONET_21387",
-            "category": "wildfire",
-            "date": "2026-07-15T11:13:00Z",
-            "lat": 27.6689,
-            "lon": -82.0833,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261400379"
-            ],
-            "acreage": 553.0,
-            "distance_miles": 23.2,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 2
-    },
-    "12083": {
-      "fips": "12083",
-      "name": "Marion County",
-      "state": "FL",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1071,7 +984,35 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 1
+    },
+    "12083": {
+      "fips": "12083",
+      "name": "Marion County",
+      "state": "FL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
     },
     "12085": {
       "fips": "12085",
@@ -1079,10 +1020,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1098,40 +1041,28 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [
           {
-            "title": "Wildfire Mile Marker 40- Broward (06), Broward, Florida",
-            "id": "EONET_21432",
-            "category": "wildfire",
-            "date": "2026-07-16T16:36:00Z",
-            "lat": 26.2567,
-            "lon": -80.5406,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261800111"
-            ],
-            "acreage": 6750.0,
-            "distance_miles": 44.3,
-            "threat_level": "Vicinity"
+            "title": "All lanes closed due to 3-vehicle crash on I-75 in Montgomery County",
+            "url": "https://www.yahoo.com/news/us/articles/lanes-closed-due-3-vehicle-044505378.html",
+            "domain": "yahoo.com",
+            "seendate": "20260724054500",
+            "is_new": false
           },
           {
-            "title": "Wildfire Charger 2, Collier, Florida",
-            "id": "EONET_21395",
-            "category": "wildfire",
-            "date": "2026-07-15T11:57:00Z",
-            "lat": 25.9737,
-            "lon": -81.0615,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLBCP-002227"
-            ],
-            "acreage": 974.0,
-            "distance_miles": 42.6,
-            "threat_level": "Vicinity"
+            "title": "All lanes closed due crash on I-75 SB near Austin Blvd. - WHIO TV 7 and WHIO Radio",
+            "url": "https://www.whio.com/news/local/all-lanes-closed-due-3-vehicle-crash-i-75-montgomery-county/GZPSCMF4DBDN7ANUCTAIS7H6RU/",
+            "domain": "whio.com",
+            "seendate": "20260724053000",
+            "is_new": false
           }
         ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -1146,44 +1077,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire Charger 2, Collier, Florida",
-            "id": "EONET_21395",
-            "category": "wildfire",
-            "date": "2026-07-15T11:57:00Z",
-            "lat": 25.9737,
-            "lon": -81.0615,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLBCP-002227"
-            ],
-            "acreage": 974.0,
-            "distance_miles": 26.9,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1
-    },
-    "12089": {
-      "fips": "12089",
-      "name": "Nassau County",
-      "state": "FL",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1193,16 +1092,46 @@
       },
       "alert_count": 0
     },
+    "12089": {
+      "fips": "12089",
+      "name": "Nassau County",
+      "state": "FL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1
+    },
     "12091": {
       "fips": "12091",
       "name": "Okaloosa County",
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1218,10 +1147,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1237,10 +1168,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1256,10 +1189,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1275,47 +1210,20 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire BERGER (50), Palm Beach, Florida",
-            "id": "EONET_21415",
-            "category": "wildfire",
-            "date": "2026-07-17T19:18:00Z",
-            "lat": 26.4467,
-            "lon": -80.8444,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261800112"
-            ],
-            "acreage": 11200.0,
-            "distance_miles": 28.2,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Wildfire Mile Marker 40- Broward (06), Broward, Florida",
-            "id": "EONET_21432",
-            "category": "wildfire",
-            "date": "2026-07-16T16:36:00Z",
-            "lat": 26.2567,
-            "lon": -80.5406,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261800111"
-            ],
-            "acreage": 6750.0,
-            "distance_miles": 27.7,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 0
     },
     "12101": {
       "fips": "12101",
@@ -1323,10 +1231,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1344,65 +1254,18 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire BUCKET SHOP (53)~, Hillsborough, Florida",
-            "id": "EONET_21387",
-            "category": "wildfire",
-            "date": "2026-07-15T11:13:00Z",
-            "lat": 27.6689,
-            "lon": -82.0833,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261400379"
-            ],
-            "acreage": 553.0,
-            "distance_miles": 46.6,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 2
-    },
-    "12105": {
-      "fips": "12105",
-      "name": "Polk County",
-      "state": "FL",
-      "alerts": {
-        "weather": [],
-        "bank_robbery": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire BUCKET SHOP (53)~, Hillsborough, Florida",
-            "id": "EONET_21387",
-            "category": "wildfire",
-            "date": "2026-07-15T11:13:00Z",
-            "lat": 27.6689,
-            "lon": -82.0833,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261400379"
-            ],
-            "acreage": 553.0,
-            "distance_miles": 30.9,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -1410,6 +1273,27 @@
         "disease": []
       },
       "alert_count": 1
+    },
+    "12105": {
+      "fips": "12105",
+      "name": "Polk County",
+      "state": "FL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0
     },
     "12107": {
       "fips": "12107",
@@ -1419,15 +1303,17 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1442,18 +1328,13 @@
       "name": "St. Johns County",
       "state": "FL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "bank_robbery": [],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1461,7 +1342,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "12111": {
       "fips": "12111",
@@ -1469,10 +1350,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1487,18 +1370,13 @@
       "name": "Santa Rosa County",
       "state": "FL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "bank_robbery": [],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1506,7 +1384,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "12115": {
       "fips": "12115",
@@ -1521,33 +1399,20 @@
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "wildfires": [
-          {
-            "title": "Wildfire BUCKET SHOP (53)~, Hillsborough, Florida",
-            "id": "EONET_21387",
-            "category": "wildfire",
-            "date": "2026-07-15T11:13:00Z",
-            "lat": 27.6689,
-            "lon": -82.0833,
-            "sources": [
-              "https://irwin.doi.gov/observer/incidents/2026-FLFLS-261400379"
-            ],
-            "acreage": 553.0,
-            "distance_miles": 37.1,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "12117": {
       "fips": "12117",
@@ -1555,10 +1420,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1574,10 +1441,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1595,15 +1464,17 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1621,15 +1492,17 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1647,15 +1520,17 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1671,10 +1546,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1697,10 +1574,12 @@
             "source": "nws_forecast"
           }
         ],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1716,10 +1595,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1735,10 +1616,12 @@
       "state": "FL",
       "alerts": {
         "weather": [],
-        "bank_robbery": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
