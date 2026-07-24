@@ -5,6 +5,7 @@ from __future__ import annotations
 import asyncio
 import logging
 import os
+from datetime import datetime
 from typing import Iterable
 
 import aiohttp
@@ -54,8 +55,62 @@ async def fetch_active_alerts(session: aiohttp.ClientSession) -> list[dict]:
     return features
 
 
+_SEVERITY_RANK = {"Extreme": 4, "Severe": 3, "Moderate": 2, "Minor": 1, "Unknown": 0, "": 0}
+_URGENCY_RANK = {"Immediate": 4, "Expected": 3, "Future": 2, "Past": 1, "Unknown": 0, "": 0}
+
+
+def _iso_dt(s: str):
+    try:
+        return datetime.fromisoformat(s)
+    except (ValueError, TypeError):
+        return None
+
+
+def _combine_county_alerts(alerts: list[dict]) -> list[dict]:
+    """Collapse alerts of the same event type into one entry per county.
+
+    A county spans multiple NWS zones and can border several forecast offices,
+    each issuing its own alert-ID with identical content — so a single hazard
+    shows up many times. We group by `event`, keep the highest severity/urgency,
+    and widen the window to [earliest effective, latest expires]. `count`
+    records how many source alerts were merged. `areaDesc` is intentionally
+    dropped: the alert is already filed under a specific county.
+    """
+    groups: dict[str, dict] = {}
+    order: list[str] = []
+    for a in alerts:
+        event = a.get("event", "")
+        g = groups.get(event)
+        if g is None:
+            groups[event] = {
+                "event": event,
+                "headline": a.get("headline", ""),
+                "severity": a.get("severity", ""),
+                "urgency": a.get("urgency", ""),
+                "effective": a.get("effective", ""),
+                "expires": a.get("expires", ""),
+                "source": a.get("source", "nws_alert"),
+                "count": 1,
+            }
+            order.append(event)
+            continue
+        g["count"] += 1
+        if _SEVERITY_RANK.get(a.get("severity", ""), 0) > _SEVERITY_RANK.get(g["severity"], 0):
+            g["severity"] = a.get("severity", "")
+        if _URGENCY_RANK.get(a.get("urgency", ""), 0) > _URGENCY_RANK.get(g["urgency"], 0):
+            g["urgency"] = a.get("urgency", "")
+        a_eff, g_eff = _iso_dt(a.get("effective", "")), _iso_dt(g["effective"])
+        if a_eff and (g_eff is None or a_eff < g_eff):
+            g["effective"] = a.get("effective", "")
+        a_exp, g_exp = _iso_dt(a.get("expires", "")), _iso_dt(g["expires"])
+        if a_exp and (g_exp is None or a_exp > g_exp):
+            g["expires"] = a.get("expires", "")
+    return [groups[e] for e in order]
+
+
 def bucket_alerts_by_county(features: list[dict]) -> dict[str, list[dict]]:
-    """FIPS → list of relevant alerts. SAME codes are 6-digit (leading 0 + FIPS)."""
+    """FIPS → list of relevant alerts, deduped by alert-ID then combined by
+    event type. SAME codes are 6-digit (leading 0 + FIPS)."""
     by_county: dict[str, list[dict]] = {}
     seen: dict[str, set[str]] = {}
     for feat in features:
@@ -81,11 +136,9 @@ def bucket_alerts_by_county(features: list[dict]) -> dict[str, list[dict]]:
                 "urgency": props.get("urgency", ""),
                 "effective": props.get("effective", ""),
                 "expires": props.get("expires", ""),
-                "areaDesc": props.get("areaDesc", ""),
-                "id": alert_id,
                 "source": "nws_alert",
             })
-    return by_county
+    return {fips: _combine_county_alerts(alerts) for fips, alerts in by_county.items()}
 
 
 async def _fetch_json(session: aiohttp.ClientSession, url: str) -> dict | None:

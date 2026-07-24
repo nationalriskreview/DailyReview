@@ -13,7 +13,7 @@ CDN alternative: `https://cdn.jsdelivr.net/gh/nationalriskreview/DailyReview@mai
 |---|---|
 | `today-summary.json` | Only counties with active alerts. Small, fast. The default choice for most consumers. |
 | `today.json` | Full national snapshot — all 3,143 counties, including those with no alerts. |
-| `national.json` | CDC HAN + WHO outbreak news only. |
+| `national.json` | CDC HAN + CDC Travel Health Notices only. |
 | `counties/{fips}.json` | Single county detail (5-digit FIPS, e.g. `06037` for Los Angeles County, CA). |
 | `states/{abbr}.json` | State-level roll-up (e.g. `CA`, `NY`, `TX`). |
 | `nyc/index.json` | All five NYC boroughs in one file. |
@@ -24,7 +24,7 @@ CDN alternative: `https://cdn.jsdelivr.net/gh/nationalriskreview/DailyReview@mai
 
 Each county object exposes alerts in these buckets:
 
-- **`weather`** — NWS Warnings, Hurricane/Tropical/Winter Storm Watches, and 24h gridpoint forecast exceeding 1" rain, 6" snow, >105°F heat, or <0°F cold.
+- **`weather`** — NWS Warnings, Hurricane/Tropical/Winter Storm Watches, and 24h gridpoint forecast exceeding 1" rain, 6" snow, >105°F heat, or <0°F cold. Alerts of the same event type are consolidated into one entry per county (a hazard is often issued as many near-identical alerts across a county's NWS zones and neighboring offices): the merged entry keeps the highest severity/urgency, widens the window to `[earliest effective, latest expires]`, and reports `count` of merged source alerts.
 - **`bank_robbery`** — News reports of bank robberies (GDELT GKG, strict title filter + LLM confirmation). Includes `is_new` flag for reports within the last 12 hours.
 - **`protest`** — Protests / demonstrations that are upcoming, ongoing, or occurred within the past 24h (GDELT GKG, protest-event title filter + LLM confirmation). Includes `is_new` flag.
 - **`utility_outage`** — Significant disruptions to power or water (GDELT GKG, keyword filter + LLM confirmation). Includes `is_new` flag.
@@ -48,7 +48,7 @@ Separate from `alerts`, each county carries an always-on `conditions` object wit
 National alerts in `national.json`:
 
 - **CDC HAN** — Health Alert Network notices at Alert/Advisory level (collector stub; currently inactive pending CDC URL restructure).
-- **WHO outbreak news** (`who_don`) — Items from WHO's official Disease Outbreak News REST API (`/api/news/diseaseoutbreaknews`), last 30 days. Every item in that feed is a confirmed outbreak report, so no keyword filtering is applied. (Previously this filtered WHO's *general* news feed by outbreak keywords, which leaked policy/governance/guidance items — pandemic-treaty negotiations, risk-reduction guidelines, awards — that are not outbreaks.)
+- **CDC Travel Health Notices** (`cdc_travel_notices`) — US-government-curated outbreak/health-risk notices from CDC's Travelers' Health RSS feed, severity-graded (`Level 1 (Watch)` / `Level 2 (Alert)` / `Level 3 (Warning)`). This replaced the WHO Disease Outbreak News feed, which surfaced global outbreaks with no US relevance and exposed no country field to filter on. Note these notices concern outbreak *risk* (often at foreign destinations) as assessed by CDC; domestic per-county disease detections are handled separately by the `disease` category (CDC NWSS wastewater).
 - **`amtrak_advisories`** — Active Amtrak service-stoppage and station-closure advisories, scraped daily from amtrak.com/service-alerts-and-notices. Severity-filtered; routine schedule changes and equipment-level station issues are excluded.
 - **`faa_advisories`** — FAA Large-Hub airport closures and ground stops, severity-filtered to exclude GA-only NOTAMs. From nasstatus.faa.gov/api/airport-status-information.
 
@@ -104,7 +104,7 @@ Workflow runs daily at **09:00 UTC** (~5 AM ET / 2 AM PT). Output `generated_at`
 - [CDC NWSS Wastewater API](https://data.cdc.gov/resource/akvg-8vrb.json)
 - [OpenFEMA API](https://www.fema.gov/about/openfema/data-sets)
 - [CDC HAN](https://emergency.cdc.gov/han/) (Placeholder)
-- [WHO Disease Outbreak News](https://www.who.int/feeds/entity/csr/don/en/rss.xml)
+- [CDC Travel Health Notices](https://wwwnc.cdc.gov/travel/rss/notices.xml)
 - [Amtrak Service Alerts & Notices](https://www.amtrak.com/service-alerts-and-notices) — scraped HTML; route→county mapping derived from Amtrak's [static GTFS](https://content.amtrak.com/content/gtfs/GTFS.zip)
 - [FAA NAS Airport Status](https://nasstatus.faa.gov/api/airport-status-information) — XML feed; airport→service-area mapping in `reference/airports.json`
 

@@ -1,18 +1,18 @@
-"""CDC HAN scraping + WHO Disease Outbreak News RSS.
+"""CDC HAN scraping + CDC Travel Health Notices.
 
 NOTE: CDC restructured emergency.cdc.gov; the historical HAN landing-page URL
 returns 404. CDC_HAN_URL is left as an env-overridable placeholder. When CDC
 publishes a stable scraping target again, set CDC_HAN_URL to the new endpoint.
 Until then, fetch_cdc_han() returns an empty list and logs a warning.
 
-WHO retired their CSR/DON-specific RSS, but publishes an official Disease
-Outbreak News REST API at /api/news/diseaseoutbreaknews. Every item there is
-a confirmed outbreak report, so we consume it directly — no keyword filtering.
-This replaces the old approach of substring-matching outbreak keywords against
-WHO's *general* news feed, which leaked policy/governance/guidance items
-(pandemic-treaty negotiations, dementia-risk guidelines, awards, etc.) that
-are not outbreaks. We use urllib here because aiohttp's default header-size
-limit (8KB) rejects who.int's oversized Content-Security-Policy header.
+National outbreak signal comes from CDC's Travel Health Notices RSS
+(wwwnc.cdc.gov/travel/rss/notices.xml). This replaced the WHO Disease Outbreak
+News feed, which surfaced global outbreaks with no US relevance (Ebola in DRC,
+Nipah in India, etc.) and exposed no country/region field to filter on. CDC's
+notices are US-government-curated and severity-graded (Level 1 Watch / Level 2
+Alert / Level 3 Warning), which is a far better fit for a US risk feed.
+Domestic per-county disease signal is handled separately by the CDC NWSS
+wastewater collector below.
 """
 
 from __future__ import annotations
@@ -22,26 +22,25 @@ import json
 import logging
 import os
 import re
-import urllib.parse
 import urllib.request
+import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
+from email.utils import parsedate_to_datetime
 
 from bs4 import BeautifulSoup
 
 CDC_HAN_URL = os.environ.get("CDC_HAN_URL", "")
-WHO_DON_API_URL = os.environ.get(
-    "WHO_DON_API_URL",
-    "https://www.who.int/api/news/diseaseoutbreaknews",
+CDC_TRAVEL_NOTICES_URL = os.environ.get(
+    "CDC_TRAVEL_NOTICES_URL",
+    "https://wwwnc.cdc.gov/travel/rss/notices.xml",
 )
-WHO_DON_ITEM_BASE = "https://www.who.int/emergencies/disease-outbreak-news/item/"
 USER_AGENT = os.environ.get(
     "USER_AGENT",
     "DailyReview/1.0 (https://github.com/nationalriskreview/DailyReview)",
 )
-# DON is authoritative but low-volume (a handful of items per week), and an
-# active outbreak from a few weeks ago is still a live concern — so the window
-# is measured in days, not the tight 7d used for the old high-noise news feed.
-WHO_DON_RECENT_DAYS = int(os.environ.get("WHO_DON_RECENT_DAYS", "30"))
+# Travel notices are curated and stay active for a while; cap the list rather
+# than filtering hard by age so genuinely-active older notices aren't dropped.
+CDC_TRAVEL_NOTICES_MAX = int(os.environ.get("CDC_TRAVEL_NOTICES_MAX", "30"))
 HTTP_TIMEOUT = 30
 
 log = logging.getLogger(__name__)
@@ -56,18 +55,6 @@ def _http_get(url: str) -> str | None:
     except Exception as e:
         log.warning("Fetch error %s: %s", url, e)
         return None
-
-
-def _parse_iso(s: str | None) -> datetime | None:
-    if not s:
-        return None
-    try:
-        dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
-    except ValueError:
-        return None
-    if dt.tzinfo is None:
-        dt = dt.replace(tzinfo=timezone.utc)
-    return dt
 
 
 def _strip_html(s: str) -> str:
@@ -117,56 +104,66 @@ def _fetch_cdc_han_sync() -> list[dict]:
     return deduped[:20]
 
 
-def _fetch_who_don_sync() -> list[dict]:
-    """WHO Disease Outbreak News via the official DON REST API.
+def _parse_level(title: str) -> str:
+    """CDC notice titles start with 'Level N - ...'; map to CDC's labels."""
+    m = re.match(r"\s*Level\s*(\d)", title, re.IGNORECASE)
+    if not m:
+        return "Unknown"
+    return {
+        "1": "Level 1 (Watch)",
+        "2": "Level 2 (Alert)",
+        "3": "Level 3 (Warning)",
+    }.get(m.group(1), f"Level {m.group(1)}")
 
-    Every item in this feed is a confirmed outbreak report, so there is no
-    keyword filter — we simply take the most recent items within the window.
-    """
-    query = urllib.parse.urlencode({
-        "$orderby": "PublicationDateAndTime desc",
-        "$top": "40",
-    })
-    text = _http_get(f"{WHO_DON_API_URL}?{query}")
+
+def _fetch_cdc_travel_notices_sync() -> list[dict]:
+    """CDC Travel Health Notices — US-government-curated, severity-graded
+    outbreak/health-risk notices. Parsed from the RSS feed with stdlib XML so
+    there is no feedparser/lxml dependency."""
+    text = _http_get(CDC_TRAVEL_NOTICES_URL)
     if not text:
         return []
     try:
-        data = json.loads(text)
-    except json.JSONDecodeError:
-        log.warning("WHO DON API returned non-JSON payload")
+        root = ET.fromstring(text)
+    except ET.ParseError:
+        log.warning("CDC travel notices returned unparseable XML")
         return []
 
-    cutoff = datetime.now(timezone.utc) - timedelta(days=WHO_DON_RECENT_DAYS)
     items: list[dict] = []
-    for entry in data.get("value", []):
-        pub_raw = (entry.get("PublicationDateAndTime")
-                   or entry.get("PublicationDate") or "")
-        pub_dt = _parse_iso(pub_raw)
-        if pub_dt and pub_dt < cutoff:
-            continue
-        title = (entry.get("Title") or "").strip()
+    for item in root.iter("item"):
+        title = (item.findtext("title") or "").strip()
         if not title:
             continue
-        url_name = (entry.get("UrlName")
-                    or (entry.get("ItemDefaultUrl") or "").lstrip("/"))
-        summary = _strip_html(entry.get("Summary") or entry.get("Overview") or "")
+        pub_raw = (item.findtext("pubDate") or "").strip()
+        pub_ts = 0.0
+        if pub_raw:
+            try:
+                pub_ts = parsedate_to_datetime(pub_raw).timestamp()
+            except (TypeError, ValueError):
+                pub_ts = 0.0
         items.append({
             "title": title,
-            "url": f"{WHO_DON_ITEM_BASE}{url_name}" if url_name else "",
+            "url": (item.findtext("link") or "").strip(),
+            "level": _parse_level(title),
             "published": pub_raw,
-            "summary": summary[:500],
-            "source": "WHO Disease Outbreak News",
+            "summary": _strip_html(item.findtext("description") or "")[:500],
+            "source": "CDC Travel Health Notices",
+            "_sort": pub_ts,
         })
-    return items
+
+    items.sort(key=lambda x: x["_sort"], reverse=True)
+    for it in items:
+        del it["_sort"]
+    return items[:CDC_TRAVEL_NOTICES_MAX]
 
 
 async def fetch_national() -> dict[str, list[dict]]:
     loop = asyncio.get_event_loop()
-    han, who = await asyncio.gather(
+    han, notices = await asyncio.gather(
         loop.run_in_executor(None, _fetch_cdc_han_sync),
-        loop.run_in_executor(None, _fetch_who_don_sync),
+        loop.run_in_executor(None, _fetch_cdc_travel_notices_sync),
     )
-    return {"cdc_han": han, "who_don": who}
+    return {"cdc_han": han, "cdc_travel_notices": notices}
 
 
 async def fetch_county_disease() -> dict[str, list[dict]]:

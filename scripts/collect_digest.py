@@ -259,31 +259,32 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
             "status": "failed", "error": _truncate_error(e),
         }
 
-    # --- Disease (CDC HAN + WHO DON + Wastewater) ---
-    log.info("Disease: fetching CDC HAN + WHO DON + Wastewater")
+    # --- Disease (CDC HAN + CDC Travel Health Notices + Wastewater) ---
+    log.info("Disease: fetching CDC HAN + CDC Travel Notices + Wastewater")
     try:
         national, disease_by_fips = await asyncio.gather(
             fetch_national(),
             fetch_county_disease(),
         )
-        log.info("Disease: %d HAN, %d WHO, %d counties with detections",
-                 len(national.get("cdc_han", [])), len(national.get("who_don", [])),
+        log.info("Disease: %d HAN, %d CDC travel notices, %d counties with detections",
+                 len(national.get("cdc_han", [])),
+                 len(national.get("cdc_travel_notices", [])),
                  len(disease_by_fips))
         data_sources["disease_cdc_han"] = {
             "status": "ok", "items": len(national.get("cdc_han", [])),
         }
-        data_sources["disease_who_don"] = {
-            "status": "ok", "items": len(national.get("who_don", [])),
+        data_sources["disease_cdc_travel_notices"] = {
+            "status": "ok", "items": len(national.get("cdc_travel_notices", [])),
         }
         data_sources["disease_wastewater"] = {
             "status": "ok", "counties_with_detections": len(disease_by_fips),
         }
     except Exception as e:
         log.error("Disease fetch failed (continuing with empty): %s", e)
-        national, disease_by_fips = {"cdc_han": [], "who_don": []}, {}
+        national, disease_by_fips = {"cdc_han": [], "cdc_travel_notices": []}, {}
         err = _truncate_error(e)
         data_sources["disease_cdc_han"] = {"status": "failed", "error": err}
-        data_sources["disease_who_don"] = {"status": "failed", "error": err}
+        data_sources["disease_cdc_travel_notices"] = {"status": "failed", "error": err}
         data_sources["disease_wastewater"] = {"status": "failed", "error": err}
 
     # --- Amtrak ---
