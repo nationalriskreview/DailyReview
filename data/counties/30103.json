@@ -8,12 +8,37 @@
     "lon": -107.275296
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued July 23 at 12:52PM MDT until July 26 at 9:00PM MDT by NWS Billings MT",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-07-23T12:52:00-06:00",
+        "expires": "2026-07-24T13:00:00-06:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "bank_robbery": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "wildfires": [
+      {
+        "title": "Wildfire 716 Complex 2, Treasure, Montana",
+        "id": "EONET_21596",
+        "category": "wildfire",
+        "date": "2026-07-21T18:04:00Z",
+        "lat": 46.2896,
+        "lon": -107.489,
+        "sources": [
+          "https://irwin.doi.gov/observer/incidents/2026-MTLG33-260834"
+        ],
+        "acreage": 623.0,
+        "distance_miles": 11.1,
+        "threat_level": "Immediate"
+      },
       {
         "title": "Wildfire Heavy Timber, Musselshell, Montana",
         "id": "EONET_21318",
@@ -24,6 +49,7 @@
         "sources": [
           "https://irwin.doi.gov/observer/incidents/2026-MTLG23-260727"
         ],
+        "acreage": 500.0,
         "distance_miles": 44.1,
         "threat_level": "Vicinity"
       }
@@ -34,29 +60,29 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
       "snow_in_24h": 0.0,
-      "high_apparent_temp_f": 91.0,
-      "low_apparent_temp_f": 68.0,
+      "high_apparent_temp_f": 90.0,
+      "low_apparent_temp_f": 70.0,
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 63,
+      "us_aqi": 57,
       "category": "Moderate",
-      "aqi_24h_max": 63,
+      "aqi_24h_max": 58,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 11.0,
-      "pm10": 11.5,
-      "ozone": 54.0,
-      "nitrogen_dioxide": 3.0,
-      "observed_at": "2026-07-23T09:00",
+      "pm2_5": 12.0,
+      "pm10": 13.1,
+      "ozone": 84.0,
+      "nitrogen_dioxide": 1.7,
+      "observed_at": "2026-07-24T02:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-23",
-  "generated_at": "2026-07-23T09:58:49.898693+00:00"
+  "date": "2026-07-24",
+  "generated_at": "2026-07-24T02:47:35.767884+00:00"
 }
