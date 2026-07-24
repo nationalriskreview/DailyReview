@@ -1,18 +1,19 @@
-"""CDC HAN scraping + CDC Travel Health Notices.
+"""CDC HAN scraping + CDC US-based outbreaks (workplace-relevant filter).
 
 NOTE: CDC restructured emergency.cdc.gov; the historical HAN landing-page URL
 returns 404. CDC_HAN_URL is left as an env-overridable placeholder. When CDC
 publishes a stable scraping target again, set CDC_HAN_URL to the new endpoint.
 Until then, fetch_cdc_han() returns an empty list and logs a warning.
 
-National outbreak signal comes from CDC's Travel Health Notices RSS
-(wwwnc.cdc.gov/travel/rss/notices.xml). This replaced the WHO Disease Outbreak
-News feed, which surfaced global outbreaks with no US relevance (Ebola in DRC,
-Nipah in India, etc.) and exposed no country/region field to filter on. CDC's
-notices are US-government-curated and severity-graded (Level 1 Watch / Level 2
-Alert / Level 3 Warning), which is a far better fit for a US risk feed.
-Domestic per-county disease signal is handled separately by the CDC NWSS
-wastewater collector below.
+National outbreak signal comes from CDC's "US-Based Outbreaks" RSS feed,
+filtered to the person-to-person communicable diseases that actually disrupt a
+workplace (measles, TB, meningococcal, Legionellosis). The feed is dominated by
+foodborne/enteric outbreaks (Listeria, Salmonella, E. coli, Cyclospora, ...),
+which are dropped. This is the authoritative "CDC has named a US outbreak"
+layer; the quantitative state-level "heating up" signal lives in fetch_nndss.py.
+An earlier iteration used WHO Disease Outbreak News (all foreign) and then CDC
+Travel Health Notices (foreign destinations) — both were the wrong altitude for
+US workplace risk.
 """
 
 from __future__ import annotations
@@ -25,22 +26,24 @@ import re
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
-from email.utils import parsedate_to_datetime
 
 from bs4 import BeautifulSoup
 
 CDC_HAN_URL = os.environ.get("CDC_HAN_URL", "")
-CDC_TRAVEL_NOTICES_URL = os.environ.get(
-    "CDC_TRAVEL_NOTICES_URL",
-    "https://wwwnc.cdc.gov/travel/rss/notices.xml",
+CDC_OUTBREAKS_RSS_URL = os.environ.get(
+    "CDC_OUTBREAKS_RSS_URL",
+    "https://tools.cdc.gov/api/v2/resources/media/285676.rss",
 )
 USER_AGENT = os.environ.get(
     "USER_AGENT",
     "DailyReview/1.0 (https://github.com/nationalriskreview/DailyReview)",
 )
-# Travel notices are curated and stay active for a while; cap the list rather
-# than filtering hard by age so genuinely-active older notices aren't dropped.
-CDC_TRAVEL_NOTICES_MAX = int(os.environ.get("CDC_TRAVEL_NOTICES_MAX", "30"))
+# Keep only outbreaks of the workplace-disruptive communicable diseases we
+# track; the feed is otherwise mostly foodborne. Matched against the title.
+CDC_OUTBREAK_KEYWORDS = (
+    "measles", "tuberculosis", " tb ", "meningococcal", "meningitis",
+    "legionel", "legionnaires",
+)
 HTTP_TIMEOUT = 30
 
 log = logging.getLogger(__name__)
@@ -104,66 +107,44 @@ def _fetch_cdc_han_sync() -> list[dict]:
     return deduped[:20]
 
 
-def _parse_level(title: str) -> str:
-    """CDC notice titles start with 'Level N - ...'; map to CDC's labels."""
-    m = re.match(r"\s*Level\s*(\d)", title, re.IGNORECASE)
-    if not m:
-        return "Unknown"
-    return {
-        "1": "Level 1 (Watch)",
-        "2": "Level 2 (Alert)",
-        "3": "Level 3 (Warning)",
-    }.get(m.group(1), f"Level {m.group(1)}")
-
-
-def _fetch_cdc_travel_notices_sync() -> list[dict]:
-    """CDC Travel Health Notices — US-government-curated, severity-graded
-    outbreak/health-risk notices. Parsed from the RSS feed with stdlib XML so
-    there is no feedparser/lxml dependency."""
-    text = _http_get(CDC_TRAVEL_NOTICES_URL)
+def _fetch_cdc_outbreaks_sync() -> list[dict]:
+    """CDC US-Based Outbreaks RSS, filtered to workplace-relevant communicable
+    diseases (foodborne/enteric outbreaks are dropped). Parsed with stdlib XML,
+    so there is no feedparser/lxml dependency."""
+    text = _http_get(CDC_OUTBREAKS_RSS_URL)
     if not text:
         return []
     try:
         root = ET.fromstring(text)
     except ET.ParseError:
-        log.warning("CDC travel notices returned unparseable XML")
+        log.warning("CDC outbreaks feed returned unparseable XML")
         return []
 
     items: list[dict] = []
     for item in root.iter("item"):
-        title = (item.findtext("title") or "").strip()
+        title = _strip_html(item.findtext("title") or "")
         if not title:
             continue
-        pub_raw = (item.findtext("pubDate") or "").strip()
-        pub_ts = 0.0
-        if pub_raw:
-            try:
-                pub_ts = parsedate_to_datetime(pub_raw).timestamp()
-            except (TypeError, ValueError):
-                pub_ts = 0.0
+        t = f" {title.lower()} "
+        if not any(k in t for k in CDC_OUTBREAK_KEYWORDS):
+            continue
         items.append({
             "title": title,
             "url": (item.findtext("link") or "").strip(),
-            "level": _parse_level(title),
-            "published": pub_raw,
+            "published": (item.findtext("pubDate") or "").strip(),
             "summary": _strip_html(item.findtext("description") or "")[:500],
-            "source": "CDC Travel Health Notices",
-            "_sort": pub_ts,
+            "source": "CDC Outbreaks (US-based)",
         })
-
-    items.sort(key=lambda x: x["_sort"], reverse=True)
-    for it in items:
-        del it["_sort"]
-    return items[:CDC_TRAVEL_NOTICES_MAX]
+    return items
 
 
 async def fetch_national() -> dict[str, list[dict]]:
     loop = asyncio.get_event_loop()
-    han, notices = await asyncio.gather(
+    han, outbreaks = await asyncio.gather(
         loop.run_in_executor(None, _fetch_cdc_han_sync),
-        loop.run_in_executor(None, _fetch_cdc_travel_notices_sync),
+        loop.run_in_executor(None, _fetch_cdc_outbreaks_sync),
     )
-    return {"cdc_han": han, "cdc_travel_notices": notices}
+    return {"cdc_han": han, "cdc_outbreaks": outbreaks}
 
 
 async def fetch_county_disease() -> dict[str, list[dict]]:
