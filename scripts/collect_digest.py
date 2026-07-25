@@ -32,7 +32,7 @@ from fetch_disease import fetch_national, fetch_county_disease
 from fetch_nndss import fetch_notifiable_disease_alerts
 from fetch_amtrak import fetch_amtrak_advisories
 from fetch_faa import fetch_faa_advisories
-from fetch_service_status import fetch_service_outages, fetch_private_service_outages
+from fetch_service_status import fetch_service_outages, fetch_coded_service_outages
 from llm_filter import filter_gdelt_results
 from build_outputs import write_all
 
@@ -346,17 +346,23 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
     national["faa_advisories"] = faa_national
 
     # --- Service-provider outages (official status pages) ---
+    # Public providers (real names) + coded providers from the
+    # PRIVATE_PROVIDERS_JSON secret (pseudonymized: code + impact only). Both
+    # ride in the same public feed; coded entries never reveal identity.
     log.info("Service status: polling major-provider status pages")
     try:
-        service_outages, service_stats = await asyncio.get_event_loop().run_in_executor(
-            None, fetch_service_outages
-        )
+        (service_outages, service_stats), (coded_outages, coded_stats) = \
+            await asyncio.get_event_loop().run_in_executor(
+                None, lambda: (fetch_service_outages(), fetch_coded_service_outages())
+            )
+        service_outages = service_outages + coded_outages
+        service_stats = service_stats + coded_stats
         ok_count = sum(1 for s in service_stats if s["status"] == "ok")
         failed = [s for s in service_stats
                   if s["status"] in ("fetch_failed", "config_error")]
         overall = "ok" if not failed else ("failed" if ok_count == 0 else "partial")
-        log.info("Service status: %d active incident(s), %d/%d providers ok",
-                 len(service_outages), ok_count, len(service_stats))
+        log.info("Service status: %d active incident(s) (%d coded), %d/%d providers ok",
+                 len(service_outages), len(coded_outages), ok_count, len(service_stats))
         data_sources["service_status"] = {
             "status": overall,
             "active_incidents": len(service_outages),
@@ -390,37 +396,6 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
         national=national,
         data_sources=data_sources,
     )
-
-    # --- Private service-provider outages (secret-gated; -> private repo only) ---
-    # Kept entirely out of the public data/ outputs and out of data_sources.
-    # Written to private_out/ (gitignored here); the workflow pushes it to the
-    # private repo. No-op when PRIVATE_PROVIDERS_JSON is unset.
-    try:
-        priv_outages, priv_stats = await asyncio.get_event_loop().run_in_executor(
-            None, fetch_private_service_outages
-        )
-        if priv_stats:
-            from datetime import datetime, timezone
-            priv_dir = Path(__file__).resolve().parent.parent / "private_out"
-            priv_dir.mkdir(exist_ok=True)
-            ok = sum(1 for s in priv_stats if s["status"] == "ok")
-            failed = [s for s in priv_stats
-                      if s["status"] in ("fetch_failed", "config_error")]
-            overall = "ok" if not failed else ("failed" if ok == 0 else "partial")
-            import json as _json
-            (priv_dir / "service-outages-private.json").write_text(_json.dumps({
-                "generated_at": datetime.now(timezone.utc).isoformat(),
-                "status": overall,
-                "active_incidents": len(priv_outages),
-                "providers_ok": ok,
-                "providers_total": len(priv_stats),
-                "outages": priv_outages,
-                "providers": priv_stats,
-            }, indent=2, ensure_ascii=False) + "\n")
-            log.info("Private service status: wrote %d incident(s) for private repo",
-                     len(priv_outages))
-    except Exception as e:
-        log.error("Private service status failed (continuing): %s", _truncate_error(e))
 
     elapsed = time.time() - t0
     log.info("Done in %.1fs", elapsed)

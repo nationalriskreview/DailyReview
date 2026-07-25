@@ -319,38 +319,65 @@ _HANDLERS = {
 }
 
 
-def _poll_providers(providers: list[dict], private: bool = False) -> tuple[list[dict], list[dict]]:
-    """Poll a list of providers; return (outages, per-provider stats). When
-    `private`, provider names/URLs are kept out of the (public) logs."""
+_IMPACT_RANK = {"critical": 4, "major": 3, "minor": 2, "maintenance": 1, "none": 0, "": 0}
+
+
+def _worst_impact(incidents: list[dict]) -> str:
+    return max((i.get("impact", "") for i in incidents),
+               key=lambda x: _IMPACT_RANK.get(x, 0), default="minor")
+
+
+def _poll_providers(providers: list[dict], coded: bool = False) -> tuple[list[dict], list[dict]]:
+    """Poll a list of providers; return (outages, per-provider stats).
+
+    When `coded`, each provider carries a random `code`; its output is
+    pseudonymized — the incident collapses to `{provider: <code>, impact,
+    active_incidents}` with the real name, title, service names, and URL all
+    stripped, and logs never include names/URLs. This lets coded providers ride
+    in the same public feed without revealing their identity.
+    """
     global _REDACT_URLS
-    _REDACT_URLS = private
-    label = "private service status" if private else "service status"
+    _REDACT_URLS = coded
+    label = "coded service status" if coded else "service status"
     outages: list[dict] = []
     stats: list[dict] = []
     try:
         for p in providers:
+            display = p.get("code") if coded else p["name"]
+            skey = p.get("code") if coded else p["key"]
             ptype = p.get("type")
             if ptype == "unsupported":
-                stats.append({"key": p["key"], "name": p["name"], "status": "unsupported",
-                              "reason": p.get("reason", ""), "items": 0})
+                entry = {"key": skey, "name": display, "status": "unsupported", "items": 0}
+                if not coded:
+                    entry["reason"] = p.get("reason", "")
+                stats.append(entry)
                 continue
             handler = _HANDLERS.get(ptype)
             if not handler:
-                stats.append({"key": p["key"], "name": p["name"],
-                              "status": "config_error", "items": 0})
+                stats.append({"key": skey, "name": display, "status": "config_error", "items": 0})
                 continue
             try:
-                incidents = handler(p)
-                outages.extend(incidents)
-                stats.append({"key": p["key"], "name": p["name"],
-                              "status": "ok", "items": len(incidents)})
+                # For coded providers the handler's per-incident name/key are
+                # discarded (we summarize), but give it code-based values so it
+                # never dereferences a missing "key"/"name".
+                hp = {**p, "key": p["code"], "name": p["code"]} if coded else p
+                incidents = handler(hp)
+                if coded:
+                    if incidents:
+                        outages.append({
+                            "provider": p["code"], "impact": _worst_impact(incidents),
+                            "active_incidents": len(incidents), "status": "active",
+                            "coded": True, "source": "provider status page (coded)",
+                        })
+                else:
+                    outages.extend(incidents)
+                stats.append({"key": skey, "name": display, "status": "ok", "items": len(incidents)})
             except Exception as e:
-                if private:
+                if coded:
                     log.warning("%s: a provider failed: %s", label, type(e).__name__)
                 else:
                     log.warning("Service status %s failed: %s", p["name"], e)
-                stats.append({"key": p["key"], "name": p["name"],
-                              "status": "fetch_failed", "items": 0})
+                stats.append({"key": skey, "name": display, "status": "fetch_failed", "items": 0})
     finally:
         _REDACT_URLS = False
     log.info("%s: %d active incident(s) across %d provider(s)",
@@ -365,22 +392,31 @@ def fetch_service_outages() -> tuple[list[dict], list[dict]]:
     except Exception as e:
         log.error("Cannot load service_providers.json: %s", e)
         return [], []
-    return _poll_providers(providers, private=False)
+    return _poll_providers(providers, coded=False)
 
 
-def fetch_private_service_outages() -> tuple[list[dict], list[dict]]:
-    """Private providers from the PRIVATE_PROVIDERS_JSON env var (a GitHub
-    secret). Returns ([], []) when unset — safe no-op. Never logs URLs/names."""
+def fetch_coded_service_outages() -> tuple[list[dict], list[dict]]:
+    """Coded (pseudonymous) providers from the PRIVATE_PROVIDERS_JSON secret.
+
+    Each entry must carry a random `code`; output is pseudonymized so real
+    identities never reach the public feed or the (public) logs. Returns
+    ([], []) when the secret is unset — safe no-op. Entries lacking a `code`
+    are skipped (they would otherwise leak a real name into the public feed).
+    """
     raw = os.environ.get(PRIVATE_PROVIDERS_ENV, "").strip()
     if not raw:
         return [], []
     try:
         providers = json.loads(raw)
     except json.JSONDecodeError:
-        log.error("PRIVATE_PROVIDERS_JSON is not valid JSON; skipping private providers")
+        log.error("PRIVATE_PROVIDERS_JSON is not valid JSON; skipping coded providers")
         return [], []
     if not isinstance(providers, list):
         log.error("PRIVATE_PROVIDERS_JSON must be a JSON array; skipping")
         return [], []
-    log.info("Private service status: polling %d configured provider(s)", len(providers))
-    return _poll_providers(providers, private=True)
+    coded = [p for p in providers if p.get("code")]
+    dropped = len(providers) - len(coded)
+    if dropped:
+        log.warning("Coded service status: %d entr(ies) missing 'code' were skipped", dropped)
+    log.info("Coded service status: polling %d configured provider(s)", len(coded))
+    return _poll_providers(coded, coded=True)
