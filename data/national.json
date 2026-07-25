@@ -1,6 +1,6 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-25T15:37:22.790925+00:00",
+  "generated_at": "2026-07-25T17:25:36.371826+00:00",
   "date": "2026-07-25",
   "data_windows": {
     "national.cdc_han": "7d",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 419
+      "counties_with_alerts": 515
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 304
+      "counties_over_threshold": 286
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,29 +28,29 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 34,
+      "counties_with_matches": 36,
       "items_pre_llm": {
-        "protest": 83,
+        "protest": 85,
         "utility_outage": 0,
         "transit_disruption": 2,
         "service_provider_outage": 1,
         "hazmat_incident": 0,
-        "road_closure": 11
+        "road_closure": 14
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 5,
+      "counties_with_matches": 7,
       "items_post_llm": {
         "protest": 2,
         "utility_outage": 0,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 3
+        "road_closure": 6
       },
-      "unique_articles": 70,
-      "calls_used": 70,
+      "unique_articles": 74,
+      "calls_used": 74,
       "cap": 300,
       "cap_hit": false
     },
