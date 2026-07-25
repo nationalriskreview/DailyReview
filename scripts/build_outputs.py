@@ -244,7 +244,8 @@ def write_all(
         "counties_with_alerts": len(flagged),
         "national": national,
         "counties": {
-            r["fips"]: _strip_for_full(r, include_conditions=True) for r in records
+            r["fips"]: _strip_for_full(r, include_conditions=True, include_centroid=True)
+            for r in records
         },
     }
     _write_json(DATA_DIR / "today.json", full)
@@ -348,14 +349,18 @@ def write_all(
         _write_json(archive_path, archive_obj)
 
 
-def _strip_for_full(rec: dict, include_conditions: bool = False) -> dict:
+def _strip_for_full(
+    rec: dict, include_conditions: bool = False, include_centroid: bool = False
+) -> dict:
     out = {
         "fips": rec["fips"],
         "name": rec["name"],
         "state": rec["state"],
-        "alerts": rec["alerts"],
-        "alert_count": rec["alert_count"],
     }
+    if include_centroid:
+        out["centroid"] = rec.get("centroid")
+    out["alerts"] = rec["alerts"]
+    out["alert_count"] = rec["alert_count"]
     if include_conditions:
         out["conditions"] = rec.get("conditions")
     return out

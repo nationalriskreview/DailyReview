@@ -11,8 +11,8 @@ CDN alternative: `https://cdn.jsdelivr.net/gh/nationalriskreview/DailyReview@mai
 
 | Endpoint | Description |
 |---|---|
-| `today-summary.json` | All counties, with `alerts`, `alert_count`, and `conditions`. Use `counties_with_alerts` / each county's `alert_count` to filter to alerted counties. |
-| `today.json` | Full national snapshot — all 3,143 counties (same per-county shape as `today-summary.json`). |
+| `today-summary.json` | All counties — compact per-county record (`fips`, `name`, `state`, `alerts`, `alert_count`, `conditions`). Filter on `alert_count` for alerted counties. |
+| `today.json` | Full national snapshot — all 3,143 counties, same as `today-summary.json` **plus** each county's `centroid` (lat/lon), so it doubles as a single-file map source. |
 | `national.json` | US disease/outbreak signals (CDC outbreaks + NNDSS elevation) + transit advisories. |
 | `counties/{fips}.json` | Single county detail (5-digit FIPS, e.g. `06037` for Los Angeles County, CA). |
 | `states/{abbr}.json` | State-level roll-up (e.g. `CA`, `NY`, `TX`). |
