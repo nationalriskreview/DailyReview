@@ -53,17 +53,20 @@ jobs:
       - name: Push private service outages
         if: ${{ always() }}
         env:
-          PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          PRIVATE_REPO_DEPLOY_KEY: ${{ secrets.PRIVATE_REPO_DEPLOY_KEY }}
         run: |
-          if [ -z "$PRIVATE_REPO_TOKEN" ]; then
-            echo "PRIVATE_REPO_TOKEN not set — skipping private push"; exit 0
+          if [ -z "$PRIVATE_REPO_DEPLOY_KEY" ]; then
+            echo "PRIVATE_REPO_DEPLOY_KEY not set — skipping private push"; exit 0
           fi
           if [ ! -f private_out/service-outages-private.json ]; then
             echo "No private output present — skipping"; exit 0
           fi
-          git clone --depth 1 \
-            "https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/nationalriskreview/DailyReview-private.git" \
-            "$RUNNER_TEMP/priv" 2>/dev/null
+          mkdir -p "$HOME/.ssh"
+          printf '%s\n' "$PRIVATE_REPO_DEPLOY_KEY" > "$HOME/.ssh/priv_deploy_key"
+          chmod 600 "$HOME/.ssh/priv_deploy_key"
+          ssh-keyscan -t rsa,ed25519 github.com >> "$HOME/.ssh/known_hosts" 2>/dev/null
+          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/priv_deploy_key -o IdentitiesOnly=yes"
+          git clone --depth 1 git@github.com:nationalriskreview/DailyReview-private.git "$RUNNER_TEMP/priv"
           mkdir -p "$RUNNER_TEMP/priv/data"
           cp private_out/service-outages-private.json "$RUNNER_TEMP/priv/data/service-outages-private.json"
           cd "$RUNNER_TEMP/priv"
@@ -71,4 +74,4 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add data/service-outages-private.json
           git diff --staged --quiet || git commit -m "Private service outages $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-          git push 2>/dev/null
+          git push
