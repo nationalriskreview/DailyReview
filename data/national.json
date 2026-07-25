@@ -1,6 +1,6 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-25T09:27:23.430068+00:00",
+  "generated_at": "2026-07-25T13:04:39.066183+00:00",
   "date": "2026-07-25",
   "data_windows": {
     "national.cdc_han": "7d",
@@ -12,13 +12,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 418
+      "counties_with_alerts": 419
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 303
+      "counties_over_threshold": 299
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -27,14 +27,14 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 20,
+      "counties_with_matches": 24,
       "items_pre_llm": {
-        "protest": 62,
+        "protest": 70,
         "utility_outage": 0,
         "transit_disruption": 2,
-        "service_provider_outage": 0,
+        "service_provider_outage": 1,
         "hazmat_incident": 0,
-        "road_closure": 5
+        "road_closure": 9
       }
     },
     "llm_filter_gemini": {
@@ -48,8 +48,8 @@
         "hazmat_incident": 0,
         "road_closure": 2
       },
-      "unique_articles": 48,
-      "calls_used": 48,
+      "unique_articles": 59,
+      "calls_used": 59,
       "cap": 300,
       "cap_hit": false
     },
@@ -61,8 +61,8 @@
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 2,
-      "counties_with_alerts": 3,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -92,7 +92,7 @@
           "id": "path",
           "name": "PATH",
           "status": "ok",
-          "items": 2
+          "items": 0
         },
         {
           "id": "bart",
