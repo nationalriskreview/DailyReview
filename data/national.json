@@ -1,6 +1,6 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-25T17:25:36.371826+00:00",
+  "generated_at": "2026-07-25T23:03:27.121464+00:00",
   "date": "2026-07-25",
   "data_windows": {
     "national.cdc_han": "7d",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 515
+      "counties_with_alerts": 627
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 286
+      "counties_over_threshold": 298
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 36,
+      "counties_with_matches": 58,
       "items_pre_llm": {
-        "protest": 85,
+        "protest": 112,
         "utility_outage": 0,
         "transit_disruption": 2,
-        "service_provider_outage": 1,
+        "service_provider_outage": 2,
         "hazmat_incident": 0,
-        "road_closure": 14
+        "road_closure": 21
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 7,
+      "counties_with_matches": 21,
       "items_post_llm": {
-        "protest": 2,
+        "protest": 13,
         "utility_outage": 0,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 6
+        "road_closure": 11
       },
-      "unique_articles": 74,
-      "calls_used": 74,
+      "unique_articles": 94,
+      "calls_used": 94,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_eonet": {
       "status": "ok",
-      "counties_with_alerts": 143
+      "counties_with_alerts": 137
     },
     "transit": {
       "status": "ok",
@@ -165,9 +165,9 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 3,
-      "providers_ok": 17,
-      "providers_total": 24,
+      "active_incidents": 5,
+      "providers_ok": 27,
+      "providers_total": 27,
       "providers": [
         {
           "key": "aws",
@@ -215,7 +215,7 @@
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "anthropic",
@@ -272,52 +272,63 @@
           "items": 0
         },
         {
-          "key": "salesforce",
-          "name": "Salesforce",
-          "status": "unsupported",
-          "reason": "per-instance Trust status; no single global-incident feed",
+          "key": "servicenow",
+          "name": "ServiceNow",
+          "status": "ok",
           "items": 0
         },
         {
-          "key": "microsoft365",
-          "name": "Microsoft 365",
-          "status": "unsupported",
-          "reason": "service health is admin-portal gated; no public API",
+          "key": "switch",
+          "name": "Switch",
+          "status": "ok",
           "items": 0
         },
         {
-          "key": "x",
-          "name": "X (Twitter)",
-          "status": "unsupported",
-          "reason": "no working public status API",
+          "key": "broadcom",
+          "name": "Broadcom",
+          "status": "ok",
           "items": 0
         },
         {
-          "key": "citrix",
-          "name": "Citrix",
-          "status": "unsupported",
-          "reason": "status.cloud.com is not a public Statuspage feed",
+          "key": "q7v2",
+          "name": "q7v2",
+          "status": "ok",
           "items": 0
         },
         {
-          "key": "equifax",
-          "name": "Equifax",
-          "status": "unsupported",
-          "reason": "no public operational status page",
+          "key": "m4kp",
+          "name": "m4kp",
+          "status": "ok",
+          "items": 1
+        },
+        {
+          "key": "x9tz",
+          "name": "x9tz",
+          "status": "ok",
           "items": 0
         },
         {
-          "key": "transunion",
-          "name": "TransUnion",
-          "status": "unsupported",
-          "reason": "no public operational status page",
+          "key": "r3wn",
+          "name": "r3wn",
+          "status": "ok",
           "items": 0
         },
         {
-          "key": "cisco_webex",
-          "name": "Cisco Webex",
-          "status": "unsupported",
-          "reason": "custom status SPA; no public API (Cisco Meraki is covered)",
+          "key": "b6hj",
+          "name": "b6hj",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "k2yd",
+          "name": "k2yd",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "t8fc",
+          "name": "t8fc",
+          "status": "ok",
           "items": 0
         }
       ]
@@ -581,6 +592,17 @@
       "source": "provider status page"
     },
     {
+      "provider": "OpenAI",
+      "key": "openai",
+      "title": "Elevated errors affecting ChatGPT conversations",
+      "impact": "minor",
+      "status": "investigating",
+      "started": "2026-07-25T22:09:27Z",
+      "updated": "2026-07-25T22:09:27Z",
+      "url": "https://status.openai.com",
+      "source": "provider status page"
+    },
+    {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
       "title": "Azure westeurope, southcentralus outage impacting Cloud NGFW Services.",
@@ -601,6 +623,14 @@
       "updated": "2026-04-02T18:07:08.590Z",
       "url": "https://stspg.io/psfg42ht97mh",
       "source": "provider status page"
+    },
+    {
+      "provider": "m4kp",
+      "impact": "maintenance",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
     }
   ]
 }
