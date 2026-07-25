@@ -1,13 +1,14 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-25T13:04:39.066183+00:00",
+  "generated_at": "2026-07-25T15:37:22.790925+00:00",
   "date": "2026-07-25",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
     "national.notifiable_disease_alerts": "current MMWR week (CDC NNDSS elevation)",
     "national.amtrak_advisories": "active (effective today)",
-    "national.faa_advisories": "live"
+    "national.faa_advisories": "live",
+    "national.service_outages": "live (provider status pages)"
   },
   "data_sources": {
     "weather_nws_alerts": {
@@ -18,7 +19,7 @@
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 299
+      "counties_over_threshold": 304
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -27,29 +28,29 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 24,
+      "counties_with_matches": 34,
       "items_pre_llm": {
-        "protest": 70,
+        "protest": 83,
         "utility_outage": 0,
         "transit_disruption": 2,
         "service_provider_outage": 1,
         "hazmat_incident": 0,
-        "road_closure": 9
+        "road_closure": 11
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 4,
+      "counties_with_matches": 5,
       "items_post_llm": {
         "protest": 2,
         "utility_outage": 0,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 2
+        "road_closure": 3
       },
-      "unique_articles": 59,
-      "calls_used": 59,
+      "unique_articles": 70,
+      "calls_used": 70,
       "cap": 300,
       "cap_hit": false
     },
@@ -161,12 +162,171 @@
       "status": "ok",
       "national_items": 2,
       "counties_with_alerts": 6
+    },
+    "service_status": {
+      "status": "ok",
+      "active_incidents": 3,
+      "providers_ok": 17,
+      "providers_total": 24,
+      "providers": [
+        {
+          "key": "aws",
+          "name": "Amazon Web Services",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "azure",
+          "name": "Microsoft Azure",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "gcp",
+          "name": "Google Cloud",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "cloudflare",
+          "name": "Cloudflare",
+          "status": "ok",
+          "items": 1
+        },
+        {
+          "key": "github",
+          "name": "GitHub",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "datadog",
+          "name": "Datadog",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "zoom",
+          "name": "Zoom",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "openai",
+          "name": "OpenAI",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "anthropic",
+          "name": "Anthropic",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "oracle",
+          "name": "Oracle Cloud (OCI)",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "slack",
+          "name": "Slack",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "dropbox",
+          "name": "Dropbox",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "atlassian",
+          "name": "Atlassian",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "docusign",
+          "name": "DocuSign",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "cisco_meraki",
+          "name": "Cisco Meraki",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "palo_alto",
+          "name": "Palo Alto Networks",
+          "status": "ok",
+          "items": 2
+        },
+        {
+          "key": "rapid7",
+          "name": "Rapid7",
+          "status": "ok",
+          "items": 0
+        },
+        {
+          "key": "salesforce",
+          "name": "Salesforce",
+          "status": "unsupported",
+          "reason": "per-instance Trust status; no single global-incident feed",
+          "items": 0
+        },
+        {
+          "key": "microsoft365",
+          "name": "Microsoft 365",
+          "status": "unsupported",
+          "reason": "service health is admin-portal gated; no public API",
+          "items": 0
+        },
+        {
+          "key": "x",
+          "name": "X (Twitter)",
+          "status": "unsupported",
+          "reason": "no working public status API",
+          "items": 0
+        },
+        {
+          "key": "citrix",
+          "name": "Citrix",
+          "status": "unsupported",
+          "reason": "status.cloud.com is not a public Statuspage feed",
+          "items": 0
+        },
+        {
+          "key": "equifax",
+          "name": "Equifax",
+          "status": "unsupported",
+          "reason": "no public operational status page",
+          "items": 0
+        },
+        {
+          "key": "transunion",
+          "name": "TransUnion",
+          "status": "unsupported",
+          "reason": "no public operational status page",
+          "items": 0
+        },
+        {
+          "key": "cisco_webex",
+          "name": "Cisco Webex",
+          "status": "unsupported",
+          "reason": "custom status SPA; no public API (Cisco Meraki is covered)",
+          "items": 0
+        }
+      ]
     }
   },
   "run_health": {
     "overall": "ok",
     "counts": {
-      "ok": 14,
+      "ok": 15,
       "partial": 0,
       "failed": 0,
       "skipped": 0
@@ -406,6 +566,41 @@
       "start": "Jun 29 at 19:21 UTC.",
       "reopen": "Dec 30 at 18:00 UTC.",
       "source": "FAA NAS Status"
+    }
+  ],
+  "service_outages": [
+    {
+      "provider": "Cloudflare",
+      "key": "cloudflare",
+      "title": "Minor Service Outage",
+      "impact": "minor",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Palo Alto Networks",
+      "key": "palo_alto",
+      "title": "Azure westeurope, southcentralus outage impacting Cloud NGFW Services.",
+      "impact": "minor",
+      "status": "monitoring",
+      "started": "2026-07-07T18:06:05.000Z",
+      "updated": "2026-07-23T20:00:56.009Z",
+      "url": "https://stspg.io/zfhnnrf4ksg7",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Palo Alto Networks",
+      "key": "palo_alto",
+      "title": "AWS  Middle East(Bahrain) outage impacting Cloud NGFW Services.",
+      "impact": "minor",
+      "status": "monitoring",
+      "started": "2026-03-02T22:49:05.000Z",
+      "updated": "2026-04-02T18:07:08.590Z",
+      "url": "https://stspg.io/psfg42ht97mh",
+      "source": "provider status page"
     }
   ]
 }
