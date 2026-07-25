@@ -10,24 +10,24 @@
   "alerts": {
     "weather": [
       {
-        "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued July 24 at 1:09PM MDT until July 26 at 12:00AM MDT by NWS Billings MT",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-07-23T23:28:00-06:00",
-        "expires": "2026-07-25T13:15:00-06:00",
-        "source": "nws_alert",
-        "count": 2
-      },
-      {
         "event": "Extreme Heat Warning",
-        "headline": "Extreme Heat Warning issued July 24 at 12:35PM MDT until July 26 at 9:00PM MDT by NWS Billings MT",
+        "headline": "Extreme Heat Warning issued July 25 at 2:26AM MDT until July 26 at 9:00PM MDT by NWS Billings MT",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-07-24T12:35:00-06:00",
-        "expires": "2026-07-25T12:45:00-06:00",
+        "effective": "2026-07-25T02:26:00-06:00",
+        "expires": "2026-07-26T02:30:00-06:00",
         "source": "nws_alert",
         "count": 1
+      },
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued July 25 at 2:22AM MDT until July 26 at 12:00AM MDT by NWS Billings MT",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-07-24T23:16:00-06:00",
+        "expires": "2026-07-26T00:00:00-06:00",
+        "source": "nws_alert",
+        "count": 2
       }
     ],
     "protest": [],
@@ -36,17 +36,32 @@
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Wildfire Heavy Timber, Musselshell, Montana",
+        "id": "EONET_21318",
+        "category": "wildfire",
+        "date": "2026-07-12T21:00:00Z",
+        "lat": 46.4417,
+        "lon": -108.146,
+        "sources": [
+          "https://irwin.doi.gov/observer/incidents/2026-MTLG23-260727"
+        ],
+        "acreage": 500.0,
+        "distance_miles": 49.2,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
+      "precip_in_24h": 0.07,
       "snow_in_24h": 0.0,
       "high_apparent_temp_f": 95.0,
       "low_apparent_temp_f": 64.0,
@@ -54,18 +69,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 61,
+      "us_aqi": 52,
       "category": "Moderate",
-      "aqi_24h_max": 63,
+      "aqi_24h_max": 60,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 5.6,
-      "pm10": 6.5,
-      "ozone": 101.0,
-      "nitrogen_dioxide": 0.3,
-      "observed_at": "2026-07-24T22:00",
+      "pm2_5": 7.7,
+      "pm10": 8.7,
+      "ozone": 50.0,
+      "nitrogen_dioxide": 10.9,
+      "observed_at": "2026-07-25T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-24",
-  "generated_at": "2026-07-24T22:54:46.685409+00:00"
+  "date": "2026-07-25",
+  "generated_at": "2026-07-25T09:27:23.430068+00:00"
 }

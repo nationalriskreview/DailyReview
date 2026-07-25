@@ -11,11 +11,11 @@
     "weather": [
       {
         "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued July 24 at 8:27AM PDT until July 25 at 10:00PM PDT by NWS Spokane WA",
+        "headline": "Red Flag Warning issued July 24 at 10:45PM PDT until July 25 at 10:00PM PDT by NWS Spokane WA",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-07-24T08:27:00-07:00",
-        "expires": "2026-07-24T23:00:00-07:00",
+        "effective": "2026-07-24T22:45:00-07:00",
+        "expires": "2026-07-25T11:00:00-07:00",
         "source": "nws_alert",
         "count": 1
       }
@@ -26,7 +26,22 @@
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Wildfire Turner, Boundary, Idaho",
+        "id": "EONET_21429",
+        "category": "wildfire",
+        "date": "2026-07-16T01:14:00Z",
+        "lat": 48.8251,
+        "lon": -116.3803,
+        "sources": [
+          "https://irwin.doi.gov/observer/incidents/2026-IDNIA-000405"
+        ],
+        "acreage": 681.0,
+        "distance_miles": 36.4,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
@@ -47,29 +62,29 @@
     ],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
       "snow_in_24h": 0.0,
-      "high_apparent_temp_f": 80.0,
-      "low_apparent_temp_f": 65.0,
+      "high_apparent_temp_f": 78.0,
+      "low_apparent_temp_f": 66.0,
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 76,
+      "us_aqi": 57,
       "category": "Moderate",
-      "aqi_24h_max": 139,
-      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-      "pm2_5": 15.0,
-      "pm10": 15.7,
-      "ozone": 112.0,
-      "nitrogen_dioxide": 0.5,
-      "observed_at": "2026-07-24T22:00",
+      "aqi_24h_max": 75,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 7.9,
+      "pm10": 8.3,
+      "ozone": 65.0,
+      "nitrogen_dioxide": 10.8,
+      "observed_at": "2026-07-25T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-24",
-  "generated_at": "2026-07-24T22:54:46.685409+00:00"
+  "date": "2026-07-25",
+  "generated_at": "2026-07-25T09:27:23.430068+00:00"
 }

@@ -11,13 +11,13 @@
     "weather": [
       {
         "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued July 24 at 8:27AM PDT until July 25 at 10:00PM PDT by NWS Spokane WA",
+        "headline": "Red Flag Warning issued July 24 at 10:45PM PDT until July 25 at 10:00PM PDT by NWS Spokane WA",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-07-24T08:27:00-07:00",
-        "expires": "2026-07-24T23:00:00-07:00",
+        "effective": "2026-07-24T22:45:00-07:00",
+        "expires": "2026-07-25T11:00:00-07:00",
         "source": "nws_alert",
-        "count": 4
+        "count": 3
       }
     ],
     "protest": [],
@@ -26,36 +26,65 @@
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Wildfire Modrite, Ferry, Washington",
+        "id": "EONET_21427",
+        "category": "wildfire",
+        "date": "2026-07-17T13:59:00Z",
+        "lat": 48.069,
+        "lon": -118.3126,
+        "sources": [
+          "https://irwin.doi.gov/observer/incidents/2026-WANES-260149"
+        ],
+        "acreage": 5679.0,
+        "distance_miles": 29.7,
+        "threat_level": "Vicinity"
+      },
+      {
+        "title": "Wildfire Kaiser Canyon, Okanogan, Washington",
+        "id": "EONET_21431",
+        "category": "wildfire",
+        "date": "2026-07-16T11:08:00Z",
+        "lat": 48.1168,
+        "lon": -118.9586,
+        "sources": [
+          "https://irwin.doi.gov/observer/incidents/2026-WACOA-260140"
+        ],
+        "acreage": 60226.0,
+        "distance_miles": 31.4,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
       "snow_in_24h": 0.0,
-      "high_apparent_temp_f": 81.0,
-      "low_apparent_temp_f": 62.0,
+      "high_apparent_temp_f": 78.0,
+      "low_apparent_temp_f": 64.0,
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 203,
-      "category": "Very Unhealthy",
-      "aqi_24h_max": 230,
-      "aqi_24h_max_category": "Very Unhealthy",
-      "pm2_5": 46.7,
-      "pm10": 49.4,
-      "ozone": 143.0,
-      "nitrogen_dioxide": 4.5,
-      "observed_at": "2026-07-24T22:00",
+      "us_aqi": 186,
+      "category": "Unhealthy",
+      "aqi_24h_max": 200,
+      "aqi_24h_max_category": "Unhealthy",
+      "pm2_5": 129.5,
+      "pm10": 131.8,
+      "ozone": 58.0,
+      "nitrogen_dioxide": 30.2,
+      "observed_at": "2026-07-25T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-24",
-  "generated_at": "2026-07-24T22:54:46.685409+00:00"
+  "date": "2026-07-25",
+  "generated_at": "2026-07-25T09:27:23.430068+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-24T22:54:46.685409+00:00",
-  "date": "2026-07-24",
+  "generated_at": "2026-07-25T09:27:23.430068+00:00",
+  "date": "2026-07-25",
   "state": "CO",
   "counties_total": 64,
   "counties_with_alerts": 8,
@@ -425,15 +425,7 @@
       "state": "CO",
       "alerts": {
         "weather": [],
-        "protest": [
-          {
-            "title": "Sweetwater Lake plans draw protest in Glenwood Springs",
-            "url": "https://www.aspentimes.com/news/sweetwater-lake-plans-draw-protest-in-glenwood-springs/",
-            "domain": "aspentimes.com",
-            "seendate": "20260724183000",
-            "is_new": true
-          }
-        ],
+        "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
@@ -446,7 +438,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "08039": {
       "fips": "08039",
@@ -517,28 +509,49 @@
       "state": "CO",
       "alerts": {
         "weather": [],
-        "protest": [
-          {
-            "title": "Sweetwater Lake plans draw protest in Glenwood Springs",
-            "url": "https://www.aspentimes.com/news/sweetwater-lake-plans-draw-protest-in-glenwood-springs/",
-            "domain": "aspentimes.com",
-            "seendate": "20260724183000",
-            "is_new": true
-          }
-        ],
+        "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire Keystone, Rio Blanco, Colorado",
+            "id": "EONET_21595",
+            "category": "wildfire",
+            "date": "2026-07-21T14:14:00Z",
+            "lat": 40.2205,
+            "lon": -108.1781,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-COWRD-000957"
+            ],
+            "acreage": 3024.0,
+            "distance_miles": 45.2,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Wildfire P-L Gulch, Rio Blanco, Colorado",
+            "id": "EONET_21380",
+            "category": "wildfire",
+            "date": "2026-07-13T15:02:00Z",
+            "lat": 39.8736,
+            "lon": -108.2236,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-COWRD-000853"
+            ],
+            "acreage": 1500.0,
+            "distance_miles": 25.2,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 2
     },
     "08047": {
       "fips": "08047",
@@ -923,14 +936,71 @@
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire Fuhr Gulch, Moffat, Colorado",
+            "id": "EONET_21578",
+            "category": "wildfire",
+            "date": "2026-07-21T18:39:00Z",
+            "lat": 40.4222,
+            "lon": -107.7471,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-COMFX-000964"
+            ],
+            "acreage": 1646.0,
+            "distance_miles": 13.1,
+            "threat_level": "Immediate"
+          },
+          {
+            "title": "Wildfire Keystone, Rio Blanco, Colorado",
+            "id": "EONET_21595",
+            "category": "wildfire",
+            "date": "2026-07-21T14:14:00Z",
+            "lat": 40.2205,
+            "lon": -108.1781,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-COWRD-000957"
+            ],
+            "acreage": 3024.0,
+            "distance_miles": 4.5,
+            "threat_level": "Immediate"
+          },
+          {
+            "title": "Wildfire Big Gulch, Moffat, Colorado",
+            "id": "EONET_21403",
+            "category": "wildfire",
+            "date": "2026-07-19T21:36:00Z",
+            "lat": 40.6817,
+            "lon": -107.6718,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-COMFX-000934"
+            ],
+            "acreage": 1600.0,
+            "distance_miles": 7.4,
+            "threat_level": "Immediate"
+          },
+          {
+            "title": "Wildfire P-L Gulch, Rio Blanco, Colorado",
+            "id": "EONET_21380",
+            "category": "wildfire",
+            "date": "2026-07-13T15:02:00Z",
+            "lat": 39.8736,
+            "lon": -108.2236,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-COWRD-000853"
+            ],
+            "acreage": 1500.0,
+            "distance_miles": 28.0,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 4
     },
     "08083": {
       "fips": "08083",
@@ -1021,18 +1091,7 @@
       "name": "Ouray County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued July 24 at 3:12PM MDT until July 24 at 6:15PM MDT by NWS Grand Junction CO",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-07-24T15:12:00-06:00",
-            "expires": "2026-07-24T18:15:00-06:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1060,7 +1119,7 @@
         ],
         "disease": []
       },
-      "alert_count": 2
+      "alert_count": 1
     },
     "08093": {
       "fips": "08093",
@@ -1186,32 +1245,64 @@
       "name": "Rio Blanco County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued July 24 at 3:13PM MDT until July 24 at 6:15PM MDT by NWS Grand Junction CO",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-07-24T15:13:00-06:00",
-            "expires": "2026-07-24T18:15:00-06:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire Fuhr Gulch, Moffat, Colorado",
+            "id": "EONET_21578",
+            "category": "wildfire",
+            "date": "2026-07-21T18:39:00Z",
+            "lat": 40.4222,
+            "lon": -107.7471,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-COMFX-000964"
+            ],
+            "acreage": 1646.0,
+            "distance_miles": 39.2,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Wildfire Keystone, Rio Blanco, Colorado",
+            "id": "EONET_21595",
+            "category": "wildfire",
+            "date": "2026-07-21T14:14:00Z",
+            "lat": 40.2205,
+            "lon": -108.1781,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-COWRD-000957"
+            ],
+            "acreage": 3024.0,
+            "distance_miles": 17.2,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Wildfire P-L Gulch, Rio Blanco, Colorado",
+            "id": "EONET_21380",
+            "category": "wildfire",
+            "date": "2026-07-13T15:02:00Z",
+            "lat": 39.8736,
+            "lon": -108.2236,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-COWRD-000853"
+            ],
+            "acreage": 1500.0,
+            "distance_miles": 7.0,
+            "threat_level": "Immediate"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 3
     },
     "08105": {
       "fips": "08105",
@@ -1246,14 +1337,43 @@
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Wildfire Fuhr Gulch, Moffat, Colorado",
+            "id": "EONET_21578",
+            "category": "wildfire",
+            "date": "2026-07-21T18:39:00Z",
+            "lat": 40.4222,
+            "lon": -107.7471,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-COMFX-000964"
+            ],
+            "acreage": 1646.0,
+            "distance_miles": 40.2,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Wildfire Big Gulch, Moffat, Colorado",
+            "id": "EONET_21403",
+            "category": "wildfire",
+            "date": "2026-07-19T21:36:00Z",
+            "lat": 40.6817,
+            "lon": -107.6718,
+            "sources": [
+              "https://irwin.doi.gov/observer/incidents/2026-COMFX-000934"
+            ],
+            "acreage": 1600.0,
+            "distance_miles": 38.4,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0
+      "alert_count": 2
     },
     "08109": {
       "fips": "08109",
@@ -1302,18 +1422,7 @@
       "name": "San Miguel County",
       "state": "CO",
       "alerts": {
-        "weather": [
-          {
-            "event": "Flash Flood Warning",
-            "headline": "Flash Flood Warning issued July 24 at 2:55PM MDT until July 24 at 6:00PM MDT by NWS Grand Junction CO",
-            "severity": "Severe",
-            "urgency": "Immediate",
-            "effective": "2026-07-24T14:55:00-06:00",
-            "expires": "2026-07-24T18:00:00-06:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1327,7 +1436,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1
+      "alert_count": 0
     },
     "08115": {
       "fips": "08115",

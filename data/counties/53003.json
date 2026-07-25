@@ -11,11 +11,11 @@
     "weather": [
       {
         "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued July 24 at 8:27AM PDT until July 25 at 10:00PM PDT by NWS Spokane WA",
+        "headline": "Red Flag Warning issued July 24 at 10:45PM PDT until July 25 at 10:00PM PDT by NWS Spokane WA",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-07-24T08:27:00-07:00",
-        "expires": "2026-07-24T23:00:00-07:00",
+        "effective": "2026-07-24T22:45:00-07:00",
+        "expires": "2026-07-25T11:00:00-07:00",
         "source": "nws_alert",
         "count": 1
       }
@@ -26,36 +26,79 @@
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Wildfire Burnt Creek, Wallowa, Oregon",
+        "id": "EONET_21579",
+        "category": "wildfire",
+        "date": "2026-07-17T17:00:00Z",
+        "lat": 45.768,
+        "lon": -117.2532,
+        "sources": [
+          "https://irwin.doi.gov/observer/incidents/2026-ORWWF-000342"
+        ],
+        "acreage": 2530.0,
+        "distance_miles": 28.6,
+        "threat_level": "Vicinity"
+      },
+      {
+        "title": "Wildfire COLUMBIA COUNTY, Columbia, Washington",
+        "id": "EONET_21422",
+        "category": "wildfire",
+        "date": "2026-07-16T22:12:00Z",
+        "lat": 46.5427,
+        "lon": -118.1037,
+        "sources": [
+          "https://irwin.doi.gov/observer/incidents/2026-WACCDN-260456"
+        ],
+        "acreage": 750.0,
+        "distance_miles": 48.6,
+        "threat_level": "Vicinity"
+      },
+      {
+        "title": "Wildfire Paradise, Wallowa, Oregon",
+        "id": "EONET_21581",
+        "category": "wildfire",
+        "date": "2026-07-16T15:51:00Z",
+        "lat": 45.9981,
+        "lon": -117.9743,
+        "sources": [
+          "https://irwin.doi.gov/observer/incidents/2026-ORUMF-000302"
+        ],
+        "acreage": 590.0,
+        "distance_miles": 38.0,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 4,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
       "snow_in_24h": 0.0,
-      "high_apparent_temp_f": 87.0,
+      "high_apparent_temp_f": 84.0,
       "low_apparent_temp_f": 66.0,
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 156,
-      "category": "Unhealthy",
-      "aqi_24h_max": 161,
+      "us_aqi": 134,
+      "category": "Unhealthy for Sensitive Groups",
+      "aqi_24h_max": 155,
       "aqi_24h_max_category": "Unhealthy",
-      "pm2_5": 34.7,
-      "pm10": 36.6,
-      "ozone": 165.0,
-      "nitrogen_dioxide": 1.5,
-      "observed_at": "2026-07-24T22:00",
+      "pm2_5": 42.6,
+      "pm10": 43.8,
+      "ozone": 62.0,
+      "nitrogen_dioxide": 12.8,
+      "observed_at": "2026-07-25T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-24",
-  "generated_at": "2026-07-24T22:54:46.685409+00:00"
+  "date": "2026-07-25",
+  "generated_at": "2026-07-25T09:27:23.430068+00:00"
 }
