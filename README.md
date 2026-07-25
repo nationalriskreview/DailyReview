@@ -13,7 +13,7 @@ CDN alternative: `https://cdn.jsdelivr.net/gh/nationalriskreview/DailyReview@mai
 |---|---|
 | `today-summary.json` | All counties — compact per-county record (`fips`, `name`, `state`, `alerts`, `alert_count`, `conditions`). Filter on `alert_count` for alerted counties. |
 | `today.json` | Full national snapshot — all 3,143 counties, same as `today-summary.json` **plus** each county's `centroid` (lat/lon), so it doubles as a single-file map source. |
-| `national.json` | US disease/outbreak signals (CDC outbreaks + NNDSS elevation) + transit advisories. |
+| `national.json` | US disease/outbreak signals (CDC outbreaks + NNDSS elevation), transit advisories, and major service-provider outages. |
 | `counties/{fips}.json` | Single county detail (5-digit FIPS, e.g. `06037` for Los Angeles County, CA). |
 | `states/{abbr}.json` | State-level roll-up (e.g. `CA`, `NY`, `TX`). |
 | `nyc/index.json` | All five NYC boroughs in one file. |
@@ -54,6 +54,7 @@ National alerts in `national.json`:
 - **Notifiable-disease elevation** (`notifiable_disease_alerts`) — State-level early-warning signal derived from CDC NNDSS weekly surveillance. A state+disease pair (measles, TB, meningococcal, Legionellosis) is surfaced **only when it breaks its own baseline** — either the current week exceeds the state's previous-52-week maximum (`spike`), or year-to-date cases run ≥2× last year over a floor (`elevated_vs_last_year`). Routine case counts are not surfaced; an empty list means nothing is heating up. Each entry carries `this_week`, `prev_52wk_max`, `ytd`, and `ytd_last_year`. Replaces the earlier WHO / CDC Travel Health Notices sections, which were global/foreign and not US-workplace-relevant.
 - **`amtrak_advisories`** — Active Amtrak service-stoppage and station-closure advisories, scraped daily from amtrak.com/service-alerts-and-notices. Severity-filtered; routine schedule changes and equipment-level station issues are excluded.
 - **`faa_advisories`** — FAA Large-Hub airport closures and ground stops, severity-filtered to exclude GA-only NOTAMs. From nasstatus.faa.gov/api/airport-status-information.
+- **`service_outages`** — Active operational incidents at major cloud/SaaS providers, polled directly from their **official status pages** (not news) — AWS, Azure, Google Cloud, Cloudflare, GitHub, Datadog, Zoom, OpenAI, Anthropic, Oracle Cloud (OCI), Slack. Statuspage-based providers report an `impact` (`minor`/`major`/`critical`) and live incidents; only unresolved/ongoing incidents are surfaced. Providers configured in `reference/service_providers.json`, with per-provider status in `data_sources.service_status.providers`. Salesforce, Microsoft 365, and X have no clean public status feed and are marked `unsupported` (visible in `data_sources`, not silently dropped); telecom-wireless outages are only reachable via the GDELT `service_provider_outage` news signal. This is the reliable, direct complement to that news category.
 
 ## Run health (`data_sources`)
 
@@ -121,6 +122,7 @@ Workflow runs daily at **09:00 UTC** (~5 AM ET / 2 AM PT). Output `generated_at`
 - [CDC NNDSS Weekly Data](https://data.cdc.gov/resource/x9gk-5huc.json)
 - [Amtrak Service Alerts & Notices](https://www.amtrak.com/service-alerts-and-notices) — scraped HTML; route→county mapping derived from Amtrak's [static GTFS](https://content.amtrak.com/content/gtfs/GTFS.zip)
 - [FAA NAS Airport Status](https://nasstatus.faa.gov/api/airport-status-information) — XML feed; airport→service-area mapping in `reference/airports.json`
+- Provider status pages (Statuspage `/api/v2/summary.json`, Google Cloud `incidents.json`, AWS/Azure RSS, Slack API) — configured in `reference/service_providers.json`
 
 ## License
 

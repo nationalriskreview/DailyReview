@@ -76,6 +76,7 @@ DATA_WINDOWS = {
     "national.notifiable_disease_alerts": "current MMWR week (CDC NNDSS elevation)",
     "national.amtrak_advisories": "active (effective today)",
     "national.faa_advisories": "live",
+    "national.service_outages": "live (provider status pages)",
 }
 
 
@@ -277,6 +278,7 @@ def write_all(
             "national.notifiable_disease_alerts": DATA_WINDOWS["national.notifiable_disease_alerts"],
             "national.amtrak_advisories": DATA_WINDOWS["national.amtrak_advisories"],
             "national.faa_advisories": DATA_WINDOWS["national.faa_advisories"],
+            "national.service_outages": DATA_WINDOWS["national.service_outages"],
         },
         "data_sources": data_sources,
         "run_health": run_health,

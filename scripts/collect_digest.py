@@ -32,6 +32,7 @@ from fetch_disease import fetch_national, fetch_county_disease
 from fetch_nndss import fetch_notifiable_disease_alerts
 from fetch_amtrak import fetch_amtrak_advisories
 from fetch_faa import fetch_faa_advisories
+from fetch_service_status import fetch_service_outages
 from llm_filter import filter_gdelt_results
 from build_outputs import write_all
 
@@ -343,6 +344,33 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
             "status": "failed", "error": _truncate_error(e),
         }
     national["faa_advisories"] = faa_national
+
+    # --- Service-provider outages (official status pages) ---
+    log.info("Service status: polling major-provider status pages")
+    try:
+        service_outages, service_stats = await asyncio.get_event_loop().run_in_executor(
+            None, fetch_service_outages
+        )
+        ok_count = sum(1 for s in service_stats if s["status"] == "ok")
+        failed = [s for s in service_stats
+                  if s["status"] in ("fetch_failed", "config_error")]
+        overall = "ok" if not failed else ("failed" if ok_count == 0 else "partial")
+        log.info("Service status: %d active incident(s), %d/%d providers ok",
+                 len(service_outages), ok_count, len(service_stats))
+        data_sources["service_status"] = {
+            "status": overall,
+            "active_incidents": len(service_outages),
+            "providers_ok": ok_count,
+            "providers_total": len(service_stats),
+            "providers": service_stats,
+        }
+    except Exception as e:
+        log.error("Service status fetch failed (continuing with empty): %s", e)
+        service_outages = []
+        data_sources["service_status"] = {
+            "status": "failed", "error": _truncate_error(e),
+        }
+    national["service_outages"] = service_outages
 
     log.info("Writing outputs")
     write_all(
