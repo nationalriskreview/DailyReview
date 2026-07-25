@@ -260,7 +260,9 @@ def write_all(
         "counties_total": len(records),
         "counties_with_alerts": len(flagged),
         "national": national,
-        "counties": {r["fips"]: _strip_for_full(r) for r in flagged},
+        "counties": {
+            r["fips"]: _strip_for_full(r, include_conditions=True) for r in flagged
+        },
     }
     _write_json(DATA_DIR / "today-summary.json", summary)
 
@@ -299,7 +301,9 @@ def write_all(
             "state": state,
             "counties_total": len(rs),
             "counties_with_alerts": len(flagged_in_state),
-            "counties": {x["fips"]: _strip_for_full(x) for x in rs},
+            "counties": {
+                x["fips"]: _strip_for_full(x, include_conditions=True) for x in rs
+            },
         })
 
     nyc_dir = DATA_DIR / "nyc"

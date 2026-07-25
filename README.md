@@ -40,7 +40,7 @@ Each county object exposes alerts in these buckets:
 
 ## Conditions (every county)
 
-Separate from `alerts`, each county carries an always-on `conditions` object with ambient readings — present whether or not the county has any active alert. Exposed in `today.json`, `counties/{fips}.json`, and the NYC borough files; **omitted** from the lean `today-summary.json` and state roll-ups.
+Separate from `alerts`, each county carries an always-on `conditions` object with ambient readings — present whether or not the county has any active alert. Exposed in every county-bearing output: `today.json` and `states/{abbr}.json` (all counties), `counties/{fips}.json`, the NYC borough files, and `today-summary.json` (for the counties it contains — i.e. those with active alerts). For forecast + AQI across **all** ~3,143 counties, use `today.json` or the per-county / per-state files; `today-summary.json` only lists counties that have at least one alert.
 
 - **`conditions.forecast`** — NWS gridpoint 24h summary: `precip_in_24h`, `snow_in_24h`, `high_apparent_temp_f`, `low_apparent_temp_f`. The same values still generate `alerts.weather` entries when they cross a threshold (>1" rain, >6" snow, >105°F, <0°F), but the raw numbers are now reported for every county. `null` where NWS has no grid coverage.
 - **`conditions.air_quality`** — Current US EPA AQI and pollutant concentrations from the Open-Meteo Air Quality API (keyless): `us_aqi`, `category`, next-24h peak (`aqi_24h_max` / `aqi_24h_max_category`), plus `pm2_5`, `pm10`, `ozone`, `nitrogen_dioxide` (µg/m³) and `observed_at`.
