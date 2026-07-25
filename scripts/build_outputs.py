@@ -261,7 +261,7 @@ def write_all(
         "counties_with_alerts": len(flagged),
         "national": national,
         "counties": {
-            r["fips"]: _strip_for_full(r, include_conditions=True) for r in flagged
+            r["fips"]: _strip_for_full(r, include_conditions=True) for r in records
         },
     }
     _write_json(DATA_DIR / "today-summary.json", summary)
@@ -336,8 +336,16 @@ def write_all(
     })
 
     if flagged:
+        # Archive stays lean (alerted counties only) so 365 daily snapshots
+        # don't balloon the repo now that today-summary carries all counties.
+        archive_obj = {
+            **summary,
+            "counties": {
+                r["fips"]: _strip_for_full(r, include_conditions=True) for r in flagged
+            },
+        }
         archive_path = DATA_DIR / "archive" / f"{today}.json"
-        _write_json(archive_path, summary)
+        _write_json(archive_path, archive_obj)
 
 
 def _strip_for_full(rec: dict, include_conditions: bool = False) -> dict:
