@@ -29,6 +29,7 @@ SNOW_THRESHOLD_INCHES = 6.0
 HEAT_THRESHOLD_F = 105.0
 COLD_THRESHOLD_F = 0.0
 MM_TO_IN = 0.0393701
+KMH_TO_MPH = 0.621371
 C_TO_F = lambda c: (c * 9/5) + 32
 
 log = logging.getLogger(__name__)
@@ -167,9 +168,23 @@ async def fetch_county_forecast(
 
     max_precip_in = 0.0
     max_snow_in = 0.0
+    max_ice_in = 0.0
     highest_temp_f = None
     lowest_temp_f = None
+    highest_actual_f = None
+    lowest_actual_f = None
+    max_precip_prob = None
+    max_thunder_prob = None
+    max_lightning = None
+    max_wind_mph = None
+    max_gust_mph = None
+    weather_phrases: list[str] = []
     have_grid = False
+
+    def _peak(cur, val):
+        if val is None:
+            return cur
+        return val if cur is None or val > cur else cur
 
     for pt in grid_points:
         point = await _fetch_json(
@@ -188,11 +203,17 @@ async def fetch_county_forecast(
         grid_props = grid.get("properties", {})
         precip_mm = _sum_first_24h(grid_props.get("quantitativePrecipitation"))
         snow_mm = _sum_first_24h(grid_props.get("snowfallAmount"))
+        ice_mm = _sum_first_24h(grid_props.get("iceAccumulation"))
         max_app_temp_c = _max_first_24h(grid_props.get("apparentTemperature"))
         min_app_temp_c = _min_first_24h(grid_props.get("apparentTemperature"))
+        max_temp_c = _max_first_24h(grid_props.get("temperature"))
+        min_temp_c = _min_first_24h(grid_props.get("temperature"))
+        wind_kmh = _max_first_24h(grid_props.get("windSpeed"))
+        gust_kmh = _max_first_24h(grid_props.get("windGust"))
 
         precip_in = precip_mm * MM_TO_IN
         snow_in = snow_mm * MM_TO_IN
+        ice_in = ice_mm * MM_TO_IN
         max_app_temp_f = C_TO_F(max_app_temp_c) if max_app_temp_c is not None else None
         min_app_temp_f = C_TO_F(min_app_temp_c) if min_app_temp_c is not None else None
 
@@ -200,20 +221,47 @@ async def fetch_county_forecast(
             max_precip_in = precip_in
         if snow_in > max_snow_in:
             max_snow_in = snow_in
+        if ice_in > max_ice_in:
+            max_ice_in = ice_in
         if max_app_temp_f is not None:
             if highest_temp_f is None or max_app_temp_f > highest_temp_f:
                 highest_temp_f = max_app_temp_f
         if min_app_temp_f is not None:
             if lowest_temp_f is None or min_app_temp_f < lowest_temp_f:
                 lowest_temp_f = min_app_temp_f
+        if max_temp_c is not None:
+            f = C_TO_F(max_temp_c)
+            if highest_actual_f is None or f > highest_actual_f:
+                highest_actual_f = f
+        if min_temp_c is not None:
+            f = C_TO_F(min_temp_c)
+            if lowest_actual_f is None or f < lowest_actual_f:
+                lowest_actual_f = f
+        max_precip_prob = _peak(max_precip_prob, _max_first_24h(grid_props.get("probabilityOfPrecipitation")))
+        max_thunder_prob = _peak(max_thunder_prob, _max_first_24h(grid_props.get("probabilityOfThunder")))
+        max_lightning = _peak(max_lightning, _max_first_24h(grid_props.get("lightningActivityLevel")))
+        max_wind_mph = _peak(max_wind_mph, wind_kmh * KMH_TO_MPH if wind_kmh is not None else None)
+        max_gust_mph = _peak(max_gust_mph, gust_kmh * KMH_TO_MPH if gust_kmh is not None else None)
+        for phrase in _weather_first_24h(grid_props.get("weather")):
+            if phrase not in weather_phrases:
+                weather_phrases.append(phrase)
 
     forecast = None
     if have_grid:
         forecast = {
             "precip_in_24h": round(max_precip_in, 2),
+            "precip_probability_pct": round(max_precip_prob) if max_precip_prob is not None else None,
             "snow_in_24h": round(max_snow_in, 2),
+            "ice_in_24h": round(max_ice_in, 2),
+            "high_temp_f": round(highest_actual_f, 1) if highest_actual_f is not None else None,
+            "low_temp_f": round(lowest_actual_f, 1) if lowest_actual_f is not None else None,
             "high_apparent_temp_f": round(highest_temp_f, 1) if highest_temp_f is not None else None,
             "low_apparent_temp_f": round(lowest_temp_f, 1) if lowest_temp_f is not None else None,
+            "max_wind_mph": round(max_wind_mph, 1) if max_wind_mph is not None else None,
+            "max_wind_gust_mph": round(max_gust_mph, 1) if max_gust_mph is not None else None,
+            "thunder_probability_pct": round(max_thunder_prob) if max_thunder_prob is not None else None,
+            "lightning_activity_level": round(max_lightning) if max_lightning is not None else None,
+            "weather": weather_phrases,
             "window": "next 24h",
             "source": "nws_gridpoint",
         }
@@ -350,6 +398,44 @@ def _min_first_24h(field: dict | None) -> float | None:
                 min_val = val_f
         hours_covered += hours
     return min_val
+
+
+def _weather_first_24h(field: dict | None) -> list[str]:
+    """Distinct human-readable weather phrases (e.g. 'light rain', 'patchy fog')
+    over the next 24h. The gridpoint `weather` field's value is a list of
+    {coverage, weather, intensity} dicts per period; we compose 'intensity
+    weather' and dedupe, preserving order."""
+    if not field:
+        return []
+    values = field.get("values", []) or []
+    phrases: list[str] = []
+    hours_covered = 0.0
+    for v in values:
+        if hours_covered >= 24:
+            break
+        valid = v.get("validTime", "")
+        hours = 0.0
+        if "/PT" in valid:
+            try:
+                duration_str = valid.split("/PT")[1]
+                if duration_str.endswith("H"):
+                    hours = float(duration_str[:-1])
+                elif "H" in duration_str:
+                    hours = float(duration_str.split("H")[0])
+            except (ValueError, IndexError):
+                hours = 0.0
+        entries = v.get("value")
+        if isinstance(entries, list):
+            for w in entries:
+                wx = (w.get("weather") or "").strip().replace("_", " ")
+                if not wx:
+                    continue
+                intensity = (w.get("intensity") or "").strip()
+                phrase = f"{intensity} {wx}".strip()
+                if phrase not in phrases:
+                    phrases.append(phrase)
+        hours_covered += hours or 1.0
+    return phrases[:5]
 
 
 async def fetch_forecasts_for_counties(

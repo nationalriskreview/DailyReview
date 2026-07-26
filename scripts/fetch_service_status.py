@@ -1,18 +1,30 @@
 """Major service-provider outages from official status pages.
 
 Direct, structured, near-real-time — unlike the GDELT news signal, which only
-catches outages that make the news within 24h. Polls each provider's official
-status feed and surfaces *active* incidents as a national list.
+catches outages that make the news. Polls each provider's official status feed
+and surfaces *active* incidents as a national list.
 
-Provider handlers (configured in reference/service_providers.json):
-  - statuspage : Atlassian Statuspage `/api/v2/summary.json` (indicator +
-                 unresolved incidents). Covers Cloudflare, GitHub, Datadog,
-                 Zoom, OpenAI, Anthropic, Oracle OCI.
+Recency: we only surface maintenance/alerts from the last SERVICE_RECENT_HOURS
+(24h). Every timestamped handler (statuspage incidents, gcp, slack, rss, atom)
+drops any incident whose start AND last update are older than the window, and
+an item that can't be dated is treated as NOT recent (dropped). Handlers that
+read a live current-state signal with no per-incident timestamp — a component
+reading "degraded"/"unavailable" right now (statuspage indicator fallback,
+html_alt_table, statuscast, sorryapp) — reflect the present moment and are
+kept as-is.
+
+Provider handlers (public list in reference/service_providers.json; a private
+allowlist in the PRIVATE_PROVIDERS_JSON secret is polled the same way but
+pseudonymized by 4-char code):
+  - statuspage : Atlassian Statuspage `/api/v2/summary.json` (+ status.json
+                 fallback) — indicator + unresolved incidents.
   - gcp        : Google Cloud `incidents.json` (ongoing = no end time).
-  - rss        : AWS / Azure status RSS (items updated in the last 48h).
+  - rss        : AWS / Azure status RSS (pubDate within 24h).
   - slack      : Slack `api/v2.0.0/current` (active_incidents).
-  - unsupported: providers with no clean public feed (Salesforce, M365, X) —
-                 reported as skipped so the gap is visible, not silent.
+  - html_alt_table : service table with status-icon alt text (e.g. FedLine).
+  - statuscast : StatusCast SSR summary cards.
+  - atom_feed  : Atom status feed; non-resolution entry updated within 24h.
+  - sorryapp   : SorryApp `/api/v1/components` (non-operational components).
 """
 
 from __future__ import annotations
@@ -38,8 +50,12 @@ PRIVATE_PROVIDERS_ENV = "PRIVATE_PROVIDERS_JSON"
 USER_AGENT = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
               "(KHTML, like Gecko) Chrome/124.0 Safari/537.36 DailyReview/1.0")
 HTTP_TIMEOUT = 20
-RSS_RECENT_HOURS = int(os.environ.get("SERVICE_RSS_RECENT_HOURS", "48"))
-ATOM_RECENT_HOURS = int(os.environ.get("SERVICE_ATOM_RECENT_HOURS", "48"))
+# Recency window for all timestamped incidents/alerts. Anything whose start or
+# last update is older than this is dropped — we only surface maintenance/alerts
+# from the last 24 hours. (Live current-state signals with no timestamp — a
+# component reading "degraded" right now — reflect the present moment and are
+# kept regardless.)
+SERVICE_RECENT_HOURS = int(os.environ.get("SERVICE_RECENT_HOURS", "24"))
 
 # Set True while polling private providers so their URLs never reach the
 # (public) Actions logs. Only counts/status types are logged when redacting.
@@ -65,6 +81,37 @@ def _parse_iso(s: str):
     except (ValueError, TypeError):
         return None
     return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt
+
+
+def _parse_any(s: str):
+    """Parse an ISO-8601 or RFC-822 (RSS) timestamp; None if unparseable."""
+    if not s:
+        return None
+    dt = _parse_iso(s)
+    if dt is not None:
+        return dt
+    try:
+        dt = parsedate_to_datetime(s)
+    except (TypeError, ValueError):
+        return None
+    if dt is None:
+        return None
+    return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt
+
+
+def _is_recent(*stamps: str) -> bool:
+    """True if ANY provided timestamp is within the last SERVICE_RECENT_HOURS.
+
+    Used to keep only recent maintenance/alerts. A blank/unparseable set of
+    stamps returns False — callers that represent live current-state signals
+    (no timestamp) must not route through here; they are kept explicitly.
+    """
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=SERVICE_RECENT_HOURS)
+    for s in stamps:
+        dt = _parse_any(s)
+        if dt is not None and dt >= cutoff:
+            return True
+    return False
 
 
 def _http_get_json(url: str):
@@ -109,13 +156,17 @@ def _check_statuspage(p: dict) -> list[dict]:
     incidents = data.get("incidents") or []  # summary.json lists UNRESOLVED only
     out = []
     for inc in incidents:
+        started = inc.get("started_at", "") or inc.get("created_at", "")
+        updated = inc.get("updated_at", "")
+        if not _is_recent(started, updated):  # only last-24h maintenance/alerts
+            continue
         out.append(_incident(
             p["name"], p["key"],
             title=inc.get("name", description or "Service incident"),
             impact=inc.get("impact", indicator),
             status=inc.get("status", ""),
-            started=inc.get("started_at", "") or inc.get("created_at", ""),
-            updated=inc.get("updated_at", ""),
+            started=started,
+            updated=updated,
             url=inc.get("shortlink", "") or p["url"],
         ))
     # Component-level degradation with no formal incident (e.g. Cloudflare "minor").
@@ -135,13 +186,17 @@ def _check_gcp(p: dict) -> list[dict]:
     for inc in data:
         if inc.get("end"):  # resolved incidents carry an end time
             continue
+        began = inc.get("begin", "")
+        modified = (inc.get("most_recent_update") or {}).get("modified", "")
+        if not _is_recent(began, modified):  # only last-24h activity
+            continue
         out.append(_incident(
             p["name"], p["key"],
             title=inc.get("external_desc", "Service incident"),
             impact=inc.get("severity", inc.get("status_impact", "")),
             status=inc.get("status_impact", ""),
-            started=inc.get("begin", ""),
-            updated=(inc.get("most_recent_update") or {}).get("modified", ""),
+            started=began,
+            updated=modified,
             url="https://status.cloud.google.com/" + inc.get("uri", "").lstrip("/"),
         ))
     return out
@@ -153,13 +208,17 @@ def _check_slack(p: dict) -> list[dict]:
         raise RuntimeError("fetch/parse failed")
     out = []
     for inc in data.get("active_incidents", []) or []:
+        created = inc.get("date_created", "")
+        updated = inc.get("date_updated", "")
+        if not _is_recent(created, updated):  # only last-24h activity
+            continue
         out.append(_incident(
             p["name"], p["key"],
             title=inc.get("title", "Service incident"),
             impact=inc.get("type", ""),
             status=inc.get("status", ""),
-            started=inc.get("date_created", ""),
-            updated=inc.get("date_updated", ""),
+            started=created,
+            updated=updated,
             url=inc.get("url", "") or "https://status.slack.com",
         ))
     return out
@@ -173,23 +232,16 @@ def _check_rss(p: dict) -> list[dict]:
         root = ET.fromstring(raw)
     except ET.ParseError:
         raise RuntimeError("unparseable RSS")
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=RSS_RECENT_HOURS)
     out = []
     for item in root.iter("item"):
         title = (item.findtext("title") or "").strip()
         if not title:
             continue
         pub_raw = (item.findtext("pubDate") or "").strip()
-        pub_dt = None
-        if pub_raw:
-            try:
-                pub_dt = parsedate_to_datetime(pub_raw)
-                if pub_dt.tzinfo is None:
-                    pub_dt = pub_dt.replace(tzinfo=timezone.utc)
-            except (TypeError, ValueError):
-                pub_dt = None
-        if pub_dt and pub_dt < cutoff:
-            continue  # stale
+        # Precise: require a parseable pubDate within the last 24h. An item we
+        # cannot date is NOT assumed recent — it's dropped.
+        if not _is_recent(pub_raw):
+            continue
         out.append(_incident(
             p["name"], p["key"], title=title, impact="",
             started=pub_raw, url=(item.findtext("link") or "").strip(),
@@ -269,15 +321,15 @@ def _check_atom_feed(p: dict) -> list[dict]:
     except ET.ParseError:
         raise RuntimeError("unparseable feed")
     ns = {"a": "http://www.w3.org/2005/Atom"}
-    cutoff = datetime.now(timezone.utc) - timedelta(hours=ATOM_RECENT_HOURS)
     out = []
     for e in root.findall(".//a:entry", ns):
         title = (e.findtext("a:title", namespaces=ns) or "").strip()
         if not title:
             continue
         upd = (e.findtext("a:updated", namespaces=ns) or "").strip()
-        dt = _parse_iso(upd)
-        if dt and dt < cutoff:
+        pub = (e.findtext("a:published", namespaces=ns) or "").strip()
+        # Precise: require a parseable timestamp within the last 24h.
+        if not _is_recent(upd, pub):
             continue
         if title.lower().startswith(("resolved", "completed", "closed")):
             continue
