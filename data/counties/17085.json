@@ -8,7 +8,14 @@
     "lon": -90.21147
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Heat Forecast",
+        "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+        "severity": "Severe",
+        "source": "nws_forecast"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,29 +29,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
+      "precip_in_24h": 0.12,
+      "precip_probability_pct": 42,
       "snow_in_24h": 0.0,
-      "high_apparent_temp_f": 105.0,
-      "low_apparent_temp_f": 70.0,
+      "ice_in_24h": 0.0,
+      "high_temp_f": 90.0,
+      "low_temp_f": 74.0,
+      "high_apparent_temp_f": 106.0,
+      "low_apparent_temp_f": 74.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 19.6,
+      "thunder_probability_pct": 42,
+      "lightning_activity_level": null,
+      "weather": [
+        "very_light rain showers",
+        "thunderstorms",
+        "moderate rain showers"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 30,
-      "category": "Good",
-      "aqi_24h_max": 50,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 7.1,
-      "pm10": 7.5,
-      "ozone": 37.0,
-      "nitrogen_dioxide": 15.0,
-      "observed_at": "2026-07-26T09:00",
+      "us_aqi": 65,
+      "category": "Moderate",
+      "aqi_24h_max": 65,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 8.6,
+      "pm10": 9.5,
+      "ozone": 99.0,
+      "nitrogen_dioxide": 2.0,
+      "observed_at": "2026-07-26T23:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
   "date": "2026-07-26",
-  "generated_at": "2026-07-26T09:38:26.382063+00:00"
+  "generated_at": "2026-07-26T23:32:31.030741+00:00"
 }

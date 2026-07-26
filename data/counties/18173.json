@@ -8,7 +8,18 @@
     "lon": -87.272049
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Severe Thunderstorm Warning",
+        "headline": "Severe Thunderstorm Warning issued July 26 at 6:04PM CDT until July 26 at 6:45PM CDT by NWS Paducah KY",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-07-26T18:04:00-05:00",
+        "expires": "2026-07-26T18:45:00-05:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,29 +33,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
+      "precip_in_24h": 0.03,
+      "precip_probability_pct": 60,
       "snow_in_24h": 0.0,
-      "high_apparent_temp_f": 105.0,
-      "low_apparent_temp_f": 72.0,
+      "ice_in_24h": 0.0,
+      "high_temp_f": 88.0,
+      "low_temp_f": 74.0,
+      "high_apparent_temp_f": 108.0,
+      "low_apparent_temp_f": 74.0,
+      "max_wind_mph": 5.8,
+      "max_wind_gust_mph": 8.1,
+      "thunder_probability_pct": 37,
+      "lightning_activity_level": null,
+      "weather": [
+        "thunderstorms",
+        "light rain showers",
+        "heavy thunderstorms"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 53,
+      "us_aqi": 62,
       "category": "Moderate",
-      "aqi_24h_max": 76,
+      "aqi_24h_max": 62,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 13.5,
-      "pm10": 13.9,
-      "ozone": 25.0,
-      "nitrogen_dioxide": 26.3,
-      "observed_at": "2026-07-26T09:00",
+      "pm2_5": 16.2,
+      "pm10": 17.3,
+      "ozone": 108.0,
+      "nitrogen_dioxide": 4.1,
+      "observed_at": "2026-07-26T23:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
   "date": "2026-07-26",
-  "generated_at": "2026-07-26T09:38:26.382063+00:00"
+  "generated_at": "2026-07-26T23:32:31.030741+00:00"
 }

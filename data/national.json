@@ -1,6 +1,6 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-26T09:38:26.382063+00:00",
+  "generated_at": "2026-07-26T23:32:31.030741+00:00",
   "date": "2026-07-26",
   "data_windows": {
     "national.cdc_han": "7d",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 695
+      "counties_with_alerts": 782
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 397
+      "counties_over_threshold": 347
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,29 +28,29 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 42,
+      "counties_with_matches": 58,
       "items_pre_llm": {
-        "protest": 42,
+        "protest": 81,
         "utility_outage": 9,
         "transit_disruption": 8,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 11
+        "hazmat_incident": 2,
+        "road_closure": 21
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 16,
+      "counties_with_matches": 21,
       "items_post_llm": {
-        "protest": 14,
+        "protest": 23,
         "utility_outage": 4,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 2
+        "road_closure": 4
       },
-      "unique_articles": 35,
-      "calls_used": 35,
+      "unique_articles": 68,
+      "calls_used": 68,
       "cap": 300,
       "cap_hit": false
     },
@@ -160,12 +160,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 2,
-      "counties_with_alerts": 6
+      "national_items": 1,
+      "counties_with_alerts": 1
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 7,
+      "active_incidents": 3,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -221,7 +221,7 @@
           "key": "anthropic",
           "name": "Anthropic",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "oracle",
@@ -263,7 +263,7 @@
           "key": "palo_alto",
           "name": "Palo Alto Networks",
           "status": "ok",
-          "items": 2
+          "items": 1
         },
         {
           "key": "rapid7",
@@ -299,13 +299,13 @@
           "key": "m4kp",
           "name": "m4kp",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "r3wn",
@@ -558,17 +558,6 @@
   "faa_advisories": [
     {
       "kind": "airport_closure",
-      "code": "SNA",
-      "name": "John Wayne / Orange County",
-      "city": "Santa Ana",
-      "state": "CA",
-      "reason": "!SNA 07/029 SNA AD AP CLSD DLY 0630-1315 2607200630-2607261315",
-      "start": "Jul 20 at 06:30 UTC.",
-      "reopen": "Jul 26 at 13:15 UTC.",
-      "source": "FAA NAS Status"
-    },
-    {
-      "kind": "airport_closure",
       "code": "HNL",
       "name": "Daniel K. Inouye Intl Honolulu",
       "city": "Honolulu",
@@ -603,53 +592,15 @@
       "source": "provider status page"
     },
     {
-      "provider": "Anthropic",
-      "key": "anthropic",
-      "title": "Elevated errors for Opus 5",
-      "impact": "minor",
-      "status": "investigating",
-      "started": "2026-07-26T09:17:12.688Z",
-      "updated": "2026-07-26T09:17:12.837Z",
-      "url": "https://stspg.io/jrz1yk46f9xp",
-      "source": "provider status page"
-    },
-    {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "Azure westeurope, southcentralus outage impacting Cloud NGFW Services.",
+      "title": "Partially Degraded Service",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-07-07T18:06:05.000Z",
-      "updated": "2026-07-23T20:00:56.009Z",
-      "url": "https://stspg.io/zfhnnrf4ksg7",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Palo Alto Networks",
-      "key": "palo_alto",
-      "title": "AWS  Middle East(Bahrain) outage impacting Cloud NGFW Services.",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-03-02T22:49:05.000Z",
-      "updated": "2026-04-02T18:07:08.590Z",
-      "url": "https://stspg.io/psfg42ht97mh",
-      "source": "provider status page"
-    },
-    {
-      "provider": "m4kp",
-      "impact": "maintenance",
-      "active_incidents": 1,
       "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
-    },
-    {
-      "provider": "x9tz",
-      "impact": "maintenance",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
+      "started": "",
+      "updated": "",
+      "url": "https://status.paloaltonetworks.com",
+      "source": "provider status page"
     }
   ]
 }

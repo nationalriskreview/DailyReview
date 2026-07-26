@@ -8,7 +8,18 @@
     "lon": -113.177631
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued July 26 at 10:58AM MDT until July 27 at 9:00PM MDT by NWS Pocatello ID",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-07-26T10:58:00-06:00",
+        "expires": "2026-07-27T07:00:00-06:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,29 +33,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
+      "precip_probability_pct": 16,
       "snow_in_24h": 0.0,
-      "high_apparent_temp_f": 85.0,
+      "ice_in_24h": 0.0,
+      "high_temp_f": 90.0,
+      "low_temp_f": 64.0,
+      "high_apparent_temp_f": 86.0,
       "low_apparent_temp_f": 64.0,
+      "max_wind_mph": 17.3,
+      "max_wind_gust_mph": 25.3,
+      "thunder_probability_pct": 10,
+      "lightning_activity_level": null,
+      "weather": [
+        "light rain",
+        "smoke"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 42,
+      "us_aqi": 49,
       "category": "Good",
-      "aqi_24h_max": 59,
+      "aqi_24h_max": 58,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 4.9,
-      "pm10": 6.9,
-      "ozone": 59.0,
-      "nitrogen_dioxide": 8.4,
-      "observed_at": "2026-07-26T09:00",
+      "pm2_5": 10.2,
+      "pm10": 14.5,
+      "ozone": 128.0,
+      "nitrogen_dioxide": 0.3,
+      "observed_at": "2026-07-26T23:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
   "date": "2026-07-26",
-  "generated_at": "2026-07-26T09:38:26.382063+00:00"
+  "generated_at": "2026-07-26T23:32:31.030741+00:00"
 }

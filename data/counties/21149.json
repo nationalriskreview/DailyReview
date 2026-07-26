@@ -8,7 +8,18 @@
     "lon": -87.265597
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Severe Thunderstorm Warning",
+        "headline": "Severe Thunderstorm Warning issued July 26 at 6:14PM CDT until July 26 at 7:00PM CDT by NWS Paducah KY",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-07-26T18:14:00-05:00",
+        "expires": "2026-07-26T19:00:00-05:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,29 +33,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.01,
+      "precip_in_24h": 0.07,
+      "precip_probability_pct": 60,
       "snow_in_24h": 0.0,
-      "high_apparent_temp_f": 105.0,
-      "low_apparent_temp_f": 73.0,
+      "ice_in_24h": 0.0,
+      "high_temp_f": 91.0,
+      "low_temp_f": 74.0,
+      "high_apparent_temp_f": 111.0,
+      "low_apparent_temp_f": 74.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 9.2,
+      "thunder_probability_pct": 40,
+      "lightning_activity_level": null,
+      "weather": [
+        "thunderstorms",
+        "light rain showers",
+        "heavy thunderstorms"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 56,
+      "us_aqi": 63,
       "category": "Moderate",
       "aqi_24h_max": 65,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 14.4,
-      "pm10": 14.7,
-      "ozone": 24.0,
-      "nitrogen_dioxide": 20.4,
-      "observed_at": "2026-07-26T09:00",
+      "pm2_5": 16.5,
+      "pm10": 17.6,
+      "ozone": 95.0,
+      "nitrogen_dioxide": 3.9,
+      "observed_at": "2026-07-26T23:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
   "date": "2026-07-26",
-  "generated_at": "2026-07-26T09:38:26.382063+00:00"
+  "generated_at": "2026-07-26T23:32:31.030741+00:00"
 }
