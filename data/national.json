@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-25T23:03:27.121464+00:00",
-  "date": "2026-07-25",
+  "generated_at": "2026-07-26T09:38:26.382063+00:00",
+  "date": "2026-07-26",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 627
+      "counties_with_alerts": 695
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 298
+      "counties_over_threshold": 397
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,29 +28,29 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 58,
+      "counties_with_matches": 42,
       "items_pre_llm": {
-        "protest": 112,
-        "utility_outage": 0,
-        "transit_disruption": 2,
-        "service_provider_outage": 2,
+        "protest": 42,
+        "utility_outage": 9,
+        "transit_disruption": 8,
+        "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 21
+        "road_closure": 11
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 21,
+      "counties_with_matches": 16,
       "items_post_llm": {
-        "protest": 13,
-        "utility_outage": 0,
+        "protest": 14,
+        "utility_outage": 4,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 11
+        "road_closure": 2
       },
-      "unique_articles": 94,
-      "calls_used": 94,
+      "unique_articles": 35,
+      "calls_used": 35,
       "cap": 300,
       "cap_hit": false
     },
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 5,
+      "active_incidents": 7,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -221,7 +221,7 @@
           "key": "anthropic",
           "name": "Anthropic",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "oracle",
@@ -305,7 +305,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "r3wn",
@@ -596,10 +596,21 @@
       "key": "openai",
       "title": "Elevated errors affecting ChatGPT conversations",
       "impact": "minor",
-      "status": "investigating",
+      "status": "monitoring",
       "started": "2026-07-25T22:09:27Z",
-      "updated": "2026-07-25T22:09:27Z",
+      "updated": "2026-07-25T23:57:40Z",
       "url": "https://status.openai.com",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Anthropic",
+      "key": "anthropic",
+      "title": "Elevated errors for Opus 5",
+      "impact": "minor",
+      "status": "investigating",
+      "started": "2026-07-26T09:17:12.688Z",
+      "updated": "2026-07-26T09:17:12.837Z",
+      "url": "https://stspg.io/jrz1yk46f9xp",
       "source": "provider status page"
     },
     {
@@ -626,6 +637,14 @@
     },
     {
       "provider": "m4kp",
+      "impact": "maintenance",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
+    },
+    {
+      "provider": "x9tz",
       "impact": "maintenance",
       "active_incidents": 1,
       "status": "active",

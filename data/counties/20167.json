@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued July 26 at 1:50AM CDT until July 26 at 9:00PM CDT by NWS Wichita KS",
         "severity": "Severe",
-        "source": "nws_forecast"
+        "urgency": "Expected",
+        "effective": "2026-07-26T01:50:00-05:00",
+        "expires": "2026-07-26T14:15:00-05:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -40,18 +44,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 56,
-      "category": "Moderate",
-      "aqi_24h_max": 72,
+      "us_aqi": 48,
+      "category": "Good",
+      "aqi_24h_max": 56,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 8.7,
-      "pm10": 9.7,
-      "ozone": 111.0,
-      "nitrogen_dioxide": 0.7,
-      "observed_at": "2026-07-25T22:00",
+      "pm2_5": 9.5,
+      "pm10": 10.2,
+      "ozone": 58.0,
+      "nitrogen_dioxide": 5.6,
+      "observed_at": "2026-07-26T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-25",
-  "generated_at": "2026-07-25T23:03:27.121464+00:00"
+  "date": "2026-07-26",
+  "generated_at": "2026-07-26T09:38:26.382063+00:00"
 }
