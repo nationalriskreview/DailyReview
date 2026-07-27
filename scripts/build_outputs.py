@@ -63,7 +63,7 @@ DATA_WINDOWS = {
     "service_provider_outage": "24h",
     "hazmat_incident": "24h",
     "road_closure": "24h",
-    "wildfires": "active (EONET open events, last 14d)",
+    "wildfires": "active (NIFC WFIGS, not fully contained)",
     "transit": "live",
     "amtrak": "active (effective today per Amtrak page)",
     "aviation": "live (FAA NAS status)",

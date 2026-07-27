@@ -25,7 +25,7 @@ from fetch_nws import (
 )
 from fetch_airquality import fetch_air_quality_for_counties
 from fetch_gdelt import collect_gdelt_by_county, GDELT_CATEGORIES
-from fetch_eonet import fetch_wildfires_by_county
+from fetch_wildfires import fetch_wildfires_by_county
 from fetch_transit import fetch_transit_by_county
 from fetch_fema import fetch_fema_by_county
 from fetch_disease import fetch_national, fetch_county_disease
@@ -187,21 +187,21 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
                 "status": "skipped", "reason": "no gdelt rows to filter",
             }
 
-    # --- EONET wildfires ---
-    log.info("EONET: fetching active wildfires")
+    # --- NIFC wildfires ---
+    log.info("NIFC: fetching active wildfires")
     try:
         wildfires_by_fips = await asyncio.get_event_loop().run_in_executor(
             None, fetch_wildfires_by_county, counties
         )
-        log.info("EONET: %d counties within wildfire radius", len(wildfires_by_fips))
-        data_sources["wildfires_eonet"] = {
+        log.info("NIFC: %d counties within wildfire radius", len(wildfires_by_fips))
+        data_sources["wildfires_nifc"] = {
             "status": "ok",
             "counties_with_alerts": len(wildfires_by_fips),
         }
     except Exception as e:
-        log.error("EONET fetch failed (continuing with empty): %s", e)
+        log.error("NIFC fetch failed (continuing with empty): %s", e)
         wildfires_by_fips = {}
-        data_sources["wildfires_eonet"] = {
+        data_sources["wildfires_nifc"] = {
             "status": "failed", "error": _truncate_error(e),
         }
 
