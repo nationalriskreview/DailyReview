@@ -569,6 +569,56 @@ GDELT_CATEGORIES = (
     "service_provider_outage", "hazmat_incident", "road_closure",
 )
 
+# Foreign country-code TLDs — GDELT already restricts to US *locations*, but
+# foreign outlets reporting on US events slip through (e.g. a Mexican paper on a
+# US protest). Drop sources on a clear foreign ccTLD; keep .com/.org/.net/.gov/
+# .edu/.us and generic gTLDs (a US outlet's default).
+_FOREIGN_TLDS = (
+    ".mx", ".uk", ".ca", ".au", ".in", ".de", ".fr", ".es", ".it", ".br",
+    ".ru", ".cn", ".jp", ".kr", ".za", ".ng", ".pk", ".ph", ".id", ".my",
+    ".sg", ".ae", ".ie", ".nz", ".nl", ".se", ".no", ".fi", ".dk", ".pl",
+    ".tr", ".ar", ".cl", ".pe", ".ve", ".ec", ".gt", ".bo", ".py", ".uy",
+    ".pt", ".gr", ".cz", ".ro", ".hu", ".ua", ".il", ".sa", ".qa", ".lk",
+    ".bd", ".np", ".vn", ".th", ".hk", ".tw", ".ke", ".gh", ".tz", ".ug",
+    ".zw", ".et", ".dz", ".ma", ".eg", ".jo", ".lb", ".kw", ".om", ".bh",
+)
+
+
+def _is_us_source(domain: str) -> bool:
+    d = (domain or "").strip().lower().rstrip("/")
+    if not d:
+        return True  # unknown domain — don't drop
+    return not any(d.endswith(tld) for tld in _FOREIGN_TLDS)
+
+
+def _norm_title(t: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", (t or "").lower()).strip()
+
+
+def _merge_us_sources(articles: list[dict]) -> list[dict]:
+    """Drop foreign-outlet articles, then collapse same-event duplicates (same
+    normalized title) into one entry with a merged `sources` list. `url`/`domain`
+    stay as the primary (first) source for prompt/back-compat."""
+    groups: dict[str, dict] = {}
+    order: list[str] = []
+    for a in articles:
+        if not _is_us_source(a.get("domain", "")):
+            continue
+        key = _norm_title(a.get("title", ""))
+        src = {"url": a.get("url", ""), "domain": a.get("domain", "")}
+        g = groups.get(key)
+        if g is None:
+            merged = dict(a)
+            merged["sources"] = [src] if src["url"] else []
+            groups[key] = merged
+            order.append(key)
+        else:
+            if a.get("is_new"):
+                g["is_new"] = True
+            if src["url"] and src not in g["sources"]:
+                g["sources"].append(src)
+    return [groups[k] for k in order]
+
 
 def collect_gdelt_by_county() -> dict[str, dict[str, list[dict]]]:
     """Run all GKG queries; return FIPS → {category: [articles]}.
@@ -597,7 +647,8 @@ def collect_gdelt_by_county() -> dict[str, dict[str, list[dict]]]:
     )
     for category, results in per_category.items():
         for fips, arts in results.items():
-            by_county[fips][category] = arts
+            # US-source filter + same-event dedupe with merged source links.
+            by_county[fips][category] = _merge_us_sources(arts)
 
     return {k: v for k, v in by_county.items() if any(v.values())}
 

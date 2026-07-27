@@ -12,6 +12,8 @@ import json
 import logging
 import math
 import os
+import re
+import urllib.parse
 import urllib.request
 from typing import Iterable
 
@@ -21,12 +23,20 @@ EONET_URL = os.environ.get(
     "EONET_URL",
     "https://eonet.gsfc.nasa.gov/api/v3/events?status=open&category=wildfires&days=14",
 )
+# NIFC WFIGS current incident locations — authoritative US containment/size,
+# joinable to EONET via the IRWIN incident id (UniqueFireIdentifier).
+NIFC_URL = os.environ.get(
+    "NIFC_URL",
+    "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/"
+    "WFIGS_Incident_Locations_Current/FeatureServer/0/query",
+)
 USER_AGENT = os.environ.get(
     "USER_AGENT",
     "DailyReview/1.0 (https://github.com/nationalriskreview/DailyReview)",
 )
 DEFAULT_RADIUS_MILES = float(os.environ.get("WILDFIRE_RADIUS_MILES", "50"))
 HTTP_TIMEOUT = 30
+_IRWIN_ID_RE = re.compile(r"incidents/([0-9A-Za-z-]+)")
 
 
 def _http_get_json(url: str) -> dict | None:
@@ -37,6 +47,35 @@ def _http_get_json(url: str) -> dict | None:
     except Exception as e:
         log.warning("EONET fetch failed %s: %s", url, e)
         return None
+
+
+def _fetch_nifc_by_irwin(irwin_ids: list[str]) -> dict[str, dict]:
+    """Map IRWIN UniqueFireIdentifier -> {containment_pct, incident_size, name}
+    from NIFC WFIGS. Chunked IN-queries; failures degrade to an empty map."""
+    index: dict[str, dict] = {}
+    ids = [i for i in dict.fromkeys(irwin_ids) if i]
+    for start in range(0, len(ids), 40):
+        chunk = ids[start:start + 40]
+        in_list = ",".join("'%s'" % i.replace("'", "") for i in chunk)
+        params = urllib.parse.urlencode({
+            "where": f"UniqueFireIdentifier IN ({in_list})",
+            "outFields": "UniqueFireIdentifier,IncidentName,PercentContained,IncidentSize",
+            "returnGeometry": "false",
+            "f": "json",
+        })
+        data = _http_get_json(f"{NIFC_URL}?{params}")
+        if not data:
+            continue
+        for feat in data.get("features", []):
+            a = feat.get("attributes", {})
+            fid = a.get("UniqueFireIdentifier")
+            if fid:
+                index[fid] = {
+                    "containment_pct": a.get("PercentContained"),
+                    "incident_size": a.get("IncidentSize"),
+                    "incident_name": a.get("IncidentName"),
+                }
+    return index
 
 
 def _haversine_miles(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
@@ -77,6 +116,24 @@ def fetch_wildfires_by_county(
     events = data.get("events", []) or []
     log.info("EONET open wildfires: %d events", len(events))
 
+    # Collect IRWIN ids across events and bulk-fetch NIFC containment/size.
+    def _irwin_id(ev: dict) -> str | None:
+        for s in ev.get("sources") or []:
+            if s.get("id") == "IRWIN":
+                m = _IRWIN_ID_RE.search(s.get("url", "") or "")
+                if m:
+                    return m.group(1)
+        return None
+
+    irwin_ids = [i for i in (_irwin_id(ev) for ev in events) if i]
+    try:
+        nifc = _fetch_nifc_by_irwin(irwin_ids)
+        log.info("NIFC: matched containment/size for %d of %d IRWIN incident(s)",
+                 len(nifc), len(irwin_ids))
+    except Exception as e:
+        log.warning("NIFC enrichment failed (continuing without): %s", e)
+        nifc = {}
+
     counties_list = list(counties)
     by_county: dict[str, list[dict]] = {}
 
@@ -99,13 +156,23 @@ def fetch_wildfires_by_county(
             "date": date,
             "lat": round(lat, 4),
             "lon": round(lon, 4),
+            "source_url": sources[0] if sources else ev.get("link", ""),
             "sources": sources,
         }
-        
+
         magnitude = latest.get("magnitude_value")
         mag_unit = (latest.get("magnitude_unit") or "").lower()
         if magnitude is not None and "acre" in mag_unit:
             record_base["acreage"] = magnitude
+
+        # NIFC enrichment: authoritative containment %, and size as a fallback.
+        info = nifc.get(_irwin_id(ev) or "")
+        if info:
+            record_base["containment_pct"] = info.get("containment_pct")
+            if "acreage" not in record_base and info.get("incident_size") is not None:
+                record_base["acreage"] = info["incident_size"]
+        else:
+            record_base["containment_pct"] = None
 
         for c in counties_list:
             grid_points = c.get("grid", [{"lat": c["lat"], "lon": c["lon"]}])
