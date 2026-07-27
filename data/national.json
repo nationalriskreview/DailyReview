@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-26T23:32:31.030741+00:00",
-  "date": "2026-07-26",
+  "generated_at": "2026-07-27T11:05:05.044497+00:00",
+  "date": "2026-07-27",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 782
+      "counties_with_alerts": 664
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 347
+      "counties_over_threshold": 445
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 58,
+      "counties_with_matches": 34,
       "items_pre_llm": {
-        "protest": 81,
-        "utility_outage": 9,
-        "transit_disruption": 8,
+        "protest": 35,
+        "utility_outage": 13,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
-        "road_closure": 21
+        "hazmat_incident": 0,
+        "road_closure": 0
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 21,
+      "counties_with_matches": 19,
       "items_post_llm": {
-        "protest": 23,
-        "utility_outage": 4,
+        "protest": 7,
+        "utility_outage": 13,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 4
+        "road_closure": 0
       },
-      "unique_articles": 68,
-      "calls_used": 68,
+      "unique_articles": 27,
+      "calls_used": 27,
       "cap": 300,
       "cap_hit": false
     },
-    "wildfires_eonet": {
+    "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 137
+      "counties_with_alerts": 239
     },
     "transit": {
       "status": "ok",
@@ -160,12 +160,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 1
+      "national_items": 2,
+      "counties_with_alerts": 10
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 3,
+      "active_incidents": 4,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -209,13 +209,13 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "anthropic",
@@ -251,7 +251,7 @@
           "key": "docusign",
           "name": "DocuSign",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "cisco_meraki",
@@ -566,6 +566,16 @@
       "start": "Jun 29 at 19:21 UTC.",
       "reopen": "Dec 30 at 18:00 UTC.",
       "source": "FAA NAS Status"
+    },
+    {
+      "kind": "ground_stop",
+      "code": "ORD",
+      "name": "Chicago O'Hare Intl",
+      "city": "Chicago",
+      "state": "IL",
+      "reason": "airspace volume",
+      "end": "6:45 am CDT",
+      "source": "FAA NAS Status"
     }
   ],
   "service_outages": [
@@ -581,14 +591,25 @@
       "source": "provider status page"
     },
     {
-      "provider": "OpenAI",
-      "key": "openai",
-      "title": "Elevated errors affecting ChatGPT conversations",
+      "provider": "Zoom",
+      "key": "zoom",
+      "title": "Service Degradation Affecting Offline Meeting transcription in US Region.",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-07-25T22:09:27Z",
-      "updated": "2026-07-25T23:57:40Z",
-      "url": "https://status.openai.com",
+      "status": "identified",
+      "started": "2026-07-27T02:08:58.427-07:00",
+      "updated": "2026-07-27T03:02:07.563-07:00",
+      "url": "https://stspg.io/5bwhcxdf3rjm",
+      "source": "provider status page"
+    },
+    {
+      "provider": "DocuSign",
+      "key": "docusign",
+      "title": "Qualified Verification Latency (Incident 5472)",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-07-27T10:45:39.701Z",
+      "updated": "2026-07-27T10:45:39.766Z",
+      "url": "https://stspg.io/thlkhkb73xw7",
       "source": "provider status page"
     },
     {

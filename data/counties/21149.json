@@ -10,18 +10,32 @@
   "alerts": {
     "weather": [
       {
-        "event": "Severe Thunderstorm Warning",
-        "headline": "Severe Thunderstorm Warning issued July 26 at 6:14PM CDT until July 26 at 7:00PM CDT by NWS Paducah KY",
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued July 27 at 12:32AM CDT until July 27 at 7:00PM CDT by NWS Paducah KY",
         "severity": "Severe",
-        "urgency": "Immediate",
-        "effective": "2026-07-26T18:14:00-05:00",
-        "expires": "2026-07-26T19:00:00-05:00",
+        "urgency": "Expected",
+        "effective": "2026-07-27T00:32:00-05:00",
+        "expires": "2026-07-27T19:00:00-05:00",
         "source": "nws_alert",
         "count": 1
       }
     ],
     "protest": [],
-    "utility_outage": [],
+    "utility_outage": [
+      {
+        "title": "Latest power outages in the Tri-State",
+        "url": "https://www.14news.com/2026/07/27/latest-power-outages-tri-state/",
+        "domain": "14news.com",
+        "seendate": "20260727040000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.14news.com/2026/07/27/latest-power-outages-tri-state/",
+            "domain": "14news.com"
+          }
+        ]
+      }
+    ],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -33,25 +47,24 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.07,
-      "precip_probability_pct": 60,
+      "precip_in_24h": 0.39,
+      "precip_probability_pct": 99,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 91.0,
-      "low_temp_f": 74.0,
-      "high_apparent_temp_f": 111.0,
-      "low_apparent_temp_f": 74.0,
-      "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 9.2,
-      "thunder_probability_pct": 40,
+      "high_temp_f": 94.0,
+      "low_temp_f": 71.0,
+      "high_apparent_temp_f": 112.0,
+      "low_apparent_temp_f": 71.0,
+      "max_wind_mph": 13.8,
+      "max_wind_gust_mph": 13.8,
+      "thunder_probability_pct": 36,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
-        "light rain showers",
-        "heavy thunderstorms"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
@@ -59,16 +72,16 @@
     "air_quality": {
       "us_aqi": 63,
       "category": "Moderate",
-      "aqi_24h_max": 65,
+      "aqi_24h_max": 66,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 16.5,
-      "pm10": 17.6,
-      "ozone": 95.0,
-      "nitrogen_dioxide": 3.9,
-      "observed_at": "2026-07-26T23:00",
+      "pm2_5": 9.3,
+      "pm10": 9.6,
+      "ozone": 52.0,
+      "nitrogen_dioxide": 7.0,
+      "observed_at": "2026-07-27T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-26",
-  "generated_at": "2026-07-26T23:32:31.030741+00:00"
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T11:05:05.044497+00:00"
 }

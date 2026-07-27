@@ -8,25 +8,33 @@
     "lon": -120.71837
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued July 26 at 1:51PM PDT until July 26 at 8:00PM PDT by NWS Medford OR",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-07-26T13:22:00-07:00",
-        "expires": "2026-07-26T21:00:00-07:00",
-        "source": "nws_alert",
-        "count": 2
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "LOOMIS",
+        "incident_name": "LOOMIS",
+        "id": "2026-CALMU-004291",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-07-11T19:02:35+00:00",
+        "lat": 40.9658,
+        "lon": -121.1547,
+        "acreage": 656,
+        "containment_pct": 95,
+        "cause": "Undetermined",
+        "state": "CA",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-CALMU-004291",
+        "source": "NIFC WFIGS",
+        "distance_miles": 48.9,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
@@ -45,26 +53,28 @@
       "high_apparent_temp_f": 82.0,
       "low_apparent_temp_f": 49.0,
       "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 33.4,
+      "max_wind_gust_mph": 29.9,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "smoke"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
       "us_aqi": 41,
       "category": "Good",
-      "aqi_24h_max": 65,
+      "aqi_24h_max": 52,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 1.2,
-      "pm10": 1.5,
-      "ozone": 108.0,
-      "nitrogen_dioxide": 0.3,
-      "observed_at": "2026-07-26T23:00",
+      "pm2_5": 2.1,
+      "pm10": 2.4,
+      "ozone": 48.0,
+      "nitrogen_dioxide": 10.6,
+      "observed_at": "2026-07-27T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-26",
-  "generated_at": "2026-07-26T23:32:31.030741+00:00"
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T11:05:05.044497+00:00"
 }

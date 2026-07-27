@@ -8,18 +8,7 @@
     "lon": -119.663269
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued July 26 at 1:22PM PDT until July 26 at 9:00PM PDT by NWS Reno NV",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-07-26T13:22:00-07:00",
-        "expires": "2026-07-26T21:00:00-07:00",
-        "source": "nws_alert",
-        "count": 1
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -28,16 +17,20 @@
     "road_closure": [],
     "wildfires": [
       {
-        "title": "Wildfire BISCAR, Lassen, California",
-        "id": "EONET_21420",
+        "title": "BISCAR",
+        "incident_name": "BISCAR",
+        "id": "2026-CANOD-004474",
         "category": "wildfire",
-        "date": "2026-07-18T14:11:00Z",
+        "incident_type": "Wildfire",
+        "date": "2026-07-18T18:06:09+00:00",
         "lat": 40.6182,
         "lon": -120.3038,
-        "sources": [
-          "https://irwin.doi.gov/observer/incidents/2026-CANOD-004474"
-        ],
-        "acreage": 12338.0,
+        "acreage": 69352,
+        "containment_pct": 92,
+        "cause": "Undetermined",
+        "state": "CA",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-CANOD-004474",
+        "source": "NIFC WFIGS",
         "distance_miles": 10.5,
         "threat_level": "Immediate"
       }
@@ -48,7 +41,7 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
@@ -63,23 +56,25 @@
       "max_wind_gust_mph": 34.5,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "smoke"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 47,
+      "us_aqi": 44,
       "category": "Good",
-      "aqi_24h_max": 65,
+      "aqi_24h_max": 58,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 1.4,
-      "pm10": 1.5,
-      "ozone": 114.0,
-      "nitrogen_dioxide": 0.3,
-      "observed_at": "2026-07-26T23:00",
+      "pm2_5": 0.9,
+      "pm10": 1.1,
+      "ozone": 63.0,
+      "nitrogen_dioxide": 4.6,
+      "observed_at": "2026-07-27T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-26",
-  "generated_at": "2026-07-26T23:32:31.030741+00:00"
+  "date": "2026-07-27",
+  "generated_at": "2026-07-27T11:05:05.044497+00:00"
 }
