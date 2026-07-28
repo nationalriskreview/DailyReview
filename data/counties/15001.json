@@ -8,7 +8,18 @@
     "lon": -155.502443
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "High Surf Warning",
+        "headline": "High Surf Warning issued July 27 at 3:03PM HST until July 29 at 6:00PM HST by NWS Honolulu HI",
+        "severity": "Moderate",
+        "urgency": "Expected",
+        "effective": "2026-07-27T15:03:00-10:00",
+        "expires": "2026-07-28T04:15:00-10:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -19,44 +30,57 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [],
+    "fema": [
+      {
+        "disaster_number": "5650",
+        "declaration_type": "FM",
+        "declaration_title": "KAWAIHAE ROAD FIRE",
+        "incident_type": "Fire",
+        "declared_at": "2026-07-26T00:00:00.000Z",
+        "is_new_today": false,
+        "incident_begin": "2026-07-26T00:00:00.000Z",
+        "incident_end": null,
+        "designated_area": "Hawaii (County)",
+        "fema_declaration_string": "FM-5650-HI",
+        "source": "https://www.fema.gov/disaster/5650"
+      }
+    ],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.79,
-      "precip_probability_pct": 54,
+      "precip_in_24h": 0.58,
+      "precip_probability_pct": 59,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 74.0,
-      "low_temp_f": 50.0,
-      "high_apparent_temp_f": 74.0,
-      "low_apparent_temp_f": 46.0,
-      "max_wind_mph": 18.4,
-      "max_wind_gust_mph": 25.3,
+      "high_temp_f": 77.0,
+      "low_temp_f": 51.0,
+      "high_apparent_temp_f": 77.0,
+      "low_apparent_temp_f": 51.0,
+      "max_wind_mph": 19.6,
+      "max_wind_gust_mph": 26.5,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
-        "moderate rain showers",
-        "heavy rain showers"
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 24,
+      "us_aqi": 19,
       "category": "Good",
-      "aqi_24h_max": 30,
+      "aqi_24h_max": 28,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.7,
-      "pm10": 4.1,
-      "ozone": 40.0,
-      "nitrogen_dioxide": 1.4,
-      "observed_at": "2026-07-27T10:00",
+      "pm2_5": 1.6,
+      "pm10": 2.3,
+      "ozone": 29.0,
+      "nitrogen_dioxide": 1.2,
+      "observed_at": "2026-07-28T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-27",
-  "generated_at": "2026-07-27T11:05:05.044497+00:00"
+  "date": "2026-07-28",
+  "generated_at": "2026-07-28T10:12:38.313904+00:00"
 }

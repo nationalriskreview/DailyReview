@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-27T11:05:05.044497+00:00",
-  "date": "2026-07-27",
+  "generated_at": "2026-07-28T10:12:38.313904+00:00",
+  "date": "2026-07-28",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 664
+      "counties_with_alerts": 272
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 445
+      "counties_over_threshold": 613
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 34,
+      "counties_with_matches": 74,
       "items_pre_llm": {
-        "protest": 35,
-        "utility_outage": 13,
-        "transit_disruption": 0,
-        "service_provider_outage": 0,
+        "protest": 47,
+        "utility_outage": 35,
+        "transit_disruption": 4,
+        "service_provider_outage": 10,
         "hazmat_incident": 0,
-        "road_closure": 0
+        "road_closure": 17
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 19,
+      "counties_with_matches": 38,
       "items_post_llm": {
-        "protest": 7,
-        "utility_outage": 13,
-        "transit_disruption": 0,
-        "service_provider_outage": 0,
+        "protest": 8,
+        "utility_outage": 33,
+        "transit_disruption": 1,
+        "service_provider_outage": 5,
         "hazmat_incident": 0,
-        "road_closure": 0
+        "road_closure": 13
       },
-      "unique_articles": 27,
-      "calls_used": 27,
+      "unique_articles": 43,
+      "calls_used": 43,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 239
+      "counties_with_alerts": 247
     },
     "transit": {
       "status": "ok",
@@ -135,7 +135,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 144
+      "counties_with_alerts": 145
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -161,11 +161,11 @@
     "aviation_faa": {
       "status": "ok",
       "national_items": 2,
-      "counties_with_alerts": 10
+      "counties_with_alerts": 6
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 4,
+      "active_incidents": 3,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -209,7 +209,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "openai",
@@ -233,7 +233,7 @@
           "key": "slack",
           "name": "Slack",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "dropbox",
@@ -251,7 +251,7 @@
           "key": "docusign",
           "name": "DocuSign",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "cisco_meraki",
@@ -558,6 +558,17 @@
   "faa_advisories": [
     {
       "kind": "airport_closure",
+      "code": "SNA",
+      "name": "John Wayne / Orange County",
+      "city": "Santa Ana",
+      "state": "CA",
+      "reason": "!SNA 07/047 SNA AD AP CLSD DLY 0630-1315 2607280630-2608011315",
+      "start": "Jul 28 at 06:30 UTC.",
+      "reopen": "Aug 01 at 13:15 UTC.",
+      "source": "FAA NAS Status"
+    },
+    {
+      "kind": "airport_closure",
       "code": "HNL",
       "name": "Daniel K. Inouye Intl Honolulu",
       "city": "Honolulu",
@@ -566,61 +577,40 @@
       "start": "Jun 29 at 19:21 UTC.",
       "reopen": "Dec 30 at 18:00 UTC.",
       "source": "FAA NAS Status"
-    },
-    {
-      "kind": "ground_stop",
-      "code": "ORD",
-      "name": "Chicago O'Hare Intl",
-      "city": "Chicago",
-      "state": "IL",
-      "reason": "airspace volume",
-      "end": "6:45 am CDT",
-      "source": "FAA NAS Status"
     }
   ],
   "service_outages": [
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Minor Service Outage",
+      "title": "Network Performance Issues in Istanbul",
       "impact": "minor",
+      "status": "investigating",
+      "started": "2026-07-28T09:22:57.821Z",
+      "updated": "2026-07-28T09:23:10.422Z",
+      "url": "https://stspg.io/z21s0j68zs7h",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Slack",
+      "key": "slack",
+      "title": "Feature Degradation Affecting the Receipt of Emails in Slack",
+      "impact": "incident",
       "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Zoom",
-      "key": "zoom",
-      "title": "Service Degradation Affecting Offline Meeting transcription in US Region.",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-07-27T02:08:58.427-07:00",
-      "updated": "2026-07-27T03:02:07.563-07:00",
-      "url": "https://stspg.io/5bwhcxdf3rjm",
-      "source": "provider status page"
-    },
-    {
-      "provider": "DocuSign",
-      "key": "docusign",
-      "title": "Qualified Verification Latency (Incident 5472)",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-07-27T10:45:39.701Z",
-      "updated": "2026-07-27T10:45:39.766Z",
-      "url": "https://stspg.io/thlkhkb73xw7",
+      "started": "2026-07-27T19:13:57-07:00",
+      "updated": "2026-07-27T20:44:07-07:00",
+      "url": "https://slack-status.com/2026-07/6b1014d8bfb3afc0",
       "source": "provider status page"
     },
     {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "Partially Degraded Service",
+      "title": "Azure westeurope, southcentralus outage impacting Cloud NGFW Services.",
       "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.paloaltonetworks.com",
+      "status": "monitoring",
+      "started": "2026-07-07T18:06:05.000Z",
+      "updated": "2026-07-27T19:02:50.086Z",
+      "url": "https://stspg.io/zfhnnrf4ksg7",
       "source": "provider status page"
     }
   ]

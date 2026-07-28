@@ -8,52 +8,91 @@
     "lon": -117.777207
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued July 28 at 1:56AM PDT until August 2 at 8:00PM PDT by NWS San Diego CA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-07-28T01:56:00-07:00",
+        "expires": "2026-07-28T15:45:00-07:00",
+        "source": "nws_alert",
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
-    "service_provider_outage": [],
+    "service_provider_outage": [
+      {
+        "title": "Are T-Mobile and Verizon Down? Users Report Outages",
+        "url": "https://www.newsweek.com/t-mobile-outage-down-detector-12251473",
+        "domain": "newsweek.com",
+        "seendate": "20260728100000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.newsweek.com/t-mobile-outage-down-detector-12251473",
+            "domain": "newsweek.com"
+          }
+        ]
+      }
+    ],
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "airport_closure",
+        "code": "SNA",
+        "name": "John Wayne / Orange County",
+        "city": "Santa Ana",
+        "state": "CA",
+        "reason": "!SNA 07/047 SNA AD AP CLSD DLY 0630-1315 2607280630-2608011315",
+        "start": "Jul 28 at 06:30 UTC.",
+        "reopen": "Aug 01 at 13:15 UTC.",
+        "source": "FAA NAS Status"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 2,
+      "precip_probability_pct": 1,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 88.0,
-      "low_temp_f": 70.0,
-      "high_apparent_temp_f": 92.0,
-      "low_apparent_temp_f": 70.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 16.1,
+      "high_temp_f": 86.0,
+      "low_temp_f": 69.0,
+      "high_apparent_temp_f": 90.0,
+      "low_apparent_temp_f": 69.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 15.0,
       "thunder_probability_pct": 1,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "fog"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 54,
-      "category": "Moderate",
-      "aqi_24h_max": 55,
-      "aqi_24h_max_category": "Moderate",
+      "us_aqi": 49,
+      "category": "Good",
+      "aqi_24h_max": 50,
+      "aqi_24h_max_category": "Good",
       "pm2_5": 6.9,
-      "pm10": 9.8,
-      "ozone": 38.0,
-      "nitrogen_dioxide": 11.7,
-      "observed_at": "2026-07-27T10:00",
+      "pm10": 9.3,
+      "ozone": 33.0,
+      "nitrogen_dioxide": 15.0,
+      "observed_at": "2026-07-28T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-27",
-  "generated_at": "2026-07-27T11:05:05.044497+00:00"
+  "date": "2026-07-28",
+  "generated_at": "2026-07-28T10:12:38.313904+00:00"
 }

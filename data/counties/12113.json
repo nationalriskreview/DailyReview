@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued July 27 at 9:18PM CDT until July 28 at 9:00PM CDT by NWS Mobile AL",
         "severity": "Severe",
-        "source": "nws_forecast"
+        "urgency": "Expected",
+        "effective": "2026-07-27T21:18:00-05:00",
+        "expires": "2026-07-28T13:00:00-05:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -32,17 +36,17 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.02,
-      "precip_probability_pct": 26,
+      "precip_in_24h": 0.04,
+      "precip_probability_pct": 35,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 98.0,
+      "high_temp_f": 99.0,
       "low_temp_f": 77.0,
-      "high_apparent_temp_f": 110.0,
+      "high_apparent_temp_f": 112.0,
       "low_apparent_temp_f": 77.0,
       "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 16.1,
-      "thunder_probability_pct": 26,
+      "max_wind_gust_mph": 13.8,
+      "thunder_probability_pct": 35,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
@@ -52,18 +56,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 54,
+      "us_aqi": 62,
       "category": "Moderate",
-      "aqi_24h_max": 56,
+      "aqi_24h_max": 65,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 6.7,
-      "pm10": 7.8,
-      "ozone": 53.0,
-      "nitrogen_dioxide": 6.7,
-      "observed_at": "2026-07-27T10:00",
+      "pm2_5": 15.3,
+      "pm10": 17.3,
+      "ozone": 48.0,
+      "nitrogen_dioxide": 10.4,
+      "observed_at": "2026-07-28T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-27",
-  "generated_at": "2026-07-27T11:05:05.044497+00:00"
+  "date": "2026-07-28",
+  "generated_at": "2026-07-28T10:12:38.313904+00:00"
 }
