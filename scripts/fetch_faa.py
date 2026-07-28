@@ -3,11 +3,16 @@
 Source: https://nasstatus.faa.gov/api/airport-status-information (XML, ~2KB).
 
 Why we don't surface every "closure" in the feed:
-  The FAA feed's Airport_Closure_List mixes true operational closures with
-  long-running NOTAMs that restrict only general-aviation aircraft (e.g.
-  "AD AP CLSD TO NON SKED TRANSIENT GA ACFT EXC PPR" — commercial scheduled
-  service is unaffected). We parse the NOTAM text and drop GA-only / non-
-  scheduled-only entries.
+  The FAA feed's Airport_Closure_List mixes true operational closures with:
+    - Restricted closures — "CLSD TO <subset>" (non-scheduled / GA / transient
+      / a specific aircraft type like F-35). Commercial scheduled service is
+      unaffected.
+    - Recurring daily closures — "CLSD ... DLY 0630-1315" is a scheduled
+      time-of-day closure (e.g. SNA's overnight noise curfew), repeated every
+      day of the NOTAM's validity. That's the published schedule, not a
+      disruption.
+  We parse the NOTAM text and drop both. Only airport-wide, non-recurring
+  closures affecting commercial service are surfaced.
 
 Why we don't surface every delay:
   Ground Delay Programs and Arrival/Departure Delays are routine — surfacing
@@ -45,14 +50,15 @@ USER_AGENT = os.environ.get(
 )
 REFERENCE_DIR = Path(__file__).resolve().parent.parent / "reference"
 
-# NOTAM reason patterns that indicate the closure restricts only a subset of
-# aircraft — commercial scheduled service is unaffected. Reject these.
-_NOTAM_REJECT_PATTERNS = (
-    re.compile(r"\bCLSD\s+TO\s+NON\s+SKED\b", re.IGNORECASE),
-    re.compile(r"\bCLSD\s+TO\s+NON\s+SCHEDULED\b", re.IGNORECASE),
-    re.compile(r"\bCLSD\s+TO\b[^.]*\bGA\s+ACFT\b", re.IGNORECASE),
-    re.compile(r"\bCLSD\s+TO\b[^.]*\bTRANSIENT\b", re.IGNORECASE),
-)
+# A closure "TO <subset>" restricts only some aircraft (non-scheduled, GA,
+# transient, a specific type) — commercial scheduled service is unaffected.
+# "CLSD TO ALL[ ACFT]" is a genuine full closure, so it is NOT rejected.
+_CLSD_TO_SUBSET = re.compile(r"\bCLSD\s+TO\b(?!\s+ALL\b)", re.IGNORECASE)
+
+# A recurring daily time-of-day closure — e.g. "DLY 0630-1315" (SNA noise
+# curfew). Scheduled/expected, not an operational disruption. The trailing
+# NOTAM validity stamp uses 10-digit datetimes, so \d{3,4}-\d{3,4} won't match it.
+_DAILY_WINDOW = re.compile(r"\bDLY\s+\d{3,4}\s*-\s*\d{3,4}\b", re.IGNORECASE)
 
 
 def _load_airports() -> dict[str, dict]:
@@ -74,11 +80,16 @@ def _http_get(url: str) -> bytes | None:
 
 
 def _closure_is_severe(reason: str) -> bool:
-    """True if NOTAM language indicates an airport-wide closure (commercial
-    service affected). False if it's a GA-only / non-scheduled-only NOTAM."""
+    """True if NOTAM language indicates an airport-wide, non-recurring closure
+    affecting commercial service. False for restricted ("CLSD TO <subset>") or
+    recurring-daily-window ("DLY 0630-1315") closures."""
     if not reason:
         return True  # missing reason → don't second-guess, surface it
-    return not any(p.search(reason) for p in _NOTAM_REJECT_PATTERNS)
+    if _DAILY_WINDOW.search(reason):
+        return False
+    if _CLSD_TO_SUBSET.search(reason):
+        return False
+    return True
 
 
 def _text(el, tag: str) -> str:
