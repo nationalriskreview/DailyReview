@@ -1,10 +1,10 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-29T10:13:20.287752+00:00",
-  "date": "2026-07-29",
+  "generated_at": "2026-07-30T09:57:06.862735+00:00",
+  "date": "2026-07-30",
   "state": "PR",
   "counties_total": 78,
-  "counties_with_alerts": 24,
+  "counties_with_alerts": 63,
   "counties": {
     "72001": {
       "fips": "72001",
@@ -28,36 +28,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 70.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 70.0,
+          "high_temp_f": 83.0,
+          "low_temp_f": 69.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 69.0,
           "max_wind_mph": 10.4,
           "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "haze",
-            "moderate rain showers",
-            "light rain showers"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 20.1,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.2,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -69,10 +68,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -91,69 +94,13 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.59,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
+          "high_temp_f": 93.0,
           "low_temp_f": 75.0,
           "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "haze",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 38,
-          "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 11.5,
-          "pm10": 23.3,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72005": {
-      "fips": "72005",
-      "name": "Aguadilla Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.6,
-          "precip_probability_pct": 60,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 105.0,
           "low_apparent_temp_f": 75.0,
           "max_wind_mph": 12.7,
           "max_wind_gust_mph": 17.3,
@@ -161,65 +108,7 @@
           "lightning_activity_level": 2,
           "weather": [
             "haze",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 38,
-          "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 11.5,
-          "pm10": 23.3,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72007": {
-      "fips": "72007",
-      "name": "Aguas Buenas Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.21,
-          "precip_probability_pct": 40,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 94.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "moderate rain showers",
-            "light rain showers",
-            "haze",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -229,11 +118,144 @@
           "category": "Moderate",
           "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
+          "pm2_5": 8.4,
+          "pm10": 16.8,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72005": {
+      "fips": "72005",
+      "name": "Aguadilla Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.07,
+          "precip_probability_pct": 20,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 91.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "haze",
+            "moderate rain showers",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 53,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.4,
+          "pm10": 16.8,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72007": {
+      "fips": "72007",
+      "name": "Aguas Buenas Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.07,
+          "precip_probability_pct": 10,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 94.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "haze",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 55,
+          "category": "Moderate",
+          "aqi_24h_max": 57,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
           "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -260,35 +282,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.08,
+          "precip_in_24h": 0.04,
           "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
+          "high_temp_f": 85.0,
           "low_temp_f": 71.0,
           "high_apparent_temp_f": 88.0,
           "low_apparent_temp_f": 71.0,
-          "max_wind_mph": 16.1,
+          "max_wind_mph": 15.0,
           "max_wind_gust_mph": 19.6,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
-            "haze"
+            "haze",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.6,
-          "pm10": 15.9,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 8.2,
+          "pm10": 18.3,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -300,10 +322,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -322,36 +348,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.59,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 94.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 114.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 9.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "haze",
-            "moderate rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
-          "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 11.5,
-          "pm10": 23.3,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 53,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.4,
+          "pm10": 16.8,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -363,10 +388,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -385,37 +414,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 93.0,
           "low_temp_f": 75.0,
-          "high_apparent_temp_f": 110.0,
+          "high_apparent_temp_f": 107.0,
           "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 26.5,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 27.6,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "haze",
-            "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 46,
-          "category": "Good",
-          "aqi_24h_max": 51,
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 17.8,
-          "ozone": 26.0,
-          "nitrogen_dioxide": 1.0,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.0,
+          "pm10": 13.7,
+          "ozone": 37.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -427,10 +454,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -449,35 +480,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
+          "high_temp_f": 90.0,
           "low_temp_f": 80.0,
-          "high_apparent_temp_f": 108.0,
-          "low_apparent_temp_f": 86.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 85.0,
           "max_wind_mph": 15.0,
           "max_wind_gust_mph": 25.3,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
-            "haze"
+            "haze",
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 53,
           "category": "Moderate",
           "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.4,
-          "pm10": 9.3,
-          "ozone": 33.0,
+          "pm2_5": 8.5,
+          "pm10": 18.9,
+          "ozone": 42.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -489,10 +521,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -511,36 +547,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 21.9,
-          "max_wind_gust_mph": 27.6,
+          "high_temp_f": 93.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 23.0,
+          "max_wind_gust_mph": 28.8,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
             "haze",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -567,11 +602,11 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.08,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.03,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
+          "high_temp_f": 83.0,
           "low_temp_f": 71.0,
           "high_apparent_temp_f": 87.0,
           "low_apparent_temp_f": 71.0,
@@ -580,23 +615,22 @@
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "haze",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -606,7 +640,18 @@
       "name": "BayamÃ³n Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -620,40 +665,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.18,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.07,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
+          "high_temp_f": 89.0,
           "low_temp_f": 77.0,
-          "high_apparent_temp_f": 105.0,
+          "high_apparent_temp_f": 103.0,
           "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 21.9,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 20.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
-            "moderate rain showers",
             "haze",
-            "thunderstorms"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
           "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -663,7 +707,18 @@
       "name": "Cabo Rojo Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -677,19 +732,152 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.03,
           "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
+          "high_temp_f": 93.0,
           "low_temp_f": 77.0,
           "high_apparent_temp_f": 103.0,
           "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 38.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 36.8,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "haze",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 54,
+          "category": "Moderate",
+          "aqi_24h_max": 55,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 9.5,
+          "pm10": 21.4,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72025": {
+      "fips": "72025",
+      "name": "Caguas Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.09,
+          "precip_probability_pct": 20,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "haze",
+            "light rain showers",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 55,
+          "category": "Moderate",
+          "aqi_24h_max": 57,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72027": {
+      "fips": "72027",
+      "name": "Camuy Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 10,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 89.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 99.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 27.6,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -702,127 +890,13 @@
         "air_quality": {
           "us_aqi": 52,
           "category": "Moderate",
-          "aqi_24h_max": 54,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.4,
-          "pm10": 25.8,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 0.6,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72025": {
-      "fips": "72025",
-      "name": "Caguas Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.22,
-          "precip_probability_pct": 40,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "moderate rain showers",
-            "haze",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 53,
-          "category": "Moderate",
           "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
-          "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72027": {
-      "fips": "72027",
-      "name": "Camuy Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.6,
-          "precip_probability_pct": 60,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 100.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "haze",
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 46,
-          "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 17.8,
-          "ozone": 26.0,
-          "nitrogen_dioxide": 1.0,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.0,
+          "pm10": 13.7,
+          "ozone": 37.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -834,10 +908,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -856,36 +934,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.17,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.13,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 23.0,
+          "high_temp_f": 93.0,
+          "low_temp_f": 78.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 78.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 20.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
+            "light rain showers",
             "haze",
-            "light rain showers"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
           "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -895,7 +973,18 @@
       "name": "Carolina Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -909,39 +998,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.13,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
+          "high_temp_f": 94.0,
           "low_temp_f": 79.0,
-          "high_apparent_temp_f": 105.0,
+          "high_apparent_temp_f": 106.0,
           "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 26.5,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 23.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
             "light rain showers",
-            "haze"
+            "haze",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
           "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -953,10 +1042,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -975,36 +1068,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.17,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
+          "high_temp_f": 90.0,
           "low_temp_f": 81.0,
           "high_apparent_temp_f": 108.0,
-          "low_apparent_temp_f": 89.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 26.5,
+          "low_apparent_temp_f": 88.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 24.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
+            "haze",
             "moderate rain showers",
-            "light rain showers",
-            "haze"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
           "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1014,7 +1107,18 @@
       "name": "Cayey Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1028,39 +1132,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.12,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.07,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
+          "high_temp_f": 85.0,
           "low_temp_f": 71.0,
           "high_apparent_temp_f": 90.0,
           "low_apparent_temp_f": 71.0,
-          "max_wind_mph": 16.1,
+          "max_wind_mph": 15.0,
           "max_wind_gust_mph": 19.6,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
             "haze",
+            "moderate rain showers",
             "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 53,
           "category": "Moderate",
           "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.4,
-          "pm10": 9.3,
-          "ozone": 33.0,
+          "pm2_5": 8.5,
+          "pm10": 18.9,
+          "ozone": 42.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1070,7 +1174,18 @@
       "name": "Ceiba Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1084,39 +1199,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.16,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 88.0,
           "low_temp_f": 81.0,
-          "high_apparent_temp_f": 102.0,
-          "low_apparent_temp_f": 88.0,
+          "high_apparent_temp_f": 100.0,
+          "low_apparent_temp_f": 87.0,
           "max_wind_mph": 18.4,
           "max_wind_gust_mph": 23.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
             "light rain showers",
-            "haze"
+            "haze",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 57,
           "category": "Moderate",
-          "aqi_24h_max": 54,
+          "aqi_24h_max": 59,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 4.2,
-          "pm10": 7.9,
-          "ozone": 37.0,
+          "pm2_5": 11.3,
+          "pm10": 27.1,
+          "ozone": 46.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1143,36 +1258,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 100.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 15.0,
+          "high_temp_f": 89.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 99.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "haze",
             "moderate rain showers",
-            "thunderstorms"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1182,7 +1297,18 @@
       "name": "Cidra Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1196,39 +1322,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.2,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 73.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 74.0,
           "high_apparent_temp_f": 94.0,
-          "low_apparent_temp_f": 73.0,
+          "low_apparent_temp_f": 74.0,
           "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 19.6,
+          "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
+            "haze",
             "moderate rain showers",
-            "haze"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 53,
           "category": "Moderate",
           "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.4,
-          "pm10": 9.3,
-          "ozone": 33.0,
+          "pm2_5": 8.5,
+          "pm10": 18.9,
+          "ozone": 42.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1255,35 +1381,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 8,
+          "precip_in_24h": 0.02,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
+          "high_temp_f": 91.0,
           "low_temp_f": 75.0,
-          "high_apparent_temp_f": 100.0,
+          "high_apparent_temp_f": 101.0,
           "low_apparent_temp_f": 75.0,
           "max_wind_mph": 16.1,
           "max_wind_gust_mph": 19.6,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
-            "haze"
+            "haze",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.6,
-          "pm10": 15.9,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 8.2,
+          "pm10": 18.3,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1293,7 +1419,18 @@
       "name": "ComerÃ­o Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1307,39 +1444,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.17,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
+          "high_temp_f": 88.0,
           "low_temp_f": 74.0,
-          "high_apparent_temp_f": 98.0,
+          "high_apparent_temp_f": 97.0,
           "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 15.0,
+          "max_wind_mph": 13.8,
           "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
+            "haze",
             "light rain showers",
             "moderate rain showers",
-            "haze"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1366,36 +1504,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.14,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 9,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 75.0,
+          "high_temp_f": 88.0,
+          "low_temp_f": 74.0,
           "high_apparent_temp_f": 95.0,
-          "low_apparent_temp_f": 75.0,
+          "low_apparent_temp_f": 74.0,
           "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 17.3,
+          "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "haze",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1405,7 +1542,18 @@
       "name": "Culebra Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1419,39 +1567,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.1,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 86.0,
           "low_temp_f": 80.0,
-          "high_apparent_temp_f": 98.0,
-          "low_apparent_temp_f": 86.0,
-          "max_wind_mph": 21.9,
-          "max_wind_gust_mph": 29.9,
+          "high_apparent_temp_f": 97.0,
+          "low_apparent_temp_f": 85.0,
+          "max_wind_mph": 23.0,
+          "max_wind_gust_mph": 31.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
             "light rain showers",
-            "haze"
+            "haze",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 60,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 61,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 10.7,
-          "ozone": 37.0,
+          "pm2_5": 11.5,
+          "pm10": 25.9,
+          "ozone": 47.0,
           "nitrogen_dioxide": 0.3,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1463,10 +1611,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -1485,36 +1637,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.15,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
+          "high_temp_f": 91.0,
           "low_temp_f": 79.0,
-          "high_apparent_temp_f": 110.0,
+          "high_apparent_temp_f": 109.0,
           "low_apparent_temp_f": 79.0,
           "max_wind_mph": 20.7,
           "max_wind_gust_mph": 27.6,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
+            "haze",
             "light rain showers",
-            "moderate rain showers",
-            "haze"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1524,7 +1676,18 @@
       "name": "Fajardo Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1538,38 +1701,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.12,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.09,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 84.0,
           "low_temp_f": 82.0,
           "high_apparent_temp_f": 95.0,
-          "low_apparent_temp_f": 90.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 27.6,
+          "low_apparent_temp_f": 89.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 28.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 57,
           "category": "Moderate",
-          "aqi_24h_max": 54,
+          "aqi_24h_max": 59,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 4.2,
-          "pm10": 7.9,
-          "ozone": 37.0,
+          "pm2_5": 11.3,
+          "pm10": 27.1,
+          "ozone": 46.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1579,7 +1742,18 @@
       "name": "Florida Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1593,40 +1767,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 90.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 20.7,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
             "haze",
-            "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1636,7 +1808,18 @@
       "name": "GuÃ¡nica Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1650,23 +1833,22 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 77.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 76.0,
           "max_wind_mph": 20.7,
           "max_wind_gust_mph": 34.5,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
-            "moderate rain showers",
             "haze",
             "light rain showers"
           ],
@@ -1674,15 +1856,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 20.1,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.2,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1692,7 +1874,18 @@
       "name": "Guayama Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1706,38 +1899,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
+          "high_temp_f": 90.0,
           "low_temp_f": 79.0,
-          "high_apparent_temp_f": 105.0,
+          "high_apparent_temp_f": 103.0,
           "low_apparent_temp_f": 79.0,
           "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 27.6,
+          "max_wind_gust_mph": 26.5,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 2,
           "weather": [
+            "haze",
             "moderate rain showers",
-            "haze"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 53,
           "category": "Moderate",
           "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.4,
-          "pm10": 9.3,
-          "ozone": 33.0,
+          "pm2_5": 8.5,
+          "pm10": 18.9,
+          "ozone": 42.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1747,7 +1941,18 @@
       "name": "Guayanilla Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1761,23 +1966,22 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.02,
-          "precip_probability_pct": 8,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
+          "high_temp_f": 91.0,
           "low_temp_f": 79.0,
-          "high_apparent_temp_f": 104.0,
+          "high_apparent_temp_f": 103.0,
           "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 27.6,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 28.8,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
             "haze",
             "moderate rain showers"
           ],
@@ -1785,15 +1989,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 20.1,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.2,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1803,7 +2007,18 @@
       "name": "Guaynabo Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1817,40 +2032,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.21,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
+          "high_temp_f": 90.0,
           "low_temp_f": 77.0,
           "high_apparent_temp_f": 103.0,
           "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 23.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 20.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
-            "light rain showers",
             "haze",
-            "thunderstorms"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
           "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1862,10 +2076,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -1884,37 +2102,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.24,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
+          "high_temp_f": 93.0,
           "low_temp_f": 75.0,
           "high_apparent_temp_f": 106.0,
           "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 21.9,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 19.6,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
-            "thunderstorms",
             "light rain showers",
-            "haze"
+            "haze",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
           "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1924,69 +2141,16 @@
       "name": "Hatillo Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.59,
-          "precip_probability_pct": 50,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "haze",
-            "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 46,
-          "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 17.8,
-          "ozone": 26.0,
-          "nitrogen_dioxide": 1.0,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72067": {
-      "fips": "72067",
-      "name": "Hormigueros Municipio",
-      "state": "PR",
-      "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -2006,15 +2170,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.03,
-          "precip_probability_pct": 9,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
+          "high_temp_f": 89.0,
           "low_temp_f": 75.0,
-          "high_apparent_temp_f": 110.0,
+          "high_apparent_temp_f": 100.0,
           "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 12.7,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 27.6,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -2027,28 +2191,32 @@
         "air_quality": {
           "us_aqi": 52,
           "category": "Moderate",
-          "aqi_24h_max": 54,
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.4,
-          "pm10": 25.8,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 0.6,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.0,
+          "pm10": 13.7,
+          "ozone": 37.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "72069": {
-      "fips": "72069",
-      "name": "Humacao Municipio",
+    "72067": {
+      "fips": "72067",
+      "name": "Hormigueros Municipio",
       "state": "PR",
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -2067,47 +2235,56 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.27,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 79.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 93.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 110.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers",
-            "haze"
+            "haze",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
+          "us_aqi": 54,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 4.7,
-          "pm10": 8.5,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 0.3,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 9.5,
+          "pm10": 21.4,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "72071": {
-      "fips": "72071",
-      "name": "Isabela Municipio",
+    "72069": {
+      "fips": "72069",
+      "name": "Humacao Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2121,40 +2298,106 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.6,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 0.12,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 75.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 80.0,
           "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 23.0,
+          "low_apparent_temp_f": 85.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 19.6,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "light rain showers",
             "haze",
-            "moderate rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
-          "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 11.5,
-          "pm10": 23.3,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "us_aqi": 56,
+          "category": "Moderate",
+          "aqi_24h_max": 58,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.0,
+          "pm10": 22.9,
+          "ozone": 45.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72071": {
+      "fips": "72071",
+      "name": "Isabela Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 20,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 24.2,
+          "max_wind_gust_mph": 29.9,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "haze",
+            "moderate rain showers",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 53,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.4,
+          "pm10": 16.8,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2185,31 +2428,32 @@
           "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 68.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 68.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 11.5,
+          "high_temp_f": 83.0,
+          "low_temp_f": 70.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 70.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "haze",
-            "moderate rain showers"
+            "moderate rain showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2221,10 +2465,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -2243,36 +2491,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
+          "high_temp_f": 93.0,
           "low_temp_f": 79.0,
-          "high_apparent_temp_f": 106.0,
+          "high_apparent_temp_f": 105.0,
           "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 29.9,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 31.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "moderate rain showers",
-            "haze"
+            "haze",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.6,
-          "pm10": 15.9,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 8.2,
+          "pm10": 18.3,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2282,7 +2529,18 @@
       "name": "Juncos Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2296,40 +2554,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.25,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.13,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 104.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 92.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
-            "thunderstorms",
             "light rain showers",
-            "haze"
+            "haze",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
           "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2341,10 +2598,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -2364,34 +2625,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.02,
-          "precip_probability_pct": 6,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 77.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 76.0,
           "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 77.0,
+          "low_apparent_temp_f": 76.0,
           "max_wind_mph": 21.9,
           "max_wind_gust_mph": 36.8,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "haze"
+            "haze",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 54,
           "category": "Moderate",
-          "aqi_24h_max": 54,
+          "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.4,
-          "pm10": 25.8,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 0.6,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 9.5,
+          "pm10": 21.4,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2418,37 +2679,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.6,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.1,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
+          "high_temp_f": 86.0,
           "low_temp_f": 71.0,
-          "high_apparent_temp_f": 96.0,
+          "high_apparent_temp_f": 94.0,
           "low_apparent_temp_f": 71.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 8.1,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "haze",
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 46,
-          "category": "Good",
-          "aqi_24h_max": 51,
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 17.8,
-          "ozone": 26.0,
-          "nitrogen_dioxide": 1.0,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.0,
+          "pm10": 13.7,
+          "ozone": 37.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2475,36 +2734,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.13,
+          "precip_in_24h": 0.11,
           "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 73.0,
+          "high_temp_f": 84.0,
+          "low_temp_f": 72.0,
           "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 8.1,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "haze",
-            "light rain showers",
             "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 46,
-          "category": "Good",
-          "aqi_24h_max": 51,
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 17.8,
-          "ozone": 26.0,
-          "nitrogen_dioxide": 1.0,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.0,
+          "pm10": 13.7,
+          "ozone": 37.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2514,181 +2772,16 @@
       "name": "Las Piedras Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.25,
-          "precip_probability_pct": 40,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 99.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers",
-            "haze"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
-          "aqi_24h_max": 55,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.4,
-          "pm10": 9.3,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72087": {
-      "fips": "72087",
-      "name": "LoÃ­za Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.13,
-          "precip_probability_pct": 30,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 81.0,
-          "high_apparent_temp_f": 100.0,
-          "low_apparent_temp_f": 87.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 28.8,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "moderate rain showers",
-            "light rain showers",
-            "haze"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 53,
-          "category": "Moderate",
-          "aqi_24h_max": 53,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
-          "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72089": {
-      "fips": "72089",
-      "name": "Luquillo Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.13,
-          "precip_probability_pct": 40,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 78.0,
-          "high_apparent_temp_f": 99.0,
-          "low_apparent_temp_f": 78.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "moderate rain showers",
-            "light rain showers",
-            "haze"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 54,
-          "category": "Moderate",
-          "aqi_24h_max": 54,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 4.2,
-          "pm10": 7.9,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72091": {
-      "fips": "72091",
-      "name": "ManatÃ­ Municipio",
-      "state": "PR",
-      "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -2707,16 +2800,16 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.13,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 25.3,
+          "high_temp_f": 90.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 98.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -2728,15 +2821,215 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 8.5,
+          "pm10": 18.9,
+          "ozone": 42.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72087": {
+      "fips": "72087",
+      "name": "LoÃ­za Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.1,
+          "precip_probability_pct": 20,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 89.0,
+          "low_temp_f": 81.0,
+          "high_apparent_temp_f": 99.0,
+          "low_apparent_temp_f": 86.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "light rain showers",
+            "haze",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 55,
+          "category": "Moderate",
+          "aqi_24h_max": 57,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72089": {
+      "fips": "72089",
+      "name": "Luquillo Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.13,
+          "precip_probability_pct": 30,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 88.0,
+          "low_temp_f": 79.0,
+          "high_apparent_temp_f": 97.0,
+          "low_apparent_temp_f": 79.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "light rain showers",
+            "haze",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 57,
+          "category": "Moderate",
+          "aqi_24h_max": 59,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 11.3,
+          "pm10": 27.1,
+          "ozone": 46.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72091": {
+      "fips": "72091",
+      "name": "ManatÃ­ Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 8,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 93.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 26.5,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "haze",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 54,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2763,36 +3056,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.09,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
+          "high_temp_f": 82.0,
           "low_temp_f": 72.0,
           "high_apparent_temp_f": 86.0,
           "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 11.5,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "haze",
-            "light rain showers",
             "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 20.1,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.2,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2802,124 +3094,16 @@
       "name": "Maunabo Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.15,
-          "precip_probability_pct": 40,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 79.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "moderate rain showers",
-            "light rain showers",
-            "haze"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
-          "aqi_24h_max": 55,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.4,
-          "pm10": 9.3,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72097": {
-      "fips": "72097",
-      "name": "MayagÃ¼ez Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 20,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 79.0,
-          "high_apparent_temp_f": 102.0,
-          "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "haze",
-            "moderate rain showers",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 51,
-          "category": "Moderate",
-          "aqi_24h_max": 56,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 16.4,
-          "pm10": 37.6,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72099": {
-      "fips": "72099",
-      "name": "Moca Municipio",
-      "state": "PR",
-      "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -2938,36 +3122,168 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.6,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 0.12,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 10.4,
+          "high_temp_f": 90.0,
+          "low_temp_f": 79.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 79.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 20.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
+            "light rain showers",
             "haze",
-            "moderate rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
-          "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 11.5,
-          "pm10": 23.3,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 55,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.5,
+          "pm10": 18.9,
+          "ozone": 42.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72097": {
+      "fips": "72097",
+      "name": "MayagÃ¼ez Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.03,
+          "precip_probability_pct": 9,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 79.0,
+          "high_apparent_temp_f": 101.0,
+          "low_apparent_temp_f": 79.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 26.5,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "haze",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 56,
+          "category": "Moderate",
+          "aqi_24h_max": 57,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 13.8,
+          "pm10": 32.0,
+          "ozone": 48.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72099": {
+      "fips": "72099",
+      "name": "Moca Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.1,
+          "precip_probability_pct": 30,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "haze",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 53,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.4,
+          "pm10": 16.8,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2994,35 +3310,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 98.0,
-          "low_apparent_temp_f": 75.0,
+          "high_temp_f": 89.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 97.0,
+          "low_apparent_temp_f": 74.0,
           "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 17.3,
+          "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "haze",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3032,7 +3348,18 @@
       "name": "Naguabo Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3046,39 +3373,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.26,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.13,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 90.0,
-          "low_temp_f": 78.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 78.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 20.7,
+          "low_temp_f": 79.0,
+          "high_apparent_temp_f": 101.0,
+          "low_apparent_temp_f": 79.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
             "light rain showers",
-            "haze"
+            "haze",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 57,
           "category": "Moderate",
-          "aqi_24h_max": 54,
+          "aqi_24h_max": 59,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 4.2,
-          "pm10": 7.9,
-          "ozone": 37.0,
+          "pm2_5": 11.3,
+          "pm10": 27.1,
+          "ozone": 46.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3105,37 +3432,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.16,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 9,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 96.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 15.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 94.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 13.8,
           "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "haze",
-            "moderate rain showers",
-            "thunderstorms"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3162,35 +3487,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 78.0,
-          "low_temp_f": 70.0,
-          "high_apparent_temp_f": 78.0,
-          "low_apparent_temp_f": 70.0,
+          "high_temp_f": 79.0,
+          "low_temp_f": 69.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 69.0,
           "max_wind_mph": 12.7,
           "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "haze",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3200,7 +3525,18 @@
       "name": "Patillas Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3214,39 +3550,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.14,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.1,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 95.0,
-          "low_apparent_temp_f": 77.0,
+          "high_temp_f": 88.0,
+          "low_temp_f": 78.0,
+          "high_apparent_temp_f": 96.0,
+          "low_apparent_temp_f": 78.0,
           "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 18.4,
+          "max_wind_gust_mph": 19.6,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
+            "light rain showers",
             "haze",
-            "light rain showers"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 53,
           "category": "Moderate",
           "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.4,
-          "pm10": 9.3,
-          "ozone": 33.0,
+          "pm2_5": 8.5,
+          "pm10": 18.9,
+          "ozone": 42.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3256,7 +3592,18 @@
       "name": "PeÃ±uelas Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3270,39 +3617,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.02,
-          "precip_probability_pct": 6,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
+          "high_temp_f": 92.0,
           "low_temp_f": 79.0,
-          "high_apparent_temp_f": 104.0,
+          "high_apparent_temp_f": 102.0,
           "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 25.3,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 26.5,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
             "haze",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 20.1,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.2,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3312,7 +3658,18 @@
       "name": "Ponce Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3326,23 +3683,22 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 10,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
+          "high_temp_f": 94.0,
           "low_temp_f": 80.0,
-          "high_apparent_temp_f": 105.0,
+          "high_apparent_temp_f": 103.0,
           "low_apparent_temp_f": 84.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 27.6,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 28.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
             "haze",
             "moderate rain showers"
           ],
@@ -3350,15 +3706,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 20.1,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.2,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3368,313 +3724,16 @@
       "name": "Quebradillas Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.59,
-          "precip_probability_pct": 60,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 100.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "light rain showers",
-            "haze",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 46,
-          "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 17.8,
-          "ozone": 26.0,
-          "nitrogen_dioxide": 1.0,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72117": {
-      "fips": "72117",
-      "name": "RincÃ³n Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.59,
-          "precip_probability_pct": 60,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "haze",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 38,
-          "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 11.5,
-          "pm10": 23.3,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72119": {
-      "fips": "72119",
-      "name": "RÃ­o Grande Municipio",
-      "state": "PR",
-      "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.14,
-          "precip_probability_pct": 40,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 79.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "moderate rain showers",
-            "light rain showers",
-            "haze"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 54,
-          "category": "Moderate",
-          "aqi_24h_max": 54,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 4.2,
-          "pm10": 7.9,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72121": {
-      "fips": "72121",
-      "name": "Sabana Grande Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 5,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "haze",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 54,
-          "category": "Moderate",
-          "aqi_24h_max": 56,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 20.1,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72123": {
-      "fips": "72123",
-      "name": "Salinas Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.09,
-          "precip_probability_pct": 30,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 78.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 78.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 29.9,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain showers",
-            "moderate rain showers",
-            "haze"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
-          "aqi_24h_max": 56,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.6,
-          "pm10": 15.9,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72125": {
-      "fips": "72125",
-      "name": "San GermÃ¡n Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -3694,15 +3753,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.04,
-          "precip_probability_pct": 6,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 88.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 100.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 24.2,
+          "max_wind_gust_mph": 29.9,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -3715,23 +3774,34 @@
         "air_quality": {
           "us_aqi": 52,
           "category": "Moderate",
-          "aqi_24h_max": 54,
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.4,
-          "pm10": 25.8,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 0.6,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.0,
+          "pm10": 13.7,
+          "ozone": 37.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "72127": {
-      "fips": "72127",
-      "name": "San Juan Municipio",
+    "72117": {
+      "fips": "72117",
+      "name": "RincÃ³n Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3745,25 +3815,24 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.13,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.12,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 80.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 86.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 26.5,
+          "high_temp_f": 90.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
-            "light rain showers",
-            "haze"
+            "haze",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -3773,21 +3842,32 @@
           "category": "Moderate",
           "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
-          "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 8.4,
+          "pm10": 16.8,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "72129": {
-      "fips": "72129",
-      "name": "San Lorenzo Municipio",
+    "72119": {
+      "fips": "72119",
+      "name": "RÃ­o Grande Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3801,46 +3881,46 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.23,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.13,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 99.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 19.6,
+          "high_temp_f": 93.0,
+          "low_temp_f": 79.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 79.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 20.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
+            "light rain showers",
             "haze",
-            "light rain showers"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 57,
           "category": "Moderate",
-          "aqi_24h_max": 55,
+          "aqi_24h_max": 59,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.4,
-          "pm10": 9.3,
-          "ozone": 33.0,
+          "pm2_5": 11.3,
+          "pm10": 27.1,
+          "ozone": 46.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "72131": {
-      "fips": "72131",
-      "name": "San SebastiÃ¡n Municipio",
+    "72121": {
+      "fips": "72121",
+      "name": "Sabana Grande Municipio",
       "state": "PR",
       "alerts": {
         "weather": [
@@ -3867,47 +3947,57 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.6,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 72.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 75.0,
           "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 8.1,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 21.9,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "haze",
-            "light rain showers",
             "moderate rain showers",
-            "thunderstorms"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 46,
-          "category": "Good",
-          "aqi_24h_max": 51,
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 17.8,
-          "ozone": 26.0,
-          "nitrogen_dioxide": 1.0,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.2,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "72133": {
-      "fips": "72133",
-      "name": "Santa Isabel Municipio",
+    "72123": {
+      "fips": "72123",
+      "name": "Salinas Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3921,25 +4011,158 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
+          "precip_in_24h": 0.04,
           "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 79.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 31.1,
+          "high_temp_f": 93.0,
+          "low_temp_f": 78.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 78.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 29.9,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
+            "haze",
             "moderate rain showers",
-            "haze"
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 54,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.2,
+          "pm10": 18.3,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72125": {
+      "fips": "72125",
+      "name": "San GermÃ¡n Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.07,
+          "precip_probability_pct": 20,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "haze",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 54,
+          "category": "Moderate",
+          "aqi_24h_max": 55,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 9.5,
+          "pm10": 21.4,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72127": {
+      "fips": "72127",
+      "name": "San Juan Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.1,
+          "precip_probability_pct": 20,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 80.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 85.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "haze",
+            "moderate rain showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -3947,13 +4170,208 @@
         "air_quality": {
           "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.6,
-          "pm10": 15.9,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72129": {
+      "fips": "72129",
+      "name": "San Lorenzo Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 30,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 89.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 99.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "light rain showers",
+            "haze",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 55,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.5,
+          "pm10": 18.9,
+          "ozone": 42.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72131": {
+      "fips": "72131",
+      "name": "San SebastiÃ¡n Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.1,
+          "precip_probability_pct": 30,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 92.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "haze",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 53,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.0,
+          "pm10": 13.7,
+          "ozone": 37.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-07-30T09:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72133": {
+      "fips": "72133",
+      "name": "Santa Isabel Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 10,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 88.0,
+          "low_temp_f": 79.0,
+          "high_apparent_temp_f": 100.0,
+          "low_apparent_temp_f": 79.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 31.1,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "haze",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 54,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.2,
+          "pm10": 18.3,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3965,10 +4383,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -3987,37 +4409,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.16,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
+          "high_temp_f": 89.0,
           "low_temp_f": 77.0,
           "high_apparent_temp_f": 106.0,
           "low_apparent_temp_f": 77.0,
           "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 21.9,
+          "max_wind_gust_mph": 20.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
-            "moderate rain showers",
             "haze",
-            "thunderstorms"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4029,10 +4450,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -4051,36 +4476,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.16,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
+          "high_temp_f": 90.0,
           "low_temp_f": 79.0,
-          "high_apparent_temp_f": 110.0,
+          "high_apparent_temp_f": 108.0,
           "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 26.5,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 25.3,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
+            "haze",
             "moderate rain showers",
-            "haze"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
           "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4090,7 +4515,18 @@
       "name": "Trujillo Alto Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -4104,39 +4540,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.22,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
+          "high_temp_f": 89.0,
           "low_temp_f": 76.0,
           "high_apparent_temp_f": 98.0,
           "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 23.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 20.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
+            "light rain showers",
             "haze",
-            "light rain showers"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 9.3,
-          "ozone": 34.0,
+          "pm2_5": 10.4,
+          "pm10": 25.3,
+          "ozone": 44.0,
           "nitrogen_dioxide": 0.5,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4163,36 +4599,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
+          "high_temp_f": 90.0,
           "low_temp_f": 73.0,
           "high_apparent_temp_f": 102.0,
           "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 10.4,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "haze",
             "moderate rain showers",
-            "thunderstorms"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 46,
-          "category": "Good",
-          "aqi_24h_max": 51,
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 17.8,
-          "ozone": 26.0,
-          "nitrogen_dioxide": 1.0,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.0,
+          "pm10": 13.7,
+          "ozone": 37.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4204,10 +4640,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -4226,37 +4666,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.13,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 92.0,
           "low_temp_f": 77.0,
-          "high_apparent_temp_f": 109.0,
+          "high_apparent_temp_f": 107.0,
           "low_apparent_temp_f": 77.0,
           "max_wind_mph": 19.6,
           "max_wind_gust_mph": 25.3,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "haze",
-            "moderate rain showers",
-            "thunderstorms"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4268,10 +4706,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -4290,36 +4732,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.13,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 76.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 112.0,
+          "low_apparent_temp_f": 77.0,
           "max_wind_mph": 20.7,
           "max_wind_gust_mph": 26.5,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
             "haze",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 14.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4329,7 +4770,18 @@
       "name": "Vieques Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -4343,25 +4795,25 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.12,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 92.0,
           "low_temp_f": 79.0,
-          "high_apparent_temp_f": 103.0,
+          "high_apparent_temp_f": 101.0,
           "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 26.5,
+          "max_wind_mph": 23.0,
+          "max_wind_gust_mph": 27.6,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
             "light rain showers",
-            "haze"
+            "haze",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -4369,13 +4821,13 @@
         "air_quality": {
           "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 58,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 4.7,
-          "pm10": 8.5,
-          "ozone": 37.0,
+          "pm2_5": 10.0,
+          "pm10": 22.9,
+          "ozone": 45.0,
           "nitrogen_dioxide": 0.3,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4402,15 +4854,15 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 10,
+          "precip_in_24h": 0.02,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 98.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 13.8,
+          "high_temp_f": 89.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 97.0,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 15.0,
           "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
@@ -4422,15 +4874,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.6,
-          "pm10": 15.9,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 8.2,
+          "pm10": 18.3,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4440,7 +4892,18 @@
       "name": "Yabucoa Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -4454,39 +4917,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.24,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.12,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 79.0,
+          "high_temp_f": 89.0,
+          "low_temp_f": 80.0,
           "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 20.7,
+          "low_apparent_temp_f": 86.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 19.6,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
+            "light rain showers",
             "haze",
-            "light rain showers"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 53,
           "category": "Moderate",
           "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.4,
-          "pm10": 9.3,
-          "ozone": 33.0,
+          "pm2_5": 8.5,
+          "pm10": 18.9,
+          "ozone": 42.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-07-29T10:00",
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4496,7 +4959,18 @@
       "name": "Yauco Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-07-30T02:35:00-04:00",
+            "expires": "2026-07-30T11:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -4510,19 +4984,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 8,
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 98.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 89.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 97.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 19.6,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -4533,15 +5007,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 20.1,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-07-29T10:00",
+          "pm2_5": 7.9,
+          "pm10": 17.2,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-07-30T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

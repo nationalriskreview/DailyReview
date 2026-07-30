@@ -10,14 +10,10 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Warning",
-        "headline": "Extreme Heat Warning issued July 28 at 11:27PM EDT until July 29 at 8:00PM EDT by NWS Jacksonville FL",
+        "event": "Extreme Heat Forecast",
+        "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
         "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-07-28T23:27:00-04:00",
-        "expires": "2026-07-29T20:00:00-04:00",
-        "source": "nws_alert",
-        "count": 1
+        "source": "nws_forecast"
       }
     ],
     "protest": [],
@@ -25,50 +21,82 @@
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
-    "road_closure": [],
-    "wildfires": [],
+    "road_closure": [
+      {
+        "title": "Wildfire, Heavy Smoke Shut Down Part of I-95 in Camden County",
+        "url": "https://www.wjcl.com/article/wildfire-heavy-smoke-shut-down-part-of-i-95-in-camden-county/73301372",
+        "domain": "wjcl.com",
+        "seendate": "20260730061500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.wjcl.com/article/wildfire-heavy-smoke-shut-down-part-of-i-95-in-camden-county/73301372",
+            "domain": "wjcl.com"
+          }
+        ]
+      }
+    ],
+    "wildfires": [
+      {
+        "title": "Camden McCarthy Overpass Fire",
+        "incident_name": "Camden McCarthy Overpass Fire",
+        "id": "2026-GAGAS-042702",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-07-29T22:00:00+00:00",
+        "lat": 30.9781,
+        "lon": -81.6667,
+        "acreage": 600,
+        "containment_pct": 15,
+        "cause": "Undetermined",
+        "state": "GA",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-GAGAS-042702",
+        "source": "NIFC WFIGS",
+        "distance_miles": 4.7,
+        "threat_level": "Immediate"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.49,
-      "precip_probability_pct": 69,
+      "precip_in_24h": 0.57,
+      "precip_probability_pct": 74,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 99.0,
-      "low_temp_f": 78.0,
-      "high_apparent_temp_f": 114.0,
-      "low_apparent_temp_f": 78.0,
-      "max_wind_mph": 12.7,
-      "max_wind_gust_mph": 19.6,
-      "thunder_probability_pct": 60,
+      "high_temp_f": 96.0,
+      "low_temp_f": 73.0,
+      "high_apparent_temp_f": 109.0,
+      "low_apparent_temp_f": 73.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 12.7,
+      "thunder_probability_pct": 48,
       "lightning_activity_level": null,
       "weather": [
-        "thunderstorms",
         "moderate rain showers",
-        "heavy thunderstorms"
+        "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 82,
+      "us_aqi": 61,
       "category": "Moderate",
-      "aqi_24h_max": 102,
-      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-      "pm2_5": 10.7,
-      "pm10": 11.6,
-      "ozone": 78.0,
-      "nitrogen_dioxide": 3.3,
-      "observed_at": "2026-07-29T10:00",
+      "aqi_24h_max": 82,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 16.2,
+      "pm10": 17.3,
+      "ozone": 74.0,
+      "nitrogen_dioxide": 4.0,
+      "observed_at": "2026-07-30T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-29",
-  "generated_at": "2026-07-29T10:13:20.287752+00:00"
+  "date": "2026-07-30",
+  "generated_at": "2026-07-30T09:57:06.862735+00:00"
 }

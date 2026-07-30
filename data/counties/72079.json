@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued July 30 at 2:35AM AST until July 30 at 5:00PM AST by NWS San Juan PR",
         "severity": "Severe",
-        "source": "nws_forecast"
+        "urgency": "Expected",
+        "effective": "2026-07-30T02:35:00-04:00",
+        "expires": "2026-07-30T11:00:00-04:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -33,37 +37,37 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.02,
-      "precip_probability_pct": 6,
+      "precip_probability_pct": 5,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 93.0,
-      "low_temp_f": 77.0,
+      "high_temp_f": 94.0,
+      "low_temp_f": 76.0,
       "high_apparent_temp_f": 110.0,
-      "low_apparent_temp_f": 77.0,
+      "low_apparent_temp_f": 76.0,
       "max_wind_mph": 21.9,
       "max_wind_gust_mph": 36.8,
       "thunder_probability_pct": null,
-      "lightning_activity_level": 2,
+      "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "haze"
+        "haze",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 52,
+      "us_aqi": 54,
       "category": "Moderate",
-      "aqi_24h_max": 54,
+      "aqi_24h_max": 55,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 12.4,
-      "pm10": 25.8,
-      "ozone": 33.0,
-      "nitrogen_dioxide": 0.6,
-      "observed_at": "2026-07-29T10:00",
+      "pm2_5": 9.5,
+      "pm10": 21.4,
+      "ozone": 44.0,
+      "nitrogen_dioxide": 0.4,
+      "observed_at": "2026-07-30T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-29",
-  "generated_at": "2026-07-29T10:13:20.287752+00:00"
+  "date": "2026-07-30",
+  "generated_at": "2026-07-30T09:57:06.862735+00:00"
 }

@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.7\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued July 29 at 9:25PM EDT until July 30 at 6:00AM EDT by NWS Albany NY",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-07-29T21:25:00-04:00",
+        "expires": "2026-07-30T06:00:00-04:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -32,17 +36,17 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.69,
-      "precip_probability_pct": 93,
+      "precip_in_24h": 0.32,
+      "precip_probability_pct": 94,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 67.0,
-      "low_temp_f": 60.0,
-      "high_apparent_temp_f": 67.0,
-      "low_apparent_temp_f": 60.0,
-      "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": 37,
+      "high_temp_f": 72.0,
+      "low_temp_f": 59.0,
+      "high_apparent_temp_f": 72.0,
+      "low_apparent_temp_f": 59.0,
+      "max_wind_mph": 9.2,
+      "max_wind_gust_mph": 19.6,
+      "thunder_probability_pct": 21,
       "lightning_activity_level": null,
       "weather": [
         "moderate rain showers",
@@ -53,18 +57,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 61,
-      "category": "Moderate",
-      "aqi_24h_max": 69,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 0.9,
-      "pm10": 0.9,
-      "ozone": 72.0,
-      "nitrogen_dioxide": 2.2,
-      "observed_at": "2026-07-29T10:00",
+      "us_aqi": 30,
+      "category": "Good",
+      "aqi_24h_max": 30,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 3.1,
+      "pm10": 3.4,
+      "ozone": 63.0,
+      "nitrogen_dioxide": 1.1,
+      "observed_at": "2026-07-30T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-29",
-  "generated_at": "2026-07-29T10:13:20.287752+00:00"
+  "date": "2026-07-30",
+  "generated_at": "2026-07-30T09:57:06.862735+00:00"
 }
