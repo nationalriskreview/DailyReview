@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-30T09:57:06.862735+00:00",
-  "date": "2026-07-30",
+  "generated_at": "2026-07-31T10:12:20.394406+00:00",
+  "date": "2026-07-31",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 138
+      "counties_with_alerts": 119
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 419
+      "counties_over_threshold": 438
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 34,
+      "counties_with_matches": 29,
       "items_pre_llm": {
-        "protest": 27,
-        "utility_outage": 5,
-        "transit_disruption": 1,
-        "service_provider_outage": 0,
+        "protest": 19,
+        "utility_outage": 4,
+        "transit_disruption": 0,
+        "service_provider_outage": 2,
         "hazmat_incident": 1,
-        "road_closure": 8
+        "road_closure": 11
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 12,
+      "counties_with_matches": 11,
       "items_post_llm": {
-        "protest": 4,
+        "protest": 3,
         "utility_outage": 2,
         "transit_disruption": 0,
-        "service_provider_outage": 0,
+        "service_provider_outage": 2,
         "hazmat_incident": 0,
         "road_closure": 6
       },
-      "unique_articles": 31,
-      "calls_used": 31,
+      "unique_articles": 25,
+      "calls_used": 25,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 240
+      "counties_with_alerts": 237
     },
     "transit": {
       "status": "ok",
@@ -135,7 +135,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 144
+      "counties_with_alerts": 48
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 4,
+      "active_incidents": 3,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -197,7 +197,7 @@
           "key": "github",
           "name": "GitHub",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "datadog",
@@ -221,7 +221,7 @@
           "key": "anthropic",
           "name": "Anthropic",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "oracle",
@@ -305,7 +305,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "r3wn",
@@ -574,46 +574,32 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Possible Network Congestion in North America region",
+      "title": "Minor Service Outage",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-07-30T05:48:27.007Z",
-      "updated": "2026-07-30T07:57:42.193Z",
-      "url": "https://stspg.io/qw308jh2ynsj",
-      "source": "provider status page"
-    },
-    {
-      "provider": "GitHub",
-      "key": "github",
-      "title": "Copilot model Claude Fable 5 experiencing elevated errors",
-      "impact": "minor",
-      "status": "investigating",
-      "started": "2026-07-30T09:07:42.413Z",
-      "updated": "2026-07-30T09:54:35.049Z",
-      "url": "https://stspg.io/45g8r57kv3n9",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Anthropic",
-      "key": "anthropic",
-      "title": "Elevated errors across many models",
-      "impact": "major",
-      "status": "identified",
-      "started": "2026-07-30T05:57:43.516Z",
-      "updated": "2026-07-30T08:33:35.770Z",
-      "url": "https://stspg.io/c0fmy7628y3w",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "Customer Support Portal and Licensing Services are currently down",
-      "impact": "critical",
-      "status": "investigating",
-      "started": "2026-07-30T03:35:09.851Z",
-      "updated": "2026-07-30T04:43:48.363Z",
-      "url": "https://stspg.io/qv2v7whqlgwm",
+      "title": "Partially Degraded Service",
+      "impact": "minor",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
+    },
+    {
+      "provider": "x9tz",
+      "impact": "minor",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
     }
   ]
 }
