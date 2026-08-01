@@ -8,7 +8,18 @@
     "lon": -112.399206
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 1 at 1:06AM MDT until August 2 at 9:00PM MDT by NWS Pocatello ID",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-01T01:06:00-06:00",
+        "expires": "2026-08-01T15:00:00-06:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -25,8 +36,8 @@
         "date": "2026-07-29T23:40:00+00:00",
         "lat": 42.6651,
         "lon": -113.02,
-        "acreage": 1200,
-        "containment_pct": 15,
+        "acreage": 2516.39,
+        "containment_pct": 30,
         "cause": "Natural",
         "state": "ID",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDTFD-000160",
@@ -41,41 +52,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 15,
+      "precip_probability_pct": null,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 93.0,
-      "low_temp_f": 54.0,
-      "high_apparent_temp_f": 89.0,
-      "low_apparent_temp_f": 54.0,
-      "max_wind_mph": 5.8,
-      "max_wind_gust_mph": 15.0,
-      "thunder_probability_pct": 15,
+      "high_temp_f": 97.0,
+      "low_temp_f": 57.0,
+      "high_apparent_temp_f": 92.0,
+      "low_apparent_temp_f": 57.0,
+      "max_wind_mph": 15.0,
+      "max_wind_gust_mph": 25.3,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "thunderstorms"
+        "smoke"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 45,
-      "category": "Good",
-      "aqi_24h_max": 83,
+      "us_aqi": 51,
+      "category": "Moderate",
+      "aqi_24h_max": 100,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 6.8,
-      "pm10": 8.7,
-      "ozone": 35.0,
-      "nitrogen_dioxide": 18.2,
-      "observed_at": "2026-07-31T10:00",
+      "pm2_5": 8.6,
+      "pm10": 13.8,
+      "ozone": 23.0,
+      "nitrogen_dioxide": 20.2,
+      "observed_at": "2026-08-01T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-31",
-  "generated_at": "2026-07-31T10:12:20.394406+00:00"
+  "date": "2026-08-01",
+  "generated_at": "2026-08-01T09:36:19.448142+00:00"
 }

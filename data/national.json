@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-07-31T10:12:20.394406+00:00",
-  "date": "2026-07-31",
+  "generated_at": "2026-08-01T09:36:19.448142+00:00",
+  "date": "2026-08-01",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 119
+      "counties_with_alerts": 193
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 438
+      "counties_over_threshold": 311
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 29,
+      "counties_with_matches": 27,
       "items_pre_llm": {
-        "protest": 19,
-        "utility_outage": 4,
+        "protest": 26,
+        "utility_outage": 5,
         "transit_disruption": 0,
-        "service_provider_outage": 2,
-        "hazmat_incident": 1,
-        "road_closure": 11
+        "service_provider_outage": 0,
+        "hazmat_incident": 2,
+        "road_closure": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 11,
+      "counties_with_matches": 9,
       "items_post_llm": {
-        "protest": 3,
-        "utility_outage": 2,
+        "protest": 2,
+        "utility_outage": 5,
         "transit_disruption": 0,
-        "service_provider_outage": 2,
+        "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 6
+        "road_closure": 2
       },
-      "unique_articles": 25,
-      "calls_used": 25,
+      "unique_articles": 23,
+      "calls_used": 23,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 237
+      "counties_with_alerts": 241
     },
     "transit": {
       "status": "ok",
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 3,
+      "active_incidents": 5,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -173,7 +173,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 0
+          "items": 3
         },
         {
           "key": "azure",
@@ -305,7 +305,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "r3wn",
@@ -572,34 +572,59 @@
   "faa_advisories": [],
   "service_outages": [
     {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service is operating normally: [RESOLVED] Elevated Packet Loss",
+      "impact": "",
+      "status": "",
+      "started": "Fri, 31 Jul 2026 11:54:35 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Elevated Packet Loss",
+      "impact": "",
+      "status": "",
+      "started": "Fri, 31 Jul 2026 11:27:24 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Elevated Packet Loss",
+      "impact": "",
+      "status": "",
+      "started": "Fri, 31 Jul 2026 10:33:18 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Minor Service Outage",
+      "title": "Network Performance Issues in Hamburg, Germany",
       "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "status": "monitoring",
+      "started": "2026-07-31T15:20:19.981Z",
+      "updated": "2026-07-31T16:58:19.599Z",
+      "url": "https://stspg.io/4zt05ljddcz6",
       "source": "provider status page"
     },
     {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "Partially Degraded Service",
+      "title": "Panorama-Managed Azure CNGFW",
       "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.paloaltonetworks.com",
+      "status": "identified",
+      "started": "2026-08-01T00:25:05.531Z",
+      "updated": "2026-08-01T00:25:06.138Z",
+      "url": "https://stspg.io/yw20x02kj34h",
       "source": "provider status page"
-    },
-    {
-      "provider": "x9tz",
-      "impact": "minor",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
     }
   ]
 }

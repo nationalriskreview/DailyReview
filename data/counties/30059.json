@@ -8,56 +8,84 @@
     "lon": -110.92174
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 1 at 12:56AM MDT until August 2 at 9:00PM MDT by NWS Billings MT",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-01T00:06:00-06:00",
+        "expires": "2026-08-02T01:00:00-06:00",
+        "source": "nws_alert",
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Ant Park",
+        "incident_name": "Ant Park",
+        "id": "2026-MTHLF-000529",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-07-31T20:54:33+00:00",
+        "lat": 46.7365,
+        "lon": -110.6397,
+        "acreage": 400,
+        "containment_pct": 0,
+        "cause": "Undetermined",
+        "state": "MT",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTHLF-000529",
+        "source": "NIFC WFIGS",
+        "distance_miles": 17.0,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 29,
+      "precip_probability_pct": 2,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 89.0,
-      "low_temp_f": 55.0,
-      "high_apparent_temp_f": 85.0,
-      "low_apparent_temp_f": 55.0,
-      "max_wind_mph": 8.1,
-      "max_wind_gust_mph": 17.3,
-      "thunder_probability_pct": 15,
+      "high_temp_f": 95.0,
+      "low_temp_f": 56.0,
+      "high_apparent_temp_f": 91.0,
+      "low_apparent_temp_f": 56.0,
+      "max_wind_mph": 17.3,
+      "max_wind_gust_mph": 27.6,
+      "thunder_probability_pct": 2,
       "lightning_activity_level": null,
       "weather": [
-        "thunderstorms",
-        "light rain showers",
         "smoke"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 58,
+      "us_aqi": 66,
       "category": "Moderate",
-      "aqi_24h_max": 84,
+      "aqi_24h_max": 86,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 15.6,
-      "pm10": 16.4,
-      "ozone": 61.0,
-      "nitrogen_dioxide": 8.5,
-      "observed_at": "2026-07-31T10:00",
+      "pm2_5": 16.6,
+      "pm10": 17.3,
+      "ozone": 74.0,
+      "nitrogen_dioxide": 8.7,
+      "observed_at": "2026-08-01T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-07-31",
-  "generated_at": "2026-07-31T10:12:20.394406+00:00"
+  "date": "2026-08-01",
+  "generated_at": "2026-08-01T09:36:19.448142+00:00"
 }
