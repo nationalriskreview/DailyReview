@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.6\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued August 2 at 4:04AM CDT until August 2 at 11:00AM CDT by NWS Chicago IL",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-08-01T21:30:00-05:00",
+        "expires": "2026-08-02T15:30:00-05:00",
+        "source": "nws_alert",
+        "count": 3
       }
     ],
     "protest": [],
@@ -32,17 +36,17 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.59,
-      "precip_probability_pct": 97,
+      "precip_in_24h": 0.02,
+      "precip_probability_pct": 36,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 72.0,
-      "low_temp_f": 67.0,
-      "high_apparent_temp_f": 72.0,
-      "low_apparent_temp_f": 67.0,
-      "max_wind_mph": 24.2,
-      "max_wind_gust_mph": 34.5,
-      "thunder_probability_pct": 37,
+      "high_temp_f": 73.0,
+      "low_temp_f": 69.0,
+      "high_apparent_temp_f": 73.0,
+      "low_apparent_temp_f": 69.0,
+      "max_wind_mph": 23.0,
+      "max_wind_gust_mph": 31.1,
+      "thunder_probability_pct": 12,
       "lightning_activity_level": null,
       "weather": [
         "moderate rain showers",
@@ -52,18 +56,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 57,
+      "us_aqi": 58,
       "category": "Moderate",
-      "aqi_24h_max": 65,
+      "aqi_24h_max": 61,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 3.8,
-      "pm10": 3.8,
-      "ozone": 78.0,
-      "nitrogen_dioxide": 6.6,
-      "observed_at": "2026-08-01T09:00",
+      "pm2_5": 16.9,
+      "pm10": 17.3,
+      "ozone": 80.0,
+      "nitrogen_dioxide": 3.1,
+      "observed_at": "2026-08-02T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-01",
-  "generated_at": "2026-08-01T09:36:19.448142+00:00"
+  "date": "2026-08-02",
+  "generated_at": "2026-08-02T09:36:18.527330+00:00"
 }
