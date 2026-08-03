@@ -8,25 +8,33 @@
     "lon": -111.350262
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued August 1 at 10:11PM MDT until August 2 at 9:00PM MDT by NWS Great Falls MT",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-08-01T22:11:00-06:00",
-        "expires": "2026-08-02T15:00:00-06:00",
-        "source": "nws_alert",
-        "count": 1
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Middle Coulee",
+        "incident_name": "Middle Coulee",
+        "id": "2026-MTLG19-000260",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-08-02T22:14:16+00:00",
+        "lat": 47.7333,
+        "lon": -110.9904,
+        "acreage": 500,
+        "containment_pct": 0,
+        "cause": "Undetermined",
+        "state": "MT",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTLG19-000260",
+        "source": "NIFC WFIGS",
+        "distance_miles": 33.3,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
@@ -36,37 +44,38 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 13,
+      "precip_in_24h": 0.03,
+      "precip_probability_pct": 18,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 97.0,
-      "low_temp_f": 63.0,
-      "high_apparent_temp_f": 92.0,
-      "low_apparent_temp_f": 63.0,
-      "max_wind_mph": 23.0,
-      "max_wind_gust_mph": 33.4,
-      "thunder_probability_pct": 2,
+      "high_temp_f": 69.0,
+      "low_temp_f": 49.0,
+      "high_apparent_temp_f": 69.0,
+      "low_apparent_temp_f": 44.0,
+      "max_wind_mph": 12.7,
+      "max_wind_gust_mph": 19.6,
+      "thunder_probability_pct": 6,
       "lightning_activity_level": null,
       "weather": [
-        "smoke"
+        "smoke",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 63,
+      "us_aqi": 52,
       "category": "Moderate",
-      "aqi_24h_max": 95,
+      "aqi_24h_max": 61,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 11.4,
-      "pm10": 11.8,
-      "ozone": 85.0,
-      "nitrogen_dioxide": 1.7,
-      "observed_at": "2026-08-02T09:00",
+      "pm2_5": 34.8,
+      "pm10": 37.4,
+      "ozone": 76.0,
+      "nitrogen_dioxide": 3.4,
+      "observed_at": "2026-08-03T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-02",
-  "generated_at": "2026-08-02T09:36:18.527330+00:00"
+  "date": "2026-08-03",
+  "generated_at": "2026-08-03T11:03:19.423474+00:00"
 }

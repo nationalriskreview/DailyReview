@@ -1,17 +1,24 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-02T09:36:18.527330+00:00",
-  "date": "2026-08-02",
+  "generated_at": "2026-08-03T11:03:19.423474+00:00",
+  "date": "2026-08-03",
   "state": "NJ",
   "counties_total": 21,
-  "counties_with_alerts": 0,
+  "counties_with_alerts": 15,
   "counties": {
     "34001": {
       "fips": "34001",
       "name": "Atlantic County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -25,38 +32,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 33,
+          "precip_in_24h": 1.07,
+          "precip_probability_pct": 88,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 82.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 10.4,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 90.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 9.2,
           "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 27,
+          "thunder_probability_pct": 42,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
+            "heavy rain showers",
             "light rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 48,
+          "us_aqi": 37,
           "category": "Good",
-          "aqi_24h_max": 84,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 6.1,
-          "pm10": 7.9,
-          "ozone": 92.0,
-          "nitrogen_dioxide": 3.2,
-          "observed_at": "2026-08-02T09:00",
+          "aqi_24h_max": 48,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 1.5,
+          "pm10": 1.6,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 2.4,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -66,7 +75,18 @@
       "name": "Bergen County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 6:20AM EDT until August 3 at 8:00AM EDT by NWS Upton NY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T06:20:00-04:00",
+            "expires": "2026-08-03T08:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -80,38 +100,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 32,
+          "precip_in_24h": 1.35,
+          "precip_probability_pct": 96,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 71.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 71.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 27,
+          "high_temp_f": 82.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 89.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 40,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
+            "moderate rain showers",
             "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 65,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 115,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 11.2,
-          "pm10": 12.9,
-          "ozone": 74.0,
-          "nitrogen_dioxide": 15.8,
-          "observed_at": "2026-08-02T09:00",
+          "aqi_24h_max": 58,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 3.7,
+          "pm10": 3.8,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 10.0,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -121,7 +142,18 @@
       "name": "Burlington County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 4:41AM EDT until August 3 at 7:15AM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T04:41:00-04:00",
+            "expires": "2026-08-03T07:15:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -135,38 +167,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.07,
-          "precip_probability_pct": 36,
+          "precip_in_24h": 0.93,
+          "precip_probability_pct": 89,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 70.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 70.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 33,
+          "high_temp_f": 83.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 92.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 45,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers"
+            "heavy rain showers",
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
+          "us_aqi": 39,
           "category": "Good",
-          "aqi_24h_max": 87,
+          "aqi_24h_max": 51,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.0,
-          "pm10": 8.6,
-          "ozone": 84.0,
-          "nitrogen_dioxide": 4.8,
-          "observed_at": "2026-08-02T09:00",
+          "pm2_5": 2.1,
+          "pm10": 2.1,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -176,7 +210,18 @@
       "name": "Camden County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 4:41AM EDT until August 3 at 7:15AM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T04:41:00-04:00",
+            "expires": "2026-08-03T07:15:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -190,38 +235,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.1,
-          "precip_probability_pct": 38,
+          "precip_in_24h": 1.03,
+          "precip_probability_pct": 92,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 33,
+          "high_temp_f": 82.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 90.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 46,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
+            "heavy rain showers",
             "light rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
+          "us_aqi": 39,
           "category": "Good",
-          "aqi_24h_max": 87,
+          "aqi_24h_max": 51,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.0,
-          "pm10": 8.6,
-          "ozone": 84.0,
-          "nitrogen_dioxide": 4.8,
-          "observed_at": "2026-08-02T09:00",
+          "pm2_5": 2.1,
+          "pm10": 2.1,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -248,35 +295,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.98,
+          "precip_probability_pct": 86,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 84.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 91.0,
-          "low_apparent_temp_f": 74.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 94.0,
+          "low_apparent_temp_f": 75.0,
           "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 28,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 44,
           "lightning_activity_level": null,
           "weather": [
+            "heavy rain showers",
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
-          "category": "Moderate",
-          "aqi_24h_max": 102,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 8.5,
-          "pm10": 12.2,
-          "ozone": 102.0,
-          "nitrogen_dioxide": 2.4,
-          "observed_at": "2026-08-02T09:00",
+          "us_aqi": 47,
+          "category": "Good",
+          "aqi_24h_max": 54,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 2.2,
+          "pm10": 2.9,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 1.8,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -303,35 +352,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.07,
-          "precip_probability_pct": 34,
+          "precip_in_24h": 0.67,
+          "precip_probability_pct": 87,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 83.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 11.5,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 92.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 9.2,
           "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 33,
+          "thunder_probability_pct": 46,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
+            "heavy rain showers",
             "light rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 46,
+          "us_aqi": 34,
           "category": "Good",
-          "aqi_24h_max": 86,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 6.1,
-          "pm10": 8.1,
-          "ozone": 92.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-08-02T09:00",
+          "aqi_24h_max": 49,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 1.6,
+          "pm10": 1.7,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 2.6,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -341,7 +392,18 @@
       "name": "Essex County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 6:20AM EDT until August 3 at 8:00AM EDT by NWS Upton NY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T05:41:00-04:00",
+            "expires": "2026-08-03T08:45:00-04:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -355,38 +417,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 35,
+          "precip_in_24h": 1.36,
+          "precip_probability_pct": 96,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 72.0,
+          "high_temp_f": 81.0,
+          "low_temp_f": 74.0,
           "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": 29,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 40,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 101,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 9.1,
-          "pm10": 10.5,
-          "ozone": 75.0,
-          "nitrogen_dioxide": 11.4,
-          "observed_at": "2026-08-02T09:00",
+          "us_aqi": 47,
+          "category": "Good",
+          "aqi_24h_max": 54,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 2.4,
+          "pm10": 2.5,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 7.5,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -396,7 +459,18 @@
       "name": "Gloucester County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 4:41AM EDT until August 3 at 7:15AM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T04:41:00-04:00",
+            "expires": "2026-08-03T07:15:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -410,38 +484,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.14,
-          "precip_probability_pct": 38,
+          "precip_in_24h": 0.95,
+          "precip_probability_pct": 94,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 72.0,
+          "high_temp_f": 82.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 74.0,
           "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 37,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 45,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
+            "heavy rain showers",
             "light rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 44,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 79,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.8,
-          "pm10": 7.4,
-          "ozone": 86.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-08-02T09:00",
+          "aqi_24h_max": 47,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 1.7,
+          "pm10": 1.7,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 4.0,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -451,7 +527,18 @@
       "name": "Hudson County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 5:41AM EDT until August 3 at 8:45AM EDT by NWS Upton NY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T05:41:00-04:00",
+            "expires": "2026-08-03T08:45:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -465,38 +552,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 31,
+          "precip_in_24h": 1.14,
+          "precip_probability_pct": 95,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 26,
+          "high_temp_f": 82.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 89.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 40,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 65,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 115,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 11.2,
-          "pm10": 12.9,
-          "ozone": 74.0,
-          "nitrogen_dioxide": 15.8,
-          "observed_at": "2026-08-02T09:00",
+          "aqi_24h_max": 58,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 3.7,
+          "pm10": 3.8,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 10.0,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -506,7 +594,18 @@
       "name": "Hunterdon County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 5:37AM EDT until August 3 at 7:15AM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T05:37:00-04:00",
+            "expires": "2026-08-03T07:15:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -520,39 +619,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.24,
-          "precip_probability_pct": 57,
+          "precip_in_24h": 1.36,
+          "precip_probability_pct": 96,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 69.0,
+          "high_temp_f": 81.0,
+          "low_temp_f": 72.0,
           "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 69.0,
+          "low_apparent_temp_f": 72.0,
           "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 36,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 49,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
+            "heavy rain showers",
+            "moderate rain showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 99,
+          "us_aqi": 41,
+          "category": "Good",
+          "aqi_24h_max": 52,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.7,
-          "pm10": 9.0,
-          "ozone": 77.0,
-          "nitrogen_dioxide": 7.2,
-          "observed_at": "2026-08-02T09:00",
+          "pm2_5": 2.5,
+          "pm10": 2.6,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 6.0,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -562,7 +662,18 @@
       "name": "Mercer County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 5:37AM EDT until August 3 at 7:15AM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T04:41:00-04:00",
+            "expires": "2026-08-03T07:15:00-04:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -576,38 +687,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 42,
+          "precip_in_24h": 1.61,
+          "precip_probability_pct": 89,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 70.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 70.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 36,
+          "high_temp_f": 83.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 48,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "heavy rain showers",
+            "moderate rain showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 99,
+          "us_aqi": 41,
+          "category": "Good",
+          "aqi_24h_max": 52,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.7,
-          "pm10": 9.0,
-          "ozone": 77.0,
-          "nitrogen_dioxide": 7.2,
-          "observed_at": "2026-08-02T09:00",
+          "pm2_5": 2.5,
+          "pm10": 2.6,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 6.0,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -617,7 +730,18 @@
       "name": "Middlesex County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 5:59AM EDT until August 3 at 9:00AM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T04:41:00-04:00",
+            "expires": "2026-08-03T09:00:00-04:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -631,38 +755,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.09,
-          "precip_probability_pct": 37,
+          "precip_in_24h": 1.56,
+          "precip_probability_pct": 89,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 70.0,
-          "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 70.0,
-          "max_wind_mph": 10.4,
+          "high_temp_f": 83.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 8.1,
           "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 33,
+          "thunder_probability_pct": 47,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
+            "heavy rain showers",
+            "moderate rain showers",
             "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
-          "category": "Moderate",
-          "aqi_24h_max": 99,
+          "us_aqi": 43,
+          "category": "Good",
+          "aqi_24h_max": 52,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.2,
-          "pm10": 9.7,
-          "ozone": 79.0,
-          "nitrogen_dioxide": 8.2,
-          "observed_at": "2026-08-02T09:00",
+          "pm2_5": 2.3,
+          "pm10": 2.3,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 6.1,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -672,7 +798,14 @@
       "name": "Monmouth County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -686,38 +819,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 33,
+          "precip_in_24h": 1.4,
+          "precip_probability_pct": 92,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 83.0,
-          "low_temp_f": 71.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 71.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 92.0,
+          "low_apparent_temp_f": 74.0,
           "max_wind_mph": 11.5,
           "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 29,
+          "thunder_probability_pct": 46,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers"
+            "heavy rain showers",
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
+          "us_aqi": 51,
           "category": "Moderate",
-          "aqi_24h_max": 81,
+          "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.4,
-          "pm10": 10.6,
-          "ozone": 91.0,
-          "nitrogen_dioxide": 6.2,
-          "observed_at": "2026-08-02T09:00",
+          "pm2_5": 1.9,
+          "pm10": 2.2,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 4.9,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -727,7 +862,18 @@
       "name": "Morris County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 5:37AM EDT until August 3 at 7:15AM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T05:37:00-04:00",
+            "expires": "2026-08-03T07:15:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -741,38 +887,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.16,
-          "precip_probability_pct": 62,
+          "precip_in_24h": 1.39,
+          "precip_probability_pct": 94,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 68.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 68.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 34,
+          "high_temp_f": 80.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 46,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "heavy rain showers",
+            "moderate rain showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 101,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 9.1,
-          "pm10": 10.5,
-          "ozone": 75.0,
-          "nitrogen_dioxide": 11.4,
-          "observed_at": "2026-08-02T09:00",
+          "us_aqi": 47,
+          "category": "Good",
+          "aqi_24h_max": 54,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 2.4,
+          "pm10": 2.5,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 7.5,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -799,35 +947,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.81,
+          "precip_probability_pct": 89,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 83.0,
-          "low_temp_f": 71.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 71.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 29,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 92.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 42,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers"
+            "heavy rain showers",
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 46,
+          "us_aqi": 40,
           "category": "Good",
-          "aqi_24h_max": 92,
+          "aqi_24h_max": 51,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 6.8,
-          "pm10": 8.6,
-          "ozone": 88.0,
-          "nitrogen_dioxide": 3.3,
-          "observed_at": "2026-08-02T09:00",
+          "pm2_5": 1.8,
+          "pm10": 2.0,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 2.6,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -837,7 +987,18 @@
       "name": "Passaic County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 6:20AM EDT until August 3 at 8:00AM EDT by NWS Upton NY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T06:20:00-04:00",
+            "expires": "2026-08-03T08:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -851,38 +1012,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 38,
+          "precip_in_24h": 1.27,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 69.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 69.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 28,
+          "high_temp_f": 81.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 40,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
+            "moderate rain showers",
             "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
-          "aqi_24h_max": 94,
+          "us_aqi": 46,
+          "category": "Good",
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.0,
-          "pm10": 10.5,
-          "ozone": 74.0,
-          "nitrogen_dioxide": 9.8,
-          "observed_at": "2026-08-02T09:00",
+          "pm2_5": 1.8,
+          "pm10": 1.9,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 5.3,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -909,35 +1071,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.14,
-          "precip_probability_pct": 39,
+          "precip_in_24h": 0.91,
+          "precip_probability_pct": 91,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 84.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 39,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 94.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 46,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
+            "heavy rain showers",
             "light rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 44,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 79,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.8,
-          "pm10": 7.4,
-          "ozone": 86.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-08-02T09:00",
+          "aqi_24h_max": 47,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 1.7,
+          "pm10": 1.7,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 4.0,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -947,7 +1111,18 @@
       "name": "Somerset County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 5:59AM EDT until August 3 at 9:00AM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T04:41:00-04:00",
+            "expires": "2026-08-03T09:00:00-04:00",
+            "source": "nws_alert",
+            "count": 3
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -961,38 +1136,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.15,
-          "precip_probability_pct": 44,
+          "precip_in_24h": 1.54,
+          "precip_probability_pct": 91,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 69.0,
-          "high_apparent_temp_f": 91.0,
-          "low_apparent_temp_f": 69.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 34,
+          "high_temp_f": 83.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 92.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 47,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
+            "heavy rain showers",
+            "moderate rain showers",
             "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 99,
+          "us_aqi": 41,
+          "category": "Good",
+          "aqi_24h_max": 52,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.7,
-          "pm10": 9.0,
-          "ozone": 77.0,
-          "nitrogen_dioxide": 7.2,
-          "observed_at": "2026-08-02T09:00",
+          "pm2_5": 2.5,
+          "pm10": 2.6,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 6.0,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1019,35 +1196,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.13,
-          "precip_probability_pct": 65,
+          "precip_in_24h": 0.75,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 67.0,
+          "high_temp_f": 80.0,
+          "low_temp_f": 70.0,
           "high_apparent_temp_f": 85.0,
-          "low_apparent_temp_f": 67.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 34,
+          "low_apparent_temp_f": 70.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 45,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers"
+            "heavy rain showers",
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 47,
+          "us_aqi": 37,
           "category": "Good",
-          "aqi_24h_max": 63,
+          "aqi_24h_max": 51,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.2,
-          "pm10": 8.4,
-          "ozone": 76.0,
-          "nitrogen_dioxide": 6.1,
-          "observed_at": "2026-08-02T09:00",
+          "pm2_5": 1.3,
+          "pm10": 1.4,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 4.1,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1057,7 +1236,18 @@
       "name": "Union County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 3 at 5:41AM EDT until August 3 at 8:45AM EDT by NWS Upton NY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-03T05:41:00-04:00",
+            "expires": "2026-08-03T08:45:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1071,38 +1261,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 36,
+          "precip_in_24h": 1.49,
+          "precip_probability_pct": 93,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 72.0,
+          "high_temp_f": 82.0,
+          "low_temp_f": 75.0,
           "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 30,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 40,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 101,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 9.1,
-          "pm10": 10.5,
-          "ozone": 75.0,
-          "nitrogen_dioxide": 11.4,
-          "observed_at": "2026-08-02T09:00",
+          "us_aqi": 47,
+          "category": "Good",
+          "aqi_24h_max": 54,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 2.4,
+          "pm10": 2.5,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 7.5,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1129,35 +1320,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.21,
-          "precip_probability_pct": 55,
+          "precip_in_24h": 0.82,
+          "precip_probability_pct": 95,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 80.0,
-          "low_temp_f": 68.0,
+          "low_temp_f": 71.0,
           "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 68.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 36,
+          "low_apparent_temp_f": 71.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 50,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "heavy rain showers",
+            "moderate rain showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 75,
+          "us_aqi": 39,
+          "category": "Good",
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.1,
-          "pm10": 9.2,
-          "ozone": 68.0,
-          "nitrogen_dioxide": 8.3,
-          "observed_at": "2026-08-02T09:00",
+          "pm2_5": 2.0,
+          "pm10": 2.0,
+          "ozone": 51.0,
+          "nitrogen_dioxide": 5.5,
+          "observed_at": "2026-08-03T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
