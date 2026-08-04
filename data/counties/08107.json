@@ -8,7 +8,18 @@
     "lon": -106.987702
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 4 at 1:12AM MDT until August 4 at 7:00PM MDT by NWS Grand Junction CO",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-04T01:12:00-06:00",
+        "expires": "2026-08-04T19:00:00-06:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,40 +33,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 2,
+      "precip_probability_pct": 3,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 92.0,
-      "low_temp_f": 52.0,
-      "high_apparent_temp_f": 88.0,
-      "low_apparent_temp_f": 53.0,
-      "max_wind_mph": 18.4,
+      "high_temp_f": 89.0,
+      "low_temp_f": 45.0,
+      "high_apparent_temp_f": 85.0,
+      "low_apparent_temp_f": 44.0,
+      "max_wind_mph": 15.0,
       "max_wind_gust_mph": 26.5,
-      "thunder_probability_pct": 2,
+      "thunder_probability_pct": 3,
       "lightning_activity_level": null,
       "weather": [
-        "smoke"
+        "smoke",
+        "thunderstorms",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 51,
+      "us_aqi": 54,
       "category": "Moderate",
-      "aqi_24h_max": 89,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 12.0,
-      "pm10": 16.1,
-      "ozone": 51.0,
-      "nitrogen_dioxide": 13.3,
-      "observed_at": "2026-08-03T10:00",
+      "aqi_24h_max": 112,
+      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+      "pm2_5": 14.1,
+      "pm10": 15.5,
+      "ozone": 55.0,
+      "nitrogen_dioxide": 14.8,
+      "observed_at": "2026-08-04T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-03",
-  "generated_at": "2026-08-03T11:03:19.423474+00:00"
+  "date": "2026-08-04",
+  "generated_at": "2026-08-04T10:13:15.009462+00:00"
 }
