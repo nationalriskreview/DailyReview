@@ -1,17 +1,28 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-05T10:13:37.535003+00:00",
-  "date": "2026-08-05",
+  "generated_at": "2026-08-06T10:14:00.911610+00:00",
+  "date": "2026-08-06",
   "state": "NV",
   "counties_total": 17,
-  "counties_with_alerts": 9,
+  "counties_with_alerts": 12,
   "counties": {
     "32001": {
       "fips": "32001",
       "name": "Churchill County",
       "state": "NV",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued August 6 at 12:50AM PDT until August 10 at 8:00AM PDT by NWS Reno NV",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T00:50:00-07:00",
+            "expires": "2026-08-07T11:30:00-07:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -29,7 +40,7 @@
             "lat": 39.6988,
             "lon": -117.487,
             "acreage": 35634,
-            "containment_pct": 43,
+            "containment_pct": 60,
             "cause": "Natural",
             "state": "NV",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVCCD-030614",
@@ -44,38 +55,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 103.0,
-          "low_temp_f": 60.0,
-          "high_apparent_temp_f": 96.0,
-          "low_apparent_temp_f": 60.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 5,
+          "high_temp_f": 104.0,
+          "low_temp_f": 62.0,
+          "high_apparent_temp_f": 98.0,
+          "low_apparent_temp_f": 62.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "haze",
-            "smoke"
+            "smoke",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 67,
+          "us_aqi": 68,
           "category": "Moderate",
-          "aqi_24h_max": 102,
+          "aqi_24h_max": 106,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 7.8,
-          "pm10": 8.2,
-          "ozone": 99.0,
-          "nitrogen_dioxide": 3.3,
-          "observed_at": "2026-08-05T10:00",
+          "pm2_5": 3.6,
+          "pm10": 4.1,
+          "ozone": 95.0,
+          "nitrogen_dioxide": 2.4,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -88,11 +100,11 @@
         "weather": [
           {
             "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 4 at 5:54PM PDT until August 8 at 8:00PM PDT by NWS Las Vegas NV",
+            "headline": "Extreme Heat Warning issued August 6 at 1:06AM PDT until August 9 at 8:00PM PDT by NWS Las Vegas NV",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-04T17:54:00-07:00",
-            "expires": "2026-08-05T18:00:00-07:00",
+            "effective": "2026-08-06T01:06:00-07:00",
+            "expires": "2026-08-06T18:00:00-07:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -114,16 +126,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_probability_pct": 12,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 112.0,
-          "low_temp_f": 65.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 65.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 5,
+          "high_temp_f": 111.0,
+          "low_temp_f": 64.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 64.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 12,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -135,13 +147,13 @@
         "air_quality": {
           "us_aqi": 37,
           "category": "Good",
-          "aqi_24h_max": 82,
+          "aqi_24h_max": 79,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.3,
-          "pm10": 7.7,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 10.2,
-          "observed_at": "2026-08-05T10:00",
+          "pm2_5": 7.8,
+          "pm10": 10.8,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 8.7,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -172,30 +184,31 @@
           "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
+          "high_temp_f": 93.0,
           "low_temp_f": 62.0,
-          "high_apparent_temp_f": 88.0,
+          "high_apparent_temp_f": 89.0,
           "low_apparent_temp_f": 62.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 24.2,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 21.9,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
+            "haze",
             "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
-          "category": "Good",
-          "aqi_24h_max": 96,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.8,
-          "pm10": 15.8,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 7.6,
-          "observed_at": "2026-08-05T10:00",
+          "us_aqi": 55,
+          "category": "Moderate",
+          "aqi_24h_max": 105,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 21.5,
+          "pm10": 22.5,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 7.1,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -205,106 +218,14 @@
       "name": "Elko County",
       "state": "NV",
       "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [
-          {
-            "title": "Secret Pass",
-            "incident_name": "Secret Pass",
-            "id": "2026-NVECFX-010343",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-07-26T00:45:00+00:00",
-            "lat": 40.8965,
-            "lon": -115.26,
-            "acreage": 3300,
-            "containment_pct": 98,
-            "cause": "Natural",
-            "state": "NV",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVECFX-010343",
-            "source": "NIFC WFIGS",
-            "distance_miles": 17.6,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Antelope Creek",
-            "incident_name": "Antelope Creek",
-            "id": "2026-NVEKD-010378",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-02T15:47:00+00:00",
-            "lat": 41.049,
-            "lon": -116.5439,
-            "acreage": 6282,
-            "containment_pct": 75,
-            "cause": "Undetermined",
-            "state": "NV",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVEKD-010378",
-            "source": "NIFC WFIGS",
-            "distance_miles": 19.4,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 2,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 8,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "smoke",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 60,
-          "category": "Moderate",
-          "aqi_24h_max": 109,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 23.5,
-          "pm10": 24.4,
-          "ozone": 68.0,
-          "nitrogen_dioxide": 15.0,
-          "observed_at": "2026-08-05T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "32009": {
-      "fips": "32009",
-      "name": "Esmeralda County",
-      "state": "NV",
-      "alerts": {
         "weather": [
           {
             "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 4 at 5:54PM PDT until August 8 at 8:00PM PDT by NWS Las Vegas NV",
+            "headline": "Extreme Heat Warning issued August 6 at 12:07AM PDT until August 9 at 11:00PM PDT by NWS Elko NV",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-04T17:54:00-07:00",
-            "expires": "2026-08-05T18:00:00-07:00",
+            "effective": "2026-08-06T00:07:00-07:00",
+            "expires": "2026-08-06T11:00:00-07:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -326,16 +247,83 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_probability_pct": 4,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 99.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 93.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 4,
+          "lightning_activity_level": null,
+          "weather": [
+            "smoke",
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 62,
+          "category": "Moderate",
+          "aqi_24h_max": 112,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 10.8,
+          "pm10": 11.3,
+          "ozone": 82.0,
+          "nitrogen_dioxide": 12.4,
+          "observed_at": "2026-08-06T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "32009": {
+      "fips": "32009",
+      "name": "Esmeralda County",
+      "state": "NV",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued August 6 at 1:06AM PDT until August 9 at 8:00PM PDT by NWS Las Vegas NV",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T01:06:00-07:00",
+            "expires": "2026-08-06T18:00:00-07:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 103.0,
-          "low_temp_f": 67.0,
+          "low_temp_f": 69.0,
           "high_apparent_temp_f": 96.0,
-          "low_apparent_temp_f": 67.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 5,
+          "low_apparent_temp_f": 69.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -345,15 +333,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 48,
+          "us_aqi": 49,
           "category": "Good",
-          "aqi_24h_max": 102,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 3.3,
-          "pm10": 4.4,
-          "ozone": 87.0,
+          "aqi_24h_max": 86,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 4.2,
+          "pm10": 6.3,
+          "ozone": 94.0,
           "nitrogen_dioxide": 1.0,
-          "observed_at": "2026-08-05T10:00",
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -381,7 +369,7 @@
             "lat": 39.6988,
             "lon": -117.487,
             "acreage": 35634,
-            "containment_pct": 43,
+            "containment_pct": 60,
             "cause": "Natural",
             "state": "NV",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVCCD-030614",
@@ -400,19 +388,18 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 12.7,
+          "high_temp_f": 97.0,
+          "low_temp_f": 55.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 55.0,
+          "max_wind_mph": 11.5,
           "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": null,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
             "thunderstorms",
             "light rain showers"
           ],
@@ -420,15 +407,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 77,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 102,
+          "aqi_24h_max": 103,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 8.8,
-          "pm10": 8.8,
-          "ozone": 120.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-08-05T10:00",
+          "pm2_5": 6.5,
+          "pm10": 7.3,
+          "ozone": 95.0,
+          "nitrogen_dioxide": 5.9,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -456,16 +443,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 100.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 94.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": null,
+          "high_temp_f": 102.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 95.0,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -476,13 +463,13 @@
         "air_quality": {
           "us_aqi": 63,
           "category": "Moderate",
-          "aqi_24h_max": 106,
+          "aqi_24h_max": 105,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 9.8,
-          "pm10": 10.2,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 8.6,
-          "observed_at": "2026-08-05T10:00",
+          "pm2_5": 8.1,
+          "pm10": 26.3,
+          "ozone": 108.0,
+          "nitrogen_dioxide": 4.7,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -510,7 +497,7 @@
             "lat": 39.6988,
             "lon": -117.487,
             "acreage": 35634,
-            "containment_pct": 43,
+            "containment_pct": 60,
             "cause": "Natural",
             "state": "NV",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVCCD-030614",
@@ -529,35 +516,36 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 60.0,
-          "high_apparent_temp_f": 92.0,
-          "low_apparent_temp_f": 60.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 99.0,
+          "low_temp_f": 63.0,
+          "high_apparent_temp_f": 93.0,
+          "low_apparent_temp_f": 63.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
+            "thunderstorms",
             "light rain showers",
-            "haze"
+            "haze",
+            "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 70,
+          "us_aqi": 57,
           "category": "Moderate",
-          "aqi_24h_max": 113,
+          "aqi_24h_max": 107,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 8.5,
-          "pm10": 8.7,
-          "ozone": 101.0,
-          "nitrogen_dioxide": 5.9,
-          "observed_at": "2026-08-05T10:00",
+          "pm2_5": 7.3,
+          "pm10": 8.1,
+          "ozone": 89.0,
+          "nitrogen_dioxide": 6.5,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -570,11 +558,11 @@
         "weather": [
           {
             "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 4 at 5:54PM PDT until August 8 at 8:00PM PDT by NWS Las Vegas NV",
+            "headline": "Extreme Heat Warning issued August 6 at 1:06AM PDT until August 9 at 8:00PM PDT by NWS Las Vegas NV",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-04T17:54:00-07:00",
-            "expires": "2026-08-05T18:00:00-07:00",
+            "effective": "2026-08-06T01:06:00-07:00",
+            "expires": "2026-08-06T18:00:00-07:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -595,7 +583,7 @@
             "date": "2026-07-24T01:00:52+00:00",
             "lat": 37.2667,
             "lon": -116.1576,
-            "acreage": 38000,
+            "acreage": 49766,
             "containment_pct": 0,
             "cause": "Undetermined",
             "state": "NV",
@@ -633,35 +621,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 6,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 100.0,
-          "low_temp_f": 58.0,
-          "high_apparent_temp_f": 95.0,
-          "low_apparent_temp_f": 58.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 6,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 96.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers",
-            "haze"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 45,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 76,
+          "aqi_24h_max": 74,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 3.0,
-          "pm10": 5.6,
-          "ozone": 83.0,
-          "nitrogen_dioxide": 2.0,
-          "observed_at": "2026-08-05T10:00",
+          "pm2_5": 6.9,
+          "pm10": 13.2,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 2.2,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -671,7 +658,18 @@
       "name": "Lyon County",
       "state": "NV",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued August 6 at 12:50AM PDT until August 10 at 8:00AM PDT by NWS Reno NV",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T00:50:00-07:00",
+            "expires": "2026-08-07T11:30:00-07:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -685,38 +683,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
           "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 99.0,
-          "low_temp_f": 60.0,
-          "high_apparent_temp_f": 94.0,
-          "low_apparent_temp_f": 60.0,
-          "max_wind_mph": 8.1,
+          "high_temp_f": 100.0,
+          "low_temp_f": 62.0,
+          "high_apparent_temp_f": 95.0,
+          "low_apparent_temp_f": 62.0,
+          "max_wind_mph": 6.9,
           "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "haze",
-            "smoke"
+            "smoke",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 62,
-          "category": "Moderate",
-          "aqi_24h_max": 91,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.0,
-          "pm10": 10.1,
-          "ozone": 94.0,
-          "nitrogen_dioxide": 5.2,
-          "observed_at": "2026-08-05T10:00",
+          "us_aqi": 50,
+          "category": "Good",
+          "aqi_24h_max": 106,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 5.3,
+          "pm10": 5.7,
+          "ozone": 74.0,
+          "nitrogen_dioxide": 5.5,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -744,16 +743,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 101.0,
-          "low_temp_f": 68.0,
-          "high_apparent_temp_f": 95.0,
-          "low_apparent_temp_f": 68.0,
+          "high_temp_f": 100.0,
+          "low_temp_f": 70.0,
+          "high_apparent_temp_f": 94.0,
+          "low_apparent_temp_f": 70.0,
           "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 5,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "haze",
@@ -763,15 +762,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 93,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 6.2,
-          "pm10": 6.6,
-          "ozone": 82.0,
-          "nitrogen_dioxide": 3.2,
-          "observed_at": "2026-08-05T10:00",
+          "aqi_24h_max": 102,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 11.0,
+          "pm10": 11.5,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 3.6,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -784,11 +783,11 @@
         "weather": [
           {
             "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 4 at 5:54PM PDT until August 8 at 8:00PM PDT by NWS Las Vegas NV",
+            "headline": "Extreme Heat Warning issued August 6 at 1:06AM PDT until August 9 at 8:00PM PDT by NWS Las Vegas NV",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-04T17:54:00-07:00",
-            "expires": "2026-08-05T18:00:00-07:00",
+            "effective": "2026-08-06T01:06:00-07:00",
+            "expires": "2026-08-06T18:00:00-07:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -809,7 +808,7 @@
             "date": "2026-07-24T01:00:52+00:00",
             "lat": 37.2667,
             "lon": -116.1576,
-            "acreage": 38000,
+            "acreage": 49766,
             "containment_pct": 0,
             "cause": "Undetermined",
             "state": "NV",
@@ -847,16 +846,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 100.0,
-          "low_temp_f": 57.0,
+          "low_temp_f": 58.0,
           "high_apparent_temp_f": 94.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 5,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -869,13 +868,13 @@
         "air_quality": {
           "us_aqi": 44,
           "category": "Good",
-          "aqi_24h_max": 112,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 5.2,
-          "pm10": 6.6,
-          "ozone": 70.0,
-          "nitrogen_dioxide": 2.8,
-          "observed_at": "2026-08-05T10:00",
+          "aqi_24h_max": 89,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 5.0,
+          "pm10": 8.9,
+          "ozone": 77.0,
+          "nitrogen_dioxide": 2.2,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -885,7 +884,18 @@
       "name": "Pershing County",
       "state": "NV",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued August 6 at 12:50AM PDT until August 10 at 8:00AM PDT by NWS Reno NV",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T00:50:00-07:00",
+            "expires": "2026-08-07T11:30:00-07:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -899,20 +909,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 101.0,
-          "low_temp_f": 61.0,
-          "high_apparent_temp_f": 95.0,
-          "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 104.0,
+          "low_temp_f": 64.0,
+          "high_apparent_temp_f": 98.0,
+          "low_apparent_temp_f": 64.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "haze",
@@ -922,15 +932,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
-          "category": "Moderate",
-          "aqi_24h_max": 128,
+          "us_aqi": 49,
+          "category": "Good",
+          "aqi_24h_max": 106,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 9.2,
-          "pm10": 10.7,
-          "ozone": 81.0,
-          "nitrogen_dioxide": 9.8,
-          "observed_at": "2026-08-05T10:00",
+          "pm2_5": 3.4,
+          "pm10": 3.6,
+          "ozone": 82.0,
+          "nitrogen_dioxide": 8.8,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -962,11 +972,11 @@
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 93.0,
-          "low_temp_f": 59.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 59.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 13.8,
+          "low_temp_f": 60.0,
+          "high_apparent_temp_f": 89.0,
+          "low_apparent_temp_f": 60.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 21.9,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
@@ -977,15 +987,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
-          "aqi_24h_max": 98,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.8,
-          "pm10": 16.9,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 23.1,
-          "observed_at": "2026-08-05T10:00",
+          "us_aqi": 41,
+          "category": "Good",
+          "aqi_24h_max": 112,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 6.8,
+          "pm10": 7.2,
+          "ozone": 29.0,
+          "nitrogen_dioxide": 22.2,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -995,7 +1005,18 @@
       "name": "Washoe County",
       "state": "NV",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued August 6 at 12:50AM PDT until August 10 at 8:00AM PDT by NWS Reno NV",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T00:50:00-07:00",
+            "expires": "2026-08-07T11:30:00-07:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1009,20 +1030,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
           "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 99.0,
+          "high_temp_f": 100.0,
           "low_temp_f": 59.0,
-          "high_apparent_temp_f": 93.0,
+          "high_apparent_temp_f": 94.0,
           "low_apparent_temp_f": 59.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 3,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
             "haze",
@@ -1032,15 +1053,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
-          "category": "Moderate",
-          "aqi_24h_max": 88,
+          "us_aqi": 49,
+          "category": "Good",
+          "aqi_24h_max": 100,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.9,
-          "pm10": 6.8,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 6.3,
-          "observed_at": "2026-08-05T10:00",
+          "pm2_5": 3.4,
+          "pm10": 3.8,
+          "ozone": 67.0,
+          "nitrogen_dioxide": 5.9,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1064,11 +1085,11 @@
             "id": "2026-NVHTF-040303",
             "category": "wildfire",
             "incident_type": "Wildfire",
-            "date": "2026-07-31T16:30:35+00:00",
+            "date": "2026-07-31T16:30:00+00:00",
             "lat": 39.1032,
             "lon": -114.8949,
-            "acreage": 8728,
-            "containment_pct": 0,
+            "acreage": 8775,
+            "containment_pct": 5,
             "cause": "Natural",
             "state": "NV",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVHTF-040303",
@@ -1087,16 +1108,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": null,
+          "high_temp_f": 95.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 90.0,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 8,
           "lightning_activity_level": null,
           "weather": [
             "smoke",
@@ -1107,15 +1128,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 109,
+          "us_aqi": 46,
+          "category": "Good",
+          "aqi_24h_max": 101,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 6.6,
-          "pm10": 7.1,
-          "ozone": 83.0,
-          "nitrogen_dioxide": 8.3,
-          "observed_at": "2026-08-05T10:00",
+          "pm2_5": 7.9,
+          "pm10": 8.7,
+          "ozone": 73.0,
+          "nitrogen_dioxide": 8.5,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1155,21 +1176,22 @@
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
+            "haze",
             "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 69,
-          "category": "Moderate",
+          "us_aqi": 43,
+          "category": "Good",
           "aqi_24h_max": 99,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.4,
-          "pm10": 15.2,
-          "ozone": 98.0,
-          "nitrogen_dioxide": 6.3,
-          "observed_at": "2026-08-05T10:00",
+          "pm2_5": 6.3,
+          "pm10": 6.9,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 6.8,
+          "observed_at": "2026-08-06T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
