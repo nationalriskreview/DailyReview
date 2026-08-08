@@ -1,17 +1,28 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-06T10:14:00.911610+00:00",
-  "date": "2026-08-06",
+  "generated_at": "2026-08-08T08:14:37.303664+00:00",
+  "date": "2026-08-08",
   "state": "MT",
   "counties_total": 56,
-  "counties_with_alerts": 27,
+  "counties_with_alerts": 47,
   "counties": {
     "30001": {
       "fips": "30001",
       "name": "Beaverhead County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 6 at 9:41PM MDT until August 8 at 9:00PM MDT by NWS Missoula MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-07T05:45:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -28,7 +39,7 @@
             "date": "2026-07-31T20:39:00+00:00",
             "lat": 45.6368,
             "lon": -113.2039,
-            "acreage": 1829,
+            "acreage": 4807,
             "containment_pct": 0,
             "cause": "Undetermined",
             "state": "MT",
@@ -46,8 +57,8 @@
             "date": "2026-08-01T19:31:12+00:00",
             "lat": 45.5547,
             "lon": -113.3257,
-            "acreage": 1684,
-            "containment_pct": 0,
+            "acreage": 6684,
+            "containment_pct": 1,
             "cause": "Undetermined",
             "state": "MT",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBDF-266319",
@@ -62,37 +73,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 29.9,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 89.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
-          "category": "Moderate",
-          "aqi_24h_max": 81,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 25.3,
-          "pm10": 26.1,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 15.6,
-          "observed_at": "2026-08-06T10:00",
+          "us_aqi": 142,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 158,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 83.8,
+          "pm10": 85.7,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 17.7,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -102,51 +115,83 @@
       "name": "Big Horn County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 7 at 12:13PM MDT until August 8 at 9:00PM MDT by NWS Billings MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T12:15:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Slough Grass",
+            "incident_name": "Slough Grass",
+            "id": "2026-MTLG29-000661",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-08-06T21:22:07+00:00",
+            "lat": 45.7525,
+            "lon": -106.805,
+            "acreage": 6467.3,
+            "containment_pct": 10,
+            "cause": "Natural",
+            "state": "MT",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTLG29-000661",
+            "source": "NIFC WFIGS",
+            "distance_miles": 26.2,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 12,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 54.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 54.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 8,
+          "high_temp_f": 97.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 92.0,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
+          "us_aqi": 71,
           "category": "Moderate",
-          "aqi_24h_max": 79,
+          "aqi_24h_max": 85,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.2,
-          "pm10": 11.6,
-          "ozone": 26.0,
-          "nitrogen_dioxide": 10.4,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 21.8,
+          "pm10": 22.4,
+          "ozone": 46.0,
+          "nitrogen_dioxide": 7.9,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -174,35 +219,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 91.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 8,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
-            "thunderstorms",
-            "light rain showers"
+            "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 43,
+          "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 52,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.4,
-          "pm10": 7.9,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 8.5,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 36,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 2.8,
+          "pm10": 2.9,
+          "ozone": 42.0,
+          "nitrogen_dioxide": 3.6,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -212,7 +255,18 @@
       "name": "Broadwater County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T17:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -229,7 +283,7 @@
             "date": "2026-07-31T20:54:00+00:00",
             "lat": 46.7365,
             "lon": -110.6397,
-            "acreage": 386,
+            "acreage": 400,
             "containment_pct": 27,
             "cause": "Undetermined",
             "state": "MT",
@@ -245,38 +299,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 13,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 53.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 86.0,
+          "low_apparent_temp_f": 58.0,
           "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 2,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
-            "light rain showers"
+            "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
+          "us_aqi": 91,
           "category": "Moderate",
-          "aqi_24h_max": 80,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.2,
-          "pm10": 13.9,
-          "ozone": 62.0,
-          "nitrogen_dioxide": 16.2,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 120,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 26.0,
+          "pm10": 26.8,
+          "ozone": 78.0,
+          "nitrogen_dioxide": 12.6,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -286,7 +339,18 @@
       "name": "Carbon County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:33AM MDT until August 9 at 9:00PM MDT by NWS Riverton WY",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T18:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -300,20 +364,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 15.0,
+          "high_temp_f": 97.0,
+          "low_temp_f": 61.0,
+          "high_apparent_temp_f": 92.0,
+          "low_apparent_temp_f": 61.0,
+          "max_wind_mph": 13.8,
           "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 2,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -322,15 +386,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 84,
           "category": "Moderate",
-          "aqi_24h_max": 70,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.9,
-          "pm10": 9.3,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 7.8,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 111,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 22.2,
+          "pm10": 23.7,
+          "ozone": 76.0,
+          "nitrogen_dioxide": 6.6,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -343,11 +407,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 6 at 12:50AM MDT until August 6 at 8:00PM MDT by NWS Billings MT",
+            "headline": "Red Flag Warning issued August 7 at 12:13PM MDT until August 8 at 9:00PM MDT by NWS Billings MT",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-06T00:50:00-06:00",
-            "expires": "2026-08-06T20:00:00-06:00",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T12:15:00-06:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -369,35 +433,35 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 8,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 27.6,
-          "thunder_probability_pct": 8,
+          "high_temp_f": 98.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 93.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
             "smoke",
-            "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 65,
+          "us_aqi": 36,
+          "category": "Good",
+          "aqi_24h_max": 52,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.8,
-          "pm10": 13.4,
-          "ozone": 70.0,
-          "nitrogen_dioxide": 4.7,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 6.7,
+          "pm10": 7.1,
+          "ozone": 56.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -407,7 +471,18 @@
       "name": "Cascade County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T17:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -421,20 +496,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 81.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 15.0,
+          "high_temp_f": 88.0,
+          "low_temp_f": 60.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 60.0,
+          "max_wind_mph": 9.2,
           "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 1,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -443,15 +518,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 79,
           "category": "Moderate",
-          "aqi_24h_max": 128,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 11.5,
-          "pm10": 12.1,
-          "ozone": 68.0,
-          "nitrogen_dioxide": 4.3,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 89,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 18.6,
+          "pm10": 19.0,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 5.1,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -461,7 +536,18 @@
       "name": "Chouteau County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T17:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -475,19 +561,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
           "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 16.1,
+          "high_temp_f": 91.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 17.3,
           "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
@@ -497,15 +583,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 48,
+          "us_aqi": 49,
           "category": "Good",
-          "aqi_24h_max": 55,
+          "aqi_24h_max": 69,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.4,
-          "pm10": 7.8,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 8.6,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 17.5,
+          "pm10": 18.0,
+          "ozone": 39.0,
+          "nitrogen_dioxide": 10.6,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -518,11 +604,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 6 at 12:50AM MDT until August 6 at 8:00PM MDT by NWS Billings MT",
+            "headline": "Red Flag Warning issued August 7 at 12:13PM MDT until August 8 at 9:00PM MDT by NWS Billings MT",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-06T00:50:00-06:00",
-            "expires": "2026-08-06T20:00:00-06:00",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T12:15:00-06:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -544,33 +630,35 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 97.0,
+          "low_temp_f": 60.0,
+          "high_apparent_temp_f": 92.0,
+          "low_apparent_temp_f": 60.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 71,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.5,
-          "pm10": 12.9,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 11.2,
-          "observed_at": "2026-08-06T10:00",
+          "us_aqi": 34,
+          "category": "Good",
+          "aqi_24h_max": 50,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 7.5,
+          "pm10": 7.8,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 2.8,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -598,33 +686,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 49.0,
-          "max_wind_mph": 24.2,
-          "max_wind_gust_mph": 34.5,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 83.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 82.0,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 37,
           "category": "Good",
-          "aqi_24h_max": 46,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 6.7,
-          "pm10": 7.2,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 9.8,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.3,
+          "pm10": 10.7,
+          "ozone": 30.0,
+          "nitrogen_dioxide": 19.0,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -637,11 +726,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 5 at 4:17PM MDT until August 6 at 7:00PM MDT by NWS Glasgow MT",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 8:00PM MDT by NWS Glasgow MT",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-05T16:17:00-06:00",
-            "expires": "2026-08-06T19:00:00-06:00",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T20:00:00-06:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -663,34 +752,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 6,
+          "precip_probability_pct": 14,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
+          "high_temp_f": 91.0,
           "low_temp_f": 56.0,
-          "high_apparent_temp_f": 88.0,
+          "high_apparent_temp_f": 87.0,
           "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 33.4,
-          "thunder_probability_pct": 6,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 9,
           "lightning_activity_level": null,
           "weather": [
-            "haze",
-            "light rain showers"
+            "haze"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 44,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 56,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.1,
-          "pm10": 12.5,
-          "ozone": 60.0,
-          "nitrogen_dioxide": 13.2,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 38,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 6.1,
+          "pm10": 6.5,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 8.5,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -700,7 +788,18 @@
       "name": "Deer Lodge County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 6 at 9:41PM MDT until August 8 at 9:00PM MDT by NWS Missoula MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-07T05:45:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -717,7 +816,7 @@
             "date": "2026-07-26T21:44:32+00:00",
             "lat": 46.0722,
             "lon": -113.6908,
-            "acreage": 875,
+            "acreage": 2528,
             "containment_pct": 0,
             "cause": "Undetermined",
             "state": "MT",
@@ -735,7 +834,7 @@
             "date": "2026-07-31T20:39:00+00:00",
             "lat": 45.6368,
             "lon": -113.2039,
-            "acreage": 1829,
+            "acreage": 4807,
             "containment_pct": 0,
             "cause": "Undetermined",
             "state": "MT",
@@ -753,13 +852,31 @@
             "date": "2026-08-01T19:31:12+00:00",
             "lat": 45.5547,
             "lon": -113.3257,
-            "acreage": 1684,
-            "containment_pct": 0,
+            "acreage": 6684,
+            "containment_pct": 1,
             "cause": "Undetermined",
             "state": "MT",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBDF-266319",
             "source": "NIFC WFIGS",
             "distance_miles": 38.3,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Black Bear",
+            "incident_name": "Black Bear",
+            "id": "2026-MTBRF-000282",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-08-02T00:03:00+00:00",
+            "lat": 46.168,
+            "lon": -113.8895,
+            "acreage": 225,
+            "containment_pct": 0,
+            "cause": "Natural",
+            "state": "MT",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBRF-000282",
+            "source": "NIFC WFIGS",
+            "distance_miles": 36.2,
             "threat_level": "Vicinity"
           }
         ],
@@ -769,20 +886,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3,
+      "alert_count": 5,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 72.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 72.0,
-          "low_apparent_temp_f": 40.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 73.0,
+          "low_temp_f": 50.0,
+          "high_apparent_temp_f": 73.0,
+          "low_apparent_temp_f": 46.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 26.5,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -791,15 +908,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 71,
-          "category": "Moderate",
-          "aqi_24h_max": 85,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 27.1,
-          "pm10": 28.2,
-          "ozone": 81.0,
-          "nitrogen_dioxide": 8.5,
-          "observed_at": "2026-08-06T10:00",
+          "us_aqi": 147,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 175,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 73.1,
+          "pm10": 75.0,
+          "ozone": 116.0,
+          "nitrogen_dioxide": 12.6,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -812,11 +929,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 6 at 12:50AM MDT until August 6 at 8:00PM MDT by NWS Billings MT",
+            "headline": "Red Flag Warning issued August 7 at 12:13PM MDT until August 8 at 9:00PM MDT by NWS Billings MT",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-06T00:50:00-06:00",
-            "expires": "2026-08-06T20:00:00-06:00",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T12:15:00-06:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -838,33 +955,35 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 13,
+          "precip_probability_pct": 15,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 13,
+          "high_temp_f": 95.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 90.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": 8,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
-          "category": "Moderate",
-          "aqi_24h_max": 68,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.6,
-          "pm10": 13.0,
-          "ozone": 51.0,
-          "nitrogen_dioxide": 8.1,
-          "observed_at": "2026-08-06T10:00",
+          "us_aqi": 31,
+          "category": "Good",
+          "aqi_24h_max": 50,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 8.0,
+          "pm10": 8.4,
+          "ozone": 54.0,
+          "nitrogen_dioxide": 3.4,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -877,11 +996,244 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 5 at 4:17PM MDT until August 6 at 7:00PM MDT by NWS Glasgow MT",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-05T16:17:00-06:00",
-            "expires": "2026-08-06T19:00:00-06:00",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T20:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 4,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 93.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 89.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 26.5,
+          "thunder_probability_pct": 4,
+          "lightning_activity_level": null,
+          "weather": [
+            "smoke",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 48,
+          "category": "Good",
+          "aqi_24h_max": 95,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 13.1,
+          "pm10": 13.4,
+          "ozone": 41.0,
+          "nitrogen_dioxide": 9.1,
+          "observed_at": "2026-08-08T08:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "30029": {
+      "fips": "30029",
+      "name": "Flathead County",
+      "state": "MT",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 6 at 9:41PM MDT until August 8 at 9:00PM MDT by NWS Missoula MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-07T05:45:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [
+          {
+            "title": "Silvertip",
+            "incident_name": "Silvertip",
+            "id": "2026-MTFNF-000280",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-07-24T21:19:15+00:00",
+            "lat": 47.8355,
+            "lon": -113.2735,
+            "acreage": 6272,
+            "containment_pct": 0,
+            "cause": "Natural",
+            "state": "MT",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTFNF-000280",
+            "source": "NIFC WFIGS",
+            "distance_miles": 34.0,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Skillet",
+            "incident_name": "Skillet",
+            "id": "2026-MTFNF-000306",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-07-29T22:19:05+00:00",
+            "lat": 48.4913,
+            "lon": -114.8667,
+            "acreage": 3089,
+            "containment_pct": 8,
+            "cause": "Undetermined",
+            "state": "MT",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTFNF-000306",
+            "source": "NIFC WFIGS",
+            "distance_miles": 19.2,
+            "threat_level": "Vicinity"
+          }
+        ],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 3,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 8,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 47.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 8,
+          "lightning_activity_level": null,
+          "weather": [
+            "smoke"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 154,
+          "category": "Unhealthy",
+          "aqi_24h_max": 169,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 47.6,
+          "pm10": 49.1,
+          "ozone": 104.0,
+          "nitrogen_dioxide": 7.9,
+          "observed_at": "2026-08-08T08:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "30031": {
+      "fips": "30031",
+      "name": "Gallatin County",
+      "state": "MT",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T18:00:00-06:00",
+            "source": "nws_alert",
+            "count": 3
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 61.0,
+          "high_apparent_temp_f": 83.0,
+          "low_apparent_temp_f": 61.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 2,
+          "lightning_activity_level": null,
+          "weather": [
+            "smoke"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 102,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 149,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 34.1,
+          "pm10": 35.0,
+          "ozone": 110.0,
+          "nitrogen_dioxide": 9.8,
+          "observed_at": "2026-08-08T08:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "30033": {
+      "fips": "30033",
+      "name": "Garfield County",
+      "state": "MT",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 8:00PM MDT by NWS Glasgow MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T20:00:00-06:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -906,242 +1258,30 @@
           "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 50.0,
-          "high_apparent_temp_f": 85.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 25.3,
+          "high_temp_f": 92.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 27.6,
           "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "haze"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 43,
+          "us_aqi": 32,
           "category": "Good",
-          "aqi_24h_max": 101,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 7.3,
-          "pm10": 7.6,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 9.4,
-          "observed_at": "2026-08-06T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "30029": {
-      "fips": "30029",
-      "name": "Flathead County",
-      "state": "MT",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [
-          {
-            "title": "Silvertip",
-            "incident_name": "Silvertip",
-            "id": "2026-MTFNF-000280",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-07-24T21:19:15+00:00",
-            "lat": 47.8355,
-            "lon": -113.2735,
-            "acreage": 6196,
-            "containment_pct": 0,
-            "cause": "Natural",
-            "state": "MT",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTFNF-000280",
-            "source": "NIFC WFIGS",
-            "distance_miles": 34.0,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Skillet",
-            "incident_name": "Skillet",
-            "id": "2026-MTFNF-000306",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-07-29T22:19:05+00:00",
-            "lat": 48.4913,
-            "lon": -114.8667,
-            "acreage": 2870,
-            "containment_pct": 3,
-            "cause": "Undetermined",
-            "state": "MT",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTFNF-000306",
-            "source": "NIFC WFIGS",
-            "distance_miles": 19.2,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 2,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 8,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 8,
-          "lightning_activity_level": null,
-          "weather": [
-            "smoke"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 78,
-          "category": "Moderate",
-          "aqi_24h_max": 143,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 29.0,
-          "pm10": 30.0,
-          "ozone": 106.0,
-          "nitrogen_dioxide": 10.0,
-          "observed_at": "2026-08-06T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "30031": {
-      "fips": "30031",
-      "name": "Gallatin County",
-      "state": "MT",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 81.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 2,
-          "lightning_activity_level": null,
-          "weather": [
-            "smoke"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 51,
-          "category": "Moderate",
-          "aqi_24h_max": 76,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.2,
-          "pm10": 8.0,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 11.6,
-          "observed_at": "2026-08-06T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "30033": {
-      "fips": "30033",
-      "name": "Garfield County",
-      "state": "MT",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 5 at 4:17PM MDT until August 6 at 7:00PM MDT by NWS Glasgow MT",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-05T16:17:00-06:00",
-            "expires": "2026-08-06T19:00:00-06:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 13,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 33.4,
-          "thunder_probability_pct": 8,
-          "lightning_activity_level": null,
-          "weather": [
-            "haze",
-            "light rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 53,
-          "category": "Moderate",
-          "aqi_24h_max": 77,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.0,
-          "pm10": 13.3,
-          "ozone": 58.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 40,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 5.9,
+          "pm10": 6.4,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 2.2,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1169,16 +1309,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 54.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 54.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 83.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 80.0,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -1187,15 +1327,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 65,
+          "us_aqi": 88,
           "category": "Moderate",
-          "aqi_24h_max": 77,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 33.6,
-          "pm10": 34.3,
-          "ozone": 115.0,
-          "nitrogen_dioxide": 3.3,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 104,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 39.2,
+          "pm10": 40.0,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 8.5,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1205,7 +1345,18 @@
       "name": "Golden Valley County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T17:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1219,20 +1370,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 95.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 90.0,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -1241,15 +1392,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 54,
           "category": "Moderate",
           "aqi_24h_max": 85,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.8,
-          "pm10": 10.2,
-          "ozone": 68.0,
-          "nitrogen_dioxide": 7.6,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 17.2,
+          "pm10": 17.8,
+          "ozone": 76.0,
+          "nitrogen_dioxide": 5.3,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1259,7 +1410,18 @@
       "name": "Granite County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 6 at 9:41PM MDT until August 8 at 9:00PM MDT by NWS Missoula MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-07T05:45:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1277,7 +1439,7 @@
             "lat": 46.162,
             "lon": -114.337,
             "acreage": 118,
-            "containment_pct": 0,
+            "containment_pct": 20,
             "cause": "Natural",
             "state": "MT",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBRF-000255",
@@ -1294,13 +1456,31 @@
             "date": "2026-07-26T21:44:32+00:00",
             "lat": 46.0722,
             "lon": -113.6908,
-            "acreage": 875,
+            "acreage": 2528,
             "containment_pct": 0,
             "cause": "Undetermined",
             "state": "MT",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBDF-266293",
             "source": "NIFC WFIGS",
             "distance_miles": 25.7,
+            "threat_level": "Vicinity"
+          },
+          {
+            "title": "Black Bear",
+            "incident_name": "Black Bear",
+            "id": "2026-MTBRF-000282",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-08-02T00:03:00+00:00",
+            "lat": 46.168,
+            "lon": -113.8895,
+            "acreage": 225,
+            "containment_pct": 0,
+            "cause": "Natural",
+            "state": "MT",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBRF-000282",
+            "source": "NIFC WFIGS",
+            "distance_miles": 27.1,
             "threat_level": "Vicinity"
           }
         ],
@@ -1310,20 +1490,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 4,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 49.0,
+          "high_temp_f": 80.0,
+          "low_temp_f": 53.0,
           "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 2,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -1332,15 +1512,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 69,
-          "category": "Moderate",
-          "aqi_24h_max": 84,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 27.6,
-          "pm10": 28.8,
-          "ozone": 77.0,
-          "nitrogen_dioxide": 8.5,
-          "observed_at": "2026-08-06T10:00",
+          "us_aqi": 118,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 152,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 55.1,
+          "pm10": 56.5,
+          "ozone": 118.0,
+          "nitrogen_dioxide": 9.7,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1368,34 +1548,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 54.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 54.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 88.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
-            "light rain showers"
+            "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 46,
+          "us_aqi": 34,
           "category": "Good",
-          "aqi_24h_max": 53,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.2,
-          "pm10": 7.7,
-          "ozone": 68.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 40,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.1,
+          "pm10": 4.2,
+          "ozone": 38.0,
+          "nitrogen_dioxide": 6.6,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1405,7 +1584,18 @@
       "name": "Jefferson County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-08T17:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1419,20 +1609,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 78.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 78.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 79.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -1441,15 +1631,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
+          "us_aqi": 91,
           "category": "Moderate",
-          "aqi_24h_max": 85,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.0,
-          "pm10": 14.6,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 11.6,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 147,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 28.9,
+          "pm10": 29.5,
+          "ozone": 74.0,
+          "nitrogen_dioxide": 8.3,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1459,7 +1649,18 @@
       "name": "Judith Basin County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T17:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1476,7 +1677,7 @@
             "date": "2026-07-31T20:54:00+00:00",
             "lat": 46.7365,
             "lon": -110.6397,
-            "acreage": 386,
+            "acreage": 400,
             "containment_pct": 27,
             "cause": "Undetermined",
             "state": "MT",
@@ -1492,20 +1693,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 80.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 87.0,
+          "low_temp_f": 61.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 61.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -1514,15 +1715,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 77,
           "category": "Moderate",
-          "aqi_24h_max": 115,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 11.0,
-          "pm10": 11.4,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 7.3,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 97,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 21.1,
+          "pm10": 21.5,
+          "ozone": 41.0,
+          "nitrogen_dioxide": 8.5,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1532,7 +1733,18 @@
       "name": "Lake County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 6 at 9:41PM MDT until August 8 at 9:00PM MDT by NWS Missoula MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-07T05:45:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1549,7 +1761,7 @@
             "date": "2026-07-24T21:19:15+00:00",
             "lat": 47.8355,
             "lon": -113.2735,
-            "acreage": 6196,
+            "acreage": 6272,
             "containment_pct": 0,
             "cause": "Natural",
             "state": "MT",
@@ -1565,19 +1777,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
           "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 11.5,
+          "high_temp_f": 92.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
@@ -1587,15 +1799,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 63,
-          "category": "Moderate",
-          "aqi_24h_max": 125,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 16.8,
-          "pm10": 17.9,
-          "ozone": 70.0,
-          "nitrogen_dioxide": 12.3,
-          "observed_at": "2026-08-06T10:00",
+          "us_aqi": 151,
+          "category": "Unhealthy",
+          "aqi_24h_max": 165,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 29.1,
+          "pm10": 30.2,
+          "ozone": 94.0,
+          "nitrogen_dioxide": 8.3,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1605,7 +1817,18 @@
       "name": "Lewis and Clark County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-08T17:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1619,20 +1842,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 78.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 78.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 81.0,
+          "low_temp_f": 61.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 61.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -1641,15 +1864,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 77,
           "category": "Moderate",
-          "aqi_24h_max": 142,
+          "aqi_24h_max": 112,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 12.6,
-          "pm10": 13.2,
-          "ozone": 59.0,
-          "nitrogen_dioxide": 6.5,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 19.8,
+          "pm10": 20.3,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 5.6,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1680,31 +1903,30 @@
           "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 80.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 86.0,
+          "low_temp_f": 54.0,
+          "high_apparent_temp_f": 83.0,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
-            "light rain showers"
+            "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 51,
           "category": "Moderate",
-          "aqi_24h_max": 59,
+          "aqi_24h_max": 60,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.7,
-          "pm10": 14.2,
-          "ozone": 63.0,
-          "nitrogen_dioxide": 7.1,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 7.8,
+          "pm10": 8.1,
+          "ozone": 48.0,
+          "nitrogen_dioxide": 8.5,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1714,7 +1936,18 @@
       "name": "Lincoln County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 6 at 9:41PM MDT until August 8 at 9:00PM MDT by NWS Missoula MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-07T05:45:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1731,8 +1964,8 @@
             "date": "2026-07-29T22:19:05+00:00",
             "lat": 48.4913,
             "lon": -114.8667,
-            "acreage": 2870,
-            "containment_pct": 3,
+            "acreage": 3089,
+            "containment_pct": 8,
             "cause": "Undetermined",
             "state": "MT",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTFNF-000306",
@@ -1747,20 +1980,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 19,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 81.0,
-          "low_temp_f": 55.0,
+          "low_temp_f": 58.0,
           "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 55.0,
+          "low_apparent_temp_f": 58.0,
           "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 3,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 19,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -1769,15 +2002,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 95,
-          "category": "Moderate",
-          "aqi_24h_max": 146,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 41.8,
-          "pm10": 43.0,
-          "ozone": 91.0,
-          "nitrogen_dioxide": 13.7,
-          "observed_at": "2026-08-06T10:00",
+          "us_aqi": 150,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 161,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 32.4,
+          "pm10": 33.1,
+          "ozone": 107.0,
+          "nitrogen_dioxide": 8.9,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1790,11 +2023,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 5 at 4:17PM MDT until August 6 at 7:00PM MDT by NWS Glasgow MT",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 8:00PM MDT by NWS Glasgow MT",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-05T16:17:00-06:00",
-            "expires": "2026-08-06T19:00:00-06:00",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T20:00:00-06:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -1816,34 +2049,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 33.4,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 89.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
-            "haze",
-            "light rain showers"
+            "haze"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 44,
+          "us_aqi": 30,
           "category": "Good",
-          "aqi_24h_max": 67,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 10.3,
+          "aqi_24h_max": 44,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 6.1,
+          "pm10": 6.4,
           "ozone": 49.0,
-          "nitrogen_dioxide": 6.9,
-          "observed_at": "2026-08-06T10:00",
+          "nitrogen_dioxide": 3.8,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1853,7 +2085,18 @@
       "name": "Madison County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 7 at 12:13PM MDT until August 8 at 9:00PM MDT by NWS Billings MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-08T12:15:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1867,20 +2110,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 80.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 78.0,
-          "low_apparent_temp_f": 51.0,
+          "high_temp_f": 82.0,
+          "low_temp_f": 57.0,
+          "high_apparent_temp_f": 80.0,
+          "low_apparent_temp_f": 57.0,
           "max_wind_mph": 18.4,
           "max_wind_gust_mph": 27.6,
-          "thunder_probability_pct": 2,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -1889,15 +2132,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 49,
-          "category": "Good",
-          "aqi_24h_max": 77,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.8,
-          "pm10": 7.4,
-          "ozone": 57.0,
-          "nitrogen_dioxide": 9.2,
-          "observed_at": "2026-08-06T10:00",
+          "us_aqi": 101,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 158,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 36.1,
+          "pm10": 37.1,
+          "ozone": 122.0,
+          "nitrogen_dioxide": 7.0,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1907,7 +2150,18 @@
       "name": "Meagher County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T17:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1924,7 +2178,7 @@
             "date": "2026-07-31T20:54:00+00:00",
             "lat": 46.7365,
             "lon": -110.6397,
-            "acreage": 386,
+            "acreage": 400,
             "containment_pct": 27,
             "cause": "Undetermined",
             "state": "MT",
@@ -1940,20 +2194,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 80.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 85.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 82.0,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -1962,15 +2216,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 81,
           "category": "Moderate",
-          "aqi_24h_max": 87,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.2,
-          "pm10": 10.8,
-          "ozone": 97.0,
-          "nitrogen_dioxide": 5.8,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 111,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 23.6,
+          "pm10": 24.5,
+          "ozone": 117.0,
+          "nitrogen_dioxide": 4.7,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1980,7 +2234,18 @@
       "name": "Mineral County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 6 at 9:41PM MDT until August 8 at 9:00PM MDT by NWS Missoula MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-07T05:45:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1997,7 +2262,7 @@
             "date": "2026-07-30T00:02:00+00:00",
             "lat": 46.7749,
             "lon": -115.2167,
-            "acreage": 660,
+            "acreage": 646,
             "containment_pct": 0,
             "cause": "Natural",
             "state": "ID",
@@ -2013,73 +2278,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 12,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 80.0,
-          "low_temp_f": 54.0,
-          "high_apparent_temp_f": 78.0,
-          "low_apparent_temp_f": 54.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 1,
-          "lightning_activity_level": null,
-          "weather": [
-            "smoke"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 73,
-          "category": "Moderate",
-          "aqi_24h_max": 108,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 20.4,
-          "pm10": 21.5,
-          "ozone": 61.0,
-          "nitrogen_dioxide": 13.4,
-          "observed_at": "2026-08-06T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "30063": {
-      "fips": "30063",
-      "name": "Missoula County",
-      "state": "MT",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 73.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 73.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 23.0,
+          "high_temp_f": 81.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 19.6,
           "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
@@ -2089,15 +2300,80 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 63,
+          "us_aqi": 89,
           "category": "Moderate",
-          "aqi_24h_max": 101,
+          "aqi_24h_max": 113,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 20.5,
-          "pm10": 21.5,
-          "ozone": 73.0,
-          "nitrogen_dioxide": 16.9,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 23.2,
+          "pm10": 23.7,
+          "ozone": 92.0,
+          "nitrogen_dioxide": 8.5,
+          "observed_at": "2026-08-08T08:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "30063": {
+      "fips": "30063",
+      "name": "Missoula County",
+      "state": "MT",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 6 at 9:41PM MDT until August 8 at 9:00PM MDT by NWS Missoula MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-07T05:45:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 9,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 75.0,
+          "low_temp_f": 54.0,
+          "high_apparent_temp_f": 75.0,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 31.1,
+          "thunder_probability_pct": 8,
+          "lightning_activity_level": null,
+          "weather": [
+            "smoke"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 120,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 152,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 20.1,
+          "pm10": 20.8,
+          "ozone": 102.0,
+          "nitrogen_dioxide": 10.3,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2107,7 +2383,18 @@
       "name": "Musselshell County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 7 at 12:13PM MDT until August 8 at 9:00PM MDT by NWS Billings MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T12:15:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2121,20 +2408,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 19,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 96.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -2143,15 +2430,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
-          "category": "Moderate",
-          "aqi_24h_max": 90,
+          "us_aqi": 50,
+          "category": "Good",
+          "aqi_24h_max": 80,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.7,
-          "pm10": 12.1,
-          "ozone": 71.0,
-          "nitrogen_dioxide": 5.8,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 11.6,
+          "pm10": 12.0,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 3.5,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2161,7 +2448,18 @@
       "name": "Park County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T18:00:00-06:00",
+            "source": "nws_alert",
+            "count": 3
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2175,20 +2473,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 77.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 77.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 80.0,
+          "low_temp_f": 60.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 60.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -2197,15 +2495,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 49,
-          "category": "Good",
-          "aqi_24h_max": 75,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.2,
-          "pm10": 8.6,
-          "ozone": 62.0,
-          "nitrogen_dioxide": 9.5,
-          "observed_at": "2026-08-06T10:00",
+          "us_aqi": 87,
+          "category": "Moderate",
+          "aqi_24h_max": 128,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 25.3,
+          "pm10": 26.0,
+          "ozone": 90.0,
+          "nitrogen_dioxide": 9.6,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2218,78 +2516,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 5 at 4:17PM MDT until August 6 at 7:00PM MDT by NWS Glasgow MT",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 8:00PM MDT by NWS Glasgow MT",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-05T16:17:00-06:00",
-            "expires": "2026-08-06T19:00:00-06:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 54.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 54.0,
-          "max_wind_mph": 21.9,
-          "max_wind_gust_mph": 32.2,
-          "thunder_probability_pct": 1,
-          "lightning_activity_level": null,
-          "weather": [
-            "haze",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 46,
-          "category": "Good",
-          "aqi_24h_max": 88,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.2,
-          "pm10": 8.4,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 6.1,
-          "observed_at": "2026-08-06T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "30071": {
-      "fips": "30071",
-      "name": "Phillips County",
-      "state": "MT",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 5 at 4:17PM MDT until August 6 at 7:00PM MDT by NWS Glasgow MT",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-05T16:17:00-06:00",
-            "expires": "2026-08-06T19:00:00-06:00",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T20:00:00-06:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -2314,33 +2545,96 @@
           "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 85.0,
-          "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 21.9,
-          "max_wind_gust_mph": 32.2,
+          "high_temp_f": 94.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 89.0,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 28.8,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
+            "haze"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 37,
+          "category": "Good",
+          "aqi_24h_max": 59,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 9.0,
+          "pm10": 9.4,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 3.6,
+          "observed_at": "2026-08-08T08:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "30071": {
+      "fips": "30071",
+      "name": "Phillips County",
+      "state": "MT",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 8:00PM MDT by NWS Glasgow MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T20:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 8,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 8,
+          "lightning_activity_level": null,
+          "weather": [
             "haze",
-            "thunderstorms",
-            "light rain showers",
             "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 40,
+          "us_aqi": 30,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.1,
-          "pm10": 8.7,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 4.8,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 37,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 5.0,
+          "pm10": 5.3,
+          "ozone": 51.0,
+          "nitrogen_dioxide": 2.7,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2368,16 +2662,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 85.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 82.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -2386,15 +2680,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 74,
+          "us_aqi": 63,
           "category": "Moderate",
-          "aqi_24h_max": 79,
+          "aqi_24h_max": 78,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 33.3,
-          "pm10": 33.9,
-          "ozone": 89.0,
-          "nitrogen_dioxide": 5.5,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 27.5,
+          "pm10": 28.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 11.4,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2404,122 +2698,14 @@
       "name": "Powder River County",
       "state": "MT",
       "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 58.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 58.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 2,
-          "lightning_activity_level": null,
-          "weather": [
-            "smoke"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
-          "aqi_24h_max": 76,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.3,
-          "pm10": 11.7,
-          "ozone": 61.0,
-          "nitrogen_dioxide": 5.8,
-          "observed_at": "2026-08-06T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "30077": {
-      "fips": "30077",
-      "name": "Powell County",
-      "state": "MT",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 2,
-          "lightning_activity_level": null,
-          "weather": [
-            "smoke"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
-          "aqi_24h_max": 93,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.6,
-          "pm10": 15.4,
-          "ozone": 66.0,
-          "nitrogen_dioxide": 10.4,
-          "observed_at": "2026-08-06T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "30079": {
-      "fips": "30079",
-      "name": "Prairie County",
-      "state": "MT",
-      "alerts": {
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 5 at 4:17PM MDT until August 6 at 7:00PM MDT by NWS Glasgow MT",
+            "headline": "Red Flag Warning issued August 7 at 12:13PM MDT until August 8 at 9:00PM MDT by NWS Billings MT",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-05T16:17:00-06:00",
-            "expires": "2026-08-06T19:00:00-06:00",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T12:15:00-06:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -2541,35 +2727,163 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 8,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 29.9,
-          "thunder_probability_pct": 8,
+          "high_temp_f": 96.0,
+          "low_temp_f": 62.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 62.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "haze",
-            "thunderstorms",
-            "light rain showers"
+            "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 70,
+          "us_aqi": 50,
+          "category": "Good",
+          "aqi_24h_max": 62,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.1,
-          "pm10": 13.5,
-          "ozone": 62.0,
-          "nitrogen_dioxide": 9.5,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 5.5,
+          "pm10": 5.7,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 2.7,
+          "observed_at": "2026-08-08T08:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "30077": {
+      "fips": "30077",
+      "name": "Powell County",
+      "state": "MT",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-08T17:00:00-06:00",
+            "source": "nws_alert",
+            "count": 3
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 12,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 86.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 11,
+          "lightning_activity_level": null,
+          "weather": [
+            "smoke"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 84,
+          "category": "Moderate",
+          "aqi_24h_max": 121,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 19.0,
+          "pm10": 19.6,
+          "ozone": 94.0,
+          "nitrogen_dioxide": 6.1,
+          "observed_at": "2026-08-08T08:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "30079": {
+      "fips": "30079",
+      "name": "Prairie County",
+      "state": "MT",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 8:00PM MDT by NWS Glasgow MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T20:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 6,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 95.0,
+          "low_temp_f": 55.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 55.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": 6,
+          "lightning_activity_level": null,
+          "weather": [
+            "haze"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 32,
+          "category": "Good",
+          "aqi_24h_max": 44,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 7.5,
+          "pm10": 7.9,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 3.2,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2579,7 +2893,18 @@
       "name": "Ravalli County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 6 at 9:41PM MDT until August 8 at 9:00PM MDT by NWS Missoula MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-07T05:45:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2614,7 +2939,7 @@
             "date": "2026-07-17T15:46:00+00:00",
             "lat": 46.0956,
             "lon": -115.1353,
-            "acreage": 2800,
+            "acreage": 3298,
             "containment_pct": 50,
             "cause": "Natural",
             "state": "ID",
@@ -2632,7 +2957,7 @@
             "date": "2026-07-24T21:57:23+00:00",
             "lat": 46.1498,
             "lon": -115.1177,
-            "acreage": 280,
+            "acreage": 300,
             "containment_pct": 0,
             "cause": "Natural",
             "state": "ID",
@@ -2651,7 +2976,7 @@
             "lat": 46.162,
             "lon": -114.337,
             "acreage": 118,
-            "containment_pct": 0,
+            "containment_pct": 20,
             "cause": "Natural",
             "state": "MT",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBRF-000255",
@@ -2668,7 +2993,7 @@
             "date": "2026-07-26T21:44:32+00:00",
             "lat": 46.0722,
             "lon": -113.6908,
-            "acreage": 875,
+            "acreage": 2528,
             "containment_pct": 0,
             "cause": "Undetermined",
             "state": "MT",
@@ -2676,6 +3001,24 @@
             "source": "NIFC WFIGS",
             "distance_miles": 19.9,
             "threat_level": "Vicinity"
+          },
+          {
+            "title": "Black Bear",
+            "incident_name": "Black Bear",
+            "id": "2026-MTBRF-000282",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-08-02T00:03:00+00:00",
+            "lat": 46.168,
+            "lon": -113.8895,
+            "acreage": 225,
+            "containment_pct": 0,
+            "cause": "Natural",
+            "state": "MT",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBRF-000282",
+            "source": "NIFC WFIGS",
+            "distance_miles": 12.1,
+            "threat_level": "Immediate"
           }
         ],
         "transit": [],
@@ -2684,20 +3027,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 5,
+      "alert_count": 7,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 8,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 8,
+          "high_temp_f": 84.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 81.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -2706,15 +3049,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 68,
-          "category": "Moderate",
-          "aqi_24h_max": 84,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 23.4,
-          "pm10": 24.7,
-          "ozone": 85.0,
-          "nitrogen_dioxide": 9.9,
-          "observed_at": "2026-08-06T10:00",
+          "us_aqi": 156,
+          "category": "Unhealthy",
+          "aqi_24h_max": 178,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 67.1,
+          "pm10": 68.7,
+          "ozone": 144.0,
+          "nitrogen_dioxide": 10.1,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2727,11 +3070,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 5 at 4:17PM MDT until August 6 at 7:00PM MDT by NWS Glasgow MT",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 8:00PM MDT by NWS Glasgow MT",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-05T16:17:00-06:00",
-            "expires": "2026-08-06T19:00:00-06:00",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T20:00:00-06:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -2753,34 +3096,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 7,
+          "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 33.4,
-          "thunder_probability_pct": 7,
+          "high_temp_f": 88.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
-            "haze",
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 41,
+          "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 55,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.3,
-          "pm10": 11.7,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 13.5,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 37,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 5.7,
+          "pm10": 6.0,
+          "ozone": 39.0,
+          "nitrogen_dioxide": 11.5,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2808,34 +3151,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 24.2,
-          "max_wind_gust_mph": 34.5,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 87.0,
+          "low_temp_f": 54.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 26.5,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "haze",
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 35,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 50,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.4,
-          "pm10": 8.0,
-          "ozone": 27.0,
-          "nitrogen_dioxide": 14.4,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 5.9,
+          "pm10": 6.2,
+          "ozone": 38.0,
+          "nitrogen_dioxide": 10.9,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2845,34 +3188,64 @@
       "name": "Rosebud County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 7 at 12:13PM MDT until August 8 at 9:00PM MDT by NWS Billings MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T12:15:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Slough Grass",
+            "incident_name": "Slough Grass",
+            "id": "2026-MTLG29-000661",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-08-06T21:22:07+00:00",
+            "lat": 45.7525,
+            "lon": -106.805,
+            "acreage": 6467.3,
+            "containment_pct": 10,
+            "cause": "Natural",
+            "state": "MT",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTLG29-000661",
+            "source": "NIFC WFIGS",
+            "distance_miles": 8.6,
+            "threat_level": "Immediate"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 27.6,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 96.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": 8,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -2881,15 +3254,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 75,
+          "aqi_24h_max": 70,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 18.2,
-          "pm10": 18.7,
-          "ozone": 57.0,
-          "nitrogen_dioxide": 8.7,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 15.8,
+          "pm10": 16.5,
+          "ozone": 59.0,
+          "nitrogen_dioxide": 4.3,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2899,7 +3272,18 @@
       "name": "Sanders County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 6 at 9:41PM MDT until August 8 at 9:00PM MDT by NWS Missoula MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-07T05:45:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2913,20 +3297,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 9,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 72.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 72.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 73.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 73.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 9,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -2935,15 +3319,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 90,
-          "category": "Moderate",
-          "aqi_24h_max": 128,
+          "us_aqi": 110,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 132,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 33.8,
-          "pm10": 34.8,
-          "ozone": 67.0,
-          "nitrogen_dioxide": 16.0,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 25.7,
+          "pm10": 26.4,
+          "ozone": 81.0,
+          "nitrogen_dioxide": 10.8,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2974,31 +3358,30 @@
           "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 28.8,
-          "max_wind_gust_mph": 41.4,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 81.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 80.0,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "haze",
             "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 42,
           "category": "Good",
-          "aqi_24h_max": 42,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 6.2,
-          "pm10": 6.6,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 13.0,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 53,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.2,
+          "pm10": 10.4,
+          "ozone": 31.0,
+          "nitrogen_dioxide": 19.3,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3008,7 +3391,18 @@
       "name": "Silver Bow County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 6 at 9:41PM MDT until August 8 at 9:00PM MDT by NWS Missoula MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-06T21:41:00-06:00",
+            "expires": "2026-08-07T05:45:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3025,7 +3419,7 @@
             "date": "2026-07-31T20:39:00+00:00",
             "lat": 45.6368,
             "lon": -113.2039,
-            "acreage": 1829,
+            "acreage": 4807,
             "containment_pct": 0,
             "cause": "Undetermined",
             "state": "MT",
@@ -3043,8 +3437,8 @@
             "date": "2026-08-01T19:31:12+00:00",
             "lat": 45.5547,
             "lon": -113.3257,
-            "acreage": 1684,
-            "containment_pct": 0,
+            "acreage": 6684,
+            "containment_pct": 1,
             "cause": "Undetermined",
             "state": "MT",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBDF-266319",
@@ -3059,19 +3453,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
           "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 88.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 21.9,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
@@ -3081,15 +3475,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 63,
-          "category": "Moderate",
-          "aqi_24h_max": 87,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 21.6,
-          "pm10": 22.4,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 13.1,
-          "observed_at": "2026-08-06T10:00",
+          "us_aqi": 129,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 172,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 55.5,
+          "pm10": 56.9,
+          "ozone": 89.0,
+          "nitrogen_dioxide": 13.3,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3099,7 +3493,18 @@
       "name": "Stillwater County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 7 at 12:13PM MDT until August 8 at 9:00PM MDT by NWS Billings MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T12:15:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3113,20 +3518,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 27.6,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 96.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 29.9,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -3135,15 +3540,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 73,
           "category": "Moderate",
-          "aqi_24h_max": 79,
+          "aqi_24h_max": 87,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.9,
-          "pm10": 9.5,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 10.6,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 22.8,
+          "pm10": 23.5,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 8.4,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3153,7 +3558,18 @@
       "name": "Sweet Grass County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T17:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3167,19 +3583,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
           "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 27.6,
+          "high_temp_f": 95.0,
+          "low_temp_f": 61.0,
+          "high_apparent_temp_f": 90.0,
+          "low_apparent_temp_f": 61.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 29.9,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
@@ -3189,15 +3605,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 69,
           "category": "Moderate",
-          "aqi_24h_max": 77,
+          "aqi_24h_max": 95,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.8,
-          "pm10": 10.1,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 14.4,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 22.8,
+          "pm10": 23.5,
+          "ozone": 74.0,
+          "nitrogen_dioxide": 10.2,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3224,7 +3640,7 @@
             "date": "2026-07-24T21:19:15+00:00",
             "lat": 47.8355,
             "lon": -113.2735,
-            "acreage": 6196,
+            "acreage": 6272,
             "containment_pct": 0,
             "cause": "Natural",
             "state": "MT",
@@ -3247,12 +3663,12 @@
           "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 81.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 21.9,
-          "max_wind_gust_mph": 23.0,
+          "high_temp_f": 88.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 17.3,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
@@ -3262,15 +3678,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 95,
+          "us_aqi": 73,
           "category": "Moderate",
-          "aqi_24h_max": 106,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 38.6,
-          "pm10": 39.2,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 12.9,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 93,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 29.0,
+          "pm10": 29.6,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 10.1,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3298,35 +3714,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 80.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 84.0,
+          "low_temp_f": 54.0,
+          "high_apparent_temp_f": 82.0,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
-            "light rain showers",
-            "thunderstorms"
+            "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 61,
+          "aqi_24h_max": 63,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 19.8,
-          "pm10": 20.4,
-          "ozone": 73.0,
-          "nitrogen_dioxide": 7.0,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 11.4,
+          "pm10": 11.8,
+          "ozone": 42.0,
+          "nitrogen_dioxide": 11.2,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3336,34 +3750,64 @@
       "name": "Treasure County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 7 at 12:13PM MDT until August 8 at 9:00PM MDT by NWS Billings MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T12:15:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Slough Grass",
+            "incident_name": "Slough Grass",
+            "id": "2026-MTLG29-000661",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-08-06T21:22:07+00:00",
+            "lat": 45.7525,
+            "lon": -106.805,
+            "acreage": 6467.3,
+            "containment_pct": 10,
+            "cause": "Natural",
+            "state": "MT",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTLG29-000661",
+            "source": "NIFC WFIGS",
+            "distance_miles": 39.8,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 96.0,
+          "low_temp_f": 60.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 60.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -3372,15 +3816,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 78,
+          "us_aqi": 39,
+          "category": "Good",
+          "aqi_24h_max": 58,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.5,
-          "pm10": 13.9,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 7.9,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 8.6,
+          "pm10": 9.1,
+          "ozone": 56.0,
+          "nitrogen_dioxide": 3.1,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3393,11 +3837,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 5 at 4:17PM MDT until August 6 at 7:00PM MDT by NWS Glasgow MT",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 8:00PM MDT by NWS Glasgow MT",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-05T16:17:00-06:00",
-            "expires": "2026-08-06T19:00:00-06:00",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T20:00:00-06:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -3419,35 +3863,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 52.0,
+          "high_temp_f": 91.0,
+          "low_temp_f": 56.0,
           "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 24.2,
-          "max_wind_gust_mph": 34.5,
-          "thunder_probability_pct": 5,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "haze",
-            "light rain showers",
-            "thunderstorms"
+            "haze"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
+          "us_aqi": 30,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.4,
-          "pm10": 9.1,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 8.8,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 41,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 7.2,
+          "pm10": 7.7,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 5.2,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3457,7 +3899,18 @@
       "name": "Wheatland County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 9:00PM MDT by NWS Great Falls MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T17:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3474,7 +3927,7 @@
             "date": "2026-07-31T20:54:00+00:00",
             "lat": 46.7365,
             "lon": -110.6397,
-            "acreage": 386,
+            "acreage": 400,
             "containment_pct": 27,
             "cause": "Undetermined",
             "state": "MT",
@@ -3490,19 +3943,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
           "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 25.3,
+          "high_temp_f": 91.0,
+          "low_temp_f": 57.0,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 57.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 29.9,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
@@ -3512,15 +3965,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 69,
           "category": "Moderate",
-          "aqi_24h_max": 78,
+          "aqi_24h_max": 84,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.0,
-          "pm10": 10.4,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 10.2,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 21.7,
+          "pm10": 22.3,
+          "ozone": 67.0,
+          "nitrogen_dioxide": 7.5,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3533,11 +3986,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 5 at 4:17PM MDT until August 6 at 7:00PM MDT by NWS Glasgow MT",
+            "headline": "Red Flag Warning issued August 8 at 12:42AM MDT until August 8 at 8:00PM MDT by NWS Glasgow MT",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-05T16:17:00-06:00",
-            "expires": "2026-08-06T19:00:00-06:00",
+            "effective": "2026-08-08T00:42:00-06:00",
+            "expires": "2026-08-08T20:00:00-06:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -3559,34 +4012,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 11,
+          "precip_probability_pct": 27,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 91.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 33.4,
-          "thunder_probability_pct": 11,
+          "low_temp_f": 57.0,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 57.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
-            "haze",
-            "light rain showers"
+            "haze"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 47,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 62,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.4,
-          "pm10": 12.8,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 11.5,
-          "observed_at": "2026-08-06T10:00",
+          "aqi_24h_max": 46,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 7.4,
+          "pm10": 7.7,
+          "ozone": 45.0,
+          "nitrogen_dioxide": 5.3,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3596,7 +4048,18 @@
       "name": "Yellowstone County",
       "state": "MT",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 7 at 12:13PM MDT until August 8 at 9:00PM MDT by NWS Billings MT",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-07T12:13:00-06:00",
+            "expires": "2026-08-08T12:15:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3610,20 +4073,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 97.0,
+          "low_temp_f": 60.0,
+          "high_apparent_temp_f": 92.0,
+          "low_apparent_temp_f": 60.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -3632,15 +4095,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 76,
+          "aqi_24h_max": 80,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.4,
-          "pm10": 13.9,
-          "ozone": 66.0,
-          "nitrogen_dioxide": 10.7,
-          "observed_at": "2026-08-06T10:00",
+          "pm2_5": 17.6,
+          "pm10": 18.2,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 7.9,
+          "observed_at": "2026-08-08T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

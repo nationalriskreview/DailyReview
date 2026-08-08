@@ -8,7 +8,18 @@
     "lon": -120.619041
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 7 at 9:51PM PDT until August 8 at 11:00PM PDT by NWS Pendleton OR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-07T11:40:00-07:00",
+        "expires": "2026-08-08T07:00:00-07:00",
+        "source": "nws_alert",
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -16,6 +27,24 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [
+      {
+        "title": "THREE QUEENS",
+        "incident_name": "THREE QUEENS",
+        "id": "2026-WAOWF-260420",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-07-16T04:28:00+00:00",
+        "lat": 47.414,
+        "lon": -121.2613,
+        "acreage": 881,
+        "containment_pct": 0,
+        "cause": "Natural",
+        "state": "WA",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-WAOWF-260420",
+        "source": "NIFC WFIGS",
+        "distance_miles": 43.0,
+        "threat_level": "Vicinity"
+      },
       {
         "title": "LITTLE GIANT",
         "incident_name": "LITTLE GIANT",
@@ -25,13 +54,31 @@
         "date": "2026-07-16T01:17:54+00:00",
         "lat": 48.0162,
         "lon": -120.8466,
-        "acreage": 74284,
+        "acreage": 82758,
         "containment_pct": 1,
         "cause": "Natural",
         "state": "WA",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-WAOWF-260406",
         "source": "NIFC WFIGS",
         "distance_miles": 15.0,
+        "threat_level": "Vicinity"
+      },
+      {
+        "title": "PRAIRIE MOUNTAIN",
+        "incident_name": "PRAIRIE MOUNTAIN",
+        "id": "2026-WANWS-000125",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-08-07T14:42:00+00:00",
+        "lat": 48.3069,
+        "lon": -121.4439,
+        "acreage": 123,
+        "containment_pct": 0,
+        "cause": "Undetermined",
+        "state": "WA",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-WANWS-000125",
+        "source": "NIFC WFIGS",
+        "distance_miles": 49.0,
         "threat_level": "Vicinity"
       }
     ],
@@ -55,40 +102,41 @@
     ],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 5,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
       "precip_probability_pct": 6,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 80.0,
-      "low_temp_f": 56.0,
-      "high_apparent_temp_f": 79.0,
-      "low_apparent_temp_f": 56.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 15.0,
+      "high_temp_f": 75.0,
+      "low_temp_f": 57.0,
+      "high_apparent_temp_f": 75.0,
+      "low_apparent_temp_f": 57.0,
+      "max_wind_mph": 13.8,
+      "max_wind_gust_mph": 21.9,
       "thunder_probability_pct": 6,
       "lightning_activity_level": null,
       "weather": [
-        "smoke"
+        "smoke",
+        "haze"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 228,
-      "category": "Very Unhealthy",
-      "aqi_24h_max": 264,
-      "aqi_24h_max_category": "Very Unhealthy",
-      "pm2_5": 128.5,
-      "pm10": 130.4,
-      "ozone": 96.0,
-      "nitrogen_dioxide": 35.9,
-      "observed_at": "2026-08-06T10:00",
+      "us_aqi": 351,
+      "category": "Hazardous",
+      "aqi_24h_max": 392,
+      "aqi_24h_max_category": "Hazardous",
+      "pm2_5": 349.2,
+      "pm10": 352.0,
+      "ozone": 20.0,
+      "nitrogen_dioxide": 96.5,
+      "observed_at": "2026-08-08T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-06",
-  "generated_at": "2026-08-06T10:14:00.911610+00:00"
+  "date": "2026-08-08",
+  "generated_at": "2026-08-08T08:14:37.303664+00:00"
 }

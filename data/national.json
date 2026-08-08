@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-06T10:14:00.911610+00:00",
-  "date": "2026-08-06",
+  "generated_at": "2026-08-08T08:14:37.303664+00:00",
+  "date": "2026-08-08",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 113
+      "counties_with_alerts": 170
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 123
+      "counties_over_threshold": 99
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,42 +28,42 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 31,
+      "counties_with_matches": 28,
       "items_pre_llm": {
-        "protest": 29,
-        "utility_outage": 8,
+        "protest": 30,
+        "utility_outage": 4,
         "transit_disruption": 0,
-        "service_provider_outage": 3,
+        "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 3
+        "road_closure": 6
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 13,
+      "counties_with_matches": 9,
       "items_post_llm": {
-        "protest": 7,
-        "utility_outage": 7,
+        "protest": 1,
+        "utility_outage": 4,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 1
+        "road_closure": 5
       },
-      "unique_articles": 25,
-      "calls_used": 25,
+      "unique_articles": 26,
+      "calls_used": 26,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 261
+      "counties_with_alerts": 259
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 0,
-      "counties_with_alerts": 0,
+      "items_total": 1,
+      "counties_with_alerts": 10,
       "agencies": [
         {
           "id": "mbta",
@@ -129,13 +129,13 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 0
+          "items": 1
         }
       ]
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 105
+      "counties_with_alerts": 107
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 3,
+      "active_incidents": 5,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -209,7 +209,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "openai",
@@ -305,7 +305,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 0
+          "items": 2
         },
         {
           "key": "r3wn",
@@ -602,24 +602,43 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Minor Service Outage",
+      "title": "R2 Availability Issues",
       "impact": "minor",
+      "status": "identified",
+      "started": "2026-08-07T18:42:26.000Z",
+      "updated": "2026-08-07T23:05:19.799Z",
+      "url": "https://stspg.io/f1bfmypj1dnh",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Zoom",
+      "key": "zoom",
+      "title": "Service Under Maintenance",
+      "impact": "maintenance",
       "status": "active",
       "started": "",
       "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "url": "https://status.zoom.us",
       "source": "provider status page"
     },
     {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "Partially Degraded Service",
+      "title": "PrismaCloud APP3: Delayed asset inventory data",
       "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.paloaltonetworks.com",
+      "status": "monitoring",
+      "started": "2026-08-07T06:55:54.784Z",
+      "updated": "2026-08-08T07:23:04.569Z",
+      "url": "https://stspg.io/7wsdy0v8qlzk",
       "source": "provider status page"
+    },
+    {
+      "provider": "x9tz",
+      "impact": "minor",
+      "active_incidents": 2,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
     },
     {
       "provider": "k2yd",

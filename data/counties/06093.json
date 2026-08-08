@@ -8,18 +8,7 @@
     "lon": -122.533287
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued August 5 at 11:01PM PDT until August 6 at 8:00PM PDT by NWS Medford OR",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-08-05T23:01:00-07:00",
-        "expires": "2026-08-06T15:15:00-07:00",
-        "source": "nws_alert",
-        "count": 1
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -37,12 +26,30 @@
         "lat": 42.604,
         "lon": -123.0018,
         "acreage": 15580,
-        "containment_pct": 95,
+        "containment_pct": 98,
         "cause": "Undetermined",
         "state": "OR",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR711S-000039",
         "source": "NIFC WFIGS",
         "distance_miles": 49.9,
+        "threat_level": "Vicinity"
+      },
+      {
+        "title": "Woodrat Mountain",
+        "incident_name": "Woodrat Mountain",
+        "id": "2026-ORMED-711175",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-08-06T19:23:00+00:00",
+        "lat": 42.2232,
+        "lon": -123.0023,
+        "acreage": 300,
+        "containment_pct": 0,
+        "cause": "Human",
+        "state": "OR",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORMED-711175",
+        "source": "NIFC WFIGS",
+        "distance_miles": 29.7,
         "threat_level": "Vicinity"
       }
     ],
@@ -56,19 +63,22 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 2,
+      "precip_probability_pct": 4,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 100.0,
+      "high_temp_f": 101.0,
       "low_temp_f": 57.0,
-      "high_apparent_temp_f": 95.0,
+      "high_apparent_temp_f": 97.0,
       "low_apparent_temp_f": 57.0,
-      "max_wind_mph": 15.0,
-      "max_wind_gust_mph": 23.0,
-      "thunder_probability_pct": 2,
+      "max_wind_mph": 16.1,
+      "max_wind_gust_mph": 24.2,
+      "thunder_probability_pct": 9,
       "lightning_activity_level": null,
       "weather": [
-        "smoke"
+        "smoke",
+        "haze",
+        "thunderstorms",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
@@ -76,16 +86,16 @@
     "air_quality": {
       "us_aqi": 66,
       "category": "Moderate",
-      "aqi_24h_max": 114,
+      "aqi_24h_max": 102,
       "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-      "pm2_5": 19.3,
-      "pm10": 21.0,
-      "ozone": 85.0,
-      "nitrogen_dioxide": 20.2,
-      "observed_at": "2026-08-06T10:00",
+      "pm2_5": 19.7,
+      "pm10": 21.1,
+      "ozone": 86.0,
+      "nitrogen_dioxide": 7.3,
+      "observed_at": "2026-08-08T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-06",
-  "generated_at": "2026-08-06T10:14:00.911610+00:00"
+  "date": "2026-08-08",
+  "generated_at": "2026-08-08T08:14:37.303664+00:00"
 }

@@ -8,7 +8,18 @@
     "lon": -122.195127
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 7 at 9:51PM PDT until August 8 at 11:00PM PDT by NWS Pendleton OR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-07T21:51:00-07:00",
+        "expires": "2026-08-08T07:00:00-07:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -16,6 +27,24 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [
+      {
+        "title": "HIGH LAVA",
+        "incident_name": "HIGH LAVA",
+        "id": "2026-WAGPF-000684",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-07-23T23:44:00+00:00",
+        "lat": 45.8805,
+        "lon": -122.1162,
+        "acreage": 1490,
+        "containment_pct": 0,
+        "cause": "Natural",
+        "state": "WA",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-WAGPF-000684",
+        "source": "NIFC WFIGS",
+        "distance_miles": 49.9,
+        "threat_level": "Vicinity"
+      },
       {
         "title": "GRASSHOPPER",
         "incident_name": "GRASSHOPPER",
@@ -25,8 +54,8 @@
         "date": "2026-07-24T02:41:00+00:00",
         "lat": 45.253,
         "lon": -121.5101,
-        "acreage": 39439,
-        "containment_pct": 20,
+        "acreage": 49645,
+        "containment_pct": 23,
         "cause": "Natural",
         "state": "OR",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORMHF-000688",
@@ -41,40 +70,38 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
       "precip_probability_pct": 2,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 81.0,
-      "low_temp_f": 62.0,
-      "high_apparent_temp_f": 80.0,
-      "low_apparent_temp_f": 62.0,
+      "high_temp_f": 75.0,
+      "low_temp_f": 58.0,
+      "high_apparent_temp_f": 75.0,
+      "low_apparent_temp_f": 58.0,
       "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 10.4,
-      "thunder_probability_pct": 2,
+      "max_wind_gust_mph": 12.7,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
-      "weather": [
-        "smoke"
-      ],
+      "weather": [],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 178,
-      "category": "Unhealthy",
-      "aqi_24h_max": 194,
-      "aqi_24h_max_category": "Unhealthy",
-      "pm2_5": 57.4,
-      "pm10": 58.8,
-      "ozone": 123.0,
-      "nitrogen_dioxide": 8.1,
-      "observed_at": "2026-08-06T10:00",
+      "us_aqi": 61,
+      "category": "Moderate",
+      "aqi_24h_max": 68,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 7.7,
+      "pm10": 9.4,
+      "ozone": 86.0,
+      "nitrogen_dioxide": 7.5,
+      "observed_at": "2026-08-08T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-06",
-  "generated_at": "2026-08-06T10:14:00.911610+00:00"
+  "date": "2026-08-08",
+  "generated_at": "2026-08-08T08:14:37.303664+00:00"
 }

@@ -11,11 +11,11 @@
     "weather": [
       {
         "event": "Extreme Heat Warning",
-        "headline": "Extreme Heat Warning issued August 5 at 11:10AM PDT until August 9 at 8:00PM PDT by NWS Hanford CA",
+        "headline": "Extreme Heat Warning issued August 7 at 10:50PM PDT until August 9 at 8:00PM PDT by NWS Hanford CA",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-08-05T11:10:00-07:00",
-        "expires": "2026-08-06T08:00:00-07:00",
+        "effective": "2026-08-07T22:50:00-07:00",
+        "expires": "2026-08-08T07:00:00-07:00",
         "source": "nws_alert",
         "count": 1
       }
@@ -25,7 +25,21 @@
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
-    "road_closure": [],
+    "road_closure": [
+      {
+        "title": "SCVNews.com | Ridge Fire Closes I-5 in Both Directions, Gorman Evacuations",
+        "url": "https://scvnews.com/ridge-fire-closes-i-5-in-both-directions-gorman-evacuations/",
+        "domain": "scvnews.com",
+        "seendate": "20260808061500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://scvnews.com/ridge-fire-closes-i-5-in-both-directions-gorman-evacuations/",
+            "domain": "scvnews.com"
+          }
+        ]
+      }
+    ],
     "wildfires": [
       {
         "title": "BUZZARD",
@@ -36,13 +50,31 @@
         "date": "2026-08-05T14:51:00+00:00",
         "lat": 34.8997,
         "lon": -118.9228,
-        "acreage": 500,
-        "containment_pct": 0,
+        "acreage": 895,
+        "containment_pct": 47,
         "cause": "Human",
         "state": "CA",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-CAKRN-032905",
         "source": "NIFC WFIGS",
         "distance_miles": 11.0,
+        "threat_level": "Immediate"
+      },
+      {
+        "title": "RIDGE",
+        "incident_name": "RIDGE",
+        "id": "2026-CALAC-278844",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-08-07T21:43:06+00:00",
+        "lat": 34.7911,
+        "lon": -118.83,
+        "acreage": 1057,
+        "containment_pct": 0,
+        "cause": "Undetermined",
+        "state": "CA",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-CALAC-278844",
+        "source": "NIFC WFIGS",
+        "distance_miles": 10.1,
         "threat_level": "Immediate"
       }
     ],
@@ -52,40 +84,38 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 4,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
       "precip_probability_pct": 2,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 103.0,
-      "low_temp_f": 66.0,
-      "high_apparent_temp_f": 102.0,
-      "low_apparent_temp_f": 66.0,
-      "max_wind_mph": 16.1,
-      "max_wind_gust_mph": 31.1,
+      "high_temp_f": 106.0,
+      "low_temp_f": 69.0,
+      "high_apparent_temp_f": 104.0,
+      "low_apparent_temp_f": 69.0,
+      "max_wind_mph": 17.3,
+      "max_wind_gust_mph": 20.7,
       "thunder_probability_pct": 2,
       "lightning_activity_level": null,
-      "weather": [
-        "smoke"
-      ],
+      "weather": [],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 57,
-      "category": "Moderate",
-      "aqi_24h_max": 83,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 15.0,
-      "pm10": 45.2,
-      "ozone": 86.0,
-      "nitrogen_dioxide": 12.3,
-      "observed_at": "2026-08-06T10:00",
+      "us_aqi": 138,
+      "category": "Unhealthy for Sensitive Groups",
+      "aqi_24h_max": 174,
+      "aqi_24h_max_category": "Unhealthy",
+      "pm2_5": 38.1,
+      "pm10": 56.0,
+      "ozone": 137.0,
+      "nitrogen_dioxide": 10.7,
+      "observed_at": "2026-08-08T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-06",
-  "generated_at": "2026-08-06T10:14:00.911610+00:00"
+  "date": "2026-08-08",
+  "generated_at": "2026-08-08T08:14:37.303664+00:00"
 }
