@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-08T08:14:37.303664+00:00",
-  "date": "2026-08-08",
+  "generated_at": "2026-08-09T08:14:45.270669+00:00",
+  "date": "2026-08-09",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 170
+      "counties_with_alerts": 150
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 99
+      "counties_over_threshold": 163
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,42 +28,42 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 28,
+      "counties_with_matches": 20,
       "items_pre_llm": {
-        "protest": 30,
-        "utility_outage": 4,
-        "transit_disruption": 0,
-        "service_provider_outage": 0,
-        "hazmat_incident": 0,
+        "protest": 8,
+        "utility_outage": 1,
+        "transit_disruption": 1,
+        "service_provider_outage": 3,
+        "hazmat_incident": 3,
         "road_closure": 6
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 9,
+      "counties_with_matches": 13,
       "items_post_llm": {
-        "protest": 1,
-        "utility_outage": 4,
-        "transit_disruption": 0,
-        "service_provider_outage": 0,
+        "protest": 3,
+        "utility_outage": 1,
+        "transit_disruption": 1,
+        "service_provider_outage": 2,
         "hazmat_incident": 0,
-        "road_closure": 5
+        "road_closure": 6
       },
-      "unique_articles": 26,
-      "calls_used": 26,
+      "unique_articles": 14,
+      "calls_used": 14,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 259
+      "counties_with_alerts": 263
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 1,
-      "counties_with_alerts": 10,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -129,7 +129,7 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     },
@@ -160,12 +160,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 1,
+      "counties_with_alerts": 1
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 5,
+      "active_incidents": 4,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -209,7 +209,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "openai",
@@ -305,7 +305,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 2
+          "items": 1
         },
         {
           "key": "r3wn",
@@ -597,45 +597,46 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [],
+  "faa_advisories": [
+    {
+      "kind": "airport_closure",
+      "code": "SAN",
+      "name": "San Diego Intl",
+      "city": "San Diego",
+      "state": "CA",
+      "reason": "!SAN 08/003 SAN AD AP CLSD 2608090800-2608091300",
+      "start": "Aug 09 at 08:00 UTC.",
+      "reopen": "Aug 09 at 13:00 UTC.",
+      "source": "FAA NAS Status"
+    }
+  ],
   "service_outages": [
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "R2 Availability Issues",
+      "title": "Minor Service Outage",
       "impact": "minor",
-      "status": "identified",
-      "started": "2026-08-07T18:42:26.000Z",
-      "updated": "2026-08-07T23:05:19.799Z",
-      "url": "https://stspg.io/f1bfmypj1dnh",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Zoom",
-      "key": "zoom",
-      "title": "Service Under Maintenance",
-      "impact": "maintenance",
       "status": "active",
       "started": "",
       "updated": "",
-      "url": "https://status.zoom.us",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "PrismaCloud APP3: Delayed asset inventory data",
+      "title": "Partially Degraded Service",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-08-07T06:55:54.784Z",
-      "updated": "2026-08-08T07:23:04.569Z",
-      "url": "https://stspg.io/7wsdy0v8qlzk",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
     },
     {
       "provider": "x9tz",
-      "impact": "minor",
-      "active_incidents": 2,
+      "impact": "maintenance",
+      "active_incidents": 1,
       "status": "active",
       "coded": true,
       "source": "provider status page (coded)"

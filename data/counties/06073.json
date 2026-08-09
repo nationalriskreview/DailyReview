@@ -11,11 +11,11 @@
     "weather": [
       {
         "event": "Extreme Heat Warning",
-        "headline": "Extreme Heat Warning issued August 7 at 9:49PM PDT until August 9 at 8:00PM PDT by NWS San Diego CA",
+        "headline": "Extreme Heat Warning issued August 8 at 9:11PM PDT until August 9 at 8:00PM PDT by NWS San Diego CA",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-08-07T21:49:00-07:00",
-        "expires": "2026-08-08T06:15:00-07:00",
+        "effective": "2026-08-08T21:11:00-07:00",
+        "expires": "2026-08-09T06:15:00-07:00",
         "source": "nws_alert",
         "count": 1
       }
@@ -29,47 +29,58 @@
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "airport_closure",
+        "code": "SAN",
+        "name": "San Diego Intl",
+        "city": "San Diego",
+        "state": "CA",
+        "reason": "!SAN 08/003 SAN AD AP CLSD 2608090800-2608091300",
+        "start": "Aug 09 at 08:00 UTC.",
+        "reopen": "Aug 09 at 13:00 UTC.",
+        "source": "FAA NAS Status"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 12,
+      "precip_in_24h": 0.02,
+      "precip_probability_pct": 20,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 102.0,
-      "low_temp_f": 66.0,
-      "high_apparent_temp_f": 100.0,
-      "low_apparent_temp_f": 66.0,
-      "max_wind_mph": 12.7,
-      "max_wind_gust_mph": 20.7,
-      "thunder_probability_pct": 12,
+      "high_temp_f": 101.0,
+      "low_temp_f": 67.0,
+      "high_apparent_temp_f": 101.0,
+      "low_apparent_temp_f": 67.0,
+      "max_wind_mph": 10.4,
+      "max_wind_gust_mph": 18.4,
+      "thunder_probability_pct": 15,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
         "light rain showers",
-        "heavy fog",
         "fog"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 56,
-      "category": "Moderate",
-      "aqi_24h_max": 83,
+      "us_aqi": 49,
+      "category": "Good",
+      "aqi_24h_max": 81,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 8.1,
-      "pm10": 10.5,
-      "ozone": 49.0,
+      "pm2_5": 9.4,
+      "pm10": 11.7,
+      "ozone": 55.0,
       "nitrogen_dioxide": 5.4,
-      "observed_at": "2026-08-08T08:00",
+      "observed_at": "2026-08-09T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-08",
-  "generated_at": "2026-08-08T08:14:37.303664+00:00"
+  "date": "2026-08-09",
+  "generated_at": "2026-08-09T08:14:45.270669+00:00"
 }
