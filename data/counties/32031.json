@@ -8,18 +8,7 @@
     "lon": -119.663269
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Extreme Heat Warning",
-        "headline": "Extreme Heat Warning issued August 8 at 11:53PM PDT until August 10 at 8:00AM PDT by NWS Reno NV",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-08-08T23:53:00-07:00",
-        "expires": "2026-08-10T08:00:00-07:00",
-        "source": "nws_alert",
-        "count": 1
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -44,50 +33,83 @@
         "source": "NIFC WFIGS",
         "distance_miles": 47.2,
         "threat_level": "Vicinity"
+      },
+      {
+        "title": "Fred Mt",
+        "incident_name": "Fred Mt",
+        "id": "2026-NVTMFX-030694",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-08-09T17:33:45+00:00",
+        "lat": 39.7627,
+        "lon": -119.8492,
+        "acreage": 3482,
+        "containment_pct": 0,
+        "cause": "Human",
+        "state": "NV",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVTMFX-030694",
+        "source": "NIFC WFIGS",
+        "distance_miles": 41.6,
+        "threat_level": "Vicinity"
       }
     ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [],
+    "fema": [
+      {
+        "disaster_number": "5663",
+        "declaration_type": "FM",
+        "declaration_title": "BUG FIRE",
+        "incident_type": "Fire",
+        "declared_at": "2026-08-08T00:00:00.000Z",
+        "is_new_today": false,
+        "incident_begin": "2026-08-08T00:00:00.000Z",
+        "incident_end": null,
+        "designated_area": "Washoe (County)",
+        "fema_declaration_string": "FM-5663-NV",
+        "source": "https://www.fema.gov/disaster/5663"
+      }
+    ],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
       "precip_probability_pct": 15,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 101.0,
+      "high_temp_f": 100.0,
       "low_temp_f": 58.0,
-      "high_apparent_temp_f": 95.0,
+      "high_apparent_temp_f": 94.0,
       "low_apparent_temp_f": 58.0,
-      "max_wind_mph": 19.6,
+      "max_wind_mph": 18.4,
       "max_wind_gust_mph": 27.6,
-      "thunder_probability_pct": 10,
+      "thunder_probability_pct": 15,
       "lightning_activity_level": null,
       "weather": [
         "haze",
         "smoke",
+        "thunderstorms",
         "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 71,
+      "us_aqi": 62,
       "category": "Moderate",
-      "aqi_24h_max": 155,
-      "aqi_24h_max_category": "Unhealthy",
-      "pm2_5": 5.6,
-      "pm10": 5.7,
-      "ozone": 84.0,
-      "nitrogen_dioxide": 3.8,
-      "observed_at": "2026-08-10T08:00",
+      "aqi_24h_max": 123,
+      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+      "pm2_5": 2.9,
+      "pm10": 3.3,
+      "ozone": 75.0,
+      "nitrogen_dioxide": 2.9,
+      "observed_at": "2026-08-11T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-10",
-  "generated_at": "2026-08-10T09:03:35.060140+00:00"
+  "date": "2026-08-11",
+  "generated_at": "2026-08-11T08:26:50.809967+00:00"
 }

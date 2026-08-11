@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-10T09:03:35.060140+00:00",
-  "date": "2026-08-10",
+  "generated_at": "2026-08-11T08:26:50.809967+00:00",
+  "date": "2026-08-11",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 126
+      "counties_with_alerts": 110
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 304
+      "counties_over_threshold": 514
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 11,
+      "counties_with_matches": 40,
       "items_pre_llm": {
         "protest": 14,
-        "utility_outage": 0,
-        "transit_disruption": 0,
-        "service_provider_outage": 6,
-        "hazmat_incident": 0,
-        "road_closure": 1
+        "utility_outage": 12,
+        "transit_disruption": 1,
+        "service_provider_outage": 0,
+        "hazmat_incident": 2,
+        "road_closure": 15
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 5,
+      "counties_with_matches": 34,
       "items_post_llm": {
-        "protest": 4,
-        "utility_outage": 0,
-        "transit_disruption": 0,
-        "service_provider_outage": 6,
-        "hazmat_incident": 0,
-        "road_closure": 0
+        "protest": 6,
+        "utility_outage": 12,
+        "transit_disruption": 1,
+        "service_provider_outage": 0,
+        "hazmat_incident": 2,
+        "road_closure": 14
       },
-      "unique_articles": 15,
-      "calls_used": 15,
+      "unique_articles": 22,
+      "calls_used": 22,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 274
+      "counties_with_alerts": 281
     },
     "transit": {
       "status": "ok",
@@ -135,7 +135,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 107
+      "counties_with_alerts": 110
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -161,11 +161,11 @@
     "aviation_faa": {
       "status": "ok",
       "national_items": 1,
-      "counties_with_alerts": 1
+      "counties_with_alerts": 16
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 4,
+      "active_incidents": 3,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -209,7 +209,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "openai",
@@ -600,13 +600,13 @@
   "faa_advisories": [
     {
       "kind": "airport_closure",
-      "code": "SAN",
-      "name": "San Diego Intl",
-      "city": "San Diego",
-      "state": "CA",
-      "reason": "!SAN 08/007 SAN AD AP CLSD 2608100800-2608101300",
-      "start": "Aug 10 at 08:00 UTC.",
-      "reopen": "Aug 10 at 13:00 UTC.",
+      "code": "LGA",
+      "name": "LaGuardia",
+      "city": "New York",
+      "state": "NY",
+      "reason": "!LGA 08/229 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2608110557-2608111000",
+      "start": "Aug 11 at 05:57 UTC.",
+      "reopen": "Aug 11 at 10:00 UTC.",
       "source": "FAA NAS Status"
     }
   ],
@@ -623,24 +623,13 @@
       "source": "provider status page"
     },
     {
-      "provider": "Zoom",
-      "key": "zoom",
-      "title": "Service Under Maintenance",
-      "impact": "maintenance",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.zoom.us",
-      "source": "provider status page"
-    },
-    {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
       "title": "PrismaCloud APP3: Delayed asset inventory data",
       "impact": "minor",
       "status": "monitoring",
       "started": "2026-08-07T06:55:54.784Z",
-      "updated": "2026-08-10T06:10:05.890Z",
+      "updated": "2026-08-10T18:15:31.155Z",
       "url": "https://stspg.io/7wsdy0v8qlzk",
       "source": "provider status page"
     },
