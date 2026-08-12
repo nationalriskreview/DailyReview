@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-11T08:26:50.809967+00:00",
-  "date": "2026-08-11",
+  "generated_at": "2026-08-12T08:54:12.964263+00:00",
+  "date": "2026-08-12",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 110
+      "counties_with_alerts": 175
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 514
+      "counties_over_threshold": 534
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 40,
+      "counties_with_matches": 51,
       "items_pre_llm": {
-        "protest": 14,
-        "utility_outage": 12,
+        "protest": 13,
+        "utility_outage": 58,
         "transit_disruption": 1,
         "service_provider_outage": 0,
         "hazmat_incident": 2,
-        "road_closure": 15
+        "road_closure": 11
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 34,
+      "counties_with_matches": 40,
       "items_post_llm": {
-        "protest": 6,
-        "utility_outage": 12,
+        "protest": 2,
+        "utility_outage": 58,
         "transit_disruption": 1,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
-        "road_closure": 14
+        "hazmat_incident": 1,
+        "road_closure": 2
       },
-      "unique_articles": 22,
-      "calls_used": 22,
+      "unique_articles": 38,
+      "calls_used": 38,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 281
+      "counties_with_alerts": 270
     },
     "transit": {
       "status": "ok",
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 3,
+      "active_incidents": 2,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -323,7 +323,7 @@
           "key": "k2yd",
           "name": "k2yd",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "t8fc",
@@ -604,9 +604,9 @@
       "name": "LaGuardia",
       "city": "New York",
       "state": "NY",
-      "reason": "!LGA 08/229 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2608110557-2608111000",
-      "start": "Aug 11 at 05:57 UTC.",
-      "reopen": "Aug 11 at 10:00 UTC.",
+      "reason": "!LGA 08/248 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2608120547-2608121000",
+      "start": "Aug 12 at 05:47 UTC.",
+      "reopen": "Aug 12 at 10:00 UTC.",
       "source": "FAA NAS Status"
     }
   ],
@@ -629,17 +629,9 @@
       "impact": "minor",
       "status": "monitoring",
       "started": "2026-08-07T06:55:54.784Z",
-      "updated": "2026-08-10T18:15:31.155Z",
+      "updated": "2026-08-11T23:46:25.386Z",
       "url": "https://stspg.io/7wsdy0v8qlzk",
       "source": "provider status page"
-    },
-    {
-      "provider": "k2yd",
-      "impact": "minor",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
     }
   ]
 }
