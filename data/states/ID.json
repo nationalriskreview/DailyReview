@@ -1,43 +1,35 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-12T08:54:12.964263+00:00",
-  "date": "2026-08-12",
+  "generated_at": "2026-08-13T09:02:03.329005+00:00",
+  "date": "2026-08-13",
   "state": "ID",
   "counties_total": 44,
-  "counties_with_alerts": 33,
+  "counties_with_alerts": 44,
   "counties": {
     "16001": {
       "fips": "16001",
       "name": "Ada County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 12 at 1:20PM MDT until August 14 at 6:00AM MDT by NWS Boise ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T10:30:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [
-          {
-            "title": "MM115 HWY 20",
-            "incident_name": "MM115 HWY 20",
-            "id": "2026-IDSWS-000901",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-07T20:59:36+00:00",
-            "lat": 43.302,
-            "lon": -115.4472,
-            "acreage": 5139,
-            "containment_pct": 50,
-            "cause": "Human",
-            "state": "ID",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDSWS-000901",
-            "source": "NIFC WFIGS",
-            "distance_miles": 41.3,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -48,16 +40,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 6,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
+          "high_temp_f": 91.0,
           "low_temp_f": 62.0,
-          "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 10.4,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 62.0,
+          "max_wind_mph": 11.5,
           "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 3,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -66,15 +58,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 84,
+          "us_aqi": 95,
           "category": "Moderate",
-          "aqi_24h_max": 130,
+          "aqi_24h_max": 135,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 25.4,
-          "pm10": 26.0,
-          "ozone": 86.0,
-          "nitrogen_dioxide": 13.4,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 33.3,
+          "pm10": 33.8,
+          "ozone": 78.0,
+          "nitrogen_dioxide": 14.8,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -84,7 +76,18 @@
       "name": "Adams County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 12 at 1:20PM MDT until August 14 at 6:00AM MDT by NWS Boise ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T10:30:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -138,7 +141,7 @@
             "lat": 44.5239,
             "lon": -117.213,
             "acreage": 78903,
-            "containment_pct": 87,
+            "containment_pct": 90,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORVAD-260204",
@@ -156,7 +159,7 @@
             "lat": 44.5413,
             "lon": -117.093,
             "acreage": 158027,
-            "containment_pct": 93,
+            "containment_pct": 98,
             "cause": "Natural",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDBOD-265460",
@@ -174,7 +177,7 @@
             "lat": 45.213,
             "lon": -115.9093,
             "acreage": 189,
-            "containment_pct": 25,
+            "containment_pct": 40,
             "cause": "Undetermined",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDPAF-265532",
@@ -189,37 +192,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 5,
+      "alert_count": 6,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 16,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
+          "high_temp_f": 86.0,
           "low_temp_f": 61.0,
-          "high_apparent_temp_f": 86.0,
+          "high_apparent_temp_f": 83.0,
           "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 5,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 94,
+          "us_aqi": 82,
           "category": "Moderate",
-          "aqi_24h_max": 125,
+          "aqi_24h_max": 111,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 28.8,
-          "pm10": 29.7,
-          "ozone": 110.0,
-          "nitrogen_dioxide": 6.7,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 18.7,
+          "pm10": 19.4,
+          "ozone": 89.0,
+          "nitrogen_dioxide": 6.1,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -229,33 +234,25 @@
       "name": "Bannock County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [
-          {
-            "title": "McPherson",
-            "incident_name": "McPherson",
-            "id": "2026-IDCTF-000160",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-08T00:16:51+00:00",
-            "lat": 42.5618,
-            "lon": -111.6796,
-            "acreage": 298,
-            "containment_pct": 80,
-            "cause": "Human",
-            "state": "ID",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDCTF-000160",
-            "source": "NIFC WFIGS",
-            "distance_miles": 29.4,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -265,36 +262,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 28,
+          "precip_in_24h": 0.25,
+          "precip_probability_pct": 94,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 61.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 23,
+          "high_temp_f": 78.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 78.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 44,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 68,
+          "us_aqi": 57,
           "category": "Moderate",
-          "aqi_24h_max": 128,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 13.9,
-          "pm10": 15.2,
-          "ozone": 77.0,
-          "nitrogen_dioxide": 10.5,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 91,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.3,
+          "pm10": 8.2,
+          "ozone": 79.0,
+          "nitrogen_dioxide": 5.7,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -304,33 +301,25 @@
       "name": "Bear Lake County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [
-          {
-            "title": "McPherson",
-            "incident_name": "McPherson",
-            "id": "2026-IDCTF-000160",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-08T00:16:51+00:00",
-            "lat": 42.5618,
-            "lon": -111.6796,
-            "acreage": 298,
-            "containment_pct": 80,
-            "cause": "Human",
-            "state": "ID",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDCTF-000160",
-            "source": "NIFC WFIGS",
-            "distance_miles": 26.2,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -340,36 +329,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 62,
+          "precip_in_24h": 0.21,
+          "precip_probability_pct": 92,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 81.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 75.0,
+          "low_temp_f": 48.0,
+          "high_apparent_temp_f": 75.0,
+          "low_apparent_temp_f": 48.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 43,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "light rain",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 61,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 106,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 10.3,
-          "pm10": 13.2,
-          "ozone": 90.0,
-          "nitrogen_dioxide": 8.4,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 92,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.6,
+          "pm10": 9.8,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 11.9,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -382,11 +372,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 11 at 11:29PM PDT until August 12 at 11:00PM PDT by NWS Spokane WA",
+            "headline": "Red Flag Warning issued August 12 at 10:55PM PDT until August 13 at 8:00AM PDT by NWS Spokane WA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-11T23:29:00-07:00",
-            "expires": "2026-08-12T23:00:00-07:00",
+            "effective": "2026-08-12T22:55:00-07:00",
+            "expires": "2026-08-13T08:00:00-07:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -415,24 +405,6 @@
             "source": "NIFC WFIGS",
             "distance_miles": 50.0,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "WELLS ROAD",
-            "incident_name": "WELLS ROAD",
-            "id": "2026-WAWFS-001933",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-08T22:30:00+00:00",
-            "lat": 47.24,
-            "lon": -117.51,
-            "acreage": 1865,
-            "containment_pct": 78,
-            "cause": "Human",
-            "state": "WA",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-WAWFS-001933",
-            "source": "NIFC WFIGS",
-            "distance_miles": 41.2,
-            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -441,38 +413,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 82.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 80.0,
-          "low_apparent_temp_f": 48.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 1,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 81.0,
+          "low_apparent_temp_f": 47.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
+            "smoke",
             "haze",
-            "smoke"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 63,
           "category": "Moderate",
-          "aqi_24h_max": 93,
+          "aqi_24h_max": 82,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 4.4,
-          "pm10": 4.8,
-          "ozone": 67.0,
-          "nitrogen_dioxide": 9.7,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 28.8,
+          "pm10": 29.1,
+          "ozone": 93.0,
+          "nitrogen_dioxide": 13.5,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -482,7 +456,18 @@
       "name": "Bingham County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -500,7 +485,7 @@
             "lat": 43.6381,
             "lon": -111.6643,
             "acreage": 2142,
-            "containment_pct": 90,
+            "containment_pct": 97,
             "cause": "Natural",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDIFD-000152",
@@ -515,39 +500,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 15,
+          "precip_in_24h": 0.07,
+          "precip_probability_pct": 81,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 62.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 62.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 7,
+          "high_temp_f": 81.0,
+          "low_temp_f": 55.0,
+          "high_apparent_temp_f": 80.0,
+          "low_apparent_temp_f": 55.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 32,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "light rain",
             "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 69,
+          "us_aqi": 63,
           "category": "Moderate",
-          "aqi_24h_max": 122,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 14.7,
-          "pm10": 23.3,
-          "ozone": 95.0,
-          "nitrogen_dioxide": 5.7,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 95,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.6,
+          "pm10": 10.4,
+          "ozone": 85.0,
+          "nitrogen_dioxide": 4.3,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -557,7 +541,18 @@
       "name": "Blaine County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -571,39 +566,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 33,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 62.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 62.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 79.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 25,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
-            "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 75,
+          "us_aqi": 78,
           "category": "Moderate",
-          "aqi_24h_max": 119,
+          "aqi_24h_max": 108,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 18.2,
-          "pm10": 19.8,
-          "ozone": 77.0,
-          "nitrogen_dioxide": 10.2,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 22.8,
+          "pm10": 23.6,
+          "ozone": 67.0,
+          "nitrogen_dioxide": 10.3,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -613,33 +607,25 @@
       "name": "Boise County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [
-          {
-            "title": "MM115 HWY 20",
-            "incident_name": "MM115 HWY 20",
-            "id": "2026-IDSWS-000901",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-07T20:59:36+00:00",
-            "lat": 43.302,
-            "lon": -115.4472,
-            "acreage": 5139,
-            "containment_pct": 50,
-            "cause": "Human",
-            "state": "ID",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDSWS-000901",
-            "source": "NIFC WFIGS",
-            "distance_miles": 49.2,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -650,33 +636,35 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 19,
+          "precip_probability_pct": 16,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 74.0,
-          "low_temp_f": 60.0,
-          "high_apparent_temp_f": 74.0,
-          "low_apparent_temp_f": 60.0,
+          "high_temp_f": 70.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 70.0,
+          "low_apparent_temp_f": 58.0,
           "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 8,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 85,
+          "us_aqi": 96,
           "category": "Moderate",
-          "aqi_24h_max": 143,
+          "aqi_24h_max": 147,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 23.3,
-          "pm10": 23.9,
-          "ozone": 98.0,
-          "nitrogen_dioxide": 10.3,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 30.9,
+          "pm10": 31.2,
+          "ozone": 103.0,
+          "nitrogen_dioxide": 10.4,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -689,11 +677,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 11 at 11:29PM PDT until August 12 at 11:00PM PDT by NWS Spokane WA",
+            "headline": "Red Flag Warning issued August 12 at 10:55PM PDT until August 13 at 8:00AM PDT by NWS Spokane WA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-11T23:29:00-07:00",
-            "expires": "2026-08-12T23:00:00-07:00",
+            "effective": "2026-08-12T22:55:00-07:00",
+            "expires": "2026-08-13T08:00:00-07:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -714,7 +702,7 @@
             "date": "2026-07-08T15:29:00+00:00",
             "lat": 48.9275,
             "lon": -116.6078,
-            "acreage": 3547,
+            "acreage": 3600,
             "containment_pct": 30,
             "cause": "Natural",
             "state": "ID",
@@ -751,35 +739,36 @@
       "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 7,
+          "precip_in_24h": 0.19,
+          "precip_probability_pct": 71,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 74.0,
-          "low_temp_f": 58.0,
-          "high_apparent_temp_f": 74.0,
-          "low_apparent_temp_f": 58.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 7,
+          "high_temp_f": 69.0,
+          "low_temp_f": 54.0,
+          "high_apparent_temp_f": 69.0,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": 30,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
+            "thunderstorms",
+            "light rain showers",
             "haze"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 119,
-          "category": "Unhealthy for Sensitive Groups",
-          "aqi_24h_max": 176,
-          "aqi_24h_max_category": "Unhealthy",
-          "pm2_5": 29.1,
-          "pm10": 30.3,
-          "ozone": 100.0,
-          "nitrogen_dioxide": 10.5,
-          "observed_at": "2026-08-12T08:00",
+          "us_aqi": 98,
+          "category": "Moderate",
+          "aqi_24h_max": 103,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 12.2,
+          "pm10": 12.3,
+          "ozone": 96.0,
+          "nitrogen_dioxide": 3.6,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -789,7 +778,18 @@
       "name": "Bonneville County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -807,7 +807,7 @@
             "lat": 43.6381,
             "lon": -111.6643,
             "acreage": 2142,
-            "containment_pct": 90,
+            "containment_pct": 97,
             "cause": "Natural",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDIFD-000152",
@@ -822,39 +822,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 17,
+          "precip_in_24h": 0.26,
+          "precip_probability_pct": 89,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 63.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 17,
+          "high_temp_f": 76.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 76.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 44,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
             "light rain showers",
+            "moderate rain showers",
             "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 66,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 119,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 13.1,
-          "pm10": 15.7,
-          "ozone": 86.0,
-          "nitrogen_dioxide": 7.2,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 98,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.9,
+          "pm10": 9.7,
+          "ozone": 98.0,
+          "nitrogen_dioxide": 2.9,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -867,11 +868,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 11 at 11:29PM PDT until August 12 at 11:00PM PDT by NWS Spokane WA",
+            "headline": "Red Flag Warning issued August 12 at 10:55PM PDT until August 13 at 8:00AM PDT by NWS Spokane WA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-11T23:29:00-07:00",
-            "expires": "2026-08-12T23:00:00-07:00",
+            "effective": "2026-08-12T22:55:00-07:00",
+            "expires": "2026-08-13T08:00:00-07:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -892,7 +893,7 @@
             "date": "2026-07-08T15:29:00+00:00",
             "lat": 48.9275,
             "lon": -116.6078,
-            "acreage": 3547,
+            "acreage": 3600,
             "containment_pct": 30,
             "cause": "Natural",
             "state": "ID",
@@ -929,37 +930,37 @@
       "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 45,
+          "precip_in_24h": 0.64,
+          "precip_probability_pct": 93,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 66.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 66.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 33,
+          "high_temp_f": 58.0,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 42.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": 32,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
-            "haze",
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "haze",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 166,
-          "category": "Unhealthy",
-          "aqi_24h_max": 192,
-          "aqi_24h_max_category": "Unhealthy",
-          "pm2_5": 71.0,
-          "pm10": 73.1,
-          "ozone": 117.0,
-          "nitrogen_dioxide": 15.2,
-          "observed_at": "2026-08-12T08:00",
+          "us_aqi": 127,
+          "category": "Unhealthy for Sensitive Groups",
+          "aqi_24h_max": 142,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 15.5,
+          "pm10": 15.9,
+          "ozone": 91.0,
+          "nitrogen_dioxide": 5.5,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -969,7 +970,18 @@
       "name": "Butte County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -983,39 +995,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 16,
+          "precip_in_24h": 0.02,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 63.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 16,
+          "high_temp_f": 79.0,
+          "low_temp_f": 57.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 57.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 28,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
-            "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
+          "us_aqi": 70,
           "category": "Moderate",
-          "aqi_24h_max": 112,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 13.4,
-          "pm10": 14.1,
-          "ozone": 65.0,
-          "nitrogen_dioxide": 7.3,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 94,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 19.2,
+          "pm10": 20.0,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 9.1,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1025,33 +1036,25 @@
       "name": "Camas County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [
-          {
-            "title": "MM115 HWY 20",
-            "incident_name": "MM115 HWY 20",
-            "id": "2026-IDSWS-000901",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-07T20:59:36+00:00",
-            "lat": 43.302,
-            "lon": -115.4472,
-            "acreage": 5139,
-            "containment_pct": 50,
-            "cause": "Human",
-            "state": "ID",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDSWS-000901",
-            "source": "NIFC WFIGS",
-            "distance_miles": 36.6,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -1061,34 +1064,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_in_24h": 0.03,
+          "precip_probability_pct": 29,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 59.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 59.0,
+          "high_temp_f": 74.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 74.0,
+          "low_apparent_temp_f": 57.0,
           "max_wind_mph": 15.0,
           "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 17,
+          "thunder_probability_pct": 20,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 64,
+          "us_aqi": 84,
           "category": "Moderate",
-          "aqi_24h_max": 135,
+          "aqi_24h_max": 117,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 16.7,
-          "pm10": 17.3,
-          "ozone": 74.0,
-          "nitrogen_dioxide": 10.2,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 24.3,
+          "pm10": 24.6,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 10.5,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1098,7 +1103,18 @@
       "name": "Canyon County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 12 at 1:20PM MDT until August 14 at 6:00AM MDT by NWS Boise ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T10:30:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1106,79 +1122,6 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 62.0,
-          "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 1,
-          "lightning_activity_level": null,
-          "weather": [
-            "smoke"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 86,
-          "category": "Moderate",
-          "aqi_24h_max": 118,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 24.0,
-          "pm10": 24.5,
-          "ozone": 104.0,
-          "nitrogen_dioxide": 10.6,
-          "observed_at": "2026-08-12T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "16029": {
-      "fips": "16029",
-      "name": "Caribou County",
-      "state": "ID",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [
-          {
-            "title": "McPherson",
-            "incident_name": "McPherson",
-            "id": "2026-IDCTF-000160",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-08T00:16:51+00:00",
-            "lat": 42.5618,
-            "lon": -111.6796,
-            "acreage": 298,
-            "containment_pct": 80,
-            "cause": "Human",
-            "state": "ID",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDCTF-000160",
-            "source": "NIFC WFIGS",
-            "distance_miles": 17.0,
-            "threat_level": "Vicinity"
-          }
-        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -1188,129 +1131,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 45,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 81.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 15,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "light rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 62,
-          "category": "Moderate",
-          "aqi_24h_max": 126,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 12.8,
-          "pm10": 14.4,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 9.3,
-          "observed_at": "2026-08-12T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "16031": {
-      "fips": "16031",
-      "name": "Cassia County",
-      "state": "ID",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 44,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 68.0,
-          "high_apparent_temp_f": 80.0,
-          "low_apparent_temp_f": 68.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 27,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "light rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 80,
-          "category": "Moderate",
-          "aqi_24h_max": 130,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 14.7,
-          "pm10": 16.2,
-          "ozone": 86.0,
-          "nitrogen_dioxide": 11.4,
-          "observed_at": "2026-08-12T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "16033": {
-      "fips": "16033",
-      "name": "Clark County",
-      "state": "ID",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 20,
+          "precip_probability_pct": 15,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 64.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 20,
+          "high_temp_f": 91.0,
+          "low_temp_f": 62.0,
+          "high_apparent_temp_f": 89.0,
+          "low_apparent_temp_f": 62.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "smoke",
@@ -1321,15 +1152,215 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 93,
+          "us_aqi": 86,
           "category": "Moderate",
-          "aqi_24h_max": 142,
+          "aqi_24h_max": 137,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 16.1,
-          "pm10": 17.9,
-          "ozone": 78.0,
-          "nitrogen_dioxide": 10.4,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 24.6,
+          "pm10": 25.6,
+          "ozone": 82.0,
+          "nitrogen_dioxide": 10.6,
+          "observed_at": "2026-08-13T08:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "16029": {
+      "fips": "16029",
+      "name": "Caribou County",
+      "state": "ID",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.31,
+          "precip_probability_pct": 93,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 74.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 74.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 46,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 56,
+          "category": "Moderate",
+          "aqi_24h_max": 93,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.0,
+          "pm10": 9.3,
+          "ozone": 90.0,
+          "nitrogen_dioxide": 5.1,
+          "observed_at": "2026-08-13T08:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "16031": {
+      "fips": "16031",
+      "name": "Cassia County",
+      "state": "ID",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.21,
+          "precip_probability_pct": 85,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 72.0,
+          "low_temp_f": 63.0,
+          "high_apparent_temp_f": 72.0,
+          "low_apparent_temp_f": 63.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 35,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain showers",
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 60,
+          "category": "Moderate",
+          "aqi_24h_max": 80,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 11.6,
+          "pm10": 12.9,
+          "ozone": 54.0,
+          "nitrogen_dioxide": 11.7,
+          "observed_at": "2026-08-13T08:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "16033": {
+      "fips": "16033",
+      "name": "Clark County",
+      "state": "ID",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.02,
+          "precip_probability_pct": 54,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 78.0,
+          "low_temp_f": 57.0,
+          "high_apparent_temp_f": 78.0,
+          "low_apparent_temp_f": 57.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 31,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 76,
+          "category": "Moderate",
+          "aqi_24h_max": 87,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 14.3,
+          "pm10": 16.8,
+          "ozone": 98.0,
+          "nitrogen_dioxide": 6.0,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1428,7 +1459,7 @@
             "date": "2026-07-30T00:02:00+00:00",
             "lat": 46.7749,
             "lon": -115.2167,
-            "acreage": 1708,
+            "acreage": 2108,
             "containment_pct": 7,
             "cause": "Natural",
             "state": "ID",
@@ -1448,36 +1479,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 80.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 55.0,
+          "high_temp_f": 77.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 77.0,
+          "low_apparent_temp_f": 53.0,
           "max_wind_mph": 6.9,
           "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 3,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
-            "light rain",
-            "light rain showers",
-            "thunderstorms"
+            "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 81,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 86,
+          "aqi_24h_max": 65,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 15.8,
-          "pm10": 16.1,
-          "ozone": 115.0,
-          "nitrogen_dioxide": 8.5,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 14.1,
+          "pm10": 14.4,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 11.9,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1487,7 +1515,18 @@
       "name": "Custer County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1520,39 +1559,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 19,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 58,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 80.0,
-          "low_apparent_temp_f": 48.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 16,
+          "high_temp_f": 77.0,
+          "low_temp_f": 45.0,
+          "high_apparent_temp_f": 77.0,
+          "low_apparent_temp_f": 45.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 30,
           "lightning_activity_level": null,
           "weather": [
             "smoke",
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 69,
+          "us_aqi": 83,
           "category": "Moderate",
-          "aqi_24h_max": 149,
+          "aqi_24h_max": 129,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 17.2,
-          "pm10": 17.5,
-          "ozone": 51.0,
-          "nitrogen_dioxide": 10.6,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 23.8,
+          "pm10": 24.0,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 12.0,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1562,33 +1602,25 @@
       "name": "Elmore County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [
-          {
-            "title": "MM115 HWY 20",
-            "incident_name": "MM115 HWY 20",
-            "id": "2026-IDSWS-000901",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-07T20:59:36+00:00",
-            "lat": 43.302,
-            "lon": -115.4472,
-            "acreage": 5139,
-            "containment_pct": 50,
-            "cause": "Human",
-            "state": "ID",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDSWS-000901",
-            "source": "NIFC WFIGS",
-            "distance_miles": 6.5,
-            "threat_level": "Immediate"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -1599,35 +1631,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 11,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 64.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 10.4,
+          "high_temp_f": 81.0,
+          "low_temp_f": 62.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 62.0,
+          "max_wind_mph": 11.5,
           "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 12,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
-            "thunderstorms",
-            "light rain showers"
+            "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 79,
+          "us_aqi": 95,
           "category": "Moderate",
-          "aqi_24h_max": 135,
+          "aqi_24h_max": 133,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 24.1,
-          "pm10": 24.8,
-          "ozone": 81.0,
-          "nitrogen_dioxide": 8.8,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 30.6,
+          "pm10": 31.0,
+          "ozone": 87.0,
+          "nitrogen_dioxide": 9.3,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1637,33 +1667,25 @@
       "name": "Franklin County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [
-          {
-            "title": "McPherson",
-            "incident_name": "McPherson",
-            "id": "2026-IDCTF-000160",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-08T00:16:51+00:00",
-            "lat": 42.5618,
-            "lon": -111.6796,
-            "acreage": 298,
-            "containment_pct": 80,
-            "cause": "Human",
-            "state": "ID",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDCTF-000160",
-            "source": "NIFC WFIGS",
-            "distance_miles": 27.8,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -1673,36 +1695,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 59,
+          "precip_in_24h": 0.28,
+          "precip_probability_pct": 92,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 65.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 65.0,
+          "high_temp_f": 81.0,
+          "low_temp_f": 60.0,
+          "high_apparent_temp_f": 80.0,
+          "low_apparent_temp_f": 60.0,
           "max_wind_mph": 8.1,
           "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 15,
+          "thunder_probability_pct": 44,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
             "light rain showers",
-            "light rain"
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
+          "us_aqi": 47,
           "category": "Good",
-          "aqi_24h_max": 87,
+          "aqi_24h_max": 89,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 6.3,
-          "pm10": 8.4,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 18.3,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 6.8,
+          "pm10": 8.2,
+          "ozone": 25.0,
+          "nitrogen_dioxide": 19.4,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1712,7 +1734,18 @@
       "name": "Fremont County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1730,7 +1763,7 @@
             "lat": 43.6381,
             "lon": -111.6643,
             "acreage": 2142,
-            "containment_pct": 90,
+            "containment_pct": 97,
             "cause": "Natural",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDIFD-000152",
@@ -1745,39 +1778,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 26,
+          "precip_in_24h": 0.09,
+          "precip_probability_pct": 78,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 81.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 26,
+          "high_temp_f": 74.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 74.0,
+          "low_apparent_temp_f": 45.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 33,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
             "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 95,
+          "us_aqi": 72,
           "category": "Moderate",
-          "aqi_24h_max": 129,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 18.2,
-          "pm10": 25.4,
-          "ozone": 120.0,
-          "nitrogen_dioxide": 5.6,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 95,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 14.3,
+          "pm10": 17.2,
+          "ozone": 97.0,
+          "nitrogen_dioxide": 4.2,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1787,7 +1820,18 @@
       "name": "Gem County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 12 at 1:20PM MDT until August 14 at 6:00AM MDT by NWS Boise ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T10:30:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1805,7 +1849,7 @@
             "lat": 44.5413,
             "lon": -117.093,
             "acreage": 158027,
-            "containment_pct": 93,
+            "containment_pct": 98,
             "cause": "Natural",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDBOD-265460",
@@ -1820,37 +1864,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 12,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
+          "high_temp_f": 82.0,
           "low_temp_f": 64.0,
-          "high_apparent_temp_f": 82.0,
+          "high_apparent_temp_f": 80.0,
           "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 2,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 78,
+          "us_aqi": 92,
           "category": "Moderate",
-          "aqi_24h_max": 127,
+          "aqi_24h_max": 129,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 24.6,
-          "pm10": 24.9,
-          "ozone": 71.0,
-          "nitrogen_dioxide": 12.6,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 24.2,
+          "pm10": 24.7,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 11.9,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1860,33 +1906,25 @@
       "name": "Gooding County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 12 at 1:20PM MDT until August 14 at 6:00AM MDT by NWS Boise ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T10:30:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [
-          {
-            "title": "MM115 HWY 20",
-            "incident_name": "MM115 HWY 20",
-            "id": "2026-IDSWS-000901",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-07T20:59:36+00:00",
-            "lat": 43.302,
-            "lon": -115.4472,
-            "acreage": 5139,
-            "containment_pct": 50,
-            "cause": "Human",
-            "state": "ID",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDSWS-000901",
-            "source": "NIFC WFIGS",
-            "distance_miles": 38.9,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
@@ -1896,34 +1934,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_in_24h": 0.02,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 64.0,
-          "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 6,
+          "high_temp_f": 91.0,
+          "low_temp_f": 63.0,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 63.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 13,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 81,
+          "us_aqi": 93,
           "category": "Moderate",
-          "aqi_24h_max": 130,
+          "aqi_24h_max": 116,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 24.6,
-          "pm10": 27.2,
-          "ozone": 83.0,
-          "nitrogen_dioxide": 11.7,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 28.9,
+          "pm10": 30.0,
+          "ozone": 79.0,
+          "nitrogen_dioxide": 13.6,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1933,7 +1973,18 @@
       "name": "Idaho County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2023,7 +2074,7 @@
             "lat": 46.162,
             "lon": -114.337,
             "acreage": 118,
-            "containment_pct": 50,
+            "containment_pct": 60,
             "cause": "Natural",
             "state": "MT",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBRF-000255",
@@ -2058,7 +2109,7 @@
             "date": "2026-07-30T00:02:00+00:00",
             "lat": 46.7749,
             "lon": -115.2167,
-            "acreage": 1708,
+            "acreage": 2108,
             "containment_pct": 7,
             "cause": "Natural",
             "state": "ID",
@@ -2077,7 +2128,7 @@
             "lat": 45.6696,
             "lon": -117.0871,
             "acreage": 4225,
-            "containment_pct": 80,
+            "containment_pct": 85,
             "cause": "Human",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR974S-000423",
@@ -2095,7 +2146,7 @@
             "lat": 45.213,
             "lon": -115.9093,
             "acreage": 189,
-            "containment_pct": 25,
+            "containment_pct": 40,
             "cause": "Undetermined",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDPAF-265532",
@@ -2110,23 +2161,24 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 9,
+      "alert_count": 10,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 7,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 45,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 43.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 43.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 42.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 42.0,
           "max_wind_mph": 9.2,
           "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 7,
+          "thunder_probability_pct": 31,
           "lightning_activity_level": null,
           "weather": [
             "smoke",
+            "fog",
             "thunderstorms",
             "light rain showers",
             "light rain"
@@ -2135,15 +2187,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 89,
+          "us_aqi": 66,
           "category": "Moderate",
-          "aqi_24h_max": 113,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 19.1,
-          "pm10": 19.4,
-          "ozone": 119.0,
-          "nitrogen_dioxide": 7.3,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 79,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.7,
+          "pm10": 10.9,
+          "ozone": 88.0,
+          "nitrogen_dioxide": 7.6,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2153,7 +2205,18 @@
       "name": "Jefferson County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2171,7 +2234,7 @@
             "lat": 43.6381,
             "lon": -111.6643,
             "acreage": 2142,
-            "containment_pct": 90,
+            "containment_pct": 97,
             "cause": "Natural",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDIFD-000152",
@@ -2186,26 +2249,24 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 6,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 55,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 62.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 62.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": 6,
+          "high_temp_f": 83.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 81.0,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 26,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
             "light rain showers",
-            "thunderstorms",
-            "light rain"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -2213,13 +2274,13 @@
         "air_quality": {
           "us_aqi": 67,
           "category": "Moderate",
-          "aqi_24h_max": 110,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 13.9,
-          "pm10": 21.8,
-          "ozone": 93.0,
-          "nitrogen_dioxide": 3.1,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 95,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 12.9,
+          "pm10": 23.4,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 9.0,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2229,7 +2290,18 @@
       "name": "Jerome County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2243,37 +2315,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 52,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 66.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 66.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 87.0,
+          "low_temp_f": 63.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 63.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 14,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 78,
+          "us_aqi": 82,
           "category": "Moderate",
-          "aqi_24h_max": 124,
+          "aqi_24h_max": 110,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 22.9,
-          "pm10": 25.8,
+          "pm2_5": 27.1,
+          "pm10": 28.6,
           "ozone": 86.0,
-          "nitrogen_dioxide": 13.4,
-          "observed_at": "2026-08-12T08:00",
+          "nitrogen_dioxide": 13.0,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2286,11 +2360,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 11 at 11:29PM PDT until August 12 at 11:00PM PDT by NWS Spokane WA",
+            "headline": "Red Flag Warning issued August 12 at 10:55PM PDT until August 13 at 8:00AM PDT by NWS Spokane WA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-11T23:29:00-07:00",
-            "expires": "2026-08-12T23:00:00-07:00",
+            "effective": "2026-08-12T22:55:00-07:00",
+            "expires": "2026-08-13T08:00:00-07:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -2330,7 +2404,7 @@
             "lat": 47.6839,
             "lon": -117.5334,
             "acreage": 3176,
-            "containment_pct": 83,
+            "containment_pct": 97,
             "cause": "Human",
             "state": "WA",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-WANES-001845",
@@ -2366,30 +2440,12 @@
             "lat": 47.7945,
             "lon": -117.6128,
             "acreage": 5764,
-            "containment_pct": 89,
+            "containment_pct": 97,
             "cause": "Human",
             "state": "WA",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-WANES-001857",
             "source": "NIFC WFIGS",
             "distance_miles": 43.4,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "WELLS ROAD",
-            "incident_name": "WELLS ROAD",
-            "id": "2026-WAWFS-001933",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-08T22:30:00+00:00",
-            "lat": 47.24,
-            "lon": -117.51,
-            "acreage": 1865,
-            "containment_pct": 78,
-            "cause": "Human",
-            "state": "WA",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-WAWFS-001933",
-            "source": "NIFC WFIGS",
-            "distance_miles": 48.5,
             "threat_level": "Vicinity"
           }
         ],
@@ -2399,38 +2455,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 6,
+      "alert_count": 5,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 23,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
+          "high_temp_f": 84.0,
           "low_temp_f": 58.0,
-          "high_apparent_temp_f": 83.0,
+          "high_apparent_temp_f": 82.0,
           "low_apparent_temp_f": 58.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 1,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 21,
           "lightning_activity_level": null,
           "weather": [
             "smoke",
-            "haze"
+            "haze",
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 58,
+          "us_aqi": 78,
           "category": "Moderate",
-          "aqi_24h_max": 131,
+          "aqi_24h_max": 111,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 6.5,
-          "pm10": 7.0,
-          "ozone": 57.0,
-          "nitrogen_dioxide": 14.2,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 24.6,
+          "pm10": 24.9,
+          "ozone": 86.0,
+          "nitrogen_dioxide": 7.4,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2449,37 +2507,19 @@
         "road_closure": [],
         "wildfires": [
           {
-            "title": "WELLS ROAD",
-            "incident_name": "WELLS ROAD",
-            "id": "2026-WAWFS-001933",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-08T22:30:00+00:00",
-            "lat": 47.24,
-            "lon": -117.51,
-            "acreage": 1865,
-            "containment_pct": 78,
-            "cause": "Human",
-            "state": "WA",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-WAWFS-001933",
-            "source": "NIFC WFIGS",
-            "distance_miles": 46.8,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Alpowa Mutual Aid",
-            "incident_name": "Alpowa Mutual Aid",
-            "id": "2026-WASES-000449",
+            "title": "ALPOWA",
+            "incident_name": "ALPOWA",
+            "id": "2026-WAWFS-001959",
             "category": "wildfire",
             "incident_type": "Wildfire",
             "date": "2026-08-11T21:57:41+00:00",
             "lat": 46.4058,
             "lon": -117.2474,
-            "acreage": 750,
+            "acreage": 1334,
             "containment_pct": 0,
-            "cause": "Undetermined",
+            "cause": "Human",
             "state": "WA",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-WASES-000449",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-WAWFS-001959",
             "source": "NIFC WFIGS",
             "distance_miles": 37.6,
             "threat_level": "Vicinity"
@@ -2491,38 +2531,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 81.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 81.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 80.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "haze",
-            "smoke"
+            "smoke",
+            "haze"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 60,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 117,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 5.9,
-          "pm10": 6.3,
-          "ozone": 72.0,
-          "nitrogen_dioxide": 12.8,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 78,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 9.0,
+          "pm10": 9.1,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 11.7,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2532,7 +2572,18 @@
       "name": "Lemhi County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2567,7 +2618,7 @@
             "date": "2026-07-31T20:39:00+00:00",
             "lat": 45.6368,
             "lon": -113.2039,
-            "acreage": 8521,
+            "acreage": 9245,
             "containment_pct": 0,
             "cause": "Undetermined",
             "state": "MT",
@@ -2585,7 +2636,7 @@
             "date": "2026-08-01T19:31:12+00:00",
             "lat": 45.5547,
             "lon": -113.3257,
-            "acreage": 19683,
+            "acreage": 27576,
             "containment_pct": 0,
             "cause": "Undetermined",
             "state": "MT",
@@ -2601,40 +2652,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3,
+      "alert_count": 4,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 27,
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 65,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 31.1,
-          "thunder_probability_pct": 18,
+          "high_temp_f": 80.0,
+          "low_temp_f": 49.0,
+          "high_apparent_temp_f": 80.0,
+          "low_apparent_temp_f": 48.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 36,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
             "light rain showers",
-            "thunderstorms",
-            "light rain"
+            "smoke",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 96,
+          "us_aqi": 98,
           "category": "Moderate",
-          "aqi_24h_max": 135,
+          "aqi_24h_max": 139,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 17.1,
-          "pm10": 17.3,
-          "ozone": 102.0,
-          "nitrogen_dioxide": 6.7,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 25.0,
+          "pm10": 25.3,
+          "ozone": 107.0,
+          "nitrogen_dioxide": 10.4,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2653,19 +2703,19 @@
         "road_closure": [],
         "wildfires": [
           {
-            "title": "Alpowa Mutual Aid",
-            "incident_name": "Alpowa Mutual Aid",
-            "id": "2026-WASES-000449",
+            "title": "ALPOWA",
+            "incident_name": "ALPOWA",
+            "id": "2026-WAWFS-001959",
             "category": "wildfire",
             "incident_type": "Wildfire",
             "date": "2026-08-11T21:57:41+00:00",
             "lat": 46.4058,
             "lon": -117.2474,
-            "acreage": 750,
+            "acreage": 1334,
             "containment_pct": 0,
-            "cause": "Undetermined",
+            "cause": "Human",
             "state": "WA",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-WASES-000449",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-WAWFS-001959",
             "source": "NIFC WFIGS",
             "distance_miles": 41.0,
             "threat_level": "Vicinity"
@@ -2681,16 +2731,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
+          "high_temp_f": 79.0,
           "low_temp_f": 54.0,
-          "high_apparent_temp_f": 81.0,
+          "high_apparent_temp_f": 79.0,
           "low_apparent_temp_f": 54.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 5,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "smoke",
@@ -2700,15 +2750,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 81,
+          "us_aqi": 57,
           "category": "Moderate",
-          "aqi_24h_max": 133,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 11.9,
-          "pm10": 12.3,
-          "ozone": 80.0,
-          "nitrogen_dioxide": 14.0,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 81,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.6,
+          "pm10": 8.7,
+          "ozone": 56.0,
+          "nitrogen_dioxide": 13.7,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2718,7 +2768,18 @@
       "name": "Lincoln County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2732,37 +2793,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 24,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 62.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 62.0,
+          "high_temp_f": 88.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 59.0,
           "max_wind_mph": 12.7,
           "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 1,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 75,
+          "us_aqi": 74,
           "category": "Moderate",
-          "aqi_24h_max": 124,
+          "aqi_24h_max": 102,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 17.8,
-          "pm10": 19.9,
-          "ozone": 74.0,
-          "nitrogen_dioxide": 16.9,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 24.4,
+          "pm10": 26.0,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 22.5,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2772,7 +2835,18 @@
       "name": "Madison County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2790,7 +2864,7 @@
             "lat": 43.6381,
             "lon": -111.6643,
             "acreage": 2142,
-            "containment_pct": 90,
+            "containment_pct": 97,
             "cause": "Natural",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDIFD-000152",
@@ -2805,37 +2879,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 16,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 81,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 64.0,
-          "high_apparent_temp_f": 85.0,
-          "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 12,
+          "high_temp_f": 80.0,
+          "low_temp_f": 57.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 57.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 36,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 64,
+          "us_aqi": 60,
           "category": "Moderate",
-          "aqi_24h_max": 114,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 13.4,
-          "pm10": 17.1,
-          "ozone": 78.0,
-          "nitrogen_dioxide": 10.1,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 99,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.6,
+          "pm10": 9.1,
+          "ozone": 82.0,
+          "nitrogen_dioxide": 5.7,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2845,7 +2920,18 @@
       "name": "Minidoka County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2859,38 +2945,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 15,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 58,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 64.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 85.0,
+          "low_temp_f": 60.0,
+          "high_apparent_temp_f": 83.0,
+          "low_apparent_temp_f": 60.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 17,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "smoke"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 75,
+          "us_aqi": 69,
           "category": "Moderate",
-          "aqi_24h_max": 124,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 16.3,
-          "pm10": 18.2,
-          "ozone": 85.0,
-          "nitrogen_dioxide": 12.8,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 95,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 19.0,
+          "pm10": 20.6,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 16.9,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2936,7 +3022,7 @@
             "lat": 45.6696,
             "lon": -117.0871,
             "acreage": 4225,
-            "containment_pct": 80,
+            "containment_pct": 85,
             "cause": "Human",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR974S-000423",
@@ -2945,19 +3031,19 @@
             "threat_level": "Vicinity"
           },
           {
-            "title": "Alpowa Mutual Aid",
-            "incident_name": "Alpowa Mutual Aid",
-            "id": "2026-WASES-000449",
+            "title": "ALPOWA",
+            "incident_name": "ALPOWA",
+            "id": "2026-WAWFS-001959",
             "category": "wildfire",
             "incident_type": "Wildfire",
             "date": "2026-08-11T21:57:41+00:00",
             "lat": 46.4058,
             "lon": -117.2474,
-            "acreage": 750,
+            "acreage": 1334,
             "containment_pct": 0,
-            "cause": "Undetermined",
+            "cause": "Human",
             "state": "WA",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-WASES-000449",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-WAWFS-001959",
             "source": "NIFC WFIGS",
             "distance_miles": 23.7,
             "threat_level": "Vicinity"
@@ -2973,16 +3059,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 26,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 61.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 84.0,
+          "low_temp_f": 60.0,
+          "high_apparent_temp_f": 82.0,
+          "low_apparent_temp_f": 60.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "smoke",
@@ -2992,15 +3078,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 75,
+          "us_aqi": 61,
           "category": "Moderate",
-          "aqi_24h_max": 143,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 8.6,
-          "pm10": 9.0,
-          "ozone": 70.0,
-          "nitrogen_dioxide": 14.9,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 94,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 5.5,
+          "pm10": 5.6,
+          "ozone": 51.0,
+          "nitrogen_dioxide": 12.4,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3010,7 +3096,18 @@
       "name": "Oneida County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3024,39 +3121,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.38,
+          "precip_probability_pct": 91,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 70.0,
-          "high_apparent_temp_f": 81.0,
-          "low_apparent_temp_f": 70.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 73.0,
+          "low_temp_f": 63.0,
+          "high_apparent_temp_f": 73.0,
+          "low_apparent_temp_f": 63.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 46,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
             "light rain showers",
-            "light rain"
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 88,
+          "us_aqi": 50,
+          "category": "Good",
+          "aqi_24h_max": 84,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.5,
-          "pm10": 9.3,
-          "ozone": 72.0,
-          "nitrogen_dioxide": 11.1,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 6.3,
+          "pm10": 7.2,
+          "ozone": 38.0,
+          "nitrogen_dioxide": 11.5,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3066,7 +3163,18 @@
       "name": "Owyhee County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3083,31 +3191,13 @@
             "date": "2026-07-23T20:30:00+00:00",
             "lat": 42.6498,
             "lon": -117.3034,
-            "acreage": 575343,
-            "containment_pct": 36,
+            "acreage": 579361,
+            "containment_pct": 34,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORVAD-260201",
             "source": "NIFC WFIGS",
             "distance_miles": 27.9,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "MM115 HWY 20",
-            "incident_name": "MM115 HWY 20",
-            "id": "2026-IDSWS-000901",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-07T20:59:36+00:00",
-            "lat": 43.302,
-            "lon": -115.4472,
-            "acreage": 5139,
-            "containment_pct": 50,
-            "cause": "Human",
-            "state": "ID",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDSWS-000901",
-            "source": "NIFC WFIGS",
-            "distance_miles": 43.0,
             "threat_level": "Vicinity"
           }
         ],
@@ -3120,36 +3210,36 @@
       "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 12,
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 36,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 58.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 58.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 6,
+          "high_temp_f": 89.0,
+          "low_temp_f": 57.0,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 57.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 14,
           "lightning_activity_level": null,
           "weather": [
             "smoke",
-            "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 95,
+          "us_aqi": 97,
           "category": "Moderate",
-          "aqi_24h_max": 139,
+          "aqi_24h_max": 113,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 26.0,
-          "pm10": 27.6,
-          "ozone": 121.0,
-          "nitrogen_dioxide": 3.2,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 31.0,
+          "pm10": 31.2,
+          "ozone": 132.0,
+          "nitrogen_dioxide": 2.6,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3159,7 +3249,18 @@
       "name": "Payette County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 12 at 1:20PM MDT until August 14 at 6:00AM MDT by NWS Boise ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T10:30:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3177,7 +3278,7 @@
             "lat": 44.5239,
             "lon": -117.213,
             "acreage": 78903,
-            "containment_pct": 87,
+            "containment_pct": 90,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORVAD-260204",
@@ -3195,7 +3296,7 @@
             "lat": 44.5413,
             "lon": -117.093,
             "acreage": 158027,
-            "containment_pct": 93,
+            "containment_pct": 98,
             "cause": "Natural",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDBOD-265460",
@@ -3210,19 +3311,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 13,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
+          "high_temp_f": 93.0,
           "low_temp_f": 61.0,
-          "high_apparent_temp_f": 91.0,
+          "high_apparent_temp_f": 90.0,
           "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 11.5,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
@@ -3232,15 +3333,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 80,
+          "us_aqi": 88,
           "category": "Moderate",
-          "aqi_24h_max": 117,
+          "aqi_24h_max": 128,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 26.1,
-          "pm10": 26.5,
-          "ozone": 94.0,
-          "nitrogen_dioxide": 8.3,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 18.7,
+          "pm10": 19.5,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 6.6,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3250,7 +3351,18 @@
       "name": "Power County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3264,23 +3376,22 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.14,
+          "precip_probability_pct": 84,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 70.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 70.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 20,
+          "high_temp_f": 82.0,
+          "low_temp_f": 65.0,
+          "high_apparent_temp_f": 81.0,
+          "low_apparent_temp_f": 65.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 32,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
             "light rain showers",
             "thunderstorms"
           ],
@@ -3288,15 +3399,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 72,
+          "us_aqi": 59,
           "category": "Moderate",
-          "aqi_24h_max": 127,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 12.4,
-          "pm10": 13.6,
-          "ozone": 79.0,
-          "nitrogen_dioxide": 7.6,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 86,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.0,
+          "pm10": 7.8,
+          "ozone": 81.0,
+          "nitrogen_dioxide": 4.3,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3309,11 +3420,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 11 at 11:29PM PDT until August 12 at 11:00PM PDT by NWS Spokane WA",
+            "headline": "Red Flag Warning issued August 12 at 10:55PM PDT until August 13 at 8:00AM PDT by NWS Spokane WA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-11T23:29:00-07:00",
-            "expires": "2026-08-12T23:00:00-07:00",
+            "effective": "2026-08-12T22:55:00-07:00",
+            "expires": "2026-08-13T08:00:00-07:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -3335,34 +3446,35 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 26,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 79.0,
-          "low_temp_f": 57.0,
+          "low_temp_f": 54.0,
           "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 1,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 20,
           "lightning_activity_level": null,
           "weather": [
             "haze",
-            "smoke"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 69,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 96,
+          "aqi_24h_max": 69,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 10.3,
-          "ozone": 92.0,
-          "nitrogen_dioxide": 7.8,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 20.3,
+          "pm10": 20.7,
+          "ozone": 66.0,
+          "nitrogen_dioxide": 12.6,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3372,7 +3484,18 @@
       "name": "Teton County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-13T01:16:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3390,7 +3513,7 @@
             "lat": 43.6381,
             "lon": -111.6643,
             "acreage": 2142,
-            "containment_pct": 90,
+            "containment_pct": 97,
             "cause": "Natural",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDIFD-000152",
@@ -3405,40 +3528,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 17,
+          "precip_in_24h": 0.3,
+          "precip_probability_pct": 91,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 78.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 78.0,
+          "low_apparent_temp_f": 45.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 43,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "smoke",
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 67,
+          "us_aqi": 61,
           "category": "Moderate",
-          "aqi_24h_max": 117,
+          "aqi_24h_max": 105,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 15.0,
-          "pm10": 18.0,
-          "ozone": 89.0,
-          "nitrogen_dioxide": 9.4,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 10.0,
+          "pm10": 12.0,
+          "ozone": 91.0,
+          "nitrogen_dioxide": 6.1,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3448,7 +3570,18 @@
       "name": "Twin Falls County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3462,37 +3595,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 9,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 51,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 66.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 67.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 86.0,
+          "low_temp_f": 64.0,
+          "high_apparent_temp_f": 83.0,
+          "low_apparent_temp_f": 64.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 21,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 89,
+          "us_aqi": 82,
           "category": "Moderate",
-          "aqi_24h_max": 131,
+          "aqi_24h_max": 101,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 26.6,
-          "pm10": 30.6,
+          "pm2_5": 30.7,
+          "pm10": 32.5,
           "ozone": 123.0,
           "nitrogen_dioxide": 4.8,
-          "observed_at": "2026-08-12T08:00",
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3502,7 +3637,18 @@
       "name": "Valley County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T21:00:00-06:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3520,7 +3666,7 @@
             "lat": 45.213,
             "lon": -115.9093,
             "acreage": 189,
-            "containment_pct": 25,
+            "containment_pct": 40,
             "cause": "Undetermined",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDPAF-265532",
@@ -3535,39 +3681,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_in_24h": 0.02,
+          "precip_probability_pct": 21,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 73.0,
-          "low_temp_f": 54.0,
-          "high_apparent_temp_f": 73.0,
-          "low_apparent_temp_f": 54.0,
+          "high_temp_f": 70.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 70.0,
+          "low_apparent_temp_f": 53.0,
           "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 17,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 8,
           "lightning_activity_level": null,
           "weather": [
             "smoke",
-            "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 100,
+          "us_aqi": 92,
           "category": "Moderate",
-          "aqi_24h_max": 143,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 22.9,
-          "pm10": 23.2,
-          "ozone": 111.0,
-          "nitrogen_dioxide": 7.2,
-          "observed_at": "2026-08-12T08:00",
+          "aqi_24h_max": 156,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 19.1,
+          "pm10": 19.6,
+          "ozone": 101.0,
+          "nitrogen_dioxide": 7.4,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3577,7 +3723,18 @@
       "name": "Washington County",
       "state": "ID",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 12 at 1:20PM MDT until August 14 at 6:00AM MDT by NWS Boise ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-12T13:20:00-06:00",
+            "expires": "2026-08-13T10:30:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3613,7 +3770,7 @@
             "lat": 44.5239,
             "lon": -117.213,
             "acreage": 78903,
-            "containment_pct": 87,
+            "containment_pct": 90,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORVAD-260204",
@@ -3631,7 +3788,7 @@
             "lat": 44.5413,
             "lon": -117.093,
             "acreage": 158027,
-            "containment_pct": 93,
+            "containment_pct": 98,
             "cause": "Natural",
             "state": "ID",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDBOD-265460",
@@ -3660,20 +3817,20 @@
         ],
         "disease": []
       },
-      "alert_count": 4,
+      "alert_count": 5,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 11,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
+          "high_temp_f": 90.0,
           "low_temp_f": 62.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 4,
+          "high_apparent_temp_f": 86.0,
+          "low_apparent_temp_f": 62.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -3682,15 +3839,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 87,
+          "us_aqi": 82,
           "category": "Moderate",
-          "aqi_24h_max": 123,
+          "aqi_24h_max": 102,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 29.0,
-          "pm10": 29.6,
-          "ozone": 80.0,
-          "nitrogen_dioxide": 6.9,
-          "observed_at": "2026-08-12T08:00",
+          "pm2_5": 18.7,
+          "pm10": 19.3,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 6.0,
+          "observed_at": "2026-08-13T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

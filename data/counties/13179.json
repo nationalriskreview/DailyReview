@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued August 13 at 1:48AM EDT until August 13 at 8:00PM EDT by NWS Charleston SC",
         "severity": "Severe",
-        "source": "nws_forecast"
+        "urgency": "Expected",
+        "effective": "2026-08-13T01:48:00-04:00",
+        "expires": "2026-08-13T10:00:00-04:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -32,39 +36,38 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.14,
-      "precip_probability_pct": 38,
+      "precip_in_24h": 0.05,
+      "precip_probability_pct": 23,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 94.0,
+      "high_temp_f": 96.0,
       "low_temp_f": 76.0,
-      "high_apparent_temp_f": 106.0,
+      "high_apparent_temp_f": 107.0,
       "low_apparent_temp_f": 76.0,
-      "max_wind_mph": 5.8,
-      "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": 38,
+      "max_wind_mph": 4.6,
+      "max_wind_gust_mph": 11.5,
+      "thunder_probability_pct": 23,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
-        "moderate rain showers",
         "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 44,
+      "us_aqi": 45,
       "category": "Good",
-      "aqi_24h_max": 47,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 9.0,
-      "pm10": 9.5,
-      "ozone": 38.0,
-      "nitrogen_dioxide": 6.5,
-      "observed_at": "2026-08-12T08:00",
+      "aqi_24h_max": 51,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 9.5,
+      "pm10": 10.1,
+      "ozone": 54.0,
+      "nitrogen_dioxide": 4.0,
+      "observed_at": "2026-08-13T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-12",
-  "generated_at": "2026-08-12T08:54:12.964263+00:00"
+  "date": "2026-08-13",
+  "generated_at": "2026-08-13T09:02:03.329005+00:00"
 }

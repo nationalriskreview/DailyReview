@@ -8,7 +8,18 @@
     "lon": -110.682961
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 13 at 1:16AM MDT until August 13 at 9:00PM MDT by NWS Pocatello ID",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-13T01:16:00-06:00",
+        "expires": "2026-08-13T21:00:00-06:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -26,30 +37,12 @@
         "lat": 42.7586,
         "lon": -110.4823,
         "acreage": 370,
-        "containment_pct": 5,
+        "containment_pct": 17,
         "cause": "Undetermined",
         "state": "WY",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-WYBTF-002621",
         "source": "NIFC WFIGS",
         "distance_miles": 18.3,
-        "threat_level": "Vicinity"
-      },
-      {
-        "title": "McPherson",
-        "incident_name": "McPherson",
-        "id": "2026-IDCTF-000160",
-        "category": "wildfire",
-        "incident_type": "Wildfire",
-        "date": "2026-08-08T00:16:51+00:00",
-        "lat": 42.5618,
-        "lon": -111.6796,
-        "acreage": 298,
-        "containment_pct": 80,
-        "cause": "Human",
-        "state": "ID",
-        "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDCTF-000160",
-        "source": "NIFC WFIGS",
-        "distance_miles": 37.4,
         "threat_level": "Vicinity"
       }
     ],
@@ -62,40 +55,41 @@
   "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.06,
-      "precip_probability_pct": 64,
+      "precip_in_24h": 0.4,
+      "precip_probability_pct": 98,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 84.0,
-      "low_temp_f": 51.0,
-      "high_apparent_temp_f": 81.0,
-      "low_apparent_temp_f": 51.0,
-      "max_wind_mph": 23.0,
-      "max_wind_gust_mph": 39.1,
-      "thunder_probability_pct": 28,
+      "high_temp_f": 74.0,
+      "low_temp_f": 47.0,
+      "high_apparent_temp_f": 74.0,
+      "low_apparent_temp_f": 44.0,
+      "max_wind_mph": 19.6,
+      "max_wind_gust_mph": 24.2,
+      "thunder_probability_pct": 49,
       "lightning_activity_level": null,
       "weather": [
+        "thunderstorms",
         "light rain showers",
         "smoke",
-        "thunderstorms",
+        "moderate rain showers",
         "light rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 74,
+      "us_aqi": 56,
       "category": "Moderate",
-      "aqi_24h_max": 118,
-      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-      "pm2_5": 10.4,
-      "pm10": 13.3,
-      "ozone": 110.0,
-      "nitrogen_dioxide": 5.5,
-      "observed_at": "2026-08-12T08:00",
+      "aqi_24h_max": 95,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 9.5,
+      "pm10": 11.5,
+      "ozone": 73.0,
+      "nitrogen_dioxide": 7.6,
+      "observed_at": "2026-08-13T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-12",
-  "generated_at": "2026-08-12T08:54:12.964263+00:00"
+  "date": "2026-08-13",
+  "generated_at": "2026-08-13T09:02:03.329005+00:00"
 }

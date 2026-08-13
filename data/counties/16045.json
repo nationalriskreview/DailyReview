@@ -8,7 +8,18 @@
     "lon": -116.398784
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 12 at 1:20PM MDT until August 14 at 6:00AM MDT by NWS Boise ID",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-12T13:20:00-06:00",
+        "expires": "2026-08-13T10:30:00-06:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -26,7 +37,7 @@
         "lat": 44.5413,
         "lon": -117.093,
         "acreage": 158027,
-        "containment_pct": 93,
+        "containment_pct": 98,
         "cause": "Natural",
         "state": "ID",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDBOD-265460",
@@ -41,40 +52,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 1,
+      "precip_probability_pct": 12,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 85.0,
+      "high_temp_f": 82.0,
       "low_temp_f": 64.0,
-      "high_apparent_temp_f": 82.0,
+      "high_apparent_temp_f": 80.0,
       "low_apparent_temp_f": 64.0,
-      "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": 2,
+      "max_wind_mph": 9.2,
+      "max_wind_gust_mph": 12.7,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "smoke"
+        "smoke",
+        "thunderstorms",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 78,
+      "us_aqi": 92,
       "category": "Moderate",
-      "aqi_24h_max": 127,
+      "aqi_24h_max": 129,
       "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-      "pm2_5": 24.6,
-      "pm10": 24.9,
-      "ozone": 71.0,
-      "nitrogen_dioxide": 12.6,
-      "observed_at": "2026-08-12T08:00",
+      "pm2_5": 24.2,
+      "pm10": 24.7,
+      "ozone": 62.0,
+      "nitrogen_dioxide": 11.9,
+      "observed_at": "2026-08-13T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-12",
-  "generated_at": "2026-08-12T08:54:12.964263+00:00"
+  "date": "2026-08-13",
+  "generated_at": "2026-08-13T09:02:03.329005+00:00"
 }
