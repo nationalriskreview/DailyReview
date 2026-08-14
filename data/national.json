@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-13T09:02:03.329005+00:00",
-  "date": "2026-08-13",
+  "generated_at": "2026-08-14T08:52:26.990256+00:00",
+  "date": "2026-08-14",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 401
+      "counties_with_alerts": 366
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 664
+      "counties_over_threshold": 720
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,42 +28,42 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 56,
+      "counties_with_matches": 28,
       "items_pre_llm": {
-        "protest": 32,
-        "utility_outage": 31,
-        "transit_disruption": 0,
-        "service_provider_outage": 7,
-        "hazmat_incident": 6,
-        "road_closure": 10
+        "protest": 14,
+        "utility_outage": 7,
+        "transit_disruption": 1,
+        "service_provider_outage": 0,
+        "hazmat_incident": 2,
+        "road_closure": 8
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 35,
+      "counties_with_matches": 15,
       "items_post_llm": {
-        "protest": 2,
-        "utility_outage": 29,
-        "transit_disruption": 0,
-        "service_provider_outage": 6,
-        "hazmat_incident": 3,
-        "road_closure": 8
+        "protest": 4,
+        "utility_outage": 7,
+        "transit_disruption": 1,
+        "service_provider_outage": 0,
+        "hazmat_incident": 0,
+        "road_closure": 5
       },
-      "unique_articles": 51,
-      "calls_used": 51,
+      "unique_articles": 24,
+      "calls_used": 24,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 252
+      "counties_with_alerts": 248
     },
     "transit": {
-      "status": "ok",
+      "status": "partial",
       "agencies_total": 11,
-      "agencies_ok": 10,
-      "items_total": 0,
-      "counties_with_alerts": 0,
+      "agencies_ok": 9,
+      "items_total": 2,
+      "counties_with_alerts": 3,
       "agencies": [
         {
           "id": "mbta",
@@ -93,7 +93,7 @@
           "id": "path",
           "name": "PATH",
           "status": "ok",
-          "items": 0
+          "items": 2
         },
         {
           "id": "bart",
@@ -116,7 +116,7 @@
         {
           "id": "metra",
           "name": "Metra",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -164,9 +164,9 @@
       "counties_with_alerts": 0
     },
     "service_status": {
-      "status": "ok",
-      "active_incidents": 3,
-      "providers_ok": 27,
+      "status": "partial",
+      "active_incidents": 4,
+      "providers_ok": 26,
       "providers_total": 27,
       "providers": [
         {
@@ -220,7 +220,7 @@
         {
           "key": "anthropic",
           "name": "Anthropic",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -233,7 +233,7 @@
           "key": "slack",
           "name": "Slack",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "dropbox",
@@ -335,15 +335,18 @@
     }
   },
   "run_health": {
-    "overall": "ok",
+    "overall": "degraded",
     "counts": {
-      "ok": 15,
-      "partial": 0,
+      "ok": 13,
+      "partial": 2,
       "failed": 0,
       "skipped": 0
     },
     "failed": [],
-    "partial": [],
+    "partial": [
+      "service_status",
+      "transit"
+    ],
     "skipped": []
   },
   "cdc_han": [],
@@ -613,25 +616,36 @@
       "source": "provider status page"
     },
     {
+      "provider": "Slack",
+      "key": "slack",
+      "title": "Trouble Accessing Historical Messages With Custom Data Retention Policies Enabled",
+      "impact": "incident",
+      "status": "active",
+      "started": "2026-08-13T14:21:41-07:00",
+      "updated": "2026-08-13T14:49:40-07:00",
+      "url": "https://slack-status.com/2026-08/e07b9271f0346c3b",
+      "source": "provider status page"
+    },
+    {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
       "title": "PrismaCloud APP3: Delayed asset inventory data",
       "impact": "minor",
       "status": "monitoring",
       "started": "2026-08-07T06:55:54.784Z",
-      "updated": "2026-08-12T15:30:02.753Z",
+      "updated": "2026-08-13T20:56:47.040Z",
       "url": "https://stspg.io/7wsdy0v8qlzk",
       "source": "provider status page"
     },
     {
       "provider": "Rapid7",
       "key": "rapid7",
-      "title": "Service Under Maintenance",
-      "impact": "maintenance",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.rapid7.com",
+      "title": "Scheduled maintenance for Collector plugin endpoint-cloud-proxy update (ca-central-1)",
+      "impact": "minor",
+      "status": "investigating",
+      "started": "2026-08-13T15:37:17.983Z",
+      "updated": "2026-08-13T16:01:10.837Z",
+      "url": "https://stspg.io/5l7vx970ccxt",
       "source": "provider status page"
     }
   ]

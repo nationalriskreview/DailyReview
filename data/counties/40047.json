@@ -10,14 +10,10 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Warning",
-        "headline": "Extreme Heat Warning issued August 13 at 12:51AM CDT until August 13 at 7:00PM CDT by NWS Norman OK",
+        "event": "Extreme Heat Forecast",
+        "headline": "Apparent temperature expected to reach 111.0°F in next 24h",
         "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-08-13T00:51:00-05:00",
-        "expires": "2026-08-13T17:00:00-05:00",
-        "source": "nws_alert",
-        "count": 1
+        "source": "nws_forecast"
       }
     ],
     "protest": [],
@@ -37,34 +33,37 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 1,
+      "precip_probability_pct": 8,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 107.0,
+      "high_temp_f": 106.0,
       "low_temp_f": 80.0,
       "high_apparent_temp_f": 111.0,
       "low_apparent_temp_f": 82.0,
-      "max_wind_mph": 23.0,
-      "max_wind_gust_mph": 34.5,
-      "thunder_probability_pct": 1,
+      "max_wind_mph": 21.9,
+      "max_wind_gust_mph": 29.9,
+      "thunder_probability_pct": 4,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "thunderstorms",
+        "light rain showers"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 36,
+      "us_aqi": 39,
       "category": "Good",
-      "aqi_24h_max": 44,
+      "aqi_24h_max": 46,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.0,
-      "pm10": 3.5,
-      "ozone": 64.0,
-      "nitrogen_dioxide": 3.4,
-      "observed_at": "2026-08-13T08:00",
+      "pm2_5": 6.2,
+      "pm10": 7.8,
+      "ozone": 70.0,
+      "nitrogen_dioxide": 2.8,
+      "observed_at": "2026-08-14T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-13",
-  "generated_at": "2026-08-13T09:02:03.329005+00:00"
+  "date": "2026-08-14",
+  "generated_at": "2026-08-14T08:52:26.990256+00:00"
 }
