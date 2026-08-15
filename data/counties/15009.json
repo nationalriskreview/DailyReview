@@ -10,14 +10,34 @@
   "alerts": {
     "weather": [
       {
-        "event": "Tropical Storm Watch",
-        "headline": "Tropical Storm Watch issued August 13 at 4:59PM HST by NWS Honolulu HI",
+        "event": "Tropical Cyclone Local Statement",
+        "headline": "Tropical Cyclone Local Statement issued August 14 at 5:26PM HST by NWS Honolulu HI",
+        "severity": "Moderate",
+        "urgency": "Expected",
+        "effective": "2026-08-14T17:26:00-10:00",
+        "expires": "2026-08-15T01:30:00-10:00",
+        "source": "nws_alert",
+        "count": 1
+      },
+      {
+        "event": "Tropical Storm Warning",
+        "headline": "Tropical Storm Warning issued August 14 at 5:08PM HST by NWS Honolulu HI",
         "severity": "Severe",
-        "urgency": "Future",
-        "effective": "2026-08-13T16:59:00-10:00",
-        "expires": "2026-08-14T01:00:00-10:00",
+        "urgency": "Immediate",
+        "effective": "2026-08-14T17:08:00-10:00",
+        "expires": "2026-08-15T01:15:00-10:00",
         "source": "nws_alert",
         "count": 18
+      },
+      {
+        "event": "High Surf Warning",
+        "headline": "High Surf Warning issued August 14 at 2:44PM HST until August 16 at 6:00AM HST by NWS Honolulu HI",
+        "severity": "Moderate",
+        "urgency": "Expected",
+        "effective": "2026-08-14T14:44:00-10:00",
+        "expires": "2026-08-15T03:45:00-10:00",
+        "source": "nws_alert",
+        "count": 2
       }
     ],
     "protest": [],
@@ -33,40 +53,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 20,
+      "precip_in_24h": 1.05,
+      "precip_probability_pct": 69,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 80.0,
-      "low_temp_f": 68.0,
-      "high_apparent_temp_f": 82.0,
-      "low_apparent_temp_f": 68.0,
-      "max_wind_mph": 31.1,
-      "max_wind_gust_mph": 44.9,
+      "high_temp_f": 82.0,
+      "low_temp_f": 69.0,
+      "high_apparent_temp_f": 86.0,
+      "low_apparent_temp_f": 69.0,
+      "max_wind_mph": 42.6,
+      "max_wind_gust_mph": 50.6,
       "thunder_probability_pct": null,
       "lightning_activity_level": 2,
       "weather": [
-        "moderate rain showers"
+        "moderate rain showers",
+        "heavy rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 35,
+      "us_aqi": 39,
       "category": "Good",
-      "aqi_24h_max": 37,
+      "aqi_24h_max": 40,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 6.0,
-      "pm10": 10.0,
-      "ozone": 57.0,
+      "pm2_5": 6.1,
+      "pm10": 10.2,
+      "ozone": 39.0,
       "nitrogen_dioxide": 0.4,
-      "observed_at": "2026-08-14T08:00",
+      "observed_at": "2026-08-15T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-14",
-  "generated_at": "2026-08-14T08:52:26.990256+00:00"
+  "date": "2026-08-15",
+  "generated_at": "2026-08-15T07:58:44.505823+00:00"
 }

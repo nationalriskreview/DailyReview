@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-14T08:52:26.990256+00:00",
-  "date": "2026-08-14",
+  "generated_at": "2026-08-15T07:58:44.505823+00:00",
+  "date": "2026-08-15",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 366
+      "counties_with_alerts": 439
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 720
+      "counties_over_threshold": 644
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,42 +28,42 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 28,
+      "counties_with_matches": 31,
       "items_pre_llm": {
-        "protest": 14,
-        "utility_outage": 7,
-        "transit_disruption": 1,
+        "protest": 22,
+        "utility_outage": 4,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
-        "road_closure": 8
+        "hazmat_incident": 5,
+        "road_closure": 5
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 15,
+      "counties_with_matches": 18,
       "items_post_llm": {
-        "protest": 4,
-        "utility_outage": 7,
-        "transit_disruption": 1,
+        "protest": 10,
+        "utility_outage": 4,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
         "road_closure": 5
       },
-      "unique_articles": 24,
-      "calls_used": 24,
+      "unique_articles": 27,
+      "calls_used": 27,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 248
+      "counties_with_alerts": 252
     },
     "transit": {
-      "status": "partial",
+      "status": "ok",
       "agencies_total": 11,
-      "agencies_ok": 9,
-      "items_total": 2,
-      "counties_with_alerts": 3,
+      "agencies_ok": 10,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -93,7 +93,7 @@
           "id": "path",
           "name": "PATH",
           "status": "ok",
-          "items": 2
+          "items": 0
         },
         {
           "id": "bart",
@@ -116,7 +116,7 @@
         {
           "id": "metra",
           "name": "Metra",
-          "status": "fetch_failed",
+          "status": "ok",
           "items": 0
         },
         {
@@ -135,7 +135,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 112
+      "counties_with_alerts": 114
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -160,20 +160,20 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 1,
+      "counties_with_alerts": 16
     },
     "service_status": {
-      "status": "partial",
-      "active_incidents": 4,
-      "providers_ok": 26,
+      "status": "ok",
+      "active_incidents": 9,
+      "providers_ok": 27,
       "providers_total": 27,
       "providers": [
         {
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 0
+          "items": 4
         },
         {
           "key": "azure",
@@ -215,12 +215,12 @@
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "anthropic",
           "name": "Anthropic",
-          "status": "fetch_failed",
+          "status": "ok",
           "items": 0
         },
         {
@@ -335,18 +335,15 @@
     }
   },
   "run_health": {
-    "overall": "degraded",
+    "overall": "ok",
     "counts": {
-      "ok": 13,
-      "partial": 2,
+      "ok": 15,
+      "partial": 0,
       "failed": 0,
       "skipped": 0
     },
     "failed": [],
-    "partial": [
-      "service_status",
-      "transit"
-    ],
+    "partial": [],
     "skipped": []
   },
   "cdc_han": [],
@@ -602,8 +599,64 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [],
+  "faa_advisories": [
+    {
+      "kind": "airport_closure",
+      "code": "LGA",
+      "name": "LaGuardia",
+      "city": "New York",
+      "state": "NY",
+      "reason": "!LGA 08/320 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2608150436-2608151000",
+      "start": "Aug 15 at 04:36 UTC.",
+      "reopen": "Aug 15 at 10:00 UTC.",
+      "source": "FAA NAS Status"
+    }
+  ],
   "service_outages": [
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased Packet loss",
+      "impact": "",
+      "status": "",
+      "started": "Sat, 15 Aug 2026 00:24:28 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased Packet loss",
+      "impact": "",
+      "status": "",
+      "started": "Fri, 14 Aug 2026 22:55:13 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased Packet loss",
+      "impact": "",
+      "status": "",
+      "started": "Fri, 14 Aug 2026 21:42:50 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased Packet loss",
+      "impact": "",
+      "status": "",
+      "started": "Fri, 14 Aug 2026 20:42:59 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
@@ -616,13 +669,24 @@
       "source": "provider status page"
     },
     {
+      "provider": "OpenAI",
+      "key": "openai",
+      "title": "Unexpected GPT-5.6 Terra responses",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-08-14T22:22:28Z",
+      "updated": "2026-08-14T22:22:28Z",
+      "url": "https://status.openai.com",
+      "source": "provider status page"
+    },
+    {
       "provider": "Slack",
       "key": "slack",
       "title": "Trouble Accessing Historical Messages With Custom Data Retention Policies Enabled",
       "impact": "incident",
       "status": "active",
       "started": "2026-08-13T14:21:41-07:00",
-      "updated": "2026-08-13T14:49:40-07:00",
+      "updated": "2026-08-14T14:39:25-07:00",
       "url": "https://slack-status.com/2026-08/e07b9271f0346c3b",
       "source": "provider status page"
     },
@@ -633,19 +697,19 @@
       "impact": "minor",
       "status": "monitoring",
       "started": "2026-08-07T06:55:54.784Z",
-      "updated": "2026-08-13T20:56:47.040Z",
+      "updated": "2026-08-14T17:43:45.715Z",
       "url": "https://stspg.io/7wsdy0v8qlzk",
       "source": "provider status page"
     },
     {
       "provider": "Rapid7",
       "key": "rapid7",
-      "title": "Scheduled maintenance for Collector plugin endpoint-cloud-proxy update (ca-central-1)",
-      "impact": "minor",
-      "status": "investigating",
-      "started": "2026-08-13T15:37:17.983Z",
-      "updated": "2026-08-13T16:01:10.837Z",
-      "url": "https://stspg.io/5l7vx970ccxt",
+      "title": "Service Under Maintenance",
+      "impact": "maintenance",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.rapid7.com",
       "source": "provider status page"
     }
   ]
