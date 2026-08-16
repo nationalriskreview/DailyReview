@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued August 16 at 2:15AM CDT until August 17 at 8:00PM CDT by NWS Jackson MS",
         "severity": "Severe",
-        "source": "nws_forecast"
+        "urgency": "Expected",
+        "effective": "2026-08-16T02:15:00-05:00",
+        "expires": "2026-08-16T10:15:00-05:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -33,19 +37,18 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 1,
+      "precip_probability_pct": 2,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 100.0,
-      "low_temp_f": 74.0,
-      "high_apparent_temp_f": 108.0,
-      "low_apparent_temp_f": 74.0,
-      "max_wind_mph": 4.6,
-      "max_wind_gust_mph": 12.7,
-      "thunder_probability_pct": 1,
+      "low_temp_f": 76.0,
+      "high_apparent_temp_f": 109.0,
+      "low_apparent_temp_f": 76.0,
+      "max_wind_mph": 3.5,
+      "max_wind_gust_mph": 11.5,
+      "thunder_probability_pct": 2,
       "lightning_activity_level": null,
       "weather": [
-        "fog",
         "thunderstorms",
         "light rain showers"
       ],
@@ -53,18 +56,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 73,
+      "us_aqi": 55,
       "category": "Moderate",
-      "aqi_24h_max": 73,
+      "aqi_24h_max": 58,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 9.7,
-      "pm10": 14.3,
-      "ozone": 43.0,
-      "nitrogen_dioxide": 3.2,
-      "observed_at": "2026-08-15T07:00",
+      "pm2_5": 14.0,
+      "pm10": 19.1,
+      "ozone": 47.0,
+      "nitrogen_dioxide": 3.7,
+      "observed_at": "2026-08-16T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-15",
-  "generated_at": "2026-08-15T07:58:44.505823+00:00"
+  "date": "2026-08-16",
+  "generated_at": "2026-08-16T08:00:55.981805+00:00"
 }

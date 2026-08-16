@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-15T07:58:44.505823+00:00",
-  "date": "2026-08-15",
+  "generated_at": "2026-08-16T08:00:55.981805+00:00",
+  "date": "2026-08-16",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 439
+      "counties_with_alerts": 429
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 644
+      "counties_over_threshold": 520
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 31,
+      "counties_with_matches": 17,
       "items_pre_llm": {
-        "protest": 22,
-        "utility_outage": 4,
+        "protest": 9,
+        "utility_outage": 26,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 5,
-        "road_closure": 5
+        "hazmat_incident": 0,
+        "road_closure": 1
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 18,
+      "counties_with_matches": 15,
       "items_post_llm": {
-        "protest": 10,
-        "utility_outage": 4,
+        "protest": 6,
+        "utility_outage": 25,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 5
+        "road_closure": 0
       },
-      "unique_articles": 27,
-      "calls_used": 27,
+      "unique_articles": 22,
+      "calls_used": 22,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 252
+      "counties_with_alerts": 259
     },
     "transit": {
       "status": "ok",
@@ -135,7 +135,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 114
+      "counties_with_alerts": 167
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -173,7 +173,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 4
+          "items": 6
         },
         {
           "key": "azure",
@@ -215,7 +215,7 @@
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "anthropic",
@@ -233,7 +233,7 @@
           "key": "slack",
           "name": "Slack",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "dropbox",
@@ -606,9 +606,9 @@
       "name": "LaGuardia",
       "city": "New York",
       "state": "NY",
-      "reason": "!LGA 08/320 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2608150436-2608151000",
-      "start": "Aug 15 at 04:36 UTC.",
-      "reopen": "Aug 15 at 10:00 UTC.",
+      "reason": "!LGA 08/326 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2608160440-2608161000",
+      "start": "Aug 16 at 04:40 UTC.",
+      "reopen": "Aug 16 at 10:00 UTC.",
       "source": "FAA NAS Status"
     }
   ],
@@ -619,7 +619,7 @@
       "title": "Service impact: Increased Packet loss",
       "impact": "",
       "status": "",
-      "started": "Sat, 15 Aug 2026 00:24:28 PDT",
+      "started": "Sat, 15 Aug 2026 21:37:47 PDT",
       "updated": "",
       "url": "https://status.aws.amazon.com/",
       "source": "provider status page"
@@ -630,7 +630,7 @@
       "title": "Service impact: Increased Packet loss",
       "impact": "",
       "status": "",
-      "started": "Fri, 14 Aug 2026 22:55:13 PDT",
+      "started": "Sat, 15 Aug 2026 15:26:42 PDT",
       "updated": "",
       "url": "https://status.aws.amazon.com/",
       "source": "provider status page"
@@ -641,7 +641,7 @@
       "title": "Service impact: Increased Packet loss",
       "impact": "",
       "status": "",
-      "started": "Fri, 14 Aug 2026 21:42:50 PDT",
+      "started": "Sat, 15 Aug 2026 09:27:41 PDT",
       "updated": "",
       "url": "https://status.aws.amazon.com/",
       "source": "provider status page"
@@ -652,7 +652,29 @@
       "title": "Service impact: Increased Packet loss",
       "impact": "",
       "status": "",
-      "started": "Fri, 14 Aug 2026 20:42:59 PDT",
+      "started": "Sat, 15 Aug 2026 06:17:50 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased Packet loss",
+      "impact": "",
+      "status": "",
+      "started": "Sat, 15 Aug 2026 04:10:29 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased Packet loss",
+      "impact": "",
+      "status": "",
+      "started": "Sat, 15 Aug 2026 02:08:14 PDT",
       "updated": "",
       "url": "https://status.aws.amazon.com/",
       "source": "provider status page"
@@ -669,36 +691,14 @@
       "source": "provider status page"
     },
     {
-      "provider": "OpenAI",
-      "key": "openai",
-      "title": "Unexpected GPT-5.6 Terra responses",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-08-14T22:22:28Z",
-      "updated": "2026-08-14T22:22:28Z",
-      "url": "https://status.openai.com",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Slack",
-      "key": "slack",
-      "title": "Trouble Accessing Historical Messages With Custom Data Retention Policies Enabled",
-      "impact": "incident",
-      "status": "active",
-      "started": "2026-08-13T14:21:41-07:00",
-      "updated": "2026-08-14T14:39:25-07:00",
-      "url": "https://slack-status.com/2026-08/e07b9271f0346c3b",
-      "source": "provider status page"
-    },
-    {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "PrismaCloud APP3: Delayed asset inventory data",
+      "title": "Partially Degraded Service",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-08-07T06:55:54.784Z",
-      "updated": "2026-08-14T17:43:45.715Z",
-      "url": "https://stspg.io/7wsdy0v8qlzk",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
     },
     {
