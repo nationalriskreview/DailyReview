@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-16T08:00:55.981805+00:00",
-  "date": "2026-08-16",
+  "generated_at": "2026-08-17T08:14:23.411864+00:00",
+  "date": "2026-08-17",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 429
+      "counties_with_alerts": 325
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 520
+      "counties_over_threshold": 447
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,29 +28,29 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 17,
+      "counties_with_matches": 30,
       "items_pre_llm": {
-        "protest": 9,
-        "utility_outage": 26,
-        "transit_disruption": 0,
+        "protest": 11,
+        "utility_outage": 35,
+        "transit_disruption": 1,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
+        "hazmat_incident": 1,
         "road_closure": 1
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 15,
+      "counties_with_matches": 22,
       "items_post_llm": {
-        "protest": 6,
-        "utility_outage": 25,
-        "transit_disruption": 0,
+        "protest": 4,
+        "utility_outage": 28,
+        "transit_disruption": 1,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
+        "hazmat_incident": 1,
         "road_closure": 0
       },
-      "unique_articles": 22,
-      "calls_used": 22,
+      "unique_articles": 24,
+      "calls_used": 24,
       "cap": 300,
       "cap_hit": false
     },
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 9,
+      "active_incidents": 7,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -173,7 +173,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 6
+          "items": 4
         },
         {
           "key": "azure",
@@ -606,9 +606,9 @@
       "name": "LaGuardia",
       "city": "New York",
       "state": "NY",
-      "reason": "!LGA 08/326 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2608160440-2608161000",
-      "start": "Aug 16 at 04:40 UTC.",
-      "reopen": "Aug 16 at 10:00 UTC.",
+      "reason": "!LGA 08/342 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2608170700-2608171000",
+      "start": "Aug 17 at 07:00 UTC.",
+      "reopen": "Aug 17 at 10:00 UTC.",
       "source": "FAA NAS Status"
     }
   ],
@@ -619,7 +619,7 @@
       "title": "Service impact: Increased Packet loss",
       "impact": "",
       "status": "",
-      "started": "Sat, 15 Aug 2026 21:37:47 PDT",
+      "started": "Sun, 16 Aug 2026 22:38:04 PDT",
       "updated": "",
       "url": "https://status.aws.amazon.com/",
       "source": "provider status page"
@@ -630,7 +630,7 @@
       "title": "Service impact: Increased Packet loss",
       "impact": "",
       "status": "",
-      "started": "Sat, 15 Aug 2026 15:26:42 PDT",
+      "started": "Sun, 16 Aug 2026 15:51:07 PDT",
       "updated": "",
       "url": "https://status.aws.amazon.com/",
       "source": "provider status page"
@@ -641,7 +641,7 @@
       "title": "Service impact: Increased Packet loss",
       "impact": "",
       "status": "",
-      "started": "Sat, 15 Aug 2026 09:27:41 PDT",
+      "started": "Sun, 16 Aug 2026 09:30:39 PDT",
       "updated": "",
       "url": "https://status.aws.amazon.com/",
       "source": "provider status page"
@@ -652,29 +652,7 @@
       "title": "Service impact: Increased Packet loss",
       "impact": "",
       "status": "",
-      "started": "Sat, 15 Aug 2026 06:17:50 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased Packet loss",
-      "impact": "",
-      "status": "",
-      "started": "Sat, 15 Aug 2026 04:10:29 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased Packet loss",
-      "impact": "",
-      "status": "",
-      "started": "Sat, 15 Aug 2026 02:08:14 PDT",
+      "started": "Sun, 16 Aug 2026 03:25:32 PDT",
       "updated": "",
       "url": "https://status.aws.amazon.com/",
       "source": "provider status page"
@@ -682,12 +660,12 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Minor Service Outage",
+      "title": "Increased Errors for Durable Objects",
       "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "status": "investigating",
+      "started": "2026-08-17T07:47:04.000Z",
+      "updated": "2026-08-17T07:47:04.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/w1d9976ls02m",
       "source": "provider status page"
     },
     {

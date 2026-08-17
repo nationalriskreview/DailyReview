@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.0\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued August 17 at 3:40AM EDT until August 17 at 10:00AM EDT by NWS Charleston WV",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-17T03:40:00-04:00",
+        "expires": "2026-08-17T10:00:00-04:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -32,39 +36,39 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.01,
-      "precip_probability_pct": 95,
+      "precip_in_24h": 0.22,
+      "precip_probability_pct": 84,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 84.0,
+      "high_temp_f": 79.0,
       "low_temp_f": 71.0,
-      "high_apparent_temp_f": 94.0,
+      "high_apparent_temp_f": 84.0,
       "low_apparent_temp_f": 71.0,
-      "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 19.6,
-      "thunder_probability_pct": 61,
+      "max_wind_mph": 4.6,
+      "max_wind_gust_mph": 17.3,
+      "thunder_probability_pct": 55,
       "lightning_activity_level": null,
       "weather": [
+        "moderate rain showers",
         "thunderstorms",
-        "light rain showers",
-        "moderate rain showers"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 74,
-      "category": "Moderate",
-      "aqi_24h_max": 81,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 7.6,
-      "pm10": 7.8,
-      "ozone": 81.0,
-      "nitrogen_dioxide": 1.4,
-      "observed_at": "2026-08-16T07:00",
+      "us_aqi": 33,
+      "category": "Good",
+      "aqi_24h_max": 41,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 2.7,
+      "pm10": 2.8,
+      "ozone": 60.0,
+      "nitrogen_dioxide": 2.8,
+      "observed_at": "2026-08-17T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-16",
-  "generated_at": "2026-08-16T08:00:55.981805+00:00"
+  "date": "2026-08-17",
+  "generated_at": "2026-08-17T08:14:23.411864+00:00"
 }
