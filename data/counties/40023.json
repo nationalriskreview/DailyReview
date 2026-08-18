@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued August 17 at 11:31PM CDT until August 19 at 9:00PM CDT by NWS Tulsa OK",
         "severity": "Severe",
-        "source": "nws_forecast"
+        "urgency": "Expected",
+        "effective": "2026-08-17T23:31:00-05:00",
+        "expires": "2026-08-18T13:00:00-05:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -33,7 +37,7 @@
         "lat": 34.3447,
         "lon": -95.5436,
         "acreage": 109,
-        "containment_pct": 25,
+        "containment_pct": 60,
         "cause": "Human",
         "state": "OK",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-OKOKS-260838",
@@ -50,8 +54,8 @@
         "date": "2026-08-13T18:15:00+00:00",
         "lat": 34.4831,
         "lon": -95.1797,
-        "acreage": 647,
-        "containment_pct": 15,
+        "acreage": 703,
+        "containment_pct": 50,
         "cause": "Human",
         "state": "OK",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-OKOKS-260835",
@@ -70,16 +74,16 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 18,
+      "precip_probability_pct": 3,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 102.0,
-      "low_temp_f": 76.0,
-      "high_apparent_temp_f": 108.0,
-      "low_apparent_temp_f": 76.0,
-      "max_wind_mph": 4.6,
-      "max_wind_gust_mph": 9.2,
-      "thunder_probability_pct": 18,
+      "high_temp_f": 104.0,
+      "low_temp_f": 75.0,
+      "high_apparent_temp_f": 106.0,
+      "low_apparent_temp_f": 75.0,
+      "max_wind_mph": 5.8,
+      "max_wind_gust_mph": 11.5,
+      "thunder_probability_pct": 4,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
@@ -89,18 +93,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 57,
-      "category": "Moderate",
-      "aqi_24h_max": 58,
+      "us_aqi": 41,
+      "category": "Good",
+      "aqi_24h_max": 81,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 4.4,
-      "pm10": 5.6,
-      "ozone": 56.0,
-      "nitrogen_dioxide": 3.1,
-      "observed_at": "2026-08-17T08:00",
+      "pm2_5": 15.9,
+      "pm10": 16.5,
+      "ozone": 50.0,
+      "nitrogen_dioxide": 4.9,
+      "observed_at": "2026-08-18T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-17",
-  "generated_at": "2026-08-17T08:14:23.411864+00:00"
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T08:11:06.242991+00:00"
 }

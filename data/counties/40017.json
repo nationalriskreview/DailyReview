@@ -8,7 +8,18 @@
     "lon": -97.979889
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued August 18 at 1:32AM CDT until August 18 at 8:00PM CDT by NWS Norman OK",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-18T01:32:00-05:00",
+        "expires": "2026-08-18T20:00:00-05:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -25,8 +36,8 @@
         "date": "2026-08-14T20:57:54+00:00",
         "lat": 35.0906,
         "lon": -98.2833,
-        "acreage": 268,
-        "containment_pct": 0,
+        "acreage": 286,
+        "containment_pct": 50,
         "cause": "Undetermined",
         "state": "OK",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-OKANA-002443",
@@ -38,23 +49,37 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [],
+    "fema": [
+      {
+        "disaster_number": "5669",
+        "declaration_type": "FM",
+        "declaration_title": "TRAIN TRESTLE FIRE",
+        "incident_type": "Fire",
+        "declared_at": "2026-08-13T00:00:00.000Z",
+        "is_new_today": false,
+        "incident_begin": "2026-08-13T00:00:00.000Z",
+        "incident_end": null,
+        "designated_area": "Canadian (County)",
+        "fema_declaration_string": "FM-5669-OK",
+        "source": "https://www.fema.gov/disaster/5669"
+      }
+    ],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.02,
-      "precip_probability_pct": 29,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 3,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 95.0,
+      "high_temp_f": 106.0,
       "low_temp_f": 73.0,
-      "high_apparent_temp_f": 100.0,
+      "high_apparent_temp_f": 106.0,
       "low_apparent_temp_f": 73.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": 27,
+      "max_wind_mph": 11.5,
+      "max_wind_gust_mph": 17.3,
+      "thunder_probability_pct": 23,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
@@ -64,18 +89,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 51,
-      "category": "Moderate",
-      "aqi_24h_max": 52,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 6.4,
-      "pm10": 7.1,
-      "ozone": 61.0,
-      "nitrogen_dioxide": 6.3,
-      "observed_at": "2026-08-17T08:00",
+      "us_aqi": 40,
+      "category": "Good",
+      "aqi_24h_max": 48,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 9.5,
+      "pm10": 9.9,
+      "ozone": 54.0,
+      "nitrogen_dioxide": 9.8,
+      "observed_at": "2026-08-18T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-17",
-  "generated_at": "2026-08-17T08:14:23.411864+00:00"
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T08:11:06.242991+00:00"
 }

@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 111.0°F in next 24h",
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued August 18 at 2:14AM EDT until August 18 at 8:00PM EDT by NWS Charleston SC",
         "severity": "Severe",
-        "source": "nws_forecast"
+        "urgency": "Expected",
+        "effective": "2026-08-18T02:14:00-04:00",
+        "expires": "2026-08-18T10:15:00-04:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -33,37 +37,37 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 12,
+      "precip_probability_pct": 10,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 99.0,
-      "low_temp_f": 76.0,
-      "high_apparent_temp_f": 111.0,
-      "low_apparent_temp_f": 76.0,
-      "max_wind_mph": 5.8,
-      "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": 22,
+      "high_temp_f": 100.0,
+      "low_temp_f": 78.0,
+      "high_apparent_temp_f": 114.0,
+      "low_apparent_temp_f": 78.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 16.1,
+      "thunder_probability_pct": 37,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
-        "moderate rain showers"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 40,
-      "category": "Good",
+      "us_aqi": 55,
+      "category": "Moderate",
       "aqi_24h_max": 66,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 10.2,
-      "pm10": 10.3,
-      "ozone": 65.0,
-      "nitrogen_dioxide": 4.7,
-      "observed_at": "2026-08-17T08:00",
+      "pm2_5": 7.5,
+      "pm10": 8.0,
+      "ozone": 69.0,
+      "nitrogen_dioxide": 3.3,
+      "observed_at": "2026-08-18T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-17",
-  "generated_at": "2026-08-17T08:14:23.411864+00:00"
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T08:11:06.242991+00:00"
 }

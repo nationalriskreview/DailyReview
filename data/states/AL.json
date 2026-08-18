@@ -1,28 +1,17 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-17T08:14:23.411864+00:00",
-  "date": "2026-08-17",
+  "generated_at": "2026-08-18T08:11:06.242991+00:00",
+  "date": "2026-08-18",
   "state": "AL",
   "counties_total": 67,
-  "counties_with_alerts": 63,
+  "counties_with_alerts": 36,
   "counties": {
     "01001": {
       "fips": "01001",
       "name": "Autauga County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -36,38 +25,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 26,
+          "precip_in_24h": 0.07,
+          "precip_probability_pct": 18,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
+          "high_temp_f": 96.0,
           "low_temp_f": 77.0,
           "high_apparent_temp_f": 105.0,
           "low_apparent_temp_f": 77.0,
           "max_wind_mph": 5.8,
           "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 26,
+          "thunder_probability_pct": 18,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "moderate rain showers"
+            "moderate rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 61,
+          "us_aqi": 52,
           "category": "Moderate",
-          "aqi_24h_max": 61,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.9,
-          "pm10": 17.3,
-          "ozone": 42.0,
-          "nitrogen_dioxide": 4.3,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 7.9,
+          "pm10": 8.4,
+          "ozone": 56.0,
+          "nitrogen_dioxide": 2.9,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -79,10 +68,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued August 17 at 8:51PM CDT until August 18 at 8:00PM CDT by NWS Mobile AL",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-08-17T20:51:00-05:00",
+            "expires": "2026-08-18T07:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -109,6 +102,24 @@
             "source": "NIFC WFIGS",
             "distance_miles": 49.4,
             "threat_level": "Vicinity"
+          },
+          {
+            "title": "Jackson - Hwy 90",
+            "incident_name": "Jackson - Hwy 90",
+            "id": "2026-MSMSS-018314",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-08-15T23:00:00+00:00",
+            "lat": 30.4175,
+            "lon": -88.4664,
+            "acreage": 195,
+            "containment_pct": 35,
+            "cause": "Undetermined",
+            "state": "MS",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-MSMSS-018314",
+            "source": "NIFC WFIGS",
+            "distance_miles": 46.0,
+            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -117,20 +128,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 41,
+          "precip_in_24h": 0.22,
+          "precip_probability_pct": 44,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 77.0,
+          "high_temp_f": 93.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 76.0,
           "max_wind_mph": 8.1,
           "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 41,
+          "thunder_probability_pct": 44,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -140,15 +151,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 57,
+          "us_aqi": 44,
+          "category": "Good",
+          "aqi_24h_max": 56,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.4,
-          "pm10": 10.7,
-          "ozone": 71.0,
-          "nitrogen_dioxide": 4.5,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 6.3,
+          "pm10": 6.6,
+          "ozone": 82.0,
+          "nitrogen_dioxide": 4.9,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -160,14 +171,10 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
+            "source": "nws_forecast"
           }
         ],
         "protest": [],
@@ -186,35 +193,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 33,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 22,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
+          "high_temp_f": 96.0,
           "low_temp_f": 75.0,
-          "high_apparent_temp_f": 105.0,
+          "high_apparent_temp_f": 109.0,
           "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 33,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 22,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "moderate rain showers"
+            "moderate rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
+          "us_aqi": 51,
           "category": "Moderate",
-          "aqi_24h_max": 58,
+          "aqi_24h_max": 64,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.9,
-          "pm10": 15.3,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 7.9,
+          "pm10": 8.4,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -226,146 +233,10 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 27,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 99.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 27,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 58,
-          "category": "Moderate",
-          "aqi_24h_max": 61,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.3,
-          "pm10": 11.8,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01009": {
-      "fips": "01009",
-      "name": "Blount County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 39,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 39,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 60,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.5,
-          "pm10": 11.5,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 5.7,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01011": {
-      "fips": "01011",
-      "name": "Bullock County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
+            "source": "nws_forecast"
           }
         ],
         "protest": [],
@@ -385,16 +256,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.02,
-          "precip_probability_pct": 29,
+          "precip_probability_pct": 19,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 29,
+          "high_temp_f": 97.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 110.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 19,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -404,15 +275,125 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 58,
+          "aqi_24h_max": 71,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.9,
-          "pm10": 15.3,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 17.9,
+          "pm10": 20.7,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 12.1,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01009": {
+      "fips": "01009",
+      "name": "Blount County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.19,
+          "precip_probability_pct": 47,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 91.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 36,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 55,
+          "category": "Moderate",
+          "aqi_24h_max": 57,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 14.3,
+          "pm10": 15.6,
+          "ozone": 38.0,
+          "nitrogen_dioxide": 8.3,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01011": {
+      "fips": "01011",
+      "name": "Bullock County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.13,
+          "precip_probability_pct": 25,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 21,
+          "lightning_activity_level": null,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 51,
+          "category": "Moderate",
+          "aqi_24h_max": 64,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.9,
+          "pm10": 8.4,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -446,17 +427,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 23,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 41,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 97.0,
-          "low_temp_f": 77.0,
+          "low_temp_f": 76.0,
           "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 23,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 41,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -466,15 +447,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 61,
+          "us_aqi": 51,
           "category": "Moderate",
-          "aqi_24h_max": 61,
+          "aqi_24h_max": 63,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.5,
-          "pm10": 16.1,
-          "ozone": 67.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 7.5,
+          "pm10": 8.0,
+          "ozone": 76.0,
+          "nitrogen_dioxide": 3.8,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -484,18 +465,7 @@
       "name": "Calhoun County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -509,20 +479,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 28,
+          "precip_in_24h": 0.1,
+          "precip_probability_pct": 43,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
+          "high_temp_f": 93.0,
           "low_temp_f": 74.0,
-          "high_apparent_temp_f": 108.0,
+          "high_apparent_temp_f": 98.0,
           "low_apparent_temp_f": 74.0,
           "max_wind_mph": 8.1,
           "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 28,
+          "thunder_probability_pct": 39,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -532,15 +502,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 58,
+          "aqi_24h_max": 63,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.4,
-          "pm10": 15.7,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 8.7,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 14.3,
+          "pm10": 16.4,
+          "ozone": 48.0,
+          "nitrogen_dioxide": 8.4,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -550,18 +520,7 @@
       "name": "Chambers County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -575,20 +534,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 23,
+          "precip_in_24h": 0.07,
+          "precip_probability_pct": 35,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
+          "high_temp_f": 92.0,
           "low_temp_f": 76.0,
-          "high_apparent_temp_f": 103.0,
+          "high_apparent_temp_f": 99.0,
           "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 23,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -598,15 +557,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 60,
+          "aqi_24h_max": 65,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.7,
-          "pm10": 18.7,
+          "pm2_5": 11.9,
+          "pm10": 13.2,
           "ozone": 58.0,
-          "nitrogen_dioxide": 6.6,
-          "observed_at": "2026-08-17T08:00",
+          "nitrogen_dioxide": 4.3,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -616,18 +575,7 @@
       "name": "Cherokee County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -641,20 +589,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 29,
+          "precip_in_24h": 0.19,
+          "precip_probability_pct": 47,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 101.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 112.0,
-          "low_apparent_temp_f": 76.0,
+          "high_temp_f": 95.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 101.0,
+          "low_apparent_temp_f": 75.0,
           "max_wind_mph": 8.1,
           "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 29,
+          "thunder_probability_pct": 39,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -664,15 +612,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 59,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.8,
-          "pm10": 14.2,
-          "ozone": 57.0,
-          "nitrogen_dioxide": 5.8,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 14.5,
+          "pm10": 16.9,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 6.2,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -680,72 +628,6 @@
     "01021": {
       "fips": "01021",
       "name": "Chilton County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 27,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 27,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 59,
-          "category": "Moderate",
-          "aqi_24h_max": 59,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.8,
-          "pm10": 14.4,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01023": {
-      "fips": "01023",
-      "name": "Choctaw County",
       "state": "AL",
       "alerts": {
         "weather": [
@@ -772,17 +654,79 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 31,
+          "precip_in_24h": 0.02,
+          "precip_probability_pct": 21,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 77.0,
+          "high_temp_f": 95.0,
+          "low_temp_f": 75.0,
           "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 31,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 16,
+          "lightning_activity_level": null,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 58,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.8,
+          "pm10": 12.2,
+          "ozone": 48.0,
+          "nitrogen_dioxide": 5.6,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01023": {
+      "fips": "01023",
+      "name": "Choctaw County",
+      "state": "AL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 51,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 99.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 51,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -792,15 +736,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 58,
-          "category": "Moderate",
-          "aqi_24h_max": 61,
+          "us_aqi": 44,
+          "category": "Good",
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.7,
-          "pm10": 16.9,
-          "ozone": 66.0,
-          "nitrogen_dioxide": 1.8,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 6.1,
+          "pm10": 6.4,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 1.6,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -813,7 +757,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -853,17 +797,17 @@
       "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 27,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 51,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
+          "high_temp_f": 98.0,
           "low_temp_f": 76.0,
-          "high_apparent_temp_f": 107.0,
+          "high_apparent_temp_f": 109.0,
           "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 27,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 51,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -873,15 +817,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 61,
-          "category": "Moderate",
-          "aqi_24h_max": 62,
+          "us_aqi": 44,
+          "category": "Good",
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.0,
-          "pm10": 15.9,
-          "ozone": 71.0,
-          "nitrogen_dioxide": 2.1,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 6.8,
+          "pm10": 7.2,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 2.2,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -891,18 +835,7 @@
       "name": "Clay County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -916,20 +849,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 23,
+          "precip_in_24h": 0.12,
+          "precip_probability_pct": 42,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 74.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 96.0,
+          "low_apparent_temp_f": 72.0,
           "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 23,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 21,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -939,15 +872,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
+          "us_aqi": 54,
           "category": "Moderate",
-          "aqi_24h_max": 58,
+          "aqi_24h_max": 71,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.7,
-          "pm10": 18.4,
-          "ozone": 57.0,
-          "nitrogen_dioxide": 7.8,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 14.9,
+          "pm10": 18.1,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 7.6,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -957,18 +890,7 @@
       "name": "Cleburne County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -982,20 +904,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 22,
+          "precip_in_24h": 0.12,
+          "precip_probability_pct": 42,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 22,
+          "high_temp_f": 92.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 98.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 36,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1005,15 +927,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
+          "us_aqi": 54,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 60,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.0,
-          "pm10": 16.4,
-          "ozone": 65.0,
-          "nitrogen_dioxide": 6.1,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 13.9,
+          "pm10": 16.5,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 5.4,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1026,7 +948,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -1047,35 +969,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 35,
+          "precip_in_24h": 0.12,
+          "precip_probability_pct": 28,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 98.0,
           "low_temp_f": 77.0,
-          "high_apparent_temp_f": 109.0,
+          "high_apparent_temp_f": 110.0,
           "low_apparent_temp_f": 77.0,
           "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 35,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 42,
           "lightning_activity_level": null,
           "weather": [
-            "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 58,
+          "us_aqi": 50,
+          "category": "Good",
+          "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.1,
-          "pm10": 14.2,
-          "ozone": 68.0,
+          "pm2_5": 8.1,
+          "pm10": 8.6,
+          "ozone": 70.0,
           "nitrogen_dioxide": 3.3,
-          "observed_at": "2026-08-17T08:00",
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1085,14 +1007,7 @@
       "name": "Colbert County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1106,20 +1021,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 25,
+          "precip_probability_pct": 17,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 108.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 25,
+          "high_temp_f": 90.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 96.0,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 12,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1131,13 +1046,13 @@
         "air_quality": {
           "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 55,
+          "aqi_24h_max": 56,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.2,
-          "pm10": 13.0,
-          "ozone": 51.0,
-          "nitrogen_dioxide": 3.7,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 7.1,
+          "pm10": 7.4,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 3.5,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1171,17 +1086,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 28,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 51,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
-          "low_temp_f": 76.0,
+          "high_temp_f": 96.0,
+          "low_temp_f": 75.0,
           "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 28,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 51,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1191,15 +1106,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 61,
+          "us_aqi": 51,
           "category": "Moderate",
-          "aqi_24h_max": 61,
+          "aqi_24h_max": 63,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.5,
-          "pm10": 16.1,
-          "ozone": 67.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 7.5,
+          "pm10": 8.0,
+          "ozone": 76.0,
+          "nitrogen_dioxide": 3.8,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1209,18 +1124,7 @@
       "name": "Coosa County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1234,20 +1138,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 25,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 33,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
-          "low_temp_f": 75.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 74.0,
           "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 5.8,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 6.9,
           "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 25,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1259,13 +1163,13 @@
         "air_quality": {
           "us_aqi": 59,
           "category": "Moderate",
-          "aqi_24h_max": 59,
+          "aqi_24h_max": 84,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.9,
-          "pm10": 17.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 6.3,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 16.2,
+          "pm10": 17.8,
+          "ozone": 45.0,
+          "nitrogen_dioxide": 7.4,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1278,7 +1182,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -1299,17 +1203,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 31,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 99.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 31,
+          "high_temp_f": 98.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 50,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1319,15 +1223,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
-          "aqi_24h_max": 56,
+          "us_aqi": 48,
+          "category": "Good",
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.5,
-          "pm10": 11.2,
-          "ozone": 77.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 7.2,
+          "pm10": 7.7,
+          "ozone": 82.0,
+          "nitrogen_dioxide": 3.5,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1361,17 +1265,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 37,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 97.0,
           "low_temp_f": 76.0,
           "high_apparent_temp_f": 107.0,
           "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 30,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 37,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1381,15 +1285,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 58,
+          "us_aqi": 51,
           "category": "Moderate",
-          "aqi_24h_max": 58,
+          "aqi_24h_max": 56,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.3,
-          "pm10": 15.7,
-          "ozone": 67.0,
-          "nitrogen_dioxide": 3.7,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 7.6,
+          "pm10": 7.9,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 3.5,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1416,17 +1320,17 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.24,
-          "precip_probability_pct": 39,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 52,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 39,
+          "high_temp_f": 90.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 96.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 32,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1437,15 +1341,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 59,
+          "aqi_24h_max": 67,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.1,
-          "pm10": 11.0,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 14.8,
+          "pm10": 15.9,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 8.3,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1479,8 +1383,8 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 33,
+          "precip_in_24h": 0.15,
+          "precip_probability_pct": 26,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 98.0,
@@ -1489,7 +1393,7 @@
           "low_apparent_temp_f": 77.0,
           "max_wind_mph": 10.4,
           "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 33,
+          "thunder_probability_pct": 46,
           "lightning_activity_level": null,
           "weather": [
             "moderate rain showers",
@@ -1499,15 +1403,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
-          "aqi_24h_max": 56,
+          "us_aqi": 49,
+          "category": "Good",
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.4,
-          "pm10": 12.1,
+          "pm2_5": 8.5,
+          "pm10": 9.1,
           "ozone": 71.0,
-          "nitrogen_dioxide": 2.9,
-          "observed_at": "2026-08-17T08:00",
+          "nitrogen_dioxide": 3.2,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1519,14 +1423,10 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
+            "source": "nws_forecast"
           }
         ],
         "protest": [],
@@ -1545,17 +1445,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 27,
+          "precip_in_24h": 0.03,
+          "precip_probability_pct": 23,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 98.0,
           "low_temp_f": 77.0,
-          "high_apparent_temp_f": 107.0,
+          "high_apparent_temp_f": 109.0,
           "low_apparent_temp_f": 77.0,
           "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 27,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 23,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1565,15 +1465,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 62,
+          "us_aqi": 51,
           "category": "Moderate",
-          "aqi_24h_max": 62,
+          "aqi_24h_max": 56,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.1,
-          "pm10": 17.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 3.7,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 6.7,
+          "pm10": 7.2,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 2.2,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1600,21 +1500,22 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 33,
+          "precip_in_24h": 0.2,
+          "precip_probability_pct": 54,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 74.0,
+          "high_temp_f": 89.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 72.0,
           "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": 31,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -1622,13 +1523,13 @@
         "air_quality": {
           "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 60,
+          "aqi_24h_max": 58,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.7,
-          "pm10": 11.8,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 5.7,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 14.5,
+          "pm10": 15.9,
+          "ozone": 49.0,
+          "nitrogen_dioxide": 7.5,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1640,74 +1541,8 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 27,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 27,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 59,
-          "category": "Moderate",
-          "aqi_24h_max": 61,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 17.7,
-          "pm10": 22.2,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 9.7,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01053": {
-      "fips": "01053",
-      "name": "Escambia County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 111.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -1728,54 +1563,49 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 33,
+          "precip_in_24h": 0.02,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
+          "high_temp_f": 96.0,
           "low_temp_f": 76.0,
-          "high_apparent_temp_f": 111.0,
+          "high_apparent_temp_f": 106.0,
           "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 33,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 14,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
+          "us_aqi": 54,
           "category": "Moderate",
-          "aqi_24h_max": 60,
+          "aqi_24h_max": 85,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.6,
-          "pm10": 11.4,
-          "ozone": 74.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 8.3,
+          "pm10": 8.6,
+          "ozone": 53.0,
+          "nitrogen_dioxide": 4.8,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "01055": {
-      "fips": "01055",
-      "name": "Etowah County",
+    "01053": {
+      "fips": "01053",
+      "name": "Escambia County",
       "state": "AL",
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
+            "source": "nws_forecast"
           }
         ],
         "protest": [],
@@ -1794,17 +1624,72 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 36,
+          "precip_in_24h": 0.14,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 97.0,
           "low_temp_f": 76.0,
-          "high_apparent_temp_f": 107.0,
+          "high_apparent_temp_f": 109.0,
           "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": 50,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 46,
+          "category": "Good",
+          "aqi_24h_max": 65,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.3,
+          "pm10": 7.7,
+          "ozone": 78.0,
+          "nitrogen_dioxide": 5.0,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01055": {
+      "fips": "01055",
+      "name": "Etowah County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.23,
+          "precip_probability_pct": 48,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 92.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 99.0,
+          "low_apparent_temp_f": 74.0,
           "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 36,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 38,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1814,15 +1699,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 59,
+          "aqi_24h_max": 63,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.4,
-          "pm10": 12.7,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 7.3,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 14.0,
+          "pm10": 15.3,
+          "ozone": 39.0,
+          "nitrogen_dioxide": 8.8,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1834,14 +1719,10 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
+            "source": "nws_forecast"
           }
         ],
         "protest": [],
@@ -1860,17 +1741,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 33,
+          "precip_in_24h": 0.1,
+          "precip_probability_pct": 29,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 108.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 33,
+          "high_temp_f": 96.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": 34,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1882,13 +1763,13 @@
         "air_quality": {
           "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 60,
+          "aqi_24h_max": 61,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.7,
-          "pm10": 10.7,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 4.3,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 21.5,
+          "pm10": 25.1,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 9.3,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1916,35 +1797,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.1,
-          "precip_probability_pct": 33,
+          "precip_probability_pct": 41,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 33,
+          "high_temp_f": 90.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 96.0,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 23,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
             "light rain showers",
-            "moderate rain showers"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 54,
           "category": "Moderate",
-          "aqi_24h_max": 54,
+          "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.4,
-          "pm10": 12.8,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 8.7,
+          "pm10": 9.3,
+          "ozone": 73.0,
+          "nitrogen_dioxide": 3.4,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1957,7 +1837,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 113.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 114.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -1978,17 +1858,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.08,
-          "precip_probability_pct": 42,
+          "precip_in_24h": 0.07,
+          "precip_probability_pct": 34,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 98.0,
           "low_temp_f": 77.0,
-          "high_apparent_temp_f": 113.0,
+          "high_apparent_temp_f": 114.0,
           "low_apparent_temp_f": 77.0,
           "max_wind_mph": 10.4,
           "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 42,
+          "thunder_probability_pct": 47,
           "lightning_activity_level": null,
           "weather": [
             "moderate rain showers",
@@ -1998,15 +1878,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
-          "category": "Moderate",
-          "aqi_24h_max": 55,
+          "us_aqi": 48,
+          "category": "Good",
+          "aqi_24h_max": 52,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.2,
-          "pm10": 10.7,
-          "ozone": 78.0,
-          "nitrogen_dioxide": 3.1,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 7.5,
+          "pm10": 8.0,
+          "ozone": 81.0,
+          "nitrogen_dioxide": 3.3,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2018,14 +1898,10 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
+            "source": "nws_forecast"
           }
         ],
         "protest": [],
@@ -2045,16 +1921,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 29,
+          "precip_probability_pct": 22,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 99.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 29,
+          "high_temp_f": 98.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 110.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 22,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -2064,15 +1940,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
+          "us_aqi": 52,
           "category": "Moderate",
-          "aqi_24h_max": 59,
+          "aqi_24h_max": 76,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.0,
-          "pm10": 13.1,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 2.7,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 5.4,
+          "pm10": 5.6,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 1.7,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2084,14 +1960,10 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
+            "source": "nws_forecast"
           }
         ],
         "protest": [],
@@ -2110,17 +1982,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 29,
+          "precip_in_24h": 0.02,
+          "precip_probability_pct": 22,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 77.0,
+          "high_temp_f": 97.0,
+          "low_temp_f": 76.0,
           "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 29,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 22,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -2130,15 +2002,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 58,
+          "us_aqi": 52,
           "category": "Moderate",
-          "aqi_24h_max": 58,
+          "aqi_24h_max": 73,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.2,
-          "pm10": 13.4,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 2.6,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 6.6,
+          "pm10": 7.0,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 1.6,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2172,35 +2044,34 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 31,
+          "precip_in_24h": 0.07,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 96.0,
-          "low_temp_f": 76.0,
+          "low_temp_f": 75.0,
           "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 76.0,
+          "low_apparent_temp_f": 75.0,
           "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 15.0,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": 31,
           "lightning_activity_level": null,
           "weather": [
-            "moderate rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 54,
+          "us_aqi": 45,
+          "category": "Good",
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.8,
-          "pm10": 10.4,
+          "pm2_5": 7.8,
+          "pm10": 8.6,
           "ozone": 73.0,
-          "nitrogen_dioxide": 2.8,
-          "observed_at": "2026-08-17T08:00",
+          "nitrogen_dioxide": 3.2,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2234,17 +2105,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.07,
+          "precip_probability_pct": 26,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 98.0,
           "low_temp_f": 77.0,
           "high_apparent_temp_f": 111.0,
           "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 30,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 46,
           "lightning_activity_level": null,
           "weather": [
             "moderate rain showers",
@@ -2254,15 +2125,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
+          "us_aqi": 42,
           "category": "Good",
-          "aqi_24h_max": 52,
+          "aqi_24h_max": 51,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.2,
-          "pm10": 9.1,
-          "ozone": 73.0,
-          "nitrogen_dioxide": 3.3,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 6.3,
+          "pm10": 7.2,
+          "ozone": 78.0,
+          "nitrogen_dioxide": 3.9,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2272,14 +2143,7 @@
       "name": "Jackson County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2293,39 +2157,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.13,
+          "precip_in_24h": 0.15,
           "precip_probability_pct": 47,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 108.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 44,
+          "high_temp_f": 89.0,
+          "low_temp_f": 71.0,
+          "high_apparent_temp_f": 93.0,
+          "low_apparent_temp_f": 71.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 28,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 58,
+          "aqi_24h_max": 61,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.8,
-          "pm10": 11.1,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 5.1,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 14.4,
+          "pm10": 16.1,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 8.2,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2335,18 +2198,7 @@
       "name": "Jefferson County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2360,20 +2212,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 28,
+          "precip_in_24h": 0.13,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 28,
+          "high_temp_f": 93.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 32,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -2383,15 +2235,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 66,
+          "aqi_24h_max": 81,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.9,
-          "pm10": 11.8,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 7.5,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 17.3,
+          "pm10": 19.7,
+          "ozone": 46.0,
+          "nitrogen_dioxide": 12.8,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2403,74 +2255,8 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 34,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 99.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 34,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
-          "aqi_24h_max": 60,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.2,
-          "pm10": 12.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 6.2,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01077": {
-      "fips": "01077",
-      "name": "Lauderdale County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -2491,17 +2277,72 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 15,
+          "precip_in_24h": 0.16,
+          "precip_probability_pct": 32,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 96.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 32,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 56,
+          "category": "Moderate",
+          "aqi_24h_max": 60,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 20.0,
+          "pm10": 23.1,
+          "ozone": 39.0,
+          "nitrogen_dioxide": 9.1,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01077": {
+      "fips": "01077",
+      "name": "Lauderdale County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 8,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 94.0,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -2511,15 +2352,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 54,
           "category": "Moderate",
           "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.1,
-          "pm10": 12.0,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 3.9,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 7.8,
+          "pm10": 8.1,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 3.6,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2546,19 +2387,20 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 42,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 43,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 42,
+          "high_temp_f": 91.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 95.0,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 23,
           "lightning_activity_level": null,
           "weather": [
+            "moderate rain showers",
             "thunderstorms",
             "light rain showers"
           ],
@@ -2566,15 +2408,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 58,
+          "aqi_24h_max": 62,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.8,
-          "pm10": 12.0,
-          "ozone": 51.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 12.5,
+          "pm10": 13.2,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2584,18 +2426,7 @@
       "name": "Lee County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2609,38 +2440,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 24,
+          "precip_in_24h": 0.09,
+          "precip_probability_pct": 32,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
+          "high_temp_f": 92.0,
           "low_temp_f": 76.0,
-          "high_apparent_temp_f": 102.0,
+          "high_apparent_temp_f": 101.0,
           "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 24,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 13,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "moderate rain showers"
+            "moderate rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 60,
+          "aqi_24h_max": 65,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.7,
-          "pm10": 18.7,
+          "pm2_5": 11.9,
+          "pm10": 13.2,
           "ozone": 58.0,
-          "nitrogen_dioxide": 6.6,
-          "observed_at": "2026-08-17T08:00",
+          "nitrogen_dioxide": 4.3,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2650,14 +2481,7 @@
       "name": "Limestone County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2671,22 +2495,23 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 28,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 23,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 28,
+          "high_temp_f": 90.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 97.0,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 21,
           "lightning_activity_level": null,
           "weather": [
+            "moderate rain showers",
             "thunderstorms",
             "light rain showers"
           ],
@@ -2694,15 +2519,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 57,
+          "aqi_24h_max": 71,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.5,
-          "pm10": 11.7,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 5.3,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 12.7,
+          "pm10": 13.5,
+          "ozone": 46.0,
+          "nitrogen_dioxide": 9.4,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2714,140 +2539,8 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 30,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 100.0,
-          "low_temp_f": 79.0,
-          "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 30,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 62,
-          "category": "Moderate",
-          "aqi_24h_max": 62,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 15.9,
-          "pm10": 19.3,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01087": {
-      "fips": "01087",
-      "name": "Macon County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 26,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 26,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 59,
-          "category": "Moderate",
-          "aqi_24h_max": 61,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 17.0,
-          "pm10": 21.3,
-          "ozone": 42.0,
-          "nitrogen_dioxide": 9.7,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01089": {
-      "fips": "01089",
-      "name": "Madison County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -2868,22 +2561,76 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.14,
-          "precip_probability_pct": 39,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 22,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 77.0,
+          "high_temp_f": 99.0,
+          "low_temp_f": 78.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 78.0,
           "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 33,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 22,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers",
             "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 58,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.1,
+          "pm10": 7.5,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 3.0,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01087": {
+      "fips": "01087",
+      "name": "Macon County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.18,
+          "precip_probability_pct": 31,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 93.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 15,
+          "lightning_activity_level": null,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -2891,13 +2638,68 @@
         "air_quality": {
           "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 57,
+          "aqi_24h_max": 77,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.3,
-          "pm10": 11.5,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 5.1,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 8.5,
+          "pm10": 9.1,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 4.1,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01089": {
+      "fips": "01089",
+      "name": "Madison County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 44,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 89.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 95.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 25,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 56,
+          "category": "Moderate",
+          "aqi_24h_max": 75,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 13.2,
+          "pm10": 14.5,
+          "ozone": 53.0,
+          "nitrogen_dioxide": 8.4,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2909,140 +2711,8 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 26,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 26,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 61,
-          "category": "Moderate",
-          "aqi_24h_max": 61,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.7,
-          "pm10": 16.5,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 2.8,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01093": {
-      "fips": "01093",
-      "name": "Marion County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 35,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 108.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 35,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 58,
-          "category": "Moderate",
-          "aqi_24h_max": 58,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.5,
-          "pm10": 14.1,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 5.5,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01095": {
-      "fips": "01095",
-      "name": "Marshall County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -3063,36 +2733,145 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.12,
-          "precip_probability_pct": 33,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 27,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
+          "high_temp_f": 98.0,
           "low_temp_f": 76.0,
-          "high_apparent_temp_f": 107.0,
+          "high_apparent_temp_f": 106.0,
           "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 33,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 27,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers",
             "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 51,
           "category": "Moderate",
-          "aqi_24h_max": 59,
+          "aqi_24h_max": 63,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 11.6,
+          "pm2_5": 6.1,
+          "pm10": 6.5,
+          "ozone": 66.0,
+          "nitrogen_dioxide": 1.6,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01093": {
+      "fips": "01093",
+      "name": "Marion County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.15,
+          "precip_probability_pct": 44,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 93.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 27,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 57,
+          "category": "Moderate",
+          "aqi_24h_max": 57,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 15.0,
+          "pm10": 16.6,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 4.3,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01095": {
+      "fips": "01095",
+      "name": "Marshall County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.31,
+          "precip_probability_pct": 53,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 89.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 94.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 32,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 56,
+          "category": "Moderate",
+          "aqi_24h_max": 69,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 14.5,
+          "pm10": 15.7,
           "ozone": 47.0,
-          "nitrogen_dioxide": 4.7,
-          "observed_at": "2026-08-17T08:00",
+          "nitrogen_dioxide": 7.6,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3104,10 +2883,14 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "event": "Extreme Heat Warning",
+            "headline": "Extreme Heat Warning issued August 17 at 8:51PM CDT until August 18 at 8:00PM CDT by NWS Mobile AL",
             "severity": "Severe",
-            "source": "nws_forecast"
+            "urgency": "Expected",
+            "effective": "2026-08-17T20:51:00-05:00",
+            "expires": "2026-08-18T07:00:00-05:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
         "protest": [],
@@ -3134,6 +2917,24 @@
             "source": "NIFC WFIGS",
             "distance_miles": 33.6,
             "threat_level": "Vicinity"
+          },
+          {
+            "title": "Jackson - Hwy 90",
+            "incident_name": "Jackson - Hwy 90",
+            "id": "2026-MSMSS-018314",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-08-15T23:00:00+00:00",
+            "lat": 30.4175,
+            "lon": -88.4664,
+            "acreage": 195,
+            "containment_pct": 35,
+            "cause": "Undetermined",
+            "state": "MS",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-MSMSS-018314",
+            "source": "NIFC WFIGS",
+            "distance_miles": 24.5,
+            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -3142,38 +2943,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.25,
-          "precip_probability_pct": 46,
+          "precip_in_24h": 0.14,
+          "precip_probability_pct": 43,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 95.0,
           "low_temp_f": 76.0,
-          "high_apparent_temp_f": 109.0,
+          "high_apparent_temp_f": 110.0,
           "low_apparent_temp_f": 76.0,
           "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 46,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 43,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
-          "aqi_24h_max": 59,
+          "us_aqi": 45,
+          "category": "Good",
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.9,
-          "pm10": 10.7,
-          "ozone": 72.0,
-          "nitrogen_dioxide": 5.0,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 6.3,
+          "pm10": 6.6,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 5.3,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3186,7 +2987,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -3207,17 +3008,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 26,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 51,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 97.0,
           "low_temp_f": 77.0,
-          "high_apparent_temp_f": 106.0,
+          "high_apparent_temp_f": 107.0,
           "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 26,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 51,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -3227,15 +3028,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 63,
+          "us_aqi": 51,
           "category": "Moderate",
-          "aqi_24h_max": 63,
+          "aqi_24h_max": 65,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.7,
-          "pm10": 15.1,
-          "ozone": 68.0,
-          "nitrogen_dioxide": 3.8,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 7.7,
+          "pm10": 8.0,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 3.9,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3247,74 +3048,8 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 31,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 113.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 31,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 63,
-          "category": "Moderate",
-          "aqi_24h_max": 63,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 16.4,
-          "pm10": 19.8,
-          "ozone": 32.0,
-          "nitrogen_dioxide": 9.5,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01103": {
-      "fips": "01103",
-      "name": "Morgan County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -3335,17 +3070,72 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 37,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 24,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 37,
+          "high_temp_f": 97.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 22,
+          "lightning_activity_level": null,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 55,
+          "category": "Moderate",
+          "aqi_24h_max": 78,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.5,
+          "pm10": 8.8,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 5.4,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01103": {
+      "fips": "01103",
+      "name": "Morgan County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.12,
+          "precip_probability_pct": 54,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 94.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 26,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -3355,15 +3145,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 58,
+          "aqi_24h_max": 73,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 11.6,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 4.5,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 14.2,
+          "pm10": 15.1,
+          "ozone": 46.0,
+          "nitrogen_dioxide": 7.9,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3375,608 +3165,10 @@
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 27,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 27,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 59,
-          "category": "Moderate",
-          "aqi_24h_max": 59,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.1,
-          "pm10": 13.6,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 2.7,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01107": {
-      "fips": "01107",
-      "name": "Pickens County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 27,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 27,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
-          "aqi_24h_max": 63,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.2,
-          "pm10": 11.7,
-          "ozone": 42.0,
-          "nitrogen_dioxide": 4.3,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01109": {
-      "fips": "01109",
-      "name": "Pike County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 39,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 39,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 58,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.1,
-          "pm10": 14.2,
-          "ozone": 68.0,
-          "nitrogen_dioxide": 3.3,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01111": {
-      "fips": "01111",
-      "name": "Randolph County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 19,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 102.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 19,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 56,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.7,
-          "pm10": 17.7,
-          "ozone": 67.0,
-          "nitrogen_dioxide": 5.6,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01113": {
-      "fips": "01113",
-      "name": "Russell County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 25,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 25,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 59,
-          "category": "Moderate",
-          "aqi_24h_max": 61,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 16.5,
-          "pm10": 20.3,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 10.6,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01115": {
-      "fips": "01115",
-      "name": "St. Clair County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 31,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 31,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 58,
-          "category": "Moderate",
-          "aqi_24h_max": 61,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.3,
-          "pm10": 13.9,
-          "ozone": 51.0,
-          "nitrogen_dioxide": 8.6,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01117": {
-      "fips": "01117",
-      "name": "Shelby County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 26,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 108.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 26,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 58,
-          "category": "Moderate",
-          "aqi_24h_max": 60,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.1,
-          "pm10": 12.8,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 5.7,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01119": {
-      "fips": "01119",
-      "name": "Sumter County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 28,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 99.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 28,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 59,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.0,
-          "pm10": 15.8,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 2.1,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01121": {
-      "fips": "01121",
-      "name": "Talladega County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 25,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 25,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 58,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.7,
-          "pm10": 18.4,
-          "ozone": 57.0,
-          "nitrogen_dioxide": 7.8,
-          "observed_at": "2026-08-17T08:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "01123": {
-      "fips": "01123",
-      "name": "Tallapoosa County",
-      "state": "AL",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
+            "source": "nws_forecast"
           }
         ],
         "protest": [],
@@ -3999,12 +3191,12 @@
           "precip_probability_pct": 23,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
+          "high_temp_f": 98.0,
           "low_temp_f": 76.0,
           "high_apparent_temp_f": 107.0,
           "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 12.7,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": 23,
           "lightning_activity_level": null,
           "weather": [
@@ -4015,34 +3207,388 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 62,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 68,
+          "aqi_24h_max": 63,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.7,
-          "pm10": 19.0,
-          "ozone": 58.0,
-          "nitrogen_dioxide": 5.4,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 8.7,
+          "pm10": 9.6,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 2.3,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "01125": {
-      "fips": "01125",
-      "name": "Tuscaloosa County",
+    "01107": {
+      "fips": "01107",
+      "name": "Pickens County",
       "state": "AL",
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 21,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": 21,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 55,
+          "category": "Moderate",
+          "aqi_24h_max": 98,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 17.1,
+          "pm10": 19.0,
+          "ozone": 29.0,
+          "nitrogen_dioxide": 11.6,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01109": {
+      "fips": "01109",
+      "name": "Pike County",
+      "state": "AL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 31,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 96.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 31,
+          "lightning_activity_level": null,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 50,
+          "category": "Good",
+          "aqi_24h_max": 55,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.1,
+          "pm10": 8.6,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 3.3,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01111": {
+      "fips": "01111",
+      "name": "Randolph County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 40,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 91.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 98.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 22,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 64,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 12.7,
+          "pm10": 14.9,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 5.4,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01113": {
+      "fips": "01113",
+      "name": "Russell County",
+      "state": "AL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 25,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 96.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 13,
+          "lightning_activity_level": null,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 54,
+          "category": "Moderate",
+          "aqi_24h_max": 71,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 9.3,
+          "pm10": 10.1,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 3.8,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01115": {
+      "fips": "01115",
+      "name": "St. Clair County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.18,
+          "precip_probability_pct": 40,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 91.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 99.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 37,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 56,
+          "category": "Moderate",
+          "aqi_24h_max": 61,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 15.5,
+          "pm10": 18.0,
+          "ozone": 49.0,
+          "nitrogen_dioxide": 10.7,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01117": {
+      "fips": "01117",
+      "name": "Shelby County",
+      "state": "AL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 30,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 21,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 56,
+          "category": "Moderate",
+          "aqi_24h_max": 81,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 17.3,
+          "pm10": 20.5,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 12.4,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01119": {
+      "fips": "01119",
+      "name": "Sumter County",
+      "state": "AL",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
           }
         ],
         "protest": [],
@@ -4066,11 +3612,11 @@
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 98.0,
-          "low_temp_f": 78.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 78.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": 26,
           "lightning_activity_level": null,
           "weather": [
@@ -4081,34 +3627,140 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
-          "aqi_24h_max": 61,
+          "us_aqi": 46,
+          "category": "Good",
+          "aqi_24h_max": 58,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.5,
-          "pm10": 11.1,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 5.2,
+          "pm10": 5.5,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 1.4,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "01127": {
-      "fips": "01127",
-      "name": "Walker County",
+    "01121": {
+      "fips": "01121",
+      "name": "Talladega County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.14,
+          "precip_probability_pct": 41,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 92.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 23,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 54,
+          "category": "Moderate",
+          "aqi_24h_max": 71,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 14.9,
+          "pm10": 18.1,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 7.6,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01123": {
+      "fips": "01123",
+      "name": "Tallapoosa County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 37,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 93.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 14,
+          "lightning_activity_level": null,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 54,
+          "category": "Moderate",
+          "aqi_24h_max": 68,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 12.8,
+          "pm10": 14.5,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 4.2,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01125": {
+      "fips": "01125",
+      "name": "Tuscaloosa County",
       "state": "AL",
       "alerts": {
         "weather": [
           {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
+            "source": "nws_forecast"
           }
         ],
         "protest": [],
@@ -4127,17 +3779,72 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 32,
+          "precip_in_24h": 0.19,
+          "precip_probability_pct": 22,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
+          "high_temp_f": 96.0,
           "low_temp_f": 76.0,
           "high_apparent_temp_f": 107.0,
           "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 32,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 22,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 54,
+          "category": "Moderate",
+          "aqi_24h_max": 82,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 15.7,
+          "pm10": 17.8,
+          "ozone": 38.0,
+          "nitrogen_dioxide": 13.3,
+          "observed_at": "2026-08-18T07:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "01127": {
+      "fips": "01127",
+      "name": "Walker County",
+      "state": "AL",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.09,
+          "precip_probability_pct": 38,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": 36,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -4149,13 +3856,13 @@
         "air_quality": {
           "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 62,
+          "aqi_24h_max": 61,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.8,
-          "pm10": 10.9,
-          "ozone": 60.0,
-          "nitrogen_dioxide": 3.1,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 18.5,
+          "pm10": 21.6,
+          "ozone": 45.0,
+          "nitrogen_dioxide": 6.8,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4208,17 +3915,17 @@
       "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 27,
+          "precip_in_24h": 0.1,
+          "precip_probability_pct": 52,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 98.0,
           "low_temp_f": 77.0,
           "high_apparent_temp_f": 110.0,
           "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 27,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 52,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -4228,15 +3935,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
-          "category": "Moderate",
-          "aqi_24h_max": 61,
+          "us_aqi": 43,
+          "category": "Good",
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.2,
-          "pm10": 16.3,
-          "ozone": 73.0,
-          "nitrogen_dioxide": 2.5,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 6.7,
+          "pm10": 7.2,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 2.4,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4249,7 +3956,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -4270,17 +3977,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 41,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 20,
+          "high_temp_f": 97.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 41,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -4290,15 +3997,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 64,
+          "us_aqi": 51,
           "category": "Moderate",
-          "aqi_24h_max": 64,
+          "aqi_24h_max": 61,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 15.0,
-          "pm10": 18.0,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 3.2,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 6.8,
+          "pm10": 7.2,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 2.5,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4308,18 +4015,7 @@
       "name": "Winston County",
       "state": "AL",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 16 at 9:32PM CDT until August 17 at 9:00PM CDT by NWS Birmingham AL",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-16T21:32:00-05:00",
-            "expires": "2026-08-17T14:00:00-05:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -4333,20 +4029,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 37,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 49,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 37,
+          "high_temp_f": 91.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 98.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": 29,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -4356,15 +4052,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 59,
+          "aqi_24h_max": 57,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.5,
-          "pm10": 11.4,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 3.7,
-          "observed_at": "2026-08-17T08:00",
+          "pm2_5": 14.7,
+          "pm10": 15.7,
+          "ozone": 48.0,
+          "nitrogen_dioxide": 6.4,
+          "observed_at": "2026-08-18T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

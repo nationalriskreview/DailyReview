@@ -8,7 +8,18 @@
     "lon": -120.678512
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 17 at 10:39PM PDT until August 18 at 10:00PM PDT by NWS Pendleton OR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-17T22:39:00-07:00",
+        "expires": "2026-08-18T06:45:00-07:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -79,8 +90,8 @@
         "date": "2026-07-24T02:41:00+00:00",
         "lat": 45.253,
         "lon": -121.5101,
-        "acreage": 87820,
-        "containment_pct": 37,
+        "acreage": 90667,
+        "containment_pct": 49,
         "cause": "Natural",
         "state": "OR",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORMHF-000688",
@@ -97,8 +108,8 @@
         "date": "2026-08-14T02:32:00+00:00",
         "lat": 44.8401,
         "lon": -120.0398,
-        "acreage": 230,
-        "containment_pct": 0,
+        "acreage": 483,
+        "containment_pct": 38,
         "cause": "Natural",
         "state": "OR",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR953S-000722",
@@ -113,38 +124,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 5,
+  "alert_count": 6,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 3,
+      "precip_probability_pct": 5,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 85.0,
-      "low_temp_f": 57.0,
-      "high_apparent_temp_f": 82.0,
-      "low_apparent_temp_f": 57.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 24.2,
-      "thunder_probability_pct": 7,
+      "high_temp_f": 84.0,
+      "low_temp_f": 56.0,
+      "high_apparent_temp_f": 81.0,
+      "low_apparent_temp_f": 56.0,
+      "max_wind_mph": 18.4,
+      "max_wind_gust_mph": 29.9,
+      "thunder_probability_pct": 3,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "smoke",
+        "light rain showers"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 153,
-      "category": "Unhealthy",
-      "aqi_24h_max": 158,
-      "aqi_24h_max_category": "Unhealthy",
-      "pm2_5": 73.1,
-      "pm10": 74.7,
-      "ozone": 53.0,
-      "nitrogen_dioxide": 14.7,
-      "observed_at": "2026-08-17T08:00",
+      "us_aqi": 108,
+      "category": "Unhealthy for Sensitive Groups",
+      "aqi_24h_max": 115,
+      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+      "pm2_5": 33.6,
+      "pm10": 34.5,
+      "ozone": 69.0,
+      "nitrogen_dioxide": 8.3,
+      "observed_at": "2026-08-18T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-17",
-  "generated_at": "2026-08-17T08:14:23.411864+00:00"
+  "date": "2026-08-18",
+  "generated_at": "2026-08-18T08:11:06.242991+00:00"
 }
