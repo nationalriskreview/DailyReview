@@ -10,14 +10,10 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Warning",
-        "headline": "Extreme Heat Warning issued August 18 at 2:14AM EDT until August 18 at 8:00PM EDT by NWS Charleston SC",
+        "event": "Extreme Heat Forecast",
+        "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
         "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-08-18T02:14:00-04:00",
-        "expires": "2026-08-18T10:15:00-04:00",
-        "source": "nws_alert",
-        "count": 1
+        "source": "nws_forecast"
       }
     ],
     "protest": [],
@@ -26,27 +22,46 @@
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Main Trail",
+        "incident_name": "Main Trail",
+        "id": "2026-GAWSR-000370",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-08-14T00:00:00+00:00",
+        "lat": 31.8726,
+        "lon": -80.9883,
+        "acreage": 360,
+        "containment_pct": 20,
+        "cause": "Natural",
+        "state": "GA",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-GAWSR-000370",
+        "source": "NIFC WFIGS",
+        "distance_miles": 37.8,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.03,
-      "precip_probability_pct": 16,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 6,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 97.0,
-      "low_temp_f": 81.0,
-      "high_apparent_temp_f": 118.0,
-      "low_apparent_temp_f": 86.0,
-      "max_wind_mph": 8.1,
-      "max_wind_gust_mph": 17.3,
-      "thunder_probability_pct": 18,
+      "low_temp_f": 80.0,
+      "high_apparent_temp_f": 110.0,
+      "low_apparent_temp_f": 85.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 16.1,
+      "thunder_probability_pct": 37,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
@@ -56,18 +71,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 55,
+      "us_aqi": 54,
       "category": "Moderate",
-      "aqi_24h_max": 91,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 8.9,
-      "pm10": 9.6,
+      "aqi_24h_max": 120,
+      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+      "pm2_5": 12.9,
+      "pm10": 13.4,
       "ozone": 71.0,
-      "nitrogen_dioxide": 3.0,
-      "observed_at": "2026-08-18T08:00",
+      "nitrogen_dioxide": 5.1,
+      "observed_at": "2026-08-19T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-18",
-  "generated_at": "2026-08-18T08:11:06.242991+00:00"
+  "date": "2026-08-19",
+  "generated_at": "2026-08-19T08:11:14.245877+00:00"
 }

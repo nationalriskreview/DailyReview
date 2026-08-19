@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-18T08:11:06.242991+00:00",
-  "date": "2026-08-18",
+  "generated_at": "2026-08-19T08:11:14.245877+00:00",
+  "date": "2026-08-19",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 276
+      "counties_with_alerts": 177
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 421
+      "counties_over_threshold": 467
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 39,
+      "counties_with_matches": 29,
       "items_pre_llm": {
-        "protest": 25,
-        "utility_outage": 40,
-        "transit_disruption": 1,
+        "protest": 17,
+        "utility_outage": 20,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 1,
-        "road_closure": 2
+        "road_closure": 4
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 22,
+      "counties_with_matches": 18,
       "items_post_llm": {
-        "protest": 7,
-        "utility_outage": 30,
+        "protest": 4,
+        "utility_outage": 15,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 1
+        "road_closure": 4
       },
-      "unique_articles": 36,
-      "calls_used": 36,
+      "unique_articles": 27,
+      "calls_used": 27,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 268
+      "counties_with_alerts": 254
     },
     "transit": {
       "status": "ok",
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 12,
+      "active_incidents": 3,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -173,7 +173,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 6
+          "items": 0
         },
         {
           "key": "azure",
@@ -197,7 +197,7 @@
           "key": "github",
           "name": "GitHub",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "datadog",
@@ -233,7 +233,7 @@
           "key": "slack",
           "name": "Slack",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "dropbox",
@@ -305,7 +305,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "r3wn",
@@ -602,72 +602,6 @@
   "faa_advisories": [],
   "service_outages": [
     {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service is operating normally: [RESOLVED] Increased Packet loss",
-      "impact": "",
-      "status": "",
-      "started": "Mon, 17 Aug 2026 21:01:19 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased Packet loss",
-      "impact": "",
-      "status": "",
-      "started": "Mon, 17 Aug 2026 18:50:12 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased Packet loss",
-      "impact": "",
-      "status": "",
-      "started": "Mon, 17 Aug 2026 14:00:11 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased Packet loss",
-      "impact": "",
-      "status": "",
-      "started": "Mon, 17 Aug 2026 10:59:20 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased Packet loss",
-      "impact": "",
-      "status": "",
-      "started": "Mon, 17 Aug 2026 09:25:22 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased Packet loss",
-      "impact": "",
-      "status": "",
-      "started": "Mon, 17 Aug 2026 04:22:30 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
       "provider": "Cloudflare",
       "key": "cloudflare",
       "title": "Minor Service Outage",
@@ -676,28 +610,6 @@
       "started": "",
       "updated": "",
       "url": "https://www.cloudflarestatus.com",
-      "source": "provider status page"
-    },
-    {
-      "provider": "GitHub",
-      "key": "github",
-      "title": "Intermittent failures in runner group and runner-related permissions pages",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-08-18T07:40:35.670Z",
-      "updated": "2026-08-18T07:40:42.224Z",
-      "url": "https://stspg.io/98zqb1k9jh0x",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Slack",
-      "key": "slack",
-      "title": "Trouble Accessing Historical Messages With Custom Data Retention Policies Enabled",
-      "impact": "incident",
-      "status": "active",
-      "started": "2026-08-13T14:21:41-07:00",
-      "updated": "2026-08-17T14:57:51-07:00",
-      "url": "https://slack-status.com/2026-08/e07b9271f0346c3b",
       "source": "provider status page"
     },
     {
@@ -714,21 +626,13 @@
     {
       "provider": "Rapid7",
       "key": "rapid7",
-      "title": "Scheduled maintenance for Collector plugin endpoint-cloud-proxy update (eu-central-1 and ap-southeast-2)",
+      "title": "Scheduled maintenance for Collector plugin endpoint-cloud-proxy update (us-east-1, us-east-2, us-west-2, ap-northeast-1)",
       "impact": "none",
       "status": "investigating",
-      "started": "2026-08-17T15:44:01.107Z",
-      "updated": "2026-08-17T15:44:01.200Z",
-      "url": "https://stspg.io/66bz4jt3zhxk",
+      "started": "2026-08-18T16:41:55.872Z",
+      "updated": "2026-08-18T16:43:06.559Z",
+      "url": "https://stspg.io/b0ypknnq41lv",
       "source": "provider status page"
-    },
-    {
-      "provider": "x9tz",
-      "impact": "minor",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
     }
   ]
 }
