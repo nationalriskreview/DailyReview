@@ -8,7 +8,18 @@
     "lon": -87.364155
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Severe Thunderstorm Warning",
+        "headline": "Severe Thunderstorm Warning issued August 20 at 2:50AM CDT until August 20 at 3:00AM CDT by NWS Nashville TN",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-08-20T02:50:00-05:00",
+        "expires": "2026-08-20T03:00:00-05:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,40 +33,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.01,
-      "precip_probability_pct": 14,
+      "precip_in_24h": 0.5,
+      "precip_probability_pct": 69,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 91.0,
-      "low_temp_f": 68.0,
-      "high_apparent_temp_f": 100.0,
-      "low_apparent_temp_f": 68.0,
-      "max_wind_mph": 4.6,
-      "max_wind_gust_mph": 9.2,
-      "thunder_probability_pct": 12,
+      "high_temp_f": 89.0,
+      "low_temp_f": 71.0,
+      "high_apparent_temp_f": 103.0,
+      "low_apparent_temp_f": 71.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 13.8,
+      "thunder_probability_pct": 36,
       "lightning_activity_level": null,
       "weather": [
-        "fog"
+        "thunderstorms",
+        "light rain showers",
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 51,
-      "category": "Moderate",
-      "aqi_24h_max": 79,
+      "us_aqi": 39,
+      "category": "Good",
+      "aqi_24h_max": 64,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 15.3,
-      "pm10": 15.4,
-      "ozone": 58.0,
-      "nitrogen_dioxide": 16.2,
-      "observed_at": "2026-08-19T08:00",
+      "pm2_5": 5.0,
+      "pm10": 5.1,
+      "ozone": 82.0,
+      "nitrogen_dioxide": 1.8,
+      "observed_at": "2026-08-20T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-19",
-  "generated_at": "2026-08-19T08:11:14.245877+00:00"
+  "date": "2026-08-20",
+  "generated_at": "2026-08-20T08:14:17.766135+00:00"
 }
