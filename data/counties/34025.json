@@ -8,7 +8,14 @@
     "lon": -74.152446
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~2.0\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -18,46 +25,59 @@
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "airport_closure",
+        "code": "LGA",
+        "name": "LaGuardia",
+        "city": "New York",
+        "state": "NY",
+        "reason": "!LGA 08/423 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2608210618-2608211000",
+        "start": "Aug 21 at 06:18 UTC.",
+        "reopen": "Aug 21 at 10:00 UTC.",
+        "source": "FAA NAS Status"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.17,
-      "precip_probability_pct": 55,
+      "precip_in_24h": 1.97,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 86.0,
-      "low_temp_f": 69.0,
-      "high_apparent_temp_f": 88.0,
-      "low_apparent_temp_f": 69.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 10.4,
-      "thunder_probability_pct": 28,
+      "high_temp_f": 81.0,
+      "low_temp_f": 64.0,
+      "high_apparent_temp_f": 85.0,
+      "low_apparent_temp_f": 64.0,
+      "max_wind_mph": 15.0,
+      "max_wind_gust_mph": 21.9,
+      "thunder_probability_pct": 37,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
+        "thunderstorms",
+        "moderate rain showers",
         "heavy rain showers",
-        "thunderstorms"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 80,
+      "us_aqi": 58,
       "category": "Moderate",
-      "aqi_24h_max": 87,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 20.1,
-      "pm10": 20.2,
-      "ozone": 27.0,
-      "nitrogen_dioxide": 50.5,
-      "observed_at": "2026-08-20T08:00",
+      "aqi_24h_max": 125,
+      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+      "pm2_5": 4.4,
+      "pm10": 4.4,
+      "ozone": 85.0,
+      "nitrogen_dioxide": 8.8,
+      "observed_at": "2026-08-21T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-20",
-  "generated_at": "2026-08-20T08:14:17.766135+00:00"
+  "date": "2026-08-21",
+  "generated_at": "2026-08-21T08:14:59.165048+00:00"
 }

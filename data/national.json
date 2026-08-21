@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-20T08:14:17.766135+00:00",
-  "date": "2026-08-20",
+  "generated_at": "2026-08-21T08:14:59.165048+00:00",
+  "date": "2026-08-21",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 136
+      "counties_with_alerts": 243
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
-      "counties_with_conditions": 3176,
-      "counties_over_threshold": 554
+      "counties_with_conditions": 3222,
+      "counties_over_threshold": 365
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 29,
+      "counties_with_matches": 36,
       "items_pre_llm": {
-        "protest": 28,
-        "utility_outage": 17,
-        "transit_disruption": 1,
+        "protest": 11,
+        "utility_outage": 46,
+        "transit_disruption": 4,
         "service_provider_outage": 0,
         "hazmat_incident": 1,
-        "road_closure": 0
+        "road_closure": 4
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 16,
+      "counties_with_matches": 22,
       "items_post_llm": {
-        "protest": 11,
-        "utility_outage": 11,
-        "transit_disruption": 0,
+        "protest": 1,
+        "utility_outage": 38,
+        "transit_disruption": 4,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 0
+        "hazmat_incident": 1,
+        "road_closure": 2
       },
-      "unique_articles": 30,
-      "calls_used": 30,
+      "unique_articles": 35,
+      "calls_used": 35,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 214
+      "counties_with_alerts": 234
     },
     "transit": {
       "status": "ok",
@@ -160,8 +160,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 1,
+      "counties_with_alerts": 16
     },
     "service_status": {
       "status": "ok",
@@ -173,7 +173,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 3
+          "items": 2
         },
         {
           "key": "azure",
@@ -233,7 +233,7 @@
           "key": "slack",
           "name": "Slack",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "dropbox",
@@ -627,7 +627,19 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [],
+  "faa_advisories": [
+    {
+      "kind": "airport_closure",
+      "code": "LGA",
+      "name": "LaGuardia",
+      "city": "New York",
+      "state": "NY",
+      "reason": "!LGA 08/423 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2608210618-2608211000",
+      "start": "Aug 21 at 06:18 UTC.",
+      "reopen": "Aug 21 at 10:00 UTC.",
+      "source": "FAA NAS Status"
+    }
+  ],
   "service_outages": [
     {
       "provider": "Amazon Web Services",
@@ -635,7 +647,7 @@
       "title": "Service is operating normally: [RESOLVED] Increased Error Rates",
       "impact": "",
       "status": "",
-      "started": "Wed, 19 Aug 2026 11:47:20 PDT",
+      "started": "Thu, 20 Aug 2026 19:40:02 PDT",
       "updated": "",
       "url": "https://status.aws.amazon.com/",
       "source": "provider status page"
@@ -646,18 +658,7 @@
       "title": "Service impact: Increased Error Rates",
       "impact": "",
       "status": "",
-      "started": "Wed, 19 Aug 2026 10:03:59 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased Error Rates",
-      "impact": "",
-      "status": "",
-      "started": "Wed, 19 Aug 2026 08:15:14 PDT",
+      "started": "Thu, 20 Aug 2026 19:02:22 PDT",
       "updated": "",
       "url": "https://status.aws.amazon.com/",
       "source": "provider status page"
@@ -665,23 +666,34 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Minor Service Outage",
+      "title": "Cloudflare Access Browser-based RDP Issue",
       "impact": "minor",
+      "status": "monitoring",
+      "started": "2026-08-21T06:40:44.000Z",
+      "updated": "2026-08-21T07:55:59.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/k6v45x988py7",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Slack",
+      "key": "slack",
+      "title": "Trouble Accessing Historical Messages With Custom Data Retention Policies Enabled",
+      "impact": "incident",
       "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "started": "2026-08-13T14:21:41-07:00",
+      "updated": "2026-08-20T15:54:59-07:00",
+      "url": "https://slack-status.com/2026-08/e07b9271f0346c3b",
       "source": "provider status page"
     },
     {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "Log forwarding and streaming degradation for Device Security Cloud Service",
+      "title": "Partially Degraded Service",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-08-19T22:59:33.656Z",
-      "updated": "2026-08-20T00:54:40.100Z",
-      "url": "https://stspg.io/4fw1fmpc2kq6",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
     }
   ]

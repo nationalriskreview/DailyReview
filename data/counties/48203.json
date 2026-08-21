@@ -10,15 +10,46 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued August 21 at 12:29AM CDT until August 21 at 9:00PM CDT by NWS Shreveport LA",
         "severity": "Severe",
-        "source": "nws_forecast"
+        "urgency": "Expected",
+        "effective": "2026-08-21T00:29:00-05:00",
+        "expires": "2026-08-21T14:00:00-05:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
     "utility_outage": [],
-    "transit_disruption": [],
+    "transit_disruption": [
+      {
+        "title": "Harrison County train derailment closes road",
+        "url": "https://starlocalmedia.com/news/state/harrison-county-train-derailment-closes-road/article_53bd4ae5-9d57-5962-b82c-70ecf490b204.html",
+        "domain": "starlocalmedia.com",
+        "seendate": "20260821014500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://starlocalmedia.com/news/state/harrison-county-train-derailment-closes-road/article_53bd4ae5-9d57-5962-b82c-70ecf490b204.html",
+            "domain": "starlocalmedia.com"
+          }
+        ]
+      },
+      {
+        "title": "Train carrying hazardous materials derails in Harrison County",
+        "url": "https://www.kltv.com/2026/08/20/train-carrying-hazardous-materials-derails-harrison-county/",
+        "domain": "kltv.com",
+        "seendate": "20260821011500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.kltv.com/2026/08/20/train-carrying-hazardous-materials-derails-harrison-county/",
+            "domain": "kltv.com"
+          }
+        ]
+      }
+    ],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
@@ -29,20 +60,20 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 3,
+      "precip_in_24h": 0.03,
+      "precip_probability_pct": 20,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 105.0,
-      "low_temp_f": 79.0,
-      "high_apparent_temp_f": 110.0,
-      "low_apparent_temp_f": 79.0,
-      "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 15.0,
-      "thunder_probability_pct": 3,
+      "low_temp_f": 78.0,
+      "high_apparent_temp_f": 113.0,
+      "low_apparent_temp_f": 78.0,
+      "max_wind_mph": 3.5,
+      "max_wind_gust_mph": 10.4,
+      "thunder_probability_pct": 20,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
@@ -52,18 +83,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 40,
-      "category": "Good",
-      "aqi_24h_max": 52,
+      "us_aqi": 53,
+      "category": "Moderate",
+      "aqi_24h_max": 55,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 9.7,
-      "pm10": 11.8,
-      "ozone": 79.0,
-      "nitrogen_dioxide": 3.1,
-      "observed_at": "2026-08-20T08:00",
+      "pm2_5": 12.5,
+      "pm10": 16.3,
+      "ozone": 62.0,
+      "nitrogen_dioxide": 3.0,
+      "observed_at": "2026-08-21T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-20",
-  "generated_at": "2026-08-20T08:14:17.766135+00:00"
+  "date": "2026-08-21",
+  "generated_at": "2026-08-21T08:14:59.165048+00:00"
 }
