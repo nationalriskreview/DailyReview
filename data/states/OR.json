@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-21T08:14:59.165048+00:00",
-  "date": "2026-08-21",
+  "generated_at": "2026-08-22T08:02:54.738902+00:00",
+  "date": "2026-08-22",
   "state": "OR",
   "counties_total": 36,
   "counties_with_alerts": 27,
@@ -134,19 +134,22 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 15,
+          "precip_probability_pct": 17,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 62.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 62.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 7,
+          "high_temp_f": 96.0,
+          "low_temp_f": 63.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 63.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 31.1,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "thunderstorms",
+            "light rain showers",
+            "smoke",
+            "blowing dust"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -154,13 +157,13 @@
         "air_quality": {
           "us_aqi": 80,
           "category": "Moderate",
-          "aqi_24h_max": 92,
+          "aqi_24h_max": 84,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 44.8,
-          "pm10": 46.4,
-          "ozone": 100.0,
-          "nitrogen_dioxide": 7.6,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 26.2,
+          "pm10": 26.8,
+          "ozone": 103.0,
+          "nitrogen_dioxide": 4.2,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -188,31 +191,31 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 12,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 85.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 76.0,
+          "low_temp_f": 54.0,
+          "high_apparent_temp_f": 76.0,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 43,
+          "aqi_24h_max": 33,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.4,
-          "pm10": 10.1,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 1.6,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 3.8,
+          "pm10": 5.3,
+          "ozone": 45.0,
+          "nitrogen_dioxide": 1.8,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -222,7 +225,18 @@
       "name": "Clackamas County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 10:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -257,8 +271,8 @@
             "date": "2026-07-24T02:41:00+00:00",
             "lat": 45.253,
             "lon": -121.5101,
-            "acreage": 92456,
-            "containment_pct": 71,
+            "acreage": 93365,
+            "containment_pct": 76,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORMHF-000688",
@@ -275,7 +289,7 @@
             "date": "2026-08-08T16:21:00+00:00",
             "lat": 45.1469,
             "lon": -122.0936,
-            "acreage": 174,
+            "acreage": 195,
             "containment_pct": 0,
             "cause": "Human",
             "state": "OR",
@@ -293,7 +307,7 @@
             "date": "2026-08-09T17:12:59+00:00",
             "lat": 45.0252,
             "lon": -121.9449,
-            "acreage": 3766,
+            "acreage": 4492,
             "containment_pct": 0,
             "cause": "Human",
             "state": "OR",
@@ -309,37 +323,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 4,
+      "alert_count": 5,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 8,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 78.0,
-          "low_temp_f": 64.0,
-          "high_apparent_temp_f": 78.0,
-          "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 8.1,
-          "thunder_probability_pct": 8,
+          "high_temp_f": 70.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 70.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 21,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "thunderstorms",
+            "light rain showers",
+            "smoke",
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 179,
+          "us_aqi": 180,
           "category": "Unhealthy",
-          "aqi_24h_max": 183,
+          "aqi_24h_max": 180,
           "aqi_24h_max_category": "Unhealthy",
-          "pm2_5": 126.7,
-          "pm10": 129.9,
-          "ozone": 80.0,
-          "nitrogen_dioxide": 27.8,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 112.2,
+          "pm10": 115.3,
+          "ozone": 36.0,
+          "nitrogen_dioxide": 24.5,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -367,16 +384,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 13,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 65.0,
+          "low_temp_f": 54.0,
+          "high_apparent_temp_f": 65.0,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 13,
           "lightning_activity_level": null,
           "weather": [
             "fog"
@@ -385,15 +402,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 35,
+          "us_aqi": 37,
           "category": "Good",
-          "aqi_24h_max": 46,
+          "aqi_24h_max": 37,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.4,
-          "pm10": 11.1,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 5.5,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 6.4,
+          "pm10": 8.8,
+          "ozone": 39.0,
+          "nitrogen_dioxide": 4.1,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -440,35 +457,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 6,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 57.0,
+          "high_temp_f": 75.0,
+          "low_temp_f": 55.0,
+          "high_apparent_temp_f": 75.0,
+          "low_apparent_temp_f": 55.0,
           "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 2,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers",
             "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 44,
+          "us_aqi": 41,
           "category": "Good",
-          "aqi_24h_max": 50,
+          "aqi_24h_max": 41,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.2,
-          "pm10": 10.0,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 7.0,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 6.4,
+          "pm10": 8.4,
+          "ozone": 34.0,
+          "nitrogen_dioxide": 7.9,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -499,28 +514,30 @@
           "precip_probability_pct": 9,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 13.8,
+          "high_temp_f": 72.0,
+          "low_temp_f": 54.0,
+          "high_apparent_temp_f": 72.0,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "fog"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.7,
-          "pm10": 9.1,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 3.8,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 3.3,
+          "pm10": 4.6,
+          "ozone": 33.0,
+          "nitrogen_dioxide": 3.3,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -530,13 +547,38 @@
       "name": "Crook County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 10:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
-        "road_closure": [],
+        "road_closure": [
+          {
+            "title": "BREAKING NEWS: Highway 26 Closed West of Mitchell Due to Police Activity, OSP on scene",
+            "url": "https://ktvz.com/news/2026/08/21/breaking-news-highway-26-closed-west-of-mitchell-due-to-police-activity/",
+            "domain": "ktvz.com",
+            "seendate": "20260822041500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://ktvz.com/news/2026/08/21/breaking-news-highway-26-closed-west-of-mitchell-due-to-police-activity/",
+                "domain": "ktvz.com"
+              }
+            ]
+          }
+        ],
         "wildfires": [
           {
             "title": "0445 CROSSWHITE",
@@ -584,7 +626,7 @@
             "lat": 44.8101,
             "lon": -120.3167,
             "acreage": 373981,
-            "containment_pct": 89,
+            "containment_pct": 91,
             "cause": "Undetermined",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORPRD-000491",
@@ -619,7 +661,7 @@
             "date": "2026-07-16T21:15:00+00:00",
             "lat": 44.1211,
             "lon": -119.9477,
-            "acreage": 29850,
+            "acreage": 29844,
             "containment_pct": 97,
             "cause": "Natural",
             "state": "OR",
@@ -634,10 +676,10 @@
             "id": "2026-OR953S-000587",
             "category": "wildfire",
             "incident_type": "Wildfire",
-            "date": "2026-07-23T17:59:17+00:00",
+            "date": "2026-07-23T17:59:00+00:00",
             "lat": 44.4687,
             "lon": -119.8976,
-            "acreage": 73183,
+            "acreage": 2500,
             "containment_pct": 93,
             "cause": "Natural",
             "state": "OR",
@@ -685,20 +727,20 @@
         ],
         "disease": []
       },
-      "alert_count": 8,
+      "alert_count": 10,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 9,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 91.0,
+          "low_temp_f": 57.0,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 57.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -707,15 +749,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
-          "aqi_24h_max": 84,
+          "us_aqi": 41,
+          "category": "Good",
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.1,
-          "pm10": 10.3,
-          "ozone": 56.0,
-          "nitrogen_dioxide": 5.7,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 3.0,
+          "pm10": 3.2,
+          "ozone": 33.0,
+          "nitrogen_dioxide": 5.8,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -746,12 +788,12 @@
           "precip_probability_pct": 9,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 68.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 68.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 13.8,
+          "high_temp_f": 63.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 63.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [],
@@ -759,15 +801,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 40,
+          "us_aqi": 30,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.8,
-          "pm10": 11.0,
+          "pm2_5": 5.0,
+          "pm10": 7.4,
           "ozone": 48.0,
-          "nitrogen_dioxide": 2.7,
-          "observed_at": "2026-08-21T08:00",
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -777,7 +819,18 @@
       "name": "Deschutes County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 10:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -860,20 +913,20 @@
         ],
         "disease": []
       },
-      "alert_count": 4,
+      "alert_count": 5,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 60.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 60.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 86.0,
+          "low_temp_f": 55.0,
+          "high_apparent_temp_f": 83.0,
+          "low_apparent_temp_f": 55.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 10,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -882,15 +935,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 76,
-          "category": "Moderate",
-          "aqi_24h_max": 114,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 18.0,
-          "pm10": 18.3,
-          "ozone": 87.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-08-21T08:00",
+          "us_aqi": 50,
+          "category": "Good",
+          "aqi_24h_max": 56,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 4.2,
+          "pm10": 4.6,
+          "ozone": 39.0,
+          "nitrogen_dioxide": 6.8,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -908,24 +961,6 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [
-          {
-            "title": "E Evans Creek Rd 18000",
-            "incident_name": "E Evans Creek Rd 18000",
-            "id": "2026-OR711S-000039",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-07-10T21:39:00+00:00",
-            "lat": 42.604,
-            "lon": -123.0018,
-            "acreage": 15580,
-            "containment_pct": 98,
-            "cause": "Undetermined",
-            "state": "OR",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR711S-000039",
-            "source": "NIFC WFIGS",
-            "distance_miles": 24.7,
-            "threat_level": "Vicinity"
-          },
           {
             "title": "Castle",
             "incident_name": "Castle",
@@ -954,7 +989,7 @@
             "lat": 42.4218,
             "lon": -123.2068,
             "acreage": 573,
-            "containment_pct": 81,
+            "containment_pct": 93,
             "cause": "Undetermined",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR712S-030327",
@@ -969,37 +1004,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
           "precip_probability_pct": 15,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 95.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 85.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 44,
+          "us_aqi": 32,
           "category": "Good",
-          "aqi_24h_max": 49,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.0,
-          "pm10": 10.1,
+          "pm2_5": 4.5,
+          "pm10": 6.0,
           "ozone": 44.0,
-          "nitrogen_dioxide": 6.5,
-          "observed_at": "2026-08-21T08:00",
+          "nitrogen_dioxide": 4.2,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1009,7 +1044,18 @@
       "name": "Gilliam County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 10:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1063,7 +1109,7 @@
             "lat": 44.8101,
             "lon": -120.3167,
             "acreage": 373981,
-            "containment_pct": 89,
+            "containment_pct": 91,
             "cause": "Undetermined",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORPRD-000491",
@@ -1080,7 +1126,7 @@
             "date": "2026-07-16T19:10:00+00:00",
             "lat": 44.8612,
             "lon": -119.598,
-            "acreage": 4509,
+            "acreage": 4436,
             "containment_pct": 95,
             "cause": "Natural",
             "state": "OR",
@@ -1132,20 +1178,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 6,
+      "alert_count": 7,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 89.0,
+          "low_temp_f": 66.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 66.0,
+          "max_wind_mph": 24.2,
+          "max_wind_gust_mph": 38.0,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -1154,15 +1200,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 77,
+          "us_aqi": 57,
           "category": "Moderate",
-          "aqi_24h_max": 94,
+          "aqi_24h_max": 74,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.8,
-          "pm10": 13.5,
-          "ozone": 81.0,
-          "nitrogen_dioxide": 6.8,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 10.2,
+          "pm10": 10.7,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 6.6,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1172,7 +1218,18 @@
       "name": "Grant County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 10:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1280,7 +1337,7 @@
             "lat": 44.8101,
             "lon": -120.3167,
             "acreage": 373981,
-            "containment_pct": 89,
+            "containment_pct": 91,
             "cause": "Undetermined",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORPRD-000491",
@@ -1297,7 +1354,7 @@
             "date": "2026-07-16T19:10:00+00:00",
             "lat": 44.8612,
             "lon": -119.598,
-            "acreage": 4509,
+            "acreage": 4436,
             "containment_pct": 95,
             "cause": "Natural",
             "state": "OR",
@@ -1333,7 +1390,7 @@
             "date": "2026-07-16T21:15:00+00:00",
             "lat": 44.1211,
             "lon": -119.9477,
-            "acreage": 29850,
+            "acreage": 29844,
             "containment_pct": 97,
             "cause": "Natural",
             "state": "OR",
@@ -1348,10 +1405,10 @@
             "id": "2026-OR953S-000587",
             "category": "wildfire",
             "incident_type": "Wildfire",
-            "date": "2026-07-23T17:59:17+00:00",
+            "date": "2026-07-23T17:59:00+00:00",
             "lat": 44.4687,
             "lon": -119.8976,
-            "acreage": 73183,
+            "acreage": 2500,
             "containment_pct": 93,
             "cause": "Natural",
             "state": "OR",
@@ -1370,31 +1427,13 @@
             "lat": 43.6087,
             "lon": -119.4392,
             "acreage": 105854,
-            "containment_pct": 95,
+            "containment_pct": 96,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORBUD-002693",
             "source": "NIFC WFIGS",
             "distance_miles": 44.3,
             "threat_level": "Vicinity"
-          },
-          {
-            "title": "COTTONWOOD",
-            "incident_name": "COTTONWOOD",
-            "id": "2026-OR952S-026181",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-06T22:25:41+00:00",
-            "lat": 44.6281,
-            "lon": -119.3804,
-            "acreage": 722,
-            "containment_pct": 95,
-            "cause": "Undetermined",
-            "state": "OR",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR952S-026181",
-            "source": "NIFC WFIGS",
-            "distance_miles": 10.1,
-            "threat_level": "Immediate"
           },
           {
             "title": "0722 ROSENBAUM",
@@ -1425,16 +1464,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 10,
+          "precip_probability_pct": 9,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 50.0,
-          "high_apparent_temp_f": 93.0,
-          "low_apparent_temp_f": 50.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 8,
+          "high_temp_f": 96.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 26.5,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -1443,15 +1482,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 59,
           "category": "Moderate",
-          "aqi_24h_max": 88,
+          "aqi_24h_max": 61,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.2,
-          "pm10": 8.4,
-          "ozone": 60.0,
-          "nitrogen_dioxide": 10.5,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 15.2,
+          "pm10": 16.2,
+          "ozone": 67.0,
+          "nitrogen_dioxide": 7.4,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1461,7 +1500,18 @@
       "name": "Harney County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 8:34PM PDT until August 22 at 9:00PM PDT by NWS Medford OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T15:00:00-06:00",
+            "source": "nws_alert",
+            "count": 3
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1515,7 +1565,7 @@
             "lat": 42.9956,
             "lon": -118.4743,
             "acreage": 76443,
-            "containment_pct": 95,
+            "containment_pct": 97,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORBUD-002687",
@@ -1533,7 +1583,7 @@
             "lat": 43.6087,
             "lon": -119.4392,
             "acreage": 105854,
-            "containment_pct": 95,
+            "containment_pct": 96,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORBUD-002693",
@@ -1569,7 +1619,7 @@
             "lat": 43.5897,
             "lon": -118.3039,
             "acreage": 308863,
-            "containment_pct": 95,
+            "containment_pct": 99,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORBUD-002696",
@@ -1584,40 +1634,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 6,
+      "alert_count": 7,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 27,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 22,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 59.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 59.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 10,
+          "high_temp_f": 93.0,
+          "low_temp_f": 58.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 23.0,
+          "max_wind_gust_mph": 34.5,
+          "thunder_probability_pct": 11,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers",
             "blowing dust",
-            "smoke"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 37,
-          "category": "Good",
-          "aqi_24h_max": 49,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.9,
-          "pm10": 3.3,
-          "ozone": 65.0,
-          "nitrogen_dioxide": 5.3,
-          "observed_at": "2026-08-21T08:00",
+          "us_aqi": 56,
+          "category": "Moderate",
+          "aqi_24h_max": 59,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 6.8,
+          "pm10": 8.1,
+          "ozone": 53.0,
+          "nitrogen_dioxide": 3.7,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1662,8 +1711,8 @@
             "date": "2026-07-24T02:41:00+00:00",
             "lat": 45.253,
             "lon": -121.5101,
-            "acreage": 92456,
-            "containment_pct": 71,
+            "acreage": 93365,
+            "containment_pct": 76,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORMHF-000688",
@@ -1680,7 +1729,7 @@
             "date": "2026-08-08T16:21:00+00:00",
             "lat": 45.1469,
             "lon": -122.0936,
-            "acreage": 174,
+            "acreage": 195,
             "containment_pct": 0,
             "cause": "Human",
             "state": "OR",
@@ -1698,7 +1747,7 @@
             "date": "2026-08-09T17:12:59+00:00",
             "lat": 45.0252,
             "lon": -121.9449,
-            "acreage": 3766,
+            "acreage": 4492,
             "containment_pct": 0,
             "cause": "Human",
             "state": "OR",
@@ -1718,33 +1767,36 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 7,
+          "precip_probability_pct": 21,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 59.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 59.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 7,
+          "high_temp_f": 79.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 33.4,
+          "thunder_probability_pct": 21,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "thunderstorms",
+            "light rain showers",
+            "smoke",
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 95,
+          "us_aqi": 80,
           "category": "Moderate",
-          "aqi_24h_max": 105,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 35.9,
-          "pm10": 36.8,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 13.9,
-          "observed_at": "2026-08-21T08:00",
+          "aqi_24h_max": 80,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 24.4,
+          "pm10": 25.7,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 10.4,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1762,24 +1814,6 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [
-          {
-            "title": "E Evans Creek Rd 18000",
-            "incident_name": "E Evans Creek Rd 18000",
-            "id": "2026-OR711S-000039",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-07-10T21:39:00+00:00",
-            "lat": 42.604,
-            "lon": -123.0018,
-            "acreage": 15580,
-            "containment_pct": 98,
-            "cause": "Undetermined",
-            "state": "OR",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR711S-000039",
-            "source": "NIFC WFIGS",
-            "distance_miles": 21.3,
-            "threat_level": "Vicinity"
-          },
           {
             "title": "Castle",
             "incident_name": "Castle",
@@ -1807,31 +1841,13 @@
             "date": "2026-08-05T21:56:00+00:00",
             "lat": 42.4695,
             "lon": -121.7287,
-            "acreage": 54131,
+            "acreage": 54276,
             "containment_pct": 55,
             "cause": "Undetermined",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORFWF-260286",
             "source": "NIFC WFIGS",
             "distance_miles": 48.4,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Woodrat Mountain",
-            "incident_name": "Woodrat Mountain",
-            "id": "2026-ORMED-711175",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-06T19:23:00+00:00",
-            "lat": 42.2232,
-            "lon": -123.0023,
-            "acreage": 282,
-            "containment_pct": 95,
-            "cause": "Human",
-            "state": "OR",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORMED-711175",
-            "source": "NIFC WFIGS",
-            "distance_miles": 21.2,
             "threat_level": "Vicinity"
           },
           {
@@ -1844,7 +1860,7 @@
             "lat": 42.4218,
             "lon": -123.2068,
             "acreage": 573,
-            "containment_pct": 81,
+            "containment_pct": 93,
             "cause": "Undetermined",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR712S-030327",
@@ -1873,35 +1889,35 @@
         ],
         "disease": []
       },
-      "alert_count": 6,
+      "alert_count": 4,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
           "precip_probability_pct": 9,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 63.0,
-          "high_apparent_temp_f": 91.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 89.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 86.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
+          "us_aqi": 41,
           "category": "Good",
-          "aqi_24h_max": 92,
+          "aqi_24h_max": 59,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.6,
-          "pm10": 10.8,
-          "ozone": 68.0,
-          "nitrogen_dioxide": 7.4,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 6.6,
+          "pm10": 8.2,
+          "ozone": 56.0,
+          "nitrogen_dioxide": 5.9,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1911,7 +1927,18 @@
       "name": "Jefferson County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 10:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1947,7 +1974,7 @@
             "lat": 44.8101,
             "lon": -120.3167,
             "acreage": 373981,
-            "containment_pct": 89,
+            "containment_pct": 91,
             "cause": "Undetermined",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORPRD-000491",
@@ -1982,8 +2009,8 @@
             "date": "2026-07-24T02:41:00+00:00",
             "lat": 45.253,
             "lon": -121.5101,
-            "acreage": 92456,
-            "containment_pct": 71,
+            "acreage": 93365,
+            "containment_pct": 76,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORMHF-000688",
@@ -2018,7 +2045,7 @@
             "date": "2026-08-09T17:12:59+00:00",
             "lat": 45.0252,
             "lon": -121.9449,
-            "acreage": 3766,
+            "acreage": 4492,
             "containment_pct": 0,
             "cause": "Human",
             "state": "OR",
@@ -2061,20 +2088,20 @@
         ],
         "disease": []
       },
-      "alert_count": 8,
+      "alert_count": 9,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_probability_pct": 12,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 65.0,
-          "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 65.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 92.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -2083,15 +2110,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 112,
-          "category": "Unhealthy for Sensitive Groups",
-          "aqi_24h_max": 130,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 39.7,
-          "pm10": 40.9,
-          "ozone": 67.0,
-          "nitrogen_dioxide": 9.2,
-          "observed_at": "2026-08-21T08:00",
+          "us_aqi": 77,
+          "category": "Moderate",
+          "aqi_24h_max": 87,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 44.1,
+          "pm10": 45.3,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 7.1,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2110,42 +2137,6 @@
         "road_closure": [],
         "wildfires": [
           {
-            "title": "E Evans Creek Rd 18000",
-            "incident_name": "E Evans Creek Rd 18000",
-            "id": "2026-OR711S-000039",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-07-10T21:39:00+00:00",
-            "lat": 42.604,
-            "lon": -123.0018,
-            "acreage": 15580,
-            "containment_pct": 98,
-            "cause": "Undetermined",
-            "state": "OR",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR711S-000039",
-            "source": "NIFC WFIGS",
-            "distance_miles": 32.7,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "Woodrat Mountain",
-            "incident_name": "Woodrat Mountain",
-            "id": "2026-ORMED-711175",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-06T19:23:00+00:00",
-            "lat": 42.2232,
-            "lon": -123.0023,
-            "acreage": 282,
-            "containment_pct": 95,
-            "cause": "Human",
-            "state": "OR",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORMED-711175",
-            "source": "NIFC WFIGS",
-            "distance_miles": 31.2,
-            "threat_level": "Vicinity"
-          },
-          {
             "title": "Fielder Mtn",
             "incident_name": "Fielder Mtn",
             "id": "2026-OR712S-030327",
@@ -2155,7 +2146,7 @@
             "lat": 42.4218,
             "lon": -123.2068,
             "acreage": 573,
-            "containment_pct": 81,
+            "containment_pct": 93,
             "cause": "Undetermined",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR712S-030327",
@@ -2184,35 +2175,35 @@
         ],
         "disease": []
       },
-      "alert_count": 4,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
           "precip_probability_pct": 9,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 60.0,
-          "high_apparent_temp_f": 91.0,
-          "low_apparent_temp_f": 60.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 53.0,
           "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 2,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
+          "us_aqi": 42,
           "category": "Good",
-          "aqi_24h_max": 58,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.8,
-          "pm10": 10.1,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 6.7,
-          "observed_at": "2026-08-21T08:00",
+          "aqi_24h_max": 47,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.7,
+          "pm10": 5.9,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 5.4,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2225,11 +2216,11 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 20 at 9:02PM PDT until August 21 at 9:00PM PDT by NWS Medford OR",
+            "headline": "Red Flag Warning issued August 21 at 8:34PM PDT until August 22 at 9:00PM PDT by NWS Medford OR",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-20T21:02:00-07:00",
-            "expires": "2026-08-21T06:00:00-07:00",
+            "effective": "2026-08-21T20:34:00-07:00",
+            "expires": "2026-08-22T05:00:00-07:00",
             "source": "nws_alert",
             "count": 1
           }
@@ -2241,24 +2232,6 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [
-          {
-            "title": "E Evans Creek Rd 18000",
-            "incident_name": "E Evans Creek Rd 18000",
-            "id": "2026-OR711S-000039",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-07-10T21:39:00+00:00",
-            "lat": 42.604,
-            "lon": -123.0018,
-            "acreage": 15580,
-            "containment_pct": 98,
-            "cause": "Undetermined",
-            "state": "OR",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR711S-000039",
-            "source": "NIFC WFIGS",
-            "distance_miles": 43.5,
-            "threat_level": "Vicinity"
-          },
           {
             "title": "Castle",
             "incident_name": "Castle",
@@ -2286,7 +2259,7 @@
             "date": "2026-08-05T21:56:00+00:00",
             "lat": 42.4695,
             "lon": -121.7287,
-            "acreage": 54131,
+            "acreage": 54276,
             "containment_pct": 55,
             "cause": "Undetermined",
             "state": "OR",
@@ -2334,38 +2307,37 @@
         ],
         "disease": []
       },
-      "alert_count": 6,
+      "alert_count": 5,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
           "precip_probability_pct": 22,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 85.0,
-          "low_apparent_temp_f": 48.0,
+          "high_temp_f": 81.0,
+          "low_temp_f": 43.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 42.0,
           "max_wind_mph": 20.7,
           "max_wind_gust_mph": 31.1,
-          "thunder_probability_pct": 7,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "smoke"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 41,
+          "us_aqi": 30,
           "category": "Good",
-          "aqi_24h_max": 68,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 6.5,
-          "pm10": 6.9,
-          "ozone": 62.0,
-          "nitrogen_dioxide": 9.7,
-          "observed_at": "2026-08-21T08:00",
+          "aqi_24h_max": 42,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 2.4,
+          "pm10": 2.7,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 4.0,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2378,13 +2350,13 @@
         "weather": [
           {
             "event": "Red Flag Warning",
-            "headline": "Red Flag Warning issued August 20 at 9:02PM PDT until August 21 at 9:00PM PDT by NWS Medford OR",
+            "headline": "Red Flag Warning issued August 21 at 8:34PM PDT until August 22 at 9:00PM PDT by NWS Medford OR",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-08-20T21:02:00-07:00",
-            "expires": "2026-08-21T06:00:00-07:00",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T15:00:00-06:00",
             "source": "nws_alert",
-            "count": 1
+            "count": 4
           }
         ],
         "protest": [],
@@ -2421,7 +2393,7 @@
             "date": "2026-08-05T21:56:00+00:00",
             "lat": 42.4695,
             "lon": -121.7287,
-            "acreage": 54131,
+            "acreage": 54276,
             "containment_pct": 55,
             "cause": "Undetermined",
             "state": "OR",
@@ -2459,36 +2431,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 13,
+          "precip_probability_pct": 16,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 31.1,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 88.0,
+          "low_temp_f": 54.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 23.0,
+          "max_wind_gust_mph": 34.5,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
-            "thunderstorms",
-            "light rain showers",
-            "blowing dust"
+            "blowing dust",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 55,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 3.1,
-          "pm10": 3.4,
-          "ozone": 28.0,
+          "aqi_24h_max": 43,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 2.9,
+          "pm10": 3.1,
+          "ozone": 27.0,
           "nitrogen_dioxide": 7.6,
-          "observed_at": "2026-08-21T08:00",
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2535,16 +2505,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 8,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 5,
+          "high_temp_f": 77.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 77.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 10,
           "lightning_activity_level": null,
           "weather": [
             "fog",
@@ -2554,15 +2524,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 76,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.5,
-          "pm10": 9.6,
+          "us_aqi": 36,
+          "category": "Good",
+          "aqi_24h_max": 36,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 5.5,
+          "pm10": 7.2,
           "ozone": 53.0,
-          "nitrogen_dioxide": 3.8,
-          "observed_at": "2026-08-21T08:00",
+          "nitrogen_dioxide": 3.3,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2590,34 +2560,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_probability_pct": 22,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
+          "high_temp_f": 68.0,
           "low_temp_f": 55.0,
-          "high_apparent_temp_f": 70.0,
+          "high_apparent_temp_f": 68.0,
           "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 4,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
-            "heavy fog"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 43,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.7,
-          "pm10": 12.5,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 1.6,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 4.8,
+          "pm10": 6.8,
+          "ozone": 49.0,
+          "nitrogen_dioxide": 1.5,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2644,7 +2613,7 @@
             "date": "2026-08-09T17:12:59+00:00",
             "lat": 45.0252,
             "lon": -121.9449,
-            "acreage": 3766,
+            "acreage": 4492,
             "containment_pct": 0,
             "cause": "Human",
             "state": "OR",
@@ -2664,31 +2633,31 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 8,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 62.0,
-          "high_apparent_temp_f": 80.0,
-          "low_apparent_temp_f": 62.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": 7,
+          "high_temp_f": 70.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 70.0,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 66,
+          "us_aqi": 54,
           "category": "Moderate",
-          "aqi_24h_max": 105,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 8.2,
-          "pm10": 8.9,
-          "ozone": 81.0,
-          "nitrogen_dioxide": 8.9,
-          "observed_at": "2026-08-21T08:00",
+          "aqi_24h_max": 55,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.2,
+          "pm10": 9.3,
+          "ozone": 51.0,
+          "nitrogen_dioxide": 7.3,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2698,7 +2667,18 @@
       "name": "Malheur County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 5:20PM MDT until August 22 at 9:00PM MDT by NWS Boise ID",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T17:20:00-06:00",
+            "expires": "2026-08-22T15:00:00-06:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2715,8 +2695,8 @@
             "date": "2026-07-23T20:30:00+00:00",
             "lat": 42.6498,
             "lon": -117.3034,
-            "acreage": 578639,
-            "containment_pct": 85,
+            "acreage": 578634,
+            "containment_pct": 89,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORVAD-260201",
@@ -2752,7 +2732,7 @@
             "lat": 42.9956,
             "lon": -118.4743,
             "acreage": 76443,
-            "containment_pct": 95,
+            "containment_pct": 97,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORBUD-002687",
@@ -2788,7 +2768,7 @@
             "lat": 43.5897,
             "lon": -118.3039,
             "acreage": 308863,
-            "containment_pct": 95,
+            "containment_pct": 99,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORBUD-002696",
@@ -2803,40 +2783,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 5,
+      "alert_count": 6,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.01,
           "precip_probability_pct": 26,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 97.0,
-          "low_temp_f": 64.0,
+          "low_temp_f": 63.0,
           "high_apparent_temp_f": 92.0,
-          "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 12,
+          "low_apparent_temp_f": 63.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 31.1,
+          "thunder_probability_pct": 25,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
             "light rain showers",
-            "blowing dust",
-            "smoke"
+            "blowing dust"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
-          "category": "Good",
-          "aqi_24h_max": 49,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 3.3,
-          "pm10": 3.5,
-          "ozone": 61.0,
-          "nitrogen_dioxide": 5.4,
-          "observed_at": "2026-08-21T08:00",
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 55,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.8,
+          "pm10": 9.2,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 1.6,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2846,7 +2825,18 @@
       "name": "Marion County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 10:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2863,7 +2853,7 @@
             "date": "2026-08-08T16:21:00+00:00",
             "lat": 45.1469,
             "lon": -122.0936,
-            "acreage": 174,
+            "acreage": 195,
             "containment_pct": 0,
             "cause": "Human",
             "state": "OR",
@@ -2881,7 +2871,7 @@
             "date": "2026-08-09T17:12:59+00:00",
             "lat": 45.0252,
             "lon": -121.9449,
-            "acreage": 3766,
+            "acreage": 4492,
             "containment_pct": 0,
             "cause": "Human",
             "state": "OR",
@@ -2897,35 +2887,35 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 9,
+          "precip_probability_pct": 6,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 64.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 9,
+          "high_temp_f": 69.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 69.0,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 11,
           "lightning_activity_level": null,
           "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 83,
+          "us_aqi": 60,
           "category": "Moderate",
-          "aqi_24h_max": 89,
+          "aqi_24h_max": 62,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.6,
-          "pm10": 15.2,
-          "ozone": 77.0,
-          "nitrogen_dioxide": 9.7,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 5.9,
+          "pm10": 8.0,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 6.2,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2935,7 +2925,18 @@
       "name": "Morrow County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 10:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2952,7 +2953,7 @@
             "date": "2026-07-16T19:10:00+00:00",
             "lat": 44.8612,
             "lon": -119.598,
-            "acreage": 4509,
+            "acreage": 4436,
             "containment_pct": 95,
             "cause": "Natural",
             "state": "OR",
@@ -3004,35 +3005,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 3,
+      "alert_count": 4,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 69.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 69.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 92.0,
+          "low_temp_f": 66.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 66.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 34.5,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "smoke"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 71,
+          "us_aqi": 64,
           "category": "Moderate",
-          "aqi_24h_max": 99,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 16.6,
-          "pm10": 17.2,
-          "ozone": 89.0,
-          "nitrogen_dioxide": 10.2,
-          "observed_at": "2026-08-21T08:00",
+          "aqi_24h_max": 103,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 18.3,
+          "pm10": 18.9,
+          "ozone": 54.0,
+          "nitrogen_dioxide": 9.6,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3077,8 +3080,8 @@
             "date": "2026-07-24T02:41:00+00:00",
             "lat": 45.253,
             "lon": -121.5101,
-            "acreage": 92456,
-            "containment_pct": 71,
+            "acreage": 93365,
+            "containment_pct": 76,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORMHF-000688",
@@ -3095,7 +3098,7 @@
             "date": "2026-08-08T16:21:00+00:00",
             "lat": 45.1469,
             "lon": -122.0936,
-            "acreage": 174,
+            "acreage": 195,
             "containment_pct": 0,
             "cause": "Human",
             "state": "OR",
@@ -3113,7 +3116,7 @@
             "date": "2026-08-09T17:12:59+00:00",
             "lat": 45.0252,
             "lon": -121.9449,
-            "acreage": 3766,
+            "acreage": 4492,
             "containment_pct": 0,
             "cause": "Human",
             "state": "OR",
@@ -3133,33 +3136,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 6,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 64.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 81.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 82.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 12,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 107,
-          "category": "Unhealthy for Sensitive Groups",
-          "aqi_24h_max": 108,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 36.8,
-          "pm10": 37.6,
-          "ozone": 53.0,
-          "nitrogen_dioxide": 29.1,
-          "observed_at": "2026-08-21T08:00",
+          "us_aqi": 80,
+          "category": "Moderate",
+          "aqi_24h_max": 80,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 14.3,
+          "pm10": 16.6,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 21.2,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3187,33 +3190,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 16,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 58.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 58.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 8.1,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 76.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 76.0,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
-            "fog"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 42,
+          "us_aqi": 36,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.7,
-          "pm10": 11.3,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 6.2,
+          "pm10": 7.9,
+          "ozone": 53.0,
+          "nitrogen_dioxide": 2.5,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3223,7 +3226,18 @@
       "name": "Sherman County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 10:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3259,7 +3273,7 @@
             "lat": 44.8101,
             "lon": -120.3167,
             "acreage": 373981,
-            "containment_pct": 89,
+            "containment_pct": 91,
             "cause": "Undetermined",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORPRD-000491",
@@ -3294,8 +3308,8 @@
             "date": "2026-07-24T02:41:00+00:00",
             "lat": 45.253,
             "lon": -121.5101,
-            "acreage": 92456,
-            "containment_pct": 71,
+            "acreage": 93365,
+            "containment_pct": 76,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORMHF-000688",
@@ -3328,20 +3342,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 5,
+      "alert_count": 6,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 68.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 68.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 88.0,
+          "low_temp_f": 61.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 61.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 35.7,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -3350,15 +3364,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 100,
+          "us_aqi": 72,
           "category": "Moderate",
-          "aqi_24h_max": 118,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 26.9,
-          "pm10": 27.9,
-          "ozone": 59.0,
-          "nitrogen_dioxide": 10.8,
-          "observed_at": "2026-08-21T08:00",
+          "aqi_24h_max": 79,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 27.3,
+          "pm10": 28.6,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 7.8,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3386,33 +3400,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 67.0,
+          "low_temp_f": 55.0,
+          "high_apparent_temp_f": 67.0,
+          "low_apparent_temp_f": 55.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
+            "light rain showers",
             "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
+          "us_aqi": 36,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 37,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.6,
-          "pm10": 11.4,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 4.8,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 5.5,
+          "pm10": 7.5,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 3.4,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3422,7 +3437,18 @@
       "name": "Umatilla County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 11:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3472,10 +3498,10 @@
             "id": "2026-ORUMF-000302",
             "category": "wildfire",
             "incident_type": "Wildfire",
-            "date": "2026-07-16T19:38:30+00:00",
+            "date": "2026-07-16T19:38:00+00:00",
             "lat": 45.9981,
             "lon": -117.9743,
-            "acreage": 6745,
+            "acreage": 7028,
             "containment_pct": 0,
             "cause": "Natural",
             "state": "OR",
@@ -3493,7 +3519,7 @@
             "date": "2026-07-16T23:20:00+00:00",
             "lat": 45.707,
             "lon": -118.269,
-            "acreage": 58646,
+            "acreage": 59107,
             "containment_pct": 19,
             "cause": "Natural",
             "state": "OR",
@@ -3541,20 +3567,20 @@
         ],
         "disease": []
       },
-      "alert_count": 6,
+      "alert_count": 7,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 96.0,
-          "low_temp_f": 61.0,
+          "low_temp_f": 66.0,
           "high_apparent_temp_f": 92.0,
-          "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 1,
+          "low_apparent_temp_f": 66.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -3563,15 +3589,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 65,
+          "us_aqi": 74,
           "category": "Moderate",
-          "aqi_24h_max": 108,
+          "aqi_24h_max": 112,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 17.0,
-          "pm10": 17.3,
-          "ozone": 69.0,
-          "nitrogen_dioxide": 14.1,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 14.6,
+          "pm10": 15.3,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 7.2,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3581,7 +3607,18 @@
       "name": "Union County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 8:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3667,10 +3704,10 @@
             "id": "2026-ORUMF-000302",
             "category": "wildfire",
             "incident_type": "Wildfire",
-            "date": "2026-07-16T19:38:30+00:00",
+            "date": "2026-07-16T19:38:00+00:00",
             "lat": 45.9981,
             "lon": -117.9743,
-            "acreage": 6745,
+            "acreage": 7028,
             "containment_pct": 0,
             "cause": "Natural",
             "state": "OR",
@@ -3688,7 +3725,7 @@
             "date": "2026-07-16T23:20:00+00:00",
             "lat": 45.707,
             "lon": -118.269,
-            "acreage": 58646,
+            "acreage": 59107,
             "containment_pct": 19,
             "cause": "Natural",
             "state": "OR",
@@ -3754,20 +3791,20 @@
         ],
         "disease": []
       },
-      "alert_count": 9,
+      "alert_count": 10,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 20,
+          "precip_probability_pct": 12,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 100.0,
-          "low_temp_f": 54.0,
+          "low_temp_f": 63.0,
           "high_apparent_temp_f": 96.0,
-          "low_apparent_temp_f": 54.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 15,
+          "low_apparent_temp_f": 63.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 12,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -3776,15 +3813,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 116,
-          "category": "Unhealthy for Sensitive Groups",
-          "aqi_24h_max": 125,
+          "us_aqi": 88,
+          "category": "Moderate",
+          "aqi_24h_max": 101,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 43.2,
-          "pm10": 45.5,
-          "ozone": 135.0,
-          "nitrogen_dioxide": 8.9,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 26.3,
+          "pm10": 27.0,
+          "ozone": 112.0,
+          "nitrogen_dioxide": 6.5,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3794,7 +3831,18 @@
       "name": "Wallowa County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 8:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3826,10 +3874,10 @@
             "id": "2026-ORUMF-000302",
             "category": "wildfire",
             "incident_type": "Wildfire",
-            "date": "2026-07-16T19:38:30+00:00",
+            "date": "2026-07-16T19:38:00+00:00",
             "lat": 45.9981,
             "lon": -117.9743,
-            "acreage": 6745,
+            "acreage": 7028,
             "containment_pct": 0,
             "cause": "Natural",
             "state": "OR",
@@ -3855,24 +3903,6 @@
             "source": "NIFC WFIGS",
             "distance_miles": 12.5,
             "threat_level": "Immediate"
-          },
-          {
-            "title": "Eggo",
-            "incident_name": "Eggo",
-            "id": "2026-OR974S-000423",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-01T23:29:00+00:00",
-            "lat": 45.6696,
-            "lon": -117.0871,
-            "acreage": 4225,
-            "containment_pct": 95,
-            "cause": "Human",
-            "state": "OR",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR974S-000423",
-            "source": "NIFC WFIGS",
-            "distance_miles": 7.1,
-            "threat_level": "Immediate"
           }
         ],
         "transit": [],
@@ -3885,34 +3915,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 17,
+          "precip_probability_pct": 13,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 62.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 62.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 17,
+          "high_temp_f": 92.0,
+          "low_temp_f": 64.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 64.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 13,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers"
+            "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 83,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 113,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 18.7,
-          "pm10": 19.3,
-          "ozone": 101.0,
-          "nitrogen_dioxide": 6.5,
-          "observed_at": "2026-08-21T08:00",
+          "aqi_24h_max": 64,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 18.9,
+          "pm10": 20.3,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 5.8,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3922,7 +3951,18 @@
       "name": "Wasco County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 10:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3940,7 +3980,7 @@
             "lat": 44.8101,
             "lon": -120.3167,
             "acreage": 373981,
-            "containment_pct": 89,
+            "containment_pct": 91,
             "cause": "Undetermined",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORPRD-000491",
@@ -3993,8 +4033,8 @@
             "date": "2026-07-24T02:41:00+00:00",
             "lat": 45.253,
             "lon": -121.5101,
-            "acreage": 92456,
-            "containment_pct": 71,
+            "acreage": 93365,
+            "containment_pct": 76,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORMHF-000688",
@@ -4029,7 +4069,7 @@
             "date": "2026-08-08T16:21:00+00:00",
             "lat": 45.1469,
             "lon": -122.0936,
-            "acreage": 174,
+            "acreage": 195,
             "containment_pct": 0,
             "cause": "Human",
             "state": "OR",
@@ -4047,7 +4087,7 @@
             "date": "2026-08-09T17:12:59+00:00",
             "lat": 45.0252,
             "lon": -121.9449,
-            "acreage": 3766,
+            "acreage": 4492,
             "containment_pct": 0,
             "cause": "Human",
             "state": "OR",
@@ -4077,20 +4117,20 @@
         ],
         "disease": []
       },
-      "alert_count": 8,
+      "alert_count": 9,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_probability_pct": 14,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 67.0,
-          "high_apparent_temp_f": 91.0,
-          "low_apparent_temp_f": 67.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 92.0,
+          "low_temp_f": 62.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 62.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -4099,15 +4139,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 125,
-          "category": "Unhealthy for Sensitive Groups",
-          "aqi_24h_max": 145,
+          "us_aqi": 97,
+          "category": "Moderate",
+          "aqi_24h_max": 102,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 50.9,
-          "pm10": 52.2,
-          "ozone": 59.0,
-          "nitrogen_dioxide": 12.7,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 48.7,
+          "pm10": 50.5,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 9.2,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4135,31 +4175,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 61.0,
-          "high_apparent_temp_f": 91.0,
-          "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
+          "high_temp_f": 82.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 83.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 13.8,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "light rain"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 46,
+          "us_aqi": 41,
           "category": "Good",
-          "aqi_24h_max": 49,
+          "aqi_24h_max": 41,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.2,
-          "pm10": 9.9,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 6.3,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 5.7,
+          "pm10": 7.5,
+          "ozone": 36.0,
+          "nitrogen_dioxide": 7.1,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4169,7 +4211,18 @@
       "name": "Wheeler County",
       "state": "OR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Red Flag Warning",
+            "headline": "Red Flag Warning issued August 21 at 11:57AM PDT until August 22 at 10:00PM PDT by NWS Pendleton OR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-08-21T11:57:00-07:00",
+            "expires": "2026-08-22T07:00:00-07:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -4223,7 +4276,7 @@
             "lat": 44.8101,
             "lon": -120.3167,
             "acreage": 373981,
-            "containment_pct": 89,
+            "containment_pct": 91,
             "cause": "Undetermined",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORPRD-000491",
@@ -4240,7 +4293,7 @@
             "date": "2026-07-16T19:10:00+00:00",
             "lat": 44.8612,
             "lon": -119.598,
-            "acreage": 4509,
+            "acreage": 4436,
             "containment_pct": 95,
             "cause": "Natural",
             "state": "OR",
@@ -4276,7 +4329,7 @@
             "date": "2026-07-16T21:15:00+00:00",
             "lat": 44.1211,
             "lon": -119.9477,
-            "acreage": 29850,
+            "acreage": 29844,
             "containment_pct": 97,
             "cause": "Natural",
             "state": "OR",
@@ -4309,34 +4362,16 @@
             "id": "2026-OR953S-000587",
             "category": "wildfire",
             "incident_type": "Wildfire",
-            "date": "2026-07-23T17:59:17+00:00",
+            "date": "2026-07-23T17:59:00+00:00",
             "lat": 44.4687,
             "lon": -119.8976,
-            "acreage": 73183,
+            "acreage": 2500,
             "containment_pct": 93,
             "cause": "Natural",
             "state": "OR",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR953S-000587",
             "source": "NIFC WFIGS",
             "distance_miles": 19.6,
-            "threat_level": "Vicinity"
-          },
-          {
-            "title": "COTTONWOOD",
-            "incident_name": "COTTONWOOD",
-            "id": "2026-OR952S-026181",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-08-06T22:25:41+00:00",
-            "lat": 44.6281,
-            "lon": -119.3804,
-            "acreage": 722,
-            "containment_pct": 95,
-            "cause": "Undetermined",
-            "state": "OR",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR952S-026181",
-            "source": "NIFC WFIGS",
-            "distance_miles": 32.6,
             "threat_level": "Vicinity"
           },
           {
@@ -4368,16 +4403,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 67.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 67.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 90.0,
+          "low_temp_f": 65.0,
+          "high_apparent_temp_f": 86.0,
+          "low_apparent_temp_f": 65.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
             "smoke"
@@ -4386,15 +4421,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 93,
+          "aqi_24h_max": 61,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.9,
-          "pm10": 12.2,
-          "ozone": 82.0,
+          "pm2_5": 12.3,
+          "pm10": 12.8,
+          "ozone": 69.0,
           "nitrogen_dioxide": 5.1,
-          "observed_at": "2026-08-21T08:00",
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4422,15 +4457,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 59.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 59.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 6.9,
+          "high_temp_f": 77.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 77.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
@@ -4440,15 +4475,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
+          "us_aqi": 34,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.0,
-          "pm10": 8.9,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 4.7,
-          "observed_at": "2026-08-21T08:00",
+          "pm2_5": 5.6,
+          "pm10": 7.1,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 3.5,
+          "observed_at": "2026-08-22T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

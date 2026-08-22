@@ -8,7 +8,18 @@
     "lon": -121.833977
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 21 at 9:02PM PDT until August 22 at 5:00PM PDT by NWS Seattle WA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-21T11:57:00-07:00",
+        "expires": "2026-08-22T07:00:00-07:00",
+        "source": "nws_alert",
+        "count": 3
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -51,6 +62,24 @@
         "source": "NIFC WFIGS",
         "distance_miles": 36.3,
         "threat_level": "Vicinity"
+      },
+      {
+        "title": "KING",
+        "incident_name": "KING",
+        "id": "2026-WAOWF-260699",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-08-19T23:09:24+00:00",
+        "lat": 47.4708,
+        "lon": -121.2559,
+        "acreage": 459,
+        "containment_pct": 0,
+        "cause": "Undetermined",
+        "state": "WA",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-WAOWF-260699",
+        "source": "NIFC WFIGS",
+        "distance_miles": 27.0,
+        "threat_level": "Vicinity"
       }
     ],
     "transit": [],
@@ -59,41 +88,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 4,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 1,
+      "precip_in_24h": 0.04,
+      "precip_probability_pct": 49,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 76.0,
-      "low_temp_f": 61.0,
-      "high_apparent_temp_f": 76.0,
-      "low_apparent_temp_f": 61.0,
+      "high_temp_f": 75.0,
+      "low_temp_f": 57.0,
+      "high_apparent_temp_f": 75.0,
+      "low_apparent_temp_f": 57.0,
       "max_wind_mph": 3.5,
-      "max_wind_gust_mph": 5.8,
-      "thunder_probability_pct": 1,
+      "max_wind_gust_mph": 6.9,
+      "thunder_probability_pct": 17,
       "lightning_activity_level": null,
       "weather": [
         "light rain",
-        "moderate rain"
+        "light rain showers",
+        "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 82,
+      "us_aqi": 75,
       "category": "Moderate",
-      "aqi_24h_max": 96,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 27.5,
-      "pm10": 28.0,
-      "ozone": 40.0,
-      "nitrogen_dioxide": 36.8,
-      "observed_at": "2026-08-21T08:00",
+      "aqi_24h_max": 111,
+      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+      "pm2_5": 17.2,
+      "pm10": 17.6,
+      "ozone": 67.0,
+      "nitrogen_dioxide": 18.1,
+      "observed_at": "2026-08-22T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-21",
-  "generated_at": "2026-08-21T08:14:59.165048+00:00"
+  "date": "2026-08-22",
+  "generated_at": "2026-08-22T08:02:54.738902+00:00"
 }

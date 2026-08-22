@@ -8,7 +8,18 @@
     "lon": -115.467337
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 21 at 5:20PM MDT until August 23 at 12:00AM MDT by NWS Boise ID",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-21T12:41:00-06:00",
+        "expires": "2026-08-22T15:00:00-06:00",
+        "source": "nws_alert",
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -35,6 +46,24 @@
         "threat_level": "Vicinity"
       },
       {
+        "title": "Wolf Creek",
+        "incident_name": "Wolf Creek",
+        "id": "2026-IDNCF-000295",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-07-17T23:27:16+00:00",
+        "lat": 46.0849,
+        "lon": -115.1303,
+        "acreage": 850,
+        "containment_pct": 25,
+        "cause": "Undetermined",
+        "state": "ID",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDNCF-000295",
+        "source": "NIFC WFIGS",
+        "distance_miles": 21.7,
+        "threat_level": "Vicinity"
+      },
+      {
         "title": "Cascade",
         "incident_name": "Cascade",
         "id": "2026-IDNCF-000283",
@@ -43,7 +72,7 @@
         "date": "2026-07-17T15:46:00+00:00",
         "lat": 46.0956,
         "lon": -115.1353,
-        "acreage": 4100,
+        "acreage": 3875,
         "containment_pct": 50,
         "cause": "Natural",
         "state": "ID",
@@ -61,7 +90,7 @@
         "date": "2026-07-24T21:57:23+00:00",
         "lat": 46.1498,
         "lon": -115.1177,
-        "acreage": 510,
+        "acreage": 496,
         "containment_pct": 0,
         "cause": "Natural",
         "state": "ID",
@@ -97,7 +126,7 @@
         "date": "2026-07-25T19:32:50+00:00",
         "lat": 46.4873,
         "lon": -115.3981,
-        "acreage": 740,
+        "acreage": 367,
         "containment_pct": 0,
         "cause": "Natural",
         "state": "ID",
@@ -115,7 +144,7 @@
         "date": "2026-07-29T23:42:01+00:00",
         "lat": 46.2559,
         "lon": -115.0937,
-        "acreage": 1000,
+        "acreage": 905,
         "containment_pct": 0,
         "cause": "Undetermined",
         "state": "ID",
@@ -133,31 +162,13 @@
         "date": "2026-07-30T00:02:00+00:00",
         "lat": 46.7749,
         "lon": -115.2167,
-        "acreage": 3249,
+        "acreage": 3707,
         "containment_pct": 7,
         "cause": "Natural",
         "state": "ID",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDNCF-000349",
         "source": "NIFC WFIGS",
         "distance_miles": 35.3,
-        "threat_level": "Vicinity"
-      },
-      {
-        "title": "Eggo",
-        "incident_name": "Eggo",
-        "id": "2026-OR974S-000423",
-        "category": "wildfire",
-        "incident_type": "Wildfire",
-        "date": "2026-08-01T23:29:00+00:00",
-        "lat": 45.6696,
-        "lon": -117.0871,
-        "acreage": 4225,
-        "containment_pct": 95,
-        "cause": "Human",
-        "state": "OR",
-        "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR974S-000423",
-        "source": "NIFC WFIGS",
-        "distance_miles": 48.9,
         "threat_level": "Vicinity"
       }
     ],
@@ -167,43 +178,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 8,
+  "alert_count": 9,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 9,
+      "precip_in_24h": 0.03,
+      "precip_probability_pct": 43,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 102.0,
-      "low_temp_f": 52.0,
+      "low_temp_f": 56.0,
       "high_apparent_temp_f": 98.0,
-      "low_apparent_temp_f": 52.0,
-      "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": 8,
+      "low_apparent_temp_f": 56.0,
+      "max_wind_mph": 9.2,
+      "max_wind_gust_mph": 16.1,
+      "thunder_probability_pct": 25,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
+        "smoke",
         "thunderstorms",
-        "light rain",
-        "smoke"
+        "light rain showers",
+        "light rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 53,
+      "us_aqi": 69,
       "category": "Moderate",
-      "aqi_24h_max": 88,
+      "aqi_24h_max": 74,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 11.8,
-      "pm10": 12.3,
-      "ozone": 80.0,
-      "nitrogen_dioxide": 8.1,
-      "observed_at": "2026-08-21T08:00",
+      "pm2_5": 27.9,
+      "pm10": 29.3,
+      "ozone": 70.0,
+      "nitrogen_dioxide": 7.7,
+      "observed_at": "2026-08-22T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-21",
-  "generated_at": "2026-08-21T08:14:59.165048+00:00"
+  "date": "2026-08-22",
+  "generated_at": "2026-08-22T08:02:54.738902+00:00"
 }

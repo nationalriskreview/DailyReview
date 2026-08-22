@@ -8,7 +8,18 @@
     "lon": -114.772135
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 21 at 5:20PM MDT until August 23 at 12:00AM MDT by NWS Boise ID",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-21T12:41:00-06:00",
+        "expires": "2026-08-22T15:00:00-06:00",
+        "source": "nws_alert",
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,10 +33,10 @@
         "id": "2026-IDBOF-000958",
         "category": "wildfire",
         "incident_type": "Wildfire",
-        "date": "2026-08-18T23:38:23+00:00",
+        "date": "2026-08-18T23:38:00+00:00",
         "lat": 43.8472,
         "lon": -115.5396,
-        "acreage": 250,
+        "acreage": 1038,
         "containment_pct": 0,
         "cause": "Human",
         "state": "ID",
@@ -41,40 +52,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 1,
+      "precip_in_24h": 0.02,
+      "precip_probability_pct": 32,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 84.0,
-      "low_temp_f": 63.0,
-      "high_apparent_temp_f": 81.0,
-      "low_apparent_temp_f": 63.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 20.7,
-      "thunder_probability_pct": 1,
+      "high_temp_f": 83.0,
+      "low_temp_f": 61.0,
+      "high_apparent_temp_f": 80.0,
+      "low_apparent_temp_f": 61.0,
+      "max_wind_mph": 23.0,
+      "max_wind_gust_mph": 33.4,
+      "thunder_probability_pct": 26,
       "lightning_activity_level": null,
       "weather": [
-        "smoke"
+        "thunderstorms",
+        "light rain showers",
+        "blowing dust"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 34,
+      "us_aqi": 32,
       "category": "Good",
-      "aqi_24h_max": 49,
+      "aqi_24h_max": 45,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 5.3,
-      "pm10": 5.9,
-      "ozone": 42.0,
-      "nitrogen_dioxide": 10.8,
-      "observed_at": "2026-08-21T08:00",
+      "pm2_5": 2.8,
+      "pm10": 3.9,
+      "ozone": 46.0,
+      "nitrogen_dioxide": 5.9,
+      "observed_at": "2026-08-22T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-21",
-  "generated_at": "2026-08-21T08:14:59.165048+00:00"
+  "date": "2026-08-22",
+  "generated_at": "2026-08-22T08:02:54.738902+00:00"
 }

@@ -8,7 +8,18 @@
     "lon": -117.227781
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 22 at 12:13AM PDT until August 22 at 10:00PM PDT by NWS Spokane WA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-21T11:57:00-07:00",
+        "expires": "2026-08-22T15:00:00-07:00",
+        "source": "nws_alert",
+        "count": 3
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,10 +33,10 @@
         "id": "2026-ORUMF-000302",
         "category": "wildfire",
         "incident_type": "Wildfire",
-        "date": "2026-07-16T19:38:30+00:00",
+        "date": "2026-07-16T19:38:00+00:00",
         "lat": 45.9981,
         "lon": -117.9743,
-        "acreage": 6745,
+        "acreage": 7028,
         "containment_pct": 0,
         "cause": "Natural",
         "state": "OR",
@@ -51,24 +62,6 @@
         "source": "NIFC WFIGS",
         "distance_miles": 28.6,
         "threat_level": "Vicinity"
-      },
-      {
-        "title": "Eggo",
-        "incident_name": "Eggo",
-        "id": "2026-OR974S-000423",
-        "category": "wildfire",
-        "incident_type": "Wildfire",
-        "date": "2026-08-01T23:29:00+00:00",
-        "lat": 45.6696,
-        "lon": -117.0871,
-        "acreage": 4225,
-        "containment_pct": 95,
-        "cause": "Human",
-        "state": "OR",
-        "source_url": "https://irwin.doi.gov/observer/incidents/2026-OR974S-000423",
-        "source": "NIFC WFIGS",
-        "distance_miles": 36.0,
-        "threat_level": "Vicinity"
       }
     ],
     "transit": [],
@@ -80,40 +73,40 @@
   "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 4,
+      "precip_in_24h": 0.02,
+      "precip_probability_pct": 17,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 93.0,
-      "low_temp_f": 68.0,
+      "low_temp_f": 72.0,
       "high_apparent_temp_f": 89.0,
-      "low_apparent_temp_f": 68.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 12.7,
-      "thunder_probability_pct": 3,
+      "low_apparent_temp_f": 72.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 16.1,
+      "thunder_probability_pct": 16,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
         "haze",
         "smoke",
+        "light rain showers",
         "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 85,
+      "us_aqi": 55,
       "category": "Moderate",
-      "aqi_24h_max": 112,
-      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-      "pm2_5": 10.4,
-      "pm10": 10.7,
-      "ozone": 82.0,
-      "nitrogen_dioxide": 6.8,
-      "observed_at": "2026-08-21T08:00",
+      "aqi_24h_max": 68,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 16.9,
+      "pm10": 17.4,
+      "ozone": 56.0,
+      "nitrogen_dioxide": 6.6,
+      "observed_at": "2026-08-22T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-21",
-  "generated_at": "2026-08-21T08:14:59.165048+00:00"
+  "date": "2026-08-22",
+  "generated_at": "2026-08-22T08:02:54.738902+00:00"
 }
