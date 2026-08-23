@@ -8,25 +8,33 @@
     "lon": -114.82142
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued August 21 at 5:20PM MDT until August 23 at 12:00AM MDT by NWS Boise ID",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-08-21T17:20:00-06:00",
-        "expires": "2026-08-22T15:00:00-06:00",
-        "source": "nws_alert",
-        "count": 1
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Shale Butte",
+        "incident_name": "Shale Butte",
+        "id": "2026-IDTFD-000206",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-08-22T23:44:05+00:00",
+        "lat": 42.9616,
+        "lon": -113.8483,
+        "acreage": 1000,
+        "containment_pct": 0,
+        "cause": "Natural",
+        "state": "ID",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDTFD-000206",
+        "source": "NIFC WFIGS",
+        "distance_miles": 49.2,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
@@ -37,21 +45,20 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 21,
+      "precip_probability_pct": 20,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 100.0,
-      "low_temp_f": 69.0,
-      "high_apparent_temp_f": 96.0,
-      "low_apparent_temp_f": 69.0,
-      "max_wind_mph": 28.8,
-      "max_wind_gust_mph": 40.3,
-      "thunder_probability_pct": 16,
+      "high_temp_f": 89.0,
+      "low_temp_f": 63.0,
+      "high_apparent_temp_f": 86.0,
+      "low_apparent_temp_f": 63.0,
+      "max_wind_mph": 13.8,
+      "max_wind_gust_mph": 21.9,
+      "thunder_probability_pct": 14,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
-        "light rain showers",
-        "blowing dust"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
@@ -61,14 +68,14 @@
       "category": "Good",
       "aqi_24h_max": 46,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.2,
-      "pm10": 6.1,
+      "pm2_5": 4.5,
+      "pm10": 6.0,
       "ozone": 55.0,
-      "nitrogen_dioxide": 8.0,
-      "observed_at": "2026-08-22T07:00",
+      "nitrogen_dioxide": 8.7,
+      "observed_at": "2026-08-23T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-22",
-  "generated_at": "2026-08-22T08:02:54.738902+00:00"
+  "date": "2026-08-23",
+  "generated_at": "2026-08-23T08:00:23.607074+00:00"
 }
