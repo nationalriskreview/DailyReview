@@ -10,14 +10,10 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Warning",
-        "headline": "Extreme Heat Warning issued August 22 at 3:31PM PDT until August 23 at 8:00PM PDT by NWS Las Vegas NV",
+        "event": "Extreme Heat Forecast",
+        "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
         "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-08-22T15:31:00-07:00",
-        "expires": "2026-08-23T05:15:00-07:00",
-        "source": "nws_alert",
-        "count": 1
+        "source": "nws_forecast"
       }
     ],
     "protest": [],
@@ -37,34 +33,37 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 6,
+      "precip_probability_pct": 20,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 114.0,
+      "high_temp_f": 112.0,
       "low_temp_f": 74.0,
-      "high_apparent_temp_f": 108.0,
+      "high_apparent_temp_f": 107.0,
       "low_apparent_temp_f": 74.0,
-      "max_wind_mph": 21.9,
+      "max_wind_mph": 24.2,
       "max_wind_gust_mph": 32.2,
-      "thunder_probability_pct": 6,
+      "thunder_probability_pct": 13,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "thunderstorms",
+        "light rain showers"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 50,
+      "us_aqi": 45,
       "category": "Good",
-      "aqi_24h_max": 62,
+      "aqi_24h_max": 61,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 6.5,
-      "pm10": 8.0,
-      "ozone": 101.0,
-      "nitrogen_dioxide": 3.8,
-      "observed_at": "2026-08-23T07:00",
+      "pm2_5": 4.5,
+      "pm10": 7.4,
+      "ozone": 82.0,
+      "nitrogen_dioxide": 4.4,
+      "observed_at": "2026-08-24T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-23",
-  "generated_at": "2026-08-23T08:00:23.607074+00:00"
+  "date": "2026-08-24",
+  "generated_at": "2026-08-24T08:18:13.915810+00:00"
 }

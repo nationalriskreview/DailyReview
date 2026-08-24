@@ -10,14 +10,24 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Warning",
-        "headline": "Extreme Heat Warning issued August 22 at 11:02AM MST until August 29 at 8:00PM MST by NWS Tucson AZ",
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued August 24 at 12:14AM MST until August 24 at 1:30AM MST by NWS Tucson AZ",
         "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-08-22T11:02:00-07:00",
-        "expires": "2026-08-23T05:45:00-07:00",
+        "urgency": "Immediate",
+        "effective": "2026-08-24T00:14:00-07:00",
+        "expires": "2026-08-24T01:30:00-07:00",
         "source": "nws_alert",
         "count": 1
+      },
+      {
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued August 23 at 11:45AM MST until August 29 at 8:00PM MST by NWS Tucson AZ",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-23T11:45:00-07:00",
+        "expires": "2026-08-24T05:00:00-07:00",
+        "source": "nws_alert",
+        "count": 2
       }
     ],
     "protest": [],
@@ -33,42 +43,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.04,
-      "precip_probability_pct": 38,
+      "precip_in_24h": 0.17,
+      "precip_probability_pct": 49,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 106.0,
-      "low_temp_f": 79.0,
+      "high_temp_f": 104.0,
+      "low_temp_f": 77.0,
       "high_apparent_temp_f": 104.0,
-      "low_apparent_temp_f": 79.0,
-      "max_wind_mph": 10.4,
-      "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": 38,
+      "low_apparent_temp_f": 77.0,
+      "max_wind_mph": 15.0,
+      "max_wind_gust_mph": 20.7,
+      "thunder_probability_pct": 41,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
         "light rain showers",
-        "blowing dust"
+        "blowing dust",
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 37,
+      "us_aqi": 32,
       "category": "Good",
-      "aqi_24h_max": 62,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 4.8,
-      "pm10": 7.0,
-      "ozone": 42.0,
-      "nitrogen_dioxide": 2.8,
-      "observed_at": "2026-08-23T07:00",
+      "aqi_24h_max": 44,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 8.2,
+      "pm10": 18.5,
+      "ozone": 45.0,
+      "nitrogen_dioxide": 1.8,
+      "observed_at": "2026-08-24T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-23",
-  "generated_at": "2026-08-23T08:00:23.607074+00:00"
+  "date": "2026-08-24",
+  "generated_at": "2026-08-24T08:18:13.915810+00:00"
 }

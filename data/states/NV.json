@@ -1,10 +1,10 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-23T08:00:23.607074+00:00",
-  "date": "2026-08-23",
+  "generated_at": "2026-08-24T08:18:13.915810+00:00",
+  "date": "2026-08-24",
   "state": "NV",
   "counties_total": 17,
-  "counties_with_alerts": 10,
+  "counties_with_alerts": 11,
   "counties": {
     "32001": {
       "fips": "32001",
@@ -13,7 +13,21 @@
       "alerts": {
         "weather": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Hawk Fire burns 15,000+ acres; 10,000 without power; human-caused",
+            "url": "https://www.2news.com/news/fire/hawk-fire-burns-15-000-acres-10-000-without-power-human-caused/article_fdf51688-9d3a-4089-9254-b50a2927f3b5.html",
+            "domain": "2news.com",
+            "seendate": "20260824010000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.2news.com/news/fire/hawk-fire-burns-15-000-acres-10-000-without-power-human-caused/article_fdf51688-9d3a-4089-9254-b50a2927f3b5.html",
+                "domain": "2news.com"
+              }
+            ]
+          }
+        ],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
@@ -47,7 +61,7 @@
             "lat": 39.8299,
             "lon": -117.6762,
             "acreage": 24513,
-            "containment_pct": 82,
+            "containment_pct": 92,
             "cause": "Natural",
             "state": "NV",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVCCD-030721",
@@ -62,38 +76,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 19,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 25,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 96.0,
           "low_temp_f": 60.0,
           "high_apparent_temp_f": 92.0,
           "low_apparent_temp_f": 60.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 14,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 16,
           "lightning_activity_level": null,
           "weather": [
+            "smoke",
             "light rain showers",
-            "smoke"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 38,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.2,
-          "pm10": 2.3,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 2.9,
-          "observed_at": "2026-08-23T07:00",
+          "pm2_5": 2.5,
+          "pm10": 2.9,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 2.5,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -103,18 +118,7 @@
       "name": "Clark County",
       "state": "NV",
       "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Warning",
-            "headline": "Extreme Heat Warning issued August 22 at 3:31PM PDT until August 23 at 8:00PM PDT by NWS Las Vegas NV",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-08-22T15:31:00-07:00",
-            "expires": "2026-08-23T05:15:00-07:00",
-            "source": "nws_alert",
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -128,20 +132,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 7,
+          "precip_probability_pct": 23,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 110.0,
-          "low_temp_f": 63.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 7,
+          "high_temp_f": 108.0,
+          "low_temp_f": 64.0,
+          "high_apparent_temp_f": 101.0,
+          "low_apparent_temp_f": 64.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 18,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -153,13 +157,13 @@
         "air_quality": {
           "us_aqi": 45,
           "category": "Good",
-          "aqi_24h_max": 74,
+          "aqi_24h_max": 82,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.9,
-          "pm10": 7.2,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 10.6,
-          "observed_at": "2026-08-23T07:00",
+          "pm2_5": 6.6,
+          "pm10": 7.8,
+          "ozone": 56.0,
+          "nitrogen_dioxide": 10.1,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -176,42 +180,61 @@
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Hawk",
+            "incident_name": "Hawk",
+            "id": "2026-NVRNOX-030739",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-08-22T18:23:15+00:00",
+            "lat": 39.5425,
+            "lon": -119.9523,
+            "acreage": 15051,
+            "containment_pct": 0,
+            "cause": "Undetermined",
+            "state": "NV",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVRNOX-030739",
+            "source": "NIFC WFIGS",
+            "distance_miles": 47.7,
+            "threat_level": "Vicinity"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 8,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 84.0,
-          "low_temp_f": 59.0,
+          "low_temp_f": 60.0,
           "high_apparent_temp_f": 81.0,
-          "low_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 60.0,
           "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": 8,
+          "max_wind_gust_mph": 26.5,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 35,
+          "us_aqi": 32,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 43,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.7,
-          "pm10": 3.0,
-          "ozone": 36.0,
-          "nitrogen_dioxide": 5.1,
-          "observed_at": "2026-08-23T07:00",
+          "pm2_5": 3.5,
+          "pm10": 3.9,
+          "ozone": 27.0,
+          "nitrogen_dioxide": 7.0,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -228,46 +251,64 @@
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [],
+        "wildfires": [
+          {
+            "title": "Master",
+            "incident_name": "Master",
+            "id": "2026-NVECFX-010499",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-08-24T00:16:29+00:00",
+            "lat": 41.1063,
+            "lon": -115.2026,
+            "acreage": 446,
+            "containment_pct": 50,
+            "cause": "Undetermined",
+            "state": "NV",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVECFX-010499",
+            "source": "NIFC WFIGS",
+            "distance_miles": 8.1,
+            "threat_level": "Immediate"
+          }
+        ],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.07,
-          "precip_probability_pct": 53,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 45,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 89.0,
           "low_temp_f": 51.0,
           "high_apparent_temp_f": 85.0,
           "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 30,
+          "max_wind_mph": 26.5,
+          "max_wind_gust_mph": 47.2,
+          "thunder_probability_pct": 29,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 44,
+          "us_aqi": 42,
           "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 3.1,
-          "pm10": 4.9,
-          "ozone": 74.0,
-          "nitrogen_dioxide": 3.4,
-          "observed_at": "2026-08-23T07:00",
+          "aqi_24h_max": 52,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 4.7,
+          "pm10": 5.0,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 5.1,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -295,31 +336,31 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 9,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 66.0,
-          "high_apparent_temp_f": 93.0,
-          "low_apparent_temp_f": 66.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 9,
+          "high_temp_f": 97.0,
+          "low_temp_f": 65.0,
+          "high_apparent_temp_f": 92.0,
+          "low_apparent_temp_f": 65.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 43,
+          "us_aqi": 42,
           "category": "Good",
           "aqi_24h_max": 47,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.7,
-          "pm10": 3.0,
-          "ozone": 71.0,
+          "pm2_5": 1.9,
+          "pm10": 3.2,
+          "ozone": 79.0,
           "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-08-23T07:00",
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -346,36 +387,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.08,
-          "precip_probability_pct": 42,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 37,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 87.0,
-          "low_temp_f": 52.0,
+          "low_temp_f": 53.0,
           "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 26,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 36.8,
+          "thunder_probability_pct": 18,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
+          "us_aqi": 36,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 49,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.2,
-          "pm10": 7.7,
-          "ozone": 57.0,
-          "nitrogen_dioxide": 6.1,
-          "observed_at": "2026-08-23T07:00",
+          "pm2_5": 4.5,
+          "pm10": 4.9,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 4.6,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -403,31 +443,31 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 6,
+          "precip_probability_pct": 9,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 27.6,
-          "thunder_probability_pct": 8,
+          "high_temp_f": 93.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 89.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": 9,
           "lightning_activity_level": null,
           "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 37,
+          "us_aqi": 36,
           "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 12.4,
-          "pm10": 85.7,
-          "ozone": 57.0,
-          "nitrogen_dioxide": 2.4,
-          "observed_at": "2026-08-23T07:00",
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 5.4,
+          "pm10": 25.4,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -455,7 +495,7 @@
             "lat": 39.8299,
             "lon": -117.6762,
             "acreage": 24513,
-            "containment_pct": 82,
+            "containment_pct": 92,
             "cause": "Natural",
             "state": "NV",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVCCD-030721",
@@ -473,37 +513,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 46,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 39,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 91.0,
-          "low_temp_f": 59.0,
+          "low_temp_f": 60.0,
           "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 59.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 24,
+          "low_apparent_temp_f": 60.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 40.3,
+          "thunder_probability_pct": 18,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
             "light rain showers",
-            "moderate rain showers",
             "smoke"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 61,
+          "us_aqi": 54,
           "category": "Moderate",
-          "aqi_24h_max": 62,
+          "aqi_24h_max": 58,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.1,
-          "pm10": 14.4,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 7.0,
-          "observed_at": "2026-08-23T07:00",
+          "pm2_5": 10.4,
+          "pm10": 11.1,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 4.7,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -568,31 +607,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 6,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
-          "low_temp_f": 59.0,
-          "high_apparent_temp_f": 93.0,
-          "low_apparent_temp_f": 59.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 60.0,
+          "high_apparent_temp_f": 90.0,
+          "low_apparent_temp_f": 60.0,
           "max_wind_mph": 16.1,
           "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 6,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
+          "us_aqi": 49,
           "category": "Good",
-          "aqi_24h_max": 72,
+          "aqi_24h_max": 80,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 3.2,
-          "pm10": 6.1,
-          "ozone": 92.0,
-          "nitrogen_dioxide": 2.1,
-          "observed_at": "2026-08-23T07:00",
+          "pm2_5": 2.9,
+          "pm10": 4.6,
+          "ozone": 91.0,
+          "nitrogen_dioxide": 1.9,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -620,31 +662,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_probability_pct": 16,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 92.0,
           "low_temp_f": 59.0,
           "high_apparent_temp_f": 88.0,
           "low_apparent_temp_f": 59.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 5,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 8,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "light rain showers"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 40,
+          "us_aqi": 42,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.4,
-          "pm10": 2.9,
-          "ozone": 63.0,
-          "nitrogen_dioxide": 1.9,
-          "observed_at": "2026-08-23T07:00",
+          "pm2_5": 4.7,
+          "pm10": 5.2,
+          "ozone": 80.0,
+          "nitrogen_dioxide": 3.2,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -672,34 +716,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 11,
+          "precip_probability_pct": 15,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 92.0,
           "low_temp_f": 65.0,
           "high_apparent_temp_f": 88.0,
           "low_apparent_temp_f": 65.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 10,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "smoke"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 43,
+          "us_aqi": 39,
           "category": "Good",
-          "aqi_24h_max": 45,
+          "aqi_24h_max": 46,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
+          "pm2_5": 2.4,
           "pm10": 2.8,
-          "ozone": 75.0,
-          "nitrogen_dioxide": 3.0,
-          "observed_at": "2026-08-23T07:00",
+          "ozone": 59.0,
+          "nitrogen_dioxide": 3.2,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -764,34 +808,31 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 11,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 54.0,
-          "high_apparent_temp_f": 89.0,
-          "low_apparent_temp_f": 54.0,
+          "high_temp_f": 93.0,
+          "low_temp_f": 55.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 55.0,
           "max_wind_mph": 17.3,
           "max_wind_gust_mph": 28.8,
-          "thunder_probability_pct": 18,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
+          "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 45,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 60,
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 3.0,
-          "pm10": 4.1,
-          "ozone": 69.0,
-          "nitrogen_dioxide": 1.3,
-          "observed_at": "2026-08-23T07:00",
+          "pm2_5": 2.7,
+          "pm10": 6.0,
+          "ozone": 74.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -819,7 +860,7 @@
             "lat": 39.8299,
             "lon": -117.6762,
             "acreage": 24513,
-            "containment_pct": 82,
+            "containment_pct": 92,
             "cause": "Natural",
             "state": "NV",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVCCD-030721",
@@ -838,33 +879,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 14,
+          "precip_probability_pct": 16,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 95.0,
-          "low_temp_f": 61.0,
+          "low_temp_f": 63.0,
           "high_apparent_temp_f": 91.0,
-          "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 8,
+          "low_apparent_temp_f": 63.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
+          "us_aqi": 35,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.1,
+          "pm2_5": 3.0,
+          "pm10": 4.1,
           "ozone": 56.0,
-          "nitrogen_dioxide": 4.7,
-          "observed_at": "2026-08-23T07:00",
+          "nitrogen_dioxide": 7.6,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -892,7 +934,7 @@
             "lat": 39.7279,
             "lon": -120.0381,
             "acreage": 93733,
-            "containment_pct": 94,
+            "containment_pct": 97,
             "cause": "Human",
             "state": "CA",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVCCD-030683",
@@ -917,6 +959,24 @@
             "source": "NIFC WFIGS",
             "distance_miles": 26.6,
             "threat_level": "Vicinity"
+          },
+          {
+            "title": "Hawk",
+            "incident_name": "Hawk",
+            "id": "2026-NVRNOX-030739",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-08-22T18:23:15+00:00",
+            "lat": 39.5425,
+            "lon": -119.9523,
+            "acreage": 15051,
+            "containment_pct": 0,
+            "cause": "Undetermined",
+            "state": "NV",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVRNOX-030739",
+            "source": "NIFC WFIGS",
+            "distance_miles": 23.9,
+            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -925,37 +985,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_probability_pct": 11,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 84.0,
-          "low_temp_f": 57.0,
+          "low_temp_f": 58.0,
           "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 27.6,
-          "thunder_probability_pct": 5,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 9,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 31,
+          "us_aqi": 36,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 45,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.5,
-          "pm10": 4.8,
-          "ozone": 27.0,
-          "nitrogen_dioxide": 12.4,
-          "observed_at": "2026-08-23T07:00",
+          "pm2_5": 11.6,
+          "pm10": 12.4,
+          "ozone": 35.0,
+          "nitrogen_dioxide": 19.8,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -967,7 +1028,34 @@
       "alerts": {
         "weather": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "10,000 Northern Nevada customers are without power due to Hawk Fire",
+            "url": "https://www.kolotv.com/2026/08/23/10000-northern-nevada-customers-are-without-power-due-hawk-fire/",
+            "domain": "kolotv.com",
+            "seendate": "20260824004500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.kolotv.com/2026/08/23/10000-northern-nevada-customers-are-without-power-due-hawk-fire/",
+                "domain": "kolotv.com"
+              }
+            ]
+          },
+          {
+            "title": "Hawk Fire burns 15,000+ acres; 10,000 without power; human-caused",
+            "url": "https://www.2news.com/news/fire/hawk-fire-burns-15-000-acres-10-000-without-power-human-caused/article_fdf51688-9d3a-4089-9254-b50a2927f3b5.html",
+            "domain": "2news.com",
+            "seendate": "20260824010000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.2news.com/news/fire/hawk-fire-burns-15-000-acres-10-000-without-power-human-caused/article_fdf51688-9d3a-4089-9254-b50a2927f3b5.html",
+                "domain": "2news.com"
+              }
+            ]
+          }
+        ],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
@@ -983,7 +1071,7 @@
             "lat": 39.7279,
             "lon": -120.0381,
             "acreage": 93733,
-            "containment_pct": 94,
+            "containment_pct": 97,
             "cause": "Human",
             "state": "CA",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVCCD-030683",
@@ -1056,37 +1144,39 @@
         ],
         "disease": []
       },
-      "alert_count": 5,
+      "alert_count": 7,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 14,
+          "precip_probability_pct": 21,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 92.0,
-          "low_temp_f": 52.0,
+          "low_temp_f": 58.0,
           "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 36.8,
-          "thunder_probability_pct": 11,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 19,
           "lightning_activity_level": null,
           "weather": [
-            "smoke"
+            "smoke",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 31,
+          "us_aqi": 34,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 40,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.2,
-          "pm10": 1.3,
-          "ozone": 71.0,
-          "nitrogen_dioxide": 1.7,
-          "observed_at": "2026-08-23T07:00",
+          "pm2_5": 2.8,
+          "pm10": 3.0,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 2.2,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1132,17 +1222,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 43,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 13,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 56.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 55.0,
+          "high_apparent_temp_f": 83.0,
+          "low_apparent_temp_f": 55.0,
           "max_wind_mph": 18.4,
           "max_wind_gust_mph": 27.6,
-          "thunder_probability_pct": 26,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1152,15 +1242,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 48,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 71,
+          "aqi_24h_max": 61,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 1.5,
-          "pm10": 2.4,
-          "ozone": 76.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-08-23T07:00",
+          "pm2_5": 2.5,
+          "pm10": 4.2,
+          "ozone": 74.0,
+          "nitrogen_dioxide": 5.0,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1188,7 +1278,7 @@
             "lat": 39.7279,
             "lon": -120.0381,
             "acreage": 93733,
-            "containment_pct": 94,
+            "containment_pct": 97,
             "cause": "Human",
             "state": "CA",
             "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVCCD-030683",
@@ -1213,6 +1303,24 @@
             "source": "NIFC WFIGS",
             "distance_miles": 47.8,
             "threat_level": "Vicinity"
+          },
+          {
+            "title": "Hawk",
+            "incident_name": "Hawk",
+            "id": "2026-NVRNOX-030739",
+            "category": "wildfire",
+            "incident_type": "Wildfire",
+            "date": "2026-08-22T18:23:15+00:00",
+            "lat": 39.5425,
+            "lon": -119.9523,
+            "acreage": 15051,
+            "containment_pct": 0,
+            "cause": "Undetermined",
+            "state": "NV",
+            "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVRNOX-030739",
+            "source": "NIFC WFIGS",
+            "distance_miles": 29.1,
+            "threat_level": "Vicinity"
           }
         ],
         "transit": [],
@@ -1221,37 +1329,35 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 6,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 91.0,
-          "low_temp_f": 57.0,
+          "low_temp_f": 58.0,
           "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 15.0,
+          "low_apparent_temp_f": 58.0,
+          "max_wind_mph": 13.8,
           "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 3,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
-          "weather": [
-            "smoke"
-          ],
+          "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 42,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 44,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.0,
-          "pm10": 3.3,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 4.3,
-          "observed_at": "2026-08-23T07:00",
+          "pm2_5": 5.5,
+          "pm10": 6.1,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 5.9,
+          "observed_at": "2026-08-24T08:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

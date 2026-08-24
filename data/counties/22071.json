@@ -8,21 +8,33 @@
     "lon": -89.934502
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
-        "severity": "Severe",
-        "source": "nws_forecast"
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Hancock - Texas Flat Road",
+        "incident_name": "Hancock - Texas Flat Road",
+        "id": "2026-MSMSS-018407",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-08-21T20:15:00+00:00",
+        "lat": 30.4561,
+        "lon": -89.6183,
+        "acreage": 408,
+        "containment_pct": 80,
+        "cause": "Undetermined",
+        "state": "MS",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-MSMSS-018407",
+        "source": "NIFC WFIGS",
+        "distance_miles": 33.6,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
@@ -32,20 +44,21 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 18,
+      "precip_in_24h": 0.17,
+      "precip_probability_pct": 49,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 96.0,
+      "high_temp_f": 91.0,
       "low_temp_f": 82.0,
-      "high_apparent_temp_f": 109.0,
-      "low_apparent_temp_f": 91.0,
-      "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 9.2,
-      "thunder_probability_pct": 18,
+      "high_apparent_temp_f": 105.0,
+      "low_apparent_temp_f": 90.0,
+      "max_wind_mph": 9.2,
+      "max_wind_gust_mph": 12.7,
+      "thunder_probability_pct": 49,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
+        "moderate rain showers",
         "light rain showers"
       ],
       "window": "next 24h",
@@ -54,16 +67,16 @@
     "air_quality": {
       "us_aqi": 65,
       "category": "Moderate",
-      "aqi_24h_max": 150,
-      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-      "pm2_5": 19.5,
-      "pm10": 25.9,
-      "ozone": 67.0,
-      "nitrogen_dioxide": 13.4,
-      "observed_at": "2026-08-23T07:00",
+      "aqi_24h_max": 153,
+      "aqi_24h_max_category": "Unhealthy",
+      "pm2_5": 15.7,
+      "pm10": 20.4,
+      "ozone": 57.0,
+      "nitrogen_dioxide": 11.1,
+      "observed_at": "2026-08-24T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-23",
-  "generated_at": "2026-08-23T08:00:23.607074+00:00"
+  "date": "2026-08-24",
+  "generated_at": "2026-08-24T08:18:13.915810+00:00"
 }

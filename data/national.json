@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-23T08:00:23.607074+00:00",
-  "date": "2026-08-23",
+  "generated_at": "2026-08-24T08:18:13.915810+00:00",
+  "date": "2026-08-24",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 185
+      "counties_with_alerts": 154
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 240
+      "counties_over_threshold": 253
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 14,
+      "counties_with_matches": 24,
       "items_pre_llm": {
-        "protest": 12,
-        "utility_outage": 5,
+        "protest": 22,
+        "utility_outage": 13,
         "transit_disruption": 0,
-        "service_provider_outage": 0,
+        "service_provider_outage": 1,
         "hazmat_incident": 0,
-        "road_closure": 1
+        "road_closure": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 4,
+      "counties_with_matches": 12,
       "items_post_llm": {
         "protest": 0,
-        "utility_outage": 5,
+        "utility_outage": 12,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 1
+        "road_closure": 2
       },
-      "unique_articles": 11,
-      "calls_used": 11,
+      "unique_articles": 22,
+      "calls_used": 22,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 258
+      "counties_with_alerts": 293
     },
     "transit": {
       "status": "ok",
@@ -143,7 +143,7 @@
     },
     "disease_cdc_outbreaks": {
       "status": "ok",
-      "items": 0
+      "items": 1
     },
     "disease_wastewater": {
       "status": "ok",
@@ -221,7 +221,7 @@
           "key": "anthropic",
           "name": "Anthropic",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "oracle",
@@ -305,7 +305,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "r3wn",
@@ -347,7 +347,15 @@
     "skipped": []
   },
   "cdc_han": [],
-  "cdc_outbreaks": [],
+  "cdc_outbreaks": [
+    {
+      "title": "Measles Outbreaks 2025",
+      "url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=285676&c=396725",
+      "published": "Wed, 01 Jan 2025 13:10:00 GMT",
+      "summary": "Measles Outbreaks 2025",
+      "source": "CDC Outbreaks (US-based)"
+    }
+  ],
   "notifiable_disease_alerts": [
     {
       "state": "Kansas",
@@ -624,12 +632,23 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Minor Service Outage",
+      "title": "DO and D1 are degraded in Hong Kong and Singapore",
       "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "status": "monitoring",
+      "started": "2026-08-24T03:53:58.000Z",
+      "updated": "2026-08-24T06:42:39.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/ksy4vxmbkfdk",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Anthropic",
+      "key": "anthropic",
+      "title": "Elevated errors for multiple models",
+      "impact": "major",
+      "status": "identified",
+      "started": "2026-08-24T05:06:39.483Z",
+      "updated": "2026-08-24T07:47:26.961Z",
+      "url": "https://stspg.io/5kzdprb1xsbx",
       "source": "provider status page"
     },
     {
@@ -646,21 +665,13 @@
     {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "Cortex XDR/XSIAM/CLOUD - Sporadic third-party log collection performance in the US region",
+      "title": "Partially Degraded Service",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-08-21T20:24:23.716Z",
-      "updated": "2026-08-22T18:41:13.741Z",
-      "url": "https://stspg.io/9pvpqcsjv57n",
-      "source": "provider status page"
-    },
-    {
-      "provider": "x9tz",
-      "impact": "maintenance",
-      "active_incidents": 1,
       "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
+      "started": "",
+      "updated": "",
+      "url": "https://status.paloaltonetworks.com",
+      "source": "provider status page"
     }
   ]
 }

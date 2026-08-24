@@ -8,7 +8,14 @@
     "lon": -80.225655
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Cold Forecast",
+        "headline": "Apparent temperature expected to drop to -100.0°F in next 24h",
+        "severity": "Severe",
+        "source": "nws_forecast"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +29,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.09,
-      "precip_probability_pct": 71,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 89,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 71.0,
-      "low_temp_f": 61.0,
-      "high_apparent_temp_f": 71.0,
-      "low_apparent_temp_f": 61.0,
-      "max_wind_mph": 11.5,
-      "max_wind_gust_mph": 20.7,
-      "thunder_probability_pct": 36,
+      "high_temp_f": 70.0,
+      "low_temp_f": -100.0,
+      "high_apparent_temp_f": 70.0,
+      "low_apparent_temp_f": -100.0,
+      "max_wind_mph": 9.2,
+      "max_wind_gust_mph": 17.3,
+      "thunder_probability_pct": 13,
       "lightning_activity_level": null,
       "weather": [
-        "thunderstorms",
-        "light rain showers"
+        "light rain showers",
+        "fog",
+        "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 47,
+      "us_aqi": 48,
       "category": "Good",
-      "aqi_24h_max": 54,
+      "aqi_24h_max": 52,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 3.4,
-      "pm10": 3.4,
-      "ozone": 70.0,
-      "nitrogen_dioxide": 3.0,
-      "observed_at": "2026-08-23T07:00",
+      "pm2_5": 11.5,
+      "pm10": 11.6,
+      "ozone": 50.0,
+      "nitrogen_dioxide": 4.6,
+      "observed_at": "2026-08-24T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-23",
-  "generated_at": "2026-08-23T08:00:23.607074+00:00"
+  "date": "2026-08-24",
+  "generated_at": "2026-08-24T08:18:13.915810+00:00"
 }
