@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-24T08:18:13.915810+00:00",
-  "date": "2026-08-24",
+  "generated_at": "2026-08-25T08:14:10.615202+00:00",
+  "date": "2026-08-25",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 154
+      "counties_with_alerts": 90
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 253
+      "counties_over_threshold": 221
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 24,
+      "counties_with_matches": 48,
       "items_pre_llm": {
-        "protest": 22,
-        "utility_outage": 13,
-        "transit_disruption": 0,
-        "service_provider_outage": 1,
-        "hazmat_incident": 0,
-        "road_closure": 2
+        "protest": 28,
+        "utility_outage": 21,
+        "transit_disruption": 11,
+        "service_provider_outage": 0,
+        "hazmat_incident": 7,
+        "road_closure": 4
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 12,
+      "counties_with_matches": 22,
       "items_post_llm": {
-        "protest": 0,
-        "utility_outage": 12,
-        "transit_disruption": 0,
+        "protest": 12,
+        "utility_outage": 9,
+        "transit_disruption": 1,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
+        "hazmat_incident": 3,
         "road_closure": 2
       },
-      "unique_articles": 22,
-      "calls_used": 22,
+      "unique_articles": 35,
+      "calls_used": 35,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 293
+      "counties_with_alerts": 300
     },
     "transit": {
       "status": "ok",
@@ -135,7 +135,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 138
+      "counties_with_alerts": 137
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 4,
+      "active_incidents": 2,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -221,7 +221,7 @@
           "key": "anthropic",
           "name": "Anthropic",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "oracle",
@@ -239,7 +239,7 @@
           "key": "dropbox",
           "name": "Dropbox",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "atlassian",
@@ -632,34 +632,12 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "DO and D1 are degraded in Hong Kong and Singapore",
+      "title": "Increased Latency",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-08-24T03:53:58.000Z",
-      "updated": "2026-08-24T06:42:39.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/ksy4vxmbkfdk",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Anthropic",
-      "key": "anthropic",
-      "title": "Elevated errors for multiple models",
-      "impact": "major",
       "status": "identified",
-      "started": "2026-08-24T05:06:39.483Z",
-      "updated": "2026-08-24T07:47:26.961Z",
-      "url": "https://stspg.io/5kzdprb1xsbx",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Dropbox",
-      "key": "dropbox",
-      "title": "Partially Degraded Service",
-      "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.dropbox.com",
+      "started": "2026-08-24T20:38:27.000Z",
+      "updated": "2026-08-24T22:24:02.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/d68x0kzjwhqf",
       "source": "provider status page"
     },
     {

@@ -8,7 +8,18 @@
     "lon": -116.459011
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued August 24 at 7:24AM PDT until August 28 at 8:00PM PDT by NWS Las Vegas NV",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-24T07:24:00-07:00",
+        "expires": "2026-08-25T04:00:00-07:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -26,7 +37,7 @@
         "lat": 37.2667,
         "lon": -116.1576,
         "acreage": 52000,
-        "containment_pct": 80,
+        "containment_pct": 90,
         "cause": "Undetermined",
         "state": "NV",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVNAFQ-500729",
@@ -59,38 +70,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 4,
+      "precip_probability_pct": 14,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 93.0,
-      "low_temp_f": 55.0,
-      "high_apparent_temp_f": 88.0,
-      "low_apparent_temp_f": 55.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 28.8,
-      "thunder_probability_pct": 4,
+      "high_temp_f": 92.0,
+      "low_temp_f": 54.0,
+      "high_apparent_temp_f": 87.0,
+      "low_apparent_temp_f": 54.0,
+      "max_wind_mph": 16.1,
+      "max_wind_gust_mph": 24.2,
+      "thunder_probability_pct": 10,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "thunderstorms",
+        "light rain showers"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 43,
+      "us_aqi": 42,
       "category": "Good",
-      "aqi_24h_max": 53,
+      "aqi_24h_max": 51,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 2.7,
-      "pm10": 6.0,
-      "ozone": 74.0,
+      "pm2_5": 3.0,
+      "pm10": 5.9,
+      "ozone": 68.0,
       "nitrogen_dioxide": 0.8,
-      "observed_at": "2026-08-24T08:00",
+      "observed_at": "2026-08-25T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-24",
-  "generated_at": "2026-08-24T08:18:13.915810+00:00"
+  "date": "2026-08-25",
+  "generated_at": "2026-08-25T08:14:10.615202+00:00"
 }

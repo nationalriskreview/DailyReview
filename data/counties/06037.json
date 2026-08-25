@@ -8,23 +8,48 @@
     "lon": -118.261862
   },
   "alerts": {
-    "weather": [],
-    "protest": [],
-    "utility_outage": [
+    "weather": [
       {
-        "title": "Power outage reported in Long Beach affects over 20,000 residents",
-        "url": "https://www.nbclosangeles.com/news/local/power-outage-reported-in-long-beach-affects-over-20000-residents/3932853/",
-        "domain": "nbclosangeles.com",
-        "seendate": "20260824064500",
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued August 25 at 12:02AM PDT until August 28 at 8:00PM PDT by NWS Los Angeles/Oxnard CA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-25T00:02:00-07:00",
+        "expires": "2026-08-25T17:00:00-07:00",
+        "source": "nws_alert",
+        "count": 3
+      },
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 24 at 1:46PM PDT until August 28 at 3:00PM PDT by NWS Los Angeles/Oxnard CA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-24T13:46:00-07:00",
+        "expires": "2026-08-25T10:00:00-07:00",
+        "source": "nws_alert",
+        "count": 2
+      }
+    ],
+    "protest": [
+      {
+        "title": "Supporters rally to prevent National Archive closure",
+        "url": "https://www.mercurynews.com/2026/08/24/protestors-say-the-closing-of-national-archive-in-the-bay-area-threatens-access-to-critical-asian-american-history/",
+        "domain": "mercurynews.com",
+        "seendate": "20260825003000",
         "is_new": true,
         "sources": [
           {
-            "url": "https://www.nbclosangeles.com/news/local/power-outage-reported-in-long-beach-affects-over-20000-residents/3932853/",
-            "domain": "nbclosangeles.com"
+            "url": "https://www.mercurynews.com/2026/08/24/protestors-say-the-closing-of-national-archive-in-the-bay-area-threatens-access-to-critical-asian-american-history/",
+            "domain": "mercurynews.com"
+          },
+          {
+            "url": "https://www.eastbaytimes.com/2026/08/24/protestors-say-the-closing-of-national-archive-in-the-bay-area-threatens-access-to-critical-asian-american-history/",
+            "domain": "eastbaytimes.com"
           }
         ]
       }
     ],
+    "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -36,38 +61,38 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
       "precip_probability_pct": 2,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 104.0,
-      "low_temp_f": 67.0,
-      "high_apparent_temp_f": 103.0,
-      "low_apparent_temp_f": 67.0,
-      "max_wind_mph": 18.4,
-      "max_wind_gust_mph": 27.6,
-      "thunder_probability_pct": 1,
+      "high_temp_f": 106.0,
+      "low_temp_f": 65.0,
+      "high_apparent_temp_f": 109.0,
+      "low_apparent_temp_f": 65.0,
+      "max_wind_mph": 17.3,
+      "max_wind_gust_mph": 25.3,
+      "thunder_probability_pct": 3,
       "lightning_activity_level": null,
       "weather": [],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 78,
+      "us_aqi": 83,
       "category": "Moderate",
-      "aqi_24h_max": 87,
+      "aqi_24h_max": 95,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 27.3,
-      "pm10": 30.2,
-      "ozone": 2.0,
-      "nitrogen_dioxide": 62.5,
-      "observed_at": "2026-08-24T08:00",
+      "pm2_5": 32.1,
+      "pm10": 34.7,
+      "ozone": 4.0,
+      "nitrogen_dioxide": 66.5,
+      "observed_at": "2026-08-25T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-24",
-  "generated_at": "2026-08-24T08:18:13.915810+00:00"
+  "date": "2026-08-25",
+  "generated_at": "2026-08-25T08:14:10.615202+00:00"
 }

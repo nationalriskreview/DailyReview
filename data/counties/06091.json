@@ -10,21 +10,7 @@
   "alerts": {
     "weather": [],
     "protest": [],
-    "utility_outage": [
-      {
-        "title": "Hawk Fire burns 15,000+ acres; 10,000 without power; human-caused",
-        "url": "https://www.2news.com/news/fire/hawk-fire-burns-15-000-acres-10-000-without-power-human-caused/article_fdf51688-9d3a-4089-9254-b50a2927f3b5.html",
-        "domain": "2news.com",
-        "seendate": "20260824010000",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.2news.com/news/fire/hawk-fire-burns-15-000-acres-10-000-without-power-human-caused/article_fdf51688-9d3a-4089-9254-b50a2927f3b5.html",
-            "domain": "2news.com"
-          }
-        ]
-      }
-    ],
+    "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -76,8 +62,8 @@
         "lat": 39.5425,
         "lon": -119.9523,
         "acreage": 15051,
-        "containment_pct": 0,
-        "cause": "Undetermined",
+        "containment_pct": 27,
+        "cause": "Human",
         "state": "NV",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-NVRNOX-030739",
         "source": "NIFC WFIGS",
@@ -91,38 +77,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 4,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
       "precip_probability_pct": 1,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 70.0,
-      "low_temp_f": 51.0,
-      "high_apparent_temp_f": 70.0,
-      "low_apparent_temp_f": 51.0,
+      "high_temp_f": 69.0,
+      "low_temp_f": 49.0,
+      "high_apparent_temp_f": 69.0,
+      "low_apparent_temp_f": 45.0,
       "max_wind_mph": 11.5,
-      "max_wind_gust_mph": 28.8,
+      "max_wind_gust_mph": 27.6,
       "thunder_probability_pct": 1,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "smoke",
+        "light rain"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 38,
-      "category": "Good",
-      "aqi_24h_max": 43,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 7.6,
-      "pm10": 8.3,
-      "ozone": 60.0,
-      "nitrogen_dioxide": 15.6,
-      "observed_at": "2026-08-24T08:00",
+      "us_aqi": 118,
+      "category": "Unhealthy for Sensitive Groups",
+      "aqi_24h_max": 122,
+      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+      "pm2_5": 45.8,
+      "pm10": 47.8,
+      "ozone": 52.0,
+      "nitrogen_dioxide": 28.1,
+      "observed_at": "2026-08-25T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-24",
-  "generated_at": "2026-08-24T08:18:13.915810+00:00"
+  "date": "2026-08-25",
+  "generated_at": "2026-08-25T08:14:10.615202+00:00"
 }
