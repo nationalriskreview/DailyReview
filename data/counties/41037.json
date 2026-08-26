@@ -8,7 +8,18 @@
     "lon": -120.38979
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 25 at 5:32PM PDT until August 26 at 8:00PM PDT by NWS Medford OR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-25T17:32:00-07:00",
+        "expires": "2026-08-26T05:45:00-07:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -43,7 +54,7 @@
         "date": "2026-08-05T21:56:00+00:00",
         "lat": 42.4695,
         "lon": -121.7287,
-        "acreage": 54492,
+        "acreage": 55131,
         "containment_pct": 65,
         "cause": "Undetermined",
         "state": "OR",
@@ -79,8 +90,8 @@
         "date": "2026-08-24T22:22:29+00:00",
         "lat": 41.6892,
         "lon": -120.4657,
-        "acreage": 470,
-        "containment_pct": 0,
+        "acreage": 230,
+        "containment_pct": 15,
         "cause": "Undetermined",
         "state": "CA",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-CALMU-005311",
@@ -95,38 +106,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 4,
+  "alert_count": 5,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 13,
+      "precip_probability_pct": 14,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 89.0,
-      "low_temp_f": 49.0,
-      "high_apparent_temp_f": 85.0,
-      "low_apparent_temp_f": 47.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 26.5,
-      "thunder_probability_pct": 9,
+      "high_temp_f": 87.0,
+      "low_temp_f": 48.0,
+      "high_apparent_temp_f": 83.0,
+      "low_apparent_temp_f": 46.0,
+      "max_wind_mph": 18.4,
+      "max_wind_gust_mph": 28.8,
+      "thunder_probability_pct": 3,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "smoke"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 32,
+      "us_aqi": 30,
       "category": "Good",
-      "aqi_24h_max": 38,
+      "aqi_24h_max": 41,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 5.6,
-      "pm10": 5.9,
-      "ozone": 40.0,
-      "nitrogen_dioxide": 4.6,
-      "observed_at": "2026-08-25T08:00",
+      "pm2_5": 3.7,
+      "pm10": 3.8,
+      "ozone": 30.0,
+      "nitrogen_dioxide": 6.8,
+      "observed_at": "2026-08-26T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-25",
-  "generated_at": "2026-08-25T08:14:10.615202+00:00"
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T08:17:48.580652+00:00"
 }

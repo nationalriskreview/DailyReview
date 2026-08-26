@@ -8,7 +8,18 @@
     "lon": -120.71837
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 25 at 5:32PM PDT until August 26 at 8:00PM PDT by NWS Medford OR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-25T17:32:00-07:00",
+        "expires": "2026-08-26T05:45:00-07:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -35,6 +46,24 @@
         "threat_level": "Vicinity"
       },
       {
+        "title": "S-1 VYA",
+        "incident_name": "S-1 VYA",
+        "id": "2026-CANOD-005304",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-08-24T20:59:47+00:00",
+        "lat": 41.6303,
+        "lon": -119.916,
+        "acreage": 700,
+        "containment_pct": 0,
+        "cause": "Undetermined",
+        "state": "NV",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-CANOD-005304",
+        "source": "NIFC WFIGS",
+        "distance_miles": 41.5,
+        "threat_level": "Vicinity"
+      },
+      {
         "title": "4-1",
         "incident_name": "4-1",
         "id": "2026-CALMU-005311",
@@ -43,8 +72,8 @@
         "date": "2026-08-24T22:22:29+00:00",
         "lat": 41.6892,
         "lon": -120.4657,
-        "acreage": 470,
-        "containment_pct": 0,
+        "acreage": 230,
+        "containment_pct": 15,
         "cause": "Undetermined",
         "state": "CA",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-CALMU-005311",
@@ -59,38 +88,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 4,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 1,
+      "precip_probability_pct": 21,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 84.0,
       "low_temp_f": 53.0,
       "high_apparent_temp_f": 81.0,
       "low_apparent_temp_f": 53.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 25.3,
+      "max_wind_mph": 19.6,
+      "max_wind_gust_mph": 29.9,
       "thunder_probability_pct": 5,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "light rain"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 35,
+      "us_aqi": 36,
       "category": "Good",
-      "aqi_24h_max": 44,
+      "aqi_24h_max": 46,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 7.3,
-      "pm10": 7.6,
-      "ozone": 30.0,
-      "nitrogen_dioxide": 11.4,
-      "observed_at": "2026-08-25T08:00",
+      "pm2_5": 5.2,
+      "pm10": 5.4,
+      "ozone": 34.0,
+      "nitrogen_dioxide": 10.3,
+      "observed_at": "2026-08-26T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-25",
-  "generated_at": "2026-08-25T08:14:10.615202+00:00"
+  "date": "2026-08-26",
+  "generated_at": "2026-08-26T08:17:48.580652+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-25T08:14:10.615202+00:00",
-  "date": "2026-08-25",
+  "generated_at": "2026-08-26T08:17:48.580652+00:00",
+  "date": "2026-08-26",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 90
+      "counties_with_alerts": 121
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 221
+      "counties_over_threshold": 216
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 48,
+      "counties_with_matches": 30,
       "items_pre_llm": {
-        "protest": 28,
-        "utility_outage": 21,
-        "transit_disruption": 11,
+        "protest": 30,
+        "utility_outage": 8,
+        "transit_disruption": 5,
         "service_provider_outage": 0,
-        "hazmat_incident": 7,
-        "road_closure": 4
+        "hazmat_incident": 3,
+        "road_closure": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 22,
+      "counties_with_matches": 8,
       "items_post_llm": {
-        "protest": 12,
-        "utility_outage": 9,
-        "transit_disruption": 1,
+        "protest": 4,
+        "utility_outage": 3,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 3,
-        "road_closure": 2
+        "road_closure": 1
       },
-      "unique_articles": 35,
-      "calls_used": 35,
+      "unique_articles": 37,
+      "calls_used": 37,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 300
+      "counties_with_alerts": 283
     },
     "transit": {
       "status": "ok",
@@ -135,7 +135,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 137
+      "counties_with_alerts": 135
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 2,
+      "active_incidents": 5,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -233,13 +233,13 @@
           "key": "slack",
           "name": "Slack",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "dropbox",
           "name": "Dropbox",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "atlassian",
@@ -323,7 +323,7 @@
           "key": "k2yd",
           "name": "k2yd",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "t8fc",
@@ -632,12 +632,34 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Increased Latency",
+      "title": "Minor Service Outage",
       "impact": "minor",
-      "status": "identified",
-      "started": "2026-08-24T20:38:27.000Z",
-      "updated": "2026-08-24T22:24:02.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/d68x0kzjwhqf",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Slack",
+      "key": "slack",
+      "title": "Trouble Accessing Historical Messages With Custom Data Retention Policies Enabled",
+      "impact": "incident",
+      "status": "active",
+      "started": "2026-08-13T14:21:41-07:00",
+      "updated": "2026-08-25T13:55:43-07:00",
+      "url": "https://slack-status.com/2026-08/e07b9271f0346c3b",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Dropbox",
+      "key": "dropbox",
+      "title": "Some Dropbox Protect features are not working correctly",
+      "impact": "minor",
+      "status": "investigating",
+      "started": "2026-08-25T23:14:32.000Z",
+      "updated": "2026-08-25T23:14:57.532Z",
+      "url": "https://stspg.io/m932x061cpmc",
       "source": "provider status page"
     },
     {
@@ -650,6 +672,14 @@
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
+    },
+    {
+      "provider": "k2yd",
+      "impact": "minor",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
     }
   ]
 }
