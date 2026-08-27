@@ -10,24 +10,24 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Warning",
-        "headline": "Extreme Heat Warning issued August 25 at 8:37PM PDT until August 28 at 8:00PM PDT by NWS Los Angeles/Oxnard CA",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-08-25T20:37:00-07:00",
-        "expires": "2026-08-26T16:15:00-07:00",
-        "source": "nws_alert",
-        "count": 4
-      },
-      {
         "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued August 25 at 2:57PM PDT until August 28 at 3:00PM PDT by NWS Los Angeles/Oxnard CA",
+        "headline": "Red Flag Warning issued August 27 at 9:26AM PDT until August 28 at 3:00PM PDT by NWS Los Angeles/Oxnard CA",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-08-25T14:57:00-07:00",
-        "expires": "2026-08-26T10:00:00-07:00",
+        "effective": "2026-08-27T09:26:00-07:00",
+        "expires": "2026-08-27T16:00:00-07:00",
         "source": "nws_alert",
         "count": 1
+      },
+      {
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued August 26 at 10:54AM PDT until August 28 at 8:00PM PDT by NWS Los Angeles/Oxnard CA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-26T10:54:00-07:00",
+        "expires": "2026-08-28T20:00:00-07:00",
+        "source": "nws_alert",
+        "count": 2
       }
     ],
     "protest": [],
@@ -46,35 +46,38 @@
   "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 4,
+      "precip_in_24h": 0.02,
+      "precip_probability_pct": 20,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 90.0,
-      "low_temp_f": 77.0,
-      "high_apparent_temp_f": 90.0,
-      "low_apparent_temp_f": 77.0,
-      "max_wind_mph": 15.0,
-      "max_wind_gust_mph": 20.7,
-      "thunder_probability_pct": 2,
+      "high_temp_f": 85.0,
+      "low_temp_f": 78.0,
+      "high_apparent_temp_f": 91.0,
+      "low_apparent_temp_f": 78.0,
+      "max_wind_mph": 10.4,
+      "max_wind_gust_mph": 10.4,
+      "thunder_probability_pct": 16,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "thunderstorms",
+        "light rain showers"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 98,
+      "us_aqi": 89,
       "category": "Moderate",
-      "aqi_24h_max": 108,
-      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-      "pm2_5": 49.8,
-      "pm10": 58.1,
-      "ozone": 86.0,
-      "nitrogen_dioxide": 5.3,
-      "observed_at": "2026-08-26T08:00",
+      "aqi_24h_max": 92,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 31.5,
+      "pm10": 40.5,
+      "ozone": 81.0,
+      "nitrogen_dioxide": 4.0,
+      "observed_at": "2026-08-27T18:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-26",
-  "generated_at": "2026-08-26T08:17:48.580652+00:00"
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T18:35:43.743667+00:00"
 }

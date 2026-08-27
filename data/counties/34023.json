@@ -8,7 +8,18 @@
     "lon": -74.40743
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued August 27 at 1:38PM EDT until August 27 at 5:00PM EDT by NWS Mount Holly NJ",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-08-27T13:38:00-04:00",
+        "expires": "2026-08-27T17:00:00-04:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -18,46 +29,57 @@
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "ground_stop",
+        "code": "JFK",
+        "name": "John F. Kennedy Intl",
+        "city": "New York",
+        "state": "NY",
+        "reason": "thunderstorms",
+        "end": "3:15 pm EDT",
+        "source": "FAA NAS Status"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 82,
+      "precip_in_24h": 0.34,
+      "precip_probability_pct": 73,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 80.0,
-      "low_temp_f": 61.0,
-      "high_apparent_temp_f": 82.0,
-      "low_apparent_temp_f": 61.0,
+      "high_temp_f": 83.0,
+      "low_temp_f": 67.0,
+      "high_apparent_temp_f": 89.0,
+      "low_apparent_temp_f": 67.0,
       "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 15.0,
-      "thunder_probability_pct": 34,
+      "max_wind_gust_mph": 16.1,
+      "thunder_probability_pct": 49,
       "lightning_activity_level": null,
       "weather": [
-        "fog",
+        "thunderstorms",
         "light rain showers",
-        "thunderstorms"
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 36,
+      "us_aqi": 49,
       "category": "Good",
-      "aqi_24h_max": 63,
+      "aqi_24h_max": 66,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 5.4,
-      "pm10": 5.4,
-      "ozone": 38.0,
-      "nitrogen_dioxide": 14.4,
-      "observed_at": "2026-08-26T08:00",
+      "pm2_5": 11.1,
+      "pm10": 13.7,
+      "ozone": 117.0,
+      "nitrogen_dioxide": 2.5,
+      "observed_at": "2026-08-27T18:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-26",
-  "generated_at": "2026-08-26T08:17:48.580652+00:00"
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T18:35:43.743667+00:00"
 }

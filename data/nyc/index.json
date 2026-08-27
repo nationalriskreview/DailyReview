@@ -1,18 +1,25 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-26T08:17:48.580652+00:00",
-  "date": "2026-08-26",
+  "generated_at": "2026-08-27T18:35:43.743667+00:00",
+  "date": "2026-08-27",
   "boroughs": [
     {
       "schema_version": "1.7",
-      "generated_at": "2026-08-26T08:17:48.580652+00:00",
-      "date": "2026-08-26",
+      "generated_at": "2026-08-27T18:35:43.743667+00:00",
+      "date": "2026-08-27",
       "borough": "Manhattan",
       "slug": "manhattan",
       "fips": "36061",
       "county_name": "New York County",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -22,42 +29,65 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          },
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 73,
+          "precip_in_24h": 1.35,
+          "precip_probability_pct": 69,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 65.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 65.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 38,
+          "high_temp_f": 80.0,
+          "low_temp_f": 71.0,
+          "high_apparent_temp_f": 83.0,
+          "low_apparent_temp_f": 71.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 60,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "heavy thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 79,
+          "aqi_24h_max": 71,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.6,
-          "pm10": 5.6,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 15.2,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 14.3,
+          "pm10": 17.8,
+          "ozone": 118.0,
+          "nitrogen_dioxide": 5.4,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       },
@@ -65,14 +95,21 @@
     },
     {
       "schema_version": "1.7",
-      "generated_at": "2026-08-26T08:17:48.580652+00:00",
-      "date": "2026-08-26",
+      "generated_at": "2026-08-27T18:35:43.743667+00:00",
+      "date": "2026-08-27",
       "borough": "Brooklyn",
       "slug": "brooklyn",
       "fips": "36047",
       "county_name": "Kings County",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -82,42 +119,65 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          },
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 66,
+          "precip_in_24h": 1.2,
+          "precip_probability_pct": 63,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 66.0,
+          "high_temp_f": 80.0,
+          "low_temp_f": 72.0,
           "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 66.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 35,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 60,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "heavy thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 79,
+          "aqi_24h_max": 71,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.6,
-          "pm10": 5.6,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 15.2,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 14.3,
+          "pm10": 17.8,
+          "ozone": 118.0,
+          "nitrogen_dioxide": 5.4,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       },
@@ -125,8 +185,8 @@
     },
     {
       "schema_version": "1.7",
-      "generated_at": "2026-08-26T08:17:48.580652+00:00",
-      "date": "2026-08-26",
+      "generated_at": "2026-08-27T18:35:43.743667+00:00",
+      "date": "2026-08-27",
       "borough": "Queens",
       "slug": "queens",
       "fips": "36081",
@@ -142,42 +202,65 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          },
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.91,
           "precip_probability_pct": 62,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 80.0,
-          "low_temp_f": 66.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 66.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 33,
+          "high_temp_f": 79.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 60,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "heavy thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 79,
+          "aqi_24h_max": 71,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.6,
-          "pm10": 5.6,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 15.2,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 14.3,
+          "pm10": 17.8,
+          "ozone": 118.0,
+          "nitrogen_dioxide": 5.4,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       },
@@ -185,14 +268,21 @@
     },
     {
       "schema_version": "1.7",
-      "generated_at": "2026-08-26T08:17:48.580652+00:00",
-      "date": "2026-08-26",
+      "generated_at": "2026-08-27T18:35:43.743667+00:00",
+      "date": "2026-08-27",
       "borough": "Bronx",
       "slug": "bronx",
       "fips": "36005",
       "county_name": "Bronx County",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -202,42 +292,65 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          },
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 73,
+          "precip_in_24h": 1.17,
+          "precip_probability_pct": 67,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 64.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 35,
+          "high_temp_f": 79.0,
+          "low_temp_f": 71.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 71.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 60,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "heavy thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 79,
+          "aqi_24h_max": 71,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.6,
-          "pm10": 5.6,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 15.2,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 14.3,
+          "pm10": 17.8,
+          "ozone": 118.0,
+          "nitrogen_dioxide": 5.4,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       },
@@ -245,14 +358,25 @@
     },
     {
       "schema_version": "1.7",
-      "generated_at": "2026-08-26T08:17:48.580652+00:00",
-      "date": "2026-08-26",
+      "generated_at": "2026-08-27T18:35:43.743667+00:00",
+      "date": "2026-08-27",
       "borough": "Staten Island",
       "slug": "staten-island",
       "fips": "36085",
       "county_name": "Richmond County",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 27 at 1:16PM EDT until August 27 at 4:15PM EDT by NWS Upton NY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T12:35:00-04:00",
+            "expires": "2026-08-27T16:15:00-04:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -262,42 +386,65 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          },
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 69,
+          "precip_in_24h": 1.74,
+          "precip_probability_pct": 65,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 65.0,
+          "high_temp_f": 80.0,
+          "low_temp_f": 71.0,
           "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 65.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 39,
+          "low_apparent_temp_f": 71.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 60,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "heavy thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 57,
+          "aqi_24h_max": 60,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 6.7,
-          "pm10": 6.8,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 15.3,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 11.6,
+          "pm10": 15.5,
+          "ozone": 107.0,
+          "nitrogen_dioxide": 3.8,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       },

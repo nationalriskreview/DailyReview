@@ -8,7 +8,18 @@
     "lon": -119.742235
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued August 27 at 2:56AM PDT until August 27 at 8:00PM PDT by NWS Spokane WA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-08-27T02:56:00-07:00",
+        "expires": "2026-08-27T20:00:00-07:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -26,7 +37,7 @@
         "lat": 48.8211,
         "lon": -121.2097,
         "acreage": 4776,
-        "containment_pct": 0,
+        "containment_pct": 31,
         "cause": "Undetermined",
         "state": "WA",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-WANCP-000179",
@@ -61,7 +72,7 @@
         "date": "2026-07-16T01:17:54+00:00",
         "lat": 48.0162,
         "lon": -120.8466,
-        "acreage": 147626,
+        "acreage": 149863,
         "containment_pct": 23,
         "cause": "Natural",
         "state": "WA",
@@ -79,8 +90,8 @@
         "date": "2026-07-17T01:14:00+00:00",
         "lat": 48.9982,
         "lon": -121.0277,
-        "acreage": 7467,
-        "containment_pct": 41,
+        "acreage": 7633,
+        "containment_pct": 42,
         "cause": "Natural",
         "state": "WA",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-WANCP-000266",
@@ -115,7 +126,7 @@
         "date": "2026-07-26T21:12:00+00:00",
         "lat": 48.7046,
         "lon": -119.6931,
-        "acreage": 155491,
+        "acreage": 156699,
         "containment_pct": 56,
         "cause": "Undetermined",
         "state": "WA",
@@ -176,42 +187,43 @@
     ],
     "disease": []
   },
-  "alert_count": 9,
+  "alert_count": 10,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 17,
+      "precip_probability_pct": 11,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 92.0,
-      "low_temp_f": 50.0,
-      "high_apparent_temp_f": 89.0,
-      "low_apparent_temp_f": 48.0,
-      "max_wind_mph": 12.7,
-      "max_wind_gust_mph": 20.7,
-      "thunder_probability_pct": 8,
+      "high_temp_f": 83.0,
+      "low_temp_f": 41.0,
+      "high_apparent_temp_f": 80.0,
+      "low_apparent_temp_f": 41.0,
+      "max_wind_mph": 17.3,
+      "max_wind_gust_mph": 28.8,
+      "thunder_probability_pct": 17,
       "lightning_activity_level": null,
       "weather": [
-        "smoke",
         "haze",
-        "light rain showers"
+        "smoke",
+        "light rain showers",
+        "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 46,
-      "category": "Good",
-      "aqi_24h_max": 54,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 9.8,
-      "pm10": 10.2,
-      "ozone": 74.0,
-      "nitrogen_dioxide": 8.8,
-      "observed_at": "2026-08-26T08:00",
+      "us_aqi": 174,
+      "category": "Unhealthy",
+      "aqi_24h_max": 177,
+      "aqi_24h_max_category": "Unhealthy",
+      "pm2_5": 50.2,
+      "pm10": 52.6,
+      "ozone": 113.0,
+      "nitrogen_dioxide": 4.8,
+      "observed_at": "2026-08-27T18:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-26",
-  "generated_at": "2026-08-26T08:17:48.580652+00:00"
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T18:35:43.743667+00:00"
 }

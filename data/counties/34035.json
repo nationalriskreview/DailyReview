@@ -8,7 +8,18 @@
     "lon": -74.619938
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued August 27 at 1:38PM EDT until August 27 at 5:00PM EDT by NWS Mount Holly NJ",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-08-27T13:17:00-04:00",
+        "expires": "2026-08-27T17:15:00-04:00",
+        "source": "nws_alert",
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -16,48 +27,84 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
-    "transit": [],
+    "transit": [
+      {
+        "agency": "NJ Transit Rail",
+        "agency_id": "njtransit-rail-rss",
+        "route": "ALL",
+        "system_outage": true,
+        "effect": "NO_SERVICE",
+        "header": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substi",
+        "description": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substitute bus service is being provided.",
+        "start": "2026-08-27T14:31:27-04:00",
+        "end": "",
+        "source": "https://www.njtransit.com/node/2160511"
+      },
+      {
+        "agency": "NJ Transit Rail",
+        "agency_id": "njtransit-rail-rss",
+        "route": "ALL",
+        "system_outage": true,
+        "effect": "NO_SERVICE",
+        "header": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+        "description": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+        "start": "2026-08-27T14:27:32-04:00",
+        "end": "",
+        "source": "https://www.njtransit.com/node/2160505"
+      }
+    ],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "ground_stop",
+        "code": "JFK",
+        "name": "John F. Kennedy Intl",
+        "city": "New York",
+        "state": "NY",
+        "reason": "thunderstorms",
+        "end": "3:15 pm EDT",
+        "source": "FAA NAS Status"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 4,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 89,
+      "precip_in_24h": 0.41,
+      "precip_probability_pct": 85,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 80.0,
-      "low_temp_f": 59.0,
-      "high_apparent_temp_f": 82.0,
-      "low_apparent_temp_f": 59.0,
-      "max_wind_mph": 5.8,
-      "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": 38,
+      "high_temp_f": 83.0,
+      "low_temp_f": 66.0,
+      "high_apparent_temp_f": 90.0,
+      "low_apparent_temp_f": 66.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 16.1,
+      "thunder_probability_pct": 54,
       "lightning_activity_level": null,
       "weather": [
-        "fog",
         "light rain showers",
-        "thunderstorms"
+        "thunderstorms",
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 32,
+      "us_aqi": 50,
       "category": "Good",
-      "aqi_24h_max": 55,
+      "aqi_24h_max": 68,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 3.9,
-      "pm10": 3.9,
-      "ozone": 41.0,
-      "nitrogen_dioxide": 9.7,
-      "observed_at": "2026-08-26T08:00",
+      "pm2_5": 11.2,
+      "pm10": 13.4,
+      "ozone": 123.0,
+      "nitrogen_dioxide": 2.0,
+      "observed_at": "2026-08-27T18:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-26",
-  "generated_at": "2026-08-26T08:17:48.580652+00:00"
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T18:35:43.743667+00:00"
 }

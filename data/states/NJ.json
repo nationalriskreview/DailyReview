@@ -1,10 +1,10 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-26T08:17:48.580652+00:00",
-  "date": "2026-08-26",
+  "generated_at": "2026-08-27T18:35:43.743667+00:00",
+  "date": "2026-08-27",
   "state": "NJ",
   "counties_total": 21,
-  "counties_with_alerts": 0,
+  "counties_with_alerts": 18,
   "counties": {
     "34001": {
       "fips": "34001",
@@ -28,35 +28,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 36,
+          "precip_in_24h": 0.15,
+          "precip_probability_pct": 28,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 61.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 26,
+          "high_temp_f": 83.0,
+          "low_temp_f": 69.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 69.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 27,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 45,
           "category": "Good",
-          "aqi_24h_max": 65,
+          "aqi_24h_max": 75,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.5,
-          "pm10": 10.6,
-          "ozone": 32.0,
-          "nitrogen_dioxide": 23.1,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 8.8,
+          "pm10": 12.3,
+          "ozone": 105.0,
+          "nitrogen_dioxide": 0.7,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -66,7 +66,18 @@
       "name": "Bergen County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 27 at 1:27PM EDT until August 27 at 4:30PM EDT by NWS Upton NY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T13:27:00-04:00",
+            "expires": "2026-08-27T16:30:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -74,44 +85,92 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substi",
+            "description": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substitute bus service is being provided.",
+            "start": "2026-08-27T14:31:27-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160511"
+          },
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "description": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "start": "2026-08-27T14:27:32-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160505"
+          }
+        ],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          },
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 5,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 87,
+          "precip_in_24h": 1.32,
+          "precip_probability_pct": 85,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 62.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 62.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 43,
+          "high_temp_f": 81.0,
+          "low_temp_f": 68.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 68.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 60,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers",
+            "heavy thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 79,
+          "aqi_24h_max": 71,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.6,
-          "pm10": 5.6,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 15.2,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 14.3,
+          "pm10": 17.8,
+          "ozone": 118.0,
+          "nitrogen_dioxide": 5.4,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -131,42 +190,53 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "PHL",
+            "name": "Philadelphia Intl",
+            "city": "Philadelphia",
+            "state": "PA",
+            "reason": "thunderstorms",
+            "end": "3:45 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 56,
+          "precip_in_24h": 0.28,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 61.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 61.0,
+          "high_temp_f": 83.0,
+          "low_temp_f": 68.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 68.0,
           "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 29,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 39,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 47,
+          "us_aqi": 46,
           "category": "Good",
-          "aqi_24h_max": 65,
+          "aqi_24h_max": 70,
           "aqi_24h_max_category": "Moderate",
           "pm2_5": 10.0,
-          "pm10": 10.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 20.7,
-          "observed_at": "2026-08-26T08:00",
+          "pm10": 12.7,
+          "ozone": 114.0,
+          "nitrogen_dioxide": 1.6,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -176,7 +246,28 @@
       "name": "Camden County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued August 27 at 2:16PM EDT until August 27 at 3:00PM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T14:16:00-04:00",
+            "expires": "2026-08-27T15:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          },
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 27 at 1:28PM EDT until August 27 at 3:45PM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T13:28:00-04:00",
+            "expires": "2026-08-27T15:45:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -186,43 +277,54 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "PHL",
+            "name": "Philadelphia Intl",
+            "city": "Philadelphia",
+            "state": "PA",
+            "reason": "thunderstorms",
+            "end": "3:45 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 54,
+          "precip_in_24h": 0.33,
+          "precip_probability_pct": 56,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 63.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 30,
+          "high_temp_f": 83.0,
+          "low_temp_f": 69.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 69.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 42,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
             "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 47,
+          "us_aqi": 46,
           "category": "Good",
-          "aqi_24h_max": 65,
+          "aqi_24h_max": 70,
           "aqi_24h_max_category": "Moderate",
           "pm2_5": 10.0,
-          "pm10": 10.0,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 20.7,
-          "observed_at": "2026-08-26T08:00",
+          "pm10": 12.7,
+          "ozone": 114.0,
+          "nitrogen_dioxide": 1.6,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -249,35 +351,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 22,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 65.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 65.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 25,
+          "high_temp_f": 84.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 90.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 20,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 46,
+          "us_aqi": 49,
           "category": "Good",
-          "aqi_24h_max": 90,
+          "aqi_24h_max": 98,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 6.3,
-          "pm10": 6.4,
-          "ozone": 63.0,
-          "nitrogen_dioxide": 12.0,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 10.2,
+          "pm10": 15.9,
+          "ozone": 105.0,
+          "nitrogen_dioxide": 1.3,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -304,35 +406,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 47,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 41,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 63.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 27,
+          "high_temp_f": 83.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 37,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 37,
+          "us_aqi": 46,
           "category": "Good",
-          "aqi_24h_max": 77,
+          "aqi_24h_max": 83,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.8,
-          "pm10": 7.8,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 17.0,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 9.8,
+          "pm10": 13.5,
+          "ozone": 110.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -342,7 +444,18 @@
       "name": "Essex County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 27 at 1:27PM EDT until August 27 at 4:30PM EDT by NWS Upton NY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T12:35:00-04:00",
+            "expires": "2026-08-27T16:30:00-04:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -350,44 +463,92 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substi",
+            "description": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substitute bus service is being provided.",
+            "start": "2026-08-27T14:31:27-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160511"
+          },
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "description": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "start": "2026-08-27T14:27:32-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160505"
+          }
+        ],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          },
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 5,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 83,
+          "precip_in_24h": 1.5,
+          "precip_probability_pct": 88,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 63.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 44,
+          "high_temp_f": 81.0,
+          "low_temp_f": 69.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 69.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 60,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers",
+            "heavy thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
-          "category": "Good",
-          "aqi_24h_max": 52,
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 66,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 3.3,
-          "pm10": 3.3,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 10.6,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 11.7,
+          "pm10": 13.9,
+          "ozone": 123.0,
+          "nitrogen_dioxide": 3.1,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -397,7 +558,28 @@
       "name": "Gloucester County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued August 27 at 2:16PM EDT until August 27 at 3:00PM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T14:16:00-04:00",
+            "expires": "2026-08-27T15:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          },
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 27 at 2:06PM EDT until August 27 at 3:30PM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T13:28:00-04:00",
+            "expires": "2026-08-27T15:45:00-04:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -407,43 +589,54 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "PHL",
+            "name": "Philadelphia Intl",
+            "city": "Philadelphia",
+            "state": "PA",
+            "reason": "thunderstorms",
+            "end": "3:45 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 55,
+          "precip_in_24h": 0.58,
+          "precip_probability_pct": 60,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 63.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 30,
+          "high_temp_f": 83.0,
+          "low_temp_f": 70.0,
+          "high_apparent_temp_f": 89.0,
+          "low_apparent_temp_f": 70.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 44,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
             "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 37,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 64,
+          "aqi_24h_max": 73,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 10.7,
-          "ozone": 28.0,
-          "nitrogen_dioxide": 24.9,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 9.5,
+          "pm10": 12.2,
+          "ozone": 111.0,
+          "nitrogen_dioxide": 1.3,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -453,7 +646,18 @@
       "name": "Hudson County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 27 at 1:27PM EDT until August 27 at 4:30PM EDT by NWS Upton NY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T12:35:00-04:00",
+            "expires": "2026-08-27T16:30:00-04:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -461,44 +665,92 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substi",
+            "description": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substitute bus service is being provided.",
+            "start": "2026-08-27T14:31:27-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160511"
+          },
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "description": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "start": "2026-08-27T14:27:32-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160505"
+          }
+        ],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          },
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 5,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 74,
+          "precip_in_24h": 1.64,
+          "precip_probability_pct": 72,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 65.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 65.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 40,
+          "high_temp_f": 81.0,
+          "low_temp_f": 71.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 71.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 60,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "heavy thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 79,
+          "aqi_24h_max": 71,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.6,
-          "pm10": 5.6,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 15.2,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 14.3,
+          "pm10": 17.8,
+          "ozone": 118.0,
+          "nitrogen_dioxide": 5.4,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -518,27 +770,37 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 85,
+          "precip_in_24h": 0.63,
+          "precip_probability_pct": 83,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 78.0,
-          "low_temp_f": 58.0,
-          "high_apparent_temp_f": 78.0,
-          "low_apparent_temp_f": 58.0,
+          "high_temp_f": 80.0,
+          "low_temp_f": 64.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 64.0,
           "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 40,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 56,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
             "thunderstorms",
             "light rain showers",
             "moderate rain showers"
@@ -547,15 +809,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
+          "us_aqi": 50,
           "category": "Good",
-          "aqi_24h_max": 55,
+          "aqi_24h_max": 68,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 3.9,
-          "pm10": 3.9,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 9.7,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 11.2,
+          "pm10": 13.4,
+          "ozone": 123.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -565,7 +827,18 @@
       "name": "Mercer County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 27 at 1:17PM EDT until August 27 at 5:15PM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T13:17:00-04:00",
+            "expires": "2026-08-27T17:15:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -579,38 +852,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 77,
+          "precip_in_24h": 0.36,
+          "precip_probability_pct": 74,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 60.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 60.0,
+          "high_temp_f": 83.0,
+          "low_temp_f": 67.0,
+          "high_apparent_temp_f": 89.0,
+          "low_apparent_temp_f": 67.0,
           "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 35,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 49,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
+          "us_aqi": 50,
           "category": "Good",
-          "aqi_24h_max": 55,
+          "aqi_24h_max": 68,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 3.9,
-          "pm10": 3.9,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 9.7,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 11.2,
+          "pm10": 13.4,
+          "ozone": 123.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -620,7 +894,18 @@
       "name": "Middlesex County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 27 at 1:38PM EDT until August 27 at 5:00PM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T13:38:00-04:00",
+            "expires": "2026-08-27T17:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -630,43 +915,54 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 82,
+          "precip_in_24h": 0.34,
+          "precip_probability_pct": 73,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 80.0,
-          "low_temp_f": 61.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 61.0,
+          "high_temp_f": 83.0,
+          "low_temp_f": 67.0,
+          "high_apparent_temp_f": 89.0,
+          "low_apparent_temp_f": 67.0,
           "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 34,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 49,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 49,
           "category": "Good",
-          "aqi_24h_max": 63,
+          "aqi_24h_max": 66,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.4,
-          "pm10": 5.4,
-          "ozone": 38.0,
-          "nitrogen_dioxide": 14.4,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 11.1,
+          "pm10": 13.7,
+          "ozone": 117.0,
+          "nitrogen_dioxide": 2.5,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -676,7 +972,18 @@
       "name": "Monmouth County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued August 27 at 2:13PM EDT until August 27 at 3:00PM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T14:02:00-04:00",
+            "expires": "2026-08-27T15:00:00-04:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -684,44 +991,90 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substi",
+            "description": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substitute bus service is being provided.",
+            "start": "2026-08-27T14:31:27-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160511"
+          },
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "description": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "start": "2026-08-27T14:27:32-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160505"
+          }
+        ],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          },
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 5,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 56,
+          "precip_in_24h": 0.12,
+          "precip_probability_pct": 48,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 61.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 29,
+          "high_temp_f": 83.0,
+          "low_temp_f": 68.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 68.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 39,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 57,
+          "aqi_24h_max": 60,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 6.7,
-          "pm10": 6.8,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 15.3,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 11.6,
+          "pm10": 15.5,
+          "ozone": 107.0,
+          "nitrogen_dioxide": 3.8,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -739,45 +1092,91 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substi",
+            "description": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substitute bus service is being provided.",
+            "start": "2026-08-27T14:31:27-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160511"
+          },
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "description": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "start": "2026-08-27T14:27:32-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160505"
+          }
+        ],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          },
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 4,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.97,
           "precip_probability_pct": 91,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 77.0,
-          "low_temp_f": 58.0,
-          "high_apparent_temp_f": 77.0,
-          "low_apparent_temp_f": 58.0,
+          "high_temp_f": 79.0,
+          "low_temp_f": 64.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 64.0,
           "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 39,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 57,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
+            "moderate rain showers",
             "thunderstorms",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
-          "category": "Good",
-          "aqi_24h_max": 52,
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 66,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 3.3,
-          "pm10": 3.3,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 10.6,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 11.7,
+          "pm10": 13.9,
+          "ozone": 123.0,
+          "nitrogen_dioxide": 3.1,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -795,44 +1194,80 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substi",
+            "description": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substitute bus service is being provided.",
+            "start": "2026-08-27T14:31:27-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160511"
+          },
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "description": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "start": "2026-08-27T14:27:32-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160505"
+          }
+        ],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 44,
+          "precip_in_24h": 0.3,
+          "precip_probability_pct": 33,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 61.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 21,
+          "high_temp_f": 83.0,
+          "low_temp_f": 67.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 67.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 25,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 35,
+          "us_aqi": 45,
           "category": "Good",
-          "aqi_24h_max": 63,
+          "aqi_24h_max": 66,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.3,
-          "pm10": 7.3,
-          "ozone": 38.0,
-          "nitrogen_dioxide": 13.7,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 9.8,
+          "pm10": 13.5,
+          "ozone": 110.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -842,7 +1277,14 @@
       "name": "Passaic County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -850,45 +1292,92 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substi",
+            "description": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substitute bus service is being provided.",
+            "start": "2026-08-27T14:31:27-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160511"
+          },
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "description": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "start": "2026-08-27T14:27:32-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160505"
+          }
+        ],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          },
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 5,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 85,
+          "precip_in_24h": 1.27,
+          "precip_probability_pct": 92,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 58.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 58.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 8.1,
-          "thunder_probability_pct": 47,
+          "high_temp_f": 80.0,
+          "low_temp_f": 65.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 65.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 60,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers",
+            "heavy thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 50,
           "category": "Good",
-          "aqi_24h_max": 45,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.6,
-          "pm10": 1.6,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 5.7,
-          "observed_at": "2026-08-26T08:00",
+          "aqi_24h_max": 75,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.9,
+          "pm10": 12.7,
+          "ozone": 128.0,
+          "nitrogen_dioxide": 1.9,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -898,7 +1387,28 @@
       "name": "Salem County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Severe Thunderstorm Warning",
+            "headline": "Severe Thunderstorm Warning issued August 27 at 2:16PM EDT until August 27 at 3:00PM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T14:16:00-04:00",
+            "expires": "2026-08-27T15:00:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          },
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 27 at 1:50PM EDT until August 27 at 5:45PM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T13:28:00-04:00",
+            "expires": "2026-08-27T17:45:00-04:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -908,43 +1418,54 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "PHL",
+            "name": "Philadelphia Intl",
+            "city": "Philadelphia",
+            "state": "PA",
+            "reason": "thunderstorms",
+            "end": "3:45 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 55,
+          "precip_in_24h": 0.71,
+          "precip_probability_pct": 65,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 63.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 30,
+          "high_temp_f": 83.0,
+          "low_temp_f": 71.0,
+          "high_apparent_temp_f": 89.0,
+          "low_apparent_temp_f": 71.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 45,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
             "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 37,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 64,
+          "aqi_24h_max": 73,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 10.7,
-          "ozone": 28.0,
-          "nitrogen_dioxide": 24.9,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 9.5,
+          "pm10": 12.2,
+          "ozone": 111.0,
+          "nitrogen_dioxide": 1.3,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -954,7 +1475,18 @@
       "name": "Somerset County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 27 at 1:38PM EDT until August 27 at 5:00PM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T13:17:00-04:00",
+            "expires": "2026-08-27T17:15:00-04:00",
+            "source": "nws_alert",
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -962,45 +1494,81 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substi",
+            "description": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substitute bus service is being provided.",
+            "start": "2026-08-27T14:31:27-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160511"
+          },
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "description": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "start": "2026-08-27T14:27:32-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160505"
+          }
+        ],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 4,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 89,
+          "precip_in_24h": 0.41,
+          "precip_probability_pct": 85,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 80.0,
-          "low_temp_f": 59.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 59.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 38,
+          "high_temp_f": 83.0,
+          "low_temp_f": 66.0,
+          "high_apparent_temp_f": 90.0,
+          "low_apparent_temp_f": 66.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 54,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
+          "us_aqi": 50,
           "category": "Good",
-          "aqi_24h_max": 55,
+          "aqi_24h_max": 68,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 3.9,
-          "pm10": 3.9,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 9.7,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 11.2,
+          "pm10": 13.4,
+          "ozone": 123.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1018,46 +1586,81 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substi",
+            "description": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substitute bus service is being provided.",
+            "start": "2026-08-27T14:31:27-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160511"
+          },
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "description": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "start": "2026-08-27T14:27:32-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160505"
+          }
+        ],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 91,
+          "precip_in_24h": 0.69,
+          "precip_probability_pct": 86,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 78.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 78.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 42,
+          "high_temp_f": 79.0,
+          "low_temp_f": 61.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 61.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 59,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
-            "light rain showers",
+            "moderate rain showers",
             "thunderstorms",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 44,
           "category": "Good",
-          "aqi_24h_max": 42,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 1.7,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-08-26T08:00",
+          "aqi_24h_max": 64,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.6,
+          "pm10": 12.2,
+          "ozone": 126.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1067,7 +1670,18 @@
       "name": "Union County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued August 27 at 12:35PM EDT until August 27 at 3:30PM EDT by NWS Upton NY",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-08-27T12:35:00-04:00",
+            "expires": "2026-08-27T15:30:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1075,44 +1689,92 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substi",
+            "description": "Atlantic City Rail Line service remains suspended in both directions between Philadelphia 30th Street and Cherry Hill stations due to the Conrail Delair Bridge being stuck in the open position. Substitute bus service is being provided.",
+            "start": "2026-08-27T14:31:27-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160511"
+          },
+          {
+            "agency": "NJ Transit Rail",
+            "agency_id": "njtransit-rail-rss",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "description": "North Jersey Coast Line service remains suspended in both directions between Long Branch and Penn Station New York due to weather-related flooding conditions near South Amboy.",
+            "start": "2026-08-27T14:27:32-04:00",
+            "end": "",
+            "source": "https://www.njtransit.com/node/2160505"
+          }
+        ],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          },
+          {
+            "kind": "ground_stop",
+            "code": "LGA",
+            "name": "LaGuardia",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 5,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 76,
+          "precip_in_24h": 2.04,
+          "precip_probability_pct": 86,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 63.0,
+          "high_temp_f": 81.0,
+          "low_temp_f": 69.0,
           "high_apparent_temp_f": 85.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 45,
+          "low_apparent_temp_f": 69.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 60,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "heavy thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
-          "category": "Good",
-          "aqi_24h_max": 52,
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 66,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 3.3,
-          "pm10": 3.3,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 10.6,
-          "observed_at": "2026-08-26T08:00",
+          "pm2_5": 11.7,
+          "pm10": 13.9,
+          "ozone": 123.0,
+          "nitrogen_dioxide": 3.1,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1132,44 +1794,54 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "JFK",
+            "name": "John F. Kennedy Intl",
+            "city": "New York",
+            "state": "NY",
+            "reason": "thunderstorms",
+            "end": "3:15 pm EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 86,
+          "precip_in_24h": 0.83,
+          "precip_probability_pct": 87,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 76.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 76.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 42,
+          "high_temp_f": 78.0,
+          "low_temp_f": 63.0,
+          "high_apparent_temp_f": 78.0,
+          "low_apparent_temp_f": 63.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 59,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
-            "light rain showers",
             "thunderstorms",
+            "light rain showers",
             "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 50,
           "category": "Good",
-          "aqi_24h_max": 46,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.7,
-          "pm10": 2.7,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 7.9,
-          "observed_at": "2026-08-26T08:00",
+          "aqi_24h_max": 68,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 11.5,
+          "pm10": 13.3,
+          "ozone": 131.0,
+          "nitrogen_dioxide": 1.6,
+          "observed_at": "2026-08-27T18:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

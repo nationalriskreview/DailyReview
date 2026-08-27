@@ -8,7 +8,18 @@
     "lon": -75.10706
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued August 27 at 1:17PM EDT until August 27 at 5:15PM EDT by NWS Mount Holly NJ",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-08-27T13:17:00-04:00",
+        "expires": "2026-08-27T17:15:00-04:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -18,46 +29,56 @@
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "ground_stop",
+        "code": "PHL",
+        "name": "Philadelphia Intl",
+        "city": "Philadelphia",
+        "state": "PA",
+        "reason": "thunderstorms",
+        "end": "3:45 pm EDT",
+        "source": "FAA NAS Status"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 78,
+      "precip_in_24h": 0.3,
+      "precip_probability_pct": 80,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 79.0,
-      "low_temp_f": 59.0,
-      "high_apparent_temp_f": 79.0,
-      "low_apparent_temp_f": 59.0,
+      "high_temp_f": 81.0,
+      "low_temp_f": 66.0,
+      "high_apparent_temp_f": 84.0,
+      "low_apparent_temp_f": 66.0,
       "max_wind_mph": 8.1,
-      "max_wind_gust_mph": 15.0,
-      "thunder_probability_pct": 37,
+      "max_wind_gust_mph": 17.3,
+      "thunder_probability_pct": 53,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
         "thunderstorms",
-        "moderate rain showers"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 33,
-      "category": "Good",
-      "aqi_24h_max": 53,
+      "us_aqi": 51,
+      "category": "Moderate",
+      "aqi_24h_max": 71,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 4.5,
-      "pm10": 4.5,
-      "ozone": 39.0,
-      "nitrogen_dioxide": 10.5,
-      "observed_at": "2026-08-26T08:00",
+      "pm2_5": 11.8,
+      "pm10": 13.9,
+      "ozone": 127.0,
+      "nitrogen_dioxide": 2.1,
+      "observed_at": "2026-08-27T18:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-26",
-  "generated_at": "2026-08-26T08:17:48.580652+00:00"
+  "date": "2026-08-27",
+  "generated_at": "2026-08-27T18:35:43.743667+00:00"
 }
