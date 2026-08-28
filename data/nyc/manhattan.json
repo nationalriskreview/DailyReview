@@ -1,21 +1,41 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-27T18:35:43.743667+00:00",
-  "date": "2026-08-27",
+  "generated_at": "2026-08-28T19:47:49.161053+00:00",
+  "date": "2026-08-28",
   "borough": "Manhattan",
   "slug": "manhattan",
   "fips": "36061",
   "county_name": "New York County",
   "alerts": {
-    "weather": [
+    "weather": [],
+    "protest": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.4\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "title": "'RSS does not represent us': US-based Hindu group among 61 organisations protesting Mohan Bhagwat's NYC event",
+        "url": "https://www.hindustantimes.com/india-news/rss-does-not-represent-us-us-based-hindu-group-among-61-organisations-protesting-mohan-bhagwats-new-york-city-event-101787931830736.html",
+        "domain": "hindustantimes.com",
+        "seendate": "20260828184500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.hindustantimes.com/india-news/rss-does-not-represent-us-us-based-hindu-group-among-61-organisations-protesting-mohan-bhagwats-new-york-city-event-101787931830736.html",
+            "domain": "hindustantimes.com"
+          }
+        ]
+      },
+      {
+        "title": "Mohan Bhagwat spurs protests, denunciation from Mamdani ahead of NYC speech",
+        "url": "https://nypost.com/2026/08/28/world-news/mohan-bhagwat-spurs-protests-denunciation-from-mamdani-ahead-of-nyc-speech/",
+        "domain": "nypost.com",
+        "seendate": "20260828171500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://nypost.com/2026/08/28/world-news/mohan-bhagwat-spurs-protests-denunciation-from-mamdani-ahead-of-nyc-speech/",
+            "domain": "nypost.com"
+          }
+        ]
       }
     ],
-    "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
@@ -24,65 +44,42 @@
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [
-      {
-        "kind": "ground_stop",
-        "code": "JFK",
-        "name": "John F. Kennedy Intl",
-        "city": "New York",
-        "state": "NY",
-        "reason": "thunderstorms",
-        "end": "3:15 pm EDT",
-        "source": "FAA NAS Status"
-      },
-      {
-        "kind": "ground_stop",
-        "code": "LGA",
-        "name": "LaGuardia",
-        "city": "New York",
-        "state": "NY",
-        "reason": "thunderstorms",
-        "end": "3:15 pm EDT",
-        "source": "FAA NAS Status"
-      }
-    ],
+    "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 3,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.35,
-      "precip_probability_pct": 69,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 40,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 80.0,
-      "low_temp_f": 71.0,
+      "high_temp_f": 81.0,
+      "low_temp_f": 64.0,
       "high_apparent_temp_f": 83.0,
-      "low_apparent_temp_f": 71.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 20.7,
-      "thunder_probability_pct": 60,
+      "low_apparent_temp_f": 64.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 13.8,
+      "thunder_probability_pct": 33,
       "lightning_activity_level": null,
       "weather": [
-        "thunderstorms",
         "light rain showers",
-        "heavy thunderstorms",
-        "moderate rain showers"
+        "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 58,
+      "us_aqi": 72,
       "category": "Moderate",
-      "aqi_24h_max": 71,
+      "aqi_24h_max": 87,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 14.3,
-      "pm10": 17.8,
-      "ozone": 118.0,
-      "nitrogen_dioxide": 5.4,
-      "observed_at": "2026-08-27T18:00",
+      "pm2_5": 12.5,
+      "pm10": 12.9,
+      "ozone": 145.0,
+      "nitrogen_dioxide": 3.7,
+      "observed_at": "2026-08-28T19:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
