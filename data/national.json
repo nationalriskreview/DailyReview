@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-28T19:47:49.161053+00:00",
-  "date": "2026-08-28",
+  "generated_at": "2026-08-29T13:24:18.194952+00:00",
+  "date": "2026-08-29",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 83
+      "counties_with_alerts": 36
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 95
+      "counties_over_threshold": 88
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,42 +28,42 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 73,
+      "counties_with_matches": 38,
       "items_pre_llm": {
-        "protest": 91,
-        "utility_outage": 26,
+        "protest": 49,
+        "utility_outage": 15,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 4,
-        "road_closure": 24
+        "hazmat_incident": 5,
+        "road_closure": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 38,
+      "counties_with_matches": 16,
       "items_post_llm": {
-        "protest": 20,
-        "utility_outage": 25,
+        "protest": 8,
+        "utility_outage": 10,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 3,
-        "road_closure": 12
+        "road_closure": 0
       },
-      "unique_articles": 88,
-      "calls_used": 88,
+      "unique_articles": 39,
+      "calls_used": 39,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 274
+      "counties_with_alerts": 296
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 0,
-      "counties_with_alerts": 0,
+      "items_total": 1,
+      "counties_with_alerts": 10,
       "agencies": [
         {
           "id": "mbta",
@@ -129,7 +129,7 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 0
+          "items": 1
         }
       ]
     },
@@ -160,12 +160,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 2,
+      "counties_with_alerts": 3
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 4,
+      "active_incidents": 2,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -191,7 +191,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 2
+          "items": 1
         },
         {
           "key": "github",
@@ -221,7 +221,7 @@
           "key": "anthropic",
           "name": "Anthropic",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "oracle",
@@ -612,39 +612,38 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [],
+  "faa_advisories": [
+    {
+      "kind": "ground_stop",
+      "code": "FLL",
+      "name": "Fort Lauderdale-Hollywood Intl",
+      "city": "Fort Lauderdale",
+      "state": "FL",
+      "reason": "thunderstorms",
+      "end": "9:45 am EDT",
+      "source": "FAA NAS Status"
+    },
+    {
+      "kind": "ground_stop",
+      "code": "MIA",
+      "name": "Miami Intl",
+      "city": "Miami",
+      "state": "FL",
+      "reason": "thunderstorms",
+      "end": "9:45 am EDT",
+      "source": "FAA NAS Status"
+    }
+  ],
   "service_outages": [
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Increased HTTP 5xx Errors in Singapore",
+      "title": "Minor Service Outage",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-08-28T17:36:54.000Z",
-      "updated": "2026-08-28T17:58:41.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/7rlsppn13h62",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Incorrect geo location for some Cloudflare WARP users",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-08-27T18:46:19.000Z",
-      "updated": "2026-08-28T11:30:28.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Anthropic",
-      "key": "anthropic",
-      "title": "Elevated errors on Claude Code and Claude Cowork",
-      "impact": "major",
-      "status": "monitoring",
-      "started": "2026-08-28T17:22:02.368Z",
-      "updated": "2026-08-28T18:21:02.284Z",
-      "url": "https://stspg.io/6rfby2z7stc2",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {

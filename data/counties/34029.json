@@ -8,18 +8,7 @@
     "lon": -74.258864
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Flash Flood Warning",
-        "headline": "Flash Flood Warning issued August 28 at 3:16PM EDT until August 28 at 5:45PM EDT by NWS Mount Holly NJ",
-        "severity": "Severe",
-        "urgency": "Immediate",
-        "effective": "2026-08-28T14:58:00-04:00",
-        "expires": "2026-08-28T19:00:00-04:00",
-        "source": "nws_alert",
-        "count": 2
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -27,7 +16,20 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
-    "transit": [],
+    "transit": [
+      {
+        "agency": "NJ Transit Rail",
+        "agency_id": "njtransit-rail-rss",
+        "route": "ALL",
+        "system_outage": true,
+        "effect": "NO_SERVICE",
+        "header": "Princeton Shuttle (Dinky) service is suspended in both directions due to mechanical issues. Substitute bus service is being provided.",
+        "description": "Princeton Shuttle (Dinky) service is suspended in both directions due to mechanical issues. Substitute bus service is being provided.",
+        "start": "2026-08-29T08:19:47-04:00",
+        "end": "",
+        "source": "https://www.njtransit.com/node/2161729"
+      }
+    ],
     "amtrak": [],
     "aviation": [],
     "fema": [],
@@ -36,21 +38,20 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.05,
-      "precip_probability_pct": 56,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 34,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 82.0,
-      "low_temp_f": 69.0,
-      "high_apparent_temp_f": 87.0,
-      "low_apparent_temp_f": 69.0,
-      "max_wind_mph": 2.3,
-      "max_wind_gust_mph": 6.9,
-      "thunder_probability_pct": 26,
+      "high_temp_f": 79.0,
+      "low_temp_f": 61.0,
+      "high_apparent_temp_f": 79.0,
+      "low_apparent_temp_f": 61.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 15.0,
+      "thunder_probability_pct": 22,
       "lightning_activity_level": null,
       "weather": [
         "fog",
-        "heavy fog",
         "thunderstorms",
         "light rain showers"
       ],
@@ -58,18 +59,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 50,
+      "us_aqi": 36,
       "category": "Good",
-      "aqi_24h_max": 76,
+      "aqi_24h_max": 53,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 11.1,
-      "pm10": 11.8,
-      "ozone": 131.0,
-      "nitrogen_dioxide": 1.8,
-      "observed_at": "2026-08-28T19:00",
+      "pm2_5": 8.6,
+      "pm10": 9.0,
+      "ozone": 54.0,
+      "nitrogen_dioxide": 7.2,
+      "observed_at": "2026-08-29T13:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-08-28",
-  "generated_at": "2026-08-28T19:47:49.161053+00:00"
+  "date": "2026-08-29",
+  "generated_at": "2026-08-29T13:24:18.194952+00:00"
 }
