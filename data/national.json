@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-29T13:24:18.194952+00:00",
-  "date": "2026-08-29",
+  "generated_at": "2026-08-30T13:10:28.310855+00:00",
+  "date": "2026-08-30",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 36
+      "counties_with_alerts": 16
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 88
+      "counties_over_threshold": 117
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,42 +28,42 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 38,
+      "counties_with_matches": 15,
       "items_pre_llm": {
-        "protest": 49,
-        "utility_outage": 15,
+        "protest": 16,
+        "utility_outage": 3,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 5,
+        "hazmat_incident": 2,
         "road_closure": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 16,
+      "counties_with_matches": 7,
       "items_post_llm": {
-        "protest": 8,
-        "utility_outage": 10,
+        "protest": 1,
+        "utility_outage": 3,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 3,
-        "road_closure": 0
+        "hazmat_incident": 2,
+        "road_closure": 2
       },
-      "unique_articles": 39,
-      "calls_used": 39,
+      "unique_articles": 15,
+      "calls_used": 15,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 296
+      "counties_with_alerts": 315
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 1,
-      "counties_with_alerts": 10,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -129,7 +129,7 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     },
@@ -160,8 +160,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 2,
-      "counties_with_alerts": 3
+      "national_items": 0,
+      "counties_with_alerts": 0
     },
     "service_status": {
       "status": "ok",
@@ -612,38 +612,17 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "ground_stop",
-      "code": "FLL",
-      "name": "Fort Lauderdale-Hollywood Intl",
-      "city": "Fort Lauderdale",
-      "state": "FL",
-      "reason": "thunderstorms",
-      "end": "9:45 am EDT",
-      "source": "FAA NAS Status"
-    },
-    {
-      "kind": "ground_stop",
-      "code": "MIA",
-      "name": "Miami Intl",
-      "city": "Miami",
-      "state": "FL",
-      "reason": "thunderstorms",
-      "end": "9:45 am EDT",
-      "source": "FAA NAS Status"
-    }
-  ],
+  "faa_advisories": [],
   "service_outages": [
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Minor Service Outage",
+      "title": "Incorrect geo location for some Cloudflare WARP users",
       "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "status": "identified",
+      "started": "2026-08-27T18:46:19.000Z",
+      "updated": "2026-08-29T15:31:17.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
       "source": "provider status page"
     },
     {
