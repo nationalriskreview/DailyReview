@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-08-30T13:10:28.310855+00:00",
-  "date": "2026-08-30",
+  "generated_at": "2026-08-31T15:26:23.837121+00:00",
+  "date": "2026-08-31",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 16
+      "counties_with_alerts": 24
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 117
+      "counties_over_threshold": 120
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 15,
+      "counties_with_matches": 57,
       "items_pre_llm": {
-        "protest": 16,
-        "utility_outage": 3,
-        "transit_disruption": 0,
-        "service_provider_outage": 0,
-        "hazmat_incident": 2,
-        "road_closure": 2
+        "protest": 47,
+        "utility_outage": 20,
+        "transit_disruption": 3,
+        "service_provider_outage": 1,
+        "hazmat_incident": 6,
+        "road_closure": 13
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 7,
+      "counties_with_matches": 24,
       "items_post_llm": {
-        "protest": 1,
-        "utility_outage": 3,
+        "protest": 9,
+        "utility_outage": 18,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
-        "road_closure": 2
+        "hazmat_incident": 0,
+        "road_closure": 6
       },
-      "unique_articles": 15,
-      "calls_used": 15,
+      "unique_articles": 54,
+      "calls_used": 54,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 315
+      "counties_with_alerts": 304
     },
     "transit": {
       "status": "ok",
@@ -135,7 +135,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 137
+      "counties_with_alerts": 134
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 2,
+      "active_incidents": 3,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -215,7 +215,7 @@
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "anthropic",
@@ -620,9 +620,20 @@
       "title": "Incorrect geo location for some Cloudflare WARP users",
       "impact": "minor",
       "status": "identified",
-      "started": "2026-08-27T18:46:19.000Z",
-      "updated": "2026-08-29T15:31:17.000Z",
+      "started": "2026-08-27T18:46:19.023Z",
+      "updated": "2026-08-31T15:15:03.348Z",
       "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
+      "source": "provider status page"
+    },
+    {
+      "provider": "OpenAI",
+      "key": "openai",
+      "title": "ChatGPT Work seeing elevated errors and latency",
+      "impact": "major",
+      "status": "identified",
+      "started": "2026-08-31T15:04:53Z",
+      "updated": "2026-08-31T15:21:30Z",
+      "url": "https://status.openai.com",
       "source": "provider status page"
     },
     {
