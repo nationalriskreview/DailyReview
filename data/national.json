@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-01T12:50:04.437577+00:00",
-  "date": "2026-09-01",
+  "generated_at": "2026-09-02T12:22:19.870859+00:00",
+  "date": "2026-09-02",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 97
+      "counties_with_alerts": 170
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 147
+      "counties_over_threshold": 304
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,40 +28,40 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 39,
+      "counties_with_matches": 61,
       "items_pre_llm": {
-        "protest": 42,
-        "utility_outage": 4,
-        "transit_disruption": 3,
-        "service_provider_outage": 1,
+        "protest": 34,
+        "utility_outage": 33,
+        "transit_disruption": 0,
+        "service_provider_outage": 0,
         "hazmat_incident": 4,
-        "road_closure": 2
+        "road_closure": 13
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 14,
+      "counties_with_matches": 30,
       "items_post_llm": {
-        "protest": 10,
-        "utility_outage": 3,
+        "protest": 2,
+        "utility_outage": 23,
         "transit_disruption": 0,
-        "service_provider_outage": 1,
-        "hazmat_incident": 2,
-        "road_closure": 0
+        "service_provider_outage": 0,
+        "hazmat_incident": 3,
+        "road_closure": 9
       },
-      "unique_articles": 40,
-      "calls_used": 40,
+      "unique_articles": 39,
+      "calls_used": 39,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 303
+      "counties_with_alerts": 265
     },
     "transit": {
-      "status": "ok",
+      "status": "partial",
       "agencies_total": 11,
-      "agencies_ok": 10,
+      "agencies_ok": 9,
       "items_total": 0,
       "counties_with_alerts": 0,
       "agencies": [
@@ -110,7 +110,7 @@
         {
           "id": "cta-rail",
           "name": "CTA 'L'",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -135,7 +135,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 134
+      "counties_with_alerts": 132
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -164,9 +164,9 @@
       "counties_with_alerts": 0
     },
     "service_status": {
-      "status": "ok",
+      "status": "partial",
       "active_incidents": 4,
-      "providers_ok": 27,
+      "providers_ok": 26,
       "providers_total": 27,
       "providers": [
         {
@@ -191,7 +191,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 2
+          "items": 1
         },
         {
           "key": "github",
@@ -215,7 +215,7 @@
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "anthropic",
@@ -233,7 +233,7 @@
           "key": "slack",
           "name": "Slack",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "dropbox",
@@ -250,7 +250,7 @@
         {
           "key": "docusign",
           "name": "DocuSign",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -269,7 +269,7 @@
           "key": "rapid7",
           "name": "Rapid7",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "servicenow",
@@ -335,15 +335,18 @@
     }
   },
   "run_health": {
-    "overall": "ok",
+    "overall": "degraded",
     "counts": {
-      "ok": 15,
-      "partial": 0,
+      "ok": 13,
+      "partial": 2,
       "failed": 0,
       "skipped": 0
     },
     "failed": [],
-    "partial": [],
+    "partial": [
+      "service_status",
+      "transit"
+    ],
     "skipped": []
   },
   "cdc_han": [],
@@ -619,32 +622,21 @@
       "key": "cloudflare",
       "title": "HTTP/3 issue affecting R2 custom domains",
       "impact": "minor",
-      "status": "investigating",
+      "status": "identified",
       "started": "2026-08-31T18:47:05.000Z",
-      "updated": "2026-08-31T18:47:05.000Z",
+      "updated": "2026-09-01T14:46:03.000Z",
       "url": "https://www.cloudflarestatus.com/incidents/8x66bpk6p9kk",
       "source": "provider status page"
     },
     {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Incorrect geo location for some Cloudflare WARP users",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-08-27T18:46:19.000Z",
-      "updated": "2026-09-01T08:29:56.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/9g65dxfbcjln",
-      "source": "provider status page"
-    },
-    {
-      "provider": "OpenAI",
-      "key": "openai",
-      "title": "Elevated latency in the Responses API",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-08-31T22:27:56Z",
-      "updated": "2026-09-01T01:46:22Z",
-      "url": "https://status.openai.com",
+      "provider": "Slack",
+      "key": "slack",
+      "title": "Trouble Accessing Historical Messages With Custom Data Retention Policies Enabled",
+      "impact": "incident",
+      "status": "active",
+      "started": "2026-08-13T14:21:41-07:00",
+      "updated": "2026-09-01T15:51:21-07:00",
+      "url": "https://slack-status.com/2026-08/e07b9271f0346c3b",
       "source": "provider status page"
     },
     {
@@ -656,6 +648,17 @@
       "started": "",
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Rapid7",
+      "key": "rapid7",
+      "title": "Service Under Maintenance",
+      "impact": "maintenance",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.rapid7.com",
       "source": "provider status page"
     }
   ]

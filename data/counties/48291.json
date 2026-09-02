@@ -10,28 +10,32 @@
   "alerts": {
     "weather": [
       {
-        "event": "Tropical Cyclone Local Statement",
-        "headline": "Tropical Cyclone Local Statement issued September 1 at 4:34AM CDT by NWS Houston/Galveston TX",
-        "severity": "Moderate",
-        "urgency": "Expected",
-        "effective": "2026-09-01T04:34:00-05:00",
-        "expires": "2026-09-01T12:45:00-05:00",
-        "source": "nws_alert",
-        "count": 1
-      },
-      {
-        "event": "Tropical Storm Warning",
-        "headline": "Tropical Storm Warning issued September 1 at 4:05AM CDT by NWS Houston/Galveston TX",
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued September 2 at 6:53AM CDT until September 2 at 9:30AM CDT by NWS Houston/Galveston TX",
         "severity": "Severe",
         "urgency": "Immediate",
-        "effective": "2026-09-01T04:05:00-05:00",
-        "expires": "2026-09-01T12:15:00-05:00",
+        "effective": "2026-09-02T05:51:00-05:00",
+        "expires": "2026-09-02T09:30:00-05:00",
         "source": "nws_alert",
-        "count": 1
+        "count": 2
       }
     ],
     "protest": [],
-    "utility_outage": [],
+    "utility_outage": [
+      {
+        "title": "Over 56,800 Texans without power Wednesday as Edouard's landfall causes damage, class cancellations",
+        "url": "https://www.yahoo.com/news/weather-news/articles/over-56-800-texans-without-113919808.html",
+        "domain": "yahoo.com",
+        "seendate": "20260902121500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.yahoo.com/news/weather-news/articles/over-56-800-texans-without-113919808.html",
+            "domain": "yahoo.com"
+          }
+        ]
+      }
+    ],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -46,38 +50,40 @@
   "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 3.1,
-      "precip_probability_pct": 88,
+      "precip_in_24h": 2.36,
+      "precip_probability_pct": 84,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 89.0,
-      "low_temp_f": 75.0,
-      "high_apparent_temp_f": 100.0,
-      "low_apparent_temp_f": 75.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 19.6,
-      "thunder_probability_pct": 67,
-      "lightning_activity_level": 4,
+      "low_temp_f": 74.0,
+      "high_apparent_temp_f": 102.0,
+      "low_apparent_temp_f": 74.0,
+      "max_wind_mph": 9.2,
+      "max_wind_gust_mph": 18.4,
+      "thunder_probability_pct": 52,
+      "lightning_activity_level": 3,
       "weather": [
-        "light rain showers",
-        "thunderstorms"
+        "moderate rain showers",
+        "thunderstorms",
+        "heavy rain showers",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 55,
-      "category": "Moderate",
-      "aqi_24h_max": 60,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 7.8,
-      "pm10": 8.8,
-      "ozone": 40.0,
-      "nitrogen_dioxide": 5.6,
-      "observed_at": "2026-09-01T12:00",
+      "us_aqi": 32,
+      "category": "Good",
+      "aqi_24h_max": 45,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 8.1,
+      "pm10": 10.9,
+      "ozone": 49.0,
+      "nitrogen_dioxide": 7.6,
+      "observed_at": "2026-09-02T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-01",
-  "generated_at": "2026-09-01T12:50:04.437577+00:00"
+  "date": "2026-09-02",
+  "generated_at": "2026-09-02T12:22:19.870859+00:00"
 }
