@@ -8,7 +8,18 @@
     "lon": -90.897018
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued September 3 at 12:12AM CDT until September 5 at 8:00PM CDT by NWS St Louis MO",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-03T00:12:00-05:00",
+        "expires": "2026-09-03T15:15:00-05:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -19,10 +30,24 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [],
+    "fema": [
+      {
+        "disaster_number": "4939",
+        "declaration_type": "DR",
+        "declaration_title": "SEVERE STORMS, STRAIGHT-LINE WINDS, AND FLOODING",
+        "incident_type": "Severe Storm",
+        "declared_at": "2026-09-01T00:00:00.000Z",
+        "is_new_today": false,
+        "incident_begin": "2026-07-09T00:00:00.000Z",
+        "incident_end": "2026-07-11T00:00:00.000Z",
+        "designated_area": "Washington (County)",
+        "fema_declaration_string": "DR-4939-MO",
+        "source": "https://www.fema.gov/disaster/4939"
+      }
+    ],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
@@ -30,33 +55,32 @@
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 95.0,
-      "low_temp_f": 72.0,
-      "high_apparent_temp_f": 99.0,
-      "low_apparent_temp_f": 72.0,
+      "low_temp_f": 74.0,
+      "high_apparent_temp_f": 102.0,
+      "low_apparent_temp_f": 74.0,
       "max_wind_mph": 4.6,
       "max_wind_gust_mph": 12.7,
       "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "thunderstorms",
         "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 39,
+      "us_aqi": 41,
       "category": "Good",
-      "aqi_24h_max": 47,
+      "aqi_24h_max": 42,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.3,
-      "pm10": 4.7,
-      "ozone": 68.0,
-      "nitrogen_dioxide": 1.8,
-      "observed_at": "2026-09-02T12:00",
+      "pm2_5": 6.8,
+      "pm10": 7.7,
+      "ozone": 62.0,
+      "nitrogen_dioxide": 1.9,
+      "observed_at": "2026-09-03T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-02",
-  "generated_at": "2026-09-02T12:22:19.870859+00:00"
+  "date": "2026-09-03",
+  "generated_at": "2026-09-03T12:22:22.419575+00:00"
 }

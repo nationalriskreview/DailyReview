@@ -8,98 +8,79 @@
     "lon": -75.133346
   },
   "alerts": {
-    "weather": [],
-    "protest": [],
-    "utility_outage": [
+    "weather": [
       {
-        "title": "Thousands without power after severe storms sweep through Philadelphia region",
-        "url": "https://www.yahoo.com/news/weather-news/articles/schools-mantua-twp-closed-wednesday-102930947.html",
-        "domain": "yahoo.com",
-        "seendate": "20260902114500",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.yahoo.com/news/weather-news/articles/schools-mantua-twp-closed-wednesday-102930947.html",
-            "domain": "yahoo.com"
-          }
-        ]
-      },
-      {
-        "title": "Severe storms cause damage, road closures and widespread power outages",
-        "url": "https://www.wgal.com/article/power-outages-reported-lancaster-county/73586973",
-        "domain": "wgal.com",
-        "seendate": "20260902061500",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.wgal.com/article/power-outages-reported-lancaster-county/73586973",
-            "domain": "wgal.com"
-          }
-        ]
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued September 3 at 7:15AM EDT until September 3 at 9:15AM EDT by NWS Mount Holly NJ",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-09-03T07:15:00-04:00",
+        "expires": "2026-09-03T09:15:00-04:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
+    "protest": [],
+    "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
-    "hazmat_incident": [
-      {
-        "title": "Emergency crews respond to hazmat situation at Gloucester County Walmart",
-        "url": "https://www.nbcphiladelphia.com/news/local/emergency-crews-respond-to-hazmat-situation-at-gloucester-county-walmart/4457018/",
-        "domain": "nbcphiladelphia.com",
-        "seendate": "20260902014500",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.nbcphiladelphia.com/news/local/emergency-crews-respond-to-hazmat-situation-at-gloucester-county-walmart/4457018/",
-            "domain": "nbcphiladelphia.com"
-          }
-        ]
-      }
-    ],
+    "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "ground_stop",
+        "code": "PHL",
+        "name": "Philadelphia Intl",
+        "city": "Philadelphia",
+        "state": "PA",
+        "reason": "thunderstorms",
+        "end": "9:00 am EDT",
+        "source": "FAA NAS Status"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 3,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.11,
-      "precip_probability_pct": 44,
+      "precip_in_24h": 0.31,
+      "precip_probability_pct": 68,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 79.0,
-      "low_temp_f": 71.0,
-      "high_apparent_temp_f": 79.0,
-      "low_apparent_temp_f": 71.0,
+      "high_temp_f": 91.0,
+      "low_temp_f": 70.0,
+      "high_apparent_temp_f": 102.0,
+      "low_apparent_temp_f": 70.0,
       "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 11.5,
-      "thunder_probability_pct": 17,
+      "max_wind_gust_mph": 13.8,
+      "thunder_probability_pct": 32,
       "lightning_activity_level": null,
       "weather": [
-        "heavy thunderstorms",
+        "thunderstorms",
         "light rain showers",
-        "fog",
-        "thunderstorms"
+        "heavy rain showers",
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 70,
+      "us_aqi": 53,
       "category": "Moderate",
-      "aqi_24h_max": 98,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 10.5,
-      "pm10": 12.8,
-      "ozone": 60.0,
-      "nitrogen_dioxide": 11.8,
-      "observed_at": "2026-09-02T12:00",
+      "aqi_24h_max": 111,
+      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+      "pm2_5": 10.3,
+      "pm10": 12.0,
+      "ozone": 59.0,
+      "nitrogen_dioxide": 13.3,
+      "observed_at": "2026-09-03T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-02",
-  "generated_at": "2026-09-02T12:22:19.870859+00:00"
+  "date": "2026-09-03",
+  "generated_at": "2026-09-03T12:22:22.419575+00:00"
 }

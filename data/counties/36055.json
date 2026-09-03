@@ -10,18 +10,49 @@
   "alerts": {
     "weather": [
       {
-        "event": "Severe Thunderstorm Warning",
-        "headline": "Severe Thunderstorm Warning issued September 2 at 8:04AM EDT until September 2 at 8:15AM EDT by NWS Buffalo NY",
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued September 2 at 9:50PM EDT until September 3 at 9:45PM EDT by NWS Buffalo NY",
         "severity": "Severe",
-        "urgency": "Immediate",
-        "effective": "2026-09-02T08:04:00-04:00",
-        "expires": "2026-09-02T08:15:00-04:00",
+        "urgency": "Expected",
+        "effective": "2026-09-02T21:50:00-04:00",
+        "expires": "2026-09-03T21:45:00-04:00",
         "source": "nws_alert",
         "count": 1
       }
     ],
     "protest": [],
-    "utility_outage": [],
+    "utility_outage": [
+      {
+        "title": "Power Outages Affect Thousands In Western New York Region",
+        "url": "https://wyrk.com/ixp/11/p/thunderstorm-power-outage-wny/",
+        "domain": "wyrk.com",
+        "seendate": "20260903060000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://wyrk.com/ixp/11/p/thunderstorm-power-outage-wny/",
+            "domain": "wyrk.com"
+          },
+          {
+            "url": "https://wblk.com/thunderstorm-power-outage-wny/",
+            "domain": "wblk.com"
+          }
+        ]
+      },
+      {
+        "title": "Storm damage and power outages",
+        "url": "https://www.whec.com/top-news/wednesday-damage-thousands-without-power-and-tornado-warnings/",
+        "domain": "whec.com",
+        "seendate": "20260903064500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.whec.com/top-news/wednesday-damage-thousands-without-power-and-tornado-warnings/",
+            "domain": "whec.com"
+          }
+        ]
+      }
+    ],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -33,42 +64,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.86,
-      "precip_probability_pct": 93,
+      "precip_in_24h": 0.16,
+      "precip_probability_pct": 37,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 83.0,
+      "high_temp_f": 78.0,
       "low_temp_f": 69.0,
-      "high_apparent_temp_f": 90.0,
-      "low_apparent_temp_f": 68.0,
+      "high_apparent_temp_f": 78.0,
+      "low_apparent_temp_f": 69.0,
       "max_wind_mph": 8.1,
       "max_wind_gust_mph": 11.5,
-      "thunder_probability_pct": 65,
+      "thunder_probability_pct": 20,
       "lightning_activity_level": null,
       "weather": [
-        "moderate rain showers",
+        "light rain showers",
         "thunderstorms",
-        "light rain showers"
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 68,
-      "category": "Moderate",
-      "aqi_24h_max": 77,
+      "us_aqi": 44,
+      "category": "Good",
+      "aqi_24h_max": 62,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 9.8,
-      "pm10": 10.0,
-      "ozone": 81.0,
-      "nitrogen_dioxide": 5.9,
-      "observed_at": "2026-09-02T12:00",
+      "pm2_5": 5.2,
+      "pm10": 5.2,
+      "ozone": 76.0,
+      "nitrogen_dioxide": 6.6,
+      "observed_at": "2026-09-03T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-02",
-  "generated_at": "2026-09-02T12:22:19.870859+00:00"
+  "date": "2026-09-03",
+  "generated_at": "2026-09-03T12:22:22.419575+00:00"
 }

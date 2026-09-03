@@ -1,10 +1,10 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-02T12:22:19.870859+00:00",
-  "date": "2026-09-02",
+  "generated_at": "2026-09-03T12:22:22.419575+00:00",
+  "date": "2026-09-03",
   "state": "NJ",
   "counties_total": 21,
-  "counties_with_alerts": 5,
+  "counties_with_alerts": 17,
   "counties": {
     "34001": {
       "fips": "34001",
@@ -28,37 +28,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.07,
-          "precip_probability_pct": 29,
+          "precip_in_24h": 0.62,
+          "precip_probability_pct": 66,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 70.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 70.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 18,
+          "high_temp_f": 89.0,
+          "low_temp_f": 71.0,
+          "high_apparent_temp_f": 99.0,
+          "low_apparent_temp_f": 71.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 29,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "heavy thunderstorms",
             "thunderstorms",
-            "fog"
+            "heavy rain showers",
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
-          "category": "Moderate",
-          "aqi_24h_max": 105,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 6.7,
-          "pm10": 8.6,
-          "ozone": 75.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-09-02T12:00",
+          "us_aqi": 42,
+          "category": "Good",
+          "aqi_24h_max": 98,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.3,
+          "pm10": 10.3,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 7.0,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -78,41 +78,53 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.07,
-          "precip_probability_pct": 34,
+          "precip_in_24h": 0.33,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 75.0,
-          "low_temp_f": 65.0,
-          "high_apparent_temp_f": 75.0,
-          "low_apparent_temp_f": 65.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 40,
+          "high_temp_f": 85.0,
+          "low_temp_f": 68.0,
+          "high_apparent_temp_f": 93.0,
+          "low_apparent_temp_f": 68.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 33,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 62,
+          "us_aqi": 61,
           "category": "Moderate",
-          "aqi_24h_max": 70,
+          "aqi_24h_max": 79,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.2,
-          "pm10": 13.9,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 18.2,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 11.4,
+          "pm10": 13.0,
+          "ozone": 51.0,
+          "nitrogen_dioxide": 22.4,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -122,7 +134,18 @@
       "name": "Burlington County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued September 3 at 7:15AM EDT until September 3 at 9:15AM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-09-03T07:15:00-04:00",
+            "expires": "2026-09-03T09:15:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -132,44 +155,55 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "PHL",
+            "name": "Philadelphia Intl",
+            "city": "Philadelphia",
+            "state": "PA",
+            "reason": "thunderstorms",
+            "end": "9:00 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.15,
-          "precip_probability_pct": 26,
+          "precip_in_24h": 0.3,
+          "precip_probability_pct": 67,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 69.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 69.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 89.0,
+          "low_temp_f": 70.0,
+          "high_apparent_temp_f": 99.0,
+          "low_apparent_temp_f": 70.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 31,
           "lightning_activity_level": null,
           "weather": [
-            "heavy thunderstorms",
+            "thunderstorms",
+            "heavy rain showers",
             "light rain showers",
-            "fog",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 64,
-          "category": "Moderate",
-          "aqi_24h_max": 96,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.9,
-          "pm10": 11.1,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 8.6,
-          "observed_at": "2026-09-02T12:00",
+          "us_aqi": 50,
+          "category": "Good",
+          "aqi_24h_max": 113,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 8.8,
+          "pm10": 10.4,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 10.0,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -179,7 +213,18 @@
       "name": "Camden County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued September 3 at 7:15AM EDT until September 3 at 9:15AM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-09-03T07:15:00-04:00",
+            "expires": "2026-09-03T09:15:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -189,44 +234,55 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "PHL",
+            "name": "Philadelphia Intl",
+            "city": "Philadelphia",
+            "state": "PA",
+            "reason": "thunderstorms",
+            "end": "9:00 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.08,
-          "precip_probability_pct": 37,
+          "precip_in_24h": 0.46,
+          "precip_probability_pct": 69,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
+          "high_temp_f": 90.0,
           "low_temp_f": 70.0,
-          "high_apparent_temp_f": 79.0,
+          "high_apparent_temp_f": 101.0,
           "low_apparent_temp_f": 70.0,
           "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 17,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 29,
           "lightning_activity_level": null,
           "weather": [
-            "heavy thunderstorms",
-            "light rain showers",
             "thunderstorms",
-            "fog"
+            "heavy rain showers",
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 64,
-          "category": "Moderate",
-          "aqi_24h_max": 96,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.9,
-          "pm10": 11.1,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 8.6,
-          "observed_at": "2026-09-02T12:00",
+          "us_aqi": 50,
+          "category": "Good",
+          "aqi_24h_max": 113,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 8.8,
+          "pm10": 10.4,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 10.0,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -253,37 +309,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 46,
+          "precip_in_24h": 0.34,
+          "precip_probability_pct": 60,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 80.0,
-          "low_temp_f": 71.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 71.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 26,
+          "high_temp_f": 88.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 99.0,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 30,
           "lightning_activity_level": null,
           "weather": [
-            "heavy thunderstorms",
-            "light rain showers",
             "thunderstorms",
-            "fog"
+            "heavy rain showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 49,
+          "us_aqi": 50,
           "category": "Good",
-          "aqi_24h_max": 126,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 9.1,
-          "pm10": 11.9,
-          "ozone": 96.0,
-          "nitrogen_dioxide": 2.6,
-          "observed_at": "2026-09-02T12:00",
+          "aqi_24h_max": 95,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 11.5,
+          "pm10": 14.6,
+          "ozone": 91.0,
+          "nitrogen_dioxide": 3.9,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -310,37 +365,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 35,
+          "precip_in_24h": 0.33,
+          "precip_probability_pct": 64,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 71.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 71.0,
-          "max_wind_mph": 6.9,
+          "high_temp_f": 90.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 5.8,
           "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 26,
+          "thunder_probability_pct": 29,
           "lightning_activity_level": null,
           "weather": [
-            "heavy thunderstorms",
-            "light rain showers",
             "thunderstorms",
-            "fog"
+            "light rain showers",
+            "heavy rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 116,
+          "aqi_24h_max": 110,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 13.4,
-          "pm10": 14.7,
-          "ozone": 80.0,
+          "pm2_5": 9.0,
+          "pm10": 11.0,
+          "ozone": 71.0,
           "nitrogen_dioxide": 5.9,
-          "observed_at": "2026-09-02T12:00",
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -352,21 +407,7 @@
       "alerts": {
         "weather": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Severe thunderstorms causing Newark Airport delays, power outages",
-            "url": "https://www.yahoo.com/news/weather-news/articles/severe-thunderstorms-causing-newark-airport-233456622.html",
-            "domain": "yahoo.com",
-            "seendate": "20260902001500",
-            "is_new": false,
-            "sources": [
-              {
-                "url": "https://www.yahoo.com/news/weather-news/articles/severe-thunderstorms-causing-newark-airport-233456622.html",
-                "domain": "yahoo.com"
-              }
-            ]
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
@@ -374,41 +415,53 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.35,
+          "precip_probability_pct": 98,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 75.0,
-          "low_temp_f": 66.0,
-          "high_apparent_temp_f": 75.0,
-          "low_apparent_temp_f": 66.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 40,
+          "high_temp_f": 85.0,
+          "low_temp_f": 69.0,
+          "high_apparent_temp_f": 93.0,
+          "low_apparent_temp_f": 69.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 31,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
+          "us_aqi": 57,
           "category": "Moderate",
           "aqi_24h_max": 63,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 12.3,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 15.1,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 6.8,
+          "pm10": 7.9,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 12.4,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -418,82 +471,76 @@
       "name": "Gloucester County",
       "state": "NJ",
       "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [
+        "weather": [
           {
-            "title": "Thousands without power after severe storms sweep through Philadelphia region",
-            "url": "https://www.yahoo.com/news/weather-news/articles/schools-mantua-twp-closed-wednesday-102930947.html",
-            "domain": "yahoo.com",
-            "seendate": "20260902114500",
-            "is_new": true,
-            "sources": [
-              {
-                "url": "https://www.yahoo.com/news/weather-news/articles/schools-mantua-twp-closed-wednesday-102930947.html",
-                "domain": "yahoo.com"
-              }
-            ]
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued September 3 at 7:15AM EDT until September 3 at 9:15AM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-09-03T07:15:00-04:00",
+            "expires": "2026-09-03T09:15:00-04:00",
+            "source": "nws_alert",
+            "count": 1
           }
         ],
+        "protest": [],
+        "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
-        "hazmat_incident": [
-          {
-            "title": "Hazmat incident at Walmart in Deptford under investigation: police",
-            "url": "https://www.fox29.com/news/deptford-walmart-hazmat-incident-police-first-responders-scene-gloucester-county",
-            "domain": "fox29.com",
-            "seendate": "20260902033000",
-            "is_new": true,
-            "sources": [
-              {
-                "url": "https://www.fox29.com/news/deptford-walmart-hazmat-incident-police-first-responders-scene-gloucester-county",
-                "domain": "fox29.com"
-              }
-            ]
-          }
-        ],
+        "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "PHL",
+            "name": "Philadelphia Intl",
+            "city": "Philadelphia",
+            "state": "PA",
+            "reason": "thunderstorms",
+            "end": "9:00 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
       "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 42,
+          "precip_in_24h": 0.68,
+          "precip_probability_pct": 70,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 71.0,
-          "high_apparent_temp_f": 85.0,
-          "low_apparent_temp_f": 71.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 20,
+          "high_temp_f": 91.0,
+          "low_temp_f": 70.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 70.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 30,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "heavy thunderstorms",
             "thunderstorms",
-            "fog"
+            "light rain showers",
+            "heavy rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 58,
-          "category": "Moderate",
+          "us_aqi": 44,
+          "category": "Good",
           "aqi_24h_max": 105,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 10.7,
-          "pm10": 12.3,
+          "pm2_5": 8.9,
+          "pm10": 10.9,
           "ozone": 64.0,
-          "nitrogen_dioxide": 9.2,
-          "observed_at": "2026-09-02T12:00",
+          "nitrogen_dioxide": 8.5,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -513,41 +560,53 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.08,
-          "precip_probability_pct": 24,
+          "precip_in_24h": 0.36,
+          "precip_probability_pct": 98,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 75.0,
-          "low_temp_f": 68.0,
-          "high_apparent_temp_f": 75.0,
-          "low_apparent_temp_f": 68.0,
+          "high_temp_f": 85.0,
+          "low_temp_f": 71.0,
+          "high_apparent_temp_f": 93.0,
+          "low_apparent_temp_f": 71.0,
           "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 40,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 33,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 62,
+          "us_aqi": 61,
           "category": "Moderate",
-          "aqi_24h_max": 70,
+          "aqi_24h_max": 79,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.2,
-          "pm10": 13.9,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 18.2,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 11.4,
+          "pm10": 13.0,
+          "ozone": 51.0,
+          "nitrogen_dioxide": 22.4,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -567,43 +626,54 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 54,
+          "precip_in_24h": 0.48,
+          "precip_probability_pct": 80,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 74.0,
+          "high_temp_f": 86.0,
           "low_temp_f": 66.0,
-          "high_apparent_temp_f": 74.0,
+          "high_apparent_temp_f": 93.0,
           "low_apparent_temp_f": 66.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 17,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 33,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
             "light rain showers",
-            "fog"
+            "heavy rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 64,
+          "us_aqi": 52,
           "category": "Moderate",
-          "aqi_24h_max": 72,
+          "aqi_24h_max": 76,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 11.8,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 12.7,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 8.8,
+          "pm10": 10.4,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 10.0,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -630,36 +700,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.09,
-          "precip_probability_pct": 41,
+          "precip_in_24h": 0.32,
+          "precip_probability_pct": 72,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 77.0,
+          "high_temp_f": 88.0,
           "low_temp_f": 68.0,
-          "high_apparent_temp_f": 77.0,
+          "high_apparent_temp_f": 98.0,
           "low_apparent_temp_f": 68.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 17,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 30,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
             "light rain showers",
-            "fog"
+            "heavy rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 64,
+          "us_aqi": 52,
           "category": "Moderate",
-          "aqi_24h_max": 72,
+          "aqi_24h_max": 76,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 11.8,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 12.7,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 8.8,
+          "pm10": 10.4,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 10.0,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -679,43 +749,54 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 33,
+          "precip_in_24h": 0.36,
+          "precip_probability_pct": 74,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 75.0,
-          "low_temp_f": 67.0,
-          "high_apparent_temp_f": 75.0,
-          "low_apparent_temp_f": 67.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 69.0,
+          "high_apparent_temp_f": 96.0,
+          "low_apparent_temp_f": 69.0,
           "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 12,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 28,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "heavy rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 61,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 76,
+          "aqi_24h_max": 90,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.3,
-          "pm10": 13.5,
-          "ozone": 57.0,
-          "nitrogen_dioxide": 14.1,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 9.4,
+          "pm10": 11.1,
+          "ozone": 59.0,
+          "nitrogen_dioxide": 12.3,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -735,42 +816,54 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.08,
-          "precip_probability_pct": 25,
+          "precip_in_24h": 0.42,
+          "precip_probability_pct": 74,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 76.0,
-          "low_temp_f": 68.0,
-          "high_apparent_temp_f": 76.0,
-          "low_apparent_temp_f": 68.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 13,
+          "high_temp_f": 87.0,
+          "low_temp_f": 69.0,
+          "high_apparent_temp_f": 96.0,
+          "low_apparent_temp_f": 69.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 30,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "heavy rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 72,
+          "aqi_24h_max": 98,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.0,
-          "pm10": 15.7,
-          "ozone": 67.0,
-          "nitrogen_dioxide": 8.1,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 8.9,
+          "pm10": 10.8,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 12.7,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -782,21 +875,7 @@
       "alerts": {
         "weather": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Severe thunderstorms causing Newark Airport delays, power outages",
-            "url": "https://www.yahoo.com/news/weather-news/articles/severe-thunderstorms-causing-newark-airport-233456622.html",
-            "domain": "yahoo.com",
-            "seendate": "20260902001500",
-            "is_new": false,
-            "sources": [
-              {
-                "url": "https://www.yahoo.com/news/weather-news/articles/severe-thunderstorms-causing-newark-airport-233456622.html",
-                "domain": "yahoo.com"
-              }
-            ]
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
@@ -804,43 +883,54 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 51,
+          "precip_in_24h": 0.37,
+          "precip_probability_pct": 87,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 73.0,
-          "low_temp_f": 63.0,
-          "high_apparent_temp_f": 73.0,
-          "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 17,
+          "high_temp_f": 84.0,
+          "low_temp_f": 65.0,
+          "high_apparent_temp_f": 90.0,
+          "low_apparent_temp_f": 65.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 30,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
             "light rain showers",
-            "fog"
+            "heavy rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
+          "us_aqi": 57,
           "category": "Moderate",
           "aqi_24h_max": 63,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 12.3,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 15.1,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 6.8,
+          "pm10": 7.9,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 12.4,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -860,44 +950,55 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.08,
-          "precip_probability_pct": 24,
+          "precip_in_24h": 0.45,
+          "precip_probability_pct": 61,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 77.0,
-          "low_temp_f": 69.0,
-          "high_apparent_temp_f": 77.0,
-          "low_apparent_temp_f": 69.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 16,
+          "high_temp_f": 88.0,
+          "low_temp_f": 71.0,
+          "high_apparent_temp_f": 97.0,
+          "low_apparent_temp_f": 71.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 32,
           "lightning_activity_level": null,
           "weather": [
-            "heavy thunderstorms",
+            "thunderstorms",
+            "heavy rain showers",
             "light rain showers",
-            "fog",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 56,
+          "us_aqi": 51,
           "category": "Moderate",
-          "aqi_24h_max": 93,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.2,
-          "pm10": 10.6,
-          "ozone": 67.0,
-          "nitrogen_dioxide": 5.9,
-          "observed_at": "2026-09-02T12:00",
+          "aqi_24h_max": 104,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 8.0,
+          "pm10": 9.9,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 6.1,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -917,41 +1018,53 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.13,
-          "precip_probability_pct": 46,
+          "precip_in_24h": 0.3,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 73.0,
-          "low_temp_f": 63.0,
-          "high_apparent_temp_f": 73.0,
-          "low_apparent_temp_f": 63.0,
+          "high_temp_f": 84.0,
+          "low_temp_f": 66.0,
+          "high_apparent_temp_f": 92.0,
+          "low_apparent_temp_f": 66.0,
           "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 40,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 32,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 49,
-          "category": "Good",
-          "aqi_24h_max": 55,
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 52,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 6.4,
-          "pm10": 7.7,
-          "ozone": 61.0,
-          "nitrogen_dioxide": 6.9,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 2.5,
+          "pm10": 2.9,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 6.5,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -959,6 +1072,85 @@
     "34033": {
       "fips": "34033",
       "name": "Salem County",
+      "state": "NJ",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued September 3 at 7:15AM EDT until September 3 at 9:15AM EDT by NWS Mount Holly NJ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-09-03T07:15:00-04:00",
+            "expires": "2026-09-03T09:15:00-04:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "PHL",
+            "name": "Philadelphia Intl",
+            "city": "Philadelphia",
+            "state": "PA",
+            "reason": "thunderstorms",
+            "end": "9:00 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.4,
+          "precip_probability_pct": 67,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 71.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 71.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 30,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers",
+            "heavy rain showers",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 44,
+          "category": "Good",
+          "aqi_24h_max": 105,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 8.9,
+          "pm10": 10.9,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 8.5,
+          "observed_at": "2026-09-03T12:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "34035": {
+      "fips": "34035",
+      "name": "Somerset County",
       "state": "NJ",
       "alerts": {
         "weather": [],
@@ -971,114 +1163,54 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.09,
-          "precip_probability_pct": 43,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 71.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 71.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 24,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain showers",
-            "heavy thunderstorms",
-            "thunderstorms",
-            "fog"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 58,
-          "category": "Moderate",
-          "aqi_24h_max": 105,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 10.7,
-          "pm10": 12.3,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 9.2,
-          "observed_at": "2026-09-02T12:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "34035": {
-      "fips": "34035",
-      "name": "Somerset County",
-      "state": "NJ",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [
+        "aviation": [
           {
-            "title": "Severe thunderstorms causing Newark Airport delays, power outages",
-            "url": "https://www.yahoo.com/news/weather-news/articles/severe-thunderstorms-causing-newark-airport-233456622.html",
-            "domain": "yahoo.com",
-            "seendate": "20260902001500",
-            "is_new": false,
-            "sources": [
-              {
-                "url": "https://www.yahoo.com/news/weather-news/articles/severe-thunderstorms-causing-newark-airport-233456622.html",
-                "domain": "yahoo.com"
-              }
-            ]
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
           }
         ],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
         "fema": [],
         "disease": []
       },
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 45,
+          "precip_in_24h": 0.55,
+          "precip_probability_pct": 75,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 76.0,
-          "low_temp_f": 67.0,
-          "high_apparent_temp_f": 76.0,
-          "low_apparent_temp_f": 67.0,
+          "high_temp_f": 88.0,
+          "low_temp_f": 69.0,
+          "high_apparent_temp_f": 98.0,
+          "low_apparent_temp_f": 69.0,
           "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 17,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 31,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
             "light rain showers",
-            "fog"
+            "heavy rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 64,
+          "us_aqi": 52,
           "category": "Moderate",
-          "aqi_24h_max": 72,
+          "aqi_24h_max": 76,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.9,
-          "pm10": 11.8,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 12.7,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 8.8,
+          "pm10": 10.4,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 10.0,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1090,21 +1222,7 @@
       "alerts": {
         "weather": [],
         "protest": [],
-        "utility_outage": [
-          {
-            "title": "Severe thunderstorms causing Newark Airport delays, power outages",
-            "url": "https://www.yahoo.com/news/weather-news/articles/severe-thunderstorms-causing-newark-airport-233456622.html",
-            "domain": "yahoo.com",
-            "seendate": "20260902001500",
-            "is_new": false,
-            "sources": [
-              {
-                "url": "https://www.yahoo.com/news/weather-news/articles/severe-thunderstorms-causing-newark-airport-233456622.html",
-                "domain": "yahoo.com"
-              }
-            ]
-          }
-        ],
+        "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
@@ -1112,43 +1230,54 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.12,
-          "precip_probability_pct": 57,
+          "precip_in_24h": 0.35,
+          "precip_probability_pct": 89,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 74.0,
-          "low_temp_f": 65.0,
-          "high_apparent_temp_f": 74.0,
-          "low_apparent_temp_f": 65.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 66.0,
+          "high_apparent_temp_f": 93.0,
+          "low_apparent_temp_f": 66.0,
           "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": 18,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 33,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
             "light rain showers",
-            "fog"
+            "heavy rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 52,
+          "aqi_24h_max": 51,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.3,
-          "pm10": 6.5,
-          "ozone": 63.0,
-          "nitrogen_dioxide": 6.0,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 2.2,
+          "pm10": 2.4,
+          "ozone": 67.0,
+          "nitrogen_dioxide": 4.7,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1168,41 +1297,53 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.09,
-          "precip_probability_pct": 29,
+          "precip_in_24h": 0.32,
+          "precip_probability_pct": 93,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 75.0,
-          "low_temp_f": 67.0,
-          "high_apparent_temp_f": 75.0,
-          "low_apparent_temp_f": 67.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 40,
+          "high_temp_f": 86.0,
+          "low_temp_f": 70.0,
+          "high_apparent_temp_f": 95.0,
+          "low_apparent_temp_f": 70.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 32,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
+          "us_aqi": 57,
           "category": "Moderate",
           "aqi_24h_max": 63,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.6,
-          "pm10": 12.3,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 15.1,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 6.8,
+          "pm10": 7.9,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 12.4,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1222,43 +1363,54 @@
         "wildfires": [],
         "transit": [],
         "amtrak": [],
-        "aviation": [],
+        "aviation": [
+          {
+            "kind": "ground_stop",
+            "code": "EWR",
+            "name": "Newark Liberty Intl",
+            "city": "Newark",
+            "state": "NJ",
+            "reason": "thunderstorms",
+            "end": "9:15 am EDT",
+            "source": "FAA NAS Status"
+          }
+        ],
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.08,
-          "precip_probability_pct": 57,
+          "precip_in_24h": 0.5,
+          "precip_probability_pct": 84,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 72.0,
-          "low_temp_f": 66.0,
-          "high_apparent_temp_f": 72.0,
-          "low_apparent_temp_f": 66.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 18,
+          "high_temp_f": 85.0,
+          "low_temp_f": 65.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 65.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 36,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
             "light rain showers",
-            "fog"
+            "heavy rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 60,
-          "category": "Moderate",
-          "aqi_24h_max": 62,
+          "us_aqi": 44,
+          "category": "Good",
+          "aqi_24h_max": 60,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.8,
-          "pm10": 10.6,
-          "ozone": 51.0,
-          "nitrogen_dioxide": 10.2,
-          "observed_at": "2026-09-02T12:00",
+          "pm2_5": 5.3,
+          "pm10": 6.0,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 8.1,
+          "observed_at": "2026-09-03T12:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

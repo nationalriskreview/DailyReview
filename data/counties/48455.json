@@ -10,10 +10,24 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~5.4\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued September 3 at 5:56AM CDT until September 5 at 1:00AM CDT by NWS Shreveport LA",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-09-03T05:56:00-05:00",
+        "expires": "2026-09-04T07:00:00-05:00",
+        "source": "nws_alert",
+        "count": 1
+      },
+      {
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued September 3 at 5:28AM CDT until September 3 at 8:30AM CDT by NWS Houston/Galveston TX",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-09-03T05:28:00-05:00",
+        "expires": "2026-09-03T08:30:00-05:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -29,44 +43,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 5.42,
-      "precip_probability_pct": 94,
+      "precip_in_24h": 1.4,
+      "precip_probability_pct": 74,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 85.0,
-      "low_temp_f": 74.0,
-      "high_apparent_temp_f": 94.0,
-      "low_apparent_temp_f": 74.0,
-      "max_wind_mph": 12.7,
-      "max_wind_gust_mph": 28.8,
-      "thunder_probability_pct": 61,
-      "lightning_activity_level": 3,
+      "low_temp_f": 73.0,
+      "high_apparent_temp_f": 92.0,
+      "low_apparent_temp_f": 73.0,
+      "max_wind_mph": 5.8,
+      "max_wind_gust_mph": 10.4,
+      "thunder_probability_pct": 41,
+      "lightning_activity_level": 5,
       "weather": [
         "thunderstorms",
-        "light rain showers",
-        "moderate rain showers",
-        "heavy rain showers",
-        "fog"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 36,
+      "us_aqi": 26,
       "category": "Good",
-      "aqi_24h_max": 50,
+      "aqi_24h_max": 35,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.8,
-      "pm10": 2.9,
-      "ozone": 68.0,
-      "nitrogen_dioxide": 2.2,
-      "observed_at": "2026-09-02T12:00",
+      "pm2_5": 5.5,
+      "pm10": 7.5,
+      "ozone": 47.0,
+      "nitrogen_dioxide": 4.5,
+      "observed_at": "2026-09-03T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-02",
-  "generated_at": "2026-09-02T12:22:19.870859+00:00"
+  "date": "2026-09-03",
+  "generated_at": "2026-09-03T12:22:22.419575+00:00"
 }

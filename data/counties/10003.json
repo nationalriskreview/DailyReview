@@ -8,23 +8,20 @@
     "lon": -75.644132
   },
   "alerts": {
-    "weather": [],
-    "protest": [],
-    "utility_outage": [
+    "weather": [
       {
-        "title": "Thousands without power after severe storms sweep through Philadelphia region",
-        "url": "https://www.yahoo.com/news/weather-news/articles/schools-mantua-twp-closed-wednesday-102930947.html",
-        "domain": "yahoo.com",
-        "seendate": "20260902114500",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.yahoo.com/news/weather-news/articles/schools-mantua-twp-closed-wednesday-102930947.html",
-            "domain": "yahoo.com"
-          }
-        ]
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued September 3 at 7:15AM EDT until September 3 at 9:15AM EDT by NWS Mount Holly NJ",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-09-03T07:15:00-04:00",
+        "expires": "2026-09-03T09:15:00-04:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
+    "protest": [],
+    "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -32,47 +29,57 @@
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "ground_stop",
+        "code": "PHL",
+        "name": "Philadelphia Intl",
+        "city": "Philadelphia",
+        "state": "PA",
+        "reason": "thunderstorms",
+        "end": "9:00 am EDT",
+        "source": "FAA NAS Status"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.03,
-      "precip_probability_pct": 44,
+      "precip_in_24h": 0.3,
+      "precip_probability_pct": 65,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 81.0,
-      "low_temp_f": 71.0,
-      "high_apparent_temp_f": 86.0,
-      "low_apparent_temp_f": 71.0,
-      "max_wind_mph": 5.8,
-      "max_wind_gust_mph": 10.4,
-      "thunder_probability_pct": 26,
+      "high_temp_f": 91.0,
+      "low_temp_f": 72.0,
+      "high_apparent_temp_f": 103.0,
+      "low_apparent_temp_f": 72.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 12.7,
+      "thunder_probability_pct": 33,
       "lightning_activity_level": null,
       "weather": [
-        "heavy thunderstorms",
-        "light rain showers",
         "thunderstorms",
-        "fog"
+        "light rain showers",
+        "heavy rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 55,
-      "category": "Moderate",
-      "aqi_24h_max": 103,
+      "us_aqi": 45,
+      "category": "Good",
+      "aqi_24h_max": 109,
       "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-      "pm2_5": 16.4,
-      "pm10": 17.3,
-      "ozone": 46.0,
-      "nitrogen_dioxide": 14.5,
-      "observed_at": "2026-09-02T12:00",
+      "pm2_5": 8.9,
+      "pm10": 10.8,
+      "ozone": 64.0,
+      "nitrogen_dioxide": 7.3,
+      "observed_at": "2026-09-03T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-02",
-  "generated_at": "2026-09-02T12:22:19.870859+00:00"
+  "date": "2026-09-03",
+  "generated_at": "2026-09-03T12:22:22.419575+00:00"
 }
