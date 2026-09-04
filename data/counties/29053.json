@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued September 4 at 4:18AM CDT until September 8 at 8:00PM CDT by NWS Kansas City/Pleasant Hill MO",
         "severity": "Severe",
-        "source": "nws_forecast"
+        "urgency": "Expected",
+        "effective": "2026-09-04T04:18:00-05:00",
+        "expires": "2026-09-04T12:30:00-05:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -33,16 +37,16 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 4,
+      "precip_probability_pct": 1,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 100.0,
-      "low_temp_f": 78.0,
-      "high_apparent_temp_f": 107.0,
-      "low_apparent_temp_f": 78.0,
+      "low_temp_f": 76.0,
+      "high_apparent_temp_f": 108.0,
+      "low_apparent_temp_f": 76.0,
       "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 16.1,
-      "thunder_probability_pct": 4,
+      "max_wind_gust_mph": 13.8,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
@@ -52,18 +56,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 45,
+      "us_aqi": 23,
       "category": "Good",
-      "aqi_24h_max": 55,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 5.8,
-      "pm10": 6.5,
-      "ozone": 55.0,
-      "nitrogen_dioxide": 2.5,
-      "observed_at": "2026-09-03T12:00",
+      "aqi_24h_max": 42,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 5.2,
+      "pm10": 5.9,
+      "ozone": 48.0,
+      "nitrogen_dioxide": 3.0,
+      "observed_at": "2026-09-04T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-03",
-  "generated_at": "2026-09-03T12:22:22.419575+00:00"
+  "date": "2026-09-04",
+  "generated_at": "2026-09-04T12:24:20.970793+00:00"
 }

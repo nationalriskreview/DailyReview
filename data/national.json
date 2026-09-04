@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-03T12:22:22.419575+00:00",
-  "date": "2026-09-03",
+  "generated_at": "2026-09-04T12:24:20.970793+00:00",
+  "date": "2026-09-04",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 254
+      "counties_with_alerts": 282
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 375
+      "counties_over_threshold": 403
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,42 +28,42 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 55,
+      "counties_with_matches": 57,
       "items_pre_llm": {
-        "protest": 37,
-        "utility_outage": 28,
+        "protest": 33,
+        "utility_outage": 36,
         "transit_disruption": 0,
-        "service_provider_outage": 0,
-        "hazmat_incident": 1,
-        "road_closure": 8
+        "service_provider_outage": 1,
+        "hazmat_incident": 3,
+        "road_closure": 3
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 34,
+      "counties_with_matches": 38,
       "items_post_llm": {
-        "protest": 8,
-        "utility_outage": 20,
+        "protest": 6,
+        "utility_outage": 36,
         "transit_disruption": 0,
-        "service_provider_outage": 0,
+        "service_provider_outage": 1,
         "hazmat_incident": 0,
-        "road_closure": 8
+        "road_closure": 0
       },
-      "unique_articles": 40,
-      "calls_used": 40,
+      "unique_articles": 38,
+      "calls_used": 38,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 257
+      "counties_with_alerts": 253
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 0,
-      "counties_with_alerts": 0,
+      "items_total": 6,
+      "counties_with_alerts": 19,
       "agencies": [
         {
           "id": "mbta",
@@ -87,13 +87,13 @@
           "id": "mta-mnr",
           "name": "MTA Metro-North Railroad",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "id": "path",
           "name": "PATH",
           "status": "ok",
-          "items": 0
+          "items": 4
         },
         {
           "id": "bart",
@@ -129,13 +129,13 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 0
+          "items": 1
         }
       ]
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 160
+      "counties_with_alerts": 159
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -160,12 +160,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 2,
-      "counties_with_alerts": 32
+      "national_items": 1,
+      "counties_with_alerts": 9
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 4,
+      "active_incidents": 7,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -173,7 +173,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 0
+          "items": 4
         },
         {
           "key": "azure",
@@ -329,7 +329,7 @@
           "key": "t8fc",
           "name": "t8fc",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     }
@@ -618,26 +618,60 @@
   "faa_advisories": [
     {
       "kind": "ground_stop",
-      "code": "PHL",
-      "name": "Philadelphia Intl",
-      "city": "Philadelphia",
-      "state": "PA",
+      "code": "ORD",
+      "name": "Chicago O'Hare Intl",
+      "city": "Chicago",
+      "state": "IL",
       "reason": "thunderstorms",
-      "end": "9:00 am EDT",
-      "source": "FAA NAS Status"
-    },
-    {
-      "kind": "ground_stop",
-      "code": "EWR",
-      "name": "Newark Liberty Intl",
-      "city": "Newark",
-      "state": "NJ",
-      "reason": "thunderstorms",
-      "end": "9:15 am EDT",
+      "end": "7:45 am CDT",
       "source": "FAA NAS Status"
     }
   ],
   "service_outages": [
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service is operating normally: [RESOLVED] Increased API Error Rates",
+      "impact": "",
+      "status": "",
+      "started": "Thu, 03 Sep 2026 17:07:54 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased API Error Rates",
+      "impact": "",
+      "status": "",
+      "started": "Thu, 03 Sep 2026 16:20:09 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased API Error Rates",
+      "impact": "",
+      "status": "",
+      "started": "Thu, 03 Sep 2026 15:26:28 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased API Error Rates",
+      "impact": "",
+      "status": "",
+      "started": "Thu, 03 Sep 2026 14:49:58 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
@@ -663,14 +697,6 @@
     {
       "provider": "q7v2",
       "impact": "major",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
-    },
-    {
-      "provider": "t8fc",
-      "impact": "minor",
       "active_incidents": 1,
       "status": "active",
       "coded": true,

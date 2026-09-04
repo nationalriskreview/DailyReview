@@ -16,37 +16,39 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
-    "transit": [],
-    "amtrak": [],
-    "aviation": [
+    "transit": [
       {
-        "kind": "ground_stop",
-        "code": "EWR",
-        "name": "Newark Liberty Intl",
-        "city": "Newark",
-        "state": "NJ",
-        "reason": "thunderstorms",
-        "end": "9:15 am EDT",
-        "source": "FAA NAS Status"
+        "agency": "NJ Transit Rail",
+        "agency_id": "njtransit-rail-rss",
+        "route": "ALL",
+        "system_outage": true,
+        "effect": "NO_SERVICE",
+        "header": "Pascack Valley Line rail service is suspended due to a track condition near Pearl River.&nbsp;",
+        "description": "Pascack Valley Line rail service is suspended due to a track condition near Pearl River.&nbsp;",
+        "start": "2026-09-04T07:57:16-04:00",
+        "end": "",
+        "source": "https://www.njtransit.com/node/2165122"
       }
     ],
+    "amtrak": [],
+    "aviation": [],
     "fema": [],
     "disease": []
   },
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.32,
-      "precip_probability_pct": 93,
+      "precip_in_24h": 0.08,
+      "precip_probability_pct": 60,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 86.0,
-      "low_temp_f": 70.0,
-      "high_apparent_temp_f": 95.0,
-      "low_apparent_temp_f": 70.0,
-      "max_wind_mph": 8.1,
-      "max_wind_gust_mph": 16.1,
-      "thunder_probability_pct": 32,
+      "high_temp_f": 85.0,
+      "low_temp_f": 71.0,
+      "high_apparent_temp_f": 90.0,
+      "low_apparent_temp_f": 71.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 13.8,
+      "thunder_probability_pct": 40,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
@@ -56,18 +58,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 57,
+      "us_aqi": 56,
       "category": "Moderate",
-      "aqi_24h_max": 63,
+      "aqi_24h_max": 57,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 6.8,
-      "pm10": 7.9,
-      "ozone": 57.0,
-      "nitrogen_dioxide": 12.4,
-      "observed_at": "2026-09-03T12:00",
+      "pm2_5": 7.0,
+      "pm10": 7.2,
+      "ozone": 61.0,
+      "nitrogen_dioxide": 10.5,
+      "observed_at": "2026-09-04T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-03",
-  "generated_at": "2026-09-03T12:22:22.419575+00:00"
+  "date": "2026-09-04",
+  "generated_at": "2026-09-04T12:24:20.970793+00:00"
 }
