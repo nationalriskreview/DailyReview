@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-04T12:24:20.970793+00:00",
-  "date": "2026-09-04",
+  "generated_at": "2026-09-05T11:32:48.869439+00:00",
+  "date": "2026-09-05",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 282
+      "counties_with_alerts": 290
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 403
+      "counties_over_threshold": 384
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,42 +28,42 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 57,
+      "counties_with_matches": 37,
       "items_pre_llm": {
-        "protest": 33,
-        "utility_outage": 36,
-        "transit_disruption": 0,
-        "service_provider_outage": 1,
-        "hazmat_incident": 3,
-        "road_closure": 3
+        "protest": 36,
+        "utility_outage": 4,
+        "transit_disruption": 2,
+        "service_provider_outage": 0,
+        "hazmat_incident": 2,
+        "road_closure": 8
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 38,
+      "counties_with_matches": 23,
       "items_post_llm": {
-        "protest": 6,
-        "utility_outage": 36,
+        "protest": 16,
+        "utility_outage": 4,
         "transit_disruption": 0,
-        "service_provider_outage": 1,
-        "hazmat_incident": 0,
-        "road_closure": 0
+        "service_provider_outage": 0,
+        "hazmat_incident": 2,
+        "road_closure": 6
       },
-      "unique_articles": 38,
-      "calls_used": 38,
+      "unique_articles": 35,
+      "calls_used": 35,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 253
+      "counties_with_alerts": 261
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 10,
-      "items_total": 6,
-      "counties_with_alerts": 19,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -87,13 +87,13 @@
           "id": "mta-mnr",
           "name": "MTA Metro-North Railroad",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "path",
           "name": "PATH",
           "status": "ok",
-          "items": 4
+          "items": 0
         },
         {
           "id": "bart",
@@ -129,13 +129,13 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 159
+      "counties_with_alerts": 182
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -160,12 +160,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 9
+      "national_items": 0,
+      "counties_with_alerts": 0
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 7,
+      "active_incidents": 4,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -173,7 +173,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 4
+          "items": 0
         },
         {
           "key": "azure",
@@ -233,7 +233,7 @@
           "key": "slack",
           "name": "Slack",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "dropbox",
@@ -615,63 +615,8 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "ground_stop",
-      "code": "ORD",
-      "name": "Chicago O'Hare Intl",
-      "city": "Chicago",
-      "state": "IL",
-      "reason": "thunderstorms",
-      "end": "7:45 am CDT",
-      "source": "FAA NAS Status"
-    }
-  ],
+  "faa_advisories": [],
   "service_outages": [
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service is operating normally: [RESOLVED] Increased API Error Rates",
-      "impact": "",
-      "status": "",
-      "started": "Thu, 03 Sep 2026 17:07:54 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased API Error Rates",
-      "impact": "",
-      "status": "",
-      "started": "Thu, 03 Sep 2026 16:20:09 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased API Error Rates",
-      "impact": "",
-      "status": "",
-      "started": "Thu, 03 Sep 2026 15:26:28 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased API Error Rates",
-      "impact": "",
-      "status": "",
-      "started": "Thu, 03 Sep 2026 14:49:58 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
@@ -681,6 +626,17 @@
       "started": "",
       "updated": "",
       "url": "https://www.cloudflarestatus.com",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Slack",
+      "key": "slack",
+      "title": "Trouble Accessing Historical Messages With Custom Data Retention Policies Enabled",
+      "impact": "incident",
+      "status": "active",
+      "started": "2026-08-13T14:21:41-07:00",
+      "updated": "2026-09-04T10:00:57-07:00",
+      "url": "https://slack-status.com/2026-08/e07b9271f0346c3b",
       "source": "provider status page"
     },
     {

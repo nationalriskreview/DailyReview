@@ -8,25 +8,33 @@
     "lon": -105.555344
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued September 3 at 9:17PM MDT until September 4 at 9:00PM MDT by NWS Billings MT",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-09-03T21:17:00-06:00",
-        "expires": "2026-09-04T21:00:00-06:00",
-        "source": "nws_alert",
-        "count": 1
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Three Bar Corral",
+        "incident_name": "Three Bar Corral",
+        "id": "2026-MTLG09-000789",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-09-04T19:37:48+00:00",
+        "lat": 45.0323,
+        "lon": -105.6687,
+        "acreage": 200,
+        "containment_pct": 20,
+        "cause": "Undetermined",
+        "state": "MT",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTLG09-000789",
+        "source": "NIFC WFIGS",
+        "distance_miles": 26.6,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
@@ -37,37 +45,38 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 5,
+      "precip_probability_pct": 19,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 96.0,
-      "low_temp_f": 61.0,
-      "high_apparent_temp_f": 91.0,
-      "low_apparent_temp_f": 61.0,
-      "max_wind_mph": 15.0,
-      "max_wind_gust_mph": 23.0,
-      "thunder_probability_pct": 5,
+      "high_temp_f": 94.0,
+      "low_temp_f": 60.0,
+      "high_apparent_temp_f": 89.0,
+      "low_apparent_temp_f": 60.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 15.0,
+      "thunder_probability_pct": 15,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "thunderstorms"
+        "smoke",
+        "thunderstorms",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 31,
+      "us_aqi": 30,
       "category": "Good",
-      "aqi_24h_max": 63,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 0.9,
-      "pm10": 1.1,
-      "ozone": 57.0,
-      "nitrogen_dioxide": 2.8,
-      "observed_at": "2026-09-04T12:00",
+      "aqi_24h_max": 47,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 18.2,
+      "pm10": 19.6,
+      "ozone": 54.0,
+      "nitrogen_dioxide": 6.6,
+      "observed_at": "2026-09-05T11:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-04",
-  "generated_at": "2026-09-04T12:24:20.970793+00:00"
+  "date": "2026-09-05",
+  "generated_at": "2026-09-05T11:32:48.869439+00:00"
 }
