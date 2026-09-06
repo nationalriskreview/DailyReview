@@ -1,17 +1,28 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-05T11:32:48.869439+00:00",
-  "date": "2026-09-05",
+  "generated_at": "2026-09-06T11:51:36.177735+00:00",
+  "date": "2026-09-06",
   "state": "HI",
   "counties_total": 5,
-  "counties_with_alerts": 2,
+  "counties_with_alerts": 4,
   "counties": {
     "15001": {
       "fips": "15001",
       "name": "Hawaii County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Tropical Cyclone Local Statement",
+            "headline": "Tropical Cyclone Local Statement issued September 5 at 11:12PM HST by NWS Honolulu HI",
+            "severity": "Moderate",
+            "urgency": "Expected",
+            "effective": "2026-09-05T23:12:00-10:00",
+            "expires": "2026-09-06T07:15:00-10:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -52,39 +63,39 @@
         ],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.3,
-          "precip_probability_pct": 62,
+          "precip_in_24h": 1.81,
+          "precip_probability_pct": 91,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 74.0,
+          "high_temp_f": 75.0,
           "low_temp_f": 51.0,
-          "high_apparent_temp_f": 74.0,
+          "high_apparent_temp_f": 75.0,
           "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 16.1,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 13.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "thunderstorms",
+            "moderate rain showers",
             "heavy rain showers",
-            "moderate rain showers"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 17,
+          "us_aqi": 14,
           "category": "Good",
-          "aqi_24h_max": 21,
+          "aqi_24h_max": 20,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.5,
+          "pm2_5": 1.0,
+          "pm10": 1.1,
           "ozone": 22.0,
-          "nitrogen_dioxide": 2.5,
-          "observed_at": "2026-09-05T11:00",
+          "nitrogen_dioxide": 1.7,
+          "observed_at": "2026-09-06T11:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -94,27 +105,24 @@
       "name": "Honolulu County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Tropical Cyclone Local Statement",
+            "headline": "Tropical Cyclone Local Statement issued September 5 at 11:12PM HST by NWS Honolulu HI",
+            "severity": "Moderate",
+            "urgency": "Expected",
+            "effective": "2026-09-05T23:12:00-10:00",
+            "expires": "2026-09-06T07:15:00-10:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
-        "road_closure": [
-          {
-            "title": "H-1 eastbound lanes closed near Waiawa after dump truck hits overpass",
-            "url": "https://www.staradvertiser.com/2026/09/04/breaking-news/h-1-eastbound-lanes-closed-near-waiawa-after-dump-truck-hits-overpass/",
-            "domain": "staradvertiser.com",
-            "seendate": "20260905031500",
-            "is_new": true,
-            "sources": [
-              {
-                "url": "https://www.staradvertiser.com/2026/09/04/breaking-news/h-1-eastbound-lanes-closed-near-waiawa-after-dump-truck-hits-overpass/",
-                "domain": "staradvertiser.com"
-              }
-            ]
-          }
-        ],
+        "road_closure": [],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -125,18 +133,18 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 6,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 53,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 90.0,
           "low_temp_f": 77.0,
-          "high_apparent_temp_f": 93.0,
+          "high_apparent_temp_f": 96.0,
           "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 21.9,
-          "max_wind_gust_mph": 31.1,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 1,
           "weather": [
             "heavy rain showers",
             "thunderstorms"
@@ -145,15 +153,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
-          "category": "Moderate",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.6,
-          "pm10": 14.8,
-          "ozone": 58.0,
+          "us_aqi": 34,
+          "category": "Good",
+          "aqi_24h_max": 38,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 6.2,
+          "pm10": 10.6,
+          "ozone": 36.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-09-05T11:00",
+          "observed_at": "2026-09-06T11:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -180,18 +188,18 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 37,
+          "precip_in_24h": 0.17,
+          "precip_probability_pct": 66,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 28.8,
-          "max_wind_gust_mph": 36.8,
+          "high_temp_f": 81.0,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 23.0,
+          "max_wind_gust_mph": 29.9,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 1,
           "weather": [
             "moderate rain showers",
             "heavy rain showers",
@@ -201,15 +209,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 44,
+          "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.1,
-          "pm10": 8.9,
-          "ozone": 47.0,
+          "aqi_24h_max": 30,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.6,
+          "pm10": 7.9,
+          "ozone": 32.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-09-05T11:00",
+          "observed_at": "2026-09-06T11:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -219,7 +227,28 @@
       "name": "Kauai County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Tropical Storm Watch",
+            "headline": "Tropical Storm Watch issued September 5 at 11:27PM HST by NWS Honolulu HI",
+            "severity": "Severe",
+            "urgency": "Future",
+            "effective": "2026-09-05T23:27:00-10:00",
+            "expires": "2026-09-06T07:15:00-10:00",
+            "source": "nws_alert",
+            "count": 6
+          },
+          {
+            "event": "Tropical Cyclone Local Statement",
+            "headline": "Tropical Cyclone Local Statement issued September 5 at 11:12PM HST by NWS Honolulu HI",
+            "severity": "Moderate",
+            "urgency": "Expected",
+            "effective": "2026-09-05T23:12:00-10:00",
+            "expires": "2026-09-06T07:15:00-10:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -233,39 +262,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 6,
+          "precip_in_24h": 0.03,
+          "precip_probability_pct": 54,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 70.0,
-          "high_apparent_temp_f": 91.0,
-          "low_apparent_temp_f": 70.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 9.2,
+          "high_temp_f": 88.0,
+          "low_temp_f": 71.0,
+          "high_apparent_temp_f": 95.0,
+          "low_apparent_temp_f": 71.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 25.3,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "moderate rain showers",
-            "heavy rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 44,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.8,
-          "pm10": 7.6,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 0.6,
-          "observed_at": "2026-09-05T11:00",
+          "pm2_5": 3.4,
+          "pm10": 5.4,
+          "ozone": 27.0,
+          "nitrogen_dioxide": 0.7,
+          "observed_at": "2026-09-06T11:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -275,7 +302,18 @@
       "name": "Maui County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Tropical Cyclone Local Statement",
+            "headline": "Tropical Cyclone Local Statement issued September 5 at 11:12PM HST by NWS Honolulu HI",
+            "severity": "Moderate",
+            "urgency": "Expected",
+            "effective": "2026-09-05T23:12:00-10:00",
+            "expires": "2026-09-06T07:15:00-10:00",
+            "source": "nws_alert",
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -289,21 +327,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 21,
+          "precip_in_24h": 0.56,
+          "precip_probability_pct": 60,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 78.0,
-          "low_temp_f": 68.0,
-          "high_apparent_temp_f": 78.0,
-          "low_apparent_temp_f": 68.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 28.8,
+          "high_temp_f": 79.0,
+          "low_temp_f": 69.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 69.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 27.6,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 1,
           "weather": [
             "moderate rain showers",
             "heavy rain showers",
@@ -313,15 +351,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 33,
+          "us_aqi": 20,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 24,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.9,
-          "pm10": 6.7,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 0.3,
-          "observed_at": "2026-09-05T11:00",
+          "pm2_5": 2.3,
+          "pm10": 3.8,
+          "ozone": 32.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-09-06T11:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
