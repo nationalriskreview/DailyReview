@@ -1,17 +1,24 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-06T11:51:36.177735+00:00",
-  "date": "2026-09-06",
+  "generated_at": "2026-09-07T13:44:26.881922+00:00",
+  "date": "2026-09-07",
   "state": "LA",
   "counties_total": 64,
-  "counties_with_alerts": 38,
+  "counties_with_alerts": 55,
   "counties": {
     "22001": {
       "fips": "22001",
       "name": "Acadia Parish",
       "state": "LA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -25,20 +32,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 25,
+          "precip_in_24h": 0.09,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 102.0,
-          "low_apparent_temp_f": 74.0,
+          "high_temp_f": 95.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 76.0,
           "max_wind_mph": 3.5,
           "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 25,
+          "thunder_probability_pct": 40,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -48,15 +55,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
-          "category": "Moderate",
+          "us_aqi": 50,
+          "category": "Good",
           "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.7,
-          "pm10": 14.3,
-          "ozone": 27.0,
-          "nitrogen_dioxide": 8.2,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 9.1,
+          "pm10": 9.3,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 4.5,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -64,61 +71,6 @@
     "22003": {
       "fips": "22003",
       "name": "Allen Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.07,
-          "precip_probability_pct": 24,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 102.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 4.6,
-          "thunder_probability_pct": 24,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 53,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.9,
-          "pm10": 12.6,
-          "ozone": 34.0,
-          "nitrogen_dioxide": 5.2,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22005": {
-      "fips": "22005",
-      "name": "Ascension Parish",
       "state": "LA",
       "alerts": {
         "weather": [
@@ -145,17 +97,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 31,
+          "precip_in_24h": 0.09,
+          "precip_probability_pct": 36,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 75.0,
+          "high_temp_f": 95.0,
+          "low_temp_f": 74.0,
           "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 4.6,
-          "thunder_probability_pct": 31,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 1.2,
+          "max_wind_gust_mph": 5.8,
+          "thunder_probability_pct": 36,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -165,15 +117,78 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
-          "category": "Moderate",
-          "aqi_24h_max": 61,
+          "us_aqi": 50,
+          "category": "Good",
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 18.7,
-          "pm10": 19.0,
-          "ozone": 23.0,
-          "nitrogen_dioxide": 16.1,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 8.8,
+          "pm10": 9.1,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 2.6,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22005": {
+      "fips": "22005",
+      "name": "Ascension Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.43,
+          "precip_probability_pct": 58,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": 58,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain showers",
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 68,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.3,
+          "pm10": 7.5,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 6.1,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -186,7 +201,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 114.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -207,17 +222,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.09,
-          "precip_probability_pct": 38,
+          "precip_in_24h": 0.16,
+          "precip_probability_pct": 55,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 108.0,
-          "low_apparent_temp_f": 75.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 114.0,
+          "low_apparent_temp_f": 76.0,
           "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 38,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": 55,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -227,15 +242,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 43,
-          "category": "Good",
-          "aqi_24h_max": 94,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.0,
-          "pm10": 10.4,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 14.9,
-          "observed_at": "2026-09-06T11:00",
+          "us_aqi": 51,
+          "category": "Moderate",
+          "aqi_24h_max": 144,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 9.3,
+          "pm10": 9.5,
+          "ozone": 76.0,
+          "nitrogen_dioxide": 10.8,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -248,7 +263,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -269,17 +284,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 10,
+          "precip_in_24h": 0.03,
+          "precip_probability_pct": 34,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 1.2,
+          "high_temp_f": 98.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 110.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 3.5,
           "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 10,
+          "thunder_probability_pct": 34,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -289,15 +304,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 41,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 47,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 9.1,
-          "pm10": 9.6,
-          "ozone": 29.0,
-          "nitrogen_dioxide": 5.8,
-          "observed_at": "2026-09-06T11:00",
+          "aqi_24h_max": 75,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.1,
+          "pm10": 8.3,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 3.8,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -324,17 +339,17 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 34,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 73.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 74.0,
           "max_wind_mph": 1.2,
           "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 20,
+          "thunder_probability_pct": 34,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -348,11 +363,11 @@
           "category": "Moderate",
           "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.7,
-          "pm10": 13.3,
-          "ozone": 25.0,
-          "nitrogen_dioxide": 8.2,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 10.2,
+          "pm10": 10.9,
+          "ozone": 56.0,
+          "nitrogen_dioxide": 3.7,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -365,7 +380,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -386,17 +401,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 16,
+          "precip_in_24h": 0.03,
+          "precip_probability_pct": 27,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 2.3,
+          "high_temp_f": 97.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 3.5,
           "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 13,
+          "thunder_probability_pct": 27,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
@@ -406,15 +421,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 59,
+          "aqi_24h_max": 64,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 18.0,
-          "pm10": 18.6,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 7.2,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 12.8,
+          "pm10": 13.1,
+          "ozone": 54.0,
+          "nitrogen_dioxide": 6.7,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -448,17 +463,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 15,
+          "precip_in_24h": 0.12,
+          "precip_probability_pct": 21,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
-          "low_temp_f": 74.0,
+          "high_temp_f": 98.0,
+          "low_temp_f": 75.0,
           "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 74.0,
+          "low_apparent_temp_f": 75.0,
           "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 15,
+          "max_wind_gust_mph": 5.8,
+          "thunder_probability_pct": 21,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -468,15 +483,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 57,
           "category": "Moderate",
-          "aqi_24h_max": 57,
+          "aqi_24h_max": 58,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 15.5,
-          "pm10": 16.2,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 6.0,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 10.8,
+          "pm10": 11.1,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 5.7,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -489,7 +504,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -510,17 +525,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 11,
+          "precip_in_24h": 0.03,
+          "precip_probability_pct": 23,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 98.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": 11,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": 23,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -530,15 +545,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 58,
+          "us_aqi": 54,
           "category": "Moderate",
-          "aqi_24h_max": 63,
+          "aqi_24h_max": 64,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 21.2,
-          "pm10": 22.2,
-          "ozone": 36.0,
-          "nitrogen_dioxide": 6.7,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 9.7,
+          "pm10": 9.9,
+          "ozone": 48.0,
+          "nitrogen_dioxide": 4.7,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -565,17 +580,17 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 35,
+          "precip_in_24h": 0.09,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 75.0,
+          "high_temp_f": 93.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 76.0,
           "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 35,
+          "max_wind_gust_mph": 4.6,
+          "thunder_probability_pct": 30,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -585,15 +600,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 58,
+          "aqi_24h_max": 60,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 17.5,
-          "pm10": 18.0,
-          "ozone": 19.0,
-          "nitrogen_dioxide": 13.4,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 12.5,
+          "pm10": 13.4,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 5.5,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -628,16 +643,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.01,
-          "precip_probability_pct": 7,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 74.0,
+          "high_temp_f": 99.0,
+          "low_temp_f": 77.0,
           "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 7,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 20,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -647,15 +662,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 42,
-          "category": "Good",
-          "aqi_24h_max": 90,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.2,
-          "pm10": 11.6,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 4.5,
-          "observed_at": "2026-09-06T11:00",
+          "us_aqi": 56,
+          "category": "Moderate",
+          "aqi_24h_max": 119,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 14.8,
+          "pm10": 15.3,
+          "ozone": 66.0,
+          "nitrogen_dioxide": 6.4,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -683,34 +698,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 29,
+          "precip_probability_pct": 24,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 98.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": 29,
+          "high_temp_f": 90.0,
+          "low_temp_f": 78.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 78.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": 24,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 60,
           "category": "Moderate",
-          "aqi_24h_max": 88,
+          "aqi_24h_max": 98,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.8,
-          "pm10": 14.1,
-          "ozone": 62.0,
-          "nitrogen_dioxide": 6.5,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 16.9,
+          "pm10": 18.2,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 6.3,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -723,7 +738,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -744,20 +759,19 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.08,
-          "precip_probability_pct": 19,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 37,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 3.5,
+          "high_temp_f": 99.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 110.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 4.6,
           "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 19,
+          "thunder_probability_pct": 39,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
             "thunderstorms",
             "light rain showers"
           ],
@@ -765,15 +779,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 39,
-          "category": "Good",
-          "aqi_24h_max": 65,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.3,
-          "pm10": 9.7,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 5.2,
-          "observed_at": "2026-09-06T11:00",
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 104,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 11.4,
+          "pm10": 11.7,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 4.0,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -807,35 +821,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 13,
+          "precip_in_24h": 0.02,
+          "precip_probability_pct": 19,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 99.0,
-          "low_temp_f": 73.0,
+          "low_temp_f": 75.0,
           "high_apparent_temp_f": 108.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 13,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 19,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 59,
           "category": "Moderate",
-          "aqi_24h_max": 55,
+          "aqi_24h_max": 70,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.8,
-          "pm10": 12.3,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 2.9,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 17.7,
+          "pm10": 18.2,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 2.7,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -848,7 +862,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 111.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -869,20 +883,19 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 14,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 33,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 3.5,
+          "high_temp_f": 100.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 111.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 4.6,
           "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 14,
+          "thunder_probability_pct": 44,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
             "thunderstorms",
             "light rain showers"
           ],
@@ -890,15 +903,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 35,
-          "category": "Good",
-          "aqi_24h_max": 51,
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 82,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 6.7,
-          "pm10": 7.0,
-          "ozone": 32.0,
-          "nitrogen_dioxide": 5.1,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 11.4,
+          "pm10": 11.8,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 7.0,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -908,7 +921,14 @@
       "name": "De Soto Parish",
       "state": "LA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -922,38 +942,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 6,
+          "precip_in_24h": 0.34,
+          "precip_probability_pct": 33,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 96.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": 6,
+          "high_temp_f": 98.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": 33,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers"
+            "fog",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 60,
+          "us_aqi": 57,
           "category": "Moderate",
-          "aqi_24h_max": 88,
+          "aqi_24h_max": 98,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 23.1,
-          "pm10": 23.8,
-          "ozone": 38.0,
-          "nitrogen_dioxide": 7.3,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 12.5,
+          "pm10": 12.8,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 6.3,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -961,61 +982,6 @@
     "22033": {
       "fips": "22033",
       "name": "East Baton Rouge Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 24,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 24,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
-          "aqi_24h_max": 57,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.9,
-          "pm10": 11.2,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 12.1,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22035": {
-      "fips": "22035",
-      "name": "East Carroll Parish",
       "state": "LA",
       "alerts": {
         "weather": [
@@ -1042,378 +1008,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 21,
+          "precip_in_24h": 0.3,
+          "precip_probability_pct": 53,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 99.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 21,
-          "lightning_activity_level": null,
-          "weather": [
-            "fog",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 44,
-          "category": "Good",
-          "aqi_24h_max": 74,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.8,
-          "pm10": 10.9,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 11.5,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22037": {
-      "fips": "22037",
-      "name": "East Feliciana Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 21,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 21,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 46,
-          "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.8,
-          "pm10": 9.0,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 6.4,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22039": {
-      "fips": "22039",
-      "name": "Evangeline Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.08,
-          "precip_probability_pct": 28,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 28,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "moderate rain showers",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 53,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.1,
-          "pm10": 12.0,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22041": {
-      "fips": "22041",
-      "name": "Franklin Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 10,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 10,
-          "lightning_activity_level": null,
-          "weather": [
-            "fog",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 37,
-          "category": "Good",
-          "aqi_24h_max": 69,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.7,
-          "pm10": 8.2,
-          "ozone": 25.0,
-          "nitrogen_dioxide": 6.7,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22043": {
-      "fips": "22043",
-      "name": "Grant Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 9,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 9,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 51,
-          "category": "Moderate",
-          "aqi_24h_max": 58,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.1,
-          "pm10": 14.7,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22045": {
-      "fips": "22045",
-      "name": "Iberia Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 20,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
+          "high_temp_f": 95.0,
           "low_temp_f": 76.0,
-          "high_apparent_temp_f": 102.0,
+          "high_apparent_temp_f": 110.0,
           "low_apparent_temp_f": 76.0,
           "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 8.1,
-          "thunder_probability_pct": 20,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 38,
-          "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 9.2,
-          "pm10": 10.5,
-          "ozone": 75.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22047": {
-      "fips": "22047",
-      "name": "Iberville Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.15,
-          "precip_probability_pct": 31,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 108.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 31,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 53,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1424,22 +1029,22 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 52,
           "category": "Moderate",
-          "aqi_24h_max": 57,
+          "aqi_24h_max": 91,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.9,
-          "pm10": 11.2,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 12.1,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 8.6,
+          "pm10": 8.8,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 7.9,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "22049": {
-      "fips": "22049",
-      "name": "Jackson Parish",
+    "22035": {
+      "fips": "22035",
+      "name": "East Carroll Parish",
       "state": "LA",
       "alerts": {
         "weather": [
@@ -1466,45 +1071,52 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 13,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
-          "low_temp_f": 73.0,
+          "high_temp_f": 100.0,
+          "low_temp_f": 75.0,
           "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 13,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 66,
+          "aqi_24h_max": 83,
           "aqi_24h_max_category": "Moderate",
           "pm2_5": 13.1,
           "pm10": 13.5,
-          "ozone": 53.0,
-          "nitrogen_dioxide": 2.5,
-          "observed_at": "2026-09-06T11:00",
+          "ozone": 73.0,
+          "nitrogen_dioxide": 7.1,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "22051": {
-      "fips": "22051",
-      "name": "Jefferson Parish",
+    "22037": {
+      "fips": "22037",
+      "name": "East Feliciana Parish",
       "state": "LA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1518,20 +1130,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 41,
+          "precip_in_24h": 0.09,
+          "precip_probability_pct": 54,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
+          "high_temp_f": 96.0,
           "low_temp_f": 75.0,
-          "high_apparent_temp_f": 101.0,
+          "high_apparent_temp_f": 110.0,
           "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 41,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 54,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1541,25 +1153,32 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 38,
           "category": "Good",
-          "aqi_24h_max": 98,
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.6,
-          "pm10": 6.6,
-          "ozone": 51.0,
-          "nitrogen_dioxide": 8.3,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 6.4,
+          "pm10": 6.5,
+          "ozone": 49.0,
+          "nitrogen_dioxide": 4.5,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "22053": {
-      "fips": "22053",
-      "name": "Jefferson Davis Parish",
+    "22039": {
+      "fips": "22039",
+      "name": "Evangeline Parish",
       "state": "LA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1573,20 +1192,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 27,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 99.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 3.5,
+          "high_temp_f": 96.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 2.3,
           "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 30,
+          "thunder_probability_pct": 27,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1596,25 +1215,32 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
-          "category": "Moderate",
-          "aqi_24h_max": 55,
+          "us_aqi": 46,
+          "category": "Good",
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 15.1,
-          "pm10": 15.9,
-          "ozone": 20.0,
-          "nitrogen_dioxide": 11.1,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 7.9,
+          "pm10": 8.1,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 3.1,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "22055": {
-      "fips": "22055",
-      "name": "Lafayette Parish",
+    "22041": {
+      "fips": "22041",
+      "name": "Franklin Parish",
       "state": "LA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1628,20 +1254,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.14,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 13,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 102.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 30,
+          "high_temp_f": 99.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 110.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 13,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1652,25 +1278,32 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 53,
+          "aqi_24h_max": 76,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.6,
-          "pm10": 12.6,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 6.4,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 14.1,
+          "pm10": 14.6,
+          "ozone": 54.0,
+          "nitrogen_dioxide": 8.2,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "22057": {
-      "fips": "22057",
-      "name": "Lafourche Parish",
+    "22043": {
+      "fips": "22043",
+      "name": "Grant Parish",
       "state": "LA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1684,20 +1317,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.09,
-          "precip_probability_pct": 49,
+          "precip_in_24h": 0.61,
+          "precip_probability_pct": 35,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
+          "high_temp_f": 97.0,
           "low_temp_f": 74.0,
-          "high_apparent_temp_f": 102.0,
+          "high_apparent_temp_f": 109.0,
           "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": 49,
+          "max_wind_mph": 2.3,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": 35,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1707,22 +1340,146 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
-          "category": "Good",
-          "aqi_24h_max": 84,
+          "us_aqi": 54,
+          "category": "Moderate",
+          "aqi_24h_max": 85,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 4.6,
-          "pm10": 5.2,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 6.9,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 10.2,
+          "pm10": 10.4,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 3.4,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "22059": {
-      "fips": "22059",
-      "name": "LaSalle Parish",
+    "22045": {
+      "fips": "22045",
+      "name": "Iberia Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.02,
+          "precip_probability_pct": 30,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 92.0,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 30,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 50,
+          "category": "Good",
+          "aqi_24h_max": 57,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.9,
+          "pm10": 11.7,
+          "ozone": 83.0,
+          "nitrogen_dioxide": 3.3,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22047": {
+      "fips": "22047",
+      "name": "Iberville Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 113.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 54,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 95.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 113.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 54,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 91,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.6,
+          "pm10": 8.8,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 7.9,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22049": {
+      "fips": "22049",
+      "name": "Jackson Parish",
       "state": "LA",
       "alerts": {
         "weather": [
@@ -1749,17 +1506,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 17,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 22,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
-          "low_temp_f": 73.0,
+          "high_temp_f": 98.0,
+          "low_temp_f": 75.0,
           "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 8.1,
-          "thunder_probability_pct": 17,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": 22,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1769,15 +1526,313 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 39,
+          "us_aqi": 61,
+          "category": "Moderate",
+          "aqi_24h_max": 101,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 18.7,
+          "pm10": 19.4,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 2.4,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22051": {
+      "fips": "22051",
+      "name": "Jefferson Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 43,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 43,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 46,
           "category": "Good",
-          "aqi_24h_max": 65,
+          "aqi_24h_max": 121,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 7.5,
+          "pm10": 7.7,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 11.3,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22053": {
+      "fips": "22053",
+      "name": "Jefferson Davis Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.09,
+          "precip_probability_pct": 39,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 93.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 5.8,
+          "thunder_probability_pct": 39,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.3,
-          "pm10": 9.7,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 5.2,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 10.4,
+          "pm10": 10.7,
+          "ozone": 53.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22055": {
+      "fips": "22055",
+      "name": "Lafayette Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.5,
+          "precip_probability_pct": 43,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 95.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 43,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "moderate rain showers",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 48,
+          "category": "Good",
+          "aqi_24h_max": 53,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.8,
+          "pm10": 8.9,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 4.6,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22057": {
+      "fips": "22057",
+      "name": "Lafourche Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.17,
+          "precip_probability_pct": 50,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 89.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 50,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 46,
+          "category": "Good",
+          "aqi_24h_max": 107,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 6.8,
+          "pm10": 7.0,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 9.1,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22059": {
+      "fips": "22059",
+      "name": "LaSalle Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.41,
+          "precip_probability_pct": 38,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 98.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 110.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 38,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 104,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 11.4,
+          "pm10": 11.7,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 4.0,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1811,35 +1866,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 14,
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 17,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 73.0,
+          "high_temp_f": 99.0,
+          "low_temp_f": 75.0,
           "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 14,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 17,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 59,
           "category": "Moderate",
-          "aqi_24h_max": 55,
+          "aqi_24h_max": 70,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.8,
-          "pm10": 12.3,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 2.9,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 17.7,
+          "pm10": 18.2,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 2.7,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1852,7 +1907,69 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.15,
+          "precip_probability_pct": 57,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 95.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 110.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 57,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 68,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.3,
+          "pm10": 7.5,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 6.1,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22065": {
+      "fips": "22065",
+      "name": "Madison Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 112.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -1874,16 +1991,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 24,
+          "precip_probability_pct": 12,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
+          "high_temp_f": 99.0,
           "low_temp_f": 75.0,
-          "high_apparent_temp_f": 106.0,
+          "high_apparent_temp_f": 112.0,
           "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 25,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 8,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -1893,28 +2010,216 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 59,
           "category": "Moderate",
-          "aqi_24h_max": 61,
+          "aqi_24h_max": 86,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 18.7,
-          "pm10": 19.0,
-          "ozone": 23.0,
-          "nitrogen_dioxide": 16.1,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 15.7,
+          "pm10": 16.2,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 9.5,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "22065": {
-      "fips": "22065",
-      "name": "Madison Parish",
+    "22067": {
+      "fips": "22067",
+      "name": "Morehouse Parish",
       "state": "LA",
       "alerts": {
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 113.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 10,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 99.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 2.3,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": 10,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 62,
+          "category": "Moderate",
+          "aqi_24h_max": 105,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 18.3,
+          "pm10": 18.9,
+          "ozone": 83.0,
+          "nitrogen_dioxide": 7.1,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22069": {
+      "fips": "22069",
+      "name": "Natchitoches Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.14,
+          "precip_probability_pct": 36,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 97.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 1.2,
+          "max_wind_gust_mph": 5.8,
+          "thunder_probability_pct": 36,
+          "lightning_activity_level": null,
+          "weather": [
+            "fog",
+            "light rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 51,
+          "category": "Moderate",
+          "aqi_24h_max": 66,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 9.2,
+          "pm10": 9.5,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 2.7,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22071": {
+      "fips": "22071",
+      "name": "Orleans Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.06,
+          "precip_probability_pct": 27,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 92.0,
+          "low_temp_f": 80.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 87.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": 27,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 56,
+          "category": "Moderate",
+          "aqi_24h_max": 144,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 8.7,
+          "pm10": 8.9,
+          "ozone": 77.0,
+          "nitrogen_dioxide": 11.6,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22073": {
+      "fips": "22073",
+      "name": "Ouachita Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -1936,258 +2241,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.02,
-          "precip_probability_pct": 17,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 113.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 17,
-          "lightning_activity_level": null,
-          "weather": [
-            "fog",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 44,
-          "category": "Good",
-          "aqi_24h_max": 81,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.4,
-          "pm10": 9.3,
-          "ozone": 22.0,
-          "nitrogen_dioxide": 12.1,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22067": {
-      "fips": "22067",
-      "name": "Morehouse Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 15,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 100.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 15,
-          "lightning_activity_level": null,
-          "weather": [
-            "fog",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 54,
-          "category": "Moderate",
-          "aqi_24h_max": 74,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.9,
-          "pm10": 12.4,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 6.7,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22069": {
-      "fips": "22069",
-      "name": "Natchitoches Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 7,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 7,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
-          "aqi_24h_max": 58,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 16.7,
-          "pm10": 17.3,
-          "ozone": 42.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22071": {
-      "fips": "22071",
-      "name": "Orleans Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 21,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 78.0,
-          "high_apparent_temp_f": 102.0,
-          "low_apparent_temp_f": 78.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 17,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 43,
-          "category": "Good",
-          "aqi_24h_max": 145,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 12.7,
-          "pm10": 13.2,
-          "ozone": 60.0,
-          "nitrogen_dioxide": 17.4,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22073": {
-      "fips": "22073",
-      "name": "Ouachita Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.01,
           "precip_probability_pct": 12,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 99.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 6.9,
+          "high_temp_f": 100.0,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": 12,
           "lightning_activity_level": null,
           "weather": [
@@ -2198,15 +2260,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 60,
           "category": "Moderate",
-          "aqi_24h_max": 109,
+          "aqi_24h_max": 135,
           "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 11.9,
-          "pm10": 12.3,
-          "ozone": 38.0,
-          "nitrogen_dioxide": 8.7,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 19.4,
+          "pm10": 20.0,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 12.0,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2234,16 +2296,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.08,
-          "precip_probability_pct": 25,
+          "precip_probability_pct": 39,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 79.0,
-          "high_apparent_temp_f": 100.0,
-          "low_apparent_temp_f": 84.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 25,
+          "high_temp_f": 90.0,
+          "low_temp_f": 80.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 87.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 39,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -2253,15 +2315,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 42,
+          "us_aqi": 40,
           "category": "Good",
-          "aqi_24h_max": 48,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.5,
-          "pm10": 3.6,
-          "ozone": 74.0,
-          "nitrogen_dioxide": 1.1,
-          "observed_at": "2026-09-06T11:00",
+          "aqi_24h_max": 112,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 6.9,
+          "pm10": 7.2,
+          "ozone": 86.0,
+          "nitrogen_dioxide": 5.0,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2274,7 +2336,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -2295,36 +2357,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.15,
-          "precip_probability_pct": 21,
+          "precip_in_24h": 0.1,
+          "precip_probability_pct": 41,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 21,
+          "high_temp_f": 95.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 110.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 38,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "moderate rain showers",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 39,
+          "us_aqi": 38,
           "category": "Good",
-          "aqi_24h_max": 43,
+          "aqi_24h_max": 50,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.5,
-          "pm10": 8.1,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 6.6,
+          "pm10": 6.7,
+          "ozone": 49.0,
+          "nitrogen_dioxide": 4.0,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2332,61 +2394,6 @@
     "22079": {
       "fips": "22079",
       "name": "Rapides Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 10,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 93.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 102.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 10,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 53,
-          "category": "Moderate",
-          "aqi_24h_max": 54,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.8,
-          "pm10": 13.4,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 3.9,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22081": {
-      "fips": "22081",
-      "name": "Red River Parish",
       "state": "LA",
       "alerts": {
         "weather": [
@@ -2413,17 +2420,79 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 11,
+          "precip_in_24h": 0.17,
+          "precip_probability_pct": 26,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 96.0,
-          "low_temp_f": 74.0,
+          "low_temp_f": 75.0,
           "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 2.3,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 3.5,
           "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 8,
+          "thunder_probability_pct": 26,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 48,
+          "category": "Good",
+          "aqi_24h_max": 65,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.0,
+          "pm10": 8.1,
+          "ozone": 54.0,
+          "nitrogen_dioxide": 3.3,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22081": {
+      "fips": "22081",
+      "name": "Red River Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 34,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 99.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 110.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 1.2,
+          "max_wind_gust_mph": 5.8,
+          "thunder_probability_pct": 34,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -2435,13 +2504,13 @@
         "air_quality": {
           "us_aqi": 57,
           "category": "Moderate",
-          "aqi_24h_max": 62,
+          "aqi_24h_max": 79,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 21.0,
-          "pm10": 21.5,
-          "ozone": 38.0,
-          "nitrogen_dioxide": 6.9,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 11.4,
+          "pm10": 11.6,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 5.9,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2475,20 +2544,19 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 13,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 11,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 97.0,
-          "low_temp_f": 74.0,
+          "high_temp_f": 98.0,
+          "low_temp_f": 76.0,
           "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 13,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 9,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
             "thunderstorms",
             "light rain showers"
           ],
@@ -2496,15 +2564,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 44,
-          "category": "Good",
-          "aqi_24h_max": 74,
+          "us_aqi": 58,
+          "category": "Moderate",
+          "aqi_24h_max": 80,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.9,
-          "pm10": 11.9,
-          "ozone": 27.0,
-          "nitrogen_dioxide": 10.8,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 14.9,
+          "pm10": 15.3,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 9.3,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2512,226 +2580,6 @@
     "22085": {
       "fips": "22085",
       "name": "Sabine Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 10,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 8.1,
-          "thunder_probability_pct": 10,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 56,
-          "category": "Moderate",
-          "aqi_24h_max": 60,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 17.1,
-          "pm10": 18.6,
-          "ozone": 58.0,
-          "nitrogen_dioxide": 2.1,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22087": {
-      "fips": "22087",
-      "name": "St. Bernard Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 23,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 81.0,
-          "high_apparent_temp_f": 100.0,
-          "low_apparent_temp_f": 90.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 22,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 45,
-          "category": "Good",
-          "aqi_24h_max": 125,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 8.4,
-          "pm10": 8.7,
-          "ozone": 93.0,
-          "nitrogen_dioxide": 2.9,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22089": {
-      "fips": "22089",
-      "name": "St. Charles Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 27,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 105.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 27,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 45,
-          "category": "Good",
-          "aqi_24h_max": 119,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 12.8,
-          "pm10": 13.3,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 22.5,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22091": {
-      "fips": "22091",
-      "name": "St. Helena Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 23,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 104.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 30,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 45,
-          "category": "Good",
-          "aqi_24h_max": 53,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.4,
-          "pm10": 13.7,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 6.1,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22093": {
-      "fips": "22093",
-      "name": "St. James Parish",
       "state": "LA",
       "alerts": {
         "weather": [
@@ -2758,42 +2606,43 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 33,
+          "precip_in_24h": 0.23,
+          "precip_probability_pct": 35,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
+          "high_temp_f": 96.0,
           "low_temp_f": 74.0,
           "high_apparent_temp_f": 107.0,
           "low_apparent_temp_f": 74.0,
           "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 34,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": 35,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers"
+            "fog",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 47,
-          "category": "Good",
-          "aqi_24h_max": 118,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 11.3,
-          "pm10": 11.6,
-          "ozone": 16.0,
-          "nitrogen_dioxide": 26.1,
-          "observed_at": "2026-09-06T11:00",
+          "us_aqi": 51,
+          "category": "Moderate",
+          "aqi_24h_max": 60,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 11.0,
+          "pm10": 11.4,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "22095": {
-      "fips": "22095",
-      "name": "St. John the Baptist Parish",
+    "22087": {
+      "fips": "22087",
+      "name": "St. Bernard Parish",
       "state": "LA",
       "alerts": {
         "weather": [
@@ -2820,17 +2669,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.01,
+          "precip_in_24h": 0.0,
           "precip_probability_pct": 23,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 75.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 83.0,
           "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 22,
+          "low_apparent_temp_f": 95.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 23,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -2840,25 +2689,32 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 45,
+          "us_aqi": 49,
           "category": "Good",
-          "aqi_24h_max": 119,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 12.8,
-          "pm10": 13.3,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 22.5,
-          "observed_at": "2026-09-06T11:00",
+          "aqi_24h_max": 165,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 8.9,
+          "pm10": 9.4,
+          "ozone": 91.0,
+          "nitrogen_dioxide": 1.3,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "22097": {
-      "fips": "22097",
-      "name": "St. Landry Parish",
+    "22089": {
+      "fips": "22089",
+      "name": "St. Charles Parish",
       "state": "LA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 111.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2872,20 +2728,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.12,
-          "precip_probability_pct": 18,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 39,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 93.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 18,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 111.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 39,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -2895,25 +2751,32 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 57,
           "category": "Moderate",
-          "aqi_24h_max": 53,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.6,
-          "pm10": 12.6,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 6.4,
-          "observed_at": "2026-09-06T11:00",
+          "aqi_24h_max": 133,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 7.5,
+          "pm10": 7.6,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 12.3,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "22099": {
-      "fips": "22099",
-      "name": "St. Martin Parish",
+    "22091": {
+      "fips": "22091",
+      "name": "St. Helena Parish",
       "state": "LA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2927,102 +2790,45 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.17,
-          "precip_probability_pct": 30,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 30,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 38,
-          "category": "Good",
-          "aqi_24h_max": 47,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 8.8,
-          "pm10": 9.5,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 3.9,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22101": {
-      "fips": "22101",
-      "name": "St. Mary Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.11,
-          "precip_probability_pct": 28,
+          "precip_probability_pct": 58,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 99.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 28,
+          "high_temp_f": 95.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 56,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 41,
           "category": "Good",
-          "aqi_24h_max": 42,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 7.6,
-          "pm10": 8.6,
-          "ozone": 61.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-09-06T11:00",
+          "aqi_24h_max": 52,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 6.6,
+          "pm10": 6.8,
+          "ozone": 53.0,
+          "nitrogen_dioxide": 3.7,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "22103": {
-      "fips": "22103",
-      "name": "St. Tammany Parish",
+    "22093": {
+      "fips": "22093",
+      "name": "St. James Parish",
       "state": "LA",
       "alerts": {
         "weather": [
@@ -3049,17 +2855,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 22,
+          "precip_in_24h": 0.15,
+          "precip_probability_pct": 54,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 92.0,
-          "low_temp_f": 73.0,
+          "low_temp_f": 76.0,
           "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 4.6,
-          "thunder_probability_pct": 21,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": 54,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -3069,15 +2875,320 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 44,
+          "us_aqi": 54,
+          "category": "Moderate",
+          "aqi_24h_max": 159,
+          "aqi_24h_max_category": "Unhealthy",
+          "pm2_5": 8.7,
+          "pm10": 8.9,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 14.5,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22095": {
+      "fips": "22095",
+      "name": "St. John the Baptist Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.18,
+          "precip_probability_pct": 44,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 44,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 57,
+          "category": "Moderate",
+          "aqi_24h_max": 133,
+          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
+          "pm2_5": 7.5,
+          "pm10": 7.6,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 12.3,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22097": {
+      "fips": "22097",
+      "name": "St. Landry Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 33,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 96.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 109.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 33,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 48,
           "category": "Good",
-          "aqi_24h_max": 51,
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.0,
-          "pm10": 11.4,
-          "ozone": 90.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 8.8,
+          "pm10": 8.9,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 4.6,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22099": {
+      "fips": "22099",
+      "name": "St. Martin Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.19,
+          "precip_probability_pct": 47,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 94.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 47,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 43,
+          "category": "Good",
+          "aqi_24h_max": 48,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 8.7,
+          "pm10": 8.9,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 3.0,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22101": {
+      "fips": "22101",
+      "name": "St. Mary Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.1,
+          "precip_probability_pct": 40,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 90.0,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 40,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 46,
+          "category": "Good",
+          "aqi_24h_max": 47,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 10.1,
+          "pm10": 10.9,
+          "ozone": 80.0,
+          "nitrogen_dioxide": 2.4,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22103": {
+      "fips": "22103",
+      "name": "St. Tammany Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.22,
+          "precip_probability_pct": 44,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 95.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": 44,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 43,
+          "category": "Good",
+          "aqi_24h_max": 52,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.4,
+          "pm10": 8.6,
+          "ozone": 78.0,
+          "nitrogen_dioxide": 1.5,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3111,36 +3222,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.17,
-          "precip_probability_pct": 23,
+          "precip_in_24h": 0.16,
+          "precip_probability_pct": 58,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 73.0,
+          "high_temp_f": 95.0,
+          "low_temp_f": 74.0,
           "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 23,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 58,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "moderate rain showers",
             "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 37,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 51,
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.0,
-          "pm10": 14.2,
-          "ozone": 38.0,
-          "nitrogen_dioxide": 5.8,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 8.7,
+          "pm10": 8.9,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3153,7 +3263,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 111.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -3175,19 +3285,18 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 10,
+          "precip_probability_pct": 15,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 109.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 10,
+          "high_temp_f": 100.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 111.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 14,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
             "thunderstorms",
             "light rain showers"
           ],
@@ -3195,15 +3304,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 42,
-          "category": "Good",
-          "aqi_24h_max": 61,
+          "us_aqi": 58,
+          "category": "Moderate",
+          "aqi_24h_max": 81,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.8,
-          "pm10": 6.3,
-          "ozone": 23.0,
-          "nitrogen_dioxide": 6.9,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 15.5,
+          "pm10": 16.1,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 7.0,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3213,65 +3322,10 @@
       "name": "Terrebonne Parish",
       "state": "LA",
       "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 43,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 102.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": 43,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 27,
-          "category": "Good",
-          "aqi_24h_max": 41,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.5,
-          "pm10": 3.6,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 0.7,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22111": {
-      "fips": "22111",
-      "name": "Union Parish",
-      "state": "LA",
-      "alerts": {
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -3292,35 +3346,98 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.03,
-          "precip_probability_pct": 16,
+          "precip_in_24h": 0.13,
+          "precip_probability_pct": 49,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 16,
+          "high_temp_f": 91.0,
+          "low_temp_f": 78.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 78.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 49,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
-          "category": "Moderate",
-          "aqi_24h_max": 57,
+          "us_aqi": 34,
+          "category": "Good",
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.6,
-          "pm10": 12.1,
-          "ozone": 53.0,
-          "nitrogen_dioxide": 1.9,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 6.4,
+          "pm10": 7.3,
+          "ozone": 77.0,
+          "nitrogen_dioxide": 1.8,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22111": {
+      "fips": "22111",
+      "name": "Union Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.02,
+          "precip_probability_pct": 12,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 99.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 108.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 2.3,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 12,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 61,
+          "category": "Moderate",
+          "aqi_24h_max": 85,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 18.8,
+          "pm10": 19.3,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3347,35 +3464,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 36,
+          "precip_in_24h": 0.16,
+          "precip_probability_pct": 38,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 102.0,
-          "low_apparent_temp_f": 76.0,
+          "high_temp_f": 93.0,
+          "low_temp_f": 78.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 78.0,
           "max_wind_mph": 5.8,
           "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": 36,
+          "thunder_probability_pct": 38,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 53,
           "category": "Moderate",
           "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.9,
-          "pm10": 16.1,
-          "ozone": 51.0,
-          "nitrogen_dioxide": 5.8,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 11.2,
+          "pm10": 11.6,
+          "ozone": 59.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3402,35 +3520,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 13,
+          "precip_in_24h": 0.19,
+          "precip_probability_pct": 38,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 13,
+          "high_temp_f": 95.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 104.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 2.3,
+          "max_wind_gust_mph": 5.8,
+          "thunder_probability_pct": 38,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
+          "us_aqi": 48,
+          "category": "Good",
           "aqi_24h_max": 56,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.0,
-          "pm10": 14.7,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 5.5,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 8.5,
+          "pm10": 8.9,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 2.2,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3443,7 +3562,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -3464,35 +3583,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 24,
+          "precip_in_24h": 0.13,
+          "precip_probability_pct": 66,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 94.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 108.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 16,
+          "high_temp_f": 97.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 2.3,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 55,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 11.4,
-          "pm10": 11.7,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 5.2,
-          "observed_at": "2026-09-06T11:00",
+          "aqi_24h_max": 55,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.8,
+          "pm10": 11.1,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 4.9,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3505,7 +3625,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast"
           }
@@ -3526,35 +3646,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 15,
+          "precip_in_24h": 0.03,
+          "precip_probability_pct": 21,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 98.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 73.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 75.0,
           "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 15,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": 21,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 59,
           "category": "Moderate",
-          "aqi_24h_max": 56,
+          "aqi_24h_max": 62,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.8,
-          "pm10": 14.3,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 14.4,
+          "pm10": 14.8,
+          "ozone": 59.0,
+          "nitrogen_dioxide": 4.3,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3562,6 +3682,69 @@
     "22121": {
       "fips": "22121",
       "name": "West Baton Rouge Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 112.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.24,
+          "precip_probability_pct": 52,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 95.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 112.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 52,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "light rain showers",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 91,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.6,
+          "pm10": 8.8,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 7.9,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22123": {
+      "fips": "22123",
+      "name": "West Carroll Parish",
       "state": "LA",
       "alerts": {
         "weather": [
@@ -3589,81 +3772,18 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 25,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 25,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
-          "aqi_24h_max": 57,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.9,
-          "pm10": 11.2,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 12.1,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22123": {
-      "fips": "22123",
-      "name": "West Carroll Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 109.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 18,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 99.0,
           "low_temp_f": 74.0,
-          "high_apparent_temp_f": 109.0,
+          "high_apparent_temp_f": 107.0,
           "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 18,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
             "thunderstorms",
             "light rain showers"
           ],
@@ -3671,15 +3791,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 51,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 61,
+          "aqi_24h_max": 76,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.2,
-          "pm10": 13.4,
-          "ozone": 34.0,
-          "nitrogen_dioxide": 9.5,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 13.4,
+          "pm10": 13.8,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 6.3,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3687,68 +3807,6 @@
     "22125": {
       "fips": "22125",
       "name": "West Feliciana Parish",
-      "state": "LA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 108.0°F in next 24h",
-            "severity": "Severe",
-            "source": "nws_forecast"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 18,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 92.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 108.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 18,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 39,
-          "category": "Good",
-          "aqi_24h_max": 43,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 7.5,
-          "pm10": 8.1,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-09-06T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "22127": {
-      "fips": "22127",
-      "name": "Winn Parish",
       "state": "LA",
       "alerts": {
         "weather": [
@@ -3775,17 +3833,80 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 7,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 43,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 73.0,
+          "high_temp_f": 96.0,
+          "low_temp_f": 75.0,
           "high_apparent_temp_f": 110.0,
-          "low_apparent_temp_f": 73.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": 43,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain showers",
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 38,
+          "category": "Good",
+          "aqi_24h_max": 50,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 6.6,
+          "pm10": 6.7,
+          "ozone": 49.0,
+          "nitrogen_dioxide": 4.0,
+          "observed_at": "2026-09-07T13:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "22127": {
+      "fips": "22127",
+      "name": "Winn Parish",
+      "state": "LA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 111.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.14,
+          "precip_probability_pct": 31,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 100.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 111.0,
+          "low_apparent_temp_f": 75.0,
           "max_wind_mph": 3.5,
           "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 7,
+          "thunder_probability_pct": 31,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
@@ -3795,15 +3916,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
+          "us_aqi": 60,
           "category": "Moderate",
-          "aqi_24h_max": 63,
+          "aqi_24h_max": 84,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 17.9,
-          "pm10": 18.5,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 5.3,
-          "observed_at": "2026-09-06T11:00",
+          "pm2_5": 12.0,
+          "pm10": 12.3,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-09-07T13:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
