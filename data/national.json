@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-07T13:44:26.881922+00:00",
-  "date": "2026-09-07",
+  "generated_at": "2026-09-08T12:23:55.674381+00:00",
+  "date": "2026-09-08",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 161
+      "counties_with_alerts": 108
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 243
+      "counties_over_threshold": 293
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 35,
+      "counties_with_matches": 14,
       "items_pre_llm": {
-        "protest": 30,
-        "utility_outage": 15,
+        "protest": 29,
+        "utility_outage": 2,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 1
+        "road_closure": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 12,
+      "counties_with_matches": 9,
       "items_post_llm": {
-        "protest": 0,
-        "utility_outage": 15,
+        "protest": 6,
+        "utility_outage": 2,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 1
+        "road_closure": 2
       },
-      "unique_articles": 22,
-      "calls_used": 22,
+      "unique_articles": 30,
+      "calls_used": 30,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 221
+      "counties_with_alerts": 240
     },
     "transit": {
       "status": "ok",
@@ -620,12 +620,12 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Performance degradation affecting TURN service",
+      "title": "Minor Service Outage",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-09-07T13:02:52.000Z",
-      "updated": "2026-09-07T13:04:29.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/pgn7y7hgd25l",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
