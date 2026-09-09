@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-08T12:23:55.674381+00:00",
-  "date": "2026-09-08",
+  "generated_at": "2026-09-09T12:38:49.092121+00:00",
+  "date": "2026-09-09",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 108
+      "counties_with_alerts": 86
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 293
+      "counties_over_threshold": 281
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 14,
+      "counties_with_matches": 43,
       "items_pre_llm": {
-        "protest": 29,
-        "utility_outage": 2,
+        "protest": 42,
+        "utility_outage": 9,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 2
+        "hazmat_incident": 8,
+        "road_closure": 11
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 9,
+      "counties_with_matches": 15,
       "items_post_llm": {
-        "protest": 6,
-        "utility_outage": 2,
+        "protest": 5,
+        "utility_outage": 4,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 2
+        "hazmat_incident": 6,
+        "road_closure": 8
       },
-      "unique_articles": 30,
-      "calls_used": 30,
+      "unique_articles": 51,
+      "calls_used": 51,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 240
+      "counties_with_alerts": 225
     },
     "transit": {
       "status": "ok",
@@ -135,7 +135,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 182
+      "counties_with_alerts": 177
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 3,
+      "active_incidents": 5,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -209,7 +209,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "openai",
@@ -233,7 +233,7 @@
           "key": "slack",
           "name": "Slack",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "dropbox",
@@ -626,6 +626,28 @@
       "started": "",
       "updated": "",
       "url": "https://www.cloudflarestatus.com",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Zoom",
+      "key": "zoom",
+      "title": "Service Degradation Affecting Zoom Services",
+      "impact": "none",
+      "status": "monitoring",
+      "started": "2026-09-08T18:09:45.352-07:00",
+      "updated": "2026-09-08T18:09:45.542-07:00",
+      "url": "https://stspg.io/601q96h5gv6m",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Slack",
+      "key": "slack",
+      "title": "Trouble Accessing Historical Messages With Custom Data Retention Policies Enabled",
+      "impact": "incident",
+      "status": "active",
+      "started": "2026-08-13T14:21:41-07:00",
+      "updated": "2026-09-08T19:37:23-07:00",
+      "url": "https://slack-status.com/2026-08/e07b9271f0346c3b",
       "source": "provider status page"
     },
     {

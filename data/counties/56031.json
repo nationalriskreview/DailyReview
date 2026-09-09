@@ -8,55 +8,86 @@
     "lon": -104.953963
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued September 9 at 2:21AM MDT until September 10 at 8:00PM MDT by NWS Cheyenne WY",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-09T02:21:00-06:00",
+        "expires": "2026-09-09T18:00:00-06:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Moonshine",
+        "incident_name": "Moonshine",
+        "id": "2026-WYHDD-000478",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-09-07T21:15:00+00:00",
+        "lat": 41.9537,
+        "lon": -105.3216,
+        "acreage": 500,
+        "containment_pct": 0,
+        "cause": "Natural",
+        "state": "WY",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-WYHDD-000478",
+        "source": "NIFC WFIGS",
+        "distance_miles": 22.5,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 1,
+      "precip_probability_pct": 20,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 86.0,
-      "low_temp_f": 58.0,
-      "high_apparent_temp_f": 82.0,
-      "low_apparent_temp_f": 58.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 21.9,
-      "thunder_probability_pct": 1,
+      "high_temp_f": 83.0,
+      "low_temp_f": 54.0,
+      "high_apparent_temp_f": 80.0,
+      "low_apparent_temp_f": 54.0,
+      "max_wind_mph": 20.7,
+      "max_wind_gust_mph": 35.7,
+      "thunder_probability_pct": 16,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "thunderstorms"
+        "smoke",
+        "thunderstorms",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 18,
+      "us_aqi": 28,
       "category": "Good",
-      "aqi_24h_max": 45,
+      "aqi_24h_max": 50,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.4,
-      "pm10": 5.6,
-      "ozone": 50.0,
-      "nitrogen_dioxide": 4.5,
-      "observed_at": "2026-09-08T12:00",
+      "pm2_5": 3.8,
+      "pm10": 4.0,
+      "ozone": 70.0,
+      "nitrogen_dioxide": 2.7,
+      "observed_at": "2026-09-09T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-08",
-  "generated_at": "2026-09-08T12:23:55.674381+00:00"
+  "date": "2026-09-09",
+  "generated_at": "2026-09-09T12:38:49.092121+00:00"
 }
