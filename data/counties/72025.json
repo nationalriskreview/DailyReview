@@ -8,7 +8,18 @@
     "lon": -66.050964
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Heat Warning",
+        "headline": "Extreme Heat Warning issued September 11 at 2:11AM AST until September 11 at 5:00PM AST by NWS San Juan PR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-11T02:11:00-04:00",
+        "expires": "2026-09-11T17:00:00-04:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +33,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.99,
-      "precip_probability_pct": 80,
+      "precip_in_24h": 0.09,
+      "precip_probability_pct": 30,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 87.0,
-      "low_temp_f": 76.0,
-      "high_apparent_temp_f": 101.0,
-      "low_apparent_temp_f": 76.0,
-      "max_wind_mph": 15.0,
-      "max_wind_gust_mph": 18.4,
+      "high_temp_f": 89.0,
+      "low_temp_f": 77.0,
+      "high_apparent_temp_f": 102.0,
+      "low_apparent_temp_f": 77.0,
+      "max_wind_mph": 12.7,
+      "max_wind_gust_mph": 17.3,
       "thunder_probability_pct": null,
       "lightning_activity_level": 2,
       "weather": [
         "moderate rain showers",
-        "thunderstorms"
+        "haze",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 52,
-      "category": "Moderate",
-      "aqi_24h_max": 52,
+      "us_aqi": 46,
+      "category": "Good",
+      "aqi_24h_max": 58,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 3.8,
-      "pm10": 8.3,
-      "ozone": 43.0,
+      "pm2_5": 15.0,
+      "pm10": 50.3,
+      "ozone": 41.0,
       "nitrogen_dioxide": 0.4,
-      "observed_at": "2026-09-10T12:00",
+      "observed_at": "2026-09-11T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-10",
-  "generated_at": "2026-09-10T12:30:23.626425+00:00"
+  "date": "2026-09-11",
+  "generated_at": "2026-09-11T12:27:53.051443+00:00"
 }

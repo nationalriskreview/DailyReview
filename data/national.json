@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-10T12:30:23.626425+00:00",
-  "date": "2026-09-10",
+  "generated_at": "2026-09-11T12:27:53.051443+00:00",
+  "date": "2026-09-11",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 134
+      "counties_with_alerts": 163
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 183
+      "counties_over_threshold": 63
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 54,
+      "counties_with_matches": 41,
       "items_pre_llm": {
-        "protest": 45,
-        "utility_outage": 7,
-        "transit_disruption": 1,
+        "protest": 51,
+        "utility_outage": 5,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 12
+        "hazmat_incident": 3,
+        "road_closure": 7
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 16,
+      "counties_with_matches": 10,
       "items_post_llm": {
-        "protest": 6,
-        "utility_outage": 5,
-        "transit_disruption": 1,
+        "protest": 1,
+        "utility_outage": 4,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 4
+        "hazmat_incident": 3,
+        "road_closure": 2
       },
-      "unique_articles": 43,
-      "calls_used": 43,
+      "unique_articles": 38,
+      "calls_used": 38,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 231
+      "counties_with_alerts": 239
     },
     "transit": {
       "status": "ok",
@@ -215,13 +215,13 @@
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "anthropic",
           "name": "Anthropic",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "oracle",
@@ -661,23 +661,23 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Workers Cron Triggers degraded",
+      "title": "Minor Service Outage",
       "impact": "minor",
-      "status": "identified",
-      "started": "2026-09-09T19:17:26.000Z",
-      "updated": "2026-09-09T19:18:25.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/sjs8s0q2x4hw",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
-      "provider": "OpenAI",
-      "key": "openai",
-      "title": "Unable to open shared ChatGPT Project using direct link",
+      "provider": "Anthropic",
+      "key": "anthropic",
+      "title": "Degraded functionality for Claude Cowork on Windows",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-09-10T02:21:57Z",
-      "updated": "2026-09-10T12:06:23Z",
-      "url": "https://status.openai.com",
+      "status": "identified",
+      "started": "2026-09-10T15:54:10.000Z",
+      "updated": "2026-09-10T17:20:39.594Z",
+      "url": "https://stspg.io/5yp3rhhztm30",
       "source": "provider status page"
     },
     {
