@@ -8,7 +8,18 @@
     "lon": -119.663269
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued September 12 at 2:08AM PDT until September 13 at 2:00AM PDT by NWS Reno NV",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-12T02:08:00-07:00",
+        "expires": "2026-09-13T02:00:00-07:00",
+        "source": "nws_alert",
+        "count": 3
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -49,40 +60,42 @@
     ],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 7,
+      "precip_probability_pct": 3,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 89.0,
-      "low_temp_f": 53.0,
-      "high_apparent_temp_f": 85.0,
-      "low_apparent_temp_f": 53.0,
-      "max_wind_mph": 23.0,
-      "max_wind_gust_mph": 36.8,
-      "thunder_probability_pct": 4,
+      "high_temp_f": 87.0,
+      "low_temp_f": 51.0,
+      "high_apparent_temp_f": 84.0,
+      "low_apparent_temp_f": 51.0,
+      "max_wind_mph": 33.4,
+      "max_wind_gust_mph": 49.5,
+      "thunder_probability_pct": 2,
       "lightning_activity_level": null,
       "weather": [
-        "blowing dust"
+        "smoke",
+        "blowing dust",
+        "haze"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 26,
+      "us_aqi": 36,
       "category": "Good",
-      "aqi_24h_max": 36,
+      "aqi_24h_max": 46,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.8,
-      "pm10": 5.0,
-      "ozone": 45.0,
-      "nitrogen_dioxide": 4.9,
-      "observed_at": "2026-09-11T12:00",
+      "pm2_5": 1.8,
+      "pm10": 2.6,
+      "ozone": 69.0,
+      "nitrogen_dioxide": 4.6,
+      "observed_at": "2026-09-12T11:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-11",
-  "generated_at": "2026-09-11T12:27:53.051443+00:00"
+  "date": "2026-09-12",
+  "generated_at": "2026-09-12T11:50:50.870999+00:00"
 }

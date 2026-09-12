@@ -8,7 +8,18 @@
     "lon": -120.534225
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued September 12 at 2:08AM PDT until September 13 at 2:00AM PDT by NWS Reno NV",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-12T02:08:00-07:00",
+        "expires": "2026-09-13T02:00:00-07:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,38 +33,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 2,
+      "precip_probability_pct": 3,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 83.0,
-      "low_temp_f": 62.0,
-      "high_apparent_temp_f": 81.0,
-      "low_apparent_temp_f": 62.0,
-      "max_wind_mph": 5.8,
-      "max_wind_gust_mph": 16.1,
-      "thunder_probability_pct": 2,
+      "high_temp_f": 78.0,
+      "low_temp_f": 60.0,
+      "high_apparent_temp_f": 78.0,
+      "low_apparent_temp_f": 60.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 19.6,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "smoke"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
       "us_aqi": 38,
       "category": "Good",
-      "aqi_24h_max": 43,
+      "aqi_24h_max": 46,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 5.6,
-      "pm10": 7.6,
-      "ozone": 67.0,
-      "nitrogen_dioxide": 2.7,
-      "observed_at": "2026-09-11T12:00",
+      "pm2_5": 0.6,
+      "pm10": 1.2,
+      "ozone": 77.0,
+      "nitrogen_dioxide": 3.0,
+      "observed_at": "2026-09-12T11:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-11",
-  "generated_at": "2026-09-11T12:27:53.051443+00:00"
+  "date": "2026-09-12",
+  "generated_at": "2026-09-12T11:50:50.870999+00:00"
 }

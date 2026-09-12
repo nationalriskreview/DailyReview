@@ -8,33 +8,25 @@
     "lon": -120.722718
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued September 12 at 3:12AM PDT until September 14 at 11:00AM PDT by NWS Sacramento CA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-12T03:12:00-07:00",
+        "expires": "2026-09-12T16:30:00-07:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [
-      {
-        "title": "CHUTE",
-        "incident_name": "CHUTE",
-        "id": "2026-CANEU-020978",
-        "category": "wildfire",
-        "incident_type": "Wildfire",
-        "date": "2026-07-13T15:20:13+00:00",
-        "lat": 39.3515,
-        "lon": -121.1507,
-        "acreage": 162,
-        "containment_pct": 99,
-        "cause": "Undetermined",
-        "state": "CA",
-        "source_url": "https://irwin.doi.gov/observer/incidents/2026-CANEU-020978",
-        "source": "NIFC WFIGS",
-        "distance_miles": 30.4,
-        "threat_level": "Vicinity"
-      }
-    ],
+    "wildfires": [],
     "transit": [],
     "amtrak": [],
     "aviation": [],
@@ -45,34 +37,36 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 3,
+      "precip_probability_pct": 4,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 88.0,
-      "low_temp_f": 68.0,
-      "high_apparent_temp_f": 85.0,
-      "low_apparent_temp_f": 68.0,
-      "max_wind_mph": 5.8,
-      "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": 3,
+      "high_temp_f": 85.0,
+      "low_temp_f": 65.0,
+      "high_apparent_temp_f": 82.0,
+      "low_apparent_temp_f": 65.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 19.6,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "smoke"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 33,
+      "us_aqi": 35,
       "category": "Good",
-      "aqi_24h_max": 43,
+      "aqi_24h_max": 50,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 6.5,
-      "pm10": 8.5,
-      "ozone": 56.0,
-      "nitrogen_dioxide": 4.6,
-      "observed_at": "2026-09-11T12:00",
+      "pm2_5": 1.1,
+      "pm10": 1.3,
+      "ozone": 77.0,
+      "nitrogen_dioxide": 6.3,
+      "observed_at": "2026-09-12T11:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-11",
-  "generated_at": "2026-09-11T12:27:53.051443+00:00"
+  "date": "2026-09-12",
+  "generated_at": "2026-09-12T11:50:50.870999+00:00"
 }
