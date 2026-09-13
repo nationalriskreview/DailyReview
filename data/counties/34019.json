@@ -8,7 +8,14 @@
     "lon": -74.911969
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.2\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -18,44 +25,58 @@
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "ground_stop",
+        "code": "JFK",
+        "name": "John F. Kennedy Intl",
+        "city": "New York",
+        "state": "NY",
+        "reason": "thunderstorms",
+        "end": "9:45 am EDT",
+        "source": "FAA NAS Status"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.01,
-      "precip_probability_pct": 17,
+      "precip_in_24h": 1.21,
+      "precip_probability_pct": 88,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 79.0,
-      "low_temp_f": 57.0,
-      "high_apparent_temp_f": 79.0,
-      "low_apparent_temp_f": 57.0,
-      "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 12.7,
-      "thunder_probability_pct": 8,
+      "high_temp_f": 80.0,
+      "low_temp_f": 64.0,
+      "high_apparent_temp_f": 83.0,
+      "low_apparent_temp_f": 64.0,
+      "max_wind_mph": 3.5,
+      "max_wind_gust_mph": 9.2,
+      "thunder_probability_pct": 37,
       "lightning_activity_level": null,
       "weather": [
-        "moderate rain showers"
+        "thunderstorms",
+        "light rain showers",
+        "moderate rain showers",
+        "heavy rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 34,
+      "us_aqi": 42,
       "category": "Good",
-      "aqi_24h_max": 77,
+      "aqi_24h_max": 69,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 12.3,
-      "pm10": 12.7,
-      "ozone": 20.0,
-      "nitrogen_dioxide": 30.0,
-      "observed_at": "2026-09-12T11:00",
+      "pm2_5": 6.3,
+      "pm10": 7.6,
+      "ozone": 46.0,
+      "nitrogen_dioxide": 14.3,
+      "observed_at": "2026-09-13T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-12",
-  "generated_at": "2026-09-12T11:50:50.870999+00:00"
+  "date": "2026-09-13",
+  "generated_at": "2026-09-13T12:56:34.752974+00:00"
 }
