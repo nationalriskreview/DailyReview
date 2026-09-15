@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-14T14:25:59.693896+00:00",
-  "date": "2026-09-14",
+  "generated_at": "2026-09-15T12:58:24.751804+00:00",
+  "date": "2026-09-15",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 158
+      "counties_with_alerts": 70
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 306
+      "counties_over_threshold": 350
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 33,
+      "counties_with_matches": 41,
       "items_pre_llm": {
-        "protest": 45,
-        "utility_outage": 0,
+        "protest": 53,
+        "utility_outage": 8,
         "transit_disruption": 2,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
-        "road_closure": 4
+        "hazmat_incident": 4,
+        "road_closure": 3
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 10,
+      "counties_with_matches": 20,
       "items_post_llm": {
-        "protest": 7,
-        "utility_outage": 0,
-        "transit_disruption": 0,
+        "protest": 12,
+        "utility_outage": 8,
+        "transit_disruption": 2,
         "service_provider_outage": 0,
-        "hazmat_incident": 1,
-        "road_closure": 2
+        "hazmat_incident": 2,
+        "road_closure": 1
       },
-      "unique_articles": 34,
-      "calls_used": 34,
+      "unique_articles": 48,
+      "calls_used": 48,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 225
+      "counties_with_alerts": 251
     },
     "transit": {
       "status": "ok",
@@ -135,7 +135,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 172
+      "counties_with_alerts": 140
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 4,
+      "active_incidents": 6,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -173,7 +173,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 0
+          "items": 2
         },
         {
           "key": "azure",
@@ -191,7 +191,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 1
+          "items": 2
         },
         {
           "key": "github",
@@ -221,7 +221,7 @@
           "key": "anthropic",
           "name": "Anthropic",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "oracle",
@@ -659,25 +659,47 @@
   "faa_advisories": [],
   "service_outages": [
     {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Minor Service Outage",
-      "impact": "minor",
-      "status": "active",
-      "started": "",
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service disruption: Increased Error Rates",
+      "impact": "",
+      "status": "",
+      "started": "Tue, 15 Sep 2026 03:27:10 PDT",
       "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "url": "https://status.aws.amazon.com/",
       "source": "provider status page"
     },
     {
-      "provider": "Anthropic",
-      "key": "anthropic",
-      "title": "Partially Degraded Service",
-      "impact": "minor",
-      "status": "active",
-      "started": "",
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service disruption: Increased Error Rates",
+      "impact": "",
+      "status": "",
+      "started": "Tue, 15 Sep 2026 03:22:28 PDT",
       "updated": "",
-      "url": "https://status.anthropic.com",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Cloudflare",
+      "key": "cloudflare",
+      "title": "Some Replicate models are failing to start",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-09-14T22:25:50.000Z",
+      "updated": "2026-09-15T00:03:02.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/19g1m7tsvncw",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Cloudflare",
+      "key": "cloudflare",
+      "title": "Cloudflare Queues issues",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-09-14T20:22:30.000Z",
+      "updated": "2026-09-15T02:01:55.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/s4x7n3nfqnyy",
       "source": "provider status page"
     },
     {
