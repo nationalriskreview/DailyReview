@@ -10,8 +10,8 @@ drops any incident whose start AND last update are older than the window, and
 an item that can't be dated is treated as NOT recent (dropped). Handlers that
 read a live current-state signal with no per-incident timestamp — a component
 reading "degraded"/"unavailable" right now (statuspage indicator fallback,
-html_alt_table, statuscast, sorryapp) — reflect the present moment and are
-kept as-is.
+html_alt_table, statuscast, sorryapp, and docusign_health's component
+fallback) — reflect the present moment and are kept as-is.
 
 Provider handlers (public list in reference/service_providers.json; a private
 allowlist in the PRIVATE_PROVIDERS_JSON secret is polled the same way but
@@ -25,6 +25,8 @@ pseudonymized by 4-char code):
   - statuscast : StatusCast SSR summary cards.
   - atom_feed  : Atom status feed; non-resolution entry updated within 24h.
   - sorryapp   : SorryApp `/api/v1/components` (non-operational components).
+  - docusign_health : DocuSign health center `incidents.json` (unresolved
+                 only; component-state fallback).
 """
 
 from __future__ import annotations
@@ -359,6 +361,75 @@ def _check_sorryapp(p: dict) -> list[dict]:
     return out
 
 
+# DocuSign retired its Atlassian Statuspage in Sept 2026; status.docusign.com
+# now 301s to the health center, whose incident data is served from this CDN
+# base (overridable per-provider via an "api" key in the provider config).
+DOCUSIGN_API = "https://health.docusign.com/production/1ds/ssg/apps/health/dynamic"
+# DocuSign publishes its own impact vocabulary; map it onto our shared scale.
+_DOCUSIGN_IMPACT = {
+    "service_disruption": "major",
+    "performance_degradation": "minor",
+    "available": "minor",
+    "maintenance": "maintenance",
+}
+_DOCUSIGN_RESOLVED = {"resolved", "completed", "closed"}
+
+
+def _check_docusign_health(p: dict) -> list[dict]:
+    """DocuSign health center — replaces its retired Atlassian Statuspage.
+
+    Unlike Statuspage's summary.json, `incidents.json` carries the *full*
+    history (resolved included), so we filter to unresolved incidents whose
+    start or last update falls inside the recency window. When nothing is open,
+    fall back to live component state the way _check_statuspage falls back to
+    the summary indicator.
+    """
+    api = (p.get("api") or DOCUSIGN_API).rstrip("/")
+    data = _http_get_json(f"{api}/incidents.json")
+    if not data:
+        raise RuntimeError("fetch/parse failed")
+    page = p["url"].rstrip("/")
+    out = []
+    for inc in data.get("incidents") or []:
+        if inc.get("resolvedAt") or (inc.get("status") or "").lower() in _DOCUSIGN_RESOLVED:
+            continue
+        started = inc.get("startedAt", "") or inc.get("createdAt", "")
+        updated = inc.get("updatedAt", "")
+        if not _is_recent(started, updated):  # only last-24h activity
+            continue
+        iid = inc.get("id", "")
+        out.append(_incident(
+            p["name"], p["key"],
+            title=inc.get("title", "") or "Service incident",
+            impact=_DOCUSIGN_IMPACT.get((inc.get("impact") or "").lower(), "minor"),
+            status=inc.get("status", ""),
+            started=started,
+            updated=updated,
+            url=f"{page}/incidents?id={iid}" if iid else page,
+        ))
+    if out:
+        return out
+    # Component-level degradation with no formal incident. This is a live
+    # current-state signal (no per-incident timestamp), so it is kept as-is.
+    # A failure here is not a provider failure — the incident feed already
+    # answered, so degrade quietly to "nothing open".
+    comps = _http_get_json(f"{api}/components.json") or {}
+    degraded = [c for c in (comps.get("components") or [])
+                if (c.get("status") or "available").lower() not in ("available", "operational")]
+    if not degraded:
+        return []
+    names = ", ".join(c.get("name", "?") for c in degraded[:5])
+    if len(degraded) > 5:
+        names += f", +{len(degraded) - 5} more"
+    return [_incident(
+        p["name"], p["key"],
+        title=f"{len(degraded)} component(s) degraded: {names}",
+        impact=_worst_impact([
+            {"impact": _DOCUSIGN_IMPACT.get((c.get("status") or "").lower(), "minor")}
+            for c in degraded]),
+        status="active", url=page)]
+
+
 _HANDLERS = {
     "statuspage": _check_statuspage,
     "gcp": _check_gcp,
@@ -368,6 +439,7 @@ _HANDLERS = {
     "statuscast": _check_statuscast,
     "atom_feed": _check_atom_feed,
     "sorryapp": _check_sorryapp,
+    "docusign_health": _check_docusign_health,
 }
 
 
