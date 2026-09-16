@@ -8,56 +8,82 @@
     "lon": -92.169156
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Heat Forecast",
+        "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+        "severity": "Severe",
+        "source": "nws_forecast"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Bunker Fire",
+        "incident_name": "Bunker Fire",
+        "id": "2026-ARARS-100236",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-09-14T18:15:48+00:00",
+        "lat": 33.5745,
+        "lon": -92.5862,
+        "acreage": 2832,
+        "containment_pct": 30,
+        "cause": "Undetermined",
+        "state": "AR",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-ARARS-100236",
+        "source": "NIFC WFIGS",
+        "distance_miles": 25.2,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.03,
-      "precip_probability_pct": 21,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 16,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 98.0,
+      "high_temp_f": 99.0,
       "low_temp_f": 73.0,
-      "high_apparent_temp_f": 105.0,
+      "high_apparent_temp_f": 106.0,
       "low_apparent_temp_f": 73.0,
-      "max_wind_mph": 3.5,
-      "max_wind_gust_mph": 6.9,
+      "max_wind_mph": 5.8,
+      "max_wind_gust_mph": 11.5,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
         "light rain",
-        "light rain showers",
-        "thunderstorms"
+        "thunderstorms",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 37,
+      "us_aqi": 40,
       "category": "Good",
-      "aqi_24h_max": 51,
+      "aqi_24h_max": 68,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 8.2,
-      "pm10": 9.1,
-      "ozone": 49.0,
-      "nitrogen_dioxide": 5.8,
-      "observed_at": "2026-09-15T12:00",
+      "pm2_5": 8.9,
+      "pm10": 9.5,
+      "ozone": 45.0,
+      "nitrogen_dioxide": 7.4,
+      "observed_at": "2026-09-16T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-15",
-  "generated_at": "2026-09-15T12:58:24.751804+00:00"
+  "date": "2026-09-16",
+  "generated_at": "2026-09-16T12:52:29.043499+00:00"
 }

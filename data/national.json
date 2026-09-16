@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-15T12:58:24.751804+00:00",
-  "date": "2026-09-15",
+  "generated_at": "2026-09-16T12:52:29.043499+00:00",
+  "date": "2026-09-16",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 70
+      "counties_with_alerts": 34
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 350
+      "counties_over_threshold": 294
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 41,
+      "counties_with_matches": 24,
       "items_pre_llm": {
-        "protest": 53,
-        "utility_outage": 8,
+        "protest": 26,
+        "utility_outage": 1,
         "transit_disruption": 2,
         "service_provider_outage": 0,
-        "hazmat_incident": 4,
-        "road_closure": 3
+        "hazmat_incident": 2,
+        "road_closure": 5
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 20,
+      "counties_with_matches": 10,
       "items_post_llm": {
-        "protest": 12,
-        "utility_outage": 8,
+        "protest": 4,
+        "utility_outage": 1,
         "transit_disruption": 2,
         "service_provider_outage": 0,
         "hazmat_incident": 2,
-        "road_closure": 1
+        "road_closure": 4
       },
-      "unique_articles": 48,
-      "calls_used": 48,
+      "unique_articles": 28,
+      "calls_used": 28,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 251
+      "counties_with_alerts": 261
     },
     "transit": {
       "status": "ok",
@@ -135,7 +135,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 140
+      "counties_with_alerts": 142
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -165,7 +165,7 @@
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 6,
+      "active_incidents": 8,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -173,7 +173,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 2
+          "items": 0
         },
         {
           "key": "azure",
@@ -197,7 +197,7 @@
           "key": "github",
           "name": "GitHub",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "datadog",
@@ -269,7 +269,7 @@
           "key": "rapid7",
           "name": "Rapid7",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "servicenow",
@@ -305,7 +305,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "r3wn",
@@ -329,7 +329,7 @@
           "key": "t8fc",
           "name": "t8fc",
           "status": "ok",
-          "items": 0
+          "items": 1
         }
       ]
     }
@@ -659,47 +659,36 @@
   "faa_advisories": [],
   "service_outages": [
     {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service disruption: Increased Error Rates",
-      "impact": "",
-      "status": "",
-      "started": "Tue, 15 Sep 2026 03:27:10 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service disruption: Increased Error Rates",
-      "impact": "",
-      "status": "",
-      "started": "Tue, 15 Sep 2026 03:22:28 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
+      "provider": "Cloudflare",
+      "key": "cloudflare",
+      "title": "Support Helpdesk Availability Issues",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-09-16T08:31:12.000Z",
+      "updated": "2026-09-16T11:43:17.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/zlyf7lvpp05s",
       "source": "provider status page"
     },
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Some Replicate models are failing to start",
+      "title": "Network Performance Issues in Los Angeles",
       "impact": "minor",
-      "status": "identified",
-      "started": "2026-09-14T22:25:50.000Z",
-      "updated": "2026-09-15T00:03:02.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/19g1m7tsvncw",
+      "status": "monitoring",
+      "started": "2026-09-16T02:03:10.000Z",
+      "updated": "2026-09-16T03:44:46.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/qc2v4gxy3gfw",
       "source": "provider status page"
     },
     {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Cloudflare Queues issues",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-09-14T20:22:30.000Z",
-      "updated": "2026-09-15T02:01:55.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/s4x7n3nfqnyy",
+      "provider": "GitHub",
+      "key": "github",
+      "title": "Degradation with Gemini 3.8 Flash",
+      "impact": "major",
+      "status": "monitoring",
+      "started": "2026-09-16T07:20:59.972Z",
+      "updated": "2026-09-16T11:45:34.383Z",
+      "url": "https://stspg.io/hsjy12f57b24",
       "source": "provider status page"
     },
     {
@@ -714,8 +703,35 @@
       "source": "provider status page"
     },
     {
+      "provider": "Rapid7",
+      "key": "rapid7",
+      "title": "Rapid7 Customer Portal Degradation",
+      "impact": "none",
+      "status": "monitoring",
+      "started": "2026-09-16T09:27:25.327Z",
+      "updated": "2026-09-16T11:33:10.351Z",
+      "url": "https://stspg.io/473m31b4d143",
+      "source": "provider status page"
+    },
+    {
       "provider": "q7v2",
       "impact": "major",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
+    },
+    {
+      "provider": "x9tz",
+      "impact": "maintenance",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
+    },
+    {
+      "provider": "t8fc",
+      "impact": "minor",
       "active_incidents": 1,
       "status": "active",
       "coded": true,

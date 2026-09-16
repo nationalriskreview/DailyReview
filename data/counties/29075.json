@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.0\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued September 15 at 10:43PM CDT until September 18 at 12:00PM CDT by NWS Kansas City/Pleasant Hill MO",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-15T22:43:00-05:00",
+        "expires": "2026-09-16T22:45:00-05:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -32,39 +36,40 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.04,
-      "precip_probability_pct": 85,
+      "precip_in_24h": 2.22,
+      "precip_probability_pct": 98,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 80.0,
-      "low_temp_f": 66.0,
-      "high_apparent_temp_f": 83.0,
-      "low_apparent_temp_f": 66.0,
-      "max_wind_mph": 11.5,
-      "max_wind_gust_mph": 18.4,
-      "thunder_probability_pct": 33,
+      "high_temp_f": 76.0,
+      "low_temp_f": 60.0,
+      "high_apparent_temp_f": 76.0,
+      "low_apparent_temp_f": 60.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 12.7,
+      "thunder_probability_pct": 39,
       "lightning_activity_level": null,
       "weather": [
+        "heavy rain showers",
         "thunderstorms",
-        "light rain showers",
-        "moderate rain showers"
+        "moderate rain showers",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 33,
+      "us_aqi": 27,
       "category": "Good",
-      "aqi_24h_max": 40,
+      "aqi_24h_max": 32,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.2,
-      "pm10": 2.6,
-      "ozone": 57.0,
-      "nitrogen_dioxide": 4.0,
-      "observed_at": "2026-09-15T12:00",
+      "pm2_5": 3.7,
+      "pm10": 3.9,
+      "ozone": 45.0,
+      "nitrogen_dioxide": 5.0,
+      "observed_at": "2026-09-16T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-15",
-  "generated_at": "2026-09-15T12:58:24.751804+00:00"
+  "date": "2026-09-16",
+  "generated_at": "2026-09-16T12:52:29.043499+00:00"
 }
