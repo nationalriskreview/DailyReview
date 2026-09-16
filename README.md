@@ -63,7 +63,9 @@ National alerts in `national.json`:
 
 Each top-level output (`today.json`, `today-summary.json`, `national.json`) includes a `data_sources` object reporting per-collector status for the current run, plus a `run_health` rollup for an at-a-glance verdict. Use them to see which fetches worked and which silently returned empty — the green GitHub Actions checkmark only means the script didn't crash, not that every source succeeded.
 
-`run_health` summarizes the whole run: `overall` is `ok` (every collector ok/skipped), `degraded` (some failed or returned partial data while others succeeded), or `failed` (nothing succeeded). It also carries `counts` and the names of the `failed`, `partial`, and `skipped` collectors, so a downstream monitor can alert on `overall != "ok"`.
+`run_health` summarizes the whole run: `overall` is `ok` (every collector succeeded), `degraded` (some failed, returned partial data, or were skipped while others succeeded), or `failed` (nothing succeeded). It also carries `counts` and the names of the `failed`, `partial`, and `skipped` collectors, so a downstream monitor can alert on `overall != "ok"`.
+
+**A skip counts as degraded.** An unset API key silently drops a source, and a run missing a source is not a healthy run — so a skip breaks `overall == "ok"` exactly as a failure does. Skips keep their own bucket rather than being folded into `partial`, so a monitor can still tell "not configured" from "tried and broke".
 
 ```json
 "run_health": {
@@ -73,12 +75,12 @@ Each top-level output (`today.json`, `today-summary.json`, `national.json`) incl
 }
 ```
 
-Per source: `status` is one of `ok`, `failed`, `skipped`, `partial`. `ok` means the fetch and parse succeeded (zero items is still `ok`). `failed` includes a truncated `error` string. `partial` is used for air quality (coverage below 95%) and transit (some agencies succeeded, others failed).
+Per source: `status` is one of `ok`, `failed`, `skipped`, `partial`. `ok` means the fetch and parse succeeded (zero items is still `ok`). `failed` includes a truncated `error` string. `partial` is used for air quality (coverage below 95%) and transit (some agencies succeeded while others failed *or* were skipped for a missing key).
 
 Transit additionally exposes a per-agency `agencies` array — each with `id`, `name`, `status`, and `items`. Per-agency status values:
 
 - `ok` — fetched and parsed
-- `skipped_no_auth` — agency requires an API key env var that wasn't set
+- `skipped_no_auth` — agency requires an API key env var that wasn't set. This degrades the transit collector to `partial` (or `skipped`, if every agency is unconfigured): a missing or expired key leaves the feed blind to that agency, which should never pass as healthy.
 - `fetch_failed` — HTTP fetch returned an error or timed out
 - `config_error` — agency config is malformed (`auth.env` missing)
 - `error` — unhandled exception during parse (also has truncated `error` text)
@@ -87,9 +89,10 @@ Examples:
 
 ```json
 "transit": {
-  "status": "ok",
+  "status": "partial",
   "agencies_total": 11,
-  "agencies_ok": 8,
+  "agencies_ok": 10,
+  "agencies_skipped": 1,
   "items_total": 1,
   "counties_with_alerts": 6,
   "agencies": [

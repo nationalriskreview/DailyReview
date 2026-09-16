@@ -148,11 +148,16 @@ def _write_json(path: Path, obj) -> None:
 def _compute_run_health(data_sources: dict) -> dict:
     """Roll per-collector statuses up into one at-a-glance verdict.
 
-    overall is `ok` when every collector is ok/skipped, `degraded` when some
-    failed or returned partial data but others succeeded, and `failed` when
-    nothing succeeded. Lets a consumer (or an alert) judge the run without
-    scanning every collector — the green Actions checkmark only means the
-    script didn't crash, not that every source worked.
+    overall is `ok` only when every collector succeeded, `degraded` when some
+    failed, returned partial data, or were skipped while others succeeded, and
+    `failed` when nothing succeeded. Lets a consumer (or an alert) judge the
+    run without scanning every collector — the green Actions checkmark only
+    means the script didn't crash, not that every source worked.
+
+    A skip counts as degraded: an unset API key silently drops a source, and a
+    run missing a source is not a healthy run. Skips stay in their own bucket
+    (not folded into `partial`) so a monitor can tell "not configured" from
+    "tried and broke", but both break `overall == "ok"`.
     """
     ok, partial, failed, skipped = [], [], [], []
     for name, info in (data_sources or {}).items():
@@ -170,7 +175,7 @@ def _compute_run_health(data_sources: dict) -> dict:
 
     if failed and not ok:
         overall = "failed"
-    elif failed or partial:
+    elif failed or partial or skipped:
         overall = "degraded"
     else:
         overall = "ok"

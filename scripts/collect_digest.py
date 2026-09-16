@@ -214,20 +214,24 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
         log.info("Transit: %d counties had severe outages", len(transit_by_fips))
         ok_count = sum(1 for s in transit_agency_stats if s["status"] == "ok")
         items_total = sum(s["items"] for s in transit_agency_stats)
-        # Derive overall status: ok if all agencies returned ok/skipped_no_auth;
-        # partial if some hit fetch_failed / error; failed if all did.
-        non_ok = [s for s in transit_agency_stats
+        # Derive overall status. A skipped agency (unset API key) counts against
+        # the run just like a failed one: the feed is silently blind to that
+        # agency either way, and an expired key would otherwise never surface.
+        skipped = [s for s in transit_agency_stats
+                   if s["status"] == "skipped_no_auth"]
+        broken = [s for s in transit_agency_stats
                   if s["status"] not in ("ok", "skipped_no_auth")]
-        if not non_ok:
+        if not broken and not skipped:
             overall = "ok"
         elif ok_count == 0:
-            overall = "failed"
+            overall = "failed" if broken else "skipped"
         else:
             overall = "partial"
         data_sources["transit"] = {
             "status": overall,
             "agencies_total": len(transit_agency_stats),
             "agencies_ok": ok_count,
+            "agencies_skipped": len(skipped),
             "items_total": items_total,
             "counties_with_alerts": len(transit_by_fips),
             "agencies": transit_agency_stats,
