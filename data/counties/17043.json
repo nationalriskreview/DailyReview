@@ -8,7 +8,14 @@
     "lon": -88.086039
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.1\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -18,45 +25,58 @@
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "ground_stop",
+        "code": "MDW",
+        "name": "Chicago Midway Intl",
+        "city": "Chicago",
+        "state": "IL",
+        "reason": "thunderstorms",
+        "end": "8:45 am CDT",
+        "source": "FAA NAS Status"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.13,
-      "precip_probability_pct": 60,
+      "precip_in_24h": 1.05,
+      "precip_probability_pct": 77,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 74.0,
+      "high_temp_f": 76.0,
       "low_temp_f": 66.0,
-      "high_apparent_temp_f": 74.0,
+      "high_apparent_temp_f": 76.0,
       "low_apparent_temp_f": 66.0,
       "max_wind_mph": 8.1,
       "max_wind_gust_mph": 12.7,
-      "thunder_probability_pct": 20,
+      "thunder_probability_pct": 41,
       "lightning_activity_level": null,
       "weather": [
+        "moderate rain showers",
         "thunderstorms",
-        "moderate rain showers"
+        "fog",
+        "heavy rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 49,
-      "category": "Good",
-      "aqi_24h_max": 52,
+      "us_aqi": 61,
+      "category": "Moderate",
+      "aqi_24h_max": 66,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 9.1,
-      "pm10": 9.2,
-      "ozone": 45.0,
-      "nitrogen_dioxide": 12.7,
-      "observed_at": "2026-09-16T12:00",
+      "pm2_5": 19.5,
+      "pm10": 19.6,
+      "ozone": 12.0,
+      "nitrogen_dioxide": 51.8,
+      "observed_at": "2026-09-17T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-16",
-  "generated_at": "2026-09-16T12:52:29.043499+00:00"
+  "date": "2026-09-17",
+  "generated_at": "2026-09-17T12:51:12.592619+00:00"
 }
