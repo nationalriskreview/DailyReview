@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.1\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued September 18 at 2:06AM EDT until September 21 at 7:17AM EDT by NWS Northern Indiana",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-09-17T21:46:00-04:00",
+        "expires": "2026-09-18T20:15:00-04:00",
+        "source": "nws_alert",
+        "count": 2
       }
     ],
     "protest": [],
@@ -32,40 +36,39 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.08,
-      "precip_probability_pct": 89,
+      "precip_in_24h": 0.02,
+      "precip_probability_pct": 27,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 81.0,
-      "low_temp_f": 70.0,
-      "high_apparent_temp_f": 86.0,
-      "low_apparent_temp_f": 70.0,
-      "max_wind_mph": 3.5,
-      "max_wind_gust_mph": 10.4,
-      "thunder_probability_pct": 35,
+      "high_temp_f": 74.0,
+      "low_temp_f": 62.0,
+      "high_apparent_temp_f": 74.0,
+      "low_apparent_temp_f": 62.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 16.1,
+      "thunder_probability_pct": 26,
       "lightning_activity_level": null,
       "weather": [
-        "thunderstorms",
         "moderate rain showers",
-        "fog",
-        "light rain showers"
+        "thunderstorms",
+        "very_light drizzle"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 52,
-      "category": "Moderate",
-      "aqi_24h_max": 54,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 6.3,
-      "pm10": 6.4,
-      "ozone": 52.0,
-      "nitrogen_dioxide": 10.4,
-      "observed_at": "2026-09-17T12:00",
+      "us_aqi": 28,
+      "category": "Good",
+      "aqi_24h_max": 40,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 4.9,
+      "pm10": 5.2,
+      "ozone": 45.0,
+      "nitrogen_dioxide": 10.0,
+      "observed_at": "2026-09-18T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-17",
-  "generated_at": "2026-09-17T12:51:12.592619+00:00"
+  "date": "2026-09-18",
+  "generated_at": "2026-09-18T12:28:46.979494+00:00"
 }
