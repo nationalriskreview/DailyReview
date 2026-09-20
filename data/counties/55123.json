@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.6\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued September 20 at 6:35AM CDT until September 21 at 7:00AM CDT by NWS La Crosse WI",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-09-20T06:35:00-05:00",
+        "expires": "2026-09-20T21:45:00-05:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -32,40 +36,40 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.56,
-      "precip_probability_pct": 100,
+      "precip_in_24h": 0.07,
+      "precip_probability_pct": 54,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 65.0,
-      "low_temp_f": 55.0,
-      "high_apparent_temp_f": 65.0,
-      "low_apparent_temp_f": 55.0,
-      "max_wind_mph": 11.5,
-      "max_wind_gust_mph": 28.8,
-      "thunder_probability_pct": 53,
+      "high_temp_f": 69.0,
+      "low_temp_f": 56.0,
+      "high_apparent_temp_f": 69.0,
+      "low_apparent_temp_f": 56.0,
+      "max_wind_mph": 13.8,
+      "max_wind_gust_mph": 23.0,
+      "thunder_probability_pct": 15,
       "lightning_activity_level": null,
       "weather": [
-        "heavy rain showers",
+        "light rain showers",
+        "fog",
         "thunderstorms",
-        "moderate rain showers",
-        "light rain showers"
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 27,
+      "us_aqi": 24,
       "category": "Good",
-      "aqi_24h_max": 34,
+      "aqi_24h_max": 33,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 1.8,
-      "pm10": 1.8,
-      "ozone": 42.0,
-      "nitrogen_dioxide": 4.8,
-      "observed_at": "2026-09-19T12:00",
+      "pm2_5": 10.1,
+      "pm10": 10.7,
+      "ozone": 57.0,
+      "nitrogen_dioxide": 2.3,
+      "observed_at": "2026-09-20T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-19",
-  "generated_at": "2026-09-19T12:14:07.404021+00:00"
+  "date": "2026-09-20",
+  "generated_at": "2026-09-20T12:40:55.969440+00:00"
 }

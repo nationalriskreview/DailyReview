@@ -10,89 +10,93 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.4\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued September 19 at 9:05PM CDT until September 21 at 3:00AM CDT by NWS Chicago IL",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-19T21:05:00-05:00",
+        "expires": "2026-09-20T13:00:00-05:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
-    "protest": [],
+    "protest": [
+      {
+        "title": "Protesters maced outside Broadview ICE facility, 2 hospitalized &#x2013; NBC Chicago",
+        "url": "https://www.nbcchicago.com/news/local/10-protesters-maced-by-federal-agents-outside-broadview-ice-facility/3991170/",
+        "domain": "nbcchicago.com",
+        "seendate": "20260920023000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.nbcchicago.com/news/local/10-protesters-maced-by-federal-agents-outside-broadview-ice-facility/3991170/",
+            "domain": "nbcchicago.com"
+          }
+        ]
+      },
+      {
+        "title": "Palestinian community  in Chicago protests Israel's detention of medical workers",
+        "url": "https://english.wafa.ps/Pages/Details/174900",
+        "domain": "english.wafa.ps",
+        "seendate": "20260920090000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://english.wafa.ps/Pages/Details/174900",
+            "domain": "english.wafa.ps"
+          }
+        ]
+      }
+    ],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
-    "transit": [
-      {
-        "agency": "CTA 'L'",
-        "agency_id": "cta-rail",
-        "route": "Blue Line",
-        "system_outage": false,
-        "effect": "NO_SERVICE",
-        "header": "Blue Line Service Delayed at Clinton",
-        "description": "UPDATE: Blue Line trains are standing near Clinton due to an unauthorized person on the tracks. Crews working to restore service.",
-        "start": "2026-09-19T06:29:00",
-        "end": "",
-        "source": {
-          "#cdata-section": "http://www.transitchicago.com/travel_information/alert_detail.aspx?AlertId=117565"
-        },
-        "alert_id": "117565",
-        "severity_score": "84"
-      }
-    ],
+    "transit": [],
     "amtrak": [],
-    "aviation": [
-      {
-        "kind": "ground_stop",
-        "code": "MDW",
-        "name": "Chicago Midway Intl",
-        "city": "Chicago",
-        "state": "IL",
-        "reason": "thunderstorms",
-        "end": "8:00 am CDT",
-        "source": "FAA NAS Status"
-      }
-    ],
+    "aviation": [],
     "fema": [],
     "disease": []
   },
   "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.44,
+      "precip_in_24h": 1.98,
       "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 74.0,
-      "low_temp_f": 64.0,
-      "high_apparent_temp_f": 74.0,
-      "low_apparent_temp_f": 64.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 19.6,
+      "high_temp_f": 68.0,
+      "low_temp_f": 63.0,
+      "high_apparent_temp_f": 68.0,
+      "low_apparent_temp_f": 63.0,
+      "max_wind_mph": 23.0,
+      "max_wind_gust_mph": 32.2,
       "thunder_probability_pct": 55,
       "lightning_activity_level": null,
       "weather": [
         "moderate rain showers",
         "thunderstorms",
+        "fog",
         "heavy rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 31,
+      "us_aqi": 45,
       "category": "Good",
-      "aqi_24h_max": 41,
+      "aqi_24h_max": 45,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.9,
-      "pm10": 5.1,
-      "ozone": 50.0,
-      "nitrogen_dioxide": 15.0,
-      "observed_at": "2026-09-19T12:00",
+      "pm2_5": 3.1,
+      "pm10": 3.2,
+      "ozone": 61.0,
+      "nitrogen_dioxide": 7.6,
+      "observed_at": "2026-09-20T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-19",
-  "generated_at": "2026-09-19T12:14:07.404021+00:00"
+  "date": "2026-09-20",
+  "generated_at": "2026-09-20T12:40:55.969440+00:00"
 }

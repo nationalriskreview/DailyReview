@@ -10,8 +10,14 @@
   "alerts": {
     "weather": [
       {
+        "event": "Heavy Snow Forecast",
+        "headline": "~8.0\" snow expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast"
+      },
+      {
         "event": "Extreme Cold Forecast",
-        "headline": "Apparent temperature expected to drop to -5.0°F in next 24h",
+        "headline": "Apparent temperature expected to drop to -1.0°F in next 24h",
         "severity": "Severe",
         "source": "nws_forecast"
       }
@@ -48,44 +54,46 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.5,
-      "precip_probability_pct": 97,
-      "snow_in_24h": 3.6,
+      "precip_in_24h": 0.65,
+      "precip_probability_pct": 93,
+      "snow_in_24h": 8.03,
       "ice_in_24h": 0.0,
-      "high_temp_f": 52.0,
+      "high_temp_f": 50.0,
       "low_temp_f": 16.0,
-      "high_apparent_temp_f": 52.0,
-      "low_apparent_temp_f": -5.0,
-      "max_wind_mph": 44.9,
-      "max_wind_gust_mph": 52.9,
+      "high_apparent_temp_f": 50.0,
+      "low_apparent_temp_f": -1.0,
+      "max_wind_mph": 23.0,
+      "max_wind_gust_mph": 28.8,
       "thunder_probability_pct": null,
-      "lightning_activity_level": null,
+      "lightning_activity_level": 2,
       "weather": [
+        "light snow showers",
         "light snow",
         "moderate snow",
-        "light snow showers",
-        "light rain",
-        "light rain showers"
+        "thunderstorms",
+        "moderate snow showers",
+        "light rain showers",
+        "light rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 45,
+      "us_aqi": 43,
       "category": "Good",
       "aqi_24h_max": 46,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 0.1,
-      "pm10": 0.1,
-      "ozone": 99.0,
-      "nitrogen_dioxide": 0.3,
-      "observed_at": "2026-09-19T11:00",
+      "pm2_5": 0.2,
+      "pm10": 0.3,
+      "ozone": 101.0,
+      "nitrogen_dioxide": 0.1,
+      "observed_at": "2026-09-20T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-19",
-  "generated_at": "2026-09-19T12:14:07.404021+00:00"
+  "date": "2026-09-20",
+  "generated_at": "2026-09-20T12:40:55.969440+00:00"
 }

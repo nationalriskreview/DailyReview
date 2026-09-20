@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-19T12:14:07.404021+00:00",
-  "date": "2026-09-19",
+  "generated_at": "2026-09-20T12:40:55.969440+00:00",
+  "date": "2026-09-20",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 44
+      "counties_with_alerts": 112
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 145
+      "counties_over_threshold": 143
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,43 +28,43 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 25,
+      "counties_with_matches": 22,
       "items_pre_llm": {
-        "protest": 83,
-        "utility_outage": 2,
+        "protest": 40,
+        "utility_outage": 5,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 4,
-        "road_closure": 9
+        "hazmat_incident": 2,
+        "road_closure": 0
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 11,
+      "counties_with_matches": 7,
       "items_post_llm": {
-        "protest": 48,
-        "utility_outage": 0,
+        "protest": 11,
+        "utility_outage": 4,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
-        "road_closure": 9
+        "hazmat_incident": 1,
+        "road_closure": 0
       },
-      "unique_articles": 69,
-      "calls_used": 69,
+      "unique_articles": 34,
+      "calls_used": 34,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 221
+      "counties_with_alerts": 208
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 1,
-      "counties_with_alerts": 1,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -112,7 +112,7 @@
           "id": "cta-rail",
           "name": "CTA 'L'",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "metra",
@@ -161,12 +161,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 8
+      "national_items": 0,
+      "counties_with_alerts": 0
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 4,
+      "active_incidents": 5,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -306,7 +306,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "r3wn",
@@ -598,18 +598,7 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "ground_stop",
-      "code": "MDW",
-      "name": "Chicago Midway Intl",
-      "city": "Chicago",
-      "state": "IL",
-      "reason": "thunderstorms",
-      "end": "8:00 am CDT",
-      "source": "FAA NAS Status"
-    }
-  ],
+  "faa_advisories": [],
   "service_outages": [
     {
       "provider": "Cloudflare",
@@ -638,11 +627,19 @@
       "key": "rapid7",
       "title": "Vulnerability Management - Dashboard and Reporting Degradation",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-09-19T11:49:36.050Z",
-      "updated": "2026-09-19T12:10:21.764Z",
-      "url": "https://stspg.io/6zrnhpwdt0lz",
+      "status": "identified",
+      "started": "2026-09-20T11:33:10.419Z",
+      "updated": "2026-09-20T11:56:02.656Z",
+      "url": "https://stspg.io/cqydnj68bprl",
       "source": "provider status page"
+    },
+    {
+      "provider": "x9tz",
+      "impact": "maintenance",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
     },
     {
       "provider": "b6hj",
