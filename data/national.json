@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-21T14:32:46.132252+00:00",
-  "date": "2026-09-21",
+  "generated_at": "2026-09-22T12:58:20.661230+00:00",
+  "date": "2026-09-22",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 65
+      "counties_with_alerts": 136
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 78
+      "counties_over_threshold": 128
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,49 +28,49 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 27,
+      "counties_with_matches": 49,
       "items_pre_llm": {
-        "protest": 37,
-        "utility_outage": 3,
-        "transit_disruption": 1,
-        "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 3
+        "protest": 83,
+        "utility_outage": 5,
+        "transit_disruption": 0,
+        "service_provider_outage": 2,
+        "hazmat_incident": 4,
+        "road_closure": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 15,
+      "counties_with_matches": 13,
       "items_post_llm": {
-        "protest": 14,
-        "utility_outage": 3,
-        "transit_disruption": 1,
+        "protest": 11,
+        "utility_outage": 2,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 3
+        "hazmat_incident": 2,
+        "road_closure": 2
       },
-      "unique_articles": 31,
-      "calls_used": 31,
+      "unique_articles": 48,
+      "calls_used": 48,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 197
+      "counties_with_alerts": 183
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 1,
+      "items_total": 2,
       "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 1
+          "items": 2
         },
         {
           "id": "mta-subway",
@@ -161,12 +161,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 2,
-      "counties_with_alerts": 32
+      "national_items": 1,
+      "counties_with_alerts": 5
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 2,
+      "active_incidents": 7,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -174,7 +174,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 0
+          "items": 3
         },
         {
           "key": "azure",
@@ -210,7 +210,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "openai",
@@ -300,7 +300,7 @@
           "key": "m4kp",
           "name": "m4kp",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "x9tz",
@@ -600,27 +600,51 @@
   "amtrak_advisories": [],
   "faa_advisories": [
     {
-      "kind": "ground_stop",
-      "code": "PHL",
-      "name": "Philadelphia Intl",
-      "city": "Philadelphia",
-      "state": "PA",
-      "reason": "equipment outage",
-      "end": "11:15 am EDT",
-      "source": "FAA NAS Status"
-    },
-    {
-      "kind": "ground_stop",
-      "code": "EWR",
-      "name": "Newark Liberty Intl",
-      "city": "Newark",
-      "state": "NJ",
-      "reason": "equipment outage",
-      "end": "11:15 am EDT",
+      "kind": "airport_closure",
+      "code": "SNA",
+      "name": "John Wayne / Orange County",
+      "city": "Santa Ana",
+      "state": "CA",
+      "reason": "!SNA 09/034 SNA AD AP CLSD 2609220630-2609221315",
+      "start": "Sep 22 at 06:30 UTC.",
+      "reopen": "Sep 22 at 13:15 UTC.",
       "source": "FAA NAS Status"
     }
   ],
   "service_outages": [
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased Error Rates",
+      "impact": "",
+      "status": "",
+      "started": "Mon, 21 Sep 2026 17:24:18 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased Error Rates",
+      "impact": "",
+      "status": "",
+      "started": "Mon, 21 Sep 2026 16:44:15 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased Error Rates",
+      "impact": "",
+      "status": "",
+      "started": "Mon, 21 Sep 2026 16:26:48 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
@@ -633,6 +657,17 @@
       "source": "provider status page"
     },
     {
+      "provider": "Zoom",
+      "key": "zoom",
+      "title": "Service Degradation Affecting Apple Login for Zoom Sign-in.",
+      "impact": "minor",
+      "status": "monitoring",
+      "started": "2026-09-21T11:17:47.074-07:00",
+      "updated": "2026-09-21T18:37:08.113-07:00",
+      "url": "https://stspg.io/j90jkyg5gqz3",
+      "source": "provider status page"
+    },
+    {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
       "title": "Partially Degraded Service",
@@ -642,6 +677,14 @@
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
+    },
+    {
+      "provider": "m4kp",
+      "impact": "major",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
     }
   ]
 }
