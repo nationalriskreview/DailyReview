@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-22T12:58:20.661230+00:00",
-  "date": "2026-09-22",
+  "generated_at": "2026-09-23T13:05:17.448026+00:00",
+  "date": "2026-09-23",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 136
+      "counties_with_alerts": 191
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 128
+      "counties_over_threshold": 66
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 49,
+      "counties_with_matches": 34,
       "items_pre_llm": {
-        "protest": 83,
-        "utility_outage": 5,
+        "protest": 50,
+        "utility_outage": 3,
         "transit_disruption": 0,
-        "service_provider_outage": 2,
-        "hazmat_incident": 4,
-        "road_closure": 2
+        "service_provider_outage": 0,
+        "hazmat_incident": 0,
+        "road_closure": 5
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 13,
+      "counties_with_matches": 28,
       "items_post_llm": {
-        "protest": 11,
-        "utility_outage": 2,
+        "protest": 34,
+        "utility_outage": 3,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
-        "road_closure": 2
+        "hazmat_incident": 0,
+        "road_closure": 4
       },
-      "unique_articles": 48,
-      "calls_used": 48,
+      "unique_articles": 39,
+      "calls_used": 39,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 183
+      "counties_with_alerts": 186
     },
     "transit": {
       "status": "ok",
@@ -161,12 +161,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 5
+      "national_items": 0,
+      "counties_with_alerts": 0
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 7,
+      "active_incidents": 6,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -174,7 +174,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 3
+          "items": 0
         },
         {
           "key": "azure",
@@ -192,13 +192,13 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 1
+          "items": 2
         },
         {
           "key": "github",
           "name": "GitHub",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "datadog",
@@ -598,73 +598,50 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "airport_closure",
-      "code": "SNA",
-      "name": "John Wayne / Orange County",
-      "city": "Santa Ana",
-      "state": "CA",
-      "reason": "!SNA 09/034 SNA AD AP CLSD 2609220630-2609221315",
-      "start": "Sep 22 at 06:30 UTC.",
-      "reopen": "Sep 22 at 13:15 UTC.",
-      "source": "FAA NAS Status"
-    }
-  ],
+  "faa_advisories": [],
   "service_outages": [
     {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased Error Rates",
-      "impact": "",
-      "status": "",
-      "started": "Mon, 21 Sep 2026 17:24:18 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased Error Rates",
-      "impact": "",
-      "status": "",
-      "started": "Mon, 21 Sep 2026 16:44:15 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Increased Error Rates",
-      "impact": "",
-      "status": "",
-      "started": "Mon, 21 Sep 2026 16:26:48 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
+      "provider": "Cloudflare",
+      "key": "cloudflare",
+      "title": "Intermittent authentication errors for API and R2",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-09-23T09:08:53.000Z",
+      "updated": "2026-09-23T09:08:53.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/jg6ys8sbd6ny",
       "source": "provider status page"
     },
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Minor Service Outage",
+      "title": "Cloudflare One Clients are incorrectly challenged on some sites",
       "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "status": "identified",
+      "started": "2026-09-22T19:23:17.000Z",
+      "updated": "2026-09-23T11:02:41.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/tl0vrgjy99r0",
+      "source": "provider status page"
+    },
+    {
+      "provider": "GitHub",
+      "key": "github",
+      "title": "Incident with API Requests and Projects",
+      "impact": "minor",
+      "status": "investigating",
+      "started": "2026-09-23T10:11:12.836Z",
+      "updated": "2026-09-23T11:38:30.055Z",
+      "url": "https://stspg.io/m1ps7yrhp4n8",
       "source": "provider status page"
     },
     {
       "provider": "Zoom",
       "key": "zoom",
-      "title": "Service Degradation Affecting Apple Login for Zoom Sign-in.",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-09-21T11:17:47.074-07:00",
-      "updated": "2026-09-21T18:37:08.113-07:00",
-      "url": "https://stspg.io/j90jkyg5gqz3",
+      "title": "Service Under Maintenance",
+      "impact": "maintenance",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.zoom.us",
       "source": "provider status page"
     },
     {
