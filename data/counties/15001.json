@@ -10,10 +10,24 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~2.6\" rain expected in next 24h",
+        "event": "Tropical Cyclone Local Statement",
+        "headline": "Tropical Cyclone Local Statement issued September 23 at 11:07PM HST by NWS Honolulu HI",
         "severity": "Moderate",
-        "source": "nws_forecast"
+        "urgency": "Expected",
+        "effective": "2026-09-23T23:07:00-10:00",
+        "expires": "2026-09-24T07:15:00-10:00",
+        "source": "nws_alert",
+        "count": 1
+      },
+      {
+        "event": "Hurricane Watch",
+        "headline": "Hurricane Watch issued September 23 at 10:44PM HST by NWS Honolulu HI",
+        "severity": "Severe",
+        "urgency": "Future",
+        "effective": "2026-09-23T22:44:00-10:00",
+        "expires": "2026-09-24T06:45:00-10:00",
+        "source": "nws_alert",
+        "count": 8
       }
     ],
     "protest": [],
@@ -56,42 +70,42 @@
     ],
     "disease": []
   },
-  "alert_count": 3,
+  "alert_count": 4,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 2.58,
-      "precip_probability_pct": 99,
+      "precip_in_24h": 6.96,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 72.0,
+      "high_temp_f": 71.0,
       "low_temp_f": 53.0,
-      "high_apparent_temp_f": 72.0,
+      "high_apparent_temp_f": 71.0,
       "low_apparent_temp_f": 53.0,
-      "max_wind_mph": 18.4,
-      "max_wind_gust_mph": 25.3,
+      "max_wind_mph": 21.9,
+      "max_wind_gust_mph": 31.1,
       "thunder_probability_pct": null,
-      "lightning_activity_level": 2,
+      "lightning_activity_level": 1,
       "weather": [
-        "moderate rain showers",
         "heavy rain showers",
-        "thunderstorms"
+        "thunderstorms",
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 13,
+      "us_aqi": 15,
       "category": "Good",
-      "aqi_24h_max": 18,
+      "aqi_24h_max": 19,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 1.9,
-      "pm10": 2.8,
-      "ozone": 24.0,
-      "nitrogen_dioxide": 1.9,
-      "observed_at": "2026-09-23T12:00",
+      "pm2_5": 0.3,
+      "pm10": 0.4,
+      "ozone": 30.0,
+      "nitrogen_dioxide": 0.9,
+      "observed_at": "2026-09-24T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-23",
-  "generated_at": "2026-09-23T13:05:17.448026+00:00"
+  "date": "2026-09-24",
+  "generated_at": "2026-09-24T13:00:41.636904+00:00"
 }

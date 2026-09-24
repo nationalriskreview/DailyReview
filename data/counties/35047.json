@@ -8,14 +8,7 @@
     "lon": -104.803519
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~2.1\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -23,6 +16,24 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [
+      {
+        "title": "Trigg",
+        "incident_name": "Trigg",
+        "id": "2026-NMN4S-000215",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-05-22T00:00:00+00:00",
+        "lat": 35.5303,
+        "lon": -103.9487,
+        "acreage": 2000,
+        "containment_pct": 95,
+        "cause": "Undetermined",
+        "state": "NM",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-NMN4S-000215",
+        "source": "NIFC WFIGS",
+        "distance_miles": 25.4,
+        "threat_level": "Vicinity"
+      },
       {
         "title": "Frijoles",
         "incident_name": "Frijoles",
@@ -33,7 +44,7 @@
         "lat": 35.9087,
         "lon": -105.8482,
         "acreage": 15956,
-        "containment_pct": 81,
+        "containment_pct": 84,
         "cause": "Natural",
         "state": "NM",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-NMSNF-000444",
@@ -51,40 +62,39 @@
   "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 2.12,
-      "precip_probability_pct": 99,
+      "precip_in_24h": 0.28,
+      "precip_probability_pct": 88,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 70.0,
+      "high_temp_f": 74.0,
       "low_temp_f": 53.0,
-      "high_apparent_temp_f": 70.0,
+      "high_apparent_temp_f": 74.0,
       "low_apparent_temp_f": 53.0,
-      "max_wind_mph": 19.6,
-      "max_wind_gust_mph": 27.6,
-      "thunder_probability_pct": 54,
+      "max_wind_mph": 12.7,
+      "max_wind_gust_mph": 17.3,
+      "thunder_probability_pct": 38,
       "lightning_activity_level": null,
       "weather": [
         "moderate rain showers",
         "thunderstorms",
-        "heavy rain showers",
-        "fog"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 21,
+      "us_aqi": 25,
       "category": "Good",
-      "aqi_24h_max": 39,
+      "aqi_24h_max": 37,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 1.4,
-      "pm10": 1.5,
-      "ozone": 58.0,
-      "nitrogen_dioxide": 2.1,
-      "observed_at": "2026-09-23T12:00",
+      "pm2_5": 0.5,
+      "pm10": 0.5,
+      "ozone": 46.0,
+      "nitrogen_dioxide": 2.3,
+      "observed_at": "2026-09-24T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-23",
-  "generated_at": "2026-09-23T13:05:17.448026+00:00"
+  "date": "2026-09-24",
+  "generated_at": "2026-09-24T13:00:41.636904+00:00"
 }

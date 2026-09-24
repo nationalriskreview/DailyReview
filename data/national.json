@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-23T13:05:17.448026+00:00",
-  "date": "2026-09-23",
+  "generated_at": "2026-09-24T13:00:41.636904+00:00",
+  "date": "2026-09-24",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 191
+      "counties_with_alerts": 256
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 66
+      "counties_over_threshold": 95
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 34,
+      "counties_with_matches": 51,
       "items_pre_llm": {
-        "protest": 50,
-        "utility_outage": 3,
+        "protest": 64,
+        "utility_outage": 0,
         "transit_disruption": 0,
-        "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 5
+        "service_provider_outage": 2,
+        "hazmat_incident": 2,
+        "road_closure": 16
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 28,
+      "counties_with_matches": 37,
       "items_post_llm": {
-        "protest": 34,
-        "utility_outage": 3,
+        "protest": 36,
+        "utility_outage": 0,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 4
+        "hazmat_incident": 1,
+        "road_closure": 14
       },
-      "unique_articles": 39,
-      "calls_used": 39,
+      "unique_articles": 50,
+      "calls_used": 50,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 186
+      "counties_with_alerts": 209
     },
     "transit": {
       "status": "ok",
@@ -152,7 +152,7 @@
     },
     "nndss_notifiable": {
       "status": "ok",
-      "alerts": 17
+      "alerts": 16
     },
     "amtrak": {
       "status": "ok",
@@ -166,7 +166,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 6,
+      "active_incidents": 3,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -192,13 +192,13 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 2
+          "items": 1
         },
         {
           "key": "github",
           "name": "GitHub",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "datadog",
@@ -300,7 +300,7 @@
           "key": "m4kp",
           "name": "m4kp",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "x9tz",
@@ -365,11 +365,25 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 0,
+      "this_week": 1,
       "prev_52wk_max": 3,
-      "ytd": 19,
-      "ytd_last_year": 7,
-      "mmwr_week": "2026-W36",
+      "ytd": 21,
+      "ytd_last_year": 8,
+      "mmwr_week": "2026-W37",
+      "source": "CDC NNDSS Weekly Data"
+    },
+    {
+      "state": "Pennsylvania",
+      "state_abbr": "PA",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 85,
+      "prev_52wk_max": 110,
+      "ytd": 774,
+      "ytd_last_year": 16,
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -380,24 +394,10 @@
         "elevated_vs_last_year"
       ],
       "this_week": 0,
-      "prev_52wk_max": 214,
+      "prev_52wk_max": 213,
       "ytd": 686,
-      "ytd_last_year": 2,
-      "mmwr_week": "2026-W36",
-      "source": "CDC NNDSS Weekly Data"
-    },
-    {
-      "state": "Pennsylvania",
-      "state_abbr": "PA",
-      "disease": "Measles",
-      "reasons": [
-        "elevated_vs_last_year"
-      ],
-      "this_week": 76,
-      "prev_52wk_max": 100,
-      "ytd": 649,
-      "ytd_last_year": 16,
-      "mmwr_week": "2026-W36",
+      "ytd_last_year": 3,
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -409,9 +409,9 @@
       ],
       "this_week": 0,
       "prev_52wk_max": 57,
-      "ytd": 531,
-      "ytd_last_year": 27,
-      "mmwr_week": "2026-W36",
+      "ytd": 532,
+      "ytd_last_year": 34,
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -425,7 +425,7 @@
       "prev_52wk_max": 33,
       "ytd": 183,
       "ytd_last_year": 4,
-      "mmwr_week": "2026-W36",
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -435,11 +435,11 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 3,
+      "this_week": 1,
       "prev_52wk_max": 51,
-      "ytd": 145,
+      "ytd": 146,
       "ytd_last_year": 6,
-      "mmwr_week": "2026-W36",
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -449,11 +449,11 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 2,
+      "this_week": 1,
       "prev_52wk_max": 57,
-      "ytd": 139,
+      "ytd": 140,
       "ytd_last_year": 36,
-      "mmwr_week": "2026-W36",
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -463,11 +463,25 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 7,
+      "this_week": 20,
       "prev_52wk_max": 29,
-      "ytd": 103,
+      "ytd": 128,
       "ytd_last_year": 33,
-      "mmwr_week": "2026-W36",
+      "mmwr_week": "2026-W37",
+      "source": "CDC NNDSS Weekly Data"
+    },
+    {
+      "state": "New York",
+      "state_abbr": "NY",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 12,
+      "prev_52wk_max": 16,
+      "ytd": 61,
+      "ytd_last_year": 8,
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -481,7 +495,7 @@
       "prev_52wk_max": 8,
       "ytd": 61,
       "ytd_last_year": 20,
-      "mmwr_week": "2026-W36",
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -491,11 +505,11 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 1,
+      "this_week": 0,
       "prev_52wk_max": 8,
-      "ytd": 58,
+      "ytd": 59,
       "ytd_last_year": 1,
-      "mmwr_week": "2026-W36",
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -509,21 +523,7 @@
       "prev_52wk_max": 10,
       "ytd": 56,
       "ytd_last_year": 11,
-      "mmwr_week": "2026-W36",
-      "source": "CDC NNDSS Weekly Data"
-    },
-    {
-      "state": "New York",
-      "state_abbr": "NY",
-      "disease": "Measles",
-      "reasons": [
-        "elevated_vs_last_year"
-      ],
-      "this_week": 9,
-      "prev_52wk_max": 16,
-      "ytd": 49,
-      "ytd_last_year": 7,
-      "mmwr_week": "2026-W36",
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -533,11 +533,11 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 3,
+      "this_week": 4,
       "prev_52wk_max": 12,
-      "ytd": 49,
+      "ytd": 54,
       "ytd_last_year": 13,
-      "mmwr_week": "2026-W36",
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -551,7 +551,7 @@
       "prev_52wk_max": 12,
       "ytd": 39,
       "ytd_last_year": 2,
-      "mmwr_week": "2026-W36",
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -565,7 +565,7 @@
       "prev_52wk_max": 6,
       "ytd": 20,
       "ytd_last_year": 0,
-      "mmwr_week": "2026-W36",
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -578,22 +578,8 @@
       "this_week": 0,
       "prev_52wk_max": 2,
       "ytd": 14,
-      "ytd_last_year": 5,
-      "mmwr_week": "2026-W36",
-      "source": "CDC NNDSS Weekly Data"
-    },
-    {
-      "state": "South Dakota",
-      "state_abbr": "SD",
-      "disease": "Tuberculosis",
-      "reasons": [
-        "elevated_vs_last_year"
-      ],
-      "this_week": 0,
-      "prev_52wk_max": 4,
-      "ytd": 17,
-      "ytd_last_year": 5,
-      "mmwr_week": "2026-W36",
+      "ytd_last_year": 7,
+      "mmwr_week": "2026-W37",
       "source": "CDC NNDSS Weekly Data"
     }
   ],
@@ -603,45 +589,23 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Intermittent authentication errors for API and R2",
+      "title": "Network Performance Degradation — Asia-Pacific",
       "impact": "minor",
       "status": "identified",
-      "started": "2026-09-23T09:08:53.000Z",
-      "updated": "2026-09-23T09:08:53.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/jg6ys8sbd6ny",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Cloudflare One Clients are incorrectly challenged on some sites",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-09-22T19:23:17.000Z",
-      "updated": "2026-09-23T11:02:41.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/tl0vrgjy99r0",
-      "source": "provider status page"
-    },
-    {
-      "provider": "GitHub",
-      "key": "github",
-      "title": "Incident with API Requests and Projects",
-      "impact": "minor",
-      "status": "investigating",
-      "started": "2026-09-23T10:11:12.836Z",
-      "updated": "2026-09-23T11:38:30.055Z",
-      "url": "https://stspg.io/m1ps7yrhp4n8",
+      "started": "2026-09-23T18:42:39.000Z",
+      "updated": "2026-09-23T18:44:55.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/8wmvkv5jkf15",
       "source": "provider status page"
     },
     {
       "provider": "Zoom",
       "key": "zoom",
-      "title": "Service Under Maintenance",
-      "impact": "maintenance",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.zoom.us",
+      "title": "Service Degradation Affecting Zoom Phone and Zoom Contact Center Inbound calls in India",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-09-24T04:19:15.014-07:00",
+      "updated": "2026-09-24T05:07:52.249-07:00",
+      "url": "https://stspg.io/q2m1jkbvr4dg",
       "source": "provider status page"
     },
     {
@@ -654,14 +618,6 @@
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
-    },
-    {
-      "provider": "m4kp",
-      "impact": "major",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
     }
   ]
 }
