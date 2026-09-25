@@ -8,7 +8,28 @@
     "lon": -70.741942
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Coastal Flood Warning",
+        "headline": "Coastal Flood Warning issued September 25 at 7:20AM EDT until September 27 at 8:00PM EDT by NWS Boston/Norton MA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-25T07:20:00-04:00",
+        "expires": "2026-09-25T20:30:00-04:00",
+        "source": "nws_alert",
+        "count": 1
+      },
+      {
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued September 25 at 1:46AM EDT until September 27 at 2:00AM EDT by NWS Boston/Norton MA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-25T01:46:00-04:00",
+        "expires": "2026-09-25T17:00:00-04:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -23,10 +44,22 @@
         "route": "Boat-Lynn",
         "system_outage": false,
         "effect": "NO_SERVICE",
-        "header": "Lynn Ferry: All trips are cancelled through Thursday, September 24, due to rough seas.",
+        "header": "Lynn Ferry: All trips are cancelled for Fri, Sep 25 through Sun, Sep 27 due to rough seas.",
         "description": "",
-        "start": "2026-09-23T11:05:00+00:00",
-        "end": "2026-09-25T07:00:00+00:00",
+        "start": "2026-09-25T07:00:00+00:00",
+        "end": "2026-09-28T07:00:00+00:00",
+        "source": ""
+      },
+      {
+        "agency": "MBTA",
+        "agency_id": "mbta",
+        "route": "Boat-F6",
+        "system_outage": false,
+        "effect": "NO_SERVICE",
+        "header": "Winthrop Ferry: All trips are cancelled for Fri, Sep 25 through Sun, Sep 27 due to rough seas.",
+        "description": "",
+        "start": "2026-09-25T07:00:00+00:00",
+        "end": "2026-09-28T07:00:00+00:00",
         "source": ""
       },
       {
@@ -35,10 +68,10 @@
         "route": "Boat-F7",
         "system_outage": false,
         "effect": "NO_SERVICE",
-        "header": "Quincy Ferry: All trips are cancelled on Thursday, September 24, due to rough seas.",
+        "header": "Quincy Ferry: All trips are cancelled for Fri, Sep 25 through Sun, Sep 27 due to rough seas.",
         "description": "",
-        "start": "2026-09-23T11:05:00+00:00",
-        "end": "2026-09-25T07:00:00+00:00",
+        "start": "2026-09-25T07:00:00+00:00",
+        "end": "2026-09-28T07:00:00+00:00",
         "source": ""
       }
     ],
@@ -47,43 +80,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 5,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 1,
+      "precip_in_24h": 0.33,
+      "precip_probability_pct": 67,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 61.0,
-      "low_temp_f": 49.0,
-      "high_apparent_temp_f": 61.0,
-      "low_apparent_temp_f": 43.0,
-      "max_wind_mph": 19.6,
-      "max_wind_gust_mph": 29.9,
-      "thunder_probability_pct": 11,
+      "high_temp_f": 62.0,
+      "low_temp_f": 55.0,
+      "high_apparent_temp_f": 62.0,
+      "low_apparent_temp_f": 55.0,
+      "max_wind_mph": 31.1,
+      "max_wind_gust_mph": 49.5,
+      "thunder_probability_pct": 5,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "moderate rain showers",
-        "fog",
-        "heavy rain showers"
+        "light rain",
+        "moderate rain",
+        "fog"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 38,
+      "us_aqi": 42,
       "category": "Good",
       "aqi_24h_max": 46,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 8.9,
-      "pm10": 12.3,
-      "ozone": 68.0,
-      "nitrogen_dioxide": 3.5,
-      "observed_at": "2026-09-24T12:00",
+      "pm2_5": 9.7,
+      "pm10": 14.5,
+      "ozone": 75.0,
+      "nitrogen_dioxide": 3.7,
+      "observed_at": "2026-09-25T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-24",
-  "generated_at": "2026-09-24T13:00:41.636904+00:00"
+  "date": "2026-09-25",
+  "generated_at": "2026-09-25T13:09:25.847123+00:00"
 }
