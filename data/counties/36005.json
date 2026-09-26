@@ -11,11 +11,11 @@
     "weather": [
       {
         "event": "Coastal Flood Warning",
-        "headline": "Coastal Flood Warning issued September 25 at 5:27AM EDT until September 27 at 6:00PM EDT by NWS Upton NY",
+        "headline": "Coastal Flood Warning issued September 26 at 5:14AM EDT until September 27 at 6:00PM EDT by NWS Upton NY",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-09-25T05:27:00-04:00",
-        "expires": "2026-09-25T13:30:00-04:00",
+        "effective": "2026-09-26T05:14:00-04:00",
+        "expires": "2026-09-26T17:00:00-04:00",
         "source": "nws_alert",
         "count": 1
       }
@@ -27,46 +27,60 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
-    "transit": [],
+    "transit": [
+      {
+        "agency": "MTA Long Island Rail Road",
+        "agency_id": "mta-lirr",
+        "route": "10",
+        "system_outage": false,
+        "effect": "NO_SERVICE",
+        "header": "Port Jefferson Branch service is suspended between Huntington and Port Jefferson due to a downed tree on the tracks east of Kings Park.",
+        "description": "Westbound: \nThe 7:04am train from Port Jefferson to Huntington is being delayed at Smithtown. \nEastbound: \nThe 7:01am train from Huntington to Port Jefferson is being delayed at Kings Park.",
+        "start": "2026-09-26T11:27:37+00:00",
+        "end": "",
+        "source": ""
+      }
+    ],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.03,
-      "precip_probability_pct": 19,
+      "precip_in_24h": 0.76,
+      "precip_probability_pct": 95,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 69.0,
-      "low_temp_f": 57.0,
-      "high_apparent_temp_f": 69.0,
-      "low_apparent_temp_f": 57.0,
-      "max_wind_mph": 23.0,
-      "max_wind_gust_mph": 38.0,
-      "thunder_probability_pct": 1,
+      "high_temp_f": 62.0,
+      "low_temp_f": 56.0,
+      "high_apparent_temp_f": 62.0,
+      "low_apparent_temp_f": 56.0,
+      "max_wind_mph": 34.5,
+      "max_wind_gust_mph": 44.9,
+      "thunder_probability_pct": 14,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers"
+        "light rain",
+        "moderate rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 38,
+      "us_aqi": 36,
       "category": "Good",
-      "aqi_24h_max": 42,
+      "aqi_24h_max": 37,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 5.9,
-      "pm10": 5.9,
-      "ozone": 52.0,
-      "nitrogen_dioxide": 13.6,
-      "observed_at": "2026-09-25T12:00",
+      "pm2_5": 5.0,
+      "pm10": 5.1,
+      "ozone": 74.0,
+      "nitrogen_dioxide": 7.9,
+      "observed_at": "2026-09-26T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-25",
-  "generated_at": "2026-09-25T13:09:25.847123+00:00"
+  "date": "2026-09-26",
+  "generated_at": "2026-09-26T12:30:27.107958+00:00"
 }
