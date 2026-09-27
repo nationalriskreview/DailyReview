@@ -11,17 +11,67 @@
     "weather": [
       {
         "event": "Coastal Flood Warning",
-        "headline": "Coastal Flood Warning issued September 26 at 5:14AM EDT until September 27 at 6:00PM EDT by NWS Upton NY",
+        "headline": "Coastal Flood Warning issued September 27 at 6:02AM EDT until September 27 at 6:00PM EDT by NWS Upton NY",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-09-26T05:14:00-04:00",
-        "expires": "2026-09-26T17:00:00-04:00",
+        "effective": "2026-09-27T06:02:00-04:00",
+        "expires": "2026-09-27T14:15:00-04:00",
         "source": "nws_alert",
         "count": 4
+      },
+      {
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued September 27 at 3:53AM EDT until September 27 at 12:00PM EDT by NWS Upton NY",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-27T03:53:00-04:00",
+        "expires": "2026-09-27T12:00:00-04:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
-    "utility_outage": [],
+    "utility_outage": [
+      {
+        "title": "Nor'easter batters the East Coast, causing flooding and power outages",
+        "url": "https://www.spokesman.com/stories/2026/sep/26/noreaster-batters-the-east-coast-causing-flooding-/",
+        "domain": "spokesman.com",
+        "seendate": "20260927003000",
+        "is_new": false,
+        "sources": [
+          {
+            "url": "https://www.spokesman.com/stories/2026/sep/26/noreaster-batters-the-east-coast-causing-flooding-/",
+            "domain": "spokesman.com"
+          }
+        ]
+      },
+      {
+        "title": "Storm causes death in Brooklyn and leaves 100,000 customers without power",
+        "url": "https://www.wishtv.com/weather/weather-stories/storm-causes-death-in-brooklyn-and-leaves-100000-customers-without-power/",
+        "domain": "wishtv.com",
+        "seendate": "20260927064500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.wishtv.com/weather/weather-stories/storm-causes-death-in-brooklyn-and-leaves-100000-customers-without-power/",
+            "domain": "wishtv.com"
+          }
+        ]
+      },
+      {
+        "title": "Nor'easter Leaves Over 100,000 Without Power, Hundreds of Flights Canceled",
+        "url": "https://www.theepochtimes.com/us/noreaster-leaves-over-100000-without-power-hundreds-of-flights-canceled-6095275",
+        "domain": "theepochtimes.com",
+        "seendate": "20260927060000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.theepochtimes.com/us/noreaster-leaves-over-100000-without-power-hundreds-of-flights-canceled-6095275",
+            "domain": "theepochtimes.com"
+          }
+        ]
+      }
+    ],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -31,12 +81,12 @@
       {
         "agency": "MTA Long Island Rail Road",
         "agency_id": "mta-lirr",
-        "route": "10",
+        "route": "6",
         "system_outage": false,
         "effect": "NO_SERVICE",
-        "header": "Port Jefferson Branch service is suspended between Huntington and Port Jefferson due to a downed tree on the tracks east of Kings Park.",
-        "description": "Westbound: \nThe 7:04am train from Port Jefferson to Huntington is being delayed at Smithtown. \nEastbound: \nThe 7:01am train from Huntington to Port Jefferson is being delayed at Kings Park.",
-        "start": "2026-09-26T11:27:37+00:00",
+        "header": "Long Beach Branch service is suspended due to flooding near Island Park.",
+        "description": "Shuttle bus service is available between Valley Stream and Long Beach.\n\nFor service to points east of Jamaica along the Long Beach Branch, customers can take a Babylon or Far Rockaway Branch train. \n\nIn addition, NICE bus service is cross-honoring LIRR tickets on the following routes:\nN15 bus between Long Beach and Rockville Centre. Customers can transfer to a westbound Babylon Branch train at Rockville Centre .\nCheck NICE bus schedules at https://www.nicebus.com/ to plan your trip.\n\nUse this link for a map of travel alternatives.",
+        "start": "2026-09-26T12:41:09+00:00",
         "end": "",
         "source": ""
       }
@@ -46,42 +96,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 6,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.44,
-      "precip_probability_pct": 97,
+      "precip_in_24h": 1.5,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 64.0,
-      "low_temp_f": 56.0,
-      "high_apparent_temp_f": 64.0,
-      "low_apparent_temp_f": 56.0,
-      "max_wind_mph": 35.7,
-      "max_wind_gust_mph": 47.2,
-      "thunder_probability_pct": 20,
+      "high_temp_f": 69.0,
+      "low_temp_f": 59.0,
+      "high_apparent_temp_f": 69.0,
+      "low_apparent_temp_f": 59.0,
+      "max_wind_mph": 32.2,
+      "max_wind_gust_mph": 46.0,
+      "thunder_probability_pct": 25,
       "lightning_activity_level": null,
       "weather": [
-        "light rain",
+        "light rain showers",
         "thunderstorms",
-        "moderate rain"
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 39,
+      "us_aqi": 33,
       "category": "Good",
-      "aqi_24h_max": 39,
+      "aqi_24h_max": 35,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 7.2,
-      "pm10": 8.5,
-      "ozone": 81.0,
-      "nitrogen_dioxide": 1.9,
-      "observed_at": "2026-09-26T12:00",
+      "pm2_5": 5.6,
+      "pm10": 9.5,
+      "ozone": 67.0,
+      "nitrogen_dioxide": 2.0,
+      "observed_at": "2026-09-27T13:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-26",
-  "generated_at": "2026-09-26T12:30:27.107958+00:00"
+  "date": "2026-09-27",
+  "generated_at": "2026-09-27T13:28:31.460920+00:00"
 }
