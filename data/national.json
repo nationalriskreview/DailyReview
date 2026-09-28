@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-27T13:28:31.460920+00:00",
-  "date": "2026-09-27",
+  "generated_at": "2026-09-28T15:54:57.712581+00:00",
+  "date": "2026-09-28",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 128
+      "counties_with_alerts": 22
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 79
+      "counties_over_threshold": 49
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,49 +28,49 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 46,
+      "counties_with_matches": 63,
       "items_pre_llm": {
-        "protest": 27,
-        "utility_outage": 182,
+        "protest": 56,
+        "utility_outage": 35,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 5
+        "hazmat_incident": 3,
+        "road_closure": 9
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 38,
+      "counties_with_matches": 61,
       "items_post_llm": {
-        "protest": 6,
-        "utility_outage": 173,
+        "protest": 49,
+        "utility_outage": 35,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 4
+        "hazmat_incident": 3,
+        "road_closure": 8
       },
-      "unique_articles": 93,
-      "calls_used": 93,
+      "unique_articles": 61,
+      "calls_used": 61,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 186
+      "counties_with_alerts": 177
     },
     "transit": {
-      "status": "partial",
+      "status": "ok",
       "agencies_total": 11,
-      "agencies_ok": 10,
+      "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 7,
-      "counties_with_alerts": 21,
+      "items_total": 2,
+      "counties_with_alerts": 5,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 5
+          "items": 2
         },
         {
           "id": "mta-subway",
@@ -82,7 +82,7 @@
           "id": "mta-lirr",
           "name": "MTA Long Island Rail Road",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "mta-mnr",
@@ -93,7 +93,7 @@
         {
           "id": "path",
           "name": "PATH",
-          "status": "fetch_failed",
+          "status": "ok",
           "items": 0
         },
         {
@@ -130,7 +130,7 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     },
@@ -165,9 +165,9 @@
       "counties_with_alerts": 0
     },
     "service_status": {
-      "status": "partial",
+      "status": "ok",
       "active_incidents": 3,
-      "providers_ok": 26,
+      "providers_ok": 27,
       "providers_total": 27,
       "providers": [
         {
@@ -317,7 +317,7 @@
         {
           "key": "b6hj",
           "name": "b6hj",
-          "status": "fetch_failed",
+          "status": "ok",
           "items": 0
         },
         {
@@ -336,18 +336,15 @@
     }
   },
   "run_health": {
-    "overall": "degraded",
+    "overall": "ok",
     "counts": {
-      "ok": 13,
-      "partial": 2,
+      "ok": 15,
+      "partial": 0,
       "failed": 0,
       "skipped": 0
     },
     "failed": [],
-    "partial": [
-      "service_status",
-      "transit"
-    ],
+    "partial": [],
     "skipped": []
   },
   "cdc_han": [],
@@ -607,7 +604,7 @@
       "impact": "minor",
       "status": "identified",
       "started": "2026-09-25T10:45:29.000-07:00",
-      "updated": "2026-09-27T03:44:13.076-07:00",
+      "updated": "2026-09-27T18:19:15.129-07:00",
       "url": "https://stspg.io/4cpggx38p4g2",
       "source": "provider status page"
     },
