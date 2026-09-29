@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-09-28T15:54:57.712581+00:00",
-  "date": "2026-09-28",
+  "generated_at": "2026-09-29T14:24:44.184342+00:00",
+  "date": "2026-09-29",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 22
+      "counties_with_alerts": 39
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 49
+      "counties_over_threshold": 82
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,49 +28,49 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 63,
+      "counties_with_matches": 46,
       "items_pre_llm": {
-        "protest": 56,
-        "utility_outage": 35,
-        "transit_disruption": 0,
+        "protest": 49,
+        "utility_outage": 4,
+        "transit_disruption": 2,
         "service_provider_outage": 0,
-        "hazmat_incident": 3,
-        "road_closure": 9
+        "hazmat_incident": 0,
+        "road_closure": 4
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 61,
+      "counties_with_matches": 27,
       "items_post_llm": {
-        "protest": 49,
-        "utility_outage": 35,
-        "transit_disruption": 0,
+        "protest": 24,
+        "utility_outage": 3,
+        "transit_disruption": 2,
         "service_provider_outage": 0,
-        "hazmat_incident": 3,
-        "road_closure": 8
+        "hazmat_incident": 0,
+        "road_closure": 1
       },
-      "unique_articles": 61,
-      "calls_used": 61,
+      "unique_articles": 33,
+      "calls_used": 33,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 177
+      "counties_with_alerts": 188
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 2,
-      "counties_with_alerts": 5,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 2
+          "items": 0
         },
         {
           "id": "mta-subway",
@@ -165,9 +165,9 @@
       "counties_with_alerts": 0
     },
     "service_status": {
-      "status": "ok",
-      "active_incidents": 3,
-      "providers_ok": 27,
+      "status": "partial",
+      "active_incidents": 5,
+      "providers_ok": 23,
       "providers_total": 27,
       "providers": [
         {
@@ -180,7 +180,7 @@
           "key": "azure",
           "name": "Microsoft Azure",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "gcp",
@@ -252,7 +252,7 @@
           "key": "docusign",
           "name": "DocuSign",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "cisco_meraki",
@@ -269,7 +269,7 @@
         {
           "key": "rapid7",
           "name": "Rapid7",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -281,7 +281,7 @@
         {
           "key": "switch",
           "name": "Switch",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -299,7 +299,7 @@
         {
           "key": "m4kp",
           "name": "m4kp",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -311,7 +311,7 @@
         {
           "key": "r3wn",
           "name": "r3wn",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -336,15 +336,17 @@
     }
   },
   "run_health": {
-    "overall": "ok",
+    "overall": "degraded",
     "counts": {
-      "ok": 15,
-      "partial": 0,
+      "ok": 14,
+      "partial": 1,
       "failed": 0,
       "skipped": 0
     },
     "failed": [],
-    "partial": [],
+    "partial": [
+      "service_status"
+    ],
     "skipped": []
   },
   "cdc_han": [],
@@ -587,6 +589,17 @@
   "faa_advisories": [],
   "service_outages": [
     {
+      "provider": "Microsoft Azure",
+      "key": "azure",
+      "title": "Azure OpenAI and Foundry agent Service intermittent request failures and increased latency",
+      "impact": "",
+      "status": "",
+      "started": "Tue, 29 Sep 2026 10:00:00 Z",
+      "updated": "",
+      "url": "https://azure.status.microsoft/en-us/status/",
+      "source": "provider status page"
+    },
+    {
       "provider": "Cloudflare",
       "key": "cloudflare",
       "title": "Minor Service Outage",
@@ -604,19 +617,30 @@
       "impact": "minor",
       "status": "identified",
       "started": "2026-09-25T10:45:29.000-07:00",
-      "updated": "2026-09-27T18:19:15.129-07:00",
+      "updated": "2026-09-28T18:22:59.546-07:00",
       "url": "https://stspg.io/4cpggx38p4g2",
+      "source": "provider status page"
+    },
+    {
+      "provider": "DocuSign",
+      "key": "docusign",
+      "title": "Email Delivery Failures impacting customers (Incident 5861)",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-09-28T18:08:37.344873Z",
+      "updated": "2026-09-29T09:44:27.847632Z",
+      "url": "https://health.docusign.com/status/incidents?id=37796175c82bb9fe96afaaf0af1cf325",
       "source": "provider status page"
     },
     {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "Partially Degraded Service",
+      "title": "PrismaCloud: APP3: Stale data in asset inventory",
       "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.paloaltonetworks.com",
+      "status": "identified",
+      "started": "2026-09-29T06:32:20.167Z",
+      "updated": "2026-09-29T13:55:38.471Z",
+      "url": "https://stspg.io/8q02d3fnwg5m",
       "source": "provider status page"
     }
   ]

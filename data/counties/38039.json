@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~2.4\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued September 28 at 11:36PM CDT until September 29 at 9:15AM CDT by NWS Grand Forks ND",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-28T23:36:00-05:00",
+        "expires": "2026-09-29T09:15:00-05:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -32,40 +36,40 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 2.36,
-      "precip_probability_pct": 99,
+      "precip_in_24h": 0.41,
+      "precip_probability_pct": 95,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 64.0,
-      "low_temp_f": 52.0,
-      "high_apparent_temp_f": 64.0,
-      "low_apparent_temp_f": 52.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 26.5,
-      "thunder_probability_pct": 48,
+      "high_temp_f": 71.0,
+      "low_temp_f": 56.0,
+      "high_apparent_temp_f": 71.0,
+      "low_apparent_temp_f": 56.0,
+      "max_wind_mph": 11.5,
+      "max_wind_gust_mph": 18.4,
+      "thunder_probability_pct": 15,
       "lightning_activity_level": null,
       "weather": [
-        "thunderstorms",
-        "light rain showers",
         "moderate rain showers",
-        "heavy rain showers"
+        "thunderstorms",
+        "fog",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 22,
+      "us_aqi": 20,
       "category": "Good",
-      "aqi_24h_max": 31,
+      "aqi_24h_max": 32,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.2,
-      "pm10": 3.3,
-      "ozone": 51.0,
-      "nitrogen_dioxide": 6.2,
-      "observed_at": "2026-09-28T15:00",
+      "pm2_5": 3.6,
+      "pm10": 3.8,
+      "ozone": 41.0,
+      "nitrogen_dioxide": 3.7,
+      "observed_at": "2026-09-29T14:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-28",
-  "generated_at": "2026-09-28T15:54:57.712581+00:00"
+  "date": "2026-09-29",
+  "generated_at": "2026-09-29T14:24:44.184342+00:00"
 }
