@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.8\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued September 30 at 5:39AM MST until September 30 at 7:45AM MST by NWS Flagstaff AZ",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-09-29T22:54:00-07:00",
+        "expires": "2026-09-30T10:45:00-07:00",
+        "source": "nws_alert",
+        "count": 2
       }
     ],
     "protest": [],
@@ -32,40 +36,39 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.79,
-      "precip_probability_pct": 100,
+      "precip_in_24h": 0.56,
+      "precip_probability_pct": 96,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 62.0,
-      "low_temp_f": 49.0,
-      "high_apparent_temp_f": 62.0,
-      "low_apparent_temp_f": 46.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 26.5,
-      "thunder_probability_pct": 36,
+      "high_temp_f": 61.0,
+      "low_temp_f": 46.0,
+      "high_apparent_temp_f": 61.0,
+      "low_apparent_temp_f": 39.0,
+      "max_wind_mph": 18.4,
+      "max_wind_gust_mph": 29.9,
+      "thunder_probability_pct": 29,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
         "thunderstorms",
-        "fog",
+        "light rain showers",
         "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 39,
+      "us_aqi": 28,
       "category": "Good",
-      "aqi_24h_max": 40,
+      "aqi_24h_max": 32,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 5.7,
-      "pm10": 6.2,
-      "ozone": 59.0,
-      "nitrogen_dioxide": 3.0,
-      "observed_at": "2026-09-29T14:00",
+      "pm2_5": 1.4,
+      "pm10": 1.4,
+      "ozone": 55.0,
+      "nitrogen_dioxide": 2.1,
+      "observed_at": "2026-09-30T13:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-29",
-  "generated_at": "2026-09-29T14:24:44.184342+00:00"
+  "date": "2026-09-30",
+  "generated_at": "2026-09-30T14:08:29.347249+00:00"
 }
