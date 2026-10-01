@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.4\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 1 at 9:30AM CDT until October 1 at 8:30PM CDT by NWS Hastings NE",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-10-01T03:33:00-05:00",
+        "expires": "2026-10-01T20:30:00-05:00",
+        "source": "nws_alert",
+        "count": 2
       }
     ],
     "protest": [],
@@ -32,39 +36,40 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.37,
-      "precip_probability_pct": 94,
+      "precip_in_24h": 0.79,
+      "precip_probability_pct": 58,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 71.0,
-      "low_temp_f": 65.0,
-      "high_apparent_temp_f": 71.0,
-      "low_apparent_temp_f": 65.0,
-      "max_wind_mph": 10.4,
-      "max_wind_gust_mph": 15.0,
-      "thunder_probability_pct": 37,
+      "high_temp_f": 69.0,
+      "low_temp_f": 53.0,
+      "high_apparent_temp_f": 69.0,
+      "low_apparent_temp_f": 53.0,
+      "max_wind_mph": 18.4,
+      "max_wind_gust_mph": 29.9,
+      "thunder_probability_pct": 26,
       "lightning_activity_level": null,
       "weather": [
+        "heavy rain showers",
         "thunderstorms",
-        "light rain showers",
-        "moderate rain showers"
+        "moderate rain showers",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 26,
+      "us_aqi": 24,
       "category": "Good",
-      "aqi_24h_max": 31,
+      "aqi_24h_max": 37,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.5,
-      "pm10": 3.7,
-      "ozone": 54.0,
-      "nitrogen_dioxide": 3.9,
-      "observed_at": "2026-09-30T13:00",
+      "pm2_5": 2.9,
+      "pm10": 3.0,
+      "ozone": 68.0,
+      "nitrogen_dioxide": 2.8,
+      "observed_at": "2026-10-01T14:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-09-30",
-  "generated_at": "2026-09-30T14:08:29.347249+00:00"
+  "date": "2026-10-01",
+  "generated_at": "2026-10-01T14:51:43.485489+00:00"
 }
