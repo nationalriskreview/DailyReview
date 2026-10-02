@@ -10,27 +10,17 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.2\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 2 at 3:39AM CDT until October 2 at 9:48PM CDT by NWS Des Moines IA",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-10-02T03:39:00-05:00",
+        "expires": "2026-10-02T15:45:00-05:00",
+        "source": "nws_alert",
+        "count": 2
       }
     ],
-    "protest": [
-      {
-        "title": "Students protest outside Delta Tau Delta",
-        "url": "https://iowastatedaily.com/344721/news/students-protest-outside-delta-tau-delta/",
-        "domain": "iowastatedaily.com",
-        "seendate": "20261001034500",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://iowastatedaily.com/344721/news/students-protest-outside-delta-tau-delta/",
-            "domain": "iowastatedaily.com"
-          }
-        ]
-      }
-    ],
+    "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
@@ -40,61 +30,41 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [
-      {
-        "disaster_number": "4942",
-        "declaration_type": "DR",
-        "declaration_title": "SEVERE STORMS AND FLOODING",
-        "incident_type": "Severe Storm",
-        "declared_at": "2026-09-01T00:00:00.000Z",
-        "is_new_today": false,
-        "incident_begin": "2026-07-01T00:00:00.000Z",
-        "incident_end": "2026-07-04T00:00:00.000Z",
-        "designated_area": "Story (County)",
-        "fema_declaration_string": "DR-4942-IA",
-        "source": "https://www.fema.gov/disaster/4942"
-      }
-    ],
+    "fema": [],
     "disease": []
   },
-  "alert_count": 3,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.22,
-      "precip_probability_pct": 96,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 2,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 68.0,
-      "low_temp_f": 53.0,
-      "high_apparent_temp_f": 68.0,
-      "low_apparent_temp_f": 53.0,
-      "max_wind_mph": 12.7,
-      "max_wind_gust_mph": 27.6,
-      "thunder_probability_pct": 32,
+      "high_temp_f": 62.0,
+      "low_temp_f": 45.0,
+      "high_apparent_temp_f": 62.0,
+      "low_apparent_temp_f": 42.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 11.5,
+      "thunder_probability_pct": 5,
       "lightning_activity_level": null,
-      "weather": [
-        "heavy rain showers",
-        "thunderstorms",
-        "fog",
-        "light drizzle",
-        "light rain showers"
-      ],
+      "weather": [],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 38,
+      "us_aqi": 22,
       "category": "Good",
-      "aqi_24h_max": 40,
+      "aqi_24h_max": 33,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.1,
-      "pm10": 2.4,
-      "ozone": 60.0,
-      "nitrogen_dioxide": 4.7,
-      "observed_at": "2026-10-01T14:00",
+      "pm2_5": 2.0,
+      "pm10": 2.0,
+      "ozone": 45.0,
+      "nitrogen_dioxide": 5.1,
+      "observed_at": "2026-10-02T14:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-01",
-  "generated_at": "2026-10-01T14:51:43.485489+00:00"
+  "date": "2026-10-02",
+  "generated_at": "2026-10-02T14:14:13.105070+00:00"
 }

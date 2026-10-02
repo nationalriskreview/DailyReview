@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-10-01T14:51:43.485489+00:00",
-  "date": "2026-10-01",
+  "generated_at": "2026-10-02T14:14:13.105070+00:00",
+  "date": "2026-10-02",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 168
+      "counties_with_alerts": 187
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 327
+      "counties_over_threshold": 170
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,43 +28,43 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 44,
+      "counties_with_matches": 57,
       "items_pre_llm": {
-        "protest": 48,
-        "utility_outage": 1,
-        "transit_disruption": 1,
-        "service_provider_outage": 1,
-        "hazmat_incident": 2,
-        "road_closure": 8
+        "protest": 55,
+        "utility_outage": 11,
+        "transit_disruption": 6,
+        "service_provider_outage": 0,
+        "hazmat_incident": 1,
+        "road_closure": 5
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 32,
+      "counties_with_matches": 15,
       "items_post_llm": {
-        "protest": 27,
-        "utility_outage": 1,
-        "transit_disruption": 1,
-        "service_provider_outage": 1,
+        "protest": 8,
+        "utility_outage": 3,
+        "transit_disruption": 2,
+        "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 7
+        "road_closure": 3
       },
-      "unique_articles": 39,
-      "calls_used": 39,
+      "unique_articles": 47,
+      "calls_used": 47,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 204
+      "counties_with_alerts": 188
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 1,
-      "counties_with_alerts": 10,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -130,13 +130,13 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 126
+      "counties_with_alerts": 7
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -166,7 +166,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 10,
+      "active_incidents": 4,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -198,25 +198,25 @@
           "key": "github",
           "name": "GitHub",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "datadog",
           "name": "Datadog",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 2
+          "items": 1
         },
         {
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "anthropic",
@@ -234,7 +234,7 @@
           "key": "slack",
           "name": "Slack",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "dropbox",
@@ -252,7 +252,7 @@
           "key": "docusign",
           "name": "DocuSign",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "cisco_meraki",
@@ -270,7 +270,7 @@
           "key": "rapid7",
           "name": "Rapid7",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "servicenow",
@@ -330,7 +330,7 @@
           "key": "t8fc",
           "name": "t8fc",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     }
@@ -618,34 +618,23 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Cloudflare Workers build delays",
+      "title": "Minor Service Outage",
       "impact": "minor",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Datadog",
+      "key": "datadog",
+      "title": "Delayed RUM sessions",
+      "impact": "none",
       "status": "monitoring",
-      "started": "2026-09-30T15:33:06.000Z",
-      "updated": "2026-09-30T17:42:28.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/4m03612lprhr",
-      "source": "provider status page"
-    },
-    {
-      "provider": "GitHub",
-      "key": "github",
-      "title": "Actions Job Delays",
-      "impact": "minor",
-      "status": "investigating",
-      "started": "2026-10-01T14:47:48.132Z",
-      "updated": "2026-10-01T14:47:48.230Z",
-      "url": "https://stspg.io/kdqxfjn5qg6q",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Zoom",
-      "key": "zoom",
-      "title": "Service Degradation Affecting Zoom for Google Workspace Add-On",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-10-01T04:52:48.681-07:00",
-      "updated": "2026-10-01T06:57:00.276-07:00",
-      "url": "https://stspg.io/sn8rq0f3vgdq",
+      "started": "2026-10-02T08:46:19.530-04:00",
+      "updated": "2026-10-02T09:50:06.347-04:00",
+      "url": "https://stspg.io/gjz5frd5dyxl",
       "source": "provider status page"
     },
     {
@@ -655,41 +644,8 @@
       "impact": "minor",
       "status": "identified",
       "started": "2026-09-25T10:45:29.000-07:00",
-      "updated": "2026-09-30T18:33:05.667-07:00",
+      "updated": "2026-10-01T18:31:03.668-07:00",
       "url": "https://stspg.io/4cpggx38p4g2",
-      "source": "provider status page"
-    },
-    {
-      "provider": "OpenAI",
-      "key": "openai",
-      "title": "Elevated errors in ChatGPT Space Pages",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-09-30T02:20:32Z",
-      "updated": "2026-09-30T15:00:05Z",
-      "url": "https://status.openai.com",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Slack",
-      "key": "slack",
-      "title": "Free Plan Customers Are Experiencing Message Failures",
-      "impact": "incident",
-      "status": "active",
-      "started": "2026-10-01T05:39:35-07:00",
-      "updated": "2026-10-01T07:31:24-07:00",
-      "url": "https://slack-status.com/2026-10/6c28dfb7b670dc02",
-      "source": "provider status page"
-    },
-    {
-      "provider": "DocuSign",
-      "key": "docusign",
-      "title": "Customers unable to access custom scripts following recent update (Incident 5878)",
-      "impact": "minor",
-      "status": "investigating",
-      "started": "2026-09-30T20:02:05.492375Z",
-      "updated": "2026-09-30T23:05:40.80874Z",
-      "url": "https://health.docusign.com/status/incidents?id=e7cbbb8072be3d2da74799af8cfe7b8e",
       "source": "provider status page"
     },
     {
@@ -702,25 +658,6 @@
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
-    },
-    {
-      "provider": "Rapid7",
-      "key": "rapid7",
-      "title": "Service Under Maintenance",
-      "impact": "maintenance",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.rapid7.com",
-      "source": "provider status page"
-    },
-    {
-      "provider": "t8fc",
-      "impact": "minor",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
     }
   ]
 }

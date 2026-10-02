@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.0\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 2 at 8:21AM CDT until October 2 at 8:51PM CDT by NWS Topeka KS",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-10-02T08:21:00-05:00",
+        "expires": "2026-10-02T23:30:00-05:00",
+        "source": "nws_alert",
+        "count": 2
       }
     ],
     "protest": [],
@@ -26,59 +30,45 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [
-      {
-        "disaster_number": "4940",
-        "declaration_type": "DR",
-        "declaration_title": "SEVERE STORMS, STRAIGHT-LINE WINDS, TORNADOES, AND FLOODING",
-        "incident_type": "Severe Storm",
-        "declared_at": "2026-09-01T00:00:00.000Z",
-        "is_new_today": false,
-        "incident_begin": "2026-06-04T00:00:00.000Z",
-        "incident_end": "2026-06-15T00:00:00.000Z",
-        "designated_area": "Osage (County)",
-        "fema_declaration_string": "DR-4940-KS",
-        "source": "https://www.fema.gov/disaster/4940"
-      }
-    ],
+    "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.04,
-      "precip_probability_pct": 83,
+      "precip_in_24h": 0.33,
+      "precip_probability_pct": 87,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 74.0,
-      "low_temp_f": 58.0,
-      "high_apparent_temp_f": 74.0,
-      "low_apparent_temp_f": 58.0,
-      "max_wind_mph": 16.1,
+      "high_temp_f": 66.0,
+      "low_temp_f": 52.0,
+      "high_apparent_temp_f": 66.0,
+      "low_apparent_temp_f": 52.0,
+      "max_wind_mph": 18.4,
       "max_wind_gust_mph": 27.6,
-      "thunder_probability_pct": 46,
+      "thunder_probability_pct": 21,
       "lightning_activity_level": null,
       "weather": [
+        "moderate rain showers",
         "thunderstorms",
-        "light rain showers",
-        "moderate rain showers"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 31,
+      "us_aqi": 21,
       "category": "Good",
-      "aqi_24h_max": 55,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 1.1,
-      "pm10": 1.2,
-      "ozone": 48.0,
-      "nitrogen_dioxide": 3.0,
-      "observed_at": "2026-10-01T14:00",
+      "aqi_24h_max": 31,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 1.4,
+      "pm10": 1.6,
+      "ozone": 44.0,
+      "nitrogen_dioxide": 3.9,
+      "observed_at": "2026-10-02T14:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-01",
-  "generated_at": "2026-10-01T14:51:43.485489+00:00"
+  "date": "2026-10-02",
+  "generated_at": "2026-10-02T14:14:13.105070+00:00"
 }

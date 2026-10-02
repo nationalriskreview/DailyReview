@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.2\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 2 at 1:56AM CDT until October 2 at 1:00PM CDT by NWS Quad Cities IA IL",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-10-02T01:56:00-05:00",
+        "expires": "2026-10-02T13:00:00-05:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -32,39 +36,35 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.18,
-      "precip_probability_pct": 96,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 2,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 69.0,
-      "low_temp_f": 61.0,
-      "high_apparent_temp_f": 69.0,
-      "low_apparent_temp_f": 61.0,
+      "high_temp_f": 65.0,
+      "low_temp_f": 48.0,
+      "high_apparent_temp_f": 65.0,
+      "low_apparent_temp_f": 48.0,
       "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 18.4,
-      "thunder_probability_pct": 26,
+      "max_wind_gust_mph": 16.1,
+      "thunder_probability_pct": 7,
       "lightning_activity_level": null,
-      "weather": [
-        "light rain showers",
-        "thunderstorms",
-        "moderate rain showers"
-      ],
+      "weather": [],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 51,
-      "category": "Moderate",
-      "aqi_24h_max": 51,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 6.9,
-      "pm10": 7.1,
-      "ozone": 69.0,
-      "nitrogen_dioxide": 4.3,
-      "observed_at": "2026-10-01T14:00",
+      "us_aqi": 23,
+      "category": "Good",
+      "aqi_24h_max": 50,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 1.1,
+      "pm10": 1.1,
+      "ozone": 50.0,
+      "nitrogen_dioxide": 4.9,
+      "observed_at": "2026-10-02T13:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-01",
-  "generated_at": "2026-10-01T14:51:43.485489+00:00"
+  "date": "2026-10-02",
+  "generated_at": "2026-10-02T14:14:13.105070+00:00"
 }
