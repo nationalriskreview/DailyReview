@@ -11,7 +11,13 @@
     "weather": [
       {
         "event": "Heavy Precipitation Forecast",
-        "headline": "~2.2\" rain expected in next 24h",
+        "headline": "~2.4\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast"
+      },
+      {
+        "event": "Heavy Snow Forecast",
+        "headline": "~13.3\" snow expected in next 24h",
         "severity": "Moderate",
         "source": "nws_forecast"
       }
@@ -29,44 +35,47 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 2.21,
+      "precip_in_24h": 2.36,
       "precip_probability_pct": 100,
-      "snow_in_24h": 2.7,
+      "snow_in_24h": 13.3,
       "ice_in_24h": 0.0,
-      "high_temp_f": 52.0,
-      "low_temp_f": 29.0,
-      "high_apparent_temp_f": 52.0,
+      "high_temp_f": 51.0,
+      "low_temp_f": 31.0,
+      "high_apparent_temp_f": 51.0,
       "low_apparent_temp_f": 17.0,
-      "max_wind_mph": 43.7,
-      "max_wind_gust_mph": 54.1,
+      "max_wind_mph": 47.2,
+      "max_wind_gust_mph": 50.6,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
-        "light rain",
+        "moderate rain showers",
+        "light rain showers",
+        "heavy snow",
+        "moderate snow",
         "moderate rain",
         "heavy rain",
-        "light snow",
-        "heavy snow"
+        "heavy rain showers",
+        "light rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 35,
+      "us_aqi": 36,
       "category": "Good",
       "aqi_24h_max": 40,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 0.5,
-      "pm10": 0.8,
-      "ozone": 81.0,
-      "nitrogen_dioxide": 0.6,
-      "observed_at": "2026-10-03T12:00",
+      "pm2_5": 0.3,
+      "pm10": 0.6,
+      "ozone": 76.0,
+      "nitrogen_dioxide": 0.2,
+      "observed_at": "2026-10-04T13:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-03",
-  "generated_at": "2026-10-03T12:53:45.832702+00:00"
+  "date": "2026-10-04",
+  "generated_at": "2026-10-04T13:29:02.773109+00:00"
 }

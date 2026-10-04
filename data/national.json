@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-10-03T12:53:45.832702+00:00",
-  "date": "2026-10-03",
+  "generated_at": "2026-10-04T13:29:02.773109+00:00",
+  "date": "2026-10-04",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 144
+      "counties_with_alerts": 96
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 63
+      "counties_over_threshold": 165
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +28,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 39,
+      "counties_with_matches": 21,
       "items_pre_llm": {
-        "protest": 43,
-        "utility_outage": 2,
-        "transit_disruption": 3,
+        "protest": 51,
+        "utility_outage": 0,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 6,
+        "hazmat_incident": 0,
         "road_closure": 1
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 19,
+      "counties_with_matches": 12,
       "items_post_llm": {
         "protest": 14,
-        "utility_outage": 1,
-        "transit_disruption": 3,
+        "utility_outage": 0,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
+        "hazmat_incident": 0,
         "road_closure": 1
       },
-      "unique_articles": 32,
-      "calls_used": 32,
+      "unique_articles": 29,
+      "calls_used": 29,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 167
+      "counties_with_alerts": 170
     },
     "transit": {
       "status": "ok",
@@ -166,7 +166,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 5,
+      "active_incidents": 4,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -252,7 +252,7 @@
           "key": "docusign",
           "name": "DocuSign",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "cisco_meraki",
@@ -270,7 +270,7 @@
           "key": "rapid7",
           "name": "Rapid7",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "servicenow",
@@ -306,7 +306,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "r3wn",
@@ -618,12 +618,12 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Issues with Workers Build failing to start",
+      "title": "Minor Service Outage",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-10-03T05:54:59.000Z",
-      "updated": "2026-10-03T08:54:50.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/q2bck6r39bzk",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
@@ -633,19 +633,8 @@
       "impact": "minor",
       "status": "identified",
       "started": "2026-09-25T10:45:29.000-07:00",
-      "updated": "2026-10-02T18:31:09.626-07:00",
+      "updated": "2026-10-03T18:28:03.316-07:00",
       "url": "https://stspg.io/4cpggx38p4g2",
-      "source": "provider status page"
-    },
-    {
-      "provider": "DocuSign",
-      "key": "docusign",
-      "title": "CLM workflow update salesforce step latency (Incident 5893)",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-10-02T15:40:41.483935Z",
-      "updated": "2026-10-02T19:03:29.261006Z",
-      "url": "https://health.docusign.com/status/incidents?id=aff3ec7a66f23440be8db9a6bc41f0c5",
       "source": "provider status page"
     },
     {
@@ -660,12 +649,15 @@
       "source": "provider status page"
     },
     {
-      "provider": "x9tz",
+      "provider": "Rapid7",
+      "key": "rapid7",
+      "title": "Service Under Maintenance",
       "impact": "maintenance",
-      "active_incidents": 1,
       "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
+      "started": "",
+      "updated": "",
+      "url": "https://status.rapid7.com",
+      "source": "provider status page"
     }
   ]
 }
