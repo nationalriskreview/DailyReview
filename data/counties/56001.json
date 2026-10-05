@@ -8,7 +8,18 @@
     "lon": -105.721883
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued October 4 at 11:31PM MDT until October 5 at 6:00PM MDT by NWS Cheyenne WY",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-04T23:31:00-06:00",
+        "expires": "2026-10-05T18:00:00-06:00",
+        "source": "nws_alert",
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -41,40 +52,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 8,
+      "precip_probability_pct": 4,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 78.0,
-      "low_temp_f": 36.0,
-      "high_apparent_temp_f": 78.0,
-      "low_apparent_temp_f": 28.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 24.2,
+      "high_temp_f": 79.0,
+      "low_temp_f": 42.0,
+      "high_apparent_temp_f": 79.0,
+      "low_apparent_temp_f": 37.0,
+      "max_wind_mph": 24.2,
+      "max_wind_gust_mph": 38.0,
       "thunder_probability_pct": 4,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers"
+        "light rain showers",
+        "moderate rain showers",
+        "light snow showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 23,
+      "us_aqi": 19,
       "category": "Good",
-      "aqi_24h_max": 48,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 5.8,
-      "pm10": 6.1,
-      "ozone": 36.0,
-      "nitrogen_dioxide": 5.7,
-      "observed_at": "2026-10-04T13:00",
+      "aqi_24h_max": 56,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 0.8,
+      "pm10": 1.2,
+      "ozone": 78.0,
+      "nitrogen_dioxide": 2.4,
+      "observed_at": "2026-10-05T16:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-04",
-  "generated_at": "2026-10-04T13:29:02.773109+00:00"
+  "date": "2026-10-05",
+  "generated_at": "2026-10-05T16:37:01.647983+00:00"
 }
