@@ -32,6 +32,13 @@ MM_TO_IN = 0.0393701
 KMH_TO_MPH = 0.621371
 C_TO_F = lambda c: (c * 9/5) + 32
 
+# Gridpoint fetches retry transient failures (429/5xx/network/timeouts). The
+# run-wide retry budget bounds the worst case: at 30s per timed-out request and
+# 20 concurrent workers, 1,000 retries add at most ~30 minutes to the job.
+NWS_MAX_ATTEMPTS = int(os.environ.get("NWS_MAX_ATTEMPTS", "3"))
+NWS_RETRY_BACKOFF_SEC = float(os.environ.get("NWS_RETRY_BACKOFF_SEC", "2"))
+NWS_RETRY_BUDGET = int(os.environ.get("NWS_RETRY_BUDGET", "1000"))
+
 log = logging.getLogger(__name__)
 
 
@@ -142,20 +149,59 @@ def bucket_alerts_by_county(features: list[dict]) -> dict[str, list[dict]]:
     return {fips: _combine_county_alerts(alerts) for fips, alerts in by_county.items()}
 
 
-async def _fetch_json(session: aiohttp.ClientSession, url: str) -> dict | None:
+class _RetryBudget:
+    """Run-wide cap on retries, shared by every forecast request.
+
+    api.weather.gov has transient bad patches (5xx, resets, 30s timeouts) that
+    once dropped ~20% of counties in a single run. Retrying recovers those, but
+    during a full NWS outage unbounded retries of 30s timeouts would push the
+    job past its Actions timeout, so the total number of retries is capped.
+    """
+
+    def __init__(self, retries: int):
+        self.remaining = retries
+        self.used = 0
+
+    def take(self) -> bool:
+        if self.remaining <= 0:
+            return False
+        self.remaining -= 1
+        self.used += 1
+        return True
+
+
+async def _fetch_json(
+    session: aiohttp.ClientSession, url: str,
+    budget: _RetryBudget | None = None,
+) -> dict | None:
+    """GET JSON; retry 429/5xx/network errors/timeouts while budget allows.
+
+    Other non-200s (e.g. 404 for a point outside NWS grid coverage) are a real
+    answer, not a transient failure, and return None without retrying.
+    """
     headers = {"User-Agent": USER_AGENT, "Accept": "application/geo+json"}
-    try:
-        async with session.get(url, headers=headers,
-                               timeout=aiohttp.ClientTimeout(total=30)) as r:
-            if r.status != 200:
+    for attempt in range(NWS_MAX_ATTEMPTS):
+        if attempt:
+            if not (budget and budget.take()):
                 return None
-            return await r.json()
-    except (aiohttp.ClientError, asyncio.TimeoutError):
-        return None
+            await asyncio.sleep(NWS_RETRY_BACKOFF_SEC * attempt)
+        try:
+            async with session.get(url, headers=headers,
+                                   timeout=aiohttp.ClientTimeout(total=30)) as r:
+                if r.status == 429 or r.status >= 500:
+                    continue
+                if r.status != 200:
+                    return None
+                return await r.json()
+        except (aiohttp.ClientError, asyncio.TimeoutError, ValueError):
+            # ValueError: a 200 with a truncated/garbled JSON body.
+            continue
+    return None
 
 
 async def fetch_county_forecast(
-    session: aiohttp.ClientSession, county: dict
+    session: aiohttp.ClientSession, county: dict,
+    budget: _RetryBudget | None = None,
 ) -> dict:
     """Return {"forecast": {...} | None, "alerts": [...]} for a county.
 
@@ -188,14 +234,14 @@ async def fetch_county_forecast(
 
     for pt in grid_points:
         point = await _fetch_json(
-            session, NWS_POINTS_URL.format(lat=pt["lat"], lon=pt["lon"])
+            session, NWS_POINTS_URL.format(lat=pt["lat"], lon=pt["lon"]), budget
         )
         if not point:
             continue
         grid_url = point.get("properties", {}).get("forecastGridData")
         if not grid_url:
             continue
-        grid = await _fetch_json(session, grid_url)
+        grid = await _fetch_json(session, grid_url, budget)
         if not grid:
             continue
 
@@ -441,21 +487,31 @@ def _weather_first_24h(field: dict | None) -> list[str]:
 async def fetch_forecasts_for_counties(
     counties: Iterable[dict],
     concurrency: int = 20,
+    stats: dict | None = None,
 ) -> dict[str, dict]:
     """FIPS → {"forecast": {...} | None, "alerts": [...]}.
 
     Included for every county that returned gridpoint data OR crossed a
-    threshold; counties with no NWS grid coverage are simply absent.
+    threshold; counties with no NWS grid coverage (or whose fetches still
+    failed after retries) are simply absent. If `stats` is given, it is filled
+    with `retries_used` and `retry_budget_exhausted`.
     """
     sem = asyncio.Semaphore(concurrency)
+    budget = _RetryBudget(NWS_RETRY_BUDGET)
     results: dict[str, dict] = {}
 
     async with aiohttp.ClientSession() as session:
         async def worker(county):
             async with sem:
-                res = await fetch_county_forecast(session, county)
+                res = await fetch_county_forecast(session, county, budget)
                 if res["forecast"] is not None or res["alerts"]:
                     results[county["fips"]] = res
 
         await asyncio.gather(*(worker(c) for c in counties))
+    if budget.used:
+        log.info("Forecast: %d transient-failure retries (budget %d)",
+                 budget.used, NWS_RETRY_BUDGET)
+    if stats is not None:
+        stats["retries_used"] = budget.used
+        stats["retry_budget_exhausted"] = budget.remaining <= 0
     return results

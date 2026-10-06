@@ -83,8 +83,9 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
     log.info("Forecast: querying %d counties for conditions + thresholds",
              len(counties))
     try:
+        forecast_stats: dict = {}
         forecast_results = await fetch_forecasts_for_counties(
-            counties, concurrency=20
+            counties, concurrency=20, stats=forecast_stats
         )
         forecast_conditions_by_fips = {
             f: r["forecast"] for f, r in forecast_results.items()
@@ -94,14 +95,29 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
             f: r["alerts"] for f, r in forecast_results.items()
             if r.get("alerts") and f not in weather_by_fips
         }
-        log.info("Forecast: %d counties with conditions, %d over threshold",
-                 len(forecast_conditions_by_fips), len(forecast_by_fips))
+        # NWS grids cover every county, so missing conditions mean failed
+        # fetches. Flag silent under-coverage (as for air quality) rather than
+        # masking it as "ok".
+        with_conditions = len(forecast_conditions_by_fips)
+        if with_conditions == 0:
+            fc_status = "failed"
+        elif with_conditions >= 0.95 * len(counties):
+            fc_status = "ok"
+        else:
+            fc_status = "partial"
+        log.info("Forecast: %d/%d counties with conditions (%s), %d over threshold",
+                 with_conditions, len(counties), fc_status, len(forecast_by_fips))
         data_sources["weather_nws_forecast"] = {
-            "status": "ok",
+            "status": fc_status,
             "counties_queried": len(counties),
-            "counties_with_conditions": len(forecast_conditions_by_fips),
+            "counties_with_conditions": with_conditions,
             "counties_over_threshold": len(forecast_by_fips),
+            "retries_used": forecast_stats.get("retries_used", 0),
+            "retry_budget_exhausted": forecast_stats.get("retry_budget_exhausted", False),
         }
+        if fc_status == "failed":
+            data_sources["weather_nws_forecast"]["error"] = \
+                "no county returned NWS gridpoint data"
     except Exception as e:
         log.error("Forecast fetch failed (continuing with empty): %s", e)
         forecast_by_fips = {}
