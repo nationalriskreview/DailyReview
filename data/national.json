@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-10-05T16:37:01.647983+00:00",
-  "date": "2026-10-05",
+  "generated_at": "2026-10-06T12:23:26.936910+00:00",
+  "date": "2026-10-06",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,15 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 73
+      "counties_with_alerts": 87
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
-      "counties_with_conditions": 2562,
-      "counties_over_threshold": 88
+      "counties_with_conditions": 3222,
+      "counties_over_threshold": 71,
+      "retries_used": 0,
+      "retry_budget_exhausted": false
     },
     "air_quality_open_meteo": {
       "status": "ok",
@@ -28,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 35,
+      "counties_with_matches": 46,
       "items_pre_llm": {
-        "protest": 50,
-        "utility_outage": 0,
-        "transit_disruption": 1,
+        "protest": 105,
+        "utility_outage": 2,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 11
+        "hazmat_incident": 1,
+        "road_closure": 6
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 19,
+      "counties_with_matches": 23,
       "items_post_llm": {
-        "protest": 21,
-        "utility_outage": 0,
-        "transit_disruption": 1,
+        "protest": 54,
+        "utility_outage": 2,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
+        "hazmat_incident": 1,
         "road_closure": 6
       },
-      "unique_articles": 37,
-      "calls_used": 37,
+      "unique_articles": 74,
+      "calls_used": 74,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 167
+      "counties_with_alerts": 155
     },
     "transit": {
       "status": "ok",
@@ -136,7 +138,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 14
+      "counties_with_alerts": 15
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -166,7 +168,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 10,
+      "active_incidents": 4,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -174,7 +176,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 4
+          "items": 0
         },
         {
           "key": "azure",
@@ -216,7 +218,7 @@
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 2
+          "items": 0
         },
         {
           "key": "anthropic",
@@ -616,58 +618,14 @@
   "faa_advisories": [],
   "service_outages": [
     {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service is operating normally: [RESOLVED] Elevated packet loss",
-      "impact": "",
-      "status": "",
-      "started": "Sun, 04 Oct 2026 11:56:53 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Elevated packet loss",
-      "impact": "",
-      "status": "",
-      "started": "Sun, 04 Oct 2026 11:45:47 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Elevated packet loss",
-      "impact": "",
-      "status": "",
-      "started": "Sun, 04 Oct 2026 10:56:24 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Elevated packet loss",
-      "impact": "",
-      "status": "",
-      "started": "Sun, 04 Oct 2026 10:06:14 PDT",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "API Shield JWT Validation Errors",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-10-05T10:55:29.000Z",
-      "updated": "2026-10-05T11:24:33.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/ts295zqycqn7",
+      "title": "Partial System Outage",
+      "impact": "major",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
@@ -677,30 +635,8 @@
       "impact": "minor",
       "status": "identified",
       "started": "2026-09-25T10:45:29.000-07:00",
-      "updated": "2026-10-04T18:32:52.889-07:00",
+      "updated": "2026-10-05T18:31:53.125-07:00",
       "url": "https://stspg.io/4cpggx38p4g2",
-      "source": "provider status page"
-    },
-    {
-      "provider": "OpenAI",
-      "key": "openai",
-      "title": "Admin Console Intermittently Inaccessible",
-      "impact": "none",
-      "status": "investigating",
-      "started": "2026-10-05T15:50:11Z",
-      "updated": "2026-10-05T15:50:11Z",
-      "url": "https://status.openai.com",
-      "source": "provider status page"
-    },
-    {
-      "provider": "OpenAI",
-      "key": "openai",
-      "title": "Elevated Work Mode errors",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-10-05T07:03:53Z",
-      "updated": "2026-10-05T09:50:38Z",
-      "url": "https://status.openai.com",
       "source": "provider status page"
     },
     {
