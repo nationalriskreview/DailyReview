@@ -44,7 +44,7 @@ Each county object exposes alerts in these buckets:
 
 Separate from `alerts`, each county carries an always-on `conditions` object with ambient readings — present whether or not the county has any active alert. Exposed for **all** ~3,143 counties in `today.json`, `today-summary.json`, `states/{abbr}.json`, `counties/{fips}.json`, and the NYC borough files. (Historical `archive/{date}.json` snapshots stay lean — alerted counties only — to bound repo growth.)
 
-- **`conditions.forecast`** — NWS gridpoint next-24h summary for every county (`null` where NWS has no grid coverage). Fields: `precip_in_24h`, `precip_probability_pct`, `snow_in_24h`, `ice_in_24h`, `high_temp_f` / `low_temp_f` (actual air temp), `high_apparent_temp_f` / `low_apparent_temp_f`, `max_wind_mph`, `max_wind_gust_mph`, `thunder_probability_pct`, `lightning_activity_level`, and `weather` (list of human-readable condition phrases, e.g. `["thunderstorms", "heavy rain showers"]`). Accumulations (precip/snow/ice) are 24h sums; temps/wind/probabilities are 24h peaks. Individual fields are `null` when NWS doesn't publish that variable for the gridpoint. The precip/snow/apparent-temp values still drive `alerts.weather` threshold entries (>1" rain, >6" snow, >105°F, <0°F).
+- **`conditions.forecast`** — NWS gridpoint next-24h summary for every county (`null` where NWS has no grid coverage, or where its API still failed after retries — `data_sources.weather_nws_forecast` reports coverage and `retries_used`). Fields: `precip_in_24h`, `precip_probability_pct`, `snow_in_24h`, `ice_in_24h`, `high_temp_f` / `low_temp_f` (actual air temp), `high_apparent_temp_f` / `low_apparent_temp_f`, `max_wind_mph`, `max_wind_gust_mph`, `thunder_probability_pct`, `lightning_activity_level`, and `weather` (list of human-readable condition phrases, e.g. `["thunderstorms", "heavy rain showers"]`). Accumulations (precip/snow/ice) are 24h sums; temps/wind/probabilities are 24h peaks. Individual fields are `null` when NWS doesn't publish that variable for the gridpoint. The precip/snow/apparent-temp values still drive `alerts.weather` threshold entries (>1" rain, >6" snow, >105°F, <0°F).
 - **`conditions.air_quality`** — Current US EPA AQI and pollutant concentrations from the Open-Meteo Air Quality API (keyless): `us_aqi`, `category`, next-24h peak (`aqi_24h_max` / `aqi_24h_max_category`), plus `pm2_5`, `pm10`, `ozone`, `nitrogen_dioxide` (µg/m³) and `observed_at`.
 
 **Note on Geographic Precision:** For massive counties (>4,000 sq miles), weather forecasts and wildfire distances are evaluated against a 5-point bounding grid rather than a single centroid to ensure large jurisdictions do not miss border events.
@@ -75,7 +75,7 @@ Each top-level output (`today.json`, `today-summary.json`, `national.json`) incl
 }
 ```
 
-Per source: `status` is one of `ok`, `failed`, `skipped`, `partial`. `ok` means the fetch and parse succeeded (zero items is still `ok`). `failed` includes a truncated `error` string. `partial` is used for air quality (coverage below 95%) and transit (some agencies succeeded while others failed *or* were skipped for a missing key).
+Per source: `status` is one of `ok`, `failed`, `skipped`, `partial`. `ok` means the fetch and parse succeeded (zero items is still `ok`). `failed` includes a truncated `error` string. `partial` is used for air quality and the NWS forecast (coverage below 95%; a forecast run with no coverage at all is `failed`) and transit (some agencies succeeded while others failed *or* were skipped for a missing key).
 
 Transit additionally exposes a per-agency `agencies` array — each with `id`, `name`, `status`, and `items`. Per-agency status values:
 
@@ -113,7 +113,16 @@ Examples:
 
 ## Schedule
 
-Workflow runs daily at **09:00 UTC** (~5 AM ET / 2 AM PT). Output `generated_at` timestamp reflects the actual run time.
+Data is collected once per day, normally between **12:00 and 3:00 AM Pacific**. Output `generated_at` timestamp reflects the actual run time.
+
+GitHub starts scheduled workflows late (often by hours) and occasionally drops them, so the workflow is triggered every two hours and a lightweight `gate` job (`scripts/schedule_gate.py`) decides whether to collect:
+
+- Collects on the first trigger after midnight Pacific that finds no digest yet for the current Pacific day; later triggers that day do nothing.
+- If no trigger lands in the 12–3 AM window, the next one runs a **catch-up** collection (flagged with a notice in the Actions run), since late data beats a missing day.
+- A collection that fails before publishing is retried on the next trigger, up to 3 attempts per Pacific day.
+- Manual runs (`workflow_dispatch`) always collect.
+
+Most workflow runs in the Actions tab therefore show the `collect` job as skipped — that is expected.
 
 ## Data Sources
 

@@ -1,12 +1,16 @@
 name: Daily National Risk Digest
 
 "on":
+  # GitHub starts scheduled runs late (often hours) and sometimes drops them,
+  # so trigger every two hours and let the gate job run the collection once
+  # per Pacific day — normally 00:00-03:00 Pacific. Odd UTC hours put on-time
+  # triggers at 00:17/02:17 PDT and 01:17 PST. See scripts/schedule_gate.py.
   schedule:
-    - cron: '23 7 * * *'
+    - cron: '17 1-23/2 * * *'
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
   group: daily-digest
@@ -16,11 +20,45 @@ env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      run: ${{ steps.decide.outputs.run }}
+    steps:
+      # Check out the branch tip (not the trigger's SHA) so a run queued behind
+      # one that just pushed sees today's digest. Sparse + blobless: only the
+      # two files the gate reads, not the whole data/ tree.
+      - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref }}
+          filter: blob:none
+          sparse-checkout: |
+            scripts/schedule_gate.py
+            data/national.json
+          sparse-checkout-cone-mode: false
+
+      - name: Decide whether to collect
+        id: decide
+        run: python3 scripts/schedule_gate.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  # The gate counts attempts by this job's name — keep it `collect`.
   collect:
+    needs: gate
+    if: needs.gate.outputs.run == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 180
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v5
+        with:
+          ref: ${{ github.ref }}
 
       - uses: actions/setup-python@v6
         with:
