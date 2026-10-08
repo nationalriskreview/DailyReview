@@ -10,10 +10,14 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Cold Forecast",
-        "headline": "Apparent temperature expected to drop to -6.0°F in next 24h",
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued October 7 at 3:17PM AKDT until October 9 at 7:00AM AKDT by NWS Fairbanks AK",
         "severity": "Severe",
-        "source": "nws_forecast"
+        "urgency": "Expected",
+        "effective": "2026-10-07T15:17:00-08:00",
+        "expires": "2026-10-08T16:00:00-08:00",
+        "source": "nws_alert",
+        "count": 1
       }
     ],
     "protest": [],
@@ -32,39 +36,40 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.04,
-      "precip_probability_pct": 45,
-      "snow_in_24h": 0.8,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 20,
+      "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 24.0,
-      "low_temp_f": 7.0,
-      "high_apparent_temp_f": 15.0,
-      "low_apparent_temp_f": -6.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 23.0,
+      "high_temp_f": 28.0,
+      "low_temp_f": 4.0,
+      "high_apparent_temp_f": 17.0,
+      "low_apparent_temp_f": -9.0,
+      "max_wind_mph": 16.1,
+      "max_wind_gust_mph": 24.2,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
         "light snow",
         "light freezing spray",
+        "moderate freezing spray",
         "light rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 33,
+      "us_aqi": 34,
       "category": "Good",
-      "aqi_24h_max": 34,
+      "aqi_24h_max": 35,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 1.1,
-      "pm10": 1.8,
-      "ozone": 72.0,
-      "nitrogen_dioxide": 0.1,
-      "observed_at": "2026-10-07T10:00",
+      "pm2_5": 0.1,
+      "pm10": 0.1,
+      "ozone": 71.0,
+      "nitrogen_dioxide": 0.0,
+      "observed_at": "2026-10-08T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-07",
-  "generated_at": "2026-10-07T10:28:53.847032+00:00"
+  "date": "2026-10-08",
+  "generated_at": "2026-10-08T07:38:38.000574+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.7",
-  "generated_at": "2026-10-07T10:28:53.847032+00:00",
-  "date": "2026-10-07",
+  "generated_at": "2026-10-08T07:38:38.000574+00:00",
+  "date": "2026-10-08",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 55
+      "counties_with_alerts": 168
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 66,
+      "counties_over_threshold": 48,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,43 +30,43 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 44,
+      "counties_with_matches": 36,
       "items_pre_llm": {
-        "protest": 59,
-        "utility_outage": 1,
+        "protest": 94,
+        "utility_outage": 0,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
-        "road_closure": 5
+        "hazmat_incident": 10,
+        "road_closure": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 14,
+      "counties_with_matches": 18,
       "items_post_llm": {
-        "protest": 13,
-        "utility_outage": 1,
+        "protest": 22,
+        "utility_outage": 0,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 1,
-        "road_closure": 2
+        "hazmat_incident": 8,
+        "road_closure": 0
       },
-      "unique_articles": 45,
-      "calls_used": 45,
+      "unique_articles": 55,
+      "calls_used": 55,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 149
+      "counties_with_alerts": 121
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 1,
-      "counties_with_alerts": 3,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -96,7 +96,7 @@
           "id": "path",
           "name": "PATH",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "bart",
@@ -154,7 +154,7 @@
     },
     "nndss_notifiable": {
       "status": "ok",
-      "alerts": 18
+      "alerts": 17
     },
     "amtrak": {
       "status": "ok",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 5,
+      "active_incidents": 4,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -218,13 +218,13 @@
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "anthropic",
           "name": "Anthropic",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "oracle",
@@ -272,7 +272,7 @@
           "key": "rapid7",
           "name": "Rapid7",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "servicenow",
@@ -361,20 +361,6 @@
   ],
   "notifiable_disease_alerts": [
     {
-      "state": "Florida",
-      "state_abbr": "FL",
-      "disease": "Legionellosis",
-      "reasons": [
-        "spike_above_52wk_max"
-      ],
-      "this_week": 31,
-      "prev_52wk_max": 28,
-      "ytd": 483,
-      "ytd_last_year": 492,
-      "mmwr_week": "2026-W38",
-      "source": "CDC NNDSS Weekly Data"
-    },
-    {
       "state": "Maine",
       "state_abbr": "ME",
       "disease": "Legionellosis",
@@ -385,7 +371,7 @@
       "prev_52wk_max": 3,
       "ytd": 22,
       "ytd_last_year": 8,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -395,11 +381,11 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 95,
-      "prev_52wk_max": 110,
-      "ytd": 879,
+      "this_week": 88,
+      "prev_52wk_max": 113,
+      "ytd": 987,
       "ytd_last_year": 16,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -412,8 +398,8 @@
       "this_week": 0,
       "prev_52wk_max": 213,
       "ytd": 686,
-      "ytd_last_year": 3,
-      "mmwr_week": "2026-W38",
+      "ytd_last_year": 4,
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -426,8 +412,8 @@
       "this_week": 0,
       "prev_52wk_max": 57,
       "ytd": 532,
-      "ytd_last_year": 48,
-      "mmwr_week": "2026-W38",
+      "ytd_last_year": 54,
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -441,7 +427,7 @@
       "prev_52wk_max": 33,
       "ytd": 183,
       "ytd_last_year": 4,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -451,11 +437,25 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 8,
+      "this_week": 20,
       "prev_52wk_max": 59,
-      "ytd": 159,
+      "ytd": 182,
       "ytd_last_year": 36,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
+      "source": "CDC NNDSS Weekly Data"
+    },
+    {
+      "state": "Ohio",
+      "state_abbr": "OH",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 9,
+      "prev_52wk_max": 29,
+      "ytd": 148,
+      "ytd_last_year": 33,
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -469,21 +469,21 @@
       "prev_52wk_max": 51,
       "ytd": 146,
       "ytd_last_year": 6,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
-      "state": "Ohio",
-      "state_abbr": "OH",
+      "state": "New York",
+      "state_abbr": "NY",
       "disease": "Measles",
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 12,
-      "prev_52wk_max": 29,
-      "ytd": 139,
-      "ytd_last_year": 33,
-      "mmwr_week": "2026-W38",
+      "this_week": 18,
+      "prev_52wk_max": 19,
+      "ytd": 96,
+      "ytd_last_year": 8,
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -493,26 +493,11 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 5,
+      "this_week": 1,
       "prev_52wk_max": 24,
-      "ytd": 82,
+      "ytd": 94,
       "ytd_last_year": 13,
-      "mmwr_week": "2026-W38",
-      "source": "CDC NNDSS Weekly Data"
-    },
-    {
-      "state": "New York",
-      "state_abbr": "NY",
-      "disease": "Measles",
-      "reasons": [
-        "spike_above_52wk_max",
-        "elevated_vs_last_year"
-      ],
-      "this_week": 18,
-      "prev_52wk_max": 16,
-      "ytd": 78,
-      "ytd_last_year": 8,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -526,7 +511,7 @@
       "prev_52wk_max": 8,
       "ytd": 61,
       "ytd_last_year": 21,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -540,7 +525,7 @@
       "prev_52wk_max": 8,
       "ytd": 60,
       "ytd_last_year": 1,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -554,7 +539,7 @@
       "prev_52wk_max": 10,
       "ytd": 56,
       "ytd_last_year": 11,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -564,11 +549,11 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 9,
+      "this_week": 4,
       "prev_52wk_max": 12,
-      "ytd": 48,
+      "ytd": 53,
       "ytd_last_year": 2,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -579,10 +564,10 @@
         "elevated_vs_last_year"
       ],
       "this_week": 0,
-      "prev_52wk_max": 6,
-      "ytd": 20,
+      "prev_52wk_max": 7,
+      "ytd": 24,
       "ytd_last_year": 10,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -596,7 +581,7 @@
       "prev_52wk_max": 6,
       "ytd": 20,
       "ytd_last_year": 0,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     },
     {
@@ -606,11 +591,11 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 1,
+      "this_week": 0,
       "prev_52wk_max": 2,
       "ytd": 15,
       "ytd_last_year": 7,
-      "mmwr_week": "2026-W38",
+      "mmwr_week": "2026-W39",
       "source": "CDC NNDSS Weekly Data"
     }
   ],
@@ -620,12 +605,12 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Network Performance Issues in Columbus",
+      "title": "Partial System Outage",
       "impact": "major",
-      "status": "monitoring",
-      "started": "2026-10-07T02:48:37.964Z",
-      "updated": "2026-10-07T05:11:39.305Z",
-      "url": "https://www.cloudflarestatus.com/incidents/tt8f4ttcuonf",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
@@ -635,19 +620,19 @@
       "impact": "minor",
       "status": "identified",
       "started": "2026-09-25T10:45:29.000-07:00",
-      "updated": "2026-10-06T20:02:59.867-07:00",
+      "updated": "2026-10-07T19:40:01.837-07:00",
       "url": "https://stspg.io/4cpggx38p4g2",
       "source": "provider status page"
     },
     {
-      "provider": "OpenAI",
-      "key": "openai",
-      "title": "Unable to create new ChatGPT Work threads in latest version of desktop app",
+      "provider": "Anthropic",
+      "key": "anthropic",
+      "title": "Elevated errors on platform.claude.com",
       "impact": "major",
-      "status": "identified",
-      "started": "2026-10-07T05:31:56Z",
-      "updated": "2026-10-07T09:28:55Z",
-      "url": "https://status.openai.com",
+      "status": "monitoring",
+      "started": "2026-10-07T13:25:04.155Z",
+      "updated": "2026-10-07T21:45:27.699Z",
+      "url": "https://stspg.io/sjkw7njwf0mt",
       "source": "provider status page"
     },
     {
@@ -659,17 +644,6 @@
       "started": "",
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Rapid7",
-      "key": "rapid7",
-      "title": "Service Under Maintenance",
-      "impact": "maintenance",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.rapid7.com",
       "source": "provider status page"
     }
   ]
