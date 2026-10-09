@@ -279,31 +279,44 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
 
     # --- Disease (CDC HAN + CDC US outbreaks + NNDSS elevation + Wastewater) ---
     log.info("Disease: fetching CDC HAN + CDC outbreaks + NNDSS + Wastewater")
-    try:
-        national, disease_by_fips = await asyncio.gather(
-            fetch_national(),
-            fetch_county_disease(),
-        )
-        log.info("Disease: %d HAN, %d CDC outbreaks, %d counties with detections",
-                 len(national.get("cdc_han", [])),
-                 len(national.get("cdc_outbreaks", [])),
-                 len(disease_by_fips))
+    # Gathered with return_exceptions so one source failing doesn't mark the
+    # others failed.
+    ww_stats: dict = {}
+    national_res, ww_res = await asyncio.gather(
+        fetch_national(), fetch_county_disease(stats=ww_stats),
+        return_exceptions=True,
+    )
+    if isinstance(national_res, BaseException):
+        log.error("CDC HAN/outbreaks fetch failed (continuing with empty): %s", national_res)
+        national = {"cdc_han": [], "cdc_outbreaks": []}
+        err = _truncate_error(national_res)
+        data_sources["disease_cdc_han"] = {"status": "failed", "error": err}
+        data_sources["disease_cdc_outbreaks"] = {"status": "failed", "error": err}
+    else:
+        national = national_res
         data_sources["disease_cdc_han"] = {
             "status": "ok", "items": len(national.get("cdc_han", [])),
         }
         data_sources["disease_cdc_outbreaks"] = {
             "status": "ok", "items": len(national.get("cdc_outbreaks", [])),
         }
+    if isinstance(ww_res, BaseException):
+        log.error("Wastewater fetch failed (continuing with empty): %s", ww_res)
+        disease_by_fips = {}
         data_sources["disease_wastewater"] = {
-            "status": "ok", "counties_with_detections": len(disease_by_fips),
+            "status": "failed", "error": _truncate_error(ww_res),
         }
-    except Exception as e:
-        log.error("Disease fetch failed (continuing with empty): %s", e)
-        national, disease_by_fips = {"cdc_han": [], "cdc_outbreaks": []}, {}
-        err = _truncate_error(e)
-        data_sources["disease_cdc_han"] = {"status": "failed", "error": err}
-        data_sources["disease_cdc_outbreaks"] = {"status": "failed", "error": err}
-        data_sources["disease_wastewater"] = {"status": "failed", "error": err}
+    else:
+        disease_by_fips = ww_res
+        data_sources["disease_wastewater"] = {
+            "status": "ok",
+            "positive_samples": ww_stats.get("positive_samples", 0),
+            "counties_with_detections": len(disease_by_fips),
+        }
+    log.info("Disease: %d HAN, %d CDC outbreaks, %d counties with detections",
+             len(national.get("cdc_han", [])),
+             len(national.get("cdc_outbreaks", [])),
+             len(disease_by_fips))
 
     # --- NNDSS notifiable-disease elevation (state-level) ---
     log.info("NNDSS: computing state-level notifiable-disease elevation")
@@ -326,16 +339,19 @@ async def run(limit: int | None = None, skip_gdelt: bool = False) -> int:
     # --- Amtrak ---
     log.info("Amtrak: scraping passenger advisories + building route map")
     try:
+        amtrak_stats: dict = {}
         amtrak_national, amtrak_by_fips = await asyncio.get_event_loop().run_in_executor(
-            None, fetch_amtrak_advisories, counties
+            None, lambda: fetch_amtrak_advisories(counties, stats=amtrak_stats)
         )
         log.info("Amtrak: %d active advisor(y/ies), %d counties tagged",
                  len(amtrak_national), len(amtrak_by_fips))
         data_sources["amtrak"] = {
-            "status": "ok",
+            "status": "partial" if amtrak_stats.get("partial") else "ok",
             "national_items": len(amtrak_national),
             "counties_with_alerts": len(amtrak_by_fips),
         }
+        if amtrak_stats.get("partial"):
+            data_sources["amtrak"]["error"] = amtrak_stats["partial"]
     except Exception as e:
         log.error("Amtrak fetch failed (continuing with empty): %s", e)
         amtrak_national, amtrak_by_fips = [], {}

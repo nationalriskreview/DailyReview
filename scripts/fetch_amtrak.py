@@ -32,6 +32,7 @@ import logging
 import math
 import os
 import re
+import urllib.parse
 import urllib.request
 import zipfile
 from datetime import date, datetime, timezone
@@ -40,7 +41,6 @@ log = logging.getLogger(__name__)
 
 ADVISORIES_URL = "https://www.amtrak.com/service-alerts-and-notices"
 GTFS_URL = "https://content.amtrak.com/content/gtfs/GTFS.zip"
-ALERT_BASE = "https://www.amtrak.com"
 HTTP_TIMEOUT = 30
 USER_AGENT = os.environ.get(
     "USER_AGENT",
@@ -134,17 +134,22 @@ def _station_advisory_is_severe(title: str) -> bool:
 _STATION_CODE_RE = re.compile(r"\(([A-Z]{2,4})\)\s*$")
 
 
-def _http_get(url: str) -> bytes | None:
+def _http_get(url: str, errors: list[str] | None = None) -> bytes | None:
+    """GET `url`; None on failure. The failure reason is logged and, if
+    `errors` is given, appended to it so the caller can report it."""
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     try:
         with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
             if resp.status != 200:
-                log.warning("Amtrak fetch %s -> HTTP %d", url, resp.status)
-                return None
-            return resp.read()
+                reason = f"HTTP {resp.status}"
+            else:
+                return resp.read()
     except Exception as e:
-        log.warning("Amtrak fetch %s: %s", url, e)
-        return None
+        reason = str(e)
+    log.warning("Amtrak fetch %s: %s", url, reason)
+    if errors is not None:
+        errors.append(reason)
+    return None
 
 
 def _parse_date_ranges(date_str: str, ref_year: int) -> list[tuple[date, date]]:
@@ -222,8 +227,9 @@ def _is_active_today(ranges: list[tuple[date, date]], today: date) -> bool:
     return any(s <= today <= e for s, e in ranges)
 
 
-def _parse_passenger_advisories(html_soup) -> list[dict]:
-    """Route-level advisories. No severity filter applied here — caller filters."""
+def _parse_passenger_advisories(html_soup) -> list[dict] | None:
+    """Route-level advisories. No severity filter applied here — caller filters.
+    None if the page has no passenger-advisories section."""
     container = html_soup.find(
         "div", class_="na-advisories-section__tab_content_passengerAdvisories"
     )
@@ -232,7 +238,7 @@ def _parse_passenger_advisories(html_soup) -> list[dict]:
             "Amtrak: passenger advisories container not found — "
             "page structure may have changed"
         )
-        return []
+        return None
 
     out: list[dict] = []
     for opt in container.find_all("div", class_="na-service-alert__option"):
@@ -244,7 +250,7 @@ def _parse_passenger_advisories(html_soup) -> list[dict]:
         title = title_tag.get_text(strip=True)
         date_str = date_tag.get_text(strip=True) if date_tag else ""
         href = title_tag.get("data-href") or title_tag.get("href") or ""
-        url = ALERT_BASE + href if href.startswith("/") else href
+        url = _advisory_url(href)
 
         primary_route = h3.get_text(strip=True)
         if primary_route.lower().startswith("multiple"):
@@ -270,11 +276,20 @@ def _parse_passenger_advisories(html_soup) -> list[dict]:
     return out
 
 
-def _parse_station_advisories(html_soup) -> list[dict]:
+def _advisory_url(href: str) -> str:
+    """Absolute link to an advisory; the alerts page itself if it has none."""
+    href = (href or "").strip()
+    if not href or href.startswith(("#", "javascript:")):
+        return ADVISORIES_URL
+    return urllib.parse.urljoin(ADVISORIES_URL, href)
+
+
+def _parse_station_advisories(html_soup) -> list[dict] | None:
     """Station-level advisories. No severity filter applied here — caller filters.
 
     Returns entries with station code + city/state header so the caller can
-    map station → county via GTFS.
+    map station → county via GTFS. None if the page has no station-advisories
+    section.
     """
     container = html_soup.find(
         "div", class_="na-advisories-section__tab_content_stationAdvisories"
@@ -284,7 +299,7 @@ def _parse_station_advisories(html_soup) -> list[dict]:
             "Amtrak: station advisories container not found — "
             "page structure may have changed"
         )
-        return []
+        return None
 
     out: list[dict] = []
     for li in container.find_all("li", class_="na-service-alert__stations_ul_li"):
@@ -313,7 +328,7 @@ def _parse_station_advisories(html_soup) -> list[dict]:
             title = a.get_text(strip=True)
             date_str = d.get_text(strip=True) if d else ""
             href = a.get("data-href") or a.get("href") or ""
-            url = ALERT_BASE + href if href.startswith("/") else href
+            url = _advisory_url(href)
             out.append({
                 "kind": "station",
                 "title": title,
@@ -431,21 +446,39 @@ def _match_route(advisory_route: str, route_map: dict[str, list[str]]) -> list[s
 
 def fetch_amtrak_advisories(
     counties: list[dict],
+    stats: dict | None = None,
 ) -> tuple[list[dict], dict[str, list[dict]]]:
     """Return (national_advisories, by_fips_advisories).
 
     Strict filter: only **service stoppages** (passenger advisories) and
     **full station closures** (station advisories) effective today.
+
+    Raises if the advisories page can't be fetched or has no advisory sections
+    at all, so the run reports Amtrak as failed rather than as an empty "ok".
+    If `stats` is given, `partial` is set to a reason string when only part of
+    the data could be read (one section missing, or the GTFS county fan-out
+    unavailable).
     """
     from bs4 import BeautifulSoup
-    html_bytes = _http_get(ADVISORIES_URL)
+    errors: list[str] = []
+    html_bytes = _http_get(ADVISORIES_URL, errors)
     if not html_bytes:
-        log.warning("Amtrak: advisories page fetch failed")
-        return [], {}
+        raise RuntimeError(f"advisories page unavailable ({errors[0] if errors else 'empty'})")
 
     soup = BeautifulSoup(html_bytes, "html.parser")
     passenger = _parse_passenger_advisories(soup)
     station = _parse_station_advisories(soup)
+    if passenger is None and station is None:
+        raise RuntimeError("advisory sections not found on page (structure changed?)")
+    partial: list[str] = []
+    if passenger is None:
+        partial.append("passenger advisories section not found")
+        passenger = []
+    if station is None:
+        partial.append("station advisories section not found")
+        station = []
+    if stats is not None and partial:
+        stats["partial"] = "; ".join(partial)
     log.info(
         "Amtrak: parsed %d passenger + %d station advisor(y/ies) from page",
         len(passenger), len(station),
@@ -505,6 +538,9 @@ def fetch_amtrak_advisories(
     by_fips: dict[str, list[dict]] = {}
     if not gtfs_bytes:
         log.warning("Amtrak: GTFS fetch failed — county fan-out skipped")
+        if stats is not None:
+            partial.append("GTFS fetch failed; county fan-out skipped")
+            stats["partial"] = "; ".join(partial)
         return national, {}
 
     route_map, station_map = _build_gtfs_maps(gtfs_bytes, counties)

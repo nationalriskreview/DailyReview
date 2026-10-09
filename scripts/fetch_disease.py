@@ -23,6 +23,7 @@ import json
 import logging
 import os
 import re
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -30,6 +31,11 @@ from datetime import datetime, timedelta, timezone
 from bs4 import BeautifulSoup
 
 CDC_HAN_URL = os.environ.get("CDC_HAN_URL", "")
+NWSS_MEASLES_URL = "https://data.cdc.gov/resource/akvg-8vrb.json"
+# Dataset landing page — fallback link for a row without a record_id.
+NWSS_MEASLES_DATASET_PAGE = "https://data.cdc.gov/d/akvg-8vrb"
+NWSS_WINDOW_DAYS = 14
+NWSS_PAGE_SIZE = 5000
 CDC_OUTBREAKS_RSS_URL = os.environ.get(
     "CDC_OUTBREAKS_RSS_URL",
     "https://tools.cdc.gov/api/v2/resources/media/285676.rss",
@@ -130,7 +136,7 @@ def _fetch_cdc_outbreaks_sync() -> list[dict]:
             continue
         items.append({
             "title": title,
-            "url": (item.findtext("link") or "").strip(),
+            "url": (item.findtext("link") or "").strip() or CDC_OUTBREAKS_RSS_URL,
             "published": (item.findtext("pubDate") or "").strip(),
             "summary": _strip_html(item.findtext("description") or "")[:500],
             "source": "CDC Outbreaks (US-based)",
@@ -147,48 +153,84 @@ async def fetch_national() -> dict[str, list[dict]]:
     return {"cdc_han": han, "cdc_outbreaks": outbreaks}
 
 
-async def fetch_county_disease() -> dict[str, list[dict]]:
-    """Fetch CDC NWSS wastewater measles detections."""
-    url = "https://data.cdc.gov/resource/akvg-8vrb.json"
-    loop = asyncio.get_event_loop()
-    text = await loop.run_in_executor(None, _http_get, url)
-    if not text:
-        return {}
+def _fetch_wastewater_rows(since: str) -> list[dict]:
+    """Every positive measles sample collected on/after `since` (YYYY-MM-DD).
 
-    try:
-        data = json.loads(text)
-    except json.JSONDecodeError:
-        return {}
+    Filtered server-side: the dataset holds ~76k rows, and an unfiltered
+    request returns only Socrata's default page of 1,000 (in no useful order),
+    which silently missed almost every recent detection. Raises on fetch or
+    parse failure so the run reports the source as failed, not empty.
+    """
+    rows: list[dict] = []
+    offset = 0
+    while True:
+        params = urllib.parse.urlencode({
+            "$select": "record_id,county_fips,sample_collect_date",
+            "$where": f"pcr_target_detect='yes' AND sample_collect_date >= '{since}'",
+            "$order": "record_id",
+            "$limit": str(NWSS_PAGE_SIZE),
+            "$offset": str(offset),
+        })
+        text = _http_get(f"{NWSS_MEASLES_URL}?{params}")
+        if text is None:
+            raise RuntimeError("CDC NWSS wastewater fetch failed")
+        try:
+            page = json.loads(text)
+        except json.JSONDecodeError as e:
+            raise RuntimeError(f"CDC NWSS wastewater returned non-JSON: {e}") from e
+        if not isinstance(page, list):
+            raise RuntimeError(f"CDC NWSS wastewater error: {str(page)[:150]}")
+        rows.extend(page)
+        if len(page) < NWSS_PAGE_SIZE:
+            return rows
+        offset += NWSS_PAGE_SIZE
+
+
+async def fetch_county_disease(stats: dict | None = None) -> dict[str, list[dict]]:
+    """CDC NWSS wastewater measles detections from the last 14 days.
+
+    One entry per county: a sewershed can serve several counties (the dataset
+    lists them comma-separated), and a county can have several positive
+    samples (multiple sites or days). Mirroring the weather consolidation, the
+    entry reports the most recent sample, `count` positive samples, and every
+    sample's record link in `urls`. If `stats` is given, it is filled with
+    `positive_samples`.
+    """
+    since = (datetime.now(timezone.utc) - timedelta(days=NWSS_WINDOW_DAYS)).date().isoformat()
+    loop = asyncio.get_event_loop()
+    rows = await loop.run_in_executor(None, _fetch_wastewater_rows, since)
+
+    samples: dict[str, list[tuple[str, str]]] = {}
+    for row in rows:
+        date_str = (row.get("sample_collect_date") or "")[:10]
+        record_id = row.get("record_id") or ""
+        # Link the specific sample record behind this detection (CDC open data).
+        record_url = (f"{NWSS_MEASLES_URL}?record_id={urllib.parse.quote(record_id)}"
+                      if record_id else NWSS_MEASLES_DATASET_PAGE)
+        for fips in (row.get("county_fips") or "").split(","):
+            fips = fips.strip()
+            if len(fips) == 5 and fips.isdigit():
+                samples.setdefault(fips, []).append((date_str, record_url))
 
     by_county: dict[str, list[dict]] = {}
-    cutoff = datetime.now(timezone.utc) - timedelta(days=14)
-
-    for row in data:
-        # Columns: county_fips, pcr_target_detect, sample_collect_date
-        fips = row.get("county_fips")
-        detection = row.get("pcr_target_detect", "").lower()
-        if not fips or detection != "yes":
-            continue
-
-        date_str = row.get("sample_collect_date", "")
-        if date_str:
-            try:
-                # Socrata usually YYYY-MM-DD
-                dt = datetime.fromisoformat(date_str)
-                if dt.tzinfo is None:
-                    dt = dt.replace(tzinfo=timezone.utc)
-                if dt < cutoff:
-                    continue
-            except ValueError:
-                pass
-
-        by_county.setdefault(fips, []).append({
+    for fips, found in samples.items():
+        found.sort(reverse=True)  # newest sample first
+        latest_date, latest_url = found[0]
+        n = len(found)
+        by_county[fips] = [{
             "event": "Measles Detected (Wastewater)",
-            "headline": f"Measles virus detected in wastewater sample on {date_str}",
+            "headline": (f"Measles virus detected in wastewater sample on {latest_date}"
+                         if n == 1 else
+                         f"Measles virus detected in {n} wastewater samples, "
+                         f"most recently on {latest_date}"),
             "detection": "Positive",
-            "sampling_date": date_str,
+            "sampling_date": latest_date,
+            "count": n,
             "source": "CDC NWSS Wastewater",
-            "url": "https://www.cdc.gov/nwss/index.html",
-        })
+            "url": latest_url,
+            "urls": [u for _, u in found],
+        }]
 
+    if stats is not None:
+        stats["positive_samples"] = len(rows)
     return by_county
