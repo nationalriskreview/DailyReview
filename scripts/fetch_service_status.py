@@ -244,9 +244,11 @@ def _check_rss(p: dict) -> list[dict]:
         # cannot date is NOT assumed recent — it's dropped.
         if not _is_recent(pub_raw):
             continue
+        # Fall back to the human status page (`page`), not the RSS feed itself.
         out.append(_incident(
             p["name"], p["key"], title=title, impact="",
-            started=pub_raw, url=(item.findtext("link") or "").strip(),
+            started=pub_raw,
+            url=(item.findtext("link") or "").strip() or p.get("page") or p["url"],
         ))
     return out
 

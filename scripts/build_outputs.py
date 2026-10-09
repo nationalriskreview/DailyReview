@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import shutil
 from collections import defaultdict
 from datetime import datetime, timezone
@@ -10,7 +11,9 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = REPO_ROOT / "data"
-SCHEMA_VERSION = "1.7"
+SCHEMA_VERSION = "1.8"
+
+log = logging.getLogger(__name__)
 
 OUTPUT_NOTES = {
     "transit": (
@@ -127,6 +130,31 @@ def _county_record(
     }
 
 
+def _has_link(item) -> bool:
+    url = item.get("url") if isinstance(item, dict) else None
+    return isinstance(url, str) and url.startswith(("http://", "https://"))
+
+
+def _warn_missing_links(records: list[dict], national: dict) -> None:
+    """Every alert item should carry a source link in `url`. Log any category
+    that ships items without one, so a collector regression is visible in the
+    run log. Coded service outages carry no URL by design (pseudonymized)."""
+    missing: dict[str, int] = defaultdict(int)
+    for r in records:
+        for cat, items in r["alerts"].items():
+            for it in items:
+                if not _has_link(it):
+                    missing[cat] += 1
+    for key, items in national.items():
+        for it in items or []:
+            if key == "service_outages" and it.get("coded"):
+                continue
+            if not _has_link(it):
+                missing[f"national.{key}"] += 1
+    for cat, n in sorted(missing.items()):
+        log.warning("Source links: %d %s item(s) have no url", n, cat)
+
+
 def _reset_dir(path: Path) -> None:
     if path.exists():
         for entry in path.iterdir():
@@ -237,6 +265,7 @@ def write_all(
         by_fips[c["fips"]] = rec
 
     flagged = [r for r in records if r["alert_count"] > 0]
+    _warn_missing_links(records, national)
 
     full = {
         "schema_version": SCHEMA_VERSION,

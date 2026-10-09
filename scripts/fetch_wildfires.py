@@ -36,6 +36,8 @@ USER_AGENT = os.environ.get(
 DEFAULT_RADIUS_MILES = float(os.environ.get("WILDFIRE_RADIUS_MILES", "50"))
 MIN_ACRES = float(os.environ.get("WILDFIRE_MIN_ACRES", "100"))
 IRWIN_OBSERVER = "https://irwin.doi.gov/observer/incidents/"
+# Fallback link for the rare incident without an IRWIN identifier.
+NIFC_DATA_URL = "https://data-nifc.opendata.arcgis.com/"
 HTTP_TIMEOUT = 30
 _PAGE = 1000
 
@@ -122,6 +124,7 @@ def fetch_wildfires_by_county(
         fid = a.get("UniqueFireIdentifier") or ""
         name = a.get("IncidentName") or "Wildfire"
         is_complex = a.get("IncidentTypeCategory") == "CX"
+        source_url = f"{IRWIN_OBSERVER}{fid}" if fid else ""
         record_base = {
             "title": name,
             "incident_name": name,
@@ -135,8 +138,9 @@ def fetch_wildfires_by_county(
             "containment_pct": a.get("PercentContained"),
             "cause": a.get("FireCause"),
             "state": (a.get("POOState") or "").replace("US-", ""),
-            "source_url": f"{IRWIN_OBSERVER}{fid}" if fid else "",
+            "source_url": source_url,
             "source": "NIFC WFIGS",
+            "url": source_url or NIFC_DATA_URL,
         }
 
         for c in counties_list:

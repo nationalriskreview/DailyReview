@@ -4,6 +4,7 @@
     "name": "MBTA",
     "city": "Boston, MA",
     "alerts_url": "https://cdn.mbta.com/realtime/Alerts.pb",
+    "alerts_page_url": "https://www.mbta.com/alerts",
     "counties": ["25025", "25017", "25021", "25023", "25009"],
     "auth": null
   },
@@ -12,6 +13,7 @@
     "name": "MTA NYC Subway",
     "city": "New York, NY",
     "alerts_url": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fsubway-alerts",
+    "alerts_page_url": "https://www.mta.info/alerts",
     "format": "mta-alerts",
     "counties": ["36005", "36047", "36061", "36081", "36085"],
     "auth": null
@@ -21,6 +23,7 @@
     "name": "MTA Long Island Rail Road",
     "city": "New York, NY",
     "alerts_url": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Flirr-alerts",
+    "alerts_page_url": "https://www.mta.info/alerts",
     "format": "mta-alerts",
     "counties": ["36005", "36047", "36061", "36081", "36059", "36103"],
     "auth": null
@@ -30,6 +33,7 @@
     "name": "MTA Metro-North Railroad",
     "city": "New York, NY",
     "alerts_url": "https://api-endpoint.mta.info/Dataservice/mtagtfsfeeds/camsys%2Fmnr-alerts",
+    "alerts_page_url": "https://www.mta.info/alerts",
     "format": "mta-alerts",
     "counties": ["36061", "36005", "36119", "36079", "36027", "36071", "36087", "09001", "09009"],
     "auth": null
@@ -39,6 +43,7 @@
     "name": "PATH",
     "city": "New York / New Jersey",
     "alerts_url": "https://www.panynj.gov/bin/portauthority/alerts?agency=PATH",
+    "alerts_page_url": "https://www.panynj.gov/path/en/alerts.html",
     "format": "path-alerts",
     "counties": ["36061", "34017", "34013"],
     "auth": null
@@ -48,6 +53,7 @@
     "name": "BART",
     "city": "San Francisco Bay Area, CA",
     "alerts_url": "https://api.bart.gov/gtfsrt/alerts.aspx",
+    "alerts_page_url": "https://www.bart.gov/schedules/advisories",
     "counties": ["06001", "06013", "06075", "06081"],
     "auth": null
   },
@@ -56,6 +62,7 @@
     "name": "Caltrain",
     "city": "San Francisco Bay Area, CA",
     "alerts_url": "https://api.511.org/transit/servicealerts?agency=CT",
+    "alerts_page_url": "https://www.caltrain.com/alerts",
     "counties": ["06075", "06081", "06085"],
     "auth": {"env": "BAY_511_API_KEY", "style": "query", "param": "api_key"}
   },
@@ -64,6 +71,7 @@
     "name": "CTA 'L'",
     "city": "Chicago, IL",
     "alerts_url": "https://www.transitchicago.com/api/1.0/alerts.aspx?outputType=JSON",
+    "alerts_page_url": "https://www.transitchicago.com/alerts/",
     "format": "cta-alerts",
     "counties": ["17031"],
     "auth": null
@@ -73,6 +81,7 @@
     "name": "Metra",
     "city": "Chicago, IL",
     "alerts_url": "https://gtfspublic.metrarr.com/gtfs/public/alerts",
+    "alerts_page_url": "https://metra.com/",
     "counties": ["17031", "17043", "17097", "17089", "17197", "17111"],
     "auth": {"env": "METRA_API_KEY", "header": "Authorization", "prefix": "Bearer "}
   },
@@ -81,6 +90,7 @@
     "name": "WMATA Metrorail",
     "city": "Washington, DC",
     "alerts_url": "https://api.wmata.com/Incidents.svc/json/Incidents",
+    "alerts_page_url": "https://www.wmata.com/ride/alerts-and-advisories.html",
     "format": "wmata-incidents",
     "counties": ["11001", "24031", "24033", "51013", "51059", "51510", "51107", "51153"],
     "auth": {"env": "WMATA_API_KEY", "header": "api_key"}
@@ -90,6 +100,7 @@
     "name": "NJ Transit Rail",
     "city": "Newark, NJ",
     "alerts_url": "https://www.njtransit.com/rss/RailAdvisories_feed.xml",
+    "alerts_page_url": "https://www.njtransit.com/travel-alerts-to",
     "format": "njt-rss-advisories",
     "counties": ["34003", "34013", "34017", "34031", "34039", "34025", "34027", "34029", "34035", "34037"],
     "auth": null

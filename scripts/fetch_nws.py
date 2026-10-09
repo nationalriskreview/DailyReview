@@ -12,6 +12,9 @@ import aiohttp
 
 NWS_ALERTS_URL = "https://api.weather.gov/alerts/active"
 NWS_POINTS_URL = "https://api.weather.gov/points/{lat},{lon}"
+# Human-readable NWS forecast page (with active hazards) for a point; the link
+# for synthetic forecast-threshold alerts, which have no NWS alert of their own.
+NWS_FORECAST_PAGE_URL = "https://forecast.weather.gov/MapClick.php?lat={lat:.4f}&lon={lon:.4f}"
 
 USER_AGENT = os.environ.get(
     "USER_AGENT",
@@ -81,8 +84,10 @@ def _combine_county_alerts(alerts: list[dict]) -> list[dict]:
     each issuing its own alert-ID with identical content — so a single hazard
     shows up many times. We group by `event`, keep the highest severity/urgency,
     and widen the window to [earliest effective, latest expires]. `count`
-    records how many source alerts were merged. `areaDesc` is intentionally
-    dropped: the alert is already filed under a specific county.
+    records how many source alerts were merged. `url` is the alert the
+    headline was taken from; `urls` lists every merged source alert. `areaDesc`
+    is intentionally dropped: the alert is already filed under a specific
+    county.
     """
     groups: dict[str, dict] = {}
     order: list[str] = []
@@ -98,11 +103,17 @@ def _combine_county_alerts(alerts: list[dict]) -> list[dict]:
                 "effective": a.get("effective", ""),
                 "expires": a.get("expires", ""),
                 "source": a.get("source", "nws_alert"),
+                "url": a.get("url", ""),
+                "urls": [a["url"]] if a.get("url") else [],
                 "count": 1,
             }
             order.append(event)
             continue
         g["count"] += 1
+        if a.get("url") and a["url"] not in g["urls"]:
+            g["urls"].append(a["url"])
+            if not g["url"]:
+                g["url"] = a["url"]
         if _SEVERITY_RANK.get(a.get("severity", ""), 0) > _SEVERITY_RANK.get(g["severity"], 0):
             g["severity"] = a.get("severity", "")
         if _URGENCY_RANK.get(a.get("urgency", ""), 0) > _URGENCY_RANK.get(g["urgency"], 0):
@@ -145,6 +156,8 @@ def bucket_alerts_by_county(features: list[dict]) -> dict[str, list[dict]]:
                 "effective": props.get("effective", ""),
                 "expires": props.get("expires", ""),
                 "source": "nws_alert",
+                # Canonical API URL of this specific alert (CAP detail as JSON).
+                "url": props.get("@id") or feat.get("id", ""),
             })
     return {fips: _combine_county_alerts(alerts) for fips, alerts in by_county.items()}
 
@@ -199,6 +212,10 @@ async def _fetch_json(
     return None
 
 
+def _forecast_page_url(pt: dict) -> str:
+    return NWS_FORECAST_PAGE_URL.format(lat=pt["lat"], lon=pt["lon"])
+
+
 async def fetch_county_forecast(
     session: aiohttp.ClientSession, county: dict,
     budget: _RetryBudget | None = None,
@@ -210,10 +227,14 @@ async def fetch_county_forecast(
     `alerts` are the synthetic threshold breaches (>1" rain, >6" snow, >105°F,
     <0°F), surfaced only when a threshold is crossed.
     """
-    grid_points = county.get("grid", [{"lat": county["lat"], "lon": county["lon"]}])
+    grid_points = county.get("grid") or [{"lat": county["lat"], "lon": county["lon"]}]
 
     max_precip_in = 0.0
     max_snow_in = 0.0
+    # Grid point that produced each extreme, so a threshold alert links to the
+    # NWS forecast page for where it was actually forecast (large counties
+    # sample several points). Defaults to the first point / county centroid.
+    precip_pt = snow_pt = heat_pt = cold_pt = grid_points[0]
     max_ice_in = 0.0
     highest_temp_f = None
     lowest_temp_f = None
@@ -265,16 +286,20 @@ async def fetch_county_forecast(
 
         if precip_in > max_precip_in:
             max_precip_in = precip_in
+            precip_pt = pt
         if snow_in > max_snow_in:
             max_snow_in = snow_in
+            snow_pt = pt
         if ice_in > max_ice_in:
             max_ice_in = ice_in
         if max_app_temp_f is not None:
             if highest_temp_f is None or max_app_temp_f > highest_temp_f:
                 highest_temp_f = max_app_temp_f
+                heat_pt = pt
         if min_app_temp_f is not None:
             if lowest_temp_f is None or min_app_temp_f < lowest_temp_f:
                 lowest_temp_f = min_app_temp_f
+                cold_pt = pt
         if max_temp_c is not None:
             f = C_TO_F(max_temp_c)
             if highest_actual_f is None or f > highest_actual_f:
@@ -319,6 +344,7 @@ async def fetch_county_forecast(
             "headline": f"~{max_precip_in:.1f}\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
+            "url": _forecast_page_url(precip_pt),
         })
     if max_snow_in > SNOW_THRESHOLD_INCHES:
         alerts.append({
@@ -326,6 +352,7 @@ async def fetch_county_forecast(
             "headline": f"~{max_snow_in:.1f}\" snow expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
+            "url": _forecast_page_url(snow_pt),
         })
     if highest_temp_f is not None and highest_temp_f > HEAT_THRESHOLD_F:
         alerts.append({
@@ -333,6 +360,7 @@ async def fetch_county_forecast(
             "headline": f"Apparent temperature expected to reach {highest_temp_f:.1f}°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast",
+            "url": _forecast_page_url(heat_pt),
         })
     if lowest_temp_f is not None and lowest_temp_f < COLD_THRESHOLD_F:
         alerts.append({
@@ -340,6 +368,7 @@ async def fetch_county_forecast(
             "headline": f"Apparent temperature expected to drop to {lowest_temp_f:.1f}°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast",
+            "url": _forecast_page_url(cold_pt),
         })
     return {"forecast": forecast, "alerts": alerts}
 

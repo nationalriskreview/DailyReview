@@ -24,6 +24,9 @@ from datetime import datetime, timedelta, timezone
 log = logging.getLogger(__name__)
 
 FEMA_URL = "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries"
+FEMA_DISASTER_PAGE = "https://www.fema.gov/disaster/{}"
+# Fallback for a record without a disaster number (not seen in practice).
+FEMA_DECLARATIONS_PAGE = "https://www.fema.gov/disaster/declarations"
 USER_AGENT = os.environ.get(
     "USER_AGENT",
     "DailyReview/1.0 (https://github.com/nationalriskreview/DailyReview)",
@@ -106,7 +109,9 @@ def fetch_fema_by_county() -> dict[str, list[dict]]:
             "incident_end": d.get("incidentEndDate"),
             "designated_area": d.get("designatedArea", ""),
             "fema_declaration_string": d.get("femaDeclarationString", ""),
-            "source": f"https://www.fema.gov/disaster/{disaster_num}" if disaster_num else "",
+            "source": FEMA_DISASTER_PAGE.format(disaster_num) if disaster_num else "",
+            "url": (FEMA_DISASTER_PAGE.format(disaster_num) if disaster_num
+                    else FEMA_DECLARATIONS_PAGE),
         }
         by_county.setdefault(fips, []).append(record)
 

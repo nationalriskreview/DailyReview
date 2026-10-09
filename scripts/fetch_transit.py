@@ -216,6 +216,26 @@ def _first_text(translated_string) -> str:
     return translated_string.translation[0].text or ""
 
 
+def _as_text(v) -> str:
+    """Flatten an XML-to-JSON value to text. CTA wraps some fields as
+    {"#cdata-section": "..."} instead of a plain string."""
+    if isinstance(v, str):
+        return v.strip()
+    if isinstance(v, dict):
+        return _as_text(v.get("#cdata-section") or v.get("#text") or "")
+    return ""
+
+
+def _alert_link(specific, agency: dict) -> str:
+    """Human-readable link for an alert: the alert's own URL when the feed
+    provides one, else the agency's public alerts page. Never the API feed
+    URL in `alerts_url` (machine-readable, and may require a key)."""
+    url = _as_text(specific)
+    if url.startswith(("http://", "https://")):
+        return url
+    return agency.get("alerts_page_url", "")
+
+
 def _is_planned(text: str) -> bool:
     if not text:
         return False
@@ -274,6 +294,7 @@ def _parse_feed(content: bytes, agency: dict, now_ts: int) -> list[dict]:
             start_iso = _ts_to_iso(p.start) if p.HasField("start") else ""
             end_iso = _ts_to_iso(p.end) if p.HasField("end") else ""
 
+        link = _alert_link(_first_text(alert.url), agency)
         out.append({
             "agency": agency["name"],
             "agency_id": agency["id"],
@@ -284,7 +305,8 @@ def _parse_feed(content: bytes, agency: dict, now_ts: int) -> list[dict]:
             "description": description[:1000],
             "start": start_iso,
             "end": end_iso,
-            "source": _first_text(alert.url),
+            "source": link,
+            "url": link,
         })
 
     return out
@@ -314,6 +336,7 @@ def _parse_wmata_incidents(content: bytes, agency: dict, now_ts: int) -> list[di
         lines = [l.strip() for l in lines_raw.split(";") if l.strip()]
         route = "/".join(lines) if lines else "ALL"
 
+        link = _alert_link("", agency)
         out.append({
             "agency": agency["name"],
             "agency_id": agency["id"],
@@ -324,7 +347,8 @@ def _parse_wmata_incidents(content: bytes, agency: dict, now_ts: int) -> list[di
             "description": desc[:1000],
             "start": inc.get("DateUpdated", ""),
             "end": "",
-            "source": agency["alerts_url"],
+            "source": link,
+            "url": link,
             "incident_id": inc.get("IncidentID", ""),
             "incident_type": inc.get("IncidentType", ""),
         })
@@ -381,6 +405,7 @@ def _parse_cta_alerts(content: bytes, agency: dict, now_ts: int) -> list[dict]:
         if not _cta_is_severe(a):
             continue
         route = "/".join(rail_lines) if rail_lines else "ALL"
+        link = _alert_link(a.get("AlertURL"), agency)
         out.append({
             "agency": agency["name"],
             "agency_id": agency["id"],
@@ -391,7 +416,8 @@ def _parse_cta_alerts(content: bytes, agency: dict, now_ts: int) -> list[dict]:
             "description": (a.get("ShortDescription") or a.get("FullDescription") or "")[:1000],
             "start": a.get("EventStart") or "",
             "end": a.get("EventEnd") or "",
-            "source": a.get("AlertURL") or agency["alerts_url"],
+            "source": link,
+            "url": link,
             "alert_id": a.get("AlertId") or a.get("GUID") or "",
             "severity_score": a.get("SeverityScore") or "",
         })
@@ -442,6 +468,7 @@ def _parse_path_alerts(content: bytes, agency: dict, now_ts: int) -> list[dict]:
             continue
         if mid:
             seen_ids.add(mid)
+        link = _alert_link("", agency)
         out.append({
             "agency": agency["name"],
             "agency_id": agency["id"],
@@ -452,7 +479,8 @@ def _parse_path_alerts(content: bytes, agency: dict, now_ts: int) -> list[dict]:
             "description": body[:1000],
             "start": _path_parse_ms_date(msg.get("sentdate2", "")),
             "end": "",
-            "source": agency["alerts_url"],
+            "source": link,
+            "url": link,
             "message_id": mid,
             "template": msg.get("TemplateName", ""),
         })
@@ -501,7 +529,7 @@ def _parse_njt_rss_advisories(content: bytes, agency: dict, now_ts: int) -> list
     for item in root.findall(".//item"):
         title = (item.findtext("title") or "").strip()
         desc = (item.findtext("description") or "").strip()
-        link = (item.findtext("link") or "").strip()
+        item_link = _alert_link(item.findtext("link") or "", agency)
         pub_raw = (item.findtext("pubDate") or "").strip()
 
         if not _njt_rss_is_severe(title, desc):
@@ -521,7 +549,8 @@ def _parse_njt_rss_advisories(content: bytes, agency: dict, now_ts: int) -> list
             "description": desc[:1000],
             "start": pub_dt.isoformat() if pub_dt else "",
             "end": "",
-            "source": link,
+            "source": item_link,
+            "url": item_link,
         })
     return out
 
@@ -585,6 +614,7 @@ def _parse_mta_alerts(content: bytes, agency: dict, now_ts: int) -> list[dict]:
             or route_count >= 6
         )
 
+        link = _alert_link(_first_text(alert.url), agency)
         out.append({
             "agency": agency["name"],
             "agency_id": agency["id"],
@@ -595,7 +625,8 @@ def _parse_mta_alerts(content: bytes, agency: dict, now_ts: int) -> list[dict]:
             "description": description[:1000],
             "start": start_iso,
             "end": end_iso,
-            "source": _first_text(alert.url),
+            "source": link,
+            "url": link,
         })
 
     return out

@@ -43,6 +43,9 @@ from pathlib import Path
 log = logging.getLogger(__name__)
 
 FAA_URL = "https://nasstatus.faa.gov/api/airport-status-information"
+# Public NAS status page. The feed has no per-event link, so every advisory
+# links here (the page shows current closures and ground stops by airport).
+FAA_STATUS_PAGE_URL = "https://nasstatus.faa.gov/"
 HTTP_TIMEOUT = 30
 USER_AGENT = os.environ.get(
     "USER_AGENT",
@@ -190,6 +193,7 @@ def fetch_faa_advisories() -> tuple[list[dict], dict[str, list[dict]]]:
             "start": c["start"],
             "reopen": c["reopen"],
             "source": "FAA NAS Status",
+            "url": FAA_STATUS_PAGE_URL,
         }
         national.append(entry)
         for fips in airport["service_counties"]:
@@ -208,6 +212,7 @@ def fetch_faa_advisories() -> tuple[list[dict], dict[str, list[dict]]]:
             "reason": gs["reason"],
             "end": gs.get("end", ""),
             "source": "FAA NAS Status",
+            "url": FAA_STATUS_PAGE_URL,
         }
         national.append(entry)
         for fips in airport["service_counties"]:

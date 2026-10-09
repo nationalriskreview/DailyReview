@@ -128,6 +128,14 @@ def fetch_notifiable_disease_alerts() -> list[dict]:
         acc["m3"] += _num(r.get("m3"))
         acc["m4"] += _num(r.get("m4"))
 
+    def _source_query_url(state: str, disease: str) -> str:
+        # Exactly the NNDSS rows this alert was computed from (CDC open data).
+        lbls = ",".join("'%s'" % l.replace("'", "''") for l in DISEASE_LABELS[disease])
+        st = state.replace("'", "''")
+        q = (f"states='{st}' AND year='{year}' AND week='{week}' "
+             f"AND label in ({lbls})")
+        return f"{NNDSS_URL}?{urllib.parse.urlencode({'$where': q})}"
+
     alerts: list[dict] = []
     for (state, disease), v in agg.items():
         this_week, max_52, ytd, ytd_prev = v["m1"], v["m2"], v["m3"], v["m4"]
@@ -149,6 +157,7 @@ def fetch_notifiable_disease_alerts() -> list[dict]:
             "ytd_last_year": int(ytd_prev),
             "mmwr_week": f"{year}-W{week}",
             "source": "CDC NNDSS Weekly Data",
+            "url": _source_query_url(state, disease),
         })
 
     alerts.sort(key=lambda a: (a["disease"], -a["ytd"]))
