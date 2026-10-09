@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "32031",
   "name": "Washoe County",
   "state": "NV",
@@ -8,7 +8,22 @@
     "lon": -119.663269
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued October 8 at 11:40AM PDT until October 9 at 9:00PM PDT by NWS Reno NV",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-08T11:40:00-07:00",
+        "expires": "2026-10-09T14:00:00-07:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da82a1bc4cc91f7efeec45ccd0293c80803772bb.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da82a1bc4cc91f7efeec45ccd0293c80803772bb.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -31,27 +46,29 @@
         "incident_end": null,
         "designated_area": "Washoe (County)",
         "fema_declaration_string": "FM-5678-NV",
-        "source": "https://www.fema.gov/disaster/5678"
+        "source": "https://www.fema.gov/disaster/5678",
+        "url": "https://www.fema.gov/disaster/5678"
       }
     ],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 43,
+      "precip_probability_pct": 3,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 87.0,
+      "high_temp_f": 88.0,
       "low_temp_f": 52.0,
-      "high_apparent_temp_f": 83.0,
+      "high_apparent_temp_f": 84.0,
       "low_apparent_temp_f": 52.0,
-      "max_wind_mph": 8.1,
-      "max_wind_gust_mph": 12.7,
-      "thunder_probability_pct": 3,
+      "max_wind_mph": 19.6,
+      "max_wind_gust_mph": 33.4,
+      "thunder_probability_pct": 7,
       "lightning_activity_level": null,
       "weather": [
+        "blowing dust",
         "light rain showers",
         "light snow showers"
       ],
@@ -59,18 +76,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 49,
+      "us_aqi": 44,
       "category": "Good",
-      "aqi_24h_max": 60,
+      "aqi_24h_max": 57,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 2.0,
-      "pm10": 2.3,
-      "ozone": 80.0,
-      "nitrogen_dioxide": 4.8,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 0.6,
+      "pm10": 0.6,
+      "ozone": 81.0,
+      "nitrogen_dioxide": 4.9,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

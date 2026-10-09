@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "48457",
   "name": "Tyler County",
   "state": "TX",
@@ -8,7 +8,22 @@
     "lon": -94.375656
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued October 8 at 11:57PM CDT until October 9 at 7:00PM CDT by NWS Lake Charles LA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-08T23:57:00-05:00",
+        "expires": "2026-10-09T12:00:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.20f35e7df412d0f25e2c1eb96ab971ece62633af.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.20f35e7df412d0f25e2c1eb96ab971ece62633af.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,23 +37,22 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 20,
+      "precip_probability_pct": 2,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 89.0,
-      "low_temp_f": 68.0,
-      "high_apparent_temp_f": 90.0,
-      "low_apparent_temp_f": 68.0,
-      "max_wind_mph": 8.1,
-      "max_wind_gust_mph": 18.4,
-      "thunder_probability_pct": 20,
+      "low_temp_f": 64.0,
+      "high_apparent_temp_f": 87.0,
+      "low_apparent_temp_f": 64.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 13.8,
+      "thunder_probability_pct": 6,
       "lightning_activity_level": null,
       "weather": [
-        "fog",
         "thunderstorms",
         "light rain showers"
       ],
@@ -46,18 +60,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 34,
+      "us_aqi": 45,
       "category": "Good",
-      "aqi_24h_max": 48,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 5.7,
-      "pm10": 5.8,
-      "ozone": 64.0,
-      "nitrogen_dioxide": 4.8,
-      "observed_at": "2026-10-08T07:00",
+      "aqi_24h_max": 59,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 5.2,
+      "pm10": 5.3,
+      "ozone": 86.0,
+      "nitrogen_dioxide": 2.2,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

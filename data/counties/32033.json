@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "32033",
   "name": "White Pine County",
   "state": "NV",
@@ -8,7 +8,22 @@
     "lon": -114.900565
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued October 9 at 3:11AM PDT until October 9 at 10:00PM PDT by NWS Elko NV",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-09T03:11:00-07:00",
+        "expires": "2026-10-09T17:00:00-07:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cdc35596ac5395dce69a80d8ceb69e211eba4840.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cdc35596ac5395dce69a80d8ceb69e211eba4840.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,42 +37,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 4,
+      "precip_probability_pct": 2,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 78.0,
       "low_temp_f": 49.0,
       "high_apparent_temp_f": 78.0,
-      "low_apparent_temp_f": 46.0,
-      "max_wind_mph": 11.5,
-      "max_wind_gust_mph": 13.8,
+      "low_apparent_temp_f": 45.0,
+      "max_wind_mph": 19.6,
+      "max_wind_gust_mph": 27.6,
       "thunder_probability_pct": 2,
       "lightning_activity_level": null,
       "weather": [
+        "blowing dust",
         "light rain showers",
-        "thunderstorms",
         "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 42,
+      "us_aqi": 34,
       "category": "Good",
-      "aqi_24h_max": 55,
+      "aqi_24h_max": 58,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 2.2,
-      "pm10": 3.3,
-      "ozone": 68.0,
-      "nitrogen_dioxide": 6.4,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 3.2,
+      "pm10": 3.9,
+      "ozone": 59.0,
+      "nitrogen_dioxide": 7.9,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

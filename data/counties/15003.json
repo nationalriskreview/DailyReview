@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "15003",
   "name": "Honolulu County",
   "state": "HI",
@@ -11,9 +11,10 @@
     "weather": [
       {
         "event": "Heavy Precipitation Forecast",
-        "headline": "~2.6\" rain expected in next 24h",
+        "headline": "~1.0\" rain expected in next 24h",
         "severity": "Moderate",
-        "source": "nws_forecast"
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=21.4614&lon=-158.2020"
       }
     ],
     "protest": [],
@@ -28,6 +29,20 @@
     "aviation": [],
     "fema": [
       {
+        "disaster_number": "4951",
+        "declaration_type": "DR",
+        "declaration_title": "HURRICANE LALA",
+        "incident_type": "Hurricane",
+        "declared_at": "2026-10-07T00:00:00.000Z",
+        "is_new_today": false,
+        "incident_begin": "2026-08-14T00:00:00.000Z",
+        "incident_end": "2026-08-16T00:00:00.000Z",
+        "designated_area": "Honolulu (County)",
+        "fema_declaration_string": "DR-4951-HI",
+        "source": "https://www.fema.gov/disaster/4951",
+        "url": "https://www.fema.gov/disaster/4951"
+      },
+      {
         "disaster_number": "3654",
         "declaration_type": "EM",
         "declaration_title": "TROPICAL STORM NOLO",
@@ -38,47 +53,47 @@
         "incident_end": null,
         "designated_area": "Honolulu (County)",
         "fema_declaration_string": "EM-3654-HI",
-        "source": "https://www.fema.gov/disaster/3654"
+        "source": "https://www.fema.gov/disaster/3654",
+        "url": "https://www.fema.gov/disaster/3654"
       }
     ],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 2.64,
+      "precip_in_24h": 1.01,
       "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 89.0,
-      "low_temp_f": 76.0,
-      "high_apparent_temp_f": 93.0,
-      "low_apparent_temp_f": 76.0,
-      "max_wind_mph": 12.7,
-      "max_wind_gust_mph": 17.3,
+      "high_temp_f": 88.0,
+      "low_temp_f": 77.0,
+      "high_apparent_temp_f": 97.0,
+      "low_apparent_temp_f": 77.0,
+      "max_wind_mph": 13.8,
+      "max_wind_gust_mph": 18.4,
       "thunder_probability_pct": null,
-      "lightning_activity_level": 1,
+      "lightning_activity_level": null,
       "weather": [
         "heavy rain showers",
-        "thunderstorms",
         "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 28,
+      "us_aqi": 17,
       "category": "Good",
-      "aqi_24h_max": 30,
+      "aqi_24h_max": 21,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.5,
-      "pm10": 5.9,
-      "ozone": 49.0,
-      "nitrogen_dioxide": 0.9,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 2.4,
+      "pm10": 4.3,
+      "ozone": 43.0,
+      "nitrogen_dioxide": 0.4,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

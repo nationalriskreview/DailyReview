@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "02013",
   "name": "Aleutians East Borough",
   "state": "AK",
@@ -8,7 +8,15 @@
     "lon": -161.997477
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.8\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=55.2450&lon=-161.9975"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,42 +30,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.2,
-      "precip_probability_pct": 93,
+      "precip_in_24h": 1.77,
+      "precip_probability_pct": 99,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 51.0,
-      "low_temp_f": 32.0,
-      "high_apparent_temp_f": 46.0,
-      "low_apparent_temp_f": 23.0,
-      "max_wind_mph": 28.8,
-      "max_wind_gust_mph": 43.7,
+      "high_temp_f": 52.0,
+      "low_temp_f": 44.0,
+      "high_apparent_temp_f": 52.0,
+      "low_apparent_temp_f": 36.0,
+      "max_wind_mph": 41.4,
+      "max_wind_gust_mph": 52.9,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
         "light rain",
-        "light snow",
-        "light rain showers"
+        "moderate rain",
+        "heavy rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 38,
+      "us_aqi": 44,
       "category": "Good",
-      "aqi_24h_max": 49,
+      "aqi_24h_max": 46,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.8,
-      "pm10": 6.4,
-      "ozone": 82.0,
-      "nitrogen_dioxide": 0.2,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 7.9,
+      "pm10": 13.2,
+      "ozone": 81.0,
+      "nitrogen_dioxide": 0.1,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

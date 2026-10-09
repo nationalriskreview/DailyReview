@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "01121",
   "name": "Talladega County",
   "state": "AL",
@@ -8,7 +8,38 @@
     "lon": -86.17593
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Tropical Cyclone Local Statement",
+        "headline": "Tropical Cyclone Local Statement issued October 9 at 4:16AM CDT by NWS Birmingham AL",
+        "severity": "Moderate",
+        "urgency": "Expected",
+        "effective": "2026-10-08T22:37:00-05:00",
+        "expires": "2026-10-09T12:30:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b8ba15cbff21d6744128bf2da7b2038475d97f8.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b8ba15cbff21d6744128bf2da7b2038475d97f8.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c84fad8a6da97c17493d866b75d9d514f44a4228.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2a8338554ff239d1db1024db33aa0c7e0ace0741.001.1"
+        ],
+        "count": 3
+      },
+      {
+        "event": "Tropical Storm Watch",
+        "headline": "Tropical Storm Watch issued October 9 at 4:08AM CDT by NWS Birmingham AL",
+        "severity": "Severe",
+        "urgency": "Future",
+        "effective": "2026-10-09T04:08:00-05:00",
+        "expires": "2026-10-09T12:15:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f7d230cb86da0999f93148325003fd882776fd2.006.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f7d230cb86da0999f93148325003fd882776fd2.006.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -31,6 +62,7 @@
         "state": "AL",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-ALALS-20260922-1",
         "source": "NIFC WFIGS",
+        "url": "https://irwin.doi.gov/observer/incidents/2026-ALALS-20260922-1",
         "distance_miles": 32.9,
         "threat_level": "Vicinity"
       }
@@ -41,42 +73,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 97,
+      "precip_in_24h": 0.14,
+      "precip_probability_pct": 47,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 87.0,
-      "low_temp_f": 53.0,
-      "high_apparent_temp_f": 85.0,
-      "low_apparent_temp_f": 53.0,
-      "max_wind_mph": 4.6,
-      "max_wind_gust_mph": 10.4,
-      "thunder_probability_pct": 14,
+      "high_temp_f": 79.0,
+      "low_temp_f": 62.0,
+      "high_apparent_temp_f": 79.0,
+      "low_apparent_temp_f": 62.0,
+      "max_wind_mph": 16.1,
+      "max_wind_gust_mph": 33.4,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
-        "moderate rain showers",
-        "heavy rain showers"
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 35,
+      "us_aqi": 38,
       "category": "Good",
-      "aqi_24h_max": 73,
+      "aqi_24h_max": 58,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 7.7,
-      "pm10": 7.8,
-      "ozone": 68.0,
-      "nitrogen_dioxide": 6.7,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 13.4,
+      "pm10": 13.7,
+      "ozone": 81.0,
+      "nitrogen_dioxide": 3.3,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

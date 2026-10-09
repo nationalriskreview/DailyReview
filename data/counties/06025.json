@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "06025",
   "name": "Imperial County",
   "state": "CA",
@@ -11,16 +11,34 @@
     "weather": [
       {
         "event": "Extreme Heat Warning",
-        "headline": "Extreme Heat Warning issued October 7 at 11:52PM MST until October 9 at 8:00PM MST by NWS Phoenix AZ",
+        "headline": "Extreme Heat Warning issued October 8 at 11:18PM MST until October 9 at 8:00PM MST by NWS Phoenix AZ",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-10-07T23:52:00-07:00",
-        "expires": "2026-10-08T14:00:00-07:00",
+        "effective": "2026-10-08T23:18:00-07:00",
+        "expires": "2026-10-09T14:00:00-07:00",
         "source": "nws_alert",
-        "count": 2
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.499d50089e1848b5a3e6cde34e424ffe04106fe7.002.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.499d50089e1848b5a3e6cde34e424ffe04106fe7.002.1"
+        ],
+        "count": 1
       }
     ],
-    "protest": [],
+    "protest": [
+      {
+        "title": "ICFB announces Farmer of the Year",
+        "url": "https://www.ivpressonline.com/business/icfb-announces-farmer-of-the-year/article_68602061-ce78-40e7-abf3-945914d988f2.html",
+        "domain": "ivpressonline.com",
+        "seendate": "20261009080000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.ivpressonline.com/business/icfb-announces-farmer-of-the-year/article_68602061-ce78-40e7-abf3-945914d988f2.html",
+            "domain": "ivpressonline.com"
+          }
+        ]
+      }
+    ],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
@@ -33,42 +51,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 38,
+      "precip_probability_pct": 3,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 109.0,
+      "high_temp_f": 107.0,
       "low_temp_f": 76.0,
-      "high_apparent_temp_f": 104.0,
+      "high_apparent_temp_f": 103.0,
       "low_apparent_temp_f": 76.0,
       "max_wind_mph": 8.1,
       "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": 18,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
+        "thunderstorms",
         "light rain showers",
         "moderate rain showers",
-        "thunderstorms"
+        "blowing dust"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 35,
+      "us_aqi": 27,
       "category": "Good",
-      "aqi_24h_max": 43,
+      "aqi_24h_max": 44,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.0,
-      "pm10": 7.5,
-      "ozone": 55.0,
-      "nitrogen_dioxide": 9.9,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 3.2,
+      "pm10": 6.3,
+      "ozone": 66.0,
+      "nitrogen_dioxide": 8.6,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "13321",
   "name": "Worth County",
   "state": "GA",
@@ -8,7 +8,37 @@
     "lon": -83.84996
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Tropical Cyclone Local Statement",
+        "headline": "Tropical Cyclone Local Statement issued October 9 at 5:30AM EDT by NWS Tallahassee FL",
+        "severity": "Moderate",
+        "urgency": "Expected",
+        "effective": "2026-10-08T23:38:00-04:00",
+        "expires": "2026-10-09T13:30:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.78f2896ab94e4a4594de300473b142df7fffc0a3.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.78f2896ab94e4a4594de300473b142df7fffc0a3.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f055445330da2fd9a72acb059d391c1a4821cec5.001.1"
+        ],
+        "count": 2
+      },
+      {
+        "event": "Tropical Storm Watch",
+        "headline": "Tropical Storm Watch issued October 9 at 5:17AM EDT by NWS Tallahassee FL",
+        "severity": "Severe",
+        "urgency": "Future",
+        "effective": "2026-10-09T05:17:00-04:00",
+        "expires": "2026-10-09T13:30:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fe737a6b4fd9578ffe59084998c8e122bbf86c3c.041.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fe737a6b4fd9578ffe59084998c8e122bbf86c3c.041.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,20 +52,20 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 85,
+      "precip_in_24h": 0.95,
+      "precip_probability_pct": 92,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 81.0,
-      "low_temp_f": 64.0,
-      "high_apparent_temp_f": 83.0,
-      "low_apparent_temp_f": 64.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 15.0,
-      "thunder_probability_pct": 16,
+      "high_temp_f": 72.0,
+      "low_temp_f": 68.0,
+      "high_apparent_temp_f": 72.0,
+      "low_apparent_temp_f": 68.0,
+      "max_wind_mph": 24.2,
+      "max_wind_gust_mph": 40.3,
+      "thunder_probability_pct": 26,
       "lightning_activity_level": null,
       "weather": [
         "moderate rain showers",
@@ -45,18 +75,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 27,
+      "us_aqi": 40,
       "category": "Good",
-      "aqi_24h_max": 42,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 4.3,
-      "pm10": 5.2,
-      "ozone": 54.0,
-      "nitrogen_dioxide": 4.3,
-      "observed_at": "2026-10-08T07:00",
+      "aqi_24h_max": 51,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 10.6,
+      "pm10": 12.5,
+      "ozone": 61.0,
+      "nitrogen_dioxide": 3.5,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

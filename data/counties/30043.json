@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "30043",
   "name": "Jefferson County",
   "state": "MT",
@@ -8,7 +8,36 @@
     "lon": -112.059428
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Winter Storm Watch",
+        "headline": "Winter Storm Watch issued October 8 at 11:48PM MDT until October 11 at 6:00PM MDT by NWS Great Falls MT",
+        "severity": "Severe",
+        "urgency": "Future",
+        "effective": "2026-10-08T23:48:00-06:00",
+        "expires": "2026-10-09T18:15:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.56e2f87f1dd2a150ffd6f75337f2e6e90ced5450.003.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.56e2f87f1dd2a150ffd6f75337f2e6e90ced5450.003.1"
+        ],
+        "count": 1
+      },
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued October 8 at 11:13PM MDT until October 9 at 9:00PM MDT by NWS Great Falls MT",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-08T23:13:00-06:00",
+        "expires": "2026-10-09T18:00:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.35262556c9033234011a63608228a1adecf60828.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.35262556c9033234011a63608228a1adecf60828.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,20 +51,20 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 93,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 66.0,
-      "low_temp_f": 45.0,
-      "high_apparent_temp_f": 66.0,
-      "low_apparent_temp_f": 41.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 16.1,
-      "thunder_probability_pct": 4,
+      "high_temp_f": 67.0,
+      "low_temp_f": 50.0,
+      "high_apparent_temp_f": 67.0,
+      "low_apparent_temp_f": 46.0,
+      "max_wind_mph": 21.9,
+      "max_wind_gust_mph": 36.8,
+      "thunder_probability_pct": 7,
       "lightning_activity_level": null,
       "weather": [
         "light rain",
@@ -46,18 +75,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 37,
+      "us_aqi": 29,
       "category": "Good",
-      "aqi_24h_max": 48,
+      "aqi_24h_max": 49,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.3,
-      "pm10": 4.5,
-      "ozone": 41.0,
-      "nitrogen_dioxide": 8.3,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 7.5,
+      "pm10": 8.0,
+      "ozone": 35.0,
+      "nitrogen_dioxide": 8.0,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

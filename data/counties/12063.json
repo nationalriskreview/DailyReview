@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "12063",
   "name": "Jackson County",
   "state": "FL",
@@ -11,22 +11,31 @@
     "weather": [
       {
         "event": "Tropical Cyclone Local Statement",
-        "headline": "Tropical Cyclone Local Statement issued October 7 at 11:14PM EDT by NWS Tallahassee FL",
+        "headline": "Tropical Cyclone Local Statement issued October 9 at 5:30AM EDT by NWS Tallahassee FL",
         "severity": "Moderate",
         "urgency": "Expected",
-        "effective": "2026-10-07T23:14:00-04:00",
-        "expires": "2026-10-08T07:15:00-04:00",
+        "effective": "2026-10-08T23:38:00-04:00",
+        "expires": "2026-10-09T13:30:00-04:00",
         "source": "nws_alert",
-        "count": 1
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.78f2896ab94e4a4594de300473b142df7fffc0a3.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.78f2896ab94e4a4594de300473b142df7fffc0a3.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f055445330da2fd9a72acb059d391c1a4821cec5.001.1"
+        ],
+        "count": 2
       },
       {
-        "event": "Tropical Storm Watch",
-        "headline": "Tropical Storm Watch issued October 7 at 11:00PM EDT by NWS Tallahassee FL",
+        "event": "Tropical Storm Warning",
+        "headline": "Tropical Storm Warning issued October 9 at 5:17AM EDT by NWS Tallahassee FL",
         "severity": "Severe",
-        "urgency": "Future",
-        "effective": "2026-10-07T23:00:00-04:00",
-        "expires": "2026-10-08T07:00:00-04:00",
+        "urgency": "Immediate",
+        "effective": "2026-10-09T05:17:00-04:00",
+        "expires": "2026-10-09T13:30:00-04:00",
         "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fe737a6b4fd9578ffe59084998c8e122bbf86c3c.019.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fe737a6b4fd9578ffe59084998c8e122bbf86c3c.019.1"
+        ],
         "count": 1
       }
     ],
@@ -46,17 +55,17 @@
   "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 2,
+      "precip_in_24h": 3.0,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 82.0,
-      "low_temp_f": 67.0,
-      "high_apparent_temp_f": 85.0,
-      "low_apparent_temp_f": 67.0,
-      "max_wind_mph": 11.5,
-      "max_wind_gust_mph": 19.6,
-      "thunder_probability_pct": 2,
+      "high_temp_f": 73.0,
+      "low_temp_f": 69.0,
+      "high_apparent_temp_f": 73.0,
+      "low_apparent_temp_f": 69.0,
+      "max_wind_mph": 26.5,
+      "max_wind_gust_mph": 43.7,
+      "thunder_probability_pct": 57,
       "lightning_activity_level": null,
       "weather": [
         "moderate rain showers",
@@ -67,18 +76,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 32,
+      "us_aqi": 33,
       "category": "Good",
-      "aqi_24h_max": 38,
+      "aqi_24h_max": 37,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.9,
-      "pm10": 6.0,
-      "ozone": 63.0,
-      "nitrogen_dioxide": 3.3,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 6.4,
+      "pm10": 7.5,
+      "ozone": 61.0,
+      "nitrogen_dioxide": 3.6,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

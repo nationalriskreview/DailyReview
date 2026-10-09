@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "13089",
   "name": "DeKalb County",
   "state": "GA",
@@ -8,7 +8,23 @@
     "lon": -84.226343
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Tropical Cyclone Local Statement",
+        "headline": "Tropical Cyclone Local Statement issued October 9 at 4:58AM EDT by NWS Peachtree City GA",
+        "severity": "Moderate",
+        "urgency": "Expected",
+        "effective": "2026-10-08T23:34:00-04:00",
+        "expires": "2026-10-09T13:00:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e455ee77bac49fd435d9111a014ab5a3eb63752d.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e455ee77bac49fd435d9111a014ab5a3eb63752d.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1"
+        ],
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +38,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 83,
+      "precip_in_24h": 0.03,
+      "precip_probability_pct": 17,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 85.0,
-      "low_temp_f": 58.0,
-      "high_apparent_temp_f": 85.0,
-      "low_apparent_temp_f": 58.0,
-      "max_wind_mph": 3.5,
-      "max_wind_gust_mph": 6.9,
-      "thunder_probability_pct": 64,
+      "high_temp_f": 75.0,
+      "low_temp_f": 65.0,
+      "high_apparent_temp_f": 75.0,
+      "low_apparent_temp_f": 65.0,
+      "max_wind_mph": 16.1,
+      "max_wind_gust_mph": 34.5,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "moderate rain showers",
-        "thunderstorms"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 55,
+      "us_aqi": 66,
       "category": "Moderate",
-      "aqi_24h_max": 130,
+      "aqi_24h_max": 113,
       "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-      "pm2_5": 28.9,
-      "pm10": 29.3,
-      "ozone": 16.0,
-      "nitrogen_dioxide": 62.3,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 23.8,
+      "pm10": 24.8,
+      "ozone": 50.0,
+      "nitrogen_dioxide": 13.9,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

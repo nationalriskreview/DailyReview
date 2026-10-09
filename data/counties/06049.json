@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "06049",
   "name": "Modoc County",
   "state": "CA",
@@ -8,7 +8,23 @@
     "lon": -120.71837
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued October 9 at 2:48AM PDT until October 9 at 7:00PM PDT by NWS Medford OR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-08T11:40:00-07:00",
+        "expires": "2026-10-09T19:00:00-07:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2599568541a2a75b38e43dc6ecc174f2f2cd384e.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2599568541a2a75b38e43dc6ecc174f2f2cd384e.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da82a1bc4cc91f7efeec45ccd0293c80803772bb.001.1"
+        ],
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +38,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 11,
+      "precip_probability_pct": 3,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 84.0,
-      "low_temp_f": 46.0,
-      "high_apparent_temp_f": 81.0,
-      "low_apparent_temp_f": 43.0,
-      "max_wind_mph": 5.8,
-      "max_wind_gust_mph": 11.5,
+      "high_temp_f": 80.0,
+      "low_temp_f": 47.0,
+      "high_apparent_temp_f": 79.0,
+      "low_apparent_temp_f": 47.0,
+      "max_wind_mph": 20.7,
+      "max_wind_gust_mph": 33.4,
       "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "light snow showers",
-        "light rain showers"
+        "light rain",
+        "light snow"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 36,
+      "us_aqi": 20,
       "category": "Good",
       "aqi_24h_max": 47,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.9,
-      "pm10": 3.0,
-      "ozone": 37.0,
-      "nitrogen_dioxide": 12.9,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 5.0,
+      "pm10": 5.1,
+      "ozone": 16.0,
+      "nitrogen_dioxide": 17.5,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

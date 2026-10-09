@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "28097",
   "name": "Montgomery County",
   "state": "MS",
@@ -8,7 +8,23 @@
     "lon": -89.639625
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Tropical Cyclone Local Statement",
+        "headline": "Tropical Cyclone Local Statement issued October 9 at 4:19AM CDT by NWS Jackson MS",
+        "severity": "Moderate",
+        "urgency": "Expected",
+        "effective": "2026-10-08T22:20:00-05:00",
+        "expires": "2026-10-09T12:30:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9ccb2391dfb0302aafd1b25f53c808b4b9c3e97.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9ccb2391dfb0302aafd1b25f53c808b4b9c3e97.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ed3ff8fed606223b3f1e34de0a56f1284dee8418.001.1"
+        ],
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,42 +38,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 95,
+      "precip_in_24h": 0.01,
+      "precip_probability_pct": 5,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 90.0,
-      "low_temp_f": 59.0,
-      "high_apparent_temp_f": 87.0,
-      "low_apparent_temp_f": 59.0,
-      "max_wind_mph": 3.5,
-      "max_wind_gust_mph": 11.5,
-      "thunder_probability_pct": 19,
+      "high_temp_f": 86.0,
+      "low_temp_f": 61.0,
+      "high_apparent_temp_f": 85.0,
+      "low_apparent_temp_f": 61.0,
+      "max_wind_mph": 11.5,
+      "max_wind_gust_mph": 23.0,
+      "thunder_probability_pct": 6,
       "lightning_activity_level": null,
       "weather": [
+        "light rain showers",
         "moderate rain showers",
-        "thunderstorms",
-        "light rain showers"
+        "heavy rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 40,
+      "us_aqi": 41,
       "category": "Good",
-      "aqi_24h_max": 78,
+      "aqi_24h_max": 76,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 8.4,
-      "pm10": 8.5,
-      "ozone": 73.0,
-      "nitrogen_dioxide": 6.9,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 5.1,
+      "pm10": 5.1,
+      "ozone": 71.0,
+      "nitrogen_dioxide": 3.5,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

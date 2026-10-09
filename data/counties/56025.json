@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "56025",
   "name": "Natrona County",
   "state": "WY",
@@ -8,7 +8,23 @@
     "lon": -106.768219
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued October 9 at 1:57AM MDT until October 9 at 7:00PM MDT by NWS Riverton WY",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-09T01:57:00-06:00",
+        "expires": "2026-10-09T19:00:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9a3f3cc929f9dd27e54319948bb3435478901c7c.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9a3f3cc929f9dd27e54319948bb3435478901c7c.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9a3f3cc929f9dd27e54319948bb3435478901c7c.002.1"
+        ],
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -31,6 +47,7 @@
         "state": "WY",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-WYHDD-000450",
         "source": "NIFC WFIGS",
+        "url": "https://irwin.doi.gov/observer/incidents/2026-WYHDD-000450",
         "distance_miles": 21.6,
         "threat_level": "Vicinity"
       }
@@ -41,20 +58,20 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 82,
+      "precip_probability_pct": 54,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 80.0,
-      "low_temp_f": 43.0,
+      "high_temp_f": 81.0,
+      "low_temp_f": 42.0,
       "high_apparent_temp_f": 79.0,
-      "low_apparent_temp_f": 38.0,
-      "max_wind_mph": 16.1,
-      "max_wind_gust_mph": 20.7,
-      "thunder_probability_pct": 15,
+      "low_apparent_temp_f": 37.0,
+      "max_wind_mph": 27.6,
+      "max_wind_gust_mph": 46.0,
+      "thunder_probability_pct": 11,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
@@ -64,18 +81,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 37,
+      "us_aqi": 26,
       "category": "Good",
-      "aqi_24h_max": 49,
+      "aqi_24h_max": 47,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.6,
-      "pm10": 3.2,
-      "ozone": 32.0,
-      "nitrogen_dioxide": 8.3,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 1.8,
+      "pm10": 2.5,
+      "ozone": 42.0,
+      "nitrogen_dioxide": 4.7,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

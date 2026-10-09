@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "32027",
   "name": "Pershing County",
   "state": "NV",
@@ -8,7 +8,22 @@
     "lon": -118.409477
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued October 8 at 11:40AM PDT until October 9 at 9:00PM PDT by NWS Reno NV",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-08T11:40:00-07:00",
+        "expires": "2026-10-09T14:00:00-07:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da82a1bc4cc91f7efeec45ccd0293c80803772bb.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.da82a1bc4cc91f7efeec45ccd0293c80803772bb.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +37,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 35,
+      "precip_probability_pct": 2,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 87.0,
-      "low_temp_f": 51.0,
-      "high_apparent_temp_f": 83.0,
-      "low_apparent_temp_f": 51.0,
-      "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 10.4,
-      "thunder_probability_pct": 4,
+      "high_temp_f": 88.0,
+      "low_temp_f": 50.0,
+      "high_apparent_temp_f": 84.0,
+      "low_apparent_temp_f": 50.0,
+      "max_wind_mph": 15.0,
+      "max_wind_gust_mph": 25.3,
+      "thunder_probability_pct": 5,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "light snow showers"
+        "blowing dust",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 46,
+      "us_aqi": 39,
       "category": "Good",
-      "aqi_24h_max": 59,
+      "aqi_24h_max": 57,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 5.4,
-      "pm10": 6.1,
-      "ozone": 82.0,
-      "nitrogen_dioxide": 7.2,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 1.3,
+      "pm10": 1.4,
+      "ozone": 70.0,
+      "nitrogen_dioxide": 10.8,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

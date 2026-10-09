@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "19139",
   "name": "Muscatine County",
   "state": "IA",
@@ -8,18 +8,7 @@
     "lon": -91.118699
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Flood Warning",
-        "headline": "Flood Warning issued October 7 at 7:53PM CDT until October 9 at 4:30AM CDT by NWS Quad Cities IA IL",
-        "severity": "Severe",
-        "urgency": "Immediate",
-        "effective": "2026-10-07T19:53:00-05:00",
-        "expires": "2026-10-08T20:00:00-05:00",
-        "source": "nws_alert",
-        "count": 1
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -31,44 +20,57 @@
     "amtrak": [],
     "aviation": [],
     "fema": [],
-    "disease": []
+    "disease": [
+      {
+        "event": "Measles Detected (Wastewater)",
+        "headline": "Measles virus detected in wastewater sample on 2026-09-28",
+        "detection": "Positive",
+        "sampling_date": "2026-09-28",
+        "count": 1,
+        "source": "CDC NWSS Wastewater",
+        "url": "https://data.cdc.gov/resource/akvg-8vrb.json?record_id=e193c7a11389a4b44b67a64dd5122c4d",
+        "urls": [
+          "https://data.cdc.gov/resource/akvg-8vrb.json?record_id=e193c7a11389a4b44b67a64dd5122c4d"
+        ]
+      }
+    ]
   },
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 2,
+      "precip_in_24h": 0.26,
+      "precip_probability_pct": 65,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 75.0,
-      "low_temp_f": 50.0,
-      "high_apparent_temp_f": 75.0,
-      "low_apparent_temp_f": 50.0,
-      "max_wind_mph": 4.6,
-      "max_wind_gust_mph": 6.9,
-      "thunder_probability_pct": 22,
+      "high_temp_f": 79.0,
+      "low_temp_f": 56.0,
+      "high_apparent_temp_f": 79.0,
+      "low_apparent_temp_f": 56.0,
+      "max_wind_mph": 9.2,
+      "max_wind_gust_mph": 16.1,
+      "thunder_probability_pct": 29,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
-        "thunderstorms",
-        "moderate rain showers"
+        "moderate rain showers",
+        "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 36,
+      "us_aqi": 40,
       "category": "Good",
-      "aqi_24h_max": 39,
+      "aqi_24h_max": 43,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.5,
-      "pm10": 4.5,
-      "ozone": 38.0,
-      "nitrogen_dioxide": 10.8,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 9.1,
+      "pm10": 9.1,
+      "ozone": 43.0,
+      "nitrogen_dioxide": 11.1,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

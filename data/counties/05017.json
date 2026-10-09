@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "05017",
   "name": "Chicot County",
   "state": "AR",
@@ -8,7 +8,23 @@
     "lon": -91.297158
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Tropical Cyclone Local Statement",
+        "headline": "Tropical Cyclone Local Statement issued October 9 at 4:19AM CDT by NWS Jackson MS",
+        "severity": "Moderate",
+        "urgency": "Expected",
+        "effective": "2026-10-08T22:20:00-05:00",
+        "expires": "2026-10-09T12:30:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9ccb2391dfb0302aafd1b25f53c808b4b9c3e97.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9ccb2391dfb0302aafd1b25f53c808b4b9c3e97.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ed3ff8fed606223b3f1e34de0a56f1284dee8418.001.1"
+        ],
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,20 +38,20 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 87,
+      "precip_probability_pct": 54,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 91.0,
       "low_temp_f": 63.0,
-      "high_apparent_temp_f": 89.0,
+      "high_apparent_temp_f": 90.0,
       "low_apparent_temp_f": 63.0,
-      "max_wind_mph": 5.8,
-      "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": 13,
+      "max_wind_mph": 13.8,
+      "max_wind_gust_mph": 20.7,
+      "thunder_probability_pct": 2,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
@@ -45,18 +61,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 46,
+      "us_aqi": 34,
       "category": "Good",
-      "aqi_24h_max": 78,
+      "aqi_24h_max": 89,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 9.6,
-      "pm10": 9.6,
-      "ozone": 60.0,
-      "nitrogen_dioxide": 7.1,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 5.6,
+      "pm10": 5.7,
+      "ozone": 56.0,
+      "nitrogen_dioxide": 7.9,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }

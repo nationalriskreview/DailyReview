@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.7",
+  "schema_version": "1.8",
   "fips": "12081",
   "name": "Manatee County",
   "state": "FL",
@@ -8,7 +8,22 @@
     "lon": -82.393144
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 8 at 10:35PM EDT until October 10 at 12:00AM EDT by NWS Tampa Bay Ruskin FL",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-08T22:35:00-04:00",
+        "expires": "2026-10-09T10:45:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e069e47a26d00bd0e1e25f3262a3d8477cd7cee0.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e069e47a26d00bd0e1e25f3262a3d8477cd7cee0.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,20 +37,20 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.86,
-      "precip_probability_pct": 90,
+      "precip_in_24h": 0.24,
+      "precip_probability_pct": 48,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 83.0,
+      "high_temp_f": 90.0,
       "low_temp_f": 74.0,
-      "high_apparent_temp_f": 95.0,
+      "high_apparent_temp_f": 106.0,
       "low_apparent_temp_f": 74.0,
-      "max_wind_mph": 6.9,
-      "max_wind_gust_mph": 10.4,
-      "thunder_probability_pct": 54,
+      "max_wind_mph": 16.1,
+      "max_wind_gust_mph": 25.3,
+      "thunder_probability_pct": 48,
       "lightning_activity_level": null,
       "weather": [
         "moderate rain showers",
@@ -45,18 +60,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 15,
+      "us_aqi": 17,
       "category": "Good",
-      "aqi_24h_max": 22,
+      "aqi_24h_max": 33,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.1,
-      "pm10": 2.5,
-      "ozone": 19.0,
-      "nitrogen_dioxide": 9.1,
-      "observed_at": "2026-10-08T07:00",
+      "pm2_5": 4.6,
+      "pm10": 4.9,
+      "ozone": 27.0,
+      "nitrogen_dioxide": 5.1,
+      "observed_at": "2026-10-09T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-08",
-  "generated_at": "2026-10-08T07:38:38.000574+00:00"
+  "date": "2026-10-09",
+  "generated_at": "2026-10-09T10:50:06.056573+00:00"
 }
