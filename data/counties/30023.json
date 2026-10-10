@@ -10,16 +10,30 @@
   "alerts": {
     "weather": [
       {
-        "event": "Winter Storm Watch",
-        "headline": "Winter Storm Watch issued October 8 at 1:30PM MDT until October 11 at 6:00PM MDT by NWS Missoula MT",
+        "event": "Winter Storm Warning",
+        "headline": "Winter Storm Warning issued October 9 at 11:35AM MDT until October 12 at 6:00AM MDT by NWS Missoula MT",
         "severity": "Severe",
-        "urgency": "Future",
-        "effective": "2026-10-08T13:30:00-06:00",
-        "expires": "2026-10-08T21:30:00-06:00",
+        "urgency": "Expected",
+        "effective": "2026-10-09T11:35:00-06:00",
+        "expires": "2026-10-10T11:45:00-06:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f33f89a4f54b54c6dcc66904cfc7c2f0043db119.002.1",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24eeb7092633989c2672af077eeac3ee1998b664.001.2",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f33f89a4f54b54c6dcc66904cfc7c2f0043db119.002.1"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24eeb7092633989c2672af077eeac3ee1998b664.001.2"
+        ],
+        "count": 1
+      },
+      {
+        "event": "Winter Storm Watch",
+        "headline": "The Winter Storm Watch has been replaced. Please see the latest information from NWS Missoula MT on this developing situation.",
+        "severity": "Severe",
+        "urgency": "Past",
+        "effective": "2026-10-09T11:35:00-06:00",
+        "expires": "2026-10-09T11:51:04-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24eeb7092633989c2672af077eeac3ee1998b664.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24eeb7092633989c2672af077eeac3ee1998b664.001.1"
         ],
         "count": 1
       }
@@ -89,6 +103,25 @@
         "threat_level": "Vicinity"
       },
       {
+        "title": "Black Bear",
+        "incident_name": "Black Bear",
+        "id": "2026-MTBRF-000282",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-08-02T00:03:00+00:00",
+        "lat": 46.168,
+        "lon": -113.8895,
+        "acreage": 2126,
+        "containment_pct": 80,
+        "cause": "Natural",
+        "state": "MT",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBRF-000282",
+        "source": "NIFC WFIGS",
+        "url": "https://irwin.doi.gov/observer/incidents/2026-MTBRF-000282",
+        "distance_miles": 36.2,
+        "threat_level": "Vicinity"
+      },
+      {
         "title": "Nature Grove",
         "incident_name": "Nature Grove",
         "id": "2026-MTBRF-000340",
@@ -114,20 +147,20 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 5,
+  "alert_count": 7,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 99,
-      "snow_in_24h": 0.0,
+      "precip_in_24h": 0.34,
+      "precip_probability_pct": 92,
+      "snow_in_24h": 1.97,
       "ice_in_24h": 0.0,
-      "high_temp_f": 60.0,
-      "low_temp_f": 44.0,
-      "high_apparent_temp_f": 60.0,
-      "low_apparent_temp_f": 35.0,
-      "max_wind_mph": 27.6,
-      "max_wind_gust_mph": 46.0,
-      "thunder_probability_pct": 6,
+      "high_temp_f": 45.0,
+      "low_temp_f": 28.0,
+      "high_apparent_temp_f": 38.0,
+      "low_apparent_temp_f": 14.0,
+      "max_wind_mph": 21.9,
+      "max_wind_gust_mph": 33.4,
+      "thunder_probability_pct": 7,
       "lightning_activity_level": null,
       "weather": [
         "light snow",
@@ -138,18 +171,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 52,
-      "category": "Moderate",
-      "aqi_24h_max": 55,
+      "us_aqi": 36,
+      "category": "Good",
+      "aqi_24h_max": 60,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 11.8,
-      "pm10": 12.4,
-      "ozone": 84.0,
-      "nitrogen_dioxide": 2.7,
-      "observed_at": "2026-10-09T10:00",
+      "pm2_5": 4.9,
+      "pm10": 5.4,
+      "ozone": 56.0,
+      "nitrogen_dioxide": 3.2,
+      "observed_at": "2026-10-10T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-09",
-  "generated_at": "2026-10-09T10:50:06.056573+00:00"
+  "date": "2026-10-10",
+  "generated_at": "2026-10-10T10:07:51.786319+00:00"
 }

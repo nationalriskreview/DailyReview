@@ -8,7 +8,22 @@
     "lon": -80.656402
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Coastal Flood Warning",
+        "headline": "Coastal Flood Warning issued October 10 at 2:26AM EDT until October 10 at 11:00AM EDT by NWS Charleston SC",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-10T02:26:00-04:00",
+        "expires": "2026-10-10T10:30:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.16c4b911c132bbac56a9e7e7005f2052cac22b4e.001.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.16c4b911c132bbac56a9e7e7005f2052cac22b4e.001.2"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,42 +37,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 9,
+      "precip_in_24h": 2.11,
+      "precip_probability_pct": 98,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 75.0,
-      "low_temp_f": 63.0,
-      "high_apparent_temp_f": 75.0,
-      "low_apparent_temp_f": 63.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 23.0,
+      "high_temp_f": 79.0,
+      "low_temp_f": 69.0,
+      "high_apparent_temp_f": 79.0,
+      "low_apparent_temp_f": 69.0,
+      "max_wind_mph": 11.5,
+      "max_wind_gust_mph": 28.8,
       "thunder_probability_pct": 54,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
         "moderate rain showers",
-        "thunderstorms"
+        "thunderstorms",
+        "heavy rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 56,
+      "us_aqi": 60,
       "category": "Moderate",
-      "aqi_24h_max": 65,
+      "aqi_24h_max": 66,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 12.7,
-      "pm10": 14.7,
-      "ozone": 65.0,
-      "nitrogen_dioxide": 4.7,
-      "observed_at": "2026-10-09T10:00",
+      "pm2_5": 3.2,
+      "pm10": 4.2,
+      "ozone": 75.0,
+      "nitrogen_dioxide": 1.2,
+      "observed_at": "2026-10-10T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-09",
-  "generated_at": "2026-10-09T10:50:06.056573+00:00"
+  "date": "2026-10-10",
+  "generated_at": "2026-10-10T10:07:51.786319+00:00"
 }

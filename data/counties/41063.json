@@ -8,7 +8,22 @@
     "lon": -117.18558
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued October 9 at 8:44PM PDT until October 10 at 10:00AM PDT by NWS Pendleton OR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-09T20:44:00-07:00",
+        "expires": "2026-10-10T10:00:00-07:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b69003bd2532973fb3051dab1066bdf2db3d88ad.002.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b69003bd2532973fb3051dab1066bdf2db3d88ad.002.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -42,40 +57,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 29,
+      "precip_probability_pct": 25,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 73.0,
-      "low_temp_f": 46.0,
-      "high_apparent_temp_f": 73.0,
-      "low_apparent_temp_f": 46.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 26.5,
-      "thunder_probability_pct": 3,
+      "high_temp_f": 59.0,
+      "low_temp_f": 33.0,
+      "high_apparent_temp_f": 59.0,
+      "low_apparent_temp_f": 29.0,
+      "max_wind_mph": 12.7,
+      "max_wind_gust_mph": 28.8,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers"
+        "light rain showers",
+        "light snow showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 85,
-      "category": "Moderate",
-      "aqi_24h_max": 117,
-      "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-      "pm2_5": 7.9,
-      "pm10": 8.4,
-      "ozone": 46.0,
-      "nitrogen_dioxide": 6.4,
-      "observed_at": "2026-10-09T10:00",
+      "us_aqi": 29,
+      "category": "Good",
+      "aqi_24h_max": 50,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 1.3,
+      "pm10": 1.7,
+      "ozone": 64.0,
+      "nitrogen_dioxide": 1.3,
+      "observed_at": "2026-10-10T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-09",
-  "generated_at": "2026-10-09T10:50:06.056573+00:00"
+  "date": "2026-10-10",
+  "generated_at": "2026-10-10T10:07:51.786319+00:00"
 }

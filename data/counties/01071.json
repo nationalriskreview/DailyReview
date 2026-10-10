@@ -8,7 +8,22 @@
     "lon": -85.980056
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued October 10 at 3:53AM CDT until October 10 at 7:00PM CDT by NWS Huntsville AL",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-10T03:53:00-05:00",
+        "expires": "2026-10-10T19:00:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ab83b3e281c794bb399715d5e5d58aa3c612b15e.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ab83b3e281c794bb399715d5e5d58aa3c612b15e.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,42 +37,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.01,
-      "precip_probability_pct": 3,
+      "precip_in_24h": 1.75,
+      "precip_probability_pct": 99,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 80.0,
+      "high_temp_f": 70.0,
       "low_temp_f": 59.0,
-      "high_apparent_temp_f": 80.0,
+      "high_apparent_temp_f": 70.0,
       "low_apparent_temp_f": 59.0,
-      "max_wind_mph": 10.4,
-      "max_wind_gust_mph": 27.6,
-      "thunder_probability_pct": 25,
+      "max_wind_mph": 24.2,
+      "max_wind_gust_mph": 42.6,
+      "thunder_probability_pct": 24,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
-        "moderate rain showers",
-        "thunderstorms"
+        "heavy rain showers",
+        "thunderstorms",
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 34,
+      "us_aqi": 39,
       "category": "Good",
-      "aqi_24h_max": 64,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 3.7,
-      "pm10": 3.7,
-      "ozone": 71.0,
-      "nitrogen_dioxide": 4.4,
-      "observed_at": "2026-10-09T10:00",
+      "aqi_24h_max": 44,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 5.2,
+      "pm10": 5.3,
+      "ozone": 90.0,
+      "nitrogen_dioxide": 2.0,
+      "observed_at": "2026-10-10T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-09",
-  "generated_at": "2026-10-09T10:50:06.056573+00:00"
+  "date": "2026-10-10",
+  "generated_at": "2026-10-10T10:07:51.786319+00:00"
 }

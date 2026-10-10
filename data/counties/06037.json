@@ -8,27 +8,43 @@
     "lon": -118.261862
   },
   "alerts": {
-    "weather": [],
-    "protest": [],
-    "utility_outage": [],
-    "transit_disruption": [],
-    "service_provider_outage": [],
-    "hazmat_incident": [],
-    "road_closure": [
+    "weather": [
       {
-        "title": "Brush fire prompts hard closure on 5 Freeway in Gorman",
-        "url": "https://www.nbclosangeles.com/news/local/gorman-brush-fire/3953391/",
-        "domain": "nbclosangeles.com",
-        "seendate": "20261009014500",
+        "event": "Coastal Flood Warning",
+        "headline": "Coastal Flood Warning issued October 10 at 1:57AM PDT until October 11 at 3:00PM PDT by NWS Los Angeles/Oxnard CA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-10T01:57:00-07:00",
+        "expires": "2026-10-10T16:00:00-07:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9db7aae8eba81971e399b2019ff631e4075346aa.002.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9db7aae8eba81971e399b2019ff631e4075346aa.002.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9db7aae8eba81971e399b2019ff631e4075346aa.001.1"
+        ],
+        "count": 2
+      }
+    ],
+    "protest": [],
+    "utility_outage": [
+      {
+        "title": "Utility Pole Fire Causes Power Outages in Pomona",
+        "url": "https://mynewsla.com/crime/2026/10/09/utility-pole-fire-causes-power-outages-in-pomona/",
+        "domain": "mynewsla.com",
+        "seendate": "20261010084500",
         "is_new": true,
         "sources": [
           {
-            "url": "https://www.nbclosangeles.com/news/local/gorman-brush-fire/3953391/",
-            "domain": "nbclosangeles.com"
+            "url": "https://mynewsla.com/crime/2026/10/09/utility-pole-fire-causes-power-outages-in-pomona/",
+            "domain": "mynewsla.com"
           }
         ]
       }
     ],
+    "transit_disruption": [],
+    "service_provider_outage": [],
+    "hazmat_incident": [],
+    "road_closure": [],
     "wildfires": [
       {
         "title": "BOUQUET",
@@ -59,7 +75,7 @@
         "lat": 34.7546,
         "lon": -118.7956,
         "acreage": 150,
-        "containment_pct": 13,
+        "containment_pct": 56,
         "cause": "Undetermined",
         "state": "CA",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-CALAC-363896",
@@ -75,24 +91,24 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 3,
+  "alert_count": 4,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
+      "precip_in_24h": 0.03,
       "precip_probability_pct": 24,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 94.0,
-      "low_temp_f": 62.0,
-      "high_apparent_temp_f": 90.0,
-      "low_apparent_temp_f": 62.0,
-      "max_wind_mph": 18.4,
-      "max_wind_gust_mph": 27.6,
-      "thunder_probability_pct": 7,
+      "high_temp_f": 84.0,
+      "low_temp_f": 61.0,
+      "high_apparent_temp_f": 86.0,
+      "low_apparent_temp_f": 61.0,
+      "max_wind_mph": 17.3,
+      "max_wind_gust_mph": 25.3,
+      "thunder_probability_pct": 3,
       "lightning_activity_level": null,
       "weather": [
-        "fog",
-        "light rain showers"
+        "light rain showers",
+        "fog"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
@@ -100,16 +116,16 @@
     "air_quality": {
       "us_aqi": 65,
       "category": "Moderate",
-      "aqi_24h_max": 69,
+      "aqi_24h_max": 76,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 18.9,
-      "pm10": 21.0,
-      "ozone": 10.0,
-      "nitrogen_dioxide": 54.8,
-      "observed_at": "2026-10-09T10:00",
+      "pm2_5": 22.4,
+      "pm10": 26.2,
+      "ozone": 9.0,
+      "nitrogen_dioxide": 62.4,
+      "observed_at": "2026-10-10T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-09",
-  "generated_at": "2026-10-09T10:50:06.056573+00:00"
+  "date": "2026-10-10",
+  "generated_at": "2026-10-10T10:07:51.786319+00:00"
 }

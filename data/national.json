@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-09T10:50:06.056573+00:00",
-  "date": "2026-10-09",
+  "generated_at": "2026-10-10T10:07:51.786319+00:00",
+  "date": "2026-10-10",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 467
+      "counties_with_alerts": 400
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 24,
+      "counties_over_threshold": 196,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,43 +30,43 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 47,
+      "counties_with_matches": 78,
       "items_pre_llm": {
-        "protest": 135,
-        "utility_outage": 6,
+        "protest": 78,
+        "utility_outage": 77,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
+        "hazmat_incident": 1,
         "road_closure": 3
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 24,
+      "counties_with_matches": 49,
       "items_post_llm": {
-        "protest": 76,
-        "utility_outage": 0,
+        "protest": 26,
+        "utility_outage": 43,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 1,
+        "hazmat_incident": 0,
         "road_closure": 2
       },
-      "unique_articles": 65,
-      "calls_used": 65,
+      "unique_articles": 62,
+      "calls_used": 62,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 118
+      "counties_with_alerts": 117
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 1,
-      "counties_with_alerts": 1,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -114,7 +114,7 @@
           "id": "cta-rail",
           "name": "CTA 'L'",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "metra",
@@ -150,8 +150,8 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 1,
-      "counties_with_detections": 1
+      "positive_samples": 14,
+      "counties_with_detections": 10
     },
     "nndss_notifiable": {
       "status": "ok",
@@ -212,13 +212,13 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "anthropic",
@@ -236,7 +236,7 @@
           "key": "slack",
           "name": "Slack",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "dropbox",
@@ -308,7 +308,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "r3wn",
@@ -624,23 +624,23 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Partial System Outage",
-      "impact": "major",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "title": "Elevated Errors in China Network Colos",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-10-10T04:13:17.000Z",
+      "updated": "2026-10-10T05:48:24.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/cyxclg7nnhjy",
       "source": "provider status page"
     },
     {
-      "provider": "Zoom",
-      "key": "zoom",
-      "title": "Service Degradation Affecting Customer Using Polycom Devices Going Offline",
+      "provider": "OpenAI",
+      "key": "openai",
+      "title": "Delayed Costs data in the Compliance API",
       "impact": "minor",
-      "status": "identified",
-      "started": "2026-09-25T10:45:29.000-07:00",
-      "updated": "2026-10-08T18:34:08.460-07:00",
-      "url": "https://stspg.io/4cpggx38p4g2",
+      "status": "monitoring",
+      "started": "2026-10-09T17:23:18Z",
+      "updated": "2026-10-09T22:03:59Z",
+      "url": "https://status.openai.com",
       "source": "provider status page"
     },
     {
@@ -655,6 +655,17 @@
       "source": "provider status page"
     },
     {
+      "provider": "Slack",
+      "key": "slack",
+      "title": "Slack for iOS closing unexpectedly when opening channels",
+      "impact": "incident",
+      "status": "active",
+      "started": "2026-10-09T08:35:31-07:00",
+      "updated": "2026-10-09T16:58:33-07:00",
+      "url": "https://slack-status.com/2026-10/a0cfb0208a1d2032",
+      "source": "provider status page"
+    },
+    {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
       "title": "Partially Degraded Service",
@@ -664,14 +675,6 @@
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
-    },
-    {
-      "provider": "x9tz",
-      "impact": "minor",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
     }
   ]
 }

@@ -11,36 +11,51 @@
     "weather": [
       {
         "event": "Tropical Cyclone Local Statement",
-        "headline": "Tropical Cyclone Local Statement issued October 9 at 4:58AM EDT by NWS Peachtree City GA",
+        "headline": "Tropical Cyclone Local Statement issued October 10 at 5:23AM EDT by NWS Peachtree City GA",
         "severity": "Moderate",
         "urgency": "Expected",
-        "effective": "2026-10-08T23:34:00-04:00",
-        "expires": "2026-10-09T13:00:00-04:00",
+        "effective": "2026-10-09T11:38:00-04:00",
+        "expires": "2026-10-10T13:30:00-04:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e455ee77bac49fd435d9111a014ab5a3eb63752d.001.1",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fde4054942708b7acede45e3ef36612d6bf43ae4.001.1",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e455ee77bac49fd435d9111a014ab5a3eb63752d.001.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ddd6e44b5464aa396021272f2cb7dada97674688.001.1"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fde4054942708b7acede45e3ef36612d6bf43ae4.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1f6a5a0463422a00f0e4e03f2bdd7aab2660f5f4.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.40209e70ade36ec70e87f9c03b87aa11b6815295.001.1"
         ],
-        "count": 2
+        "count": 3
       },
       {
-        "event": "Tropical Storm Watch",
-        "headline": "Tropical Storm Watch issued October 9 at 4:43AM EDT by NWS Peachtree City GA",
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued October 10 at 2:05AM EDT until October 10 at 8:00AM EDT by NWS Peachtree City GA",
         "severity": "Severe",
-        "urgency": "Future",
-        "effective": "2026-10-09T04:43:00-04:00",
-        "expires": "2026-10-09T12:45:00-04:00",
+        "urgency": "Immediate",
+        "effective": "2026-10-10T02:05:00-04:00",
+        "expires": "2026-10-10T08:00:00-04:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fffe11334f7d691b0d4128e41fa16df1009e351d.011.1",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0879403ad31fe6b9454e4d77d8ef0465f6d75790.001.1",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fffe11334f7d691b0d4128e41fa16df1009e351d.011.1"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0879403ad31fe6b9454e4d77d8ef0465f6d75790.001.1"
         ],
         "count": 1
       }
     ],
     "protest": [],
-    "utility_outage": [],
+    "utility_outage": [
+      {
+        "title": "Power outages in the Chattahoochee Valley",
+        "url": "https://www.wtvm.com/2026/10/10/power-outages-chattahoochee-valley/",
+        "domain": "wtvm.com",
+        "seendate": "20261010054500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.wtvm.com/2026/10/10/power-outages-chattahoochee-valley/",
+            "domain": "wtvm.com"
+          }
+        ]
+      }
+    ],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -52,41 +67,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.25,
-      "precip_probability_pct": 59,
+      "precip_in_24h": 2.23,
+      "precip_probability_pct": 99,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 75.0,
-      "low_temp_f": 64.0,
-      "high_apparent_temp_f": 75.0,
-      "low_apparent_temp_f": 64.0,
-      "max_wind_mph": 21.9,
-      "max_wind_gust_mph": 43.7,
-      "thunder_probability_pct": 6,
+      "high_temp_f": 80.0,
+      "low_temp_f": 62.0,
+      "high_apparent_temp_f": 83.0,
+      "low_apparent_temp_f": 62.0,
+      "max_wind_mph": 24.2,
+      "max_wind_gust_mph": 44.9,
+      "thunder_probability_pct": 37,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "moderate rain showers"
+        "moderate rain showers",
+        "thunderstorms",
+        "heavy rain showers",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 47,
-      "category": "Good",
-      "aqi_24h_max": 67,
+      "us_aqi": 62,
+      "category": "Moderate",
+      "aqi_24h_max": 69,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 20.5,
-      "pm10": 21.7,
-      "ozone": 64.0,
-      "nitrogen_dioxide": 4.6,
-      "observed_at": "2026-10-09T10:00",
+      "pm2_5": 1.1,
+      "pm10": 1.1,
+      "ozone": 73.0,
+      "nitrogen_dioxide": 1.4,
+      "observed_at": "2026-10-10T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-09",
-  "generated_at": "2026-10-09T10:50:06.056573+00:00"
+  "date": "2026-10-10",
+  "generated_at": "2026-10-10T10:07:51.786319+00:00"
 }

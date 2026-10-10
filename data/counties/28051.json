@@ -8,30 +8,34 @@
     "lon": -90.091197
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Tropical Cyclone Local Statement",
-        "headline": "Tropical Cyclone Local Statement issued October 9 at 4:19AM CDT by NWS Jackson MS",
-        "severity": "Moderate",
-        "urgency": "Expected",
-        "effective": "2026-10-08T22:20:00-05:00",
-        "expires": "2026-10-09T12:30:00-05:00",
-        "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9ccb2391dfb0302aafd1b25f53c808b4b9c3e97.001.1",
-        "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9ccb2391dfb0302aafd1b25f53c808b4b9c3e97.001.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ed3ff8fed606223b3f1e34de0a56f1284dee8418.001.1"
-        ],
-        "count": 2
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Webster - Bailey Road",
+        "incident_name": "Webster - Bailey Road",
+        "id": "2026-MSMSS-018957",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-10-09T13:00:00+00:00",
+        "lat": 33.5283,
+        "lon": -89.3811,
+        "acreage": 147,
+        "containment_pct": 99,
+        "cause": "Human",
+        "state": "MS",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-MSMSS-018957",
+        "source": "NIFC WFIGS",
+        "url": "https://irwin.doi.gov/observer/incidents/2026-MSMSS-018957",
+        "distance_miles": 49.5,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
@@ -41,39 +45,38 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.01,
-      "precip_probability_pct": 4,
+      "precip_in_24h": 0.13,
+      "precip_probability_pct": 29,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 89.0,
-      "low_temp_f": 60.0,
-      "high_apparent_temp_f": 88.0,
-      "low_apparent_temp_f": 60.0,
-      "max_wind_mph": 12.7,
-      "max_wind_gust_mph": 23.0,
-      "thunder_probability_pct": 1,
+      "high_temp_f": 75.0,
+      "low_temp_f": 62.0,
+      "high_apparent_temp_f": 75.0,
+      "low_apparent_temp_f": 62.0,
+      "max_wind_mph": 20.7,
+      "max_wind_gust_mph": 40.3,
+      "thunder_probability_pct": 6,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "moderate rain showers",
-        "heavy rain showers"
+        "moderate rain",
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 45,
-      "category": "Good",
-      "aqi_24h_max": 79,
+      "us_aqi": 53,
+      "category": "Moderate",
+      "aqi_24h_max": 84,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 4.3,
-      "pm10": 4.3,
-      "ozone": 79.0,
-      "nitrogen_dioxide": 3.1,
-      "observed_at": "2026-10-09T10:00",
+      "pm2_5": 4.0,
+      "pm10": 4.2,
+      "ozone": 82.0,
+      "nitrogen_dioxide": 2.0,
+      "observed_at": "2026-10-10T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-09",
-  "generated_at": "2026-10-09T10:50:06.056573+00:00"
+  "date": "2026-10-10",
+  "generated_at": "2026-10-10T10:07:51.786319+00:00"
 }

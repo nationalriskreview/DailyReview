@@ -10,16 +10,30 @@
   "alerts": {
     "weather": [
       {
-        "event": "Winter Storm Watch",
-        "headline": "Winter Storm Watch issued October 8 at 1:30PM MDT until October 11 at 6:00PM MDT by NWS Missoula MT",
+        "event": "Winter Storm Warning",
+        "headline": "Winter Storm Warning issued October 9 at 11:35AM MDT until October 12 at 6:00AM MDT by NWS Missoula MT",
         "severity": "Severe",
-        "urgency": "Future",
-        "effective": "2026-10-08T13:30:00-06:00",
-        "expires": "2026-10-08T21:30:00-06:00",
+        "urgency": "Expected",
+        "effective": "2026-10-09T11:35:00-06:00",
+        "expires": "2026-10-10T11:45:00-06:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f33f89a4f54b54c6dcc66904cfc7c2f0043db119.002.1",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24eeb7092633989c2672af077eeac3ee1998b664.001.2",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f33f89a4f54b54c6dcc66904cfc7c2f0043db119.002.1"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24eeb7092633989c2672af077eeac3ee1998b664.001.2"
+        ],
+        "count": 1
+      },
+      {
+        "event": "Winter Storm Watch",
+        "headline": "The Winter Storm Watch has been replaced. Please see the latest information from NWS Missoula MT on this developing situation.",
+        "severity": "Severe",
+        "urgency": "Past",
+        "effective": "2026-10-09T11:35:00-06:00",
+        "expires": "2026-10-09T11:51:04-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24eeb7092633989c2672af077eeac3ee1998b664.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.24eeb7092633989c2672af077eeac3ee1998b664.001.1"
         ],
         "count": 1
       }
@@ -31,6 +45,25 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [
+      {
+        "title": "North Fork Lost Horse",
+        "incident_name": "North Fork Lost Horse",
+        "id": "2026-MTBRF-000255",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-07-25T00:49:00+00:00",
+        "lat": 46.162,
+        "lon": -114.337,
+        "acreage": 118,
+        "containment_pct": 70,
+        "cause": "Natural",
+        "state": "MT",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBRF-000255",
+        "source": "NIFC WFIGS",
+        "url": "https://irwin.doi.gov/observer/incidents/2026-MTBRF-000255",
+        "distance_miles": 46.3,
+        "threat_level": "Vicinity"
+      },
       {
         "title": "Moose",
         "incident_name": "Moose",
@@ -48,6 +81,25 @@
         "source": "NIFC WFIGS",
         "url": "https://irwin.doi.gov/observer/incidents/2026-MTBDF-266293",
         "distance_miles": 25.7,
+        "threat_level": "Vicinity"
+      },
+      {
+        "title": "Black Bear",
+        "incident_name": "Black Bear",
+        "id": "2026-MTBRF-000282",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-08-02T00:03:00+00:00",
+        "lat": 46.168,
+        "lon": -113.8895,
+        "acreage": 2126,
+        "containment_pct": 80,
+        "cause": "Natural",
+        "state": "MT",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-MTBRF-000282",
+        "source": "NIFC WFIGS",
+        "url": "https://irwin.doi.gov/observer/incidents/2026-MTBRF-000282",
+        "distance_miles": 27.1,
         "threat_level": "Vicinity"
       },
       {
@@ -76,25 +128,25 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 3,
+  "alert_count": 6,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 87,
-      "snow_in_24h": 0.0,
+      "precip_in_24h": 0.34,
+      "precip_probability_pct": 93,
+      "snow_in_24h": 0.63,
       "ice_in_24h": 0.0,
-      "high_temp_f": 65.0,
-      "low_temp_f": 45.0,
-      "high_apparent_temp_f": 65.0,
-      "low_apparent_temp_f": 41.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 35.7,
-      "thunder_probability_pct": 3,
+      "high_temp_f": 50.0,
+      "low_temp_f": 33.0,
+      "high_apparent_temp_f": 47.0,
+      "low_apparent_temp_f": 21.0,
+      "max_wind_mph": 19.6,
+      "max_wind_gust_mph": 29.9,
+      "thunder_probability_pct": 4,
       "lightning_activity_level": null,
       "weather": [
+        "fog",
         "light rain",
         "light snow",
-        "blowing snow",
         "moderate snow"
       ],
       "window": "next 24h",
@@ -105,14 +157,14 @@
       "category": "Good",
       "aqi_24h_max": 52,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 11.4,
-      "pm10": 12.0,
-      "ozone": 79.0,
-      "nitrogen_dioxide": 2.3,
-      "observed_at": "2026-10-09T10:00",
+      "pm2_5": 4.4,
+      "pm10": 5.4,
+      "ozone": 65.0,
+      "nitrogen_dioxide": 2.5,
+      "observed_at": "2026-10-10T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-09",
-  "generated_at": "2026-10-09T10:50:06.056573+00:00"
+  "date": "2026-10-10",
+  "generated_at": "2026-10-10T10:07:51.786319+00:00"
 }
