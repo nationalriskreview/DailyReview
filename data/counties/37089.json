@@ -10,11 +10,33 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~2.5\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=35.3364&lon=-82.4796"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 11 at 1:54AM EDT until October 12 at 10:00AM EDT by NWS Greenville-Spartanburg SC",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-11T01:54:00-04:00",
+        "expires": "2026-10-12T10:00:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c0e58d16ba8d16bcff7882a7a9665d8ac1eba892.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c0e58d16ba8d16bcff7882a7a9665d8ac1eba892.001.1"
+        ],
+        "count": 1
+      },
+      {
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued October 10 at 11:16PM EDT until October 11 at 5:15AM EDT by NWS Greenville-Spartanburg SC",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-10-10T22:08:00-04:00",
+        "expires": "2026-10-11T05:15:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.009c01effd1d786f098ecd059f49563a996da5c0.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.009c01effd1d786f098ecd059f49563a996da5c0.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dc24c3462e0993b7c780b835183c9211a9c22d49.001.1"
+        ],
+        "count": 2
       }
     ],
     "protest": [],
@@ -30,44 +52,44 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 2.53,
-      "precip_probability_pct": 100,
+      "precip_in_24h": 1.37,
+      "precip_probability_pct": 99,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 62.0,
-      "low_temp_f": 53.0,
-      "high_apparent_temp_f": 62.0,
-      "low_apparent_temp_f": 53.0,
-      "max_wind_mph": 20.7,
-      "max_wind_gust_mph": 39.1,
-      "thunder_probability_pct": 50,
+      "high_temp_f": 68.0,
+      "low_temp_f": 58.0,
+      "high_apparent_temp_f": 68.0,
+      "low_apparent_temp_f": 58.0,
+      "max_wind_mph": 13.8,
+      "max_wind_gust_mph": 24.2,
+      "thunder_probability_pct": 24,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
+        "heavy rain showers",
+        "thunderstorms",
         "fog",
         "moderate rain showers",
-        "thunderstorms",
-        "heavy rain showers"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 34,
+      "us_aqi": 32,
       "category": "Good",
-      "aqi_24h_max": 42,
+      "aqi_24h_max": 44,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 5.2,
-      "pm10": 5.3,
-      "ozone": 72.0,
-      "nitrogen_dioxide": 3.5,
-      "observed_at": "2026-10-10T09:00",
+      "pm2_5": 0.2,
+      "pm10": 0.2,
+      "ozone": 48.0,
+      "nitrogen_dioxide": 2.1,
+      "observed_at": "2026-10-11T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-10",
-  "generated_at": "2026-10-10T10:07:51.786319+00:00"
+  "date": "2026-10-11",
+  "generated_at": "2026-10-11T07:24:09.638400+00:00"
 }

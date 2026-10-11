@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-10T10:07:51.786319+00:00",
-  "date": "2026-10-10",
+  "generated_at": "2026-10-11T07:24:09.638400+00:00",
+  "date": "2026-10-11",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 400
+      "counties_with_alerts": 128
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 196,
+      "counties_over_threshold": 304,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 78,
+      "counties_with_matches": 48,
       "items_pre_llm": {
-        "protest": 78,
-        "utility_outage": 77,
+        "protest": 13,
+        "utility_outage": 93,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 1,
+        "hazmat_incident": 2,
         "road_closure": 3
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 49,
+      "counties_with_matches": 12,
       "items_post_llm": {
-        "protest": 26,
-        "utility_outage": 43,
+        "protest": 4,
+        "utility_outage": 8,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 2
+        "road_closure": 1
       },
-      "unique_articles": 62,
-      "calls_used": 62,
+      "unique_articles": 31,
+      "calls_used": 31,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 117
+      "counties_with_alerts": 128
     },
     "transit": {
       "status": "ok",
@@ -138,7 +138,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 30
+      "counties_with_alerts": 60
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 5,
+      "active_incidents": 4,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -236,7 +236,7 @@
           "key": "slack",
           "name": "Slack",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "dropbox",
@@ -624,22 +624,22 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Elevated Errors in China Network Colos",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-10-10T04:13:17.000Z",
-      "updated": "2026-10-10T05:48:24.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/cyxclg7nnhjy",
+      "title": "Partial System Outage",
+      "impact": "major",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
       "provider": "OpenAI",
       "key": "openai",
-      "title": "Delayed Costs data in the Compliance API",
+      "title": "Partial System Degradation",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-10-09T17:23:18Z",
-      "updated": "2026-10-09T22:03:59Z",
+      "status": "active",
+      "started": "",
+      "updated": "",
       "url": "https://status.openai.com",
       "source": "provider status page"
     },
@@ -652,17 +652,6 @@
       "started": "",
       "updated": "",
       "url": "https://status.anthropic.com",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Slack",
-      "key": "slack",
-      "title": "Slack for iOS closing unexpectedly when opening channels",
-      "impact": "incident",
-      "status": "active",
-      "started": "2026-10-09T08:35:31-07:00",
-      "updated": "2026-10-09T16:58:33-07:00",
-      "url": "https://slack-status.com/2026-10/a0cfb0208a1d2032",
       "source": "provider status page"
     },
     {

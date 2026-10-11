@@ -8,71 +8,9 @@
     "lon": -85.534395
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Tropical Cyclone Local Statement",
-        "headline": "Tropical Cyclone Local Statement issued October 10 at 5:09AM EDT by NWS Tallahassee FL",
-        "severity": "Moderate",
-        "urgency": "Expected",
-        "effective": "2026-10-09T23:22:00-04:00",
-        "expires": "2026-10-10T13:15:00-04:00",
-        "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9da25030340d4c54af94db099a5ca14e49b1714c.001.1",
-        "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9da25030340d4c54af94db099a5ca14e49b1714c.001.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ecb420df53d217fa95fe5ae3ee90bc11086d3bd7.001.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.093960bd283bb2cb8bf9582ba3e17756f123527a.001.1"
-        ],
-        "count": 3
-      },
-      {
-        "event": "High Surf Warning",
-        "headline": "High Surf Warning issued October 10 at 4:52AM EDT until October 11 at 11:00AM EDT by NWS Tallahassee FL",
-        "severity": "Moderate",
-        "urgency": "Expected",
-        "effective": "2026-10-10T04:52:00-04:00",
-        "expires": "2026-10-10T13:00:00-04:00",
-        "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e75476cc80d04a4d3cff50c138c2c7a4eb0d85af.001.2",
-        "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e75476cc80d04a4d3cff50c138c2c7a4eb0d85af.001.2"
-        ],
-        "count": 1
-      }
-    ],
+    "weather": [],
     "protest": [],
-    "utility_outage": [
-      {
-        "title": "FPL, CHELCO report multiple power outages across Northwest FL",
-        "url": "https://www.wjhg.com/2026/10/09/power-outages-plague-panhandle-taking-look-numbers/",
-        "domain": "wjhg.com",
-        "seendate": "20261010080000",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.wjhg.com/2026/10/09/power-outages-plague-panhandle-taking-look-numbers/",
-            "domain": "wjhg.com"
-          },
-          {
-            "url": "https://www.wjhg.com/2026/10/09/fpl-chelco-report-multiple-power-outages-across-northwest-fl/",
-            "domain": "wjhg.com"
-          }
-        ]
-      },
-      {
-        "title": "Florida power outage updates amid Hurricane Isaias: When will power be back in Escambia, Walton counties?",
-        "url": "https://www.hindustantimes.com/world-news/us-news/florida-power-outage-updates-amid-hurricane-isaias-when-will-power-be-back-in-escambia-walton-counties-101791598957443.html",
-        "domain": "hindustantimes.com",
-        "seendate": "20261010051500",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.hindustantimes.com/world-news/us-news/florida-power-outage-updates-amid-hurricane-isaias-when-will-power-be-back-in-escambia-walton-counties-101791598957443.html",
-            "domain": "hindustantimes.com"
-          }
-        ]
-      }
-    ],
+    "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -81,23 +19,38 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [],
+    "fema": [
+      {
+        "disaster_number": "3655",
+        "declaration_type": "EM",
+        "declaration_title": "HURRICANE ISAIAS",
+        "incident_type": "Tropical Storm",
+        "declared_at": "2026-10-09T00:00:00.000Z",
+        "is_new_today": false,
+        "incident_begin": "2026-10-06T00:00:00.000Z",
+        "incident_end": null,
+        "designated_area": "Bay (County)",
+        "fema_declaration_string": "EM-3655-FL",
+        "source": "https://www.fema.gov/disaster/3655",
+        "url": "https://www.fema.gov/disaster/3655"
+      }
+    ],
     "disease": []
   },
-  "alert_count": 4,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.21,
-      "precip_probability_pct": 26,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 4,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 79.0,
-      "low_temp_f": 71.0,
-      "high_apparent_temp_f": 79.0,
-      "low_apparent_temp_f": 71.0,
-      "max_wind_mph": 33.4,
-      "max_wind_gust_mph": 59.8,
-      "thunder_probability_pct": 14,
+      "high_temp_f": 83.0,
+      "low_temp_f": 64.0,
+      "high_apparent_temp_f": 87.0,
+      "low_apparent_temp_f": 64.0,
+      "max_wind_mph": 9.2,
+      "max_wind_gust_mph": 15.0,
+      "thunder_probability_pct": 2,
       "lightning_activity_level": null,
       "weather": [
         "moderate rain showers"
@@ -106,18 +59,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 31,
+      "us_aqi": 40,
       "category": "Good",
-      "aqi_24h_max": 41,
+      "aqi_24h_max": 48,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 5.3,
-      "pm10": 8.5,
-      "ozone": 73.0,
-      "nitrogen_dioxide": 0.7,
-      "observed_at": "2026-10-10T09:00",
+      "pm2_5": 5.0,
+      "pm10": 5.6,
+      "ozone": 77.0,
+      "nitrogen_dioxide": 1.6,
+      "observed_at": "2026-10-11T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-10",
-  "generated_at": "2026-10-10T10:07:51.786319+00:00"
+  "date": "2026-10-11",
+  "generated_at": "2026-10-11T07:24:09.638400+00:00"
 }

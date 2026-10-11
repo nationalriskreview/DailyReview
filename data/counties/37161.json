@@ -10,11 +10,19 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~2.4\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=35.4027&lon=-81.9196"
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued October 10 at 10:39PM EDT until October 11 at 4:45AM EDT by NWS Greenville-Spartanburg SC",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-10-10T22:08:00-04:00",
+        "expires": "2026-10-11T04:45:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8303f05b017dd4d702ddbd79510b178c869aa4bd.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8303f05b017dd4d702ddbd79510b178c869aa4bd.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dc24c3462e0993b7c780b835183c9211a9c22d49.001.1"
+        ],
+        "count": 2
       }
     ],
     "protest": [],
@@ -33,24 +41,23 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 2.37,
-      "precip_probability_pct": 99,
+      "precip_in_24h": 2.04,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 66.0,
-      "low_temp_f": 57.0,
-      "high_apparent_temp_f": 66.0,
-      "low_apparent_temp_f": 57.0,
-      "max_wind_mph": 15.0,
-      "max_wind_gust_mph": 29.9,
-      "thunder_probability_pct": 53,
+      "high_temp_f": 71.0,
+      "low_temp_f": 60.0,
+      "high_apparent_temp_f": 71.0,
+      "low_apparent_temp_f": 60.0,
+      "max_wind_mph": 12.7,
+      "max_wind_gust_mph": 21.9,
+      "thunder_probability_pct": 26,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "moderate rain showers",
-        "fog",
+        "heavy rain showers",
         "thunderstorms",
-        "heavy rain showers"
+        "fog",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
@@ -58,16 +65,16 @@
     "air_quality": {
       "us_aqi": 31,
       "category": "Good",
-      "aqi_24h_max": 42,
+      "aqi_24h_max": 41,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.2,
-      "pm10": 4.3,
-      "ozone": 67.0,
-      "nitrogen_dioxide": 3.4,
-      "observed_at": "2026-10-10T09:00",
+      "pm2_5": 0.2,
+      "pm10": 0.2,
+      "ozone": 46.0,
+      "nitrogen_dioxide": 2.3,
+      "observed_at": "2026-10-11T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-10",
-  "generated_at": "2026-10-10T10:07:51.786319+00:00"
+  "date": "2026-10-11",
+  "generated_at": "2026-10-11T07:24:09.638400+00:00"
 }

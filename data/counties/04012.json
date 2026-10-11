@@ -8,7 +8,23 @@
     "lon": -114.038806
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued October 10 at 11:32PM MST until October 11 at 2:30AM MST by NWS Phoenix AZ",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-10-10T22:49:00-07:00",
+        "expires": "2026-10-11T02:30:00-07:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fb854ac0a00f809372e3c5263c84bdb7951cffd7.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fb854ac0a00f809372e3c5263c84bdb7951cffd7.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c2a81817eca09e14043b7c8987011d2e05b32c89.001.1"
+        ],
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +38,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.06,
-      "precip_probability_pct": 59,
+      "precip_in_24h": 0.56,
+      "precip_probability_pct": 94,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 99.0,
-      "low_temp_f": 70.0,
-      "high_apparent_temp_f": 97.0,
-      "low_apparent_temp_f": 70.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 29.9,
-      "thunder_probability_pct": 24,
+      "high_temp_f": 88.0,
+      "low_temp_f": 62.0,
+      "high_apparent_temp_f": 90.0,
+      "low_apparent_temp_f": 62.0,
+      "max_wind_mph": 35.7,
+      "max_wind_gust_mph": 54.1,
+      "thunder_probability_pct": 28,
       "lightning_activity_level": null,
       "weather": [
+        "light rain showers",
         "thunderstorms",
-        "light rain showers"
+        "moderate rain showers",
+        "blowing dust"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 35,
+      "us_aqi": 25,
       "category": "Good",
-      "aqi_24h_max": 49,
+      "aqi_24h_max": 32,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.7,
-      "pm10": 9.1,
-      "ozone": 47.0,
-      "nitrogen_dioxide": 1.8,
-      "observed_at": "2026-10-10T09:00",
+      "pm2_5": 1.7,
+      "pm10": 3.0,
+      "ozone": 50.0,
+      "nitrogen_dioxide": 1.1,
+      "observed_at": "2026-10-11T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-10",
-  "generated_at": "2026-10-10T10:07:51.786319+00:00"
+  "date": "2026-10-11",
+  "generated_at": "2026-10-11T07:24:09.638400+00:00"
 }

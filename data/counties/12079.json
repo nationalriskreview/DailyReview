@@ -8,17 +8,23 @@
     "lon": -83.470416
   },
   "alerts": {
-    "weather": [
+    "weather": [],
+    "protest": [],
+    "utility_outage": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.9\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=30.4472&lon=-83.4704"
+        "title": "More than 100,000 in Alabama without power as restoration efforts continue",
+        "url": "https://www.wsfa.com/2026/10/11/more-than-100000-alabama-without-power-restoration-efforts-continue/",
+        "domain": "wsfa.com",
+        "seendate": "20261011033000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.wsfa.com/2026/10/11/more-than-100000-alabama-without-power-restoration-efforts-continue/",
+            "domain": "wsfa.com"
+          }
+        ]
       }
     ],
-    "protest": [],
-    "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -27,46 +33,59 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [],
+    "fema": [
+      {
+        "disaster_number": "3655",
+        "declaration_type": "EM",
+        "declaration_title": "HURRICANE ISAIAS",
+        "incident_type": "Tropical Storm",
+        "declared_at": "2026-10-09T00:00:00.000Z",
+        "is_new_today": false,
+        "incident_begin": "2026-10-06T00:00:00.000Z",
+        "incident_end": null,
+        "designated_area": "Madison (County)",
+        "fema_declaration_string": "EM-3655-FL",
+        "source": "https://www.fema.gov/disaster/3655",
+        "url": "https://www.fema.gov/disaster/3655"
+      }
+    ],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.94,
-      "precip_probability_pct": 93,
+      "precip_in_24h": 0.58,
+      "precip_probability_pct": 39,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 80.0,
-      "low_temp_f": 72.0,
-      "high_apparent_temp_f": 87.0,
-      "low_apparent_temp_f": 72.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 32.2,
-      "thunder_probability_pct": 54,
+      "high_temp_f": 82.0,
+      "low_temp_f": 67.0,
+      "high_apparent_temp_f": 83.0,
+      "low_apparent_temp_f": 67.0,
+      "max_wind_mph": 9.2,
+      "max_wind_gust_mph": 16.1,
+      "thunder_probability_pct": 51,
       "lightning_activity_level": null,
       "weather": [
         "moderate rain showers",
-        "heavy thunderstorms",
-        "heavy rain showers",
         "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 27,
+      "us_aqi": 33,
       "category": "Good",
-      "aqi_24h_max": 31,
+      "aqi_24h_max": 46,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.6,
-      "pm10": 2.8,
-      "ozone": 51.0,
-      "nitrogen_dioxide": 2.9,
-      "observed_at": "2026-10-10T09:00",
+      "pm2_5": 5.0,
+      "pm10": 6.0,
+      "ozone": 81.0,
+      "nitrogen_dioxide": 2.2,
+      "observed_at": "2026-10-11T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-10",
-  "generated_at": "2026-10-10T10:07:51.786319+00:00"
+  "date": "2026-10-11",
+  "generated_at": "2026-10-11T07:24:09.638400+00:00"
 }

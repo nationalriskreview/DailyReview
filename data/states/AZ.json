@@ -1,10 +1,10 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-10T10:07:51.786319+00:00",
-  "date": "2026-10-10",
+  "generated_at": "2026-10-11T07:24:09.638400+00:00",
+  "date": "2026-10-11",
   "state": "AZ",
   "counties_total": 15,
-  "counties_with_alerts": 0,
+  "counties_with_alerts": 4,
   "counties": {
     "04001": {
       "fips": "04001",
@@ -28,35 +28,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 25,
+          "precip_in_24h": 0.09,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 77.0,
-          "low_temp_f": 50.0,
-          "high_apparent_temp_f": 77.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": 24,
+          "high_temp_f": 72.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 72.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 32.2,
+          "max_wind_gust_mph": 47.2,
+          "thunder_probability_pct": 25,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 35,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 41,
           "aqi_24h_max_category": "Good",
           "pm2_5": 1.9,
-          "pm10": 2.2,
-          "ozone": 63.0,
-          "nitrogen_dioxide": 2.6,
-          "observed_at": "2026-10-10T09:00",
+          "pm10": 2.1,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 1.9,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -83,35 +83,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 32,
+          "precip_in_24h": 0.14,
+          "precip_probability_pct": 34,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 25,
+          "high_temp_f": 81.0,
+          "low_temp_f": 54.0,
+          "high_apparent_temp_f": 81.0,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 28.8,
+          "max_wind_gust_mph": 39.1,
+          "thunder_probability_pct": 22,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "blowing dust"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 35,
           "category": "Good",
           "aqi_24h_max": 44,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.4,
+          "pm2_5": 2.3,
           "pm10": 2.6,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 3.0,
-          "observed_at": "2026-10-10T09:00",
+          "ozone": 66.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -121,7 +122,15 @@
       "name": "Coconino County",
       "state": "AZ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=35.1706&lon=-111.7737"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -135,24 +144,25 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 69,
+          "precip_in_24h": 1.11,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 77.0,
-          "low_temp_f": 40.0,
-          "high_apparent_temp_f": 77.0,
-          "low_apparent_temp_f": 37.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 32.2,
-          "thunder_probability_pct": 26,
+          "high_temp_f": 69.0,
+          "low_temp_f": 41.0,
+          "high_apparent_temp_f": 69.0,
+          "low_apparent_temp_f": 31.0,
+          "max_wind_mph": 35.7,
+          "max_wind_gust_mph": 54.1,
+          "thunder_probability_pct": 32,
           "lightning_activity_level": null,
           "weather": [
+            "light rain showers",
             "thunderstorms",
-            "light rain showers"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -160,13 +170,13 @@
         "air_quality": {
           "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 48,
+          "aqi_24h_max": 37,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.3,
-          "pm10": 4.6,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-10-10T09:00",
+          "pm2_5": 4.3,
+          "pm10": 5.8,
+          "ozone": 46.0,
+          "nitrogen_dioxide": 2.7,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -193,35 +203,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 62,
+          "precip_in_24h": 0.62,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 29,
+          "high_temp_f": 81.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 81.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 38.0,
+          "thunder_probability_pct": 41,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 45,
+          "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.4,
-          "pm10": 2.8,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 3.7,
-          "observed_at": "2026-10-10T09:00",
+          "pm2_5": 2.8,
+          "pm10": 3.0,
+          "ozone": 54.0,
+          "nitrogen_dioxide": 3.0,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -248,35 +259,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 47,
+          "precip_in_24h": 0.19,
+          "precip_probability_pct": 84,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 62.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 62.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": 22,
+          "high_temp_f": 85.0,
+          "low_temp_f": 60.0,
+          "high_apparent_temp_f": 84.0,
+          "low_apparent_temp_f": 60.0,
+          "max_wind_mph": 26.5,
+          "max_wind_gust_mph": 39.1,
+          "thunder_probability_pct": 38,
           "lightning_activity_level": null,
           "weather": [
+            "light rain showers",
             "thunderstorms",
-            "light rain showers"
+            "blowing dust"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 35,
           "category": "Good",
           "aqi_24h_max": 46,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.7,
-          "pm10": 3.3,
-          "ozone": 68.0,
-          "nitrogen_dioxide": 2.3,
-          "observed_at": "2026-10-10T09:00",
+          "pm2_5": 2.6,
+          "pm10": 2.9,
+          "ozone": 45.0,
+          "nitrogen_dioxide": 3.7,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -303,35 +315,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 32,
+          "precip_in_24h": 0.17,
+          "precip_probability_pct": 83,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 75.0,
-          "low_temp_f": 58.0,
-          "high_apparent_temp_f": 75.0,
-          "low_apparent_temp_f": 58.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 19,
+          "high_temp_f": 71.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 71.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 29.9,
+          "thunder_probability_pct": 40,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 38,
           "category": "Good",
           "aqi_24h_max": 46,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.9,
-          "pm10": 3.5,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-10-10T09:00",
+          "pm2_5": 4.1,
+          "pm10": 4.4,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 2.7,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -341,7 +353,23 @@
       "name": "La Paz County",
       "state": "AZ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued October 10 at 11:32PM MST until October 11 at 2:30AM MST by NWS Phoenix AZ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-10-10T22:49:00-07:00",
+            "expires": "2026-10-11T02:30:00-07:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fb854ac0a00f809372e3c5263c84bdb7951cffd7.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fb854ac0a00f809372e3c5263c84bdb7951cffd7.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c2a81817eca09e14043b7c8987011d2e05b32c89.001.1"
+            ],
+            "count": 2
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -355,38 +383,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 59,
+          "precip_in_24h": 0.56,
+          "precip_probability_pct": 94,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 99.0,
-          "low_temp_f": 70.0,
-          "high_apparent_temp_f": 97.0,
-          "low_apparent_temp_f": 70.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 29.9,
-          "thunder_probability_pct": 24,
+          "high_temp_f": 88.0,
+          "low_temp_f": 62.0,
+          "high_apparent_temp_f": 90.0,
+          "low_apparent_temp_f": 62.0,
+          "max_wind_mph": 35.7,
+          "max_wind_gust_mph": 54.1,
+          "thunder_probability_pct": 28,
           "lightning_activity_level": null,
           "weather": [
+            "light rain showers",
             "thunderstorms",
-            "light rain showers"
+            "moderate rain showers",
+            "blowing dust"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 35,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 49,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.7,
-          "pm10": 9.1,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 1.8,
-          "observed_at": "2026-10-10T09:00",
+          "pm2_5": 1.7,
+          "pm10": 3.0,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -413,35 +443,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.05,
-          "precip_probability_pct": 61,
+          "precip_in_24h": 0.76,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 98.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 95.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 27,
+          "high_temp_f": 88.0,
+          "low_temp_f": 66.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 66.0,
+          "max_wind_mph": 28.8,
+          "max_wind_gust_mph": 44.9,
+          "thunder_probability_pct": 38,
           "lightning_activity_level": null,
           "weather": [
+            "thunderstorms",
             "light rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 43,
+          "us_aqi": 31,
           "category": "Good",
-          "aqi_24h_max": 52,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 3.3,
-          "pm10": 8.1,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 2.2,
-          "observed_at": "2026-10-10T09:00",
+          "aqi_24h_max": 44,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.7,
+          "pm10": 12.0,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -451,7 +482,22 @@
       "name": "Mohave County",
       "state": "AZ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "High Wind Warning",
+            "headline": "High Wind Warning issued October 10 at 12:58PM PDT until October 11 at 8:00PM PDT by NWS Las Vegas NV",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-10-10T12:58:00-07:00",
+            "expires": "2026-10-11T01:00:00-07:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b291e89ab189009a74e5d7a7cbda4a669c220bef.002.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b291e89ab189009a74e5d7a7cbda4a669c220bef.002.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -465,24 +511,24 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.14,
-          "precip_probability_pct": 59,
+          "precip_in_24h": 1.47,
+          "precip_probability_pct": 98,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 31.1,
-          "thunder_probability_pct": 23,
+          "high_temp_f": 79.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 40.3,
+          "max_wind_gust_mph": 59.8,
+          "thunder_probability_pct": 36,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
             "light rain showers",
+            "thunderstorms",
             "moderate rain showers",
             "blowing dust"
           ],
@@ -490,15 +536,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.2,
-          "pm10": 6.0,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-10-10T09:00",
+          "pm2_5": 1.1,
+          "pm10": 1.7,
+          "ozone": 54.0,
+          "nitrogen_dioxide": 1.6,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -525,17 +571,17 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 52,
+          "precip_in_24h": 0.14,
+          "precip_probability_pct": 58,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 80.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 23,
+          "high_temp_f": 73.0,
+          "low_temp_f": 54.0,
+          "high_apparent_temp_f": 73.0,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 38.0,
+          "max_wind_gust_mph": 52.9,
+          "thunder_probability_pct": 21,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
@@ -545,15 +591,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 33,
+          "us_aqi": 34,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.4,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 2.0,
-          "observed_at": "2026-10-10T09:00",
+          "pm2_5": 2.2,
+          "pm10": 2.5,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -580,35 +626,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 66,
+          "precip_in_24h": 0.17,
+          "precip_probability_pct": 71,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 91.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 28,
+          "high_temp_f": 89.0,
+          "low_temp_f": 67.0,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 67.0,
+          "max_wind_mph": 39.1,
+          "max_wind_gust_mph": 51.8,
+          "thunder_probability_pct": 32,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "blowing dust"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 35,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.4,
-          "pm10": 12.3,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 1.7,
-          "observed_at": "2026-10-10T09:00",
+          "pm2_5": 2.2,
+          "pm10": 2.7,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -635,36 +682,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.14,
-          "precip_probability_pct": 68,
+          "precip_in_24h": 0.34,
+          "precip_probability_pct": 87,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 95.0,
-          "low_temp_f": 70.0,
-          "high_apparent_temp_f": 93.0,
-          "low_apparent_temp_f": 70.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 29,
+          "high_temp_f": 86.0,
+          "low_temp_f": 66.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 66.0,
+          "max_wind_mph": 24.2,
+          "max_wind_gust_mph": 39.1,
+          "thunder_probability_pct": 35,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
             "light rain showers",
+            "thunderstorms",
+            "blowing dust",
             "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 43,
+          "aqi_24h_max": 41,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.6,
-          "pm10": 3.8,
-          "ozone": 11.0,
-          "nitrogen_dioxide": 10.2,
-          "observed_at": "2026-10-10T09:00",
+          "pm2_5": 2.2,
+          "pm10": 2.4,
+          "ozone": 42.0,
+          "nitrogen_dioxide": 3.2,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -691,35 +739,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 48,
+          "precip_in_24h": 0.07,
+          "precip_probability_pct": 70,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 64.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 27.6,
-          "thunder_probability_pct": 29,
+          "high_temp_f": 78.0,
+          "low_temp_f": 62.0,
+          "high_apparent_temp_f": 78.0,
+          "low_apparent_temp_f": 62.0,
+          "max_wind_mph": 29.9,
+          "max_wind_gust_mph": 43.7,
+          "thunder_probability_pct": 28,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "blowing dust"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 16,
+          "us_aqi": 30,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.7,
-          "pm10": 3.9,
-          "ozone": 15.0,
-          "nitrogen_dioxide": 11.2,
-          "observed_at": "2026-10-10T09:00",
+          "pm2_5": 2.1,
+          "pm10": 2.2,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 1.5,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -729,7 +778,15 @@
       "name": "Yavapai County",
       "state": "AZ",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.6\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=34.6311&lon=-113.1064"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -743,38 +800,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.14,
-          "precip_probability_pct": 64,
+          "precip_in_24h": 1.63,
+          "precip_probability_pct": 96,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 26,
+          "high_temp_f": 72.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 72.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 31.1,
+          "max_wind_gust_mph": 51.8,
+          "thunder_probability_pct": 48,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 45,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.8,
-          "pm10": 17.8,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 6.6,
-          "observed_at": "2026-10-10T09:00",
+          "pm2_5": 3.2,
+          "pm10": 5.5,
+          "ozone": 48.0,
+          "nitrogen_dioxide": 4.2,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -801,35 +859,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 56,
+          "precip_in_24h": 0.4,
+          "precip_probability_pct": 81,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 101.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 98.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 25,
+          "high_temp_f": 90.0,
+          "low_temp_f": 70.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 70.0,
+          "max_wind_mph": 35.7,
+          "max_wind_gust_mph": 50.6,
+          "thunder_probability_pct": 28,
           "lightning_activity_level": null,
           "weather": [
             "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 49,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.7,
-          "pm10": 7.9,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 5.0,
-          "observed_at": "2026-10-10T09:00",
+          "pm2_5": 4.1,
+          "pm10": 8.7,
+          "ozone": 51.0,
+          "nitrogen_dioxide": 1.4,
+          "observed_at": "2026-10-11T07:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
