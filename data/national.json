@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-11T07:24:09.638400+00:00",
-  "date": "2026-10-11",
+  "generated_at": "2026-10-12T07:33:23.102657+00:00",
+  "date": "2026-10-12",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 128
+      "counties_with_alerts": 102
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 304,
+      "counties_over_threshold": 50,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 48,
+      "counties_with_matches": 20,
       "items_pre_llm": {
-        "protest": 13,
-        "utility_outage": 93,
+        "protest": 14,
+        "utility_outage": 6,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
-        "road_closure": 3
+        "hazmat_incident": 0,
+        "road_closure": 0
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 12,
+      "counties_with_matches": 6,
       "items_post_llm": {
         "protest": 4,
-        "utility_outage": 8,
+        "utility_outage": 2,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 1
+        "road_closure": 0
       },
-      "unique_articles": 31,
-      "calls_used": 31,
+      "unique_articles": 10,
+      "calls_used": 10,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 128
+      "counties_with_alerts": 140
     },
     "transit": {
       "status": "ok",
@@ -138,7 +138,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 60
+      "counties_with_alerts": 136
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -167,9 +167,9 @@
       "counties_with_alerts": 0
     },
     "service_status": {
-      "status": "ok",
-      "active_incidents": 4,
-      "providers_ok": 27,
+      "status": "partial",
+      "active_incidents": 5,
+      "providers_ok": 26,
       "providers_total": 27,
       "providers": [
         {
@@ -212,7 +212,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "openai",
@@ -319,7 +319,7 @@
         {
           "key": "b6hj",
           "name": "b6hj",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -340,15 +340,17 @@
   "run_health": {
     "overall": "degraded",
     "counts": {
-      "ok": 14,
-      "partial": 0,
+      "ok": 13,
+      "partial": 1,
       "failed": 1,
       "skipped": 0
     },
     "failed": [
       "amtrak"
     ],
-    "partial": [],
+    "partial": [
+      "service_status"
+    ],
     "skipped": []
   },
   "cdc_han": [],
@@ -624,12 +626,23 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Partial System Outage",
-      "impact": "major",
+      "title": "Elevated Errors in China Network Colos",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-10-10T04:13:17.000Z",
+      "updated": "2026-10-12T04:23:57.000Z",
+      "url": "https://www.cloudflarestatus.com/incidents/cyxclg7nnhjy",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Zoom",
+      "key": "zoom",
+      "title": "Service Under Maintenance",
+      "impact": "maintenance",
       "status": "active",
       "started": "",
       "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "url": "https://status.zoom.us",
       "source": "provider status page"
     },
     {

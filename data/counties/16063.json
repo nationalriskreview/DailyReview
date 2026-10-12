@@ -8,55 +8,90 @@
     "lon": -114.153089
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued October 11 at 7:29PM MDT until October 12 at 9:00AM MDT by NWS Pocatello ID",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-11T19:29:00-06:00",
+        "expires": "2026-10-12T09:00:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fcacb0ac50c9a43f62268214babf8d907b69f7d8.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fcacb0ac50c9a43f62268214babf8d907b69f7d8.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Buckhorn 2",
+        "incident_name": "Buckhorn 2",
+        "id": "2026-IDTFD-000268",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-10-10T18:58:00+00:00",
+        "lat": 42.3372,
+        "lon": -114.103,
+        "acreage": 2000,
+        "containment_pct": 50,
+        "cause": "Human",
+        "state": "ID",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-IDTFD-000268",
+        "source": "NIFC WFIGS",
+        "url": "https://irwin.doi.gov/observer/incidents/2026-IDTFD-000268",
+        "distance_miles": 45.2,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.23,
-      "precip_probability_pct": 88,
+      "precip_in_24h": 0.09,
+      "precip_probability_pct": 83,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 65.0,
-      "low_temp_f": 34.0,
-      "high_apparent_temp_f": 65.0,
-      "low_apparent_temp_f": 31.0,
-      "max_wind_mph": 11.5,
-      "max_wind_gust_mph": 19.6,
-      "thunder_probability_pct": 7,
+      "high_temp_f": 47.0,
+      "low_temp_f": 31.0,
+      "high_apparent_temp_f": 44.0,
+      "low_apparent_temp_f": 25.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 15.0,
+      "thunder_probability_pct": 2,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "moderate rain showers"
+        "light rain",
+        "light snow"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 32,
+      "us_aqi": 35,
       "category": "Good",
-      "aqi_24h_max": 39,
+      "aqi_24h_max": 37,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.2,
-      "pm10": 3.0,
-      "ozone": 58.0,
-      "nitrogen_dioxide": 3.7,
-      "observed_at": "2026-10-11T07:00",
+      "pm2_5": 8.3,
+      "pm10": 11.1,
+      "ozone": 49.0,
+      "nitrogen_dioxide": 6.3,
+      "observed_at": "2026-10-12T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-11",
-  "generated_at": "2026-10-11T07:24:09.638400+00:00"
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T07:33:23.102657+00:00"
 }

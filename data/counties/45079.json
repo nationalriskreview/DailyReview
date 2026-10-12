@@ -8,7 +8,23 @@
     "lon": -80.898037
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 11 at 9:45PM EDT until October 15 at 11:25PM EDT by NWS Columbia SC",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-10-11T21:45:00-04:00",
+        "expires": "2026-10-12T10:00:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.efd115e4f9e3ab98e027b0e2e40a618f1bad5195.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.efd115e4f9e3ab98e027b0e2e40a618f1bad5195.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.efd115e4f9e3ab98e027b0e2e40a618f1bad5195.002.1"
+        ],
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,43 +38,38 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.75,
-      "precip_probability_pct": 88,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 7,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 75.0,
-      "low_temp_f": 70.0,
-      "high_apparent_temp_f": 75.0,
-      "low_apparent_temp_f": 70.0,
-      "max_wind_mph": 12.7,
-      "max_wind_gust_mph": 24.2,
+      "high_temp_f": 83.0,
+      "low_temp_f": 61.0,
+      "high_apparent_temp_f": 84.0,
+      "low_apparent_temp_f": 61.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 18.4,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
-      "weather": [
-        "moderate rain showers",
-        "thunderstorms",
-        "fog",
-        "light rain showers"
-      ],
+      "weather": [],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
       "us_aqi": 31,
       "category": "Good",
-      "aqi_24h_max": 53,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 1.3,
-      "pm10": 1.6,
-      "ozone": 55.0,
-      "nitrogen_dioxide": 2.1,
-      "observed_at": "2026-10-11T07:00",
+      "aqi_24h_max": 39,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 3.0,
+      "pm10": 3.0,
+      "ozone": 53.0,
+      "nitrogen_dioxide": 3.8,
+      "observed_at": "2026-10-12T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-11",
-  "generated_at": "2026-10-11T07:24:09.638400+00:00"
+  "date": "2026-10-12",
+  "generated_at": "2026-10-12T07:33:23.102657+00:00"
 }
