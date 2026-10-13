@@ -8,8 +8,30 @@
     "lon": -75.074311
   },
   "alerts": {
-    "weather": [],
-    "protest": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.2\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=44.4881&lon=-75.0743"
+      }
+    ],
+    "protest": [
+      {
+        "title": "Marble Hill protesters call for ICE to leave NYC after Oscar Belgal shooting",
+        "url": "https://www.amny.com/news/marble-hill-protesters-call-for-ice-to-leave-nyc-after-oscar-belgal-shooting/",
+        "domain": "amny.com",
+        "seendate": "20261013001500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.amny.com/news/marble-hill-protesters-call-for-ice-to-leave-nyc-after-oscar-belgal-shooting/",
+            "domain": "amny.com"
+          }
+        ]
+      }
+    ],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
@@ -22,41 +44,44 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 43,
+      "precip_in_24h": 1.23,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 59.0,
-      "low_temp_f": 51.0,
-      "high_apparent_temp_f": 59.0,
-      "low_apparent_temp_f": 51.0,
-      "max_wind_mph": 5.8,
-      "max_wind_gust_mph": 12.7,
-      "thunder_probability_pct": 30,
+      "high_temp_f": 56.0,
+      "low_temp_f": 49.0,
+      "high_apparent_temp_f": 56.0,
+      "low_apparent_temp_f": 47.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 13.8,
+      "thunder_probability_pct": 36,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
-        "light rain"
+        "light drizzle",
+        "thunderstorms",
+        "heavy rain showers",
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 39,
-      "category": "Good",
-      "aqi_24h_max": 39,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 4.5,
-      "pm10": 4.6,
-      "ozone": 56.0,
-      "nitrogen_dioxide": 3.9,
-      "observed_at": "2026-10-12T07:00",
+      "us_aqi": 55,
+      "category": "Moderate",
+      "aqi_24h_max": 61,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 10.9,
+      "pm10": 10.9,
+      "ozone": 58.0,
+      "nitrogen_dioxide": 2.6,
+      "observed_at": "2026-10-13T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-12",
-  "generated_at": "2026-10-12T07:33:23.102657+00:00"
+  "date": "2026-10-13",
+  "generated_at": "2026-10-13T10:48:54.564374+00:00"
 }
