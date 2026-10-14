@@ -8,7 +8,23 @@
     "lon": -98.06659
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 13 at 10:52PM CDT until October 14 at 6:30AM CDT by NWS Wichita KS",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-13T21:28:00-05:00",
+        "expires": "2026-10-14T06:30:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.49a570ea5534d6c7a0c34febaf061fefa9f8903e.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.49a570ea5534d6c7a0c34febaf061fefa9f8903e.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d05a50a5feb457ab3c67d5f34ce47209ada09f81.001.1"
+        ],
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,22 +38,24 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.05,
-      "precip_probability_pct": 46,
+      "precip_in_24h": 1.38,
+      "precip_probability_pct": 75,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 92.0,
-      "low_temp_f": 71.0,
-      "high_apparent_temp_f": 97.0,
-      "low_apparent_temp_f": 71.0,
-      "max_wind_mph": 15.0,
-      "max_wind_gust_mph": 21.9,
-      "thunder_probability_pct": 46,
+      "high_temp_f": 73.0,
+      "low_temp_f": 62.0,
+      "high_apparent_temp_f": 73.0,
+      "low_apparent_temp_f": 62.0,
+      "max_wind_mph": 31.1,
+      "max_wind_gust_mph": 41.4,
+      "thunder_probability_pct": 73,
       "lightning_activity_level": null,
       "weather": [
+        "moderate rain showers",
+        "heavy thunderstorms",
         "thunderstorms",
         "light rain showers"
       ],
@@ -45,18 +63,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 28,
+      "us_aqi": 25,
       "category": "Good",
-      "aqi_24h_max": 38,
+      "aqi_24h_max": 32,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.1,
-      "pm10": 3.8,
-      "ozone": 53.0,
-      "nitrogen_dioxide": 1.9,
-      "observed_at": "2026-10-13T10:00",
+      "pm2_5": 2.8,
+      "pm10": 3.2,
+      "ozone": 47.0,
+      "nitrogen_dioxide": 3.7,
+      "observed_at": "2026-10-14T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-13",
-  "generated_at": "2026-10-13T10:48:54.564374+00:00"
+  "date": "2026-10-14",
+  "generated_at": "2026-10-14T09:01:23.023408+00:00"
 }

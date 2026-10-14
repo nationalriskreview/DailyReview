@@ -8,22 +8,7 @@
     "lon": -121.165069
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Freeze Warning",
-        "headline": "Freeze Warning issued October 12 at 10:48PM PDT until October 13 at 9:00AM PDT by NWS Pendleton OR",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-10-12T22:48:00-07:00",
-        "expires": "2026-10-13T09:00:00-07:00",
-        "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f21a77f8478d7fe687c627a55b91152ae032fc7a.001.1",
-        "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f21a77f8478d7fe687c627a55b91152ae032fc7a.001.1"
-        ],
-        "count": 1
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -31,6 +16,25 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [
+      {
+        "title": "Bench",
+        "incident_name": "Bench",
+        "id": "2026-ORWSA-000100",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-07-23T22:06:00+00:00",
+        "lat": 44.6318,
+        "lon": -121.3502,
+        "acreage": 67071,
+        "containment_pct": 90,
+        "cause": "Undetermined",
+        "state": "OR",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-ORWSA-000100",
+        "source": "NIFC WFIGS",
+        "url": "https://irwin.doi.gov/observer/incidents/2026-ORWSA-000100",
+        "distance_miles": 37.9,
+        "threat_level": "Vicinity"
+      },
       {
         "title": "GRASSHOPPER",
         "incident_name": "GRASSHOPPER",
@@ -99,37 +103,36 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 1,
+      "precip_probability_pct": 3,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 63.0,
-      "low_temp_f": 32.0,
-      "high_apparent_temp_f": 63.0,
-      "low_apparent_temp_f": 27.0,
+      "high_temp_f": 68.0,
+      "low_temp_f": 39.0,
+      "high_apparent_temp_f": 68.0,
+      "low_apparent_temp_f": 36.0,
       "max_wind_mph": 4.6,
-      "max_wind_gust_mph": 9.2,
+      "max_wind_gust_mph": 8.1,
       "thunder_probability_pct": 2,
       "lightning_activity_level": null,
       "weather": [
-        "frost",
         "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 27,
+      "us_aqi": 25,
       "category": "Good",
       "aqi_24h_max": 37,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 7.2,
-      "pm10": 7.2,
-      "ozone": 33.0,
-      "nitrogen_dioxide": 9.0,
-      "observed_at": "2026-10-13T10:00",
+      "pm2_5": 6.1,
+      "pm10": 6.1,
+      "ozone": 37.0,
+      "nitrogen_dioxide": 8.1,
+      "observed_at": "2026-10-14T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-13",
-  "generated_at": "2026-10-13T10:48:54.564374+00:00"
+  "date": "2026-10-14",
+  "generated_at": "2026-10-14T09:01:23.023408+00:00"
 }

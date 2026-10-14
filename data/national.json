@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-13T10:48:54.564374+00:00",
-  "date": "2026-10-13",
+  "generated_at": "2026-10-14T09:01:23.023408+00:00",
+  "date": "2026-10-14",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 60
+      "counties_with_alerts": 143
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 83,
+      "counties_over_threshold": 138,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 52,
+      "counties_with_matches": 57,
       "items_pre_llm": {
-        "protest": 69,
-        "utility_outage": 6,
-        "transit_disruption": 1,
+        "protest": 192,
+        "utility_outage": 21,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 6,
-        "road_closure": 3
+        "hazmat_incident": 1,
+        "road_closure": 9
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 20,
+      "counties_with_matches": 29,
       "items_post_llm": {
-        "protest": 18,
-        "utility_outage": 0,
+        "protest": 132,
+        "utility_outage": 13,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
+        "hazmat_incident": 0,
         "road_closure": 3
       },
-      "unique_articles": 43,
-      "calls_used": 43,
+      "unique_articles": 112,
+      "calls_used": 112,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 146
+      "counties_with_alerts": 150
     },
     "transit": {
       "status": "ok",
@@ -150,8 +150,8 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 11,
-      "counties_with_detections": 10
+      "positive_samples": 9,
+      "counties_with_detections": 7
     },
     "nndss_notifiable": {
       "status": "ok",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 8,
+      "active_incidents": 5,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -194,7 +194,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 4
+          "items": 2
         },
         {
           "key": "github",
@@ -224,7 +224,7 @@
           "key": "anthropic",
           "name": "Anthropic",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "oracle",
@@ -624,78 +624,45 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Audit Logs v2 ingestion is missing multiple Cloudflare products ",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-10-13T10:14:58.278Z",
-      "updated": "2026-10-13T10:14:58.277Z",
-      "url": "https://www.cloudflarestatus.com/incidents/hpmrg8d5vwr6",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Network performance issues in Ashburn, US (IAD)",
+      "title": "Cloudflare Workers - Cron Trigger Activation Issues",
       "impact": "minor",
       "status": "monitoring",
-      "started": "2026-10-13T04:00:44.604Z",
-      "updated": "2026-10-13T10:42:59.602Z",
-      "url": "https://www.cloudflarestatus.com/incidents/gqm2xrm9wk8t",
+      "started": "2026-10-14T05:36:12.243Z",
+      "updated": "2026-10-14T08:14:16.627Z",
+      "url": "https://www.cloudflarestatus.com/incidents/npjny9agana8",
       "source": "provider status page"
     },
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Elevated errors in Los Angeles (LAX)",
+      "title": "Audit Logs v2 ingestion is missing multiple Cloudflare products ",
       "impact": "minor",
-      "status": "identified",
-      "started": "2026-10-12T08:52:23.535Z",
-      "updated": "2026-10-12T21:41:25.669Z",
-      "url": "https://www.cloudflarestatus.com/incidents/vyy1a1dspusg",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Elevated Errors in China Network Colos",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-10-10T04:13:17.000Z",
-      "updated": "2026-10-12T15:33:07.000Z",
-      "url": "https://www.cloudflarestatus.com/incidents/cyxclg7nnhjy",
+      "status": "monitoring",
+      "started": "2026-10-13T10:14:58.278Z",
+      "updated": "2026-10-13T11:45:43.999Z",
+      "url": "https://www.cloudflarestatus.com/incidents/hpmrg8d5vwr6",
       "source": "provider status page"
     },
     {
       "provider": "Zoom",
       "key": "zoom",
-      "title": "Service degradation affecting Zoom Meeting API in US region",
-      "impact": "none",
-      "status": "monitoring",
-      "started": "2026-10-13T02:32:46.514-07:00",
-      "updated": "2026-10-13T02:32:46.604-07:00",
-      "url": "https://stspg.io/5xfllbgtmb1y",
+      "title": "Service Degradation Affecting Zoom Clips",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-10-13T19:03:12.000-07:00",
+      "updated": "2026-10-14T01:04:35.166-07:00",
+      "url": "https://stspg.io/rcc26f8fnwgf",
       "source": "provider status page"
     },
     {
       "provider": "OpenAI",
       "key": "openai",
-      "title": "Degraded performance in GPT-6.1 Sol Codex and Work mode",
+      "title": "Degraded performance in Codex and ChatGPT Work",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-10-13T08:10:00Z",
-      "updated": "2026-10-13T09:30:00Z",
+      "status": "identified",
+      "started": "2026-10-14T07:05:44Z",
+      "updated": "2026-10-14T07:05:44Z",
       "url": "https://status.openai.com",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Anthropic",
-      "key": "anthropic",
-      "title": "Partially Degraded Service",
-      "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.anthropic.com",
       "source": "provider status page"
     },
     {
