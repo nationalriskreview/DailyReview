@@ -8,7 +8,23 @@
     "lon": -103.46225
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued October 15 at 1:51AM MDT until October 16 at 9:00AM MDT by NWS Rapid City SD",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-15T01:51:00-06:00",
+        "expires": "2026-10-15T17:00:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9ad2be80d311ab3370f142b81cd8b00932d91ec.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9ad2be80d311ab3370f142b81cd8b00932d91ec.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c9ad2be80d311ab3370f142b81cd8b00932d91ec.002.1"
+        ],
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +38,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.05,
-      "precip_probability_pct": 54,
+      "precip_in_24h": 0.01,
+      "precip_probability_pct": 78,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 47.0,
-      "low_temp_f": 41.0,
-      "high_apparent_temp_f": 46.0,
-      "low_apparent_temp_f": 39.0,
-      "max_wind_mph": 4.6,
-      "max_wind_gust_mph": 15.0,
-      "thunder_probability_pct": 6,
+      "high_temp_f": 49.0,
+      "low_temp_f": 35.0,
+      "high_apparent_temp_f": 45.0,
+      "low_apparent_temp_f": 25.0,
+      "max_wind_mph": 17.3,
+      "max_wind_gust_mph": 34.5,
+      "thunder_probability_pct": 4,
       "lightning_activity_level": null,
       "weather": [
-        "fog",
-        "light rain"
+        "light rain",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 22,
+      "us_aqi": 33,
       "category": "Good",
-      "aqi_24h_max": 28,
+      "aqi_24h_max": 39,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.0,
-      "pm10": 4.1,
-      "ozone": 25.0,
-      "nitrogen_dioxide": 5.3,
-      "observed_at": "2026-10-14T08:00",
+      "pm2_5": 3.6,
+      "pm10": 3.7,
+      "ozone": 59.0,
+      "nitrogen_dioxide": 2.2,
+      "observed_at": "2026-10-15T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-14",
-  "generated_at": "2026-10-14T09:01:23.023408+00:00"
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T12:54:54.822004+00:00"
 }

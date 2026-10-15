@@ -10,19 +10,11 @@
   "alerts": {
     "weather": [
       {
-        "event": "Flash Flood Warning",
-        "headline": "Flash Flood Warning issued October 14 at 3:21AM CDT until October 14 at 5:30AM CDT by NWS Midland/Odessa TX",
-        "severity": "Severe",
-        "urgency": "Immediate",
-        "effective": "2026-10-14T03:19:00-05:00",
-        "expires": "2026-10-14T05:30:00-05:00",
-        "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1667b0e4a38e11f4565110f0f9570bfda69d2f35.001.1",
-        "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1667b0e4a38e11f4565110f0f9570bfda69d2f35.001.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1acbb4613cf648ade6462e08dcc1950ea5c1d1a5.001.1"
-        ],
-        "count": 2
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.1\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=29.8090&lon=-102.8146"
       }
     ],
     "protest": [],
@@ -41,23 +33,22 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.45,
-      "precip_probability_pct": 72,
+      "precip_in_24h": 1.12,
+      "precip_probability_pct": 98,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 91.0,
-      "low_temp_f": 65.0,
-      "high_apparent_temp_f": 92.0,
-      "low_apparent_temp_f": 65.0,
-      "max_wind_mph": 16.1,
-      "max_wind_gust_mph": 31.1,
-      "thunder_probability_pct": 44,
+      "high_temp_f": 79.0,
+      "low_temp_f": 61.0,
+      "high_apparent_temp_f": 79.0,
+      "low_apparent_temp_f": 61.0,
+      "max_wind_mph": 23.0,
+      "max_wind_gust_mph": 29.9,
+      "thunder_probability_pct": 55,
       "lightning_activity_level": null,
       "weather": [
-        "heavy thunderstorms",
-        "light rain showers",
         "moderate rain showers",
-        "thunderstorms"
+        "thunderstorms",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
@@ -65,16 +56,16 @@
     "air_quality": {
       "us_aqi": 38,
       "category": "Good",
-      "aqi_24h_max": 39,
+      "aqi_24h_max": 42,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 5.5,
-      "pm10": 6.6,
-      "ozone": 50.0,
-      "nitrogen_dioxide": 2.0,
-      "observed_at": "2026-10-14T08:00",
+      "pm2_5": 5.4,
+      "pm10": 5.9,
+      "ozone": 42.0,
+      "nitrogen_dioxide": 1.9,
+      "observed_at": "2026-10-15T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-14",
-  "generated_at": "2026-10-14T09:01:23.023408+00:00"
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T12:54:54.822004+00:00"
 }

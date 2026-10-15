@@ -10,15 +10,37 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.3\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=35.5546&lon=-97.4094"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 15 at 2:04AM CDT until October 15 at 1:00PM CDT by NWS Norman OK",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-10-15T02:03:00-05:00",
+        "expires": "2026-10-15T13:00:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cf50be02228a9047cb297ffbd80bc24c29a74059.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.cf50be02228a9047cb297ffbd80bc24c29a74059.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2612bd353a96fd90e798511b4c9431e91b7ccb9a.001.1"
+        ],
+        "count": 2
       }
     ],
     "protest": [],
-    "utility_outage": [],
+    "utility_outage": [
+      {
+        "title": "Nearly 1,000 customers without power near Duncan as storms move through Oklahoma",
+        "url": "https://www.news9.com/oklahoma-city-news/nearly-1-000-customers-without-power-near-duncan",
+        "domain": "news9.com",
+        "seendate": "20261015043000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.news9.com/oklahoma-city-news/nearly-1-000-customers-without-power-near-duncan",
+            "domain": "news9.com"
+          }
+        ]
+      }
+    ],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -30,43 +52,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.34,
-      "precip_probability_pct": 94,
+      "precip_in_24h": 1.12,
+      "precip_probability_pct": 96,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 84.0,
-      "low_temp_f": 70.0,
-      "high_apparent_temp_f": 90.0,
-      "low_apparent_temp_f": 70.0,
-      "max_wind_mph": 15.0,
-      "max_wind_gust_mph": 29.9,
-      "thunder_probability_pct": 44,
+      "high_temp_f": 75.0,
+      "low_temp_f": 59.0,
+      "high_apparent_temp_f": 75.0,
+      "low_apparent_temp_f": 59.0,
+      "max_wind_mph": 20.7,
+      "max_wind_gust_mph": 33.4,
+      "thunder_probability_pct": 38,
       "lightning_activity_level": null,
       "weather": [
+        "heavy rain showers",
         "thunderstorms",
-        "light rain showers",
-        "heavy thunderstorms",
-        "moderate rain showers"
+        "moderate rain showers",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 31,
+      "us_aqi": 23,
       "category": "Good",
-      "aqi_24h_max": 32,
+      "aqi_24h_max": 30,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.4,
-      "pm10": 5.5,
-      "ozone": 49.0,
-      "nitrogen_dioxide": 5.1,
-      "observed_at": "2026-10-14T08:00",
+      "pm2_5": 3.9,
+      "pm10": 4.9,
+      "ozone": 46.0,
+      "nitrogen_dioxide": 3.6,
+      "observed_at": "2026-10-15T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-14",
-  "generated_at": "2026-10-14T09:01:23.023408+00:00"
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T12:54:54.822004+00:00"
 }

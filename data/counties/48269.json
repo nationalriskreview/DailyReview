@@ -8,7 +8,22 @@
     "lon": -100.245345
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 14 at 11:55PM CDT until October 15 at 8:00AM CDT by NWS Lubbock TX",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-10-14T23:55:00-05:00",
+        "expires": "2026-10-15T08:00:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9a8ee4f5262e89a8ac1d7330a3cf4af67fd08d69.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9a8ee4f5262e89a8ac1d7330a3cf4af67fd08d69.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,43 +37,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.95,
-      "precip_probability_pct": 78,
+      "precip_in_24h": 1.22,
+      "precip_probability_pct": 87,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 86.0,
-      "low_temp_f": 71.0,
-      "high_apparent_temp_f": 89.0,
-      "low_apparent_temp_f": 71.0,
-      "max_wind_mph": 12.7,
-      "max_wind_gust_mph": 20.7,
-      "thunder_probability_pct": 78,
+      "high_temp_f": 75.0,
+      "low_temp_f": 62.0,
+      "high_apparent_temp_f": 75.0,
+      "low_apparent_temp_f": 62.0,
+      "max_wind_mph": 26.5,
+      "max_wind_gust_mph": 36.8,
+      "thunder_probability_pct": 87,
       "lightning_activity_level": null,
       "weather": [
         "thunderstorms",
-        "light rain showers",
         "moderate rain showers",
-        "heavy thunderstorms"
+        "fog",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 30,
+      "us_aqi": 23,
       "category": "Good",
-      "aqi_24h_max": 33,
+      "aqi_24h_max": 28,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.7,
-      "pm10": 4.6,
-      "ozone": 43.0,
-      "nitrogen_dioxide": 1.9,
-      "observed_at": "2026-10-14T08:00",
+      "pm2_5": 3.9,
+      "pm10": 5.0,
+      "ozone": 45.0,
+      "nitrogen_dioxide": 1.7,
+      "observed_at": "2026-10-15T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-14",
-  "generated_at": "2026-10-14T09:01:23.023408+00:00"
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T12:54:54.822004+00:00"
 }

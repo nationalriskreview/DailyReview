@@ -8,22 +8,34 @@
     "lon": -94.422393
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Extreme Heat Forecast",
-        "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
-        "severity": "Severe",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=33.4461&lon=-94.4224"
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "South White Wolf",
+        "incident_name": "South White Wolf",
+        "id": "2026-OKOKS-261126",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-10-13T21:15:00+00:00",
+        "lat": 33.9756,
+        "lon": -94.6625,
+        "acreage": 128,
+        "containment_pct": 50,
+        "cause": "Human",
+        "state": "OK",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-OKOKS-261126",
+        "source": "NIFC WFIGS",
+        "url": "https://irwin.doi.gov/observer/incidents/2026-OKOKS-261126",
+        "distance_miles": 39.1,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
@@ -33,38 +45,37 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.03,
-      "precip_probability_pct": 29,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 3,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 93.0,
-      "low_temp_f": 74.0,
-      "high_apparent_temp_f": 106.0,
-      "low_apparent_temp_f": 74.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": 29,
+      "high_temp_f": 92.0,
+      "low_temp_f": 66.0,
+      "high_apparent_temp_f": 94.0,
+      "low_apparent_temp_f": 66.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 12.7,
+      "thunder_probability_pct": 3,
       "lightning_activity_level": null,
       "weather": [
-        "thunderstorms",
-        "light rain showers"
+        "fog"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 27,
+      "us_aqi": 30,
       "category": "Good",
-      "aqi_24h_max": 36,
+      "aqi_24h_max": 45,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.1,
-      "pm10": 4.7,
-      "ozone": 53.0,
-      "nitrogen_dioxide": 2.0,
-      "observed_at": "2026-10-14T08:00",
+      "pm2_5": 8.9,
+      "pm10": 10.8,
+      "ozone": 67.0,
+      "nitrogen_dioxide": 2.8,
+      "observed_at": "2026-10-15T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-14",
-  "generated_at": "2026-10-14T09:01:23.023408+00:00"
+  "date": "2026-10-15",
+  "generated_at": "2026-10-15T12:54:54.822004+00:00"
 }

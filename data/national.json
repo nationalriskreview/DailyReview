@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-14T09:01:23.023408+00:00",
-  "date": "2026-10-14",
+  "generated_at": "2026-10-15T12:54:54.822004+00:00",
+  "date": "2026-10-15",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 143
+      "counties_with_alerts": 267
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 138,
+      "counties_over_threshold": 126,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 57,
+      "counties_with_matches": 70,
       "items_pre_llm": {
-        "protest": 192,
-        "utility_outage": 21,
-        "transit_disruption": 0,
+        "protest": 117,
+        "utility_outage": 3,
+        "transit_disruption": 7,
         "service_provider_outage": 0,
-        "hazmat_incident": 1,
-        "road_closure": 9
+        "hazmat_incident": 0,
+        "road_closure": 11
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 29,
+      "counties_with_matches": 43,
       "items_post_llm": {
-        "protest": 132,
-        "utility_outage": 13,
-        "transit_disruption": 0,
+        "protest": 65,
+        "utility_outage": 3,
+        "transit_disruption": 7,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 3
+        "road_closure": 1
       },
-      "unique_articles": 112,
-      "calls_used": 112,
+      "unique_articles": 59,
+      "calls_used": 59,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 150
+      "counties_with_alerts": 124
     },
     "transit": {
       "status": "ok",
@@ -150,12 +150,12 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 9,
-      "counties_with_detections": 7
+      "positive_samples": 4,
+      "counties_with_detections": 4
     },
     "nndss_notifiable": {
       "status": "ok",
-      "alerts": 17
+      "alerts": 16
     },
     "amtrak": {
       "status": "failed",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 5,
+      "active_incidents": 4,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -194,7 +194,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 2
+          "items": 1
         },
         {
           "key": "github",
@@ -212,7 +212,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "openai",
@@ -308,7 +308,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "r3wn",
@@ -373,24 +373,25 @@
       "prev_52wk_max": 3,
       "ytd": 22,
       "ytd_last_year": 8,
-      "mmwr_week": "2026-W39",
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Maine%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Legionellosis%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Maine%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Legionellosis%27%29"
     },
     {
       "state": "Pennsylvania",
       "state_abbr": "PA",
       "disease": "Measles",
       "reasons": [
+        "spike_above_52wk_max",
         "elevated_vs_last_year"
       ],
-      "this_week": 88,
-      "prev_52wk_max": 113,
-      "ytd": 987,
+      "this_week": 167,
+      "prev_52wk_max": 112,
+      "ytd": 1161,
       "ytd_last_year": 16,
-      "mmwr_week": "2026-W39",
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Pennsylvania%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Pennsylvania%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     },
     {
       "state": "South Carolina",
@@ -402,10 +403,10 @@
       "this_week": 0,
       "prev_52wk_max": 213,
       "ytd": 686,
-      "ytd_last_year": 4,
-      "mmwr_week": "2026-W39",
+      "ytd_last_year": 10,
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27South+Carolina%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27South+Carolina%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     },
     {
       "state": "Utah",
@@ -417,10 +418,25 @@
       "this_week": 0,
       "prev_52wk_max": 57,
       "ytd": 532,
-      "ytd_last_year": 54,
-      "mmwr_week": "2026-W39",
+      "ytd_last_year": 59,
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Utah%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Utah%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+    },
+    {
+      "state": "Wisconsin",
+      "state_abbr": "WI",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 1,
+      "prev_52wk_max": 59,
+      "ytd": 190,
+      "ytd_last_year": 36,
+      "mmwr_week": "2026-W40",
+      "source": "CDC NNDSS Weekly Data",
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Wisconsin%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     },
     {
       "state": "Virginia",
@@ -433,24 +449,9 @@
       "prev_52wk_max": 33,
       "ytd": 183,
       "ytd_last_year": 4,
-      "mmwr_week": "2026-W39",
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Virginia%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
-    },
-    {
-      "state": "Wisconsin",
-      "state_abbr": "WI",
-      "disease": "Measles",
-      "reasons": [
-        "elevated_vs_last_year"
-      ],
-      "this_week": 20,
-      "prev_52wk_max": 59,
-      "ytd": 182,
-      "ytd_last_year": 36,
-      "mmwr_week": "2026-W39",
-      "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Wisconsin%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Virginia%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     },
     {
       "state": "Ohio",
@@ -461,11 +462,26 @@
       ],
       "this_week": 9,
       "prev_52wk_max": 29,
-      "ytd": 148,
-      "ytd_last_year": 33,
-      "mmwr_week": "2026-W39",
+      "ytd": 158,
+      "ytd_last_year": 36,
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Ohio%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Ohio%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+    },
+    {
+      "state": "Kentucky",
+      "state_abbr": "KY",
+      "disease": "Measles",
+      "reasons": [
+        "elevated_vs_last_year"
+      ],
+      "this_week": 15,
+      "prev_52wk_max": 35,
+      "ytd": 157,
+      "ytd_last_year": 13,
+      "mmwr_week": "2026-W40",
+      "source": "CDC NNDSS Weekly Data",
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Kentucky%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     },
     {
       "state": "Florida",
@@ -478,39 +494,25 @@
       "prev_52wk_max": 51,
       "ytd": 146,
       "ytd_last_year": 6,
-      "mmwr_week": "2026-W39",
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Florida%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Florida%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     },
     {
       "state": "New York",
       "state_abbr": "NY",
       "disease": "Measles",
       "reasons": [
+        "spike_above_52wk_max",
         "elevated_vs_last_year"
       ],
-      "this_week": 18,
+      "this_week": 30,
       "prev_52wk_max": 19,
-      "ytd": 96,
+      "ytd": 126,
       "ytd_last_year": 8,
-      "mmwr_week": "2026-W39",
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27New+York%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
-    },
-    {
-      "state": "Kentucky",
-      "state_abbr": "KY",
-      "disease": "Measles",
-      "reasons": [
-        "elevated_vs_last_year"
-      ],
-      "this_week": 1,
-      "prev_52wk_max": 24,
-      "ytd": 94,
-      "ytd_last_year": 13,
-      "mmwr_week": "2026-W39",
-      "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Kentucky%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27New+York%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     },
     {
       "state": "California",
@@ -522,10 +524,10 @@
       "this_week": 0,
       "prev_52wk_max": 8,
       "ytd": 61,
-      "ytd_last_year": 21,
-      "mmwr_week": "2026-W39",
+      "ytd_last_year": 22,
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27California%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27California%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     },
     {
       "state": "Oregon",
@@ -538,9 +540,9 @@
       "prev_52wk_max": 8,
       "ytd": 60,
       "ytd_last_year": 1,
-      "mmwr_week": "2026-W39",
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Oregon%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Oregon%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     },
     {
       "state": "Washington",
@@ -551,11 +553,11 @@
       ],
       "this_week": 0,
       "prev_52wk_max": 10,
-      "ytd": 56,
+      "ytd": 58,
       "ytd_last_year": 11,
-      "mmwr_week": "2026-W39",
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Washington%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Washington%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     },
     {
       "state": "Maryland",
@@ -564,13 +566,13 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 4,
+      "this_week": 0,
       "prev_52wk_max": 12,
       "ytd": 53,
       "ytd_last_year": 2,
-      "mmwr_week": "2026-W39",
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Maryland%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Maryland%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     },
     {
       "state": "Indiana",
@@ -579,13 +581,13 @@
       "reasons": [
         "elevated_vs_last_year"
       ],
-      "this_week": 0,
+      "this_week": 1,
       "prev_52wk_max": 7,
-      "ytd": 24,
+      "ytd": 27,
       "ytd_last_year": 10,
-      "mmwr_week": "2026-W39",
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Indiana%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27Indiana%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     },
     {
       "state": "North Carolina",
@@ -598,24 +600,9 @@
       "prev_52wk_max": 6,
       "ytd": 20,
       "ytd_last_year": 0,
-      "mmwr_week": "2026-W39",
+      "mmwr_week": "2026-W40",
       "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27North+Carolina%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
-    },
-    {
-      "state": "New York City",
-      "state_abbr": "NY",
-      "disease": "Meningococcal disease",
-      "reasons": [
-        "elevated_vs_last_year"
-      ],
-      "this_week": 0,
-      "prev_52wk_max": 2,
-      "ytd": 15,
-      "ytd_last_year": 7,
-      "mmwr_week": "2026-W39",
-      "source": "CDC NNDSS Weekly Data",
-      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27New+York+City%27+AND+year%3D%272026%27+AND+week%3D%2739%27+AND+label+in+%28%27Meningococcal+disease%2C+All+serogroups%27%29"
+      "url": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=states%3D%27North+Carolina%27+AND+year%3D%272026%27+AND+week%3D%2740%27+AND+label+in+%28%27Measles%2C+Imported%27%2C%27Measles%2C+Indigenous%27%29"
     }
   ],
   "amtrak_advisories": [],
@@ -624,44 +611,22 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Cloudflare Workers - Cron Trigger Activation Issues",
+      "title": "Increased HTTP 502 Errors",
       "impact": "minor",
       "status": "monitoring",
-      "started": "2026-10-14T05:36:12.243Z",
-      "updated": "2026-10-14T08:14:16.627Z",
-      "url": "https://www.cloudflarestatus.com/incidents/npjny9agana8",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Audit Logs v2 ingestion is missing multiple Cloudflare products ",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-10-13T10:14:58.278Z",
-      "updated": "2026-10-13T11:45:43.999Z",
-      "url": "https://www.cloudflarestatus.com/incidents/hpmrg8d5vwr6",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Zoom",
-      "key": "zoom",
-      "title": "Service Degradation Affecting Zoom Clips",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-10-13T19:03:12.000-07:00",
-      "updated": "2026-10-14T01:04:35.166-07:00",
-      "url": "https://stspg.io/rcc26f8fnwgf",
+      "started": "2026-10-15T10:47:18.984Z",
+      "updated": "2026-10-15T11:41:54.809Z",
+      "url": "https://www.cloudflarestatus.com/incidents/mxthd6onaplz",
       "source": "provider status page"
     },
     {
       "provider": "OpenAI",
       "key": "openai",
-      "title": "Degraded performance in Codex and ChatGPT Work",
+      "title": "Delayed Costs data in the Compliance API",
       "impact": "minor",
       "status": "identified",
-      "started": "2026-10-14T07:05:44Z",
-      "updated": "2026-10-14T07:05:44Z",
+      "started": "2026-10-14T17:00:44Z",
+      "updated": "2026-10-14T20:00:36Z",
       "url": "https://status.openai.com",
       "source": "provider status page"
     },
@@ -675,6 +640,14 @@
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
+    },
+    {
+      "provider": "x9tz",
+      "impact": "maintenance",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
     }
   ]
 }
