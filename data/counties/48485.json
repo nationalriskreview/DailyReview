@@ -10,11 +10,18 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.4\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=33.9882&lon=-98.7080"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 16 at 3:02AM CDT until October 20 at 1:00AM CDT by NWS Norman OK",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-10-16T03:02:00-05:00",
+        "expires": "2026-10-16T15:15:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.195da22aeb3ea282006c39cf4e69c92c3ce524dd.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.195da22aeb3ea282006c39cf4e69c92c3ce524dd.001.1"
+        ],
+        "count": 1
       }
     ],
     "protest": [],
@@ -33,39 +40,37 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.37,
-      "precip_probability_pct": 92,
+      "precip_in_24h": 0.03,
+      "precip_probability_pct": 53,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 79.0,
-      "low_temp_f": 62.0,
-      "high_apparent_temp_f": 79.0,
-      "low_apparent_temp_f": 62.0,
-      "max_wind_mph": 20.7,
-      "max_wind_gust_mph": 32.2,
-      "thunder_probability_pct": 55,
+      "high_temp_f": 61.0,
+      "low_temp_f": 50.0,
+      "high_apparent_temp_f": 61.0,
+      "low_apparent_temp_f": 43.0,
+      "max_wind_mph": 27.6,
+      "max_wind_gust_mph": 40.3,
+      "thunder_probability_pct": 9,
       "lightning_activity_level": null,
       "weather": [
-        "moderate rain showers",
-        "thunderstorms",
         "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 24,
+      "us_aqi": 22,
       "category": "Good",
-      "aqi_24h_max": 26,
+      "aqi_24h_max": 32,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.8,
-      "pm10": 5.1,
-      "ozone": 42.0,
-      "nitrogen_dioxide": 2.4,
-      "observed_at": "2026-10-15T12:00",
+      "pm2_5": 0.6,
+      "pm10": 0.8,
+      "ozone": 66.0,
+      "nitrogen_dioxide": 1.3,
+      "observed_at": "2026-10-16T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-15",
-  "generated_at": "2026-10-15T12:54:54.822004+00:00"
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16T08:22:31.496982+00:00"
 }

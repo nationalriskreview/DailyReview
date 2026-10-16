@@ -8,7 +8,22 @@
     "lon": -94.766086
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued October 15 at 11:43PM CDT until October 17 at 1:00AM CDT by NWS Shreveport LA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-15T23:43:00-05:00",
+        "expires": "2026-10-16T13:00:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a1856977fc37d5de584804cdf4e851dcc96895fb.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a1856977fc37d5de584804cdf4e851dcc96895fb.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -26,7 +41,7 @@
         "lat": 33.9756,
         "lon": -94.6625,
         "acreage": 128,
-        "containment_pct": 50,
+        "containment_pct": 75,
         "cause": "Human",
         "state": "OK",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-OKOKS-261126",
@@ -34,6 +49,25 @@
         "url": "https://irwin.doi.gov/observer/incidents/2026-OKOKS-261126",
         "distance_miles": 11.4,
         "threat_level": "Immediate"
+      },
+      {
+        "title": "Lake",
+        "incident_name": "Lake",
+        "id": "2026-OKOKS-261228",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-10-15T20:15:00+00:00",
+        "lat": 34.1411,
+        "lon": -95.102,
+        "acreage": 105,
+        "containment_pct": 50,
+        "cause": "Human",
+        "state": "OK",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-OKOKS-261228",
+        "source": "NIFC WFIGS",
+        "url": "https://irwin.doi.gov/observer/incidents/2026-OKOKS-261228",
+        "distance_miles": 19.3,
+        "threat_level": "Vicinity"
       }
     ],
     "transit": [],
@@ -42,40 +76,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 17,
+      "precip_probability_pct": 18,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 89.0,
-      "low_temp_f": 67.0,
-      "high_apparent_temp_f": 88.0,
-      "low_apparent_temp_f": 67.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 19.6,
-      "thunder_probability_pct": 7,
+      "high_temp_f": 79.0,
+      "low_temp_f": 55.0,
+      "high_apparent_temp_f": 79.0,
+      "low_apparent_temp_f": 55.0,
+      "max_wind_mph": 15.0,
+      "max_wind_gust_mph": 27.6,
+      "thunder_probability_pct": 11,
       "lightning_activity_level": null,
       "weather": [
-        "fog"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 31,
-      "category": "Good",
-      "aqi_24h_max": 50,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 10.2,
-      "pm10": 11.9,
-      "ozone": 60.0,
-      "nitrogen_dioxide": 3.7,
-      "observed_at": "2026-10-15T12:00",
+      "us_aqi": 51,
+      "category": "Moderate",
+      "aqi_24h_max": 53,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 0.9,
+      "pm10": 0.9,
+      "ozone": 40.0,
+      "nitrogen_dioxide": 3.5,
+      "observed_at": "2026-10-16T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-15",
-  "generated_at": "2026-10-15T12:54:54.822004+00:00"
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16T08:22:31.496982+00:00"
 }

@@ -8,7 +8,22 @@
     "lon": -91.118699
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued October 16 at 1:11AM CDT until October 17 at 9:00AM CDT by NWS Quad Cities IA IL",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-16T01:11:00-05:00",
+        "expires": "2026-10-16T09:15:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12a2abfe7230ae810972ab599ee05d3573eb65ea.002.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12a2abfe7230ae810972ab599ee05d3573eb65ea.002.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -20,56 +35,42 @@
     "amtrak": [],
     "aviation": [],
     "fema": [],
-    "disease": [
-      {
-        "event": "Measles Detected (Wastewater)",
-        "headline": "Measles virus detected in wastewater sample on 2026-10-01",
-        "detection": "Positive",
-        "sampling_date": "2026-10-01",
-        "count": 1,
-        "source": "CDC NWSS Wastewater",
-        "url": "https://data.cdc.gov/resource/akvg-8vrb.json?record_id=18ab3bd5f1daefe15198dc056354f30a",
-        "urls": [
-          "https://data.cdc.gov/resource/akvg-8vrb.json?record_id=18ab3bd5f1daefe15198dc056354f30a"
-        ]
-      }
-    ]
+    "disease": []
   },
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.68,
-      "precip_probability_pct": 95,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 34,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 65.0,
-      "low_temp_f": 55.0,
-      "high_apparent_temp_f": 65.0,
-      "low_apparent_temp_f": 55.0,
-      "max_wind_mph": 19.6,
-      "max_wind_gust_mph": 31.1,
-      "thunder_probability_pct": 14,
+      "high_temp_f": 62.0,
+      "low_temp_f": 44.0,
+      "high_apparent_temp_f": 62.0,
+      "low_apparent_temp_f": 36.0,
+      "max_wind_mph": 21.9,
+      "max_wind_gust_mph": 39.1,
+      "thunder_probability_pct": 3,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "moderate rain showers"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 29,
+      "us_aqi": 26,
       "category": "Good",
       "aqi_24h_max": 45,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.0,
-      "pm10": 4.0,
-      "ozone": 40.0,
-      "nitrogen_dioxide": 11.0,
-      "observed_at": "2026-10-15T12:00",
+      "pm2_5": 1.8,
+      "pm10": 1.8,
+      "ozone": 48.0,
+      "nitrogen_dioxide": 2.8,
+      "observed_at": "2026-10-16T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-15",
-  "generated_at": "2026-10-15T12:54:54.822004+00:00"
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16T08:22:31.496982+00:00"
 }

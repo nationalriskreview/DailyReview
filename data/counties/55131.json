@@ -8,7 +8,22 @@
     "lon": -88.232917
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued October 16 at 12:29AM CDT until October 17 at 9:00AM CDT by NWS Milwaukee/Sullivan WI",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-16T00:29:00-05:00",
+        "expires": "2026-10-16T08:30:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d3c3224a201b1f004a8d1f489eea913673eb56c.001.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d3c3224a201b1f004a8d1f489eea913673eb56c.001.2"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,42 +37,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.81,
-      "precip_probability_pct": 98,
+      "precip_in_24h": 0.15,
+      "precip_probability_pct": 50,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 56.0,
-      "low_temp_f": 53.0,
-      "high_apparent_temp_f": 56.0,
-      "low_apparent_temp_f": 53.0,
-      "max_wind_mph": 10.4,
-      "max_wind_gust_mph": 19.6,
-      "thunder_probability_pct": 14,
+      "high_temp_f": 58.0,
+      "low_temp_f": 42.0,
+      "high_apparent_temp_f": 58.0,
+      "low_apparent_temp_f": 34.0,
+      "max_wind_mph": 21.9,
+      "max_wind_gust_mph": 34.5,
+      "thunder_probability_pct": 9,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "moderate rain showers",
-        "fog"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 26,
+      "us_aqi": 22,
       "category": "Good",
-      "aqi_24h_max": 30,
+      "aqi_24h_max": 29,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.0,
-      "pm10": 3.0,
-      "ozone": 47.0,
-      "nitrogen_dioxide": 8.3,
-      "observed_at": "2026-10-15T12:00",
+      "pm2_5": 0.5,
+      "pm10": 0.5,
+      "ozone": 45.0,
+      "nitrogen_dioxide": 2.8,
+      "observed_at": "2026-10-16T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-15",
-  "generated_at": "2026-10-15T12:54:54.822004+00:00"
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16T08:22:31.496982+00:00"
 }

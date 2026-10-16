@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-15T12:54:54.822004+00:00",
-  "date": "2026-10-15",
+  "generated_at": "2026-10-16T08:22:31.496982+00:00",
+  "date": "2026-10-16",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 267
+      "counties_with_alerts": 734
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 126,
+      "counties_over_threshold": 42,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 70,
+      "counties_with_matches": 42,
       "items_pre_llm": {
-        "protest": 117,
-        "utility_outage": 3,
-        "transit_disruption": 7,
+        "protest": 42,
+        "utility_outage": 1,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
+        "hazmat_incident": 3,
         "road_closure": 11
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 43,
+      "counties_with_matches": 17,
       "items_post_llm": {
-        "protest": 65,
-        "utility_outage": 3,
-        "transit_disruption": 7,
+        "protest": 26,
+        "utility_outage": 1,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 1
+        "hazmat_incident": 1,
+        "road_closure": 0
       },
-      "unique_articles": 59,
-      "calls_used": 59,
+      "unique_articles": 29,
+      "calls_used": 29,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 124
+      "counties_with_alerts": 129
     },
     "transit": {
       "status": "ok",
@@ -138,7 +138,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 136
+      "counties_with_alerts": 133
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -150,8 +150,8 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 4,
-      "counties_with_detections": 4
+      "positive_samples": 3,
+      "counties_with_detections": 3
     },
     "nndss_notifiable": {
       "status": "ok",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 4,
+      "active_incidents": 3,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -308,7 +308,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "r3wn",
@@ -611,12 +611,12 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Increased HTTP 502 Errors",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-10-15T10:47:18.984Z",
-      "updated": "2026-10-15T11:41:54.809Z",
-      "url": "https://www.cloudflarestatus.com/incidents/mxthd6onaplz",
+      "title": "Partial System Outage",
+      "impact": "major",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
@@ -624,9 +624,9 @@
       "key": "openai",
       "title": "Delayed Costs data in the Compliance API",
       "impact": "minor",
-      "status": "identified",
+      "status": "monitoring",
       "started": "2026-10-14T17:00:44Z",
-      "updated": "2026-10-14T20:00:36Z",
+      "updated": "2026-10-15T22:36:42Z",
       "url": "https://status.openai.com",
       "source": "provider status page"
     },
@@ -640,14 +640,6 @@
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
-    },
-    {
-      "provider": "x9tz",
-      "impact": "maintenance",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
     }
   ]
 }

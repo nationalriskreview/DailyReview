@@ -8,7 +8,22 @@
     "lon": -97.591143
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Red Flag Warning",
+        "headline": "Red Flag Warning issued October 16 at 2:15AM CDT until October 17 at 7:00AM CDT by NWS Brownsville TX",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-16T02:15:00-05:00",
+        "expires": "2026-10-16T19:00:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7bd229de2edcea0712f0364c4e58e7a4306bb14b.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7bd229de2edcea0712f0364c4e58e7a4306bb14b.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +37,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 8,
+      "precip_in_24h": 0.02,
+      "precip_probability_pct": 37,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 88.0,
-      "low_temp_f": 73.0,
-      "high_apparent_temp_f": 94.0,
-      "low_apparent_temp_f": 73.0,
-      "max_wind_mph": 11.5,
-      "max_wind_gust_mph": 19.6,
-      "thunder_probability_pct": 3,
+      "high_temp_f": 83.0,
+      "low_temp_f": 71.0,
+      "high_apparent_temp_f": 88.0,
+      "low_apparent_temp_f": 71.0,
+      "max_wind_mph": 27.6,
+      "max_wind_gust_mph": 36.8,
+      "thunder_probability_pct": 10,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "thunderstorms"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 39,
+      "us_aqi": 48,
       "category": "Good",
-      "aqi_24h_max": 46,
+      "aqi_24h_max": 48,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 6.4,
-      "pm10": 10.4,
-      "ozone": 82.0,
-      "nitrogen_dioxide": 0.7,
-      "observed_at": "2026-10-15T12:00",
+      "pm2_5": 8.3,
+      "pm10": 13.1,
+      "ozone": 49.0,
+      "nitrogen_dioxide": 3.5,
+      "observed_at": "2026-10-16T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-15",
-  "generated_at": "2026-10-15T12:54:54.822004+00:00"
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16T08:22:31.496982+00:00"
 }

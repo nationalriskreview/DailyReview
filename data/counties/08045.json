@@ -8,7 +8,23 @@
     "lon": -107.90978
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued October 15 at 9:26PM MDT until October 16 at 10:00AM MDT by NWS Grand Junction CO",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-15T21:26:00-06:00",
+        "expires": "2026-10-16T10:00:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c1fc5f4fc5303939bccc3b1f003d1545a2cd39e.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c1fc5f4fc5303939bccc3b1f003d1545a2cd39e.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c1fc5f4fc5303939bccc3b1f003d1545a2cd39e.001.2"
+        ],
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +38,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.1,
-      "precip_probability_pct": 83,
-      "snow_in_24h": 0.7,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 6,
+      "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 46.0,
-      "low_temp_f": 27.0,
-      "high_apparent_temp_f": 42.0,
-      "low_apparent_temp_f": 18.0,
-      "max_wind_mph": 11.5,
-      "max_wind_gust_mph": 24.2,
-      "thunder_probability_pct": 3,
+      "high_temp_f": 48.0,
+      "low_temp_f": 20.0,
+      "high_apparent_temp_f": 47.0,
+      "low_apparent_temp_f": 11.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 13.8,
+      "thunder_probability_pct": 6,
       "lightning_activity_level": null,
       "weather": [
-        "light snow showers",
-        "light rain showers"
+        "light rain showers",
+        "thunderstorms",
+        "light snow showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 35,
+      "us_aqi": 33,
       "category": "Good",
-      "aqi_24h_max": 38,
+      "aqi_24h_max": 41,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 0.1,
-      "pm10": 0.1,
-      "ozone": 69.0,
-      "nitrogen_dioxide": 3.8,
-      "observed_at": "2026-10-15T12:00",
+      "pm2_5": 4.3,
+      "pm10": 4.7,
+      "ozone": 58.0,
+      "nitrogen_dioxide": 11.1,
+      "observed_at": "2026-10-16T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-15",
-  "generated_at": "2026-10-15T12:54:54.822004+00:00"
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16T08:22:31.496982+00:00"
 }

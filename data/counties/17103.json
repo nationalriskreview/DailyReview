@@ -8,7 +8,22 @@
     "lon": -89.299362
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued October 16 at 1:28AM CDT until October 17 at 8:00AM CDT by NWS Chicago IL",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-16T01:28:00-05:00",
+        "expires": "2026-10-16T11:30:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a809bf5bff37f0d107bbda8e339a8335a5ae0656.002.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a809bf5bff37f0d107bbda8e339a8335a5ae0656.002.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +37,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.37,
-      "precip_probability_pct": 87,
+      "precip_in_24h": 0.01,
+      "precip_probability_pct": 55,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 64.0,
-      "low_temp_f": 54.0,
-      "high_apparent_temp_f": 65.0,
-      "low_apparent_temp_f": 54.0,
-      "max_wind_mph": 12.7,
-      "max_wind_gust_mph": 20.7,
-      "thunder_probability_pct": 4,
+      "high_temp_f": 63.0,
+      "low_temp_f": 45.0,
+      "high_apparent_temp_f": 63.0,
+      "low_apparent_temp_f": 38.0,
+      "max_wind_mph": 20.7,
+      "max_wind_gust_mph": 32.2,
+      "thunder_probability_pct": 11,
       "lightning_activity_level": null,
       "weather": [
-        "moderate rain showers",
-        "light drizzle"
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 23,
+      "us_aqi": 32,
       "category": "Good",
-      "aqi_24h_max": 36,
+      "aqi_24h_max": 39,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 6.5,
-      "pm10": 6.6,
-      "ozone": 40.0,
-      "nitrogen_dioxide": 10.8,
-      "observed_at": "2026-10-15T12:00",
+      "pm2_5": 2.3,
+      "pm10": 2.3,
+      "ozone": 45.0,
+      "nitrogen_dioxide": 4.3,
+      "observed_at": "2026-10-16T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-15",
-  "generated_at": "2026-10-15T12:54:54.822004+00:00"
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16T08:22:31.496982+00:00"
 }

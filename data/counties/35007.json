@@ -8,34 +8,29 @@
     "lon": -104.64011
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued October 16 at 12:04AM MDT until October 16 at 9:00AM MDT by NWS Albuquerque NM",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-16T00:04:00-06:00",
+        "expires": "2026-10-16T09:00:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.634c614929d4a45d90b6d8d7e2ad084e665142a1.002.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.634c614929d4a45d90b6d8d7e2ad084e665142a1.002.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [
-      {
-        "title": "Post",
-        "incident_name": "Post",
-        "id": "2026-COLSX-001549",
-        "category": "wildfire",
-        "incident_type": "Wildfire",
-        "date": "2026-08-12T00:55:00+00:00",
-        "lat": 37.082,
-        "lon": -104.4214,
-        "acreage": 4335,
-        "containment_pct": 95,
-        "cause": "Natural",
-        "state": "CO",
-        "source_url": "https://irwin.doi.gov/observer/incidents/2026-COLSX-001549",
-        "source": "NIFC WFIGS",
-        "url": "https://irwin.doi.gov/observer/incidents/2026-COLSX-001549",
-        "distance_miles": 34.6,
-        "threat_level": "Vicinity"
-      }
-    ],
+    "wildfires": [],
     "transit": [],
     "amtrak": [],
     "aviation": [],
@@ -46,36 +41,37 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 2,
+      "precip_probability_pct": 1,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 59.0,
-      "low_temp_f": 36.0,
-      "high_apparent_temp_f": 59.0,
-      "low_apparent_temp_f": 28.0,
-      "max_wind_mph": 27.6,
-      "max_wind_gust_mph": 39.1,
-      "thunder_probability_pct": 2,
+      "high_temp_f": 57.0,
+      "low_temp_f": 32.0,
+      "high_apparent_temp_f": 57.0,
+      "low_apparent_temp_f": 23.0,
+      "max_wind_mph": 23.0,
+      "max_wind_gust_mph": 32.2,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers"
+        "light rain showers",
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 27,
+      "us_aqi": 35,
       "category": "Good",
-      "aqi_24h_max": 41,
+      "aqi_24h_max": 40,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 1.2,
-      "pm10": 1.4,
-      "ozone": 54.0,
-      "nitrogen_dioxide": 6.4,
-      "observed_at": "2026-10-15T12:00",
+      "pm2_5": 2.3,
+      "pm10": 3.5,
+      "ozone": 73.0,
+      "nitrogen_dioxide": 1.9,
+      "observed_at": "2026-10-16T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-15",
-  "generated_at": "2026-10-15T12:54:54.822004+00:00"
+  "date": "2026-10-16",
+  "generated_at": "2026-10-16T08:22:31.496982+00:00"
 }
