@@ -8,7 +8,22 @@
     "lon": -83.706372
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued October 16 at 1:59PM EDT until October 17 at 8:00AM EDT by NWS Detroit/Pontiac MI",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-16T13:59:00-04:00",
+        "expires": "2026-10-17T08:00:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.135f094cdaaa709c6379e97ad5ba25a98293978e.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.135f094cdaaa709c6379e97ad5ba25a98293978e.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +37,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.33,
-      "precip_probability_pct": 99,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 4,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 62.0,
-      "low_temp_f": 50.0,
-      "high_apparent_temp_f": 62.0,
-      "low_apparent_temp_f": 45.0,
-      "max_wind_mph": 16.1,
-      "max_wind_gust_mph": 31.1,
-      "thunder_probability_pct": 10,
+      "high_temp_f": 53.0,
+      "low_temp_f": 33.0,
+      "high_apparent_temp_f": 53.0,
+      "low_apparent_temp_f": 29.0,
+      "max_wind_mph": 13.8,
+      "max_wind_gust_mph": 27.6,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "light rain",
-        "moderate rain"
+        "frost"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 22,
+      "us_aqi": 29,
       "category": "Good",
-      "aqi_24h_max": 30,
+      "aqi_24h_max": 33,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 1.9,
-      "pm10": 1.9,
-      "ozone": 40.0,
-      "nitrogen_dioxide": 8.7,
-      "observed_at": "2026-10-16T08:00",
+      "pm2_5": 0.8,
+      "pm10": 1.1,
+      "ozone": 68.0,
+      "nitrogen_dioxide": 1.3,
+      "observed_at": "2026-10-17T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-16",
-  "generated_at": "2026-10-16T08:22:31.496982+00:00"
+  "date": "2026-10-17",
+  "generated_at": "2026-10-17T08:01:52.354009+00:00"
 }

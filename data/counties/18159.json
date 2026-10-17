@@ -8,7 +8,22 @@
     "lon": -86.056207
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued October 17 at 1:34AM EDT until October 18 at 9:00AM EDT by NWS Indianapolis IN",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-17T01:34:00-04:00",
+        "expires": "2026-10-17T09:45:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.57a57830bd00d007d4583dfda4f0d95d1c5c1b8e.001.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.57a57830bd00d007d4583dfda4f0d95d1c5c1b8e.001.2"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,43 +37,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.43,
-      "precip_probability_pct": 54,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 12,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 70.0,
-      "low_temp_f": 50.0,
-      "high_apparent_temp_f": 70.0,
-      "low_apparent_temp_f": 44.0,
-      "max_wind_mph": 19.6,
-      "max_wind_gust_mph": 29.9,
-      "thunder_probability_pct": 28,
+      "high_temp_f": 54.0,
+      "low_temp_f": 36.0,
+      "high_apparent_temp_f": 54.0,
+      "low_apparent_temp_f": 30.0,
+      "max_wind_mph": 18.4,
+      "max_wind_gust_mph": 26.5,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "thunderstorms",
-        "moderate rain showers",
-        "fog",
-        "light rain showers"
+        "frost"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 25,
+      "us_aqi": 27,
       "category": "Good",
-      "aqi_24h_max": 29,
+      "aqi_24h_max": 35,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 0.9,
-      "pm10": 0.9,
-      "ozone": 38.0,
-      "nitrogen_dioxide": 5.1,
-      "observed_at": "2026-10-16T08:00",
+      "pm2_5": 0.6,
+      "pm10": 0.6,
+      "ozone": 56.0,
+      "nitrogen_dioxide": 2.5,
+      "observed_at": "2026-10-17T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-16",
-  "generated_at": "2026-10-16T08:22:31.496982+00:00"
+  "date": "2026-10-17",
+  "generated_at": "2026-10-17T08:01:52.354009+00:00"
 }

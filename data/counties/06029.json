@@ -8,22 +8,7 @@
     "lon": -118.729506
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Red Flag Warning",
-        "headline": "Red Flag Warning issued October 15 at 6:05PM PDT until October 16 at 10:00PM PDT by NWS Hanford CA",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-10-15T18:05:00-07:00",
-        "expires": "2026-10-16T03:00:00-07:00",
-        "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae476d6294c721ab77c7571ad08cde56ec8355c4.001.1",
-        "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae476d6294c721ab77c7571ad08cde56ec8355c4.001.1"
-        ],
-        "count": 1
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -55,22 +40,35 @@
     "amtrak": [],
     "aviation": [],
     "fema": [],
-    "disease": []
+    "disease": [
+      {
+        "event": "Measles Detected (Wastewater)",
+        "headline": "Measles virus detected in wastewater sample on 2026-10-07",
+        "detection": "Positive",
+        "sampling_date": "2026-10-07",
+        "count": 1,
+        "source": "CDC NWSS Wastewater",
+        "url": "https://data.cdc.gov/resource/akvg-8vrb.json?record_id=b132a78ad996de7fda56bb24246f9038",
+        "urls": [
+          "https://data.cdc.gov/resource/akvg-8vrb.json?record_id=b132a78ad996de7fda56bb24246f9038"
+        ]
+      }
+    ]
   },
   "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 1,
+      "precip_probability_pct": 29,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 90.0,
-      "low_temp_f": 52.0,
-      "high_apparent_temp_f": 86.0,
-      "low_apparent_temp_f": 52.0,
-      "max_wind_mph": 40.3,
-      "max_wind_gust_mph": 44.9,
-      "thunder_probability_pct": 11,
+      "high_temp_f": 91.0,
+      "low_temp_f": 55.0,
+      "high_apparent_temp_f": 87.0,
+      "low_apparent_temp_f": 55.0,
+      "max_wind_mph": 32.2,
+      "max_wind_gust_mph": 38.0,
+      "thunder_probability_pct": 8,
       "lightning_activity_level": null,
       "weather": [
         "light rain",
@@ -81,18 +79,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 32,
+      "us_aqi": 36,
       "category": "Good",
-      "aqi_24h_max": 45,
+      "aqi_24h_max": 43,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 7.5,
-      "pm10": 16.7,
-      "ozone": 37.0,
-      "nitrogen_dioxide": 17.3,
-      "observed_at": "2026-10-16T08:00",
+      "pm2_5": 4.5,
+      "pm10": 9.0,
+      "ozone": 48.0,
+      "nitrogen_dioxide": 8.7,
+      "observed_at": "2026-10-17T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-16",
-  "generated_at": "2026-10-16T08:22:31.496982+00:00"
+  "date": "2026-10-17",
+  "generated_at": "2026-10-17T08:01:52.354009+00:00"
 }

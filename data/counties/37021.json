@@ -8,8 +8,37 @@
     "lon": -82.530423
   },
   "alerts": {
-    "weather": [],
-    "protest": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued October 17 at 1:21AM EDT until October 18 at 9:00AM EDT by NWS Greenville-Spartanburg SC",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-17T01:21:00-04:00",
+        "expires": "2026-10-17T09:30:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3f975cb542e7d36b7425b0ab19a63e2ba49c6365.001.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3f975cb542e7d36b7425b0ab19a63e2ba49c6365.001.2"
+        ],
+        "count": 1
+      }
+    ],
+    "protest": [
+      {
+        "title": "'No Kings' demonstrations urge early voting with events planned in Weaverville, Asheville",
+        "url": "https://wlos.com/news/local/no-kings-voting-weaverville-asheville-elections-north-carolina-western-events-wnc-midterm-police-democrat-republican-community",
+        "domain": "wlos.com",
+        "seendate": "20261017020000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://wlos.com/news/local/no-kings-voting-weaverville-asheville-elections-north-carolina-western-events-wnc-midterm-police-democrat-republican-community",
+            "domain": "wlos.com"
+          }
+        ]
+      }
+    ],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
@@ -22,41 +51,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 16,
+      "precip_in_24h": 0.02,
+      "precip_probability_pct": 52,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 79.0,
-      "low_temp_f": 58.0,
-      "high_apparent_temp_f": 80.0,
-      "low_apparent_temp_f": 59.0,
-      "max_wind_mph": 16.1,
-      "max_wind_gust_mph": 27.6,
+      "high_temp_f": 65.0,
+      "low_temp_f": 42.0,
+      "high_apparent_temp_f": 65.0,
+      "low_apparent_temp_f": 34.0,
+      "max_wind_mph": 20.7,
+      "max_wind_gust_mph": 33.4,
       "thunder_probability_pct": 5,
       "lightning_activity_level": null,
       "weather": [
-        "fog",
         "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 41,
+      "us_aqi": 38,
       "category": "Good",
-      "aqi_24h_max": 57,
+      "aqi_24h_max": 51,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 11.8,
-      "pm10": 12.2,
-      "ozone": 39.0,
-      "nitrogen_dioxide": 12.9,
-      "observed_at": "2026-10-16T08:00",
+      "pm2_5": 1.4,
+      "pm10": 1.4,
+      "ozone": 42.0,
+      "nitrogen_dioxide": 3.1,
+      "observed_at": "2026-10-17T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-16",
-  "generated_at": "2026-10-16T08:22:31.496982+00:00"
+  "date": "2026-10-17",
+  "generated_at": "2026-10-17T08:01:52.354009+00:00"
 }
