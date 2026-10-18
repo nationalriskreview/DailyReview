@@ -8,35 +8,18 @@
     "lon": -116.776117
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "High Wind Warning",
-        "headline": "High Wind Warning issued October 16 at 8:41PM PDT until October 17 at 8:00PM PDT by NWS San Diego CA",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-10-16T20:41:00-07:00",
-        "expires": "2026-10-17T05:00:00-07:00",
-        "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.25f4c37d4e2e1d0a1a681d010e9654c1d54fb8ca.002.1",
-        "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.25f4c37d4e2e1d0a1a681d010e9654c1d54fb8ca.002.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.25f4c37d4e2e1d0a1a681d010e9654c1d54fb8ca.004.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.25f4c37d4e2e1d0a1a681d010e9654c1d54fb8ca.005.1"
-        ],
-        "count": 3
-      }
-    ],
+    "weather": [],
     "protest": [
       {
-        "title": "No Kings Protests in Southern California: Oct. 17 Guide",
-        "url": "https://lamag.com/news/southern-california-prepares-for-no-kings-protests/",
-        "domain": "lamag.com",
-        "seendate": "20261017000000",
+        "title": "Mira Mesa 'No Kings' protesters urge voters to make voices heard &#x2013; NBC 7 San Diego",
+        "url": "https://www.nbcsandiego.com/news/local/mira-mesa-no-kings-protesters-urge-voters-to-make-voices-heard/4088633/",
+        "domain": "nbcsandiego.com",
+        "seendate": "20261018024500",
         "is_new": true,
         "sources": [
           {
-            "url": "https://lamag.com/news/southern-california-prepares-for-no-kings-protests/",
-            "domain": "lamag.com"
+            "url": "https://www.nbcsandiego.com/news/local/mira-mesa-no-kings-protesters-urge-voters-to-make-voices-heard/4088633/",
+            "domain": "nbcsandiego.com"
           }
         ]
       }
@@ -56,8 +39,8 @@
         "date": "2026-10-15T21:00:31+00:00",
         "lat": 33.3433,
         "lon": -117.4094,
-        "acreage": 2079,
-        "containment_pct": 20,
+        "acreage": 3160,
+        "containment_pct": 50,
         "cause": "Undetermined",
         "state": "CA",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-CAPMQ-003992",
@@ -75,8 +58,8 @@
         "date": "2026-10-16T18:32:56+00:00",
         "lat": 33.4797,
         "lon": -117.6348,
-        "acreage": 465,
-        "containment_pct": 0,
+        "acreage": 570,
+        "containment_pct": 25,
         "cause": "Undetermined",
         "state": "CA",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-CAORC-149182",
@@ -88,7 +71,20 @@
     ],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "airport_closure",
+        "code": "SAN",
+        "name": "San Diego Intl",
+        "city": "San Diego",
+        "state": "CA",
+        "reason": "!SAN 10/056 SAN AD AP CLSD 2610180800-2610181300",
+        "start": "Oct 18 at 08:00 UTC.",
+        "reopen": "Oct 18 at 13:00 UTC.",
+        "source": "FAA NAS Status",
+        "url": "https://nasstatus.faa.gov/"
+      }
+    ],
     "fema": [],
     "disease": []
   },
@@ -96,37 +92,38 @@
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 9,
+      "precip_probability_pct": 2,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 87.0,
-      "low_temp_f": 60.0,
-      "high_apparent_temp_f": 84.0,
-      "low_apparent_temp_f": 60.0,
-      "max_wind_mph": 39.1,
-      "max_wind_gust_mph": 56.4,
-      "thunder_probability_pct": 9,
+      "high_temp_f": 86.0,
+      "low_temp_f": 54.0,
+      "high_apparent_temp_f": 83.0,
+      "low_apparent_temp_f": 54.0,
+      "max_wind_mph": 23.0,
+      "max_wind_gust_mph": 35.7,
+      "thunder_probability_pct": 21,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
+        "thunderstorms",
         "fog"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 50,
+      "us_aqi": 45,
       "category": "Good",
-      "aqi_24h_max": 59,
+      "aqi_24h_max": 55,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 21.0,
-      "pm10": 97.8,
-      "ozone": 83.0,
-      "nitrogen_dioxide": 0.7,
-      "observed_at": "2026-10-17T07:00",
+      "pm2_5": 5.3,
+      "pm10": 14.6,
+      "ozone": 37.0,
+      "nitrogen_dioxide": 3.0,
+      "observed_at": "2026-10-18T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-17",
-  "generated_at": "2026-10-17T08:01:52.354009+00:00"
+  "date": "2026-10-18",
+  "generated_at": "2026-10-18T12:25:22.703989+00:00"
 }
