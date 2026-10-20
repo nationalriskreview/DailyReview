@@ -8,7 +8,22 @@
     "lon": -135.338279
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued October 20 at 3:11AM AKDT until October 20 at 10:00PM AKDT by NWS Juneau AK",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-20T03:11:00-08:00",
+        "expires": "2026-10-20T12:00:00-08:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aed9b9b3ed91a788f0b3a0b10594515e369a1f4e.001.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aed9b9b3ed91a788f0b3a0b10594515e369a1f4e.001.2"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +37,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.23,
-      "precip_probability_pct": 88,
+      "precip_in_24h": 2.06,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 47.0,
-      "low_temp_f": 40.0,
-      "high_apparent_temp_f": 40.0,
+      "high_temp_f": 54.0,
+      "low_temp_f": 43.0,
+      "high_apparent_temp_f": 54.0,
       "low_apparent_temp_f": 33.0,
-      "max_wind_mph": 24.2,
-      "max_wind_gust_mph": 50.6,
+      "max_wind_mph": 31.1,
+      "max_wind_gust_mph": 61.0,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "light rain"
+        "light rain",
+        "moderate rain",
+        "heavy rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 35,
+      "us_aqi": 38,
       "category": "Good",
-      "aqi_24h_max": 36,
+      "aqi_24h_max": 39,
       "aqi_24h_max_category": "Good",
       "pm2_5": 0.0,
       "pm10": 0.0,
-      "ozone": 75.0,
-      "nitrogen_dioxide": 0.7,
-      "observed_at": "2026-10-19T14:00",
+      "ozone": 85.0,
+      "nitrogen_dioxide": 0.3,
+      "observed_at": "2026-10-20T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-19",
-  "generated_at": "2026-10-19T14:54:49.817425+00:00"
+  "date": "2026-10-20",
+  "generated_at": "2026-10-20T13:14:37.198033+00:00"
 }

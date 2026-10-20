@@ -8,7 +8,15 @@
     "lon": -133.008598
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~3.3\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=57.1125&lon=-133.0086"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +30,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.03,
-      "precip_probability_pct": 80,
-      "snow_in_24h": 0.0,
+      "precip_in_24h": 3.3,
+      "precip_probability_pct": 100,
+      "snow_in_24h": 0.7,
       "ice_in_24h": 0.0,
-      "high_temp_f": 35.0,
-      "low_temp_f": 32.0,
-      "high_apparent_temp_f": 34.0,
-      "low_apparent_temp_f": 23.0,
-      "max_wind_mph": 18.4,
-      "max_wind_gust_mph": 20.7,
+      "high_temp_f": 38.0,
+      "low_temp_f": 34.0,
+      "high_apparent_temp_f": 27.0,
+      "low_apparent_temp_f": 22.0,
+      "max_wind_mph": 32.2,
+      "max_wind_gust_mph": 48.3,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
-        "fog",
-        "light snow"
+        "moderate rain",
+        "light snow",
+        "heavy rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 27,
+      "us_aqi": 32,
       "category": "Good",
-      "aqi_24h_max": 34,
+      "aqi_24h_max": 35,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 0.2,
-      "pm10": 0.3,
-      "ozone": 63.0,
-      "nitrogen_dioxide": 0.9,
-      "observed_at": "2026-10-19T14:00",
+      "pm2_5": 1.0,
+      "pm10": 1.6,
+      "ozone": 75.0,
+      "nitrogen_dioxide": 0.3,
+      "observed_at": "2026-10-20T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-19",
-  "generated_at": "2026-10-19T14:54:49.817425+00:00"
+  "date": "2026-10-20",
+  "generated_at": "2026-10-20T13:14:37.198033+00:00"
 }

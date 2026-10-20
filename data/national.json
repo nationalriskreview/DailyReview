@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-19T14:54:49.817425+00:00",
-  "date": "2026-10-19",
+  "generated_at": "2026-10-20T13:14:37.198033+00:00",
+  "date": "2026-10-20",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 108
+      "counties_with_alerts": 100
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
-      "counties_with_conditions": 3222,
-      "counties_over_threshold": 24,
+      "counties_with_conditions": 3202,
+      "counties_over_threshold": 30,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 35,
+      "counties_with_matches": 69,
       "items_pre_llm": {
-        "protest": 71,
-        "utility_outage": 0,
+        "protest": 191,
+        "utility_outage": 3,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 3
+        "hazmat_incident": 13,
+        "road_closure": 1
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 35,
+      "counties_with_matches": 27,
       "items_post_llm": {
-        "protest": 71,
-        "utility_outage": 0,
+        "protest": 33,
+        "utility_outage": 3,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
-        "road_closure": 3
+        "road_closure": 0
       },
-      "unique_articles": 55,
-      "calls_used": 55,
+      "unique_articles": 133,
+      "calls_used": 133,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 113
+      "counties_with_alerts": 106
     },
     "transit": {
       "status": "ok",
@@ -150,8 +150,8 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 8,
-      "counties_with_detections": 6
+      "positive_samples": 5,
+      "counties_with_detections": 4
     },
     "nndss_notifiable": {
       "status": "ok",
@@ -167,9 +167,9 @@
       "counties_with_alerts": 0
     },
     "service_status": {
-      "status": "partial",
-      "active_incidents": 5,
-      "providers_ok": 26,
+      "status": "ok",
+      "active_incidents": 6,
+      "providers_ok": 27,
       "providers_total": 27,
       "providers": [
         {
@@ -188,7 +188,7 @@
           "key": "gcp",
           "name": "Google Cloud",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "cloudflare",
@@ -266,13 +266,13 @@
           "key": "palo_alto",
           "name": "Palo Alto Networks",
           "status": "ok",
-          "items": 1
+          "items": 2
         },
         {
           "key": "rapid7",
           "name": "Rapid7",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "servicenow",
@@ -319,7 +319,7 @@
         {
           "key": "b6hj",
           "name": "b6hj",
-          "status": "fetch_failed",
+          "status": "ok",
           "items": 0
         },
         {
@@ -340,17 +340,15 @@
   "run_health": {
     "overall": "degraded",
     "counts": {
-      "ok": 13,
-      "partial": 1,
+      "ok": 14,
+      "partial": 0,
       "failed": 1,
       "skipped": 0
     },
     "failed": [
       "amtrak"
     ],
-    "partial": [
-      "service_status"
-    ],
+    "partial": [],
     "skipped": []
   },
   "cdc_han": [],
@@ -611,47 +609,58 @@
   "faa_advisories": [],
   "service_outages": [
     {
+      "provider": "Google Cloud",
+      "key": "gcp",
+      "title": "Multiple services are experiencing issues in the europe-west2 region.",
+      "impact": "medium",
+      "status": "SERVICE_DISRUPTION",
+      "started": "2026-10-20T06:08:00+00:00",
+      "updated": "2026-10-20T13:09:36+00:00",
+      "url": "https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPyzj",
+      "source": "provider status page"
+    },
+    {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Partial System Outage",
-      "impact": "major",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "title": "Cloudflare Secure Web Gateway and DLP enforcement issues for Google Gemini",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-10-19T20:30:00.915Z",
+      "updated": "2026-10-19T23:46:48.411Z",
+      "url": "https://www.cloudflarestatus.com/incidents/3z8y23zn7tr2",
       "source": "provider status page"
     },
     {
       "provider": "Zoom",
       "key": "zoom",
-      "title": "Service Degradation Affecting Zoom Website in UK region",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-10-19T06:32:56.013-07:00",
-      "updated": "2026-10-19T07:00:17.899-07:00",
-      "url": "https://stspg.io/n49f0v00l95f",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Palo Alto Networks",
-      "key": "palo_alto",
-      "title": "Partially Degraded Service",
-      "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.paloaltonetworks.com",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Rapid7",
-      "key": "rapid7",
       "title": "Service Under Maintenance",
       "impact": "maintenance",
       "status": "active",
       "started": "",
       "updated": "",
-      "url": "https://status.rapid7.com",
+      "url": "https://status.zoom.us",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Palo Alto Networks",
+      "key": "palo_alto",
+      "title": "WildFire Issue",
+      "impact": "minor",
+      "status": "investigating",
+      "started": "2026-10-20T06:52:45.837Z",
+      "updated": "2026-10-20T13:08:49.372Z",
+      "url": "https://stspg.io/s6y6jp9b2pct",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Palo Alto Networks",
+      "key": "palo_alto",
+      "title": "[Cortex XDR / XSIAM / XSOAR 8 / XPANSE/ CLOUD] Degraded Performance in UK Region",
+      "impact": "major",
+      "status": "identified",
+      "started": "2026-10-20T07:52:37.131Z",
+      "updated": "2026-10-20T11:51:42.051Z",
+      "url": "https://stspg.io/x47pbj5dcnxv",
       "source": "provider status page"
     },
     {
