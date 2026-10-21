@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-20T13:14:37.198033+00:00",
-  "date": "2026-10-20",
+  "generated_at": "2026-10-21T08:55:12.067035+00:00",
+  "date": "2026-10-21",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 100
+      "counties_with_alerts": 73
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
-      "counties_with_conditions": 3202,
-      "counties_over_threshold": 30,
+      "counties_with_conditions": 3222,
+      "counties_over_threshold": 17,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,29 +30,29 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 69,
+      "counties_with_matches": 23,
       "items_pre_llm": {
-        "protest": 191,
-        "utility_outage": 3,
-        "transit_disruption": 0,
+        "protest": 130,
+        "utility_outage": 1,
+        "transit_disruption": 1,
         "service_provider_outage": 0,
-        "hazmat_incident": 13,
-        "road_closure": 1
+        "hazmat_incident": 0,
+        "road_closure": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 27,
+      "counties_with_matches": 12,
       "items_post_llm": {
-        "protest": 33,
-        "utility_outage": 3,
-        "transit_disruption": 0,
+        "protest": 19,
+        "utility_outage": 0,
+        "transit_disruption": 1,
         "service_provider_outage": 0,
         "hazmat_incident": 0,
         "road_closure": 0
       },
-      "unique_articles": 133,
-      "calls_used": 133,
+      "unique_articles": 83,
+      "calls_used": 83,
       "cap": 300,
       "cap_hit": false
     },
@@ -150,8 +150,8 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 5,
-      "counties_with_detections": 4
+      "positive_samples": 4,
+      "counties_with_detections": 3
     },
     "nndss_notifiable": {
       "status": "ok",
@@ -163,12 +163,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 1,
+      "counties_with_alerts": 16
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 6,
+      "active_incidents": 4,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -188,7 +188,7 @@
           "key": "gcp",
           "name": "Google Cloud",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "cloudflare",
@@ -266,7 +266,7 @@
           "key": "palo_alto",
           "name": "Palo Alto Networks",
           "status": "ok",
-          "items": 2
+          "items": 1
         },
         {
           "key": "rapid7",
@@ -606,28 +606,30 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [],
-  "service_outages": [
+  "faa_advisories": [
     {
-      "provider": "Google Cloud",
-      "key": "gcp",
-      "title": "Multiple services are experiencing issues in the europe-west2 region.",
-      "impact": "medium",
-      "status": "SERVICE_DISRUPTION",
-      "started": "2026-10-20T06:08:00+00:00",
-      "updated": "2026-10-20T13:09:36+00:00",
-      "url": "https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPyzj",
-      "source": "provider status page"
-    },
+      "kind": "airport_closure",
+      "code": "LGA",
+      "name": "LaGuardia",
+      "city": "New York",
+      "state": "NY",
+      "reason": "!LGA 10/252 LGA AD AP CLSD EXC HEL 30MIN \rPPR 718-533-3700 2610210405-2610211000",
+      "start": "Oct 21 at 04:05 UTC.",
+      "reopen": "Oct 21 at 10:00 UTC.",
+      "source": "FAA NAS Status",
+      "url": "https://nasstatus.faa.gov/"
+    }
+  ],
+  "service_outages": [
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Cloudflare Secure Web Gateway and DLP enforcement issues for Google Gemini",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-10-19T20:30:00.915Z",
-      "updated": "2026-10-19T23:46:48.411Z",
-      "url": "https://www.cloudflarestatus.com/incidents/3z8y23zn7tr2",
+      "title": "Partial System Outage",
+      "impact": "major",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
@@ -644,23 +646,12 @@
     {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "WildFire Issue",
+      "title": "Partially Degraded Service",
       "impact": "minor",
-      "status": "investigating",
-      "started": "2026-10-20T06:52:45.837Z",
-      "updated": "2026-10-20T13:08:49.372Z",
-      "url": "https://stspg.io/s6y6jp9b2pct",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Palo Alto Networks",
-      "key": "palo_alto",
-      "title": "[Cortex XDR / XSIAM / XSOAR 8 / XPANSE/ CLOUD] Degraded Performance in UK Region",
-      "impact": "major",
-      "status": "identified",
-      "started": "2026-10-20T07:52:37.131Z",
-      "updated": "2026-10-20T11:51:42.051Z",
-      "url": "https://stspg.io/x47pbj5dcnxv",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
     },
     {

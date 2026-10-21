@@ -8,7 +8,15 @@
     "lon": -152.322283
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Extreme Cold Forecast",
+        "headline": "Apparent temperature expected to drop to -1.0°F in next 24h",
+        "severity": "Severe",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=60.3667&lon=-153.5588"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,44 +30,46 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.2,
-      "precip_probability_pct": 72,
-      "snow_in_24h": 0.6,
+      "precip_in_24h": 0.02,
+      "precip_probability_pct": 40,
+      "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 42.0,
-      "low_temp_f": 16.0,
+      "high_temp_f": 43.0,
+      "low_temp_f": 14.0,
       "high_apparent_temp_f": 40.0,
-      "low_apparent_temp_f": 0.0,
-      "max_wind_mph": 28.8,
-      "max_wind_gust_mph": 34.5,
+      "low_apparent_temp_f": -1.0,
+      "max_wind_mph": 26.5,
+      "max_wind_gust_mph": 36.8,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
         "light rain",
         "light snow",
+        "heavy snow",
         "light rain showers",
         "light snow showers",
-        "freezing fog"
+        "freezing fog",
+        "moderate snow"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 28,
+      "us_aqi": 30,
       "category": "Good",
-      "aqi_24h_max": 31,
+      "aqi_24h_max": 32,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 0.1,
-      "pm10": 0.1,
-      "ozone": 59.0,
-      "nitrogen_dioxide": 2.5,
-      "observed_at": "2026-10-20T12:00",
+      "pm2_5": 0.0,
+      "pm10": 0.0,
+      "ozone": 63.0,
+      "nitrogen_dioxide": 0.2,
+      "observed_at": "2026-10-21T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-20",
-  "generated_at": "2026-10-20T13:14:37.198033+00:00"
+  "date": "2026-10-21",
+  "generated_at": "2026-10-21T08:55:12.067035+00:00"
 }
