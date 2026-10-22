@@ -8,7 +8,36 @@
     "lon": -163.190171
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Coastal Flood Warning",
+        "headline": "Coastal Flood Warning issued October 21 at 3:09PM AKDT until October 25 at 10:00PM AKDT by NWS Fairbanks AK",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-21T15:09:00-08:00",
+        "expires": "2026-10-22T16:00:00-08:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b5e6906cbc690690dcda89e9e75555fe1f5cbf6.001.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5b5e6906cbc690690dcda89e9e75555fe1f5cbf6.001.2"
+        ],
+        "count": 1
+      },
+      {
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued October 21 at 2:50PM AKDT until October 24 at 4:00PM AKDT by NWS Fairbanks AK",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-21T14:50:00-08:00",
+        "expires": "2026-10-22T07:00:00-08:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.427ee6ad8fb63cb55bf60186ad087973c5ee708c.002.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.427ee6ad8fb63cb55bf60186ad087973c5ee708c.002.2"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +51,44 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 29,
+      "precip_probability_pct": 28,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 36.0,
+      "high_temp_f": 37.0,
       "low_temp_f": 25.0,
-      "high_apparent_temp_f": 30.0,
+      "high_apparent_temp_f": 29.0,
       "low_apparent_temp_f": 18.0,
-      "max_wind_mph": 16.1,
-      "max_wind_gust_mph": 24.2,
+      "max_wind_mph": 15.0,
+      "max_wind_gust_mph": 20.7,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
+        "blowing snow",
         "light snow",
+        "moderate snow",
+        "moderate rain",
         "light rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 29,
+      "us_aqi": 26,
       "category": "Good",
-      "aqi_24h_max": 34,
+      "aqi_24h_max": 29,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.1,
-      "pm10": 7.3,
-      "ozone": 63.0,
-      "nitrogen_dioxide": 0.1,
-      "observed_at": "2026-10-21T08:00",
+      "pm2_5": 1.8,
+      "pm10": 3.2,
+      "ozone": 57.0,
+      "nitrogen_dioxide": 0.2,
+      "observed_at": "2026-10-22T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-21",
-  "generated_at": "2026-10-21T08:55:12.067035+00:00"
+  "date": "2026-10-22",
+  "generated_at": "2026-10-22T13:18:52.146738+00:00"
 }
