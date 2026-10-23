@@ -10,11 +10,19 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~2.5\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=37.5491&lon=-107.0032"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 22 at 10:07PM MDT until October 23 at 11:00AM MDT by NWS Pueblo CO",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-22T18:41:00-06:00",
+        "expires": "2026-10-23T11:00:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.03011cf1c8199da5de650405af1eee2a145ac204.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.03011cf1c8199da5de650405af1eee2a145ac204.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5289a6353d07b40dfaad5f421c3d49793e9f3d0c.001.1"
+        ],
+        "count": 2
       }
     ],
     "protest": [],
@@ -23,51 +31,71 @@
     "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
-    "wildfires": [],
+    "wildfires": [
+      {
+        "title": "Elk",
+        "incident_name": "Elk",
+        "id": "2026-COGMF-000114",
+        "category": "wildfire",
+        "incident_type": "Wildfire",
+        "date": "2026-07-09T15:46:12+00:00",
+        "lat": 38.1242,
+        "lon": -107.3548,
+        "acreage": 7257,
+        "containment_pct": 90,
+        "cause": "Undetermined",
+        "state": "CO",
+        "source_url": "https://irwin.doi.gov/observer/incidents/2026-COGMF-000114",
+        "source": "NIFC WFIGS",
+        "url": "https://irwin.doi.gov/observer/incidents/2026-COGMF-000114",
+        "distance_miles": 44.1,
+        "threat_level": "Vicinity"
+      }
+    ],
     "transit": [],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 2.51,
+      "precip_in_24h": 1.5,
       "precip_probability_pct": 100,
-      "snow_in_24h": 0.0,
+      "snow_in_24h": 1.2,
       "ice_in_24h": 0.0,
-      "high_temp_f": 39.0,
-      "low_temp_f": 34.0,
-      "high_apparent_temp_f": 36.0,
-      "low_apparent_temp_f": 23.0,
-      "max_wind_mph": 23.0,
-      "max_wind_gust_mph": 38.0,
-      "thunder_probability_pct": 37,
+      "high_temp_f": 35.0,
+      "low_temp_f": 29.0,
+      "high_apparent_temp_f": 28.0,
+      "low_apparent_temp_f": 20.0,
+      "max_wind_mph": 24.2,
+      "max_wind_gust_mph": 40.3,
+      "thunder_probability_pct": 32,
       "lightning_activity_level": null,
       "weather": [
-        "moderate rain showers",
+        "heavy rain showers",
         "thunderstorms",
         "light snow showers",
-        "light rain showers",
-        "heavy rain showers"
+        "moderate rain showers",
+        "moderate snow showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 31,
+      "us_aqi": 39,
       "category": "Good",
-      "aqi_24h_max": 41,
+      "aqi_24h_max": 39,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.4,
-      "pm10": 2.6,
-      "ozone": 68.0,
-      "nitrogen_dioxide": 1.4,
-      "observed_at": "2026-10-22T13:00",
+      "pm2_5": 2.7,
+      "pm10": 3.1,
+      "ozone": 84.0,
+      "nitrogen_dioxide": 0.7,
+      "observed_at": "2026-10-23T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-22",
-  "generated_at": "2026-10-22T13:18:52.146738+00:00"
+  "date": "2026-10-23",
+  "generated_at": "2026-10-23T08:49:26.699233+00:00"
 }

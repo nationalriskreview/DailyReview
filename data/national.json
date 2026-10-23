@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-22T13:18:52.146738+00:00",
-  "date": "2026-10-22",
+  "generated_at": "2026-10-23T08:49:26.699233+00:00",
+  "date": "2026-10-23",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 99
+      "counties_with_alerts": 163
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 36,
+      "counties_over_threshold": 31,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,49 +30,49 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 54,
+      "counties_with_matches": 38,
       "items_pre_llm": {
-        "protest": 106,
-        "utility_outage": 2,
+        "protest": 48,
+        "utility_outage": 0,
         "transit_disruption": 0,
         "service_provider_outage": 1,
-        "hazmat_incident": 16,
-        "road_closure": 5
+        "hazmat_incident": 5,
+        "road_closure": 7
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 38,
+      "counties_with_matches": 3,
       "items_post_llm": {
-        "protest": 61,
+        "protest": 2,
         "utility_outage": 0,
         "transit_disruption": 0,
-        "service_provider_outage": 1,
-        "hazmat_incident": 12,
-        "road_closure": 3
+        "service_provider_outage": 0,
+        "hazmat_incident": 1,
+        "road_closure": 0
       },
-      "unique_articles": 75,
-      "calls_used": 75,
+      "unique_articles": 41,
+      "calls_used": 41,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 103
+      "counties_with_alerts": 117
     },
     "transit": {
-      "status": "partial",
+      "status": "ok",
       "agencies_total": 11,
-      "agencies_ok": 10,
+      "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 1,
-      "counties_with_alerts": 5,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "mta-subway",
@@ -95,7 +95,7 @@
         {
           "id": "path",
           "name": "PATH",
-          "status": "fetch_failed",
+          "status": "ok",
           "items": 0
         },
         {
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 3,
+      "active_incidents": 4,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -212,7 +212,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "openai",
@@ -340,17 +340,15 @@
   "run_health": {
     "overall": "degraded",
     "counts": {
-      "ok": 13,
-      "partial": 1,
+      "ok": 14,
+      "partial": 0,
       "failed": 1,
       "skipped": 0
     },
     "failed": [
       "amtrak"
     ],
-    "partial": [
-      "transit"
-    ],
+    "partial": [],
     "skipped": []
   },
   "cdc_han": [],
@@ -641,12 +639,23 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Partial System Outage",
-      "impact": "major",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "title": "Support Helpdesk Availability Issues",
+      "impact": "minor",
+      "status": "monitoring",
+      "started": "2026-10-23T03:03:09.059Z",
+      "updated": "2026-10-23T06:37:40.206Z",
+      "url": "https://www.cloudflarestatus.com/incidents/8m9a1fjjwxp5",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Zoom",
+      "key": "zoom",
+      "title": "Service Degradation Affecting Zoom Meetings Services in the US.",
+      "impact": "minor",
+      "status": "monitoring",
+      "started": "2026-10-22T12:16:27.688-07:00",
+      "updated": "2026-10-22T13:05:21.706-07:00",
+      "url": "https://stspg.io/813b5nbpsxdf",
       "source": "provider status page"
     },
     {
@@ -662,7 +671,7 @@
     },
     {
       "provider": "x9tz",
-      "impact": "none",
+      "impact": "minor",
       "active_incidents": 1,
       "status": "active",
       "coded": true,
