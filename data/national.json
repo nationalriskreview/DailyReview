@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-23T08:49:26.699233+00:00",
-  "date": "2026-10-23",
+  "generated_at": "2026-10-24T08:21:28.748796+00:00",
+  "date": "2026-10-24",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 163
+      "counties_with_alerts": 154
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 31,
+      "counties_over_threshold": 34,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 38,
+      "counties_with_matches": 48,
       "items_pre_llm": {
-        "protest": 48,
-        "utility_outage": 0,
-        "transit_disruption": 0,
+        "protest": 36,
+        "utility_outage": 3,
+        "transit_disruption": 5,
         "service_provider_outage": 1,
-        "hazmat_incident": 5,
-        "road_closure": 7
+        "hazmat_incident": 3,
+        "road_closure": 10
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 3,
+      "counties_with_matches": 18,
       "items_post_llm": {
-        "protest": 2,
-        "utility_outage": 0,
-        "transit_disruption": 0,
+        "protest": 3,
+        "utility_outage": 3,
+        "transit_disruption": 5,
         "service_provider_outage": 0,
-        "hazmat_incident": 1,
-        "road_closure": 0
+        "hazmat_incident": 0,
+        "road_closure": 8
       },
-      "unique_articles": 41,
-      "calls_used": 41,
+      "unique_articles": 30,
+      "calls_used": 30,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 117
+      "counties_with_alerts": 137
     },
     "transit": {
       "status": "ok",
@@ -138,7 +138,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 136
+      "counties_with_alerts": 137
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -150,8 +150,8 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 1,
-      "counties_with_detections": 1
+      "positive_samples": 10,
+      "counties_with_detections": 6
     },
     "nndss_notifiable": {
       "status": "ok",
@@ -163,12 +163,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 1,
+      "counties_with_alerts": 16
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 4,
+      "active_incidents": 3,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -212,7 +212,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "openai",
@@ -634,28 +634,30 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [],
+  "faa_advisories": [
+    {
+      "kind": "airport_closure",
+      "code": "LGA",
+      "name": "LaGuardia",
+      "city": "New York",
+      "state": "NY",
+      "reason": "!LGA 10/301 LGA AD AP CLSD EXC 30MIN \rPPR 718-533-3700 2610240402-2610241000",
+      "start": "Oct 24 at 04:02 UTC.",
+      "reopen": "Oct 24 at 10:00 UTC.",
+      "source": "FAA NAS Status",
+      "url": "https://nasstatus.faa.gov/"
+    }
+  ],
   "service_outages": [
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Support Helpdesk Availability Issues",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-10-23T03:03:09.059Z",
-      "updated": "2026-10-23T06:37:40.206Z",
-      "url": "https://www.cloudflarestatus.com/incidents/8m9a1fjjwxp5",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Zoom",
-      "key": "zoom",
-      "title": "Service Degradation Affecting Zoom Meetings Services in the US.",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-10-22T12:16:27.688-07:00",
-      "updated": "2026-10-22T13:05:21.706-07:00",
-      "url": "https://stspg.io/813b5nbpsxdf",
+      "title": "Partial System Outage",
+      "impact": "major",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
@@ -671,7 +673,7 @@
     },
     {
       "provider": "x9tz",
-      "impact": "minor",
+      "impact": "maintenance",
       "active_incidents": 1,
       "status": "active",
       "coded": true,

@@ -8,7 +8,22 @@
     "lon": -117.777207
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Coastal Flood Warning",
+        "headline": "Coastal Flood Warning issued October 23 at 11:03AM PDT until October 29 at 1:00PM PDT by NWS San Diego CA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-23T11:03:00-07:00",
+        "expires": "2026-10-25T08:15:00-07:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.93e62e512da3b44f42078b65a2b48598e0ef00f2.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.93e62e512da3b44f42078b65a2b48598e0ef00f2.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -19,43 +34,59 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [],
+    "fema": [
+      {
+        "disaster_number": "5679",
+        "declaration_type": "FM",
+        "declaration_title": "NORTE FIRE",
+        "incident_type": "Fire",
+        "declared_at": "2026-10-16T00:00:00.000Z",
+        "is_new_today": false,
+        "incident_begin": "2026-10-16T00:00:00.000Z",
+        "incident_end": null,
+        "designated_area": "Orange (County)",
+        "fema_declaration_string": "FM-5679-CA",
+        "source": "https://www.fema.gov/disaster/5679",
+        "url": "https://www.fema.gov/disaster/5679"
+      }
+    ],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.02,
-      "precip_probability_pct": 37,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 16,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 70.0,
+      "high_temp_f": 78.0,
       "low_temp_f": 57.0,
-      "high_apparent_temp_f": 70.0,
+      "high_apparent_temp_f": 78.0,
       "low_apparent_temp_f": 57.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 17.3,
-      "thunder_probability_pct": 14,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 15.0,
+      "thunder_probability_pct": 10,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers"
+        "light rain showers",
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 23,
+      "us_aqi": 36,
       "category": "Good",
-      "aqi_24h_max": 40,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 7.9,
-      "pm10": 9.3,
-      "ozone": 27.0,
-      "nitrogen_dioxide": 29.8,
-      "observed_at": "2026-10-23T08:00",
+      "aqi_24h_max": 53,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 15.2,
+      "pm10": 16.2,
+      "ozone": 1.0,
+      "nitrogen_dioxide": 55.3,
+      "observed_at": "2026-10-24T08:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-23",
-  "generated_at": "2026-10-23T08:49:26.699233+00:00"
+  "date": "2026-10-24",
+  "generated_at": "2026-10-24T08:21:28.748796+00:00"
 }
