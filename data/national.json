@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-25T12:48:30.846037+00:00",
-  "date": "2026-10-25",
+  "generated_at": "2026-10-26T14:33:20.052050+00:00",
+  "date": "2026-10-26",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 117
+      "counties_with_alerts": 101
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 38,
+      "counties_over_threshold": 54,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 20,
+      "counties_with_matches": 41,
       "items_pre_llm": {
-        "protest": 24,
-        "utility_outage": 4,
-        "transit_disruption": 0,
+        "protest": 58,
+        "utility_outage": 1,
+        "transit_disruption": 1,
         "service_provider_outage": 0,
-        "hazmat_incident": 5,
-        "road_closure": 2
+        "hazmat_incident": 6,
+        "road_closure": 1
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 6,
+      "counties_with_matches": 30,
       "items_post_llm": {
-        "protest": 4,
-        "utility_outage": 0,
+        "protest": 33,
+        "utility_outage": 1,
         "transit_disruption": 0,
         "service_provider_outage": 0,
         "hazmat_incident": 3,
-        "road_closure": 0
+        "road_closure": 1
       },
-      "unique_articles": 24,
-      "calls_used": 24,
+      "unique_articles": 42,
+      "calls_used": 42,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 133
+      "counties_with_alerts": 140
     },
     "transit": {
       "status": "ok",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 4,
+      "active_incidents": 5,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -212,7 +212,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "openai",
@@ -272,7 +272,7 @@
           "key": "rapid7",
           "name": "Rapid7",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "servicenow",
@@ -302,7 +302,7 @@
           "key": "m4kp",
           "name": "m4kp",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "x9tz",
@@ -648,6 +648,17 @@
       "source": "provider status page"
     },
     {
+      "provider": "Zoom",
+      "key": "zoom",
+      "title": "Service Under Maintenance",
+      "impact": "maintenance",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.zoom.us",
+      "source": "provider status page"
+    },
+    {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
       "title": "Partially Degraded Service",
@@ -659,12 +670,15 @@
       "source": "provider status page"
     },
     {
-      "provider": "m4kp",
+      "provider": "Rapid7",
+      "key": "rapid7",
+      "title": "Service Under Maintenance",
       "impact": "maintenance",
-      "active_incidents": 1,
       "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
+      "started": "",
+      "updated": "",
+      "url": "https://status.rapid7.com",
+      "source": "provider status page"
     },
     {
       "provider": "x9tz",

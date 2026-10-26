@@ -10,11 +10,18 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Snow Forecast",
-        "headline": "~7.9\" snow expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=64.7837&lon=-162.4704"
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued October 26 at 2:28AM AKDT until October 27 at 4:00PM AKDT by NWS Fairbanks AK",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-26T02:28:00-08:00",
+        "expires": "2026-10-26T22:00:00-08:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.127f887ec8bdbfac286ec0f122e882be66ac4fda.002.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.127f887ec8bdbfac286ec0f122e882be66ac4fda.002.2"
+        ],
+        "count": 1
       }
     ],
     "protest": [],
@@ -33,42 +40,41 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.69,
+      "precip_in_24h": 0.32,
       "precip_probability_pct": 100,
-      "snow_in_24h": 7.9,
+      "snow_in_24h": 2.83,
       "ice_in_24h": 0.0,
       "high_temp_f": 41.0,
       "low_temp_f": 30.0,
-      "high_apparent_temp_f": 30.0,
-      "low_apparent_temp_f": 17.0,
-      "max_wind_mph": 33.4,
-      "max_wind_gust_mph": 41.4,
+      "high_apparent_temp_f": 34.0,
+      "low_apparent_temp_f": 16.0,
+      "max_wind_mph": 32.2,
+      "max_wind_gust_mph": 39.1,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
-        "light rain",
         "light snow",
+        "light rain",
         "blowing snow",
-        "moderate snow",
         "heavy snow",
-        "moderate rain"
+        "moderate snow"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 31,
+      "us_aqi": 35,
       "category": "Good",
       "aqi_24h_max": 35,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 1.7,
-      "pm10": 3.0,
-      "ozone": 64.0,
+      "pm2_5": 4.2,
+      "pm10": 7.1,
+      "ozone": 72.0,
       "nitrogen_dioxide": 0.1,
-      "observed_at": "2026-10-25T12:00",
+      "observed_at": "2026-10-26T14:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-25",
-  "generated_at": "2026-10-25T12:48:30.846037+00:00"
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26T14:33:20.052050+00:00"
 }
