@@ -1,17 +1,32 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-27T13:29:09.200819+00:00",
-  "date": "2026-10-27",
+  "generated_at": "2026-10-28T09:53:04.785916+00:00",
+  "date": "2026-10-28",
   "state": "HI",
   "counties_total": 5,
-  "counties_with_alerts": 4,
+  "counties_with_alerts": 5,
   "counties": {
     "15001": {
       "fips": "15001",
       "name": "Hawaii County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "High Wind Warning",
+            "headline": "High Wind Warning issued October 27 at 3:04PM HST until October 28 at 12:00PM HST by NWS Honolulu HI",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-10-27T15:04:00-10:00",
+            "expires": "2026-10-28T04:15:00-10:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df40c6c3caaffdd0063ae73297ad26b882081561.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df40c6c3caaffdd0063ae73297ad26b882081561.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -40,37 +55,38 @@
         ],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 51,
+          "precip_in_24h": 0.88,
+          "precip_probability_pct": 82,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 74.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 74.0,
-          "low_apparent_temp_f": 38.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 27.6,
+          "high_temp_f": 75.0,
+          "low_temp_f": 48.0,
+          "high_apparent_temp_f": 75.0,
+          "low_apparent_temp_f": 43.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 31.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers"
+            "heavy rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 17,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.2,
-          "pm10": 5.3,
-          "ozone": 26.0,
-          "nitrogen_dioxide": 2.3,
-          "observed_at": "2026-10-27T13:00",
+          "pm2_5": 0.5,
+          "pm10": 0.7,
+          "ozone": 20.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-10-28T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -80,22 +96,16 @@
       "name": "Honolulu County",
       "state": "HI",
       "alerts": {
-        "weather": [],
-        "protest": [
+        "weather": [
           {
-            "title": "DOH announces recipient of 2026 Suzanne Richmond-Crum Award on World AIDS Day : Maui Now",
-            "url": "https://mauinow.com/2026/10/26/doh-announces-recipient-of-2026-suzanne-richmond-crum-award-on-world-aids-day/",
-            "domain": "mauinow.com",
-            "seendate": "20261027011500",
-            "is_new": false,
-            "sources": [
-              {
-                "url": "https://mauinow.com/2026/10/26/doh-announces-recipient-of-2026-suzanne-richmond-crum-award-on-world-aids-day/",
-                "domain": "mauinow.com"
-              }
-            ]
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~3.6\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=21.4614&lon=-158.2020"
           }
         ],
+        "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
@@ -126,34 +136,36 @@
       "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 25,
+          "precip_in_24h": 3.64,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 67.0,
-          "high_apparent_temp_f": 88.0,
-          "low_apparent_temp_f": 67.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 8.1,
+          "high_temp_f": 86.0,
+          "low_temp_f": 68.0,
+          "high_apparent_temp_f": 89.0,
+          "low_apparent_temp_f": 68.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 17.3,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
+            "heavy rain showers",
+            "thunderstorms",
             "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 35,
+          "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.7,
-          "pm10": 9.8,
-          "ozone": 76.0,
+          "pm2_5": 1.8,
+          "pm10": 2.7,
+          "ozone": 61.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-10-27T13:00",
+          "observed_at": "2026-10-28T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -163,7 +175,15 @@
       "name": "Kalawao County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~3.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=21.2188&lon=-156.9740"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -177,37 +197,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 18,
+          "precip_in_24h": 2.96,
+          "precip_probability_pct": 99,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 79.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 10.4,
+          "low_temp_f": 69.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 69.0,
+          "max_wind_mph": 24.2,
+          "max_wind_gust_mph": 31.1,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
+            "heavy rain showers",
+            "thunderstorms",
             "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
+          "us_aqi": 36,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 37,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.9,
-          "pm10": 9.9,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 0.3,
-          "observed_at": "2026-10-27T13:00",
+          "pm2_5": 4.5,
+          "pm10": 7.2,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-10-28T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -217,7 +239,15 @@
       "name": "Kauai County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=22.0120&lon=-159.7060"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -246,21 +276,21 @@
         ],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.04,
-          "precip_probability_pct": 32,
+          "precip_in_24h": 1.35,
+          "precip_probability_pct": 86,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 83.0,
           "low_temp_f": 65.0,
           "high_apparent_temp_f": 85.0,
           "low_apparent_temp_f": 65.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 10.4,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
             "moderate rain showers"
           ],
@@ -268,15 +298,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 33,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.6,
-          "pm10": 9.4,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 1.6,
-          "observed_at": "2026-10-27T13:00",
+          "pm2_5": 1.7,
+          "pm10": 2.1,
+          "ozone": 42.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-10-28T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -286,7 +316,15 @@
       "name": "Maui County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~3.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=20.8559&lon=-156.6016"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -329,37 +367,39 @@
         ],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 23,
+          "precip_in_24h": 3.5,
+          "precip_probability_pct": 90,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 75.0,
-          "low_temp_f": 66.0,
+          "low_temp_f": 63.0,
           "high_apparent_temp_f": 75.0,
-          "low_apparent_temp_f": 66.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 8.1,
+          "low_apparent_temp_f": 63.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 17.3,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
+            "heavy rain showers",
+            "thunderstorms",
             "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
+          "us_aqi": 35,
           "category": "Good",
-          "aqi_24h_max": 39,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.5,
-          "pm10": 10.7,
-          "ozone": 59.0,
-          "nitrogen_dioxide": 0.7,
-          "observed_at": "2026-10-27T13:00",
+          "pm2_5": 3.4,
+          "pm10": 5.3,
+          "ozone": 38.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-10-28T09:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

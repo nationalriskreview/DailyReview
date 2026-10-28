@@ -8,7 +8,22 @@
     "lon": -81.49645
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Coastal Flood Warning",
+        "headline": "Coastal Flood Warning issued October 28 at 2:48AM EDT until October 30 at 2:00AM EDT by NWS Jacksonville FL",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-28T02:48:00-04:00",
+        "expires": "2026-10-29T05:00:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7472415d9a40f941f03023d01bc4ef7d925328de.001.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7472415d9a40f941f03023d01bc4ef7d925328de.001.2"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,40 +37,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 2,
+      "precip_probability_pct": 5,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 76.0,
-      "low_temp_f": 56.0,
-      "high_apparent_temp_f": 76.0,
-      "low_apparent_temp_f": 56.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 23.0,
-      "thunder_probability_pct": 2,
+      "high_temp_f": 78.0,
+      "low_temp_f": 59.0,
+      "high_apparent_temp_f": 78.0,
+      "low_apparent_temp_f": 59.0,
+      "max_wind_mph": 17.3,
+      "max_wind_gust_mph": 26.5,
+      "thunder_probability_pct": 3,
       "lightning_activity_level": null,
       "weather": [
-        "moderate rain showers"
+        "moderate rain showers",
+        "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 35,
+      "us_aqi": 43,
       "category": "Good",
-      "aqi_24h_max": 47,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 5.0,
-      "pm10": 5.4,
-      "ozone": 77.0,
-      "nitrogen_dioxide": 4.0,
-      "observed_at": "2026-10-27T13:00",
+      "aqi_24h_max": 53,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 9.7,
+      "pm10": 12.8,
+      "ozone": 88.0,
+      "nitrogen_dioxide": 3.2,
+      "observed_at": "2026-10-28T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-27",
-  "generated_at": "2026-10-27T13:29:09.200819+00:00"
+  "date": "2026-10-28",
+  "generated_at": "2026-10-28T09:53:04.785916+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-27T13:29:09.200819+00:00",
-  "date": "2026-10-27",
+  "generated_at": "2026-10-28T09:53:04.785916+00:00",
+  "date": "2026-10-28",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 78
+      "counties_with_alerts": 54
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 44,
+      "counties_over_threshold": 30,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,26 +30,26 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 41,
+      "counties_with_matches": 48,
       "items_pre_llm": {
-        "protest": 59,
+        "protest": 48,
         "utility_outage": 2,
-        "transit_disruption": 0,
+        "transit_disruption": 3,
         "service_provider_outage": 0,
-        "hazmat_incident": 3,
-        "road_closure": 1
+        "hazmat_incident": 5,
+        "road_closure": 10
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 29,
+      "counties_with_matches": 21,
       "items_post_llm": {
-        "protest": 33,
-        "utility_outage": 2,
+        "protest": 20,
+        "utility_outage": 0,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
-        "road_closure": 0
+        "hazmat_incident": 1,
+        "road_closure": 5
       },
       "unique_articles": 44,
       "calls_used": 44,
@@ -58,12 +58,12 @@
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 146
+      "counties_with_alerts": 145
     },
     "transit": {
-      "status": "partial",
+      "status": "ok",
       "agencies_total": 11,
-      "agencies_ok": 10,
+      "agencies_ok": 11,
       "agencies_skipped": 0,
       "items_total": 0,
       "counties_with_alerts": 0,
@@ -119,7 +119,7 @@
         {
           "id": "metra",
           "name": "Metra",
-          "status": "fetch_failed",
+          "status": "ok",
           "items": 0
         },
         {
@@ -150,7 +150,7 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 8,
+      "positive_samples": 7,
       "counties_with_detections": 6
     },
     "nndss_notifiable": {
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "ok",
-      "active_incidents": 6,
+      "active_incidents": 5,
       "providers_ok": 27,
       "providers_total": 27,
       "providers": [
@@ -194,7 +194,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 1
+          "items": 2
         },
         {
           "key": "github",
@@ -212,13 +212,13 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "anthropic",
@@ -296,7 +296,7 @@
           "key": "q7v2",
           "name": "q7v2",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "m4kp",
@@ -308,7 +308,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "r3wn",
@@ -340,17 +340,15 @@
   "run_health": {
     "overall": "degraded",
     "counts": {
-      "ok": 13,
-      "partial": 1,
+      "ok": 14,
+      "partial": 0,
       "failed": 1,
       "skipped": 0
     },
     "failed": [
       "amtrak"
     ],
-    "partial": [
-      "transit"
-    ],
+    "partial": [],
     "skipped": []
   },
   "cdc_han": [],
@@ -641,34 +639,23 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "ERR_TIMED_OUT and ERR_EMPTY_RESPONSE being observed by Cloudflare Customers",
+      "title": "Increased Errors for Durable Objects in the Eastern North America region",
       "impact": "minor",
-      "status": "identified",
-      "started": "2026-10-27T12:28:07.676Z",
-      "updated": "2026-10-27T13:20:33.671Z",
-      "url": "https://www.cloudflarestatus.com/incidents/dk2obcyw2aew",
+      "status": "investigating",
+      "started": "2026-10-28T09:45:10.615Z",
+      "updated": "2026-10-28T09:50:04.098Z",
+      "url": "https://www.cloudflarestatus.com/incidents/lmmf23klsrxq",
       "source": "provider status page"
     },
     {
-      "provider": "Zoom",
-      "key": "zoom",
-      "title": "Service Under Maintenance",
-      "impact": "maintenance",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.zoom.us",
-      "source": "provider status page"
-    },
-    {
-      "provider": "OpenAI",
-      "key": "openai",
-      "title": "Elevated error rates for most hosted Code Reviews and Security Reviews on private GitHub repositories",
-      "impact": "none",
+      "provider": "Cloudflare",
+      "key": "cloudflare",
+      "title": "Network Performance Issues in Ashburn, IAD",
+      "impact": "minor",
       "status": "monitoring",
-      "started": "2026-10-27T08:00:50Z",
-      "updated": "2026-10-27T08:21:10Z",
-      "url": "https://status.openai.com",
+      "started": "2026-10-28T04:39:13.459Z",
+      "updated": "2026-10-28T05:05:21.234Z",
+      "url": "https://www.cloudflarestatus.com/incidents/snth5ero95rz",
       "source": "provider status page"
     },
     {
@@ -689,13 +676,13 @@
       "impact": "major",
       "status": "identified",
       "started": "2026-10-26T19:45:58.489Z",
-      "updated": "2026-10-26T20:44:38.704Z",
+      "updated": "2026-10-27T14:24:52.415Z",
       "url": "https://stspg.io/46225wtcmv8w",
       "source": "provider status page"
     },
     {
-      "provider": "x9tz",
-      "impact": "maintenance",
+      "provider": "q7v2",
+      "impact": "major",
       "active_incidents": 1,
       "status": "active",
       "coded": true,
