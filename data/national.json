@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-10-29T10:10:46.566997+00:00",
-  "date": "2026-10-29",
+  "generated_at": "2026-10-30T10:15:24.709094+00:00",
+  "date": "2026-10-30",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 61
+      "counties_with_alerts": 75
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 37,
+      "counties_over_threshold": 66,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 52,
+      "counties_with_matches": 45,
       "items_pre_llm": {
-        "protest": 55,
-        "utility_outage": 2,
+        "protest": 71,
+        "utility_outage": 7,
         "transit_disruption": 1,
         "service_provider_outage": 0,
         "hazmat_incident": 2,
-        "road_closure": 11
+        "road_closure": 12
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 19,
+      "counties_with_matches": 14,
       "items_post_llm": {
-        "protest": 11,
-        "utility_outage": 2,
+        "protest": 8,
+        "utility_outage": 1,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 6
+        "hazmat_incident": 1,
+        "road_closure": 9
       },
-      "unique_articles": 34,
-      "calls_used": 34,
+      "unique_articles": 50,
+      "calls_used": 50,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 142
+      "counties_with_alerts": 148
     },
     "transit": {
       "status": "ok",
@@ -167,16 +167,16 @@
       "counties_with_alerts": 0
     },
     "service_status": {
-      "status": "ok",
+      "status": "partial",
       "active_incidents": 5,
-      "providers_ok": 27,
+      "providers_ok": 26,
       "providers_total": 27,
       "providers": [
         {
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "azure",
@@ -194,7 +194,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 2
+          "items": 1
         },
         {
           "key": "github",
@@ -205,7 +205,7 @@
         {
           "key": "datadog",
           "name": "Datadog",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -332,7 +332,7 @@
           "key": "t8fc",
           "name": "t8fc",
           "status": "ok",
-          "items": 1
+          "items": 2
         }
       ]
     }
@@ -340,15 +340,17 @@
   "run_health": {
     "overall": "degraded",
     "counts": {
-      "ok": 14,
-      "partial": 0,
+      "ok": 13,
+      "partial": 1,
       "failed": 1,
       "skipped": 0
     },
     "failed": [
       "amtrak"
     ],
-    "partial": [],
+    "partial": [
+      "service_status"
+    ],
     "skipped": []
   },
   "cdc_han": [],
@@ -622,53 +624,53 @@
   "faa_advisories": [],
   "service_outages": [
     {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Issues with Durable Objects availability in Eastern Europe",
-      "impact": "minor",
-      "status": "identified",
-      "started": "2026-10-29T10:06:17.343Z",
-      "updated": "2026-10-29T10:07:09.789Z",
-      "url": "https://www.cloudflarestatus.com/incidents/bc7e93q3eigp",
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Increased invoke error rates",
+      "impact": "",
+      "status": "",
+      "started": "Thu, 29 Oct 2026 18:28:38 PDT",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
       "source": "provider status page"
     },
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Increased D1 and Workflows Error Rates",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-10-29T09:22:53.373Z",
-      "updated": "2026-10-29T10:09:19.440Z",
-      "url": "https://www.cloudflarestatus.com/incidents/6yfpsos7ksp3",
+      "title": "Partial System Outage",
+      "impact": "major",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "Partially Degraded Service",
-      "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.paloaltonetworks.com",
+      "title": "Delayed Alibaba cloud ingestion for all customers",
+      "impact": "none",
+      "status": "identified",
+      "started": "2026-10-30T05:36:44.369Z",
+      "updated": "2026-10-30T09:02:35.702Z",
+      "url": "https://stspg.io/6v6rkvyd7tf0",
       "source": "provider status page"
     },
     {
       "provider": "Rapid7",
       "key": "rapid7",
-      "title": "SIEM - Rapid7 Collector",
-      "impact": "major",
-      "status": "identified",
-      "started": "2026-10-26T19:45:58.489Z",
-      "updated": "2026-10-28T14:50:59.368Z",
-      "url": "https://stspg.io/46225wtcmv8w",
+      "title": "Partially Degraded Service",
+      "impact": "minor",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.rapid7.com",
       "source": "provider status page"
     },
     {
       "provider": "t8fc",
       "impact": "minor",
-      "active_incidents": 1,
+      "active_incidents": 2,
       "status": "active",
       "coded": true,
       "source": "provider status page (coded)"

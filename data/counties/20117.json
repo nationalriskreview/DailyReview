@@ -8,7 +8,38 @@
     "lon": -96.521243
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued October 30 at 4:50AM CDT until October 30 at 5:00AM CDT by NWS Topeka KS",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-10-30T04:50:00-05:00",
+        "expires": "2026-10-30T05:00:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.051fd4474702ee34e199871bd95b9f141e6cd4b3.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.051fd4474702ee34e199871bd95b9f141e6cd4b3.001.1"
+        ],
+        "count": 1
+      },
+      {
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued October 30 at 4:36AM CDT until October 30 at 10:30AM CDT by NWS Topeka KS",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-30T03:45:00-05:00",
+        "expires": "2026-10-30T18:45:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.154d8a9e61d0d0a7674a5b4daed270a1e27445ce.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.154d8a9e61d0d0a7674a5b4daed270a1e27445ce.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9bd3f46e139cbba31e3351a92d77c8c330eb0d8a.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d48f4e70085ec1ee0112c08f739fa445e482b5db.001.1"
+        ],
+        "count": 3
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +53,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.01,
-      "precip_probability_pct": 38,
+      "precip_in_24h": 0.6,
+      "precip_probability_pct": 65,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 70.0,
-      "low_temp_f": 55.0,
-      "high_apparent_temp_f": 70.0,
-      "low_apparent_temp_f": 55.0,
-      "max_wind_mph": 6.9,
+      "high_temp_f": 74.0,
+      "low_temp_f": 56.0,
+      "high_apparent_temp_f": 74.0,
+      "low_apparent_temp_f": 56.0,
+      "max_wind_mph": 10.4,
       "max_wind_gust_mph": 12.7,
-      "thunder_probability_pct": 20,
+      "thunder_probability_pct": 45,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
-        "thunderstorms"
+        "thunderstorms",
+        "fog",
+        "moderate rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 24,
+      "us_aqi": 44,
       "category": "Good",
-      "aqi_24h_max": 43,
+      "aqi_24h_max": 45,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 5.0,
-      "pm10": 5.1,
-      "ozone": 32.0,
-      "nitrogen_dioxide": 8.2,
-      "observed_at": "2026-10-29T10:00",
+      "pm2_5": 7.6,
+      "pm10": 7.8,
+      "ozone": 44.0,
+      "nitrogen_dioxide": 6.2,
+      "observed_at": "2026-10-30T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-29",
-  "generated_at": "2026-10-29T10:10:46.566997+00:00"
+  "date": "2026-10-30",
+  "generated_at": "2026-10-30T10:15:24.709094+00:00"
 }
