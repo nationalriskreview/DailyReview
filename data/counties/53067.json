@@ -8,7 +8,22 @@
     "lon": -122.830152
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued October 30 at 5:43PM PDT until October 31 at 9:00AM PDT by NWS Seattle WA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-10-30T17:43:00-07:00",
+        "expires": "2026-10-31T05:00:00-07:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.67affa47eb21b55830088ef4ea016a592cde61b4.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.67affa47eb21b55830088ef4ea016a592cde61b4.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,40 +37,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.09,
-      "precip_probability_pct": 64,
+      "precip_in_24h": 0.01,
+      "precip_probability_pct": 25,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 52.0,
-      "low_temp_f": 34.0,
-      "high_apparent_temp_f": 52.0,
-      "low_apparent_temp_f": 34.0,
-      "max_wind_mph": 4.6,
-      "max_wind_gust_mph": 6.9,
-      "thunder_probability_pct": 6,
+      "high_temp_f": 53.0,
+      "low_temp_f": 31.0,
+      "high_apparent_temp_f": 53.0,
+      "low_apparent_temp_f": 31.0,
+      "max_wind_mph": 3.5,
+      "max_wind_gust_mph": 8.1,
+      "thunder_probability_pct": 4,
       "lightning_activity_level": null,
       "weather": [
-        "light rain"
+        "light rain showers",
+        "fog",
+        "frost"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 30,
+      "us_aqi": 31,
       "category": "Good",
-      "aqi_24h_max": 41,
+      "aqi_24h_max": 37,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 9.8,
-      "pm10": 11.0,
+      "pm2_5": 6.2,
+      "pm10": 6.9,
       "ozone": 38.0,
-      "nitrogen_dioxide": 20.2,
-      "observed_at": "2026-10-30T10:00",
+      "nitrogen_dioxide": 12.0,
+      "observed_at": "2026-10-31T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-30",
-  "generated_at": "2026-10-30T10:15:24.709094+00:00"
+  "date": "2026-10-31",
+  "generated_at": "2026-10-31T09:52:14.857516+00:00"
 }
