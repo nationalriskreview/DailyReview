@@ -10,8 +10,15 @@
   "alerts": {
     "weather": [
       {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~2.1\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=59.0984&lon=-135.5758"
+      },
+      {
         "event": "Heavy Snow Forecast",
-        "headline": "~9.6\" snow expected in next 24h",
+        "headline": "~28.5\" snow expected in next 24h",
         "severity": "Moderate",
         "source": "nws_forecast",
         "url": "https://forecast.weather.gov/MapClick.php?lat=59.0984&lon=-135.5758"
@@ -30,41 +37,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.71,
-      "precip_probability_pct": 76,
-      "snow_in_24h": 9.63,
+      "precip_in_24h": 2.13,
+      "precip_probability_pct": 100,
+      "snow_in_24h": 28.5,
       "ice_in_24h": 0.0,
       "high_temp_f": 26.0,
-      "low_temp_f": 20.0,
-      "high_apparent_temp_f": 10.0,
-      "low_apparent_temp_f": 4.0,
-      "max_wind_mph": 33.4,
-      "max_wind_gust_mph": 47.2,
+      "low_temp_f": 24.0,
+      "high_apparent_temp_f": 12.0,
+      "low_apparent_temp_f": 6.0,
+      "max_wind_mph": 34.5,
+      "max_wind_gust_mph": 43.7,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
+        "moderate snow",
         "light snow",
-        "moderate snow"
+        "heavy snow"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 35,
+      "us_aqi": 38,
       "category": "Good",
-      "aqi_24h_max": 37,
+      "aqi_24h_max": 38,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 6.9,
-      "pm10": 9.2,
-      "ozone": 76.0,
-      "nitrogen_dioxide": 1.9,
-      "observed_at": "2026-10-31T09:00",
+      "pm2_5": 1.6,
+      "pm10": 2.0,
+      "ozone": 81.0,
+      "nitrogen_dioxide": 1.2,
+      "observed_at": "2026-11-01T07:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-10-31",
-  "generated_at": "2026-10-31T09:52:14.857516+00:00"
+  "date": "2026-11-01",
+  "generated_at": "2026-11-01T07:42:51.947258+00:00"
 }
