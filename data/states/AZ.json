@@ -1,10 +1,10 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-01T07:42:51.947258+00:00",
-  "date": "2026-11-01",
+  "generated_at": "2026-11-02T19:53:06.791052+00:00",
+  "date": "2026-11-02",
   "state": "AZ",
   "counties_total": 15,
-  "counties_with_alerts": 14,
+  "counties_with_alerts": 9,
   "counties": {
     "04001": {
       "fips": "04001",
@@ -13,11 +13,21 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=35.3851&lon=-109.4902"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued November 2 at 11:36AM MST until November 2 at 3:00PM MST by NWS Flagstaff AZ",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-02T06:54:00-07:00",
+            "expires": "2026-11-02T15:00:00-07:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.521ce74e1d60643d6e0f1663f92177a47fc9f58d.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.521ce74e1d60643d6e0f1663f92177a47fc9f58d.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.855e2610224715a00c01668f33ecc31fbf615751.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.006bab22735aa960eed26401d06671d4858ec610.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.641304da10f960826a75fbd18136729bc75c8385.001.1"
+            ],
+            "count": 4
           }
         ],
         "protest": [],
@@ -36,23 +46,20 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.19,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 13,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 61.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 61.0,
-          "low_apparent_temp_f": 40.0,
-          "max_wind_mph": 28.8,
-          "max_wind_gust_mph": 46.0,
-          "thunder_probability_pct": 34,
+          "high_temp_f": 53.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 53.0,
+          "low_apparent_temp_f": 26.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms",
-            "fog",
-            "moderate rain showers"
+            "freezing fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -60,13 +67,13 @@
         "air_quality": {
           "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 41,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.2,
-          "pm10": 1.3,
-          "ozone": 58.0,
-          "nitrogen_dioxide": 1.5,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 1.4,
+          "pm10": 1.8,
+          "ozone": 78.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -93,36 +100,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.6,
-          "precip_probability_pct": 98,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 26,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 71.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 71.0,
-          "low_apparent_temp_f": 39.0,
+          "high_temp_f": 68.0,
+          "low_temp_f": 37.0,
+          "high_apparent_temp_f": 68.0,
+          "low_apparent_temp_f": 33.0,
           "max_wind_mph": 27.6,
-          "max_wind_gust_mph": 39.1,
-          "thunder_probability_pct": 39,
+          "max_wind_gust_mph": 36.8,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "thunderstorms",
-            "moderate rain showers"
+            "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 30,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.1,
-          "pm10": 1.2,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 1.1,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 1.6,
+          "pm10": 2.4,
+          "ozone": 85.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -134,11 +140,127 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~3.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=35.1706&lon=-111.7737"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued November 2 at 11:50AM MST until November 2 at 2:00PM MST by NWS Flagstaff AZ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-02T06:46:00-07:00",
+            "expires": "2026-11-03T10:00:00-07:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d169051788af1b5c4eab98196a9e1a1953e84d7.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d169051788af1b5c4eab98196a9e1a1953e84d7.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.66d75097172f35eb1964ff16ea2b7f29dd955788.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e6a8b9a83a9e09077036ea5838cd362597c7047.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ced62c2fbd3a094028655e397f9be648f18575fe.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0b6dcc099174c21fcafbd5c9d6f44298d105d903.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.641304da10f960826a75fbd18136729bc75c8385.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.61dc9389b8bac9879f71f56951dc96ec3c48fcc6.001.1"
+            ],
+            "count": 7
+          },
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued November 2 at 10:51AM MST until November 2 at 2:00PM MST by NWS Flagstaff AZ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-02T10:51:00-07:00",
+            "expires": "2026-11-02T14:00:00-07:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f1a3ef1cbca6dd1178e18232b311a1b636e37be8.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f1a3ef1cbca6dd1178e18232b311a1b636e37be8.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [
+          {
+            "title": "Heavy rain in Arizona prompts evacuations, highway closures, and canceled events | Nightly Roundup",
+            "url": "https://www.fox10phoenix.com/news/heavy-rain-arizona-prompts-evacuations-highway-closures-canceled-events-nightly-roundup",
+            "domain": "fox10phoenix.com",
+            "seendate": "20261102033000",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://www.fox10phoenix.com/news/heavy-rain-arizona-prompts-evacuations-highway-closures-canceled-events-nightly-roundup",
+                "domain": "fox10phoenix.com"
+              }
+            ]
+          }
+        ],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 3,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 3,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 56.0,
+          "low_temp_f": 24.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 17.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 3,
+          "lightning_activity_level": null,
+          "weather": [
+            "fog"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 28,
+          "category": "Good",
+          "aqi_24h_max": 34,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 1.6,
+          "pm10": 2.1,
+          "ozone": 81.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-02T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "04007": {
+      "fips": "04007",
+      "name": "Gila County",
+      "state": "AZ",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued November 2 at 11:44AM MST until November 2 at 9:00PM MST by NWS Phoenix AZ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-02T00:54:00-07:00",
+            "expires": "2026-11-03T12:00:00-07:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f0136c5aa558ce3974d7f6120d3c1b1d8b2243e1.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f0136c5aa558ce3974d7f6120d3c1b1d8b2243e1.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.521ce74e1d60643d6e0f1663f92177a47fc9f58d.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f5614bec1927b0e56af0b73758798384788953a2.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f4e93d4be372d5416a1160c6ad86d067f10ffd80.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.855e2610224715a00c01668f33ecc31fbf615751.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0b6dcc099174c21fcafbd5c9d6f44298d105d903.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3fe571bc034999b6bcf72673b69d638dc996be8e.001.1"
+            ],
+            "count": 7
           }
         ],
         "protest": [],
@@ -157,58 +279,53 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 3.06,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 6,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 60.0,
-          "low_temp_f": 43.0,
-          "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 35.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 35.7,
-          "thunder_probability_pct": 29,
+          "high_temp_f": 68.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 68.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
-          "weather": [
-            "light rain showers",
-            "fog",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
+          "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 31,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.8,
-          "pm10": 2.0,
-          "ozone": 51.0,
-          "nitrogen_dioxide": 2.2,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 4.2,
+          "pm10": 6.9,
+          "ozone": 91.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "04007": {
-      "fips": "04007",
-      "name": "Gila County",
+    "04009": {
+      "fips": "04009",
+      "name": "Graham County",
       "state": "AZ",
       "alerts": {
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued October 31 at 10:26PM MST until November 2 at 8:00AM MST by NWS Phoenix AZ",
+            "headline": "Flood Warning issued November 2 at 11:10AM MST until November 3 at 3:33PM MST by NWS Tucson AZ",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-10-31T22:26:00-07:00",
-            "expires": "2026-11-02T08:00:00-07:00",
+            "urgency": "Immediate",
+            "effective": "2026-11-02T11:10:00-07:00",
+            "expires": "2026-11-02T23:15:00-07:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c99321c20499641e7447d8be683c118adcda829.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.979fceef82a929a8dc0fa3ff87a5b0237559a19a.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c99321c20499641e7447d8be683c118adcda829.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.979fceef82a929a8dc0fa3ff87a5b0237559a19a.001.1"
             ],
             "count": 1
           }
@@ -229,101 +346,34 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 3.58,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 22,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 71.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 71.0,
-          "low_apparent_temp_f": 51.0,
+          "high_temp_f": 68.0,
+          "low_temp_f": 39.0,
+          "high_apparent_temp_f": 69.0,
+          "low_apparent_temp_f": 39.0,
           "max_wind_mph": 21.9,
-          "max_wind_gust_mph": 35.7,
-          "thunder_probability_pct": 47,
+          "max_wind_gust_mph": 33.4,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
-            "moderate rain showers",
-            "thunderstorms",
-            "fog",
             "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 37,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 43,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.3,
-          "pm10": 0.3,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 2.2,
-          "observed_at": "2026-11-01T07:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "04009": {
-      "fips": "04009",
-      "name": "Graham County",
-      "state": "AZ",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~2.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=33.2603&lon=-109.8783"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 2.12,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 73.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 73.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 34.5,
-          "thunder_probability_pct": 45,
-          "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 25,
-          "category": "Good",
-          "aqi_24h_max": 33,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.4,
-          "pm10": 2.5,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 1.8,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 3.9,
+          "pm10": 6.0,
+          "ozone": 103.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -333,15 +383,7 @@
       "name": "Greenlee County",
       "state": "AZ",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.6\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=33.2389&lon=-109.2423"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -355,39 +397,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.64,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 28,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 59.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 34.5,
-          "thunder_probability_pct": 48,
+          "high_temp_f": 57.0,
+          "low_temp_f": 41.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 35.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 39,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.8,
-          "pm10": 2.0,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 2.1,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 3.7,
+          "pm10": 5.5,
+          "ozone": 94.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -397,15 +437,7 @@
       "name": "La Paz County",
       "state": "AZ",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=33.7276&lon=-113.6493"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -419,39 +451,35 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.26,
-          "precip_probability_pct": 98,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 78.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 78.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 38.0,
-          "thunder_probability_pct": 19,
+          "high_temp_f": 75.0,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 75.0,
+          "low_apparent_temp_f": 44.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 26.5,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
-          "weather": [
-            "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
-          ],
+          "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
           "us_aqi": 32,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.9,
-          "pm10": 12.5,
-          "ozone": 60.0,
-          "nitrogen_dioxide": 0.7,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 7.3,
+          "pm10": 27.7,
+          "ozone": 80.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -464,26 +492,60 @@
         "weather": [
           {
             "event": "Flood Warning",
-            "headline": "Flood Warning issued October 31 at 3:52PM MST until November 2 at 7:45AM MST by NWS Phoenix AZ",
+            "headline": "Flood Warning issued November 2 at 11:47AM MST until November 2 at 2:15PM MST by NWS Phoenix AZ",
             "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-10-31T14:41:00-07:00",
-            "expires": "2026-11-02T08:00:00-07:00",
+            "urgency": "Immediate",
+            "effective": "2026-11-02T05:04:00-07:00",
+            "expires": "2026-11-05T11:45:00-07:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ba401877ae231530f650b770d72380530f65abc2.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.59f3b6d96475da3105b0f1040463a7369aacdcb0.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ba401877ae231530f650b770d72380530f65abc2.001.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.aae139e5ea35d2e6c4524f15ebc03afad151f463.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.59f3b6d96475da3105b0f1040463a7369aacdcb0.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f0136c5aa558ce3974d7f6120d3c1b1d8b2243e1.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a51bf332bda763571c8443d2f19cdfd0cce140f3.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fcc074ffab8a80c9619115abfb8c113e38d8fe8d.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c71caba3189ede0657a3e45ac0ed30b8d5c4954f.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f1c0d7ddb05af2e2da0dc1f908bd7be448a59d0.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9402e8daec96b44a4dd913560ac9ef8774a24f43.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5fd556ead1d33a20150e8c29fbc93391a1b98dc5.001.1"
             ],
-            "count": 2
+            "count": 8
           }
         ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
+        "hazmat_incident": [
+          {
+            "title": "Firefighters contain ammonia leak at Shamrock Foods in Phoenix",
+            "url": "https://www.azfamily.com/2026/11/02/firefighters-working-contain-ammonia-leak-shamrock-foods-phoenix/",
+            "domain": "azfamily.com",
+            "seendate": "20261102153000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.azfamily.com/2026/11/02/firefighters-working-contain-ammonia-leak-shamrock-foods-phoenix/",
+                "domain": "azfamily.com"
+              }
+            ]
+          }
+        ],
+        "road_closure": [
+          {
+            "title": "Heavy rain in Arizona prompts evacuations, highway closures, and canceled events | Nightly Roundup",
+            "url": "https://www.fox10phoenix.com/news/heavy-rain-arizona-prompts-evacuations-highway-closures-canceled-events-nightly-roundup",
+            "domain": "fox10phoenix.com",
+            "seendate": "20261102033000",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://www.fox10phoenix.com/news/heavy-rain-arizona-prompts-evacuations-highway-closures-canceled-events-nightly-roundup",
+                "domain": "fox10phoenix.com"
+              }
+            ]
+          }
+        ],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -491,39 +553,35 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 2.66,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 76.0,
-          "low_temp_f": 61.0,
-          "high_apparent_temp_f": 76.0,
-          "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 24.2,
-          "max_wind_gust_mph": 35.7,
-          "thunder_probability_pct": 29,
+          "high_temp_f": 72.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 72.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
-          "weather": [
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
-          ],
+          "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 4.2,
-          "ozone": 42.0,
-          "nitrogen_dioxide": 6.0,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 6.8,
+          "pm10": 12.3,
+          "ozone": 82.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -533,15 +591,7 @@
       "name": "Mohave County",
       "state": "AZ",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~2.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=35.7177&lon=-113.7497"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -555,42 +605,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 2.04,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 67.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 67.0,
-          "low_apparent_temp_f": 38.0,
-          "max_wind_mph": 21.9,
-          "max_wind_gust_mph": 42.6,
-          "thunder_probability_pct": 22,
+          "high_temp_f": 62.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 62.0,
+          "low_apparent_temp_f": 31.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers",
-            "moderate rain showers",
-            "moderate rain",
-            "light rain",
             "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 33,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.1,
-          "pm10": 1.5,
-          "ozone": 62.0,
-          "nitrogen_dioxide": 1.5,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 4.1,
+          "pm10": 4.6,
+          "ozone": 77.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -602,11 +647,36 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=35.3908&lon=-109.7299"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued November 2 at 11:36AM MST until November 2 at 3:00PM MST by NWS Flagstaff AZ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-02T06:54:00-07:00",
+            "expires": "2026-11-03T10:00:00-07:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.521ce74e1d60643d6e0f1663f92177a47fc9f58d.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.521ce74e1d60643d6e0f1663f92177a47fc9f58d.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7e6a8b9a83a9e09077036ea5838cd362597c7047.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.855e2610224715a00c01668f33ecc31fbf615751.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.006bab22735aa960eed26401d06671d4858ec610.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.641304da10f960826a75fbd18136729bc75c8385.001.1"
+            ],
+            "count": 5
+          },
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued November 2 at 10:51AM MST until November 2 at 2:00PM MST by NWS Flagstaff AZ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-02T10:51:00-07:00",
+            "expires": "2026-11-02T14:00:00-07:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f1a3ef1cbca6dd1178e18232b311a1b636e37be8.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f1a3ef1cbca6dd1178e18232b311a1b636e37be8.001.1"
+            ],
+            "count": 1
           }
         ],
         "protest": [],
@@ -622,40 +692,35 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.08,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 64.0,
-          "low_temp_f": 50.0,
-          "high_apparent_temp_f": 64.0,
-          "low_apparent_temp_f": 44.0,
-          "max_wind_mph": 26.5,
-          "max_wind_gust_mph": 42.6,
-          "thunder_probability_pct": 30,
+          "high_temp_f": 58.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
-          "weather": [
-            "light rain showers",
-            "thunderstorms",
-            "fog",
-            "moderate rain showers"
-          ],
+          "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.8,
-          "pm10": 0.8,
-          "ozone": 62.0,
-          "nitrogen_dioxide": 1.0,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 1.5,
+          "pm10": 2.0,
+          "ozone": 80.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -667,11 +732,18 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.5\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=32.5911&lon=-111.7837"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued November 2 at 10:52AM MST until November 3 at 3:00AM MST by NWS Tucson AZ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-02T10:52:00-07:00",
+            "expires": "2026-11-03T03:00:00-07:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b2ad60a53ba54e590ea231ebbc1268c8dc4428e.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b2ad60a53ba54e590ea231ebbc1268c8dc4428e.001.1"
+            ],
+            "count": 1
           }
         ],
         "protest": [],
@@ -690,36 +762,34 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.48,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 75.0,
-          "low_temp_f": 60.0,
-          "high_apparent_temp_f": 75.0,
-          "low_apparent_temp_f": 60.0,
-          "max_wind_mph": 32.2,
-          "max_wind_gust_mph": 43.7,
-          "thunder_probability_pct": 31,
+          "high_temp_f": 70.0,
+          "low_temp_f": 49.0,
+          "high_apparent_temp_f": 71.0,
+          "low_apparent_temp_f": 47.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms",
-            "moderate rain showers"
+            "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 24,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 41,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.0,
-          "pm10": 1.6,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 4.5,
+          "pm10": 8.2,
+          "ozone": 94.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -731,11 +801,18 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~2.9\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=33.2724&lon=-111.3663"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued November 2 at 10:52AM MST until November 3 at 3:00AM MST by NWS Tucson AZ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-02T10:52:00-07:00",
+            "expires": "2026-11-03T03:00:00-07:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b2ad60a53ba54e590ea231ebbc1268c8dc4428e.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b2ad60a53ba54e590ea231ebbc1268c8dc4428e.001.1"
+            ],
+            "count": 1
           }
         ],
         "protest": [],
@@ -754,36 +831,34 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 2.86,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 75.0,
-          "low_temp_f": 61.0,
-          "high_apparent_temp_f": 75.0,
-          "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 35.7,
-          "thunder_probability_pct": 36,
+          "high_temp_f": 70.0,
+          "low_temp_f": 48.0,
+          "high_apparent_temp_f": 70.0,
+          "low_apparent_temp_f": 47.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
+            "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.6,
-          "pm10": 1.8,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 2.7,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 5.3,
+          "pm10": 9.7,
+          "ozone": 97.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -793,15 +868,7 @@
       "name": "Santa Cruz County",
       "state": "AZ",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=31.5257&lon=-110.8452"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -815,39 +882,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.04,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 26,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 68.0,
-          "low_temp_f": 59.0,
-          "high_apparent_temp_f": 68.0,
-          "low_apparent_temp_f": 59.0,
-          "max_wind_mph": 25.3,
-          "max_wind_gust_mph": 38.0,
-          "thunder_probability_pct": 32,
+          "high_temp_f": 67.0,
+          "low_temp_f": 44.0,
+          "high_apparent_temp_f": 67.0,
+          "low_apparent_temp_f": 40.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
-            "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 30,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.6,
-          "pm10": 0.7,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 1.4,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 1.8,
+          "pm10": 3.0,
+          "ozone": 84.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -859,11 +924,21 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~3.8\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=34.1957&lon=-112.5772"
+            "event": "Flood Warning",
+            "headline": "Flood Warning issued November 2 at 11:50AM MST until November 2 at 2:00PM MST by NWS Flagstaff AZ",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-02T00:54:00-07:00",
+            "expires": "2026-11-02T20:00:00-07:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d169051788af1b5c4eab98196a9e1a1953e84d7.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6d169051788af1b5c4eab98196a9e1a1953e84d7.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0b6dcc099174c21fcafbd5c9d6f44298d105d903.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8d4de74f2f686812b33a7c1157f337bce212f5eb.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3fe571bc034999b6bcf72673b69d638dc996be8e.001.1"
+            ],
+            "count": 4
           }
         ],
         "protest": [],
@@ -871,7 +946,21 @@
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
-        "road_closure": [],
+        "road_closure": [
+          {
+            "title": "Heavy rain in Arizona prompts evacuations, highway closures, and canceled events | Nightly Roundup",
+            "url": "https://www.fox10phoenix.com/news/heavy-rain-arizona-prompts-evacuations-highway-closures-canceled-events-nightly-roundup",
+            "domain": "fox10phoenix.com",
+            "seendate": "20261102033000",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://www.fox10phoenix.com/news/heavy-rain-arizona-prompts-evacuations-highway-closures-canceled-events-nightly-roundup",
+                "domain": "fox10phoenix.com"
+              }
+            ]
+          }
+        ],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -879,41 +968,35 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 3.83,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 62.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 62.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 26.5,
-          "max_wind_gust_mph": 41.4,
-          "thunder_probability_pct": 38,
+          "high_temp_f": 65.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 65.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
-          "weather": [
-            "light rain showers",
-            "thunderstorms",
-            "fog",
-            "moderate rain showers",
-            "heavy fog"
-          ],
+          "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 31,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.6,
-          "pm10": 0.7,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 1.8,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 3.0,
+          "pm10": 3.6,
+          "ozone": 79.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -923,15 +1006,7 @@
       "name": "Yuma County",
       "state": "AZ",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=33.1327&lon=-113.9109"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -945,39 +1020,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.07,
-          "precip_probability_pct": 99,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 60.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 60.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 31.1,
-          "thunder_probability_pct": 13,
+          "high_temp_f": 76.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 76.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms",
-            "moderate rain showers"
+            "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 33,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.0,
-          "pm10": 8.2,
-          "ozone": 67.0,
-          "nitrogen_dioxide": 1.0,
-          "observed_at": "2026-11-01T07:00",
+          "pm2_5": 6.8,
+          "pm10": 20.3,
+          "ozone": 82.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-02T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

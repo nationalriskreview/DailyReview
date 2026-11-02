@@ -10,11 +10,19 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.9\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=37.6026&lon=-109.7916"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued November 2 at 9:36AM MST until November 3 at 8:00AM MST by NWS Salt Lake City UT",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-01T16:08:00-07:00",
+        "expires": "2026-11-03T08:00:00-07:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b64253e3f358622e7f5b0bae51323aa94c7128e8.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b64253e3f358622e7f5b0bae51323aa94c7128e8.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.616c4025c42723c2fe6d8b10282486a4525dd113.001.1"
+        ],
+        "count": 2
       }
     ],
     "protest": [],
@@ -22,7 +30,21 @@
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
-    "road_closure": [],
+    "road_closure": [
+      {
+        "title": "Moab-region flood tracker: Highway 191 closed between Moab and Monticello after one of the wettest Octobers on record",
+        "url": "https://moabsunnews.com/2026/11/01/moab-region-flood-tracker-2026/",
+        "domain": "moabsunnews.com",
+        "seendate": "20261102053000",
+        "is_new": false,
+        "sources": [
+          {
+            "url": "https://moabsunnews.com/2026/11/01/moab-region-flood-tracker-2026/",
+            "domain": "moabsunnews.com"
+          }
+        ]
+      }
+    ],
     "wildfires": [],
     "transit": [],
     "amtrak": [],
@@ -30,25 +52,23 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.88,
-      "precip_probability_pct": 100,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 44,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 62.0,
-      "low_temp_f": 46.0,
-      "high_apparent_temp_f": 62.0,
-      "low_apparent_temp_f": 40.0,
-      "max_wind_mph": 27.6,
-      "max_wind_gust_mph": 46.0,
-      "thunder_probability_pct": 26,
+      "high_temp_f": 58.0,
+      "low_temp_f": 33.0,
+      "high_apparent_temp_f": 58.0,
+      "low_apparent_temp_f": 30.0,
+      "max_wind_mph": 19.6,
+      "max_wind_gust_mph": 28.8,
+      "thunder_probability_pct": 9,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "moderate rain showers",
-        "thunderstorms"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
@@ -56,16 +76,16 @@
     "air_quality": {
       "us_aqi": 34,
       "category": "Good",
-      "aqi_24h_max": 40,
+      "aqi_24h_max": 36,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 1.2,
-      "pm10": 1.4,
-      "ozone": 75.0,
-      "nitrogen_dioxide": 1.3,
-      "observed_at": "2026-11-01T07:00",
+      "pm2_5": 0.2,
+      "pm10": 0.2,
+      "ozone": 80.0,
+      "nitrogen_dioxide": 0.3,
+      "observed_at": "2026-11-02T19:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-01",
-  "generated_at": "2026-11-01T07:42:51.947258+00:00"
+  "date": "2026-11-02",
+  "generated_at": "2026-11-02T19:53:06.791052+00:00"
 }
