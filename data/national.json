@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-02T19:53:06.791052+00:00",
-  "date": "2026-11-02",
+  "generated_at": "2026-11-03T11:03:34.241598+00:00",
+  "date": "2026-11-03",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,14 +13,14 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 126
+      "counties_with_alerts": 92
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 153,
-      "retries_used": 3,
+      "counties_over_threshold": 152,
+      "retries_used": 0,
       "retry_budget_exhausted": false
     },
     "air_quality_open_meteo": {
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 72,
+      "counties_with_matches": 62,
       "items_pre_llm": {
-        "protest": 82,
-        "utility_outage": 11,
-        "transit_disruption": 1,
+        "protest": 77,
+        "utility_outage": 0,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 9,
-        "road_closure": 18
+        "hazmat_incident": 16,
+        "road_closure": 5
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 49,
+      "counties_with_matches": 16,
       "items_post_llm": {
-        "protest": 60,
-        "utility_outage": 10,
-        "transit_disruption": 1,
+        "protest": 16,
+        "utility_outage": 0,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 9,
-        "road_closure": 8
+        "hazmat_incident": 1,
+        "road_closure": 3
       },
-      "unique_articles": 64,
-      "calls_used": 64,
+      "unique_articles": 42,
+      "calls_used": 42,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 147
+      "counties_with_alerts": 118
     },
     "transit": {
       "status": "ok",
@@ -150,7 +150,7 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 9,
+      "positive_samples": 8,
       "counties_with_detections": 7
     },
     "nndss_notifiable": {
@@ -163,12 +163,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 3
+      "national_items": 0,
+      "counties_with_alerts": 0
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 3,
+      "active_incidents": 4,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -332,7 +332,7 @@
           "key": "t8fc",
           "name": "t8fc",
           "status": "ok",
-          "items": 0
+          "items": 1
         }
       ]
     }
@@ -621,19 +621,7 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "ground_stop",
-      "code": "MIA",
-      "name": "Miami Intl",
-      "city": "Miami",
-      "state": "FL",
-      "reason": "thunderstorms",
-      "end": "3:00 pm EST",
-      "source": "FAA NAS Status",
-      "url": "https://nasstatus.faa.gov/"
-    }
-  ],
+  "faa_advisories": [],
   "service_outages": [
     {
       "provider": "Cloudflare",
@@ -660,6 +648,14 @@
     {
       "provider": "m4kp",
       "impact": "critical",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
+    },
+    {
+      "provider": "t8fc",
+      "impact": "minor",
       "active_incidents": 1,
       "status": "active",
       "coded": true,
