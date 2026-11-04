@@ -10,11 +10,18 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.2\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=39.4274&lon=-93.5002"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued November 4 at 8:43AM CST until November 8 at 5:22AM CST by NWS Kansas City/Pleasant Hill MO",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-11-04T08:43:00-06:00",
+        "expires": "2026-11-05T08:45:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9efcd9610381b2347c4e8b5c008719ace31df24e.007.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9efcd9610381b2347c4e8b5c008719ace31df24e.007.1"
+        ],
+        "count": 1
       }
     ],
     "protest": [],
@@ -33,39 +40,37 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.19,
-      "precip_probability_pct": 100,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 13,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 69.0,
-      "low_temp_f": 54.0,
-      "high_apparent_temp_f": 69.0,
-      "low_apparent_temp_f": 54.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 26.5,
-      "thunder_probability_pct": 92,
+      "high_temp_f": 61.0,
+      "low_temp_f": 47.0,
+      "high_apparent_temp_f": 61.0,
+      "low_apparent_temp_f": 42.0,
+      "max_wind_mph": 11.5,
+      "max_wind_gust_mph": 21.9,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "thunderstorms",
-        "moderate rain showers",
-        "light rain showers"
+        "very_light drizzle"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 29,
+      "us_aqi": 23,
       "category": "Good",
-      "aqi_24h_max": 31,
+      "aqi_24h_max": 28,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 1.5,
-      "pm10": 1.7,
-      "ozone": 64.0,
-      "nitrogen_dioxide": 1.2,
-      "observed_at": "2026-11-03T10:00",
+      "pm2_5": 3.1,
+      "pm10": 3.1,
+      "ozone": 57.0,
+      "nitrogen_dioxide": 1.5,
+      "observed_at": "2026-11-04T17:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-03",
-  "generated_at": "2026-11-03T11:03:34.241598+00:00"
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T17:33:27.916940+00:00"
 }

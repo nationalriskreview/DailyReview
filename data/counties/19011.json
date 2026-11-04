@@ -8,7 +8,22 @@
     "lon": -92.05763
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued November 4 at 10:09AM CST until November 11 at 6:17AM CST by NWS Quad Cities IA IL",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-11-04T10:09:00-06:00",
+        "expires": "2026-11-05T10:15:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4b6d848e1500580444da815a72889a36c8648b43.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4b6d848e1500580444da815a72889a36c8648b43.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,42 +37,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.83,
-      "precip_probability_pct": 100,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 31,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 67.0,
-      "low_temp_f": 61.0,
-      "high_apparent_temp_f": 67.0,
-      "low_apparent_temp_f": 61.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 31.1,
-      "thunder_probability_pct": 33,
+      "high_temp_f": 58.0,
+      "low_temp_f": 45.0,
+      "high_apparent_temp_f": 58.0,
+      "low_apparent_temp_f": 39.0,
+      "max_wind_mph": 16.1,
+      "max_wind_gust_mph": 24.2,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "moderate rain showers",
-        "thunderstorms",
         "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 35,
+      "us_aqi": 20,
       "category": "Good",
-      "aqi_24h_max": 40,
+      "aqi_24h_max": 27,
       "aqi_24h_max_category": "Good",
       "pm2_5": 1.5,
-      "pm10": 1.7,
-      "ozone": 60.0,
-      "nitrogen_dioxide": 1.7,
-      "observed_at": "2026-11-03T10:00",
+      "pm10": 1.5,
+      "ozone": 47.0,
+      "nitrogen_dioxide": 3.3,
+      "observed_at": "2026-11-04T17:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-03",
-  "generated_at": "2026-11-03T11:03:34.241598+00:00"
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T17:33:27.916940+00:00"
 }

@@ -8,13 +8,39 @@
     "lon": -86.458405
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~2.6\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=36.4724&lon=-86.4584"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
-    "road_closure": [],
+    "road_closure": [
+      {
+        "title": "Interstate closed for overturned semi in Goodlettsville",
+        "url": "https://www.wsmv.com/2026/11/04/interstate-closes-near-nashville-overturned-semi-during-heavy-rainstorm/",
+        "domain": "wsmv.com",
+        "seendate": "20261104163000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.wsmv.com/2026/11/04/interstate-closes-near-nashville-overturned-semi-during-heavy-rainstorm/",
+            "domain": "wsmv.com"
+          },
+          {
+            "url": "https://www.wsmv.com/2026/11/04/interstate-closed-near-nashville-overturned-semi-during-heavy-rainstorm/",
+            "domain": "wsmv.com"
+          }
+        ]
+      }
+    ],
     "wildfires": [],
     "transit": [],
     "amtrak": [],
@@ -22,42 +48,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 3,
+      "precip_in_24h": 2.55,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 78.0,
-      "low_temp_f": 58.0,
-      "high_apparent_temp_f": 78.0,
-      "low_apparent_temp_f": 58.0,
+      "high_temp_f": 69.0,
+      "low_temp_f": 55.0,
+      "high_apparent_temp_f": 69.0,
+      "low_apparent_temp_f": 55.0,
       "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 26.5,
-      "thunder_probability_pct": 1,
+      "max_wind_gust_mph": 27.6,
+      "thunder_probability_pct": 32,
       "lightning_activity_level": null,
       "weather": [
+        "moderate rain showers",
         "thunderstorms",
-        "light rain showers",
-        "moderate rain showers"
+        "heavy rain showers",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 42,
+      "us_aqi": 31,
       "category": "Good",
-      "aqi_24h_max": 46,
+      "aqi_24h_max": 38,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.8,
-      "pm10": 5.8,
-      "ozone": 67.0,
-      "nitrogen_dioxide": 3.2,
-      "observed_at": "2026-11-03T10:00",
+      "pm2_5": 0.6,
+      "pm10": 0.7,
+      "ozone": 63.0,
+      "nitrogen_dioxide": 2.5,
+      "observed_at": "2026-11-04T17:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-03",
-  "generated_at": "2026-11-03T11:03:34.241598+00:00"
+  "date": "2026-11-04",
+  "generated_at": "2026-11-04T17:33:27.916940+00:00"
 }
