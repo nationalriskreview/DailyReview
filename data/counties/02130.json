@@ -10,18 +10,11 @@
   "alerts": {
     "weather": [
       {
-        "event": "High Wind Warning",
-        "headline": "High Wind Warning issued November 5 at 3:38AM AKST until November 5 at 6:00PM AKST by NWS Juneau AK",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-11-05T03:38:00-09:00",
-        "expires": "2026-11-05T11:45:00-09:00",
-        "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3d626780d5326ec97708101907907f434b526a55.001.1",
-        "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3d626780d5326ec97708101907907f434b526a55.001.1"
-        ],
-        "count": 1
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.4\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=55.7866&lon=-131.1067"
       }
     ],
     "protest": [],
@@ -40,40 +33,39 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.93,
+      "precip_in_24h": 1.43,
       "precip_probability_pct": 100,
-      "snow_in_24h": 3.5,
+      "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
       "high_temp_f": 50.0,
-      "low_temp_f": 30.0,
-      "high_apparent_temp_f": 43.0,
-      "low_apparent_temp_f": 18.0,
-      "max_wind_mph": 40.3,
+      "low_temp_f": 32.0,
+      "high_apparent_temp_f": 42.0,
+      "low_apparent_temp_f": 23.0,
+      "max_wind_mph": 46.0,
       "max_wind_gust_mph": 62.1,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
-        "light rain",
-        "heavy rain",
         "moderate rain",
-        "light snow"
+        "light rain",
+        "heavy rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 35,
+      "us_aqi": 37,
       "category": "Good",
-      "aqi_24h_max": 38,
+      "aqi_24h_max": 39,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.9,
-      "pm10": 5.0,
-      "ozone": 77.0,
-      "nitrogen_dioxide": 0.3,
-      "observed_at": "2026-11-05T13:00",
+      "pm2_5": 5.4,
+      "pm10": 9.3,
+      "ozone": 82.0,
+      "nitrogen_dioxide": 0.1,
+      "observed_at": "2026-11-06T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-05",
-  "generated_at": "2026-11-05T13:23:33.940842+00:00"
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T11:04:41.413706+00:00"
 }

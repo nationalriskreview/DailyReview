@@ -8,7 +8,22 @@
     "lon": -92.519016
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued November 6 at 12:29AM CST until November 7 at 8:00AM CST by NWS Kansas City/Pleasant Hill MO",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-06T00:29:00-06:00",
+        "expires": "2026-11-06T16:00:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.699223af8bac2381f3fc0d9c4660e997b3dc7f56.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.699223af8bac2381f3fc0d9c4660e997b3dc7f56.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,23 +37,24 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 37,
+      "precip_probability_pct": 15,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 53.0,
-      "low_temp_f": 45.0,
-      "high_apparent_temp_f": 53.0,
-      "low_apparent_temp_f": 41.0,
-      "max_wind_mph": 10.4,
-      "max_wind_gust_mph": 19.6,
+      "high_temp_f": 48.0,
+      "low_temp_f": 38.0,
+      "high_apparent_temp_f": 47.0,
+      "low_apparent_temp_f": 35.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 16.1,
       "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "light rain"
+        "very_light drizzle",
+        "light drizzle"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
@@ -46,16 +62,16 @@
     "air_quality": {
       "us_aqi": 24,
       "category": "Good",
-      "aqi_24h_max": 27,
+      "aqi_24h_max": 33,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.3,
-      "pm10": 2.4,
+      "pm2_5": 1.6,
+      "pm10": 1.7,
       "ozone": 50.0,
       "nitrogen_dioxide": 2.9,
-      "observed_at": "2026-11-05T13:00",
+      "observed_at": "2026-11-06T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-05",
-  "generated_at": "2026-11-05T13:23:33.940842+00:00"
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T11:04:41.413706+00:00"
 }

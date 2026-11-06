@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-05T13:23:33.940842+00:00",
-  "date": "2026-11-05",
+  "generated_at": "2026-11-06T11:04:41.413706+00:00",
+  "date": "2026-11-06",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 155
+      "counties_with_alerts": 209
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 56,
+      "counties_over_threshold": 135,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,26 +30,26 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 35,
+      "counties_with_matches": 22,
       "items_pre_llm": {
-        "protest": 33,
-        "utility_outage": 4,
-        "transit_disruption": 1,
+        "protest": 41,
+        "utility_outage": 0,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 5,
-        "road_closure": 9
+        "hazmat_incident": 4,
+        "road_closure": 5
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 11,
+      "counties_with_matches": 8,
       "items_post_llm": {
-        "protest": 2,
-        "utility_outage": 4,
+        "protest": 6,
+        "utility_outage": 0,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 5,
-        "road_closure": 4
+        "hazmat_incident": 4,
+        "road_closure": 0
       },
       "unique_articles": 31,
       "calls_used": 31,
@@ -58,15 +58,15 @@
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 105
+      "counties_with_alerts": 84
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 1,
-      "counties_with_alerts": 10,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -132,7 +132,7 @@
           "id": "njtransit-rail-rss",
           "name": "NJ Transit Rail",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     },
@@ -150,8 +150,8 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 3,
-      "counties_with_detections": 3
+      "positive_samples": 1,
+      "counties_with_detections": 1
     },
     "nndss_notifiable": {
       "status": "ok",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 7,
+      "active_incidents": 4,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -212,7 +212,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "openai",
@@ -272,7 +272,7 @@
           "key": "rapid7",
           "name": "Rapid7",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "servicenow",
@@ -332,7 +332,7 @@
           "key": "t8fc",
           "name": "t8fc",
           "status": "ok",
-          "items": 1
+          "items": 0
         }
       ]
     }
@@ -681,17 +681,6 @@
       "source": "provider status page"
     },
     {
-      "provider": "Zoom",
-      "key": "zoom",
-      "title": "Service Under Maintenance",
-      "impact": "maintenance",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.zoom.us",
-      "source": "provider status page"
-    },
-    {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
       "title": "Partially Degraded Service",
@@ -700,17 +689,6 @@
       "started": "",
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Rapid7",
-      "key": "rapid7",
-      "title": "Service Under Maintenance",
-      "impact": "maintenance",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.rapid7.com",
       "source": "provider status page"
     },
     {
@@ -723,14 +701,6 @@
     },
     {
       "provider": "x9tz",
-      "impact": "minor",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
-    },
-    {
-      "provider": "t8fc",
       "impact": "minor",
       "active_incidents": 1,
       "status": "active",

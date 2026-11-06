@@ -8,7 +8,15 @@
     "lon": -74.078601
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.0\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=40.7314&lon=-74.0786"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -16,21 +24,7 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
-    "transit": [
-      {
-        "agency": "NJ Transit Rail",
-        "agency_id": "njtransit-rail-rss",
-        "route": "ALL",
-        "system_outage": true,
-        "effect": "NO_SERVICE",
-        "header": "Princeton Shuttle Dinky service continues to be suspended in both directions due to mechanical issues. Substitute bus service is being provided.",
-        "description": "Princeton Shuttle Dinky service continues to be suspended in both directions due to mechanical issues. Substitute bus service is being provided.",
-        "start": "2026-11-05T07:45:04-04:00",
-        "end": "",
-        "source": "https://www.njtransit.com/node/2194789",
-        "url": "https://www.njtransit.com/node/2194789"
-      }
-    ],
+    "transit": [],
     "amtrak": [],
     "aviation": [],
     "fema": [],
@@ -39,38 +33,40 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.14,
-      "precip_probability_pct": 74,
+      "precip_in_24h": 1.01,
+      "precip_probability_pct": 95,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 72.0,
-      "low_temp_f": 62.0,
-      "high_apparent_temp_f": 72.0,
-      "low_apparent_temp_f": 62.0,
-      "max_wind_mph": 10.4,
-      "max_wind_gust_mph": 20.7,
-      "thunder_probability_pct": 12,
+      "high_temp_f": 71.0,
+      "low_temp_f": 64.0,
+      "high_apparent_temp_f": 71.0,
+      "low_apparent_temp_f": 64.0,
+      "max_wind_mph": 9.2,
+      "max_wind_gust_mph": 16.1,
+      "thunder_probability_pct": 20,
       "lightning_activity_level": null,
       "weather": [
-        "fog",
-        "light rain"
+        "light rain",
+        "moderate rain showers",
+        "thunderstorms",
+        "moderate rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 56,
-      "category": "Moderate",
-      "aqi_24h_max": 58,
+      "us_aqi": 50,
+      "category": "Good",
+      "aqi_24h_max": 55,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 12.9,
-      "pm10": 14.4,
-      "ozone": 29.0,
-      "nitrogen_dioxide": 40.5,
-      "observed_at": "2026-11-05T13:00",
+      "pm2_5": 5.2,
+      "pm10": 5.3,
+      "ozone": 32.0,
+      "nitrogen_dioxide": 29.8,
+      "observed_at": "2026-11-06T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-05",
-  "generated_at": "2026-11-05T13:23:33.940842+00:00"
+  "date": "2026-11-06",
+  "generated_at": "2026-11-06T11:04:41.413706+00:00"
 }
