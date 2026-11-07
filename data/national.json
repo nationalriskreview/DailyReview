@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-06T11:04:41.413706+00:00",
-  "date": "2026-11-06",
+  "generated_at": "2026-11-07T14:13:02.555420+00:00",
+  "date": "2026-11-07",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 209
+      "counties_with_alerts": 353
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 135,
+      "counties_over_threshold": 41,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,43 +30,43 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 22,
+      "counties_with_matches": 24,
       "items_pre_llm": {
-        "protest": 41,
+        "protest": 24,
         "utility_outage": 0,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 4,
+        "hazmat_incident": 5,
         "road_closure": 5
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 8,
+      "counties_with_matches": 6,
       "items_post_llm": {
-        "protest": 6,
+        "protest": 0,
         "utility_outage": 0,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 4,
-        "road_closure": 0
+        "hazmat_incident": 3,
+        "road_closure": 3
       },
-      "unique_articles": 31,
-      "calls_used": 31,
+      "unique_articles": 23,
+      "calls_used": 23,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 84
+      "counties_with_alerts": 88
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 0,
-      "counties_with_alerts": 0,
+      "items_total": 1,
+      "counties_with_alerts": 6,
       "agencies": [
         {
           "id": "mbta",
@@ -84,7 +84,7 @@
           "id": "mta-lirr",
           "name": "MTA Long Island Rail Road",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "id": "mta-mnr",
@@ -138,7 +138,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 133
+      "counties_with_alerts": 115
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -150,8 +150,8 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 1,
-      "counties_with_detections": 1
+      "positive_samples": 12,
+      "counties_with_detections": 8
     },
     "nndss_notifiable": {
       "status": "ok",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 4,
+      "active_incidents": 10,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -176,7 +176,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 0
+          "items": 4
         },
         {
           "key": "azure",
@@ -194,7 +194,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 1
+          "items": 2
         },
         {
           "key": "github",
@@ -218,7 +218,7 @@
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "anthropic",
@@ -670,14 +670,80 @@
   "faa_advisories": [],
   "service_outages": [
     {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service is operating normally: [RESOLVED] Elevated Launch Failures",
+      "impact": "",
+      "status": "",
+      "started": "Fri, 06 Nov 2026 17:12:16 PST",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Elevated Launch Failures",
+      "impact": "",
+      "status": "",
+      "started": "Fri, 06 Nov 2026 16:08:32 PST",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Elevated Launch Failures",
+      "impact": "",
+      "status": "",
+      "started": "Fri, 06 Nov 2026 15:19:12 PST",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Amazon Web Services",
+      "key": "aws",
+      "title": "Service impact: Elevated Launch Failures",
+      "impact": "",
+      "status": "",
+      "started": "Fri, 06 Nov 2026 14:51:05 PST",
+      "updated": "",
+      "url": "https://status.aws.amazon.com/",
+      "source": "provider status page"
+    },
+    {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Partial System Outage",
-      "impact": "major",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "title": "Spectrum Availability Issue in Phoenix",
+      "impact": "minor",
+      "status": "monitoring",
+      "started": "2026-11-07T00:59:31.547Z",
+      "updated": "2026-11-07T02:51:59.805Z",
+      "url": "https://www.cloudflarestatus.com/incidents/c60k3g4vsoc1",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Cloudflare",
+      "key": "cloudflare",
+      "title": "Fedramp Customers have Delayed Purges",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-11-06T17:47:15.545Z",
+      "updated": "2026-11-06T17:59:13.680Z",
+      "url": "https://www.cloudflarestatus.com/incidents/wp49bp8bqo6c",
+      "source": "provider status page"
+    },
+    {
+      "provider": "OpenAI",
+      "key": "openai",
+      "title": "Elevated error rates with some U.S. business Mastercards",
+      "impact": "none",
+      "status": "monitoring",
+      "started": "2026-11-06T18:38:43Z",
+      "updated": "2026-11-07T01:29:31Z",
+      "url": "https://status.openai.com",
       "source": "provider status page"
     },
     {

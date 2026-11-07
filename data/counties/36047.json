@@ -8,15 +8,7 @@
     "lon": -73.95064
   },
   "alerts": {
-    "weather": [
-      {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.3\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=40.6350&lon=-73.9506"
-      }
-    ],
+    "weather": [],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -24,7 +16,21 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
-    "transit": [],
+    "transit": [
+      {
+        "agency": "MTA Long Island Rail Road",
+        "agency_id": "mta-lirr",
+        "route": "2",
+        "system_outage": false,
+        "effect": "NO_SERVICE",
+        "header": "No Hempstead Branch trains running",
+        "description": "Hollis, Queens Village, Elmont-UBS Arena, and Floral Park continue to be served by Huntington trains.\n\nBus service connects Stewart Manor, Nassau Blvd, Garden City, and Hempstead stations to trains at Mineola.\n\nThere is no service at Bellerose or Country Life Press. Use nearby Floral Park, Garden City, or Mineola stations instead.\n\nThe last normal trains to run on Friday evening are the 9:46pm from Grand Central and the 10:45pm from Hempstead. Service resumes with the 12:52am from Grand Central and the 2:03am from Hempstead on Monday morning.\n\nWhat's happening?\nConcrete tie installation",
+        "start": "2026-11-07T04:00:00+00:00",
+        "end": "2026-11-09T06:30:00+00:00",
+        "source": "https://www.mta.info/alerts",
+        "url": "https://www.mta.info/alerts"
+      }
+    ],
     "amtrak": [],
     "aviation": [],
     "fema": [],
@@ -33,41 +39,37 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.28,
-      "precip_probability_pct": 98,
+      "precip_in_24h": 0.04,
+      "precip_probability_pct": 59,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 67.0,
-      "low_temp_f": 63.0,
-      "high_apparent_temp_f": 67.0,
-      "low_apparent_temp_f": 63.0,
-      "max_wind_mph": 10.4,
-      "max_wind_gust_mph": 18.4,
-      "thunder_probability_pct": 20,
+      "high_temp_f": 64.0,
+      "low_temp_f": 54.0,
+      "high_apparent_temp_f": 64.0,
+      "low_apparent_temp_f": 54.0,
+      "max_wind_mph": 20.7,
+      "max_wind_gust_mph": 27.6,
+      "thunder_probability_pct": 3,
       "lightning_activity_level": null,
       "weather": [
-        "light rain",
-        "moderate rain showers",
-        "thunderstorms",
-        "moderate rain",
-        "heavy rain"
+        "light rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 50,
-      "category": "Good",
-      "aqi_24h_max": 55,
+      "us_aqi": 74,
+      "category": "Moderate",
+      "aqi_24h_max": 74,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 5.2,
-      "pm10": 5.3,
-      "ozone": 32.0,
-      "nitrogen_dioxide": 29.8,
-      "observed_at": "2026-11-06T10:00",
+      "pm2_5": 13.5,
+      "pm10": 13.6,
+      "ozone": 22.0,
+      "nitrogen_dioxide": 25.4,
+      "observed_at": "2026-11-07T14:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-06",
-  "generated_at": "2026-11-06T11:04:41.413706+00:00"
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07T14:13:02.555420+00:00"
 }

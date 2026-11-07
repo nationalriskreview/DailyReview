@@ -8,7 +8,22 @@
     "lon": -81.523516
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued November 7 at 8:52AM EST until November 8 at 10:00AM EST by NWS Charleston WV",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-07T08:52:00-05:00",
+        "expires": "2026-11-07T17:00:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.005f78a6024b825a0f63e8f63701124f23377edf.001.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.005f78a6024b825a0f63e8f63701124f23377edf.001.2"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -19,58 +34,44 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [
-      {
-        "disaster_number": "4953",
-        "declaration_type": "DR",
-        "declaration_title": "SEVERE STORMS AND FLOODING",
-        "incident_type": "Severe Storm",
-        "declared_at": "2026-10-07T00:00:00.000Z",
-        "is_new_today": false,
-        "incident_begin": "2026-08-14T00:00:00.000Z",
-        "incident_end": "2026-08-18T00:00:00.000Z",
-        "designated_area": "Kanawha (County)",
-        "fema_declaration_string": "DR-4953-WV",
-        "source": "https://www.fema.gov/disaster/4953",
-        "url": "https://www.fema.gov/disaster/4953"
-      }
-    ],
+    "fema": [],
     "disease": []
   },
   "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 7,
+      "precip_probability_pct": 13,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 64.0,
-      "low_temp_f": 48.0,
-      "high_apparent_temp_f": 64.0,
-      "low_apparent_temp_f": 47.0,
-      "max_wind_mph": 9.2,
+      "high_temp_f": 51.0,
+      "low_temp_f": 37.0,
+      "high_apparent_temp_f": 51.0,
+      "low_apparent_temp_f": 37.0,
+      "max_wind_mph": 8.1,
       "max_wind_gust_mph": 16.1,
       "thunder_probability_pct": 2,
       "lightning_activity_level": null,
       "weather": [
-        "fog"
+        "fog",
+        "frost"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 26,
+      "us_aqi": 33,
       "category": "Good",
-      "aqi_24h_max": 32,
+      "aqi_24h_max": 34,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 6.2,
-      "pm10": 6.2,
-      "ozone": 53.0,
-      "nitrogen_dioxide": 6.8,
-      "observed_at": "2026-11-06T10:00",
+      "pm2_5": 4.8,
+      "pm10": 4.9,
+      "ozone": 60.0,
+      "nitrogen_dioxide": 4.5,
+      "observed_at": "2026-11-07T14:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-06",
-  "generated_at": "2026-11-06T11:04:41.413706+00:00"
+  "date": "2026-11-07",
+  "generated_at": "2026-11-07T14:13:02.555420+00:00"
 }
