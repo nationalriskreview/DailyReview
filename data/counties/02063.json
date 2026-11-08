@@ -10,11 +10,19 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Snow Forecast",
-        "headline": "~6.9\" snow expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=60.9601&lon=-146.2031"
+        "event": "Winter Storm Watch",
+        "headline": "Winter Storm Watch issued November 8 at 12:20AM AKST until November 10 at 4:00PM AKST by NWS Anchorage AK",
+        "severity": "Severe",
+        "urgency": "Future",
+        "effective": "2026-11-08T00:20:00-09:00",
+        "expires": "2026-11-08T17:15:00-09:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d9a13932cad6fd60de71e0d7314bc794419a41a.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d9a13932cad6fd60de71e0d7314bc794419a41a.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d9a13932cad6fd60de71e0d7314bc794419a41a.002.1"
+        ],
+        "count": 2
       }
     ],
     "protest": [],
@@ -33,27 +41,21 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.84,
-      "precip_probability_pct": 100,
-      "snow_in_24h": 6.9,
+      "precip_in_24h": 0.03,
+      "precip_probability_pct": 39,
+      "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 44.0,
-      "low_temp_f": 24.0,
-      "high_apparent_temp_f": 43.0,
-      "low_apparent_temp_f": 20.0,
-      "max_wind_mph": 19.6,
-      "max_wind_gust_mph": 23.0,
+      "high_temp_f": 41.0,
+      "low_temp_f": 21.0,
+      "high_apparent_temp_f": 40.0,
+      "low_apparent_temp_f": 11.0,
+      "max_wind_mph": 16.1,
+      "max_wind_gust_mph": 24.2,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
-        "light rain",
         "light rain showers",
-        "light snow",
-        "moderate snow",
-        "moderate snow showers",
-        "light snow showers",
-        "heavy snow",
-        "heavy snow showers"
+        "light snow showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
@@ -63,14 +65,14 @@
       "category": "Good",
       "aqi_24h_max": 36,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 0.4,
-      "pm10": 0.6,
-      "ozone": 78.0,
+      "pm2_5": 0.2,
+      "pm10": 0.3,
+      "ozone": 74.0,
       "nitrogen_dioxide": 0.2,
-      "observed_at": "2026-11-07T14:00",
+      "observed_at": "2026-11-08T15:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-07",
-  "generated_at": "2026-11-07T14:13:02.555420+00:00"
+  "date": "2026-11-08",
+  "generated_at": "2026-11-08T16:11:09.267481+00:00"
 }

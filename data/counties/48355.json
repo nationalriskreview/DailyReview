@@ -8,7 +8,22 @@
     "lon": -97.516214
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued November 8 at 9:43AM CST until November 8 at 12:45PM CST by NWS Corpus Christi TX",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-11-08T09:43:00-06:00",
+        "expires": "2026-11-08T12:45:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.458a729f94b8be4d026690186532966a40b97c15.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.458a729f94b8be4d026690186532966a40b97c15.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,40 +37,42 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 32,
+      "precip_in_24h": 2.76,
+      "precip_probability_pct": 95,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 81.0,
-      "low_temp_f": 65.0,
-      "high_apparent_temp_f": 83.0,
-      "low_apparent_temp_f": 65.0,
-      "max_wind_mph": 16.1,
-      "max_wind_gust_mph": 23.0,
-      "thunder_probability_pct": 11,
+      "high_temp_f": 75.0,
+      "low_temp_f": 67.0,
+      "high_apparent_temp_f": 75.0,
+      "low_apparent_temp_f": 67.0,
+      "max_wind_mph": 24.2,
+      "max_wind_gust_mph": 28.8,
+      "thunder_probability_pct": 46,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers"
+        "light rain showers",
+        "moderate rain showers",
+        "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 34,
-      "category": "Good",
-      "aqi_24h_max": 50,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 10.4,
-      "pm10": 11.2,
-      "ozone": 62.0,
-      "nitrogen_dioxide": 5.2,
-      "observed_at": "2026-11-07T14:00",
+      "us_aqi": 60,
+      "category": "Moderate",
+      "aqi_24h_max": 60,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 12.2,
+      "pm10": 18.9,
+      "ozone": 92.0,
+      "nitrogen_dioxide": 1.0,
+      "observed_at": "2026-11-08T16:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-07",
-  "generated_at": "2026-11-07T14:13:02.555420+00:00"
+  "date": "2026-11-08",
+  "generated_at": "2026-11-08T16:11:09.267481+00:00"
 }
