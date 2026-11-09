@@ -10,11 +10,18 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.1\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=18.4222&lon=-66.0691"
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning issued November 9 at 3:27PM AST until November 9 at 5:30PM AST by NWS San Juan PR",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-11-09T15:27:00-04:00",
+        "expires": "2026-11-09T17:30:00-04:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5b6de696b58552f0d69a49491a8acc123546495.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5b6de696b58552f0d69a49491a8acc123546495.001.1"
+        ],
+        "count": 1
       }
     ],
     "protest": [],
@@ -33,20 +40,19 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.1,
-      "precip_probability_pct": 50,
+      "precip_in_24h": 1.18,
+      "precip_probability_pct": 60,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 86.0,
-      "low_temp_f": 78.0,
-      "high_apparent_temp_f": 97.0,
-      "low_apparent_temp_f": 78.0,
-      "max_wind_mph": 4.6,
-      "max_wind_gust_mph": 5.8,
+      "high_temp_f": 87.0,
+      "low_temp_f": 79.0,
+      "high_apparent_temp_f": 100.0,
+      "low_apparent_temp_f": 79.0,
+      "max_wind_mph": 10.4,
+      "max_wind_gust_mph": 13.8,
       "thunder_probability_pct": null,
       "lightning_activity_level": 2,
       "weather": [
-        "light rain showers",
         "moderate rain showers",
         "thunderstorms"
       ],
@@ -54,18 +60,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 22,
+      "us_aqi": 26,
       "category": "Good",
-      "aqi_24h_max": 26,
+      "aqi_24h_max": 30,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.6,
-      "pm10": 3.3,
-      "ozone": 55.0,
+      "pm2_5": 3.6,
+      "pm10": 5.1,
+      "ozone": 65.0,
       "nitrogen_dioxide": 0.4,
-      "observed_at": "2026-11-08T16:00",
+      "observed_at": "2026-11-09T19:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-08",
-  "generated_at": "2026-11-08T16:11:09.267481+00:00"
+  "date": "2026-11-09",
+  "generated_at": "2026-11-09T20:05:50.618489+00:00"
 }

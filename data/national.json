@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-08T16:11:09.267481+00:00",
-  "date": "2026-11-08",
+  "generated_at": "2026-11-09T20:05:50.618489+00:00",
+  "date": "2026-11-09",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 118
+      "counties_with_alerts": 96
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 73,
+      "counties_over_threshold": 58,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,43 +30,43 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 27,
+      "counties_with_matches": 43,
       "items_pre_llm": {
-        "protest": 31,
-        "utility_outage": 6,
-        "transit_disruption": 0,
-        "service_provider_outage": 0,
-        "hazmat_incident": 1,
-        "road_closure": 7
+        "protest": 81,
+        "utility_outage": 2,
+        "transit_disruption": 5,
+        "service_provider_outage": 1,
+        "hazmat_incident": 7,
+        "road_closure": 10
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 19,
+      "counties_with_matches": 20,
       "items_post_llm": {
-        "protest": 11,
-        "utility_outage": 6,
+        "protest": 24,
+        "utility_outage": 0,
         "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 1,
-        "road_closure": 7
+        "hazmat_incident": 2,
+        "road_closure": 6
       },
-      "unique_articles": 31,
-      "calls_used": 31,
+      "unique_articles": 69,
+      "calls_used": 69,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 88
+      "counties_with_alerts": 107
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 2,
-      "counties_with_alerts": 8,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -84,7 +84,7 @@
           "id": "mta-lirr",
           "name": "MTA Long Island Rail Road",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "mta-mnr",
@@ -96,7 +96,7 @@
           "id": "path",
           "name": "PATH",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "bart",
@@ -138,7 +138,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 115
+      "counties_with_alerts": 24
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -163,8 +163,8 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 0,
-      "counties_with_alerts": 0
+      "national_items": 1,
+      "counties_with_alerts": 9
     },
     "service_status": {
       "status": "partial",
@@ -194,7 +194,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 1
+          "items": 2
         },
         {
           "key": "github",
@@ -212,13 +212,13 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "anthropic",
@@ -296,7 +296,7 @@
           "key": "q7v2",
           "name": "q7v2",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "m4kp",
@@ -667,48 +667,63 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [],
+  "faa_advisories": [
+    {
+      "kind": "ground_stop",
+      "code": "SFO",
+      "name": "San Francisco Intl",
+      "city": "San Francisco",
+      "state": "CA",
+      "reason": "low ceilings",
+      "end": "1:00 pm PST",
+      "source": "FAA NAS Status",
+      "url": "https://nasstatus.faa.gov/"
+    }
+  ],
   "service_outages": [
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Partial System Outage",
-      "impact": "major",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "title": "Network Performance Issues in Eastern North America",
+      "impact": "minor",
+      "status": "monitoring",
+      "started": "2026-11-09T16:34:35.355Z",
+      "updated": "2026-11-09T17:21:50.437Z",
+      "url": "https://www.cloudflarestatus.com/incidents/88hc76jnq2gn",
       "source": "provider status page"
     },
     {
-      "provider": "OpenAI",
-      "key": "openai",
-      "title": "Elevated errors with image generation",
+      "provider": "Cloudflare",
+      "key": "cloudflare",
+      "title": "Changes made to Workers may be delayed or disrupted",
       "impact": "minor",
       "status": "monitoring",
-      "started": "2026-11-08T15:11:15Z",
-      "updated": "2026-11-08T15:43:50Z",
-      "url": "https://status.openai.com",
+      "started": "2026-11-09T16:15:26.798Z",
+      "updated": "2026-11-09T16:35:55.009Z",
+      "url": "https://www.cloudflarestatus.com/incidents/1x0tbxpmmttu",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Zoom",
+      "key": "zoom",
+      "title": "Service Under Maintenance",
+      "impact": "maintenance",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.zoom.us",
       "source": "provider status page"
     },
     {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "Partially Degraded Service",
+      "title": "Prisma Cloud: App:  alert remediation is unavailable",
       "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.paloaltonetworks.com",
+      "status": "identified",
+      "started": "2026-11-09T11:45:58.224Z",
+      "updated": "2026-11-09T19:15:34.844Z",
+      "url": "https://stspg.io/q10mz5bghy7j",
       "source": "provider status page"
-    },
-    {
-      "provider": "q7v2",
-      "impact": "major",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
     },
     {
       "provider": "m4kp",
@@ -720,7 +735,7 @@
     },
     {
       "provider": "x9tz",
-      "impact": "minor",
+      "impact": "maintenance",
       "active_incidents": 1,
       "status": "active",
       "coded": true,

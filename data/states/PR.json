@@ -1,17 +1,25 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-08T16:11:09.267481+00:00",
-  "date": "2026-11-08",
+  "generated_at": "2026-11-09T20:05:50.618489+00:00",
+  "date": "2026-11-09",
   "state": "PR",
   "counties_total": 78,
-  "counties_with_alerts": 28,
+  "counties_with_alerts": 49,
   "counties": {
     "72001": {
       "fips": "72001",
       "name": "Adjuntas Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.1816&lon=-66.7582"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -25,19 +33,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.12,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 1.32,
+          "precip_probability_pct": 70,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 81.0,
-          "low_temp_f": 69.0,
+          "low_temp_f": 70.0,
           "high_apparent_temp_f": 85.0,
-          "low_apparent_temp_f": 69.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 3.5,
+          "low_apparent_temp_f": 70.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 4.6,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -49,15 +57,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 15,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 21,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.8,
-          "pm10": 2.4,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.1,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -67,7 +75,15 @@
       "name": "Aguada Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.3757&lon=-67.1857"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -81,39 +97,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.17,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.61,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 104.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
+          "high_temp_f": 92.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 2.5,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.8,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -140,35 +155,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.16,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.52,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
+          "high_temp_f": 89.0,
           "low_temp_f": 74.0,
-          "high_apparent_temp_f": 98.0,
+          "high_apparent_temp_f": 100.0,
           "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "light rain showers",
-            "moderate rain showers"
+            "moderate rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 2.5,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.8,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -180,11 +196,18 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=18.2565&lon=-66.1285"
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued November 9 at 3:27PM AST until November 9 at 5:30PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-09T15:27:00-04:00",
+            "expires": "2026-11-09T17:30:00-04:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5b6de696b58552f0d69a49491a8acc123546495.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5b6de696b58552f0d69a49491a8acc123546495.001.1"
+            ],
+            "count": 1
           }
         ],
         "protest": [],
@@ -203,35 +226,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.15,
-          "precip_probability_pct": 70,
+          "precip_in_24h": 1.88,
+          "precip_probability_pct": 90,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 85.0,
           "low_temp_f": 73.0,
           "high_apparent_temp_f": 91.0,
           "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 3.5,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 6.9,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -241,7 +265,15 @@
       "name": "Aibonito Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.1307&lon=-66.2645"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -255,22 +287,23 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.22,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 1.17,
+          "precip_probability_pct": 60,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 82.0,
-          "low_temp_f": 69.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 69.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 3.5,
+          "low_temp_f": 70.0,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 70.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
+            "light rain showers",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -278,15 +311,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 17,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.6,
+          "pm10": 4.7,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -299,7 +332,7 @@
         "weather": [
           {
             "event": "Extreme Heat Forecast",
-            "headline": "Apparent temperature expected to reach 110.0°F in next 24h",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
             "severity": "Severe",
             "source": "nws_forecast",
             "url": "https://forecast.weather.gov/MapClick.php?lat=18.2869&lon=-67.1313"
@@ -321,13 +354,13 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.14,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 0.69,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 92.0,
           "low_temp_f": 73.0,
-          "high_apparent_temp_f": 110.0,
+          "high_apparent_temp_f": 107.0,
           "low_apparent_temp_f": 73.0,
           "max_wind_mph": 5.8,
           "max_wind_gust_mph": 6.9,
@@ -342,15 +375,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 2.5,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.8,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -360,7 +393,22 @@
       "name": "Arecibo Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4340&lon=-66.6750"
+          },
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4340&lon=-66.6750"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -374,19 +422,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.33,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 1.44,
+          "precip_probability_pct": 70,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
+          "high_temp_f": 91.0,
           "low_temp_f": 74.0,
-          "high_apparent_temp_f": 104.0,
+          "high_apparent_temp_f": 107.0,
           "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -398,15 +446,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 14,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 20,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 2.0,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.7,
+          "pm10": 4.9,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -433,36 +481,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.67,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 0.31,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 104.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 9.2,
+          "high_temp_f": 88.0,
+          "low_temp_f": 78.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 78.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 24,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.6,
-          "ozone": 54.0,
+          "pm2_5": 3.4,
+          "pm10": 4.7,
+          "ozone": 58.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -472,7 +519,22 @@
       "name": "Barceloneta Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4700&lon=-66.5582"
+          },
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4700&lon=-66.5582"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -486,19 +548,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.32,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 1.22,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
+          "high_temp_f": 91.0,
           "low_temp_f": 72.0,
-          "high_apparent_temp_f": 103.0,
+          "high_apparent_temp_f": 107.0,
           "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -510,15 +572,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -528,7 +590,15 @@
       "name": "Barranquitas Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.7\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.2000&lon=-66.3093"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -542,22 +612,23 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.55,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 1.66,
+          "precip_probability_pct": 80,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
+          "high_temp_f": 82.0,
           "low_temp_f": 69.0,
-          "high_apparent_temp_f": 84.0,
+          "high_apparent_temp_f": 86.0,
           "low_apparent_temp_f": 69.0,
           "max_wind_mph": 4.6,
           "max_wind_gust_mph": 5.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
+            "light rain showers",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -565,15 +636,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -586,7 +657,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
+            "headline": "~1.7\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
             "url": "https://forecast.weather.gov/MapClick.php?lat=18.3494&lon=-66.1686"
@@ -608,36 +679,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.27,
-          "precip_probability_pct": 70,
+          "precip_in_24h": 1.74,
+          "precip_probability_pct": 90,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 87.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -664,36 +735,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.24,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
+          "high_temp_f": 91.0,
           "low_temp_f": 78.0,
-          "high_apparent_temp_f": 99.0,
+          "high_apparent_temp_f": 102.0,
           "low_apparent_temp_f": 78.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 8.1,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 23.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 23,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.7,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.3,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -705,11 +775,18 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=18.2111&lon=-66.0510"
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued November 9 at 3:27PM AST until November 9 at 5:30PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-09T15:27:00-04:00",
+            "expires": "2026-11-09T17:30:00-04:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5b6de696b58552f0d69a49491a8acc123546495.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5b6de696b58552f0d69a49491a8acc123546495.001.1"
+            ],
+            "count": 1
           }
         ],
         "protest": [],
@@ -728,16 +805,80 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.11,
-          "precip_probability_pct": 70,
+          "precip_in_24h": 1.76,
+          "precip_probability_pct": 80,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 90.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 26,
+          "category": "Good",
+          "aqi_24h_max": 30,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72027": {
+      "fips": "72027",
+      "name": "Camuy Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4455&lon=-66.8631"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.28,
+          "precip_probability_pct": 60,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 87.0,
           "low_temp_f": 74.0,
-          "high_apparent_temp_f": 103.0,
+          "high_apparent_temp_f": 98.0,
           "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 3.5,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -753,67 +894,11 @@
           "category": "Good",
           "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72027": {
-      "fips": "72027",
-      "name": "Camuy Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.1,
-          "precip_probability_pct": 40,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 95.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 14,
-          "category": "Good",
-          "aqi_24h_max": 20,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 2.0,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.7,
+          "pm10": 4.9,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -848,36 +933,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.32,
+          "precip_in_24h": 1.34,
           "precip_probability_pct": 70,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 88.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 97.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 99.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -912,20 +997,19 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.19,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 1.15,
+          "precip_probability_pct": 70,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 98.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "high_temp_f": 90.0,
+          "low_temp_f": 78.0,
+          "high_apparent_temp_f": 101.0,
+          "low_apparent_temp_f": 78.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 13.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -933,15 +1017,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -951,125 +1035,13 @@
       "name": "CataÃ±o Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.98,
-          "precip_probability_pct": 50,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 22,
-          "category": "Good",
-          "aqi_24h_max": 26,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72035": {
-      "fips": "72035",
-      "name": "Cayey Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.35,
-          "precip_probability_pct": 60,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 69.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 69.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 3.5,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 19,
-          "category": "Good",
-          "aqi_24h_max": 24,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.6,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72037": {
-      "fips": "72037",
-      "name": "Ceiba Municipio",
-      "state": "PR",
-      "alerts": {
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
+            "headline": "~1.1\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=18.2533&lon=-65.6208"
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4446&lon=-66.1488"
           }
         ],
         "protest": [],
@@ -1088,72 +1060,16 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.33,
-          "precip_probability_pct": 70,
+          "precip_in_24h": 1.13,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
+          "high_temp_f": 87.0,
           "low_temp_f": 78.0,
-          "high_apparent_temp_f": 95.0,
+          "high_apparent_temp_f": 103.0,
           "low_apparent_temp_f": 78.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 3.5,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 20,
-          "category": "Good",
-          "aqi_24h_max": 29,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.4,
-          "ozone": 60.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72039": {
-      "fips": "72039",
-      "name": "Ciales Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.86,
-          "precip_probability_pct": 60,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 94.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -1165,22 +1081,86 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "72041": {
-      "fips": "72041",
-      "name": "Cidra Municipio",
+    "72035": {
+      "fips": "72035",
+      "name": "Cayey Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.1036&lon=-66.1517"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.08,
+          "precip_probability_pct": 50,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 83.0,
+          "low_temp_f": 70.0,
+          "high_apparent_temp_f": 88.0,
+          "low_apparent_temp_f": 70.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 23,
+          "category": "Good",
+          "aqi_24h_max": 27,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.4,
+          "pm10": 4.7,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.1,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72037": {
+      "fips": "72037",
+      "name": "Ceiba Municipio",
       "state": "PR",
       "alerts": {
         "weather": [],
@@ -1200,7 +1180,135 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.78,
+          "precip_in_24h": 0.57,
+          "precip_probability_pct": 40,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 79.0,
+          "high_apparent_temp_f": 96.0,
+          "low_apparent_temp_f": 79.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 29,
+          "category": "Good",
+          "aqi_24h_max": 32,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.8,
+          "pm10": 5.6,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72039": {
+      "fips": "72039",
+      "name": "Ciales Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.9\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.2959&lon=-66.5156"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.9,
+          "precip_probability_pct": 90,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 96.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 4.6,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "light rain showers",
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 23,
+          "category": "Good",
+          "aqi_24h_max": 28,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72041": {
+      "fips": "72041",
+      "name": "Cidra Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.6\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.1744&lon=-66.1616"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.6,
           "precip_probability_pct": 70,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
@@ -1214,21 +1322,22 @@
           "lightning_activity_level": 2,
           "weather": [
             "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 24,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.6,
-          "ozone": 54.0,
+          "pm2_5": 3.4,
+          "pm10": 4.7,
+          "ozone": 58.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1255,16 +1364,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.12,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.89,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 88.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 97.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 98.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -1276,15 +1385,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 17,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.6,
+          "pm10": 4.7,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1294,7 +1403,15 @@
       "name": "ComerÃ­o Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.8\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.2250&lon=-66.2195"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1308,22 +1425,23 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.95,
-          "precip_probability_pct": 70,
+          "precip_in_24h": 1.8,
+          "precip_probability_pct": 90,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 87.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 95.0,
-          "low_apparent_temp_f": 72.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 96.0,
+          "low_apparent_temp_f": 73.0,
           "max_wind_mph": 4.6,
           "max_wind_gust_mph": 5.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
+            "light rain showers",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -1331,15 +1449,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1352,7 +1470,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
+            "headline": "~1.9\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
             "url": "https://forecast.weather.gov/MapClick.php?lat=18.3039&lon=-66.3262"
@@ -1374,19 +1492,20 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.15,
-          "precip_probability_pct": 70,
+          "precip_in_24h": 1.89,
+          "precip_probability_pct": 90,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
+          "high_temp_f": 86.0,
           "low_temp_f": 73.0,
-          "high_apparent_temp_f": 92.0,
+          "high_apparent_temp_f": 94.0,
           "low_apparent_temp_f": 73.0,
           "max_wind_mph": 3.5,
           "max_wind_gust_mph": 4.6,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
+            "light rain showers",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -1394,15 +1513,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1429,18 +1548,18 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.97,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 0.2,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 85.0,
           "low_temp_f": 79.0,
           "high_apparent_temp_f": 93.0,
           "low_apparent_temp_f": 79.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
             "light rain showers",
             "moderate rain showers",
@@ -1450,15 +1569,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 30,
           "category": "Good",
-          "aqi_24h_max": 28,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.5,
-          "pm10": 3.3,
-          "ozone": 59.0,
+          "pm2_5": 4.5,
+          "pm10": 6.8,
+          "ozone": 69.0,
           "nitrogen_dioxide": 0.3,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1469,6 +1588,13 @@
       "state": "PR",
       "alerts": {
         "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4744&lon=-66.2620"
+          },
           {
             "event": "Extreme Heat Forecast",
             "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
@@ -1490,39 +1616,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.7,
+          "precip_in_24h": 1.06,
           "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 89.0,
-          "low_temp_f": 76.0,
+          "low_temp_f": 77.0,
           "high_apparent_temp_f": 106.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1530,70 +1656,6 @@
     "72053": {
       "fips": "72053",
       "name": "Fajardo Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=18.3864&lon=-65.5885"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.11,
-          "precip_probability_pct": 50,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": null,
-          "low_temp_f": null,
-          "high_apparent_temp_f": 90.0,
-          "low_apparent_temp_f": 88.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 20,
-          "category": "Good",
-          "aqi_24h_max": 29,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.4,
-          "ozone": 60.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72054": {
-      "fips": "72054",
-      "name": "Florida Municipio",
       "state": "PR",
       "alerts": {
         "weather": [],
@@ -1613,36 +1675,100 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.95,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 0.33,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 98.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "high_temp_f": 83.0,
+          "low_temp_f": 82.0,
+          "high_apparent_temp_f": 91.0,
+          "low_apparent_temp_f": 89.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 13.8,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
+            "light rain showers",
             "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 5.6,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72054": {
+      "fips": "72054",
+      "name": "Florida Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.8\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.3687&lon=-66.5627"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.78,
+          "precip_probability_pct": 90,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 88.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 100.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "light rain showers",
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 23,
+          "category": "Good",
+          "aqi_24h_max": 28,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1669,36 +1795,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.19,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 0.08,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 91.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 11.5,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 21.9,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 15,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 21,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.8,
-          "pm10": 2.4,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.1,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1725,18 +1850,18 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.15,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.27,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 88.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 9.2,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
             "light rain showers",
             "moderate rain showers"
@@ -1745,15 +1870,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 24,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.6,
-          "ozone": 54.0,
+          "pm2_5": 3.4,
+          "pm10": 4.7,
+          "ozone": 58.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1780,35 +1905,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.13,
+          "precip_in_24h": 0.12,
           "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 89.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 99.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 10.4,
+          "low_temp_f": 78.0,
+          "high_apparent_temp_f": 100.0,
+          "low_apparent_temp_f": 78.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 17.3,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "moderate rain showers",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 15,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 21,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.8,
-          "pm10": 2.4,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.1,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1820,11 +1945,18 @@
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=18.3444&lon=-66.1141"
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued November 9 at 3:27PM AST until November 9 at 5:30PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-09T15:27:00-04:00",
+            "expires": "2026-11-09T17:30:00-04:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5b6de696b58552f0d69a49491a8acc123546495.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5b6de696b58552f0d69a49491a8acc123546495.001.1"
+            ],
+            "count": 1
           }
         ],
         "protest": [],
@@ -1843,36 +1975,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.28,
-          "precip_probability_pct": 70,
+          "precip_in_24h": 1.7,
+          "precip_probability_pct": 90,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 86.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 99.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 101.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1885,7 +2017,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
+            "headline": "~1.7\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
             "url": "https://forecast.weather.gov/MapClick.php?lat=18.2726&lon=-65.9812"
@@ -1907,16 +2039,80 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.28,
-          "precip_probability_pct": 70,
+          "precip_in_24h": 1.73,
+          "precip_probability_pct": 90,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 3.5,
+          "high_temp_f": 89.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 104.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 26,
+          "category": "Good",
+          "aqi_24h_max": 30,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72065": {
+      "fips": "72065",
+      "name": "Hatillo Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4411&lon=-66.7982"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.4,
+          "precip_probability_pct": 60,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 100.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 9.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -1932,67 +2128,11 @@
           "category": "Good",
           "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72065": {
-      "fips": "72065",
-      "name": "Hatillo Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.12,
-          "precip_probability_pct": 40,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 96.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 14,
-          "category": "Good",
-          "aqi_24h_max": 20,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 2.0,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.7,
+          "pm10": 4.9,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2002,7 +2142,15 @@
       "name": "Hormigueros Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 106.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.1347&lon=-67.1162"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2016,38 +2164,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.14,
+          "precip_in_24h": 0.13,
           "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 104.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
+          "high_temp_f": 90.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 106.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 2,
           "weather": [
-            "moderate rain showers",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 23,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.7,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.3,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2060,7 +2208,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
+            "headline": "~1.0\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
             "url": "https://forecast.weather.gov/MapClick.php?lat=18.1354&lon=-65.7862"
@@ -2082,16 +2230,16 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.33,
-          "precip_probability_pct": 70,
+          "precip_in_24h": 1.03,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
+          "high_temp_f": 88.0,
           "low_temp_f": 76.0,
-          "high_apparent_temp_f": 103.0,
+          "high_apparent_temp_f": 102.0,
           "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -2103,15 +2251,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.8,
-          "pm10": 3.9,
-          "ozone": 56.0,
+          "pm2_5": 3.3,
+          "pm10": 4.8,
+          "ozone": 65.0,
           "nitrogen_dioxide": 0.2,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2138,35 +2286,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.1,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.79,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 97.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
+          "high_temp_f": 89.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 101.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
-            "moderate rain showers"
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 2.5,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.8,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2176,7 +2325,15 @@
       "name": "Jayuya Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.6\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.2112&lon=-66.5869"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2190,16 +2347,16 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.18,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 1.61,
+          "precip_probability_pct": 80,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 80.0,
+          "high_temp_f": 81.0,
           "low_temp_f": 70.0,
-          "high_apparent_temp_f": 84.0,
+          "high_apparent_temp_f": 85.0,
           "low_apparent_temp_f": 70.0,
           "max_wind_mph": 3.5,
           "max_wind_gust_mph": 4.6,
@@ -2214,15 +2371,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2249,16 +2406,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.08,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.17,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 90.0,
-          "low_temp_f": 77.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 10.4,
+          "low_temp_f": 78.0,
+          "high_apparent_temp_f": 104.0,
+          "low_apparent_temp_f": 78.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 17.3,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -2269,15 +2426,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 17,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.6,
+          "pm10": 4.7,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2290,7 +2447,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
+            "headline": "~1.6\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
             "url": "https://forecast.weather.gov/MapClick.php?lat=18.2241&lon=-65.9085"
@@ -2312,20 +2469,19 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.29,
+          "precip_in_24h": 1.55,
           "precip_probability_pct": 70,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 89.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 3.5,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -2333,15 +2489,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2376,36 +2532,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.2,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 92.0,
-          "low_temp_f": 77.0,
+          "low_temp_f": 78.0,
           "high_apparent_temp_f": 107.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 11.5,
+          "low_apparent_temp_f": 78.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 23.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 23,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.7,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.3,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2415,7 +2570,15 @@
       "name": "Lares Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.7\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.2769&lon=-66.8696"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2429,39 +2592,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.14,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 1.65,
+          "precip_probability_pct": 80,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 71.0,
-          "high_apparent_temp_f": 91.0,
-          "low_apparent_temp_f": 71.0,
+          "high_temp_f": 85.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 93.0,
+          "low_apparent_temp_f": 72.0,
           "max_wind_mph": 3.5,
           "max_wind_gust_mph": 4.6,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 14,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 20,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 2.0,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.7,
+          "pm10": 4.9,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2471,7 +2633,15 @@
       "name": "Las MarÃ­as Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.2276&lon=-66.9776"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2485,39 +2655,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
+          "precip_in_24h": 1.06,
           "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 86.0,
-          "low_apparent_temp_f": 73.0,
+          "high_temp_f": 83.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 87.0,
+          "low_apparent_temp_f": 74.0,
           "max_wind_mph": 4.6,
           "max_wind_gust_mph": 5.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 14,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 20,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 2.0,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.7,
+          "pm10": 4.9,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2530,7 +2699,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
+            "headline": "~1.4\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
             "url": "https://forecast.weather.gov/MapClick.php?lat=18.1871&lon=-65.8712"
@@ -2552,20 +2721,19 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.3,
+          "precip_in_24h": 1.38,
           "precip_probability_pct": 70,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
+          "high_temp_f": 87.0,
           "low_temp_f": 74.0,
-          "high_apparent_temp_f": 99.0,
+          "high_apparent_temp_f": 98.0,
           "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 3.5,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -2573,15 +2741,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 24,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.6,
-          "ozone": 54.0,
+          "pm2_5": 3.4,
+          "pm10": 4.7,
+          "ozone": 58.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2608,36 +2776,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.0,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 0.81,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
+          "high_temp_f": 88.0,
           "low_temp_f": 78.0,
-          "high_apparent_temp_f": 95.0,
+          "high_apparent_temp_f": 97.0,
           "low_apparent_temp_f": 78.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2645,70 +2813,6 @@
     "72089": {
       "fips": "72089",
       "name": "Luquillo Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=18.3680&lon=-65.7099"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.27,
-          "precip_probability_pct": 70,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 96.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 20,
-          "category": "Good",
-          "aqi_24h_max": 29,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.4,
-          "ozone": 60.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72091": {
-      "fips": "72091",
-      "name": "ManatÃ­ Municipio",
       "state": "PR",
       "alerts": {
         "weather": [],
@@ -2728,16 +2832,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.54,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 0.68,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
+          "high_temp_f": 87.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 97.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -2749,15 +2853,79 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 5.6,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72091": {
+      "fips": "72091",
+      "name": "ManatÃ­ Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4448&lon=-66.4931"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.37,
+          "precip_probability_pct": 70,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 91.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "light rain showers",
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 23,
+          "category": "Good",
+          "aqi_24h_max": 28,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2784,78 +2952,14 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.1,
+          "precip_in_24h": 0.84,
           "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 71.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 71.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 15,
-          "category": "Good",
-          "aqi_24h_max": 21,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.8,
-          "pm10": 2.4,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72095": {
-      "fips": "72095",
-      "name": "Maunabo Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=17.9998&lon=-65.8964"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.32,
-          "precip_probability_pct": 70,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 76.0,
+          "high_temp_f": 80.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 83.0,
+          "low_apparent_temp_f": 72.0,
           "max_wind_mph": 4.6,
           "max_wind_gust_mph": 5.8,
           "thunder_probability_pct": null,
@@ -2869,15 +2973,71 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 24,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.6,
-          "ozone": 54.0,
+          "pm2_5": 3.9,
+          "pm10": 5.1,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72095": {
+      "fips": "72095",
+      "name": "Maunabo Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.52,
+          "precip_probability_pct": 40,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 100.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain showers",
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 23,
+          "category": "Good",
+          "aqi_24h_max": 27,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.4,
+          "pm10": 4.7,
+          "ozone": 58.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2904,21 +3064,20 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.26,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 0.11,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 78.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 79.0,
           "high_apparent_temp_f": 95.0,
-          "low_apparent_temp_f": 78.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
+          "low_apparent_temp_f": 79.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 20.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
             "moderate rain showers",
-            "thunderstorms",
             "light rain showers"
           ],
           "window": "next 24h",
@@ -2927,13 +3086,13 @@
         "air_quality": {
           "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.9,
-          "ozone": 54.0,
+          "pm2_5": 4.3,
+          "pm10": 6.1,
+          "ozone": 53.0,
           "nitrogen_dioxide": 0.2,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2960,35 +3119,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.12,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.97,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 100.0,
-          "low_apparent_temp_f": 72.0,
+          "high_temp_f": 92.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 73.0,
           "max_wind_mph": 5.8,
           "max_wind_gust_mph": 6.9,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
-            "moderate rain showers"
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 2.5,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.8,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3001,7 +3161,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
+            "headline": "~1.9\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
             "url": "https://forecast.weather.gov/MapClick.php?lat=18.3180&lon=-66.4204"
@@ -3023,19 +3183,20 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.07,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 1.88,
+          "precip_probability_pct": 90,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
+          "high_temp_f": 87.0,
           "low_temp_f": 73.0,
-          "high_apparent_temp_f": 94.0,
+          "high_apparent_temp_f": 96.0,
           "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 5.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
+            "light rain showers",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -3043,15 +3204,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3061,15 +3222,7 @@
       "name": "Naguabo Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=18.2111&lon=-65.7357"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3083,19 +3236,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.33,
-          "precip_probability_pct": 70,
+          "precip_in_24h": 0.99,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 76.0,
+          "high_temp_f": 88.0,
+          "low_temp_f": 77.0,
           "high_apparent_temp_f": 99.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -3107,15 +3260,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 20,
+          "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 29,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.4,
-          "ozone": 60.0,
+          "pm2_5": 3.8,
+          "pm10": 5.6,
+          "ozone": 69.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3128,7 +3281,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
+            "headline": "~1.9\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
             "url": "https://forecast.weather.gov/MapClick.php?lat=18.2899&lon=-66.2534"
@@ -3150,19 +3303,20 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.18,
-          "precip_probability_pct": 70,
+          "precip_in_24h": 1.89,
+          "precip_probability_pct": 90,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 93.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "high_temp_f": 86.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 95.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 6.9,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
+            "light rain showers",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -3170,15 +3324,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3186,6 +3340,70 @@
     "72107": {
       "fips": "72107",
       "name": "Orocovis Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.7\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.2187&lon=-66.4369"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.72,
+          "precip_probability_pct": 80,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 78.0,
+          "low_temp_f": 69.0,
+          "high_apparent_temp_f": 78.0,
+          "low_apparent_temp_f": 69.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 4.6,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "light rain showers",
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 23,
+          "category": "Good",
+          "aqi_24h_max": 28,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72109": {
+      "fips": "72109",
+      "name": "Patillas Municipio",
       "state": "PR",
       "alerts": {
         "weather": [],
@@ -3205,100 +3423,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.36,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 0.48,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 77.0,
-          "low_temp_f": 68.0,
-          "high_apparent_temp_f": 77.0,
-          "low_apparent_temp_f": 68.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 21,
-          "category": "Good",
-          "aqi_24h_max": 22,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72109": {
-      "fips": "72109",
-      "name": "Patillas Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=18.0003&lon=-65.9866"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.15,
-          "precip_probability_pct": 70,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
+          "high_temp_f": 85.0,
           "low_temp_f": 76.0,
-          "high_apparent_temp_f": 94.0,
+          "high_apparent_temp_f": 93.0,
           "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 24,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.6,
-          "ozone": 54.0,
+          "pm2_5": 3.4,
+          "pm10": 4.7,
+          "ozone": 58.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3325,16 +3478,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.17,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 90.0,
-          "low_temp_f": 77.0,
+          "low_temp_f": 78.0,
           "high_apparent_temp_f": 100.0,
-          "low_apparent_temp_f": 77.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 9.2,
+          "low_apparent_temp_f": 78.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -3345,15 +3498,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 15,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 21,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.8,
-          "pm10": 2.4,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.1,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3380,16 +3533,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.09,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 0.17,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 91.0,
-          "low_temp_f": 78.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 78.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 10.4,
+          "high_temp_f": 92.0,
+          "low_temp_f": 79.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 79.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -3400,15 +3553,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 15,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 21,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.8,
-          "pm10": 2.4,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.1,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3418,7 +3571,15 @@
       "name": "Quebradillas Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4664&lon=-66.9276"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3432,38 +3593,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.09,
-          "precip_probability_pct": 30,
+          "precip_in_24h": 1.02,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
+          "high_temp_f": 86.0,
           "low_temp_f": 74.0,
-          "high_apparent_temp_f": 93.0,
+          "high_apparent_temp_f": 96.0,
           "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "light rain showers",
-            "moderate rain showers"
+            "moderate rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 14,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 20,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 2.0,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.7,
+          "pm10": 4.9,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3490,36 +3652,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.22,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 0.38,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
+          "high_temp_f": 89.0,
           "low_temp_f": 76.0,
-          "high_apparent_temp_f": 98.0,
+          "high_apparent_temp_f": 101.0,
           "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 2.5,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.8,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3527,70 +3688,6 @@
     "72119": {
       "fips": "72119",
       "name": "RÃ­o Grande Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=18.3764&lon=-65.7984"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.25,
-          "precip_probability_pct": 60,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 98.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 20,
-          "category": "Good",
-          "aqi_24h_max": 29,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.4,
-          "ozone": 60.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72121": {
-      "fips": "72121",
-      "name": "Sabana Grande Municipio",
       "state": "PR",
       "alerts": {
         "weather": [],
@@ -3610,18 +3707,81 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
+          "precip_in_24h": 0.91,
+          "precip_probability_pct": 60,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 91.0,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 101.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 29,
+          "category": "Good",
+          "aqi_24h_max": 32,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.8,
+          "pm10": 5.6,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72121": {
+      "fips": "72121",
+      "name": "Sabana Grande Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.0845&lon=-66.9476"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.24,
           "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 104.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
+          "high_temp_f": 91.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 2,
           "weather": [
             "light rain showers",
             "moderate rain showers"
@@ -3630,15 +3790,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 15,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 21,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.8,
-          "pm10": 2.4,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.1,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3665,71 +3825,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.09,
+          "precip_in_24h": 0.21,
           "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 90.0,
           "low_temp_f": 76.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "light rain showers",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 17,
-          "category": "Good",
-          "aqi_24h_max": 22,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72125": {
-      "fips": "72125",
-      "name": "San GermÃ¡n Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.12,
-          "precip_probability_pct": 20,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 75.0,
           "high_apparent_temp_f": 104.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 6.9,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -3740,31 +3845,31 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 23,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.7,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.6,
+          "pm10": 4.7,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "72127": {
-      "fips": "72127",
-      "name": "San Juan Municipio",
+    "72125": {
+      "fips": "72125",
+      "name": "San GermÃ¡n Municipio",
       "state": "PR",
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
             "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4222&lon=-66.0691"
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.1078&lon=-67.0373"
           }
         ],
         "protest": [],
@@ -3783,20 +3888,89 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.1,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 0.17,
+          "precip_probability_pct": 20,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 78.0,
-          "high_apparent_temp_f": 97.0,
-          "low_apparent_temp_f": 78.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
+          "high_temp_f": 91.0,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 107.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "light rain showers",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 23,
+          "category": "Good",
+          "aqi_24h_max": 26,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.9,
+          "pm10": 5.3,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72127": {
+      "fips": "72127",
+      "name": "San Juan Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued November 9 at 3:27PM AST until November 9 at 5:30PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-09T15:27:00-04:00",
+            "expires": "2026-11-09T17:30:00-04:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5b6de696b58552f0d69a49491a8acc123546495.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5b6de696b58552f0d69a49491a8acc123546495.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.18,
+          "precip_probability_pct": 60,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 87.0,
+          "low_temp_f": 79.0,
+          "high_apparent_temp_f": 100.0,
+          "low_apparent_temp_f": 79.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -3804,15 +3978,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
           "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3825,7 +3999,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
+            "headline": "~1.5\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
             "url": "https://forecast.weather.gov/MapClick.php?lat=18.1471&lon=-65.9762"
@@ -3847,36 +4021,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.14,
-          "precip_probability_pct": 70,
+          "precip_in_24h": 1.45,
+          "precip_probability_pct": 60,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 88.0,
-          "low_temp_f": 73.0,
-          "high_apparent_temp_f": 99.0,
-          "low_apparent_temp_f": 73.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 3.5,
+          "high_temp_f": 87.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 98.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 24,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.6,
-          "ozone": 54.0,
+          "pm2_5": 3.4,
+          "pm10": 4.7,
+          "ozone": 58.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3886,7 +4060,15 @@
       "name": "San SebastiÃ¡n Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.3311&lon=-66.9691"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3900,39 +4082,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.12,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 1.42,
+          "precip_probability_pct": 60,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 90.0,
-          "low_temp_f": 70.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 70.0,
+          "high_temp_f": 91.0,
+          "low_temp_f": 71.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 71.0,
           "max_wind_mph": 4.6,
           "max_wind_gust_mph": 5.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
             "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 14,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 20,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 2.0,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.7,
+          "pm10": 4.9,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3959,16 +4140,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.09,
+          "precip_in_24h": 0.16,
           "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 86.0,
           "low_temp_f": 78.0,
-          "high_apparent_temp_f": 96.0,
+          "high_apparent_temp_f": 97.0,
           "low_apparent_temp_f": 78.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 10.4,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 18.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -3979,15 +4160,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 17,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.6,
+          "pm10": 4.7,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4000,7 +4181,7 @@
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
+            "headline": "~1.7\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
             "url": "https://forecast.weather.gov/MapClick.php?lat=18.3646&lon=-66.2447"
@@ -4022,36 +4203,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.21,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 1.69,
+          "precip_probability_pct": 90,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 87.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 102.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4061,69 +4242,13 @@
       "name": "Toa Baja Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.85,
-          "precip_probability_pct": 50,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 102.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 22,
-          "category": "Good",
-          "aqi_24h_max": 26,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72139": {
-      "fips": "72139",
-      "name": "Trujillo Alto Municipio",
-      "state": "PR",
-      "alerts": {
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
+            "headline": "~1.1\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=18.3354&lon=-66.0038"
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4569&lon=-66.1932"
           }
         ],
         "protest": [],
@@ -4142,72 +4267,16 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.31,
-          "precip_probability_pct": 70,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 93.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "light rain showers",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 22,
-          "category": "Good",
-          "aqi_24h_max": 26,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.3,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72141": {
-      "fips": "72141",
-      "name": "Utuado Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.3,
-          "precip_probability_pct": 60,
+          "precip_in_24h": 1.09,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 87.0,
-          "low_temp_f": 72.0,
-          "high_apparent_temp_f": 97.0,
-          "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 3.5,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 103.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -4219,15 +4288,150 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 14,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 20,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 2.0,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72139": {
+      "fips": "72139",
+      "name": "Trujillo Alto Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Flash Flood Warning",
+            "headline": "Flash Flood Warning issued November 9 at 3:27PM AST until November 9 at 5:30PM AST by NWS San Juan PR",
+            "severity": "Severe",
+            "urgency": "Immediate",
+            "effective": "2026-11-09T15:27:00-04:00",
+            "expires": "2026-11-09T17:30:00-04:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5b6de696b58552f0d69a49491a8acc123546495.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d5b6de696b58552f0d69a49491a8acc123546495.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.59,
+          "precip_probability_pct": 90,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 86.0,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 96.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 26,
+          "category": "Good",
+          "aqi_24h_max": 30,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.6,
+          "pm10": 5.1,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72141": {
+      "fips": "72141",
+      "name": "Utuado Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.8\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.2709&lon=-66.7030"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.8,
+          "precip_probability_pct": 90,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 88.0,
+          "low_temp_f": 73.0,
+          "high_apparent_temp_f": 98.0,
+          "low_apparent_temp_f": 73.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 4.6,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": 2,
+          "weather": [
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 22,
+          "category": "Good",
+          "aqi_24h_max": 26,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.7,
+          "pm10": 4.9,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4237,7 +4441,15 @@
       "name": "Vega Alta Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4362&lon=-66.3364"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -4251,39 +4463,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.81,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 1.36,
+          "precip_probability_pct": 70,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 90.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 103.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
+          "low_temp_f": 76.0,
+          "high_apparent_temp_f": 105.0,
+          "low_apparent_temp_f": 76.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 13.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
-            "light rain showers",
             "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4293,7 +4505,22 @@
       "name": "Vega Baja Municipio",
       "state": "PR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4551&lon=-66.3979"
+          },
+          {
+            "event": "Extreme Heat Forecast",
+            "headline": "Apparent temperature expected to reach 107.0°F in next 24h",
+            "severity": "Severe",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.4551&lon=-66.3979"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -4307,19 +4534,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.57,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 1.24,
+          "precip_probability_pct": 60,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 91.0,
           "low_temp_f": 75.0,
-          "high_apparent_temp_f": 105.0,
+          "high_apparent_temp_f": 107.0,
           "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -4331,15 +4558,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 22,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.8,
+          "pm10": 4.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4366,16 +4593,79 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.99,
-          "precip_probability_pct": 50,
+          "precip_in_24h": 0.24,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 90.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 97.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 99.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain showers",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 28,
+          "category": "Good",
+          "aqi_24h_max": 30,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.3,
+          "pm10": 4.8,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "72149": {
+      "fips": "72149",
+      "name": "Villalba Municipio",
+      "state": "PR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=18.1307&lon=-66.4722"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.03,
+          "precip_probability_pct": 60,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 85.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 94.0,
+          "low_apparent_temp_f": 72.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 6.9,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -4389,20 +4679,20 @@
         "air_quality": {
           "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 26,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.8,
-          "pm10": 3.9,
-          "ozone": 56.0,
-          "nitrogen_dioxide": 0.2,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.6,
+          "pm10": 4.7,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "72149": {
-      "fips": "72149",
-      "name": "Villalba Municipio",
+    "72151": {
+      "fips": "72151",
+      "name": "Yabucoa Municipio",
       "state": "PR",
       "alerts": {
         "weather": [],
@@ -4422,80 +4712,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
+          "precip_in_24h": 0.81,
           "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 85.0,
-          "low_temp_f": 71.0,
-          "high_apparent_temp_f": 93.0,
-          "low_apparent_temp_f": 71.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
-          "weather": [
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 17,
-          "category": "Good",
-          "aqi_24h_max": 22,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.5,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "72151": {
-      "fips": "72151",
-      "name": "Yabucoa Municipio",
-      "state": "PR",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.3\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=18.0599&lon=-65.8599"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.33,
-          "precip_probability_pct": 70,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 89.0,
-          "low_temp_f": 76.0,
-          "high_apparent_temp_f": 101.0,
-          "low_apparent_temp_f": 76.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
+          "high_temp_f": 88.0,
+          "low_temp_f": 77.0,
+          "high_apparent_temp_f": 102.0,
+          "low_apparent_temp_f": 77.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": 2,
           "weather": [
@@ -4507,15 +4733,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 24,
+          "aqi_24h_max": 27,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.6,
-          "ozone": 54.0,
+          "pm2_5": 3.4,
+          "pm10": 4.7,
+          "ozone": 58.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-08T16:00",
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -4542,18 +4768,18 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.1,
+          "precip_in_24h": 0.39,
           "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 86.0,
-          "low_temp_f": 74.0,
-          "high_apparent_temp_f": 93.0,
-          "low_apparent_temp_f": 74.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 5.8,
+          "low_temp_f": 75.0,
+          "high_apparent_temp_f": 94.0,
+          "low_apparent_temp_f": 75.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
+          "lightning_activity_level": 2,
           "weather": [
             "light rain showers",
             "moderate rain showers"
@@ -4562,15 +4788,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 15,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 21,
+          "aqi_24h_max": 26,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.8,
-          "pm10": 2.4,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-08T16:00",
+          "pm2_5": 3.9,
+          "pm10": 5.1,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-09T19:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
