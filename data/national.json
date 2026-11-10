@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-09T20:05:50.618489+00:00",
-  "date": "2026-11-09",
+  "generated_at": "2026-11-10T13:44:27.589757+00:00",
+  "date": "2026-11-10",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 96
+      "counties_with_alerts": 92
     },
     "weather_nws_forecast": {
-      "status": "ok",
+      "status": "partial",
       "counties_queried": 3222,
-      "counties_with_conditions": 3222,
-      "counties_over_threshold": 58,
+      "counties_with_conditions": 1354,
+      "counties_over_threshold": 34,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,29 +30,29 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 43,
+      "counties_with_matches": 45,
       "items_pre_llm": {
-        "protest": 81,
-        "utility_outage": 2,
-        "transit_disruption": 5,
-        "service_provider_outage": 1,
-        "hazmat_incident": 7,
-        "road_closure": 10
+        "protest": 57,
+        "utility_outage": 1,
+        "transit_disruption": 1,
+        "service_provider_outage": 0,
+        "hazmat_incident": 8,
+        "road_closure": 12
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
       "counties_with_matches": 20,
       "items_post_llm": {
-        "protest": 24,
-        "utility_outage": 0,
-        "transit_disruption": 0,
+        "protest": 15,
+        "utility_outage": 1,
+        "transit_disruption": 1,
         "service_provider_outage": 0,
-        "hazmat_incident": 2,
+        "hazmat_incident": 5,
         "road_closure": 6
       },
-      "unique_articles": 69,
-      "calls_used": 69,
+      "unique_articles": 51,
+      "calls_used": 51,
       "cap": 300,
       "cap_hit": false
     },
@@ -150,7 +150,7 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 12,
+      "positive_samples": 11,
       "counties_with_detections": 8
     },
     "nndss_notifiable": {
@@ -163,12 +163,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 9
+      "national_items": 0,
+      "counties_with_alerts": 0
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 6,
+      "active_incidents": 5,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -194,7 +194,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 2
+          "items": 1
         },
         {
           "key": "github",
@@ -272,7 +272,7 @@
           "key": "rapid7",
           "name": "Rapid7",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "servicenow",
@@ -308,7 +308,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "r3wn",
@@ -340,8 +340,8 @@
   "run_health": {
     "overall": "degraded",
     "counts": {
-      "ok": 13,
-      "partial": 1,
+      "ok": 12,
+      "partial": 2,
       "failed": 1,
       "skipped": 0
     },
@@ -349,7 +349,8 @@
       "amtrak"
     ],
     "partial": [
-      "service_status"
+      "service_status",
+      "weather_nws_forecast"
     ],
     "skipped": []
   },
@@ -667,40 +668,17 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "ground_stop",
-      "code": "SFO",
-      "name": "San Francisco Intl",
-      "city": "San Francisco",
-      "state": "CA",
-      "reason": "low ceilings",
-      "end": "1:00 pm PST",
-      "source": "FAA NAS Status",
-      "url": "https://nasstatus.faa.gov/"
-    }
-  ],
+  "faa_advisories": [],
   "service_outages": [
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Network Performance Issues in Eastern North America",
+      "title": "Changes to Cloudflare Workers are not producing Event Subscription events",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-11-09T16:34:35.355Z",
-      "updated": "2026-11-09T17:21:50.437Z",
-      "url": "https://www.cloudflarestatus.com/incidents/88hc76jnq2gn",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Changes made to Workers may be delayed or disrupted",
-      "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-11-09T16:15:26.798Z",
-      "updated": "2026-11-09T16:35:55.009Z",
-      "url": "https://www.cloudflarestatus.com/incidents/1x0tbxpmmttu",
+      "status": "investigating",
+      "started": "2026-11-10T01:53:58.905Z",
+      "updated": "2026-11-10T01:55:01.530Z",
+      "url": "https://www.cloudflarestatus.com/incidents/0ocqieaifg7h",
       "source": "provider status page"
     },
     {
@@ -717,25 +695,28 @@
     {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
-      "title": "Prisma Cloud: App:  alert remediation is unavailable",
+      "title": "Prisma Cloud: Alert Manual and Automated Remediation is unavailable",
       "impact": "minor",
       "status": "identified",
       "started": "2026-11-09T11:45:58.224Z",
-      "updated": "2026-11-09T19:15:34.844Z",
+      "updated": "2026-11-10T13:05:27.316Z",
       "url": "https://stspg.io/q10mz5bghy7j",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Rapid7",
+      "key": "rapid7",
+      "title": "Service Under Maintenance",
+      "impact": "maintenance",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.rapid7.com",
       "source": "provider status page"
     },
     {
       "provider": "m4kp",
       "impact": "minor",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
-    },
-    {
-      "provider": "x9tz",
-      "impact": "maintenance",
       "active_incidents": 1,
       "status": "active",
       "coded": true,
