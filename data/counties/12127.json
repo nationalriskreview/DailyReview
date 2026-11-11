@@ -11,16 +11,16 @@
     "weather": [
       {
         "event": "Flood Warning",
-        "headline": "Flood Warning issued November 9 at 8:02PM EST by NWS Melbourne FL",
+        "headline": "Flood Warning issued November 10 at 7:47PM EST by NWS Melbourne FL",
         "severity": "Severe",
         "urgency": "Immediate",
-        "effective": "2026-11-09T20:01:00-05:00",
-        "expires": "2026-11-10T11:15:00-05:00",
+        "effective": "2026-11-10T19:47:00-05:00",
+        "expires": "2026-11-11T11:00:00-05:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f1defdc5ab79c048548d6946bd57f062b5eff9e.001.1",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.505e8f7bcdba7736f6bbdd92a1fa13719b15a01e.001.1",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f1defdc5ab79c048548d6946bd57f062b5eff9e.001.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4b285fc635ac6e22d5ca2389fc92c65dc81f18f7.001.1"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.505e8f7bcdba7736f6bbdd92a1fa13719b15a01e.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4aabaee6c5c98e5f31cb1f525643affd36388e4e.001.1"
         ],
         "count": 2
       }
@@ -40,20 +40,38 @@
   },
   "alert_count": 1,
   "conditions": {
-    "forecast": null,
+    "forecast": {
+      "precip_in_24h": 0.01,
+      "precip_probability_pct": 24,
+      "snow_in_24h": 0.0,
+      "ice_in_24h": 0.0,
+      "high_temp_f": 81.0,
+      "low_temp_f": 66.0,
+      "high_apparent_temp_f": 83.0,
+      "low_apparent_temp_f": 66.0,
+      "max_wind_mph": 6.9,
+      "max_wind_gust_mph": 12.7,
+      "thunder_probability_pct": 9,
+      "lightning_activity_level": null,
+      "weather": [
+        "moderate rain showers"
+      ],
+      "window": "next 24h",
+      "source": "nws_gridpoint"
+    },
     "air_quality": {
-      "us_aqi": 49,
-      "category": "Good",
+      "us_aqi": 53,
+      "category": "Moderate",
       "aqi_24h_max": 54,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 12.2,
-      "pm10": 14.3,
-      "ozone": 77.0,
-      "nitrogen_dioxide": 7.4,
-      "observed_at": "2026-11-10T13:00",
+      "pm2_5": 11.4,
+      "pm10": 14.0,
+      "ozone": 63.0,
+      "nitrogen_dioxide": 10.0,
+      "observed_at": "2026-11-11T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-10",
-  "generated_at": "2026-11-10T13:44:27.589757+00:00"
+  "date": "2026-11-11",
+  "generated_at": "2026-11-11T11:06:52.504637+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-10T13:44:27.589757+00:00",
-  "date": "2026-11-10",
+  "generated_at": "2026-11-11T11:06:52.504637+00:00",
+  "date": "2026-11-11",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 92
+      "counties_with_alerts": 121
     },
     "weather_nws_forecast": {
-      "status": "partial",
+      "status": "ok",
       "counties_queried": 3222,
-      "counties_with_conditions": 1354,
-      "counties_over_threshold": 34,
+      "counties_with_conditions": 3222,
+      "counties_over_threshold": 20,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,29 +30,29 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 45,
+      "counties_with_matches": 30,
       "items_pre_llm": {
-        "protest": 57,
-        "utility_outage": 1,
-        "transit_disruption": 1,
-        "service_provider_outage": 0,
-        "hazmat_incident": 8,
-        "road_closure": 12
+        "protest": 40,
+        "utility_outage": 2,
+        "transit_disruption": 0,
+        "service_provider_outage": 1,
+        "hazmat_incident": 4,
+        "road_closure": 2
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 20,
+      "counties_with_matches": 16,
       "items_post_llm": {
         "protest": 15,
-        "utility_outage": 1,
-        "transit_disruption": 1,
+        "utility_outage": 0,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 5,
-        "road_closure": 6
+        "hazmat_incident": 3,
+        "road_closure": 1
       },
-      "unique_articles": 51,
-      "calls_used": 51,
+      "unique_articles": 28,
+      "calls_used": 28,
       "cap": 300,
       "cap_hit": false
     },
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 5,
+      "active_incidents": 6,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -194,7 +194,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 1
+          "items": 2
         },
         {
           "key": "github",
@@ -340,8 +340,8 @@
   "run_health": {
     "overall": "degraded",
     "counts": {
-      "ok": 12,
-      "partial": 2,
+      "ok": 13,
+      "partial": 1,
       "failed": 1,
       "skipped": 0
     },
@@ -349,8 +349,7 @@
       "amtrak"
     ],
     "partial": [
-      "service_status",
-      "weather_nws_forecast"
+      "service_status"
     ],
     "skipped": []
   },
@@ -673,11 +672,22 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
+      "title": "Replicate Input Upload Issue",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-11-11T04:33:19.016Z",
+      "updated": "2026-11-11T07:33:53.799Z",
+      "url": "https://www.cloudflarestatus.com/incidents/yu63fhh2peb7",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Cloudflare",
+      "key": "cloudflare",
       "title": "Changes to Cloudflare Workers are not producing Event Subscription events",
       "impact": "minor",
-      "status": "investigating",
+      "status": "identified",
       "started": "2026-11-10T01:53:58.905Z",
-      "updated": "2026-11-10T01:55:01.530Z",
+      "updated": "2026-11-11T05:05:06.331Z",
       "url": "https://www.cloudflarestatus.com/incidents/0ocqieaifg7h",
       "source": "provider status page"
     },
@@ -699,7 +709,7 @@
       "impact": "minor",
       "status": "identified",
       "started": "2026-11-09T11:45:58.224Z",
-      "updated": "2026-11-10T13:05:27.316Z",
+      "updated": "2026-11-11T02:45:13.847Z",
       "url": "https://stspg.io/q10mz5bghy7j",
       "source": "provider status page"
     },
