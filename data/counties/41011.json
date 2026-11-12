@@ -8,7 +8,36 @@
     "lon": -124.094133
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "High Surf Warning",
+        "headline": "High Surf Warning issued November 12 at 2:29AM PST until November 14 at 10:00PM PST by NWS Medford OR",
+        "severity": "Moderate",
+        "urgency": "Expected",
+        "effective": "2026-11-12T02:29:00-08:00",
+        "expires": "2026-11-12T16:15:00-08:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.148fc6991cbac232eaa9a08826e7bef17b6d1be3.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.148fc6991cbac232eaa9a08826e7bef17b6d1be3.001.1"
+        ],
+        "count": 1
+      },
+      {
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued November 12 at 12:03AM PST until November 13 at 10:00AM PST by NWS Medford OR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-12T00:03:00-08:00",
+        "expires": "2026-11-12T16:15:00-08:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91aa508af30e8e583c3cbb067d5b42416d80ef33.003.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91aa508af30e8e583c3cbb067d5b42416d80ef33.003.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,40 +51,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 2,
+      "precip_probability_pct": 15,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 69.0,
-      "low_temp_f": 51.0,
-      "high_apparent_temp_f": 69.0,
-      "low_apparent_temp_f": 51.0,
-      "max_wind_mph": 15.0,
-      "max_wind_gust_mph": 21.9,
-      "thunder_probability_pct": 18,
+      "high_temp_f": 66.0,
+      "low_temp_f": 47.0,
+      "high_apparent_temp_f": 66.0,
+      "low_apparent_temp_f": 47.0,
+      "max_wind_mph": 12.7,
+      "max_wind_gust_mph": 19.6,
+      "thunder_probability_pct": 13,
       "lightning_activity_level": null,
       "weather": [
-        "fog"
+        "fog",
+        "light rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 29,
-      "category": "Good",
-      "aqi_24h_max": 30,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 1.7,
-      "pm10": 2.0,
-      "ozone": 56.0,
-      "nitrogen_dioxide": 2.3,
-      "observed_at": "2026-11-11T11:00",
+      "us_aqi": 53,
+      "category": "Moderate",
+      "aqi_24h_max": 65,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 18.2,
+      "pm10": 19.2,
+      "ozone": 28.0,
+      "nitrogen_dioxide": 5.8,
+      "observed_at": "2026-11-12T11:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-11",
-  "generated_at": "2026-11-11T11:06:52.504637+00:00"
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T11:16:35.409088+00:00"
 }

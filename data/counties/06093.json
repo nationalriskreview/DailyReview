@@ -8,7 +8,22 @@
     "lon": -122.533287
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued November 12 at 12:03AM PST until November 13 at 1:00PM PST by NWS Medford OR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-12T00:03:00-08:00",
+        "expires": "2026-11-12T16:15:00-08:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91aa508af30e8e583c3cbb067d5b42416d80ef33.002.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91aa508af30e8e583c3cbb067d5b42416d80ef33.002.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,44 +37,45 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
       "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 70.0,
+      "high_temp_f": 65.0,
       "low_temp_f": 37.0,
-      "high_apparent_temp_f": 70.0,
-      "low_apparent_temp_f": 30.0,
-      "max_wind_mph": 21.9,
-      "max_wind_gust_mph": 32.2,
-      "thunder_probability_pct": 11,
+      "high_apparent_temp_f": 65.0,
+      "low_apparent_temp_f": 28.0,
+      "max_wind_mph": 26.5,
+      "max_wind_gust_mph": 40.3,
+      "thunder_probability_pct": 12,
       "lightning_activity_level": null,
       "weather": [
         "light rain",
         "moderate rain",
         "moderate rain showers",
         "thunderstorms",
-        "light snow"
+        "light snow",
+        "moderate snow"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 32,
+      "us_aqi": 25,
       "category": "Good",
-      "aqi_24h_max": 44,
+      "aqi_24h_max": 38,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.0,
-      "pm10": 2.0,
-      "ozone": 43.0,
-      "nitrogen_dioxide": 10.6,
-      "observed_at": "2026-11-11T10:00",
+      "pm2_5": 4.8,
+      "pm10": 5.2,
+      "ozone": 58.0,
+      "nitrogen_dioxide": 7.0,
+      "observed_at": "2026-11-12T11:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-11",
-  "generated_at": "2026-11-11T11:06:52.504637+00:00"
+  "date": "2026-11-12",
+  "generated_at": "2026-11-12T11:16:35.409088+00:00"
 }
