@@ -1,17 +1,32 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-12T11:16:35.409088+00:00",
-  "date": "2026-11-12",
+  "generated_at": "2026-11-13T17:48:45.325230+00:00",
+  "date": "2026-11-13",
   "state": "AR",
   "counties_total": 75,
-  "counties_with_alerts": 0,
+  "counties_with_alerts": 57,
   "counties": {
     "05001": {
       "fips": "05001",
       "name": "Arkansas County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -25,37 +40,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 18,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 68.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 68.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 56.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 31,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 53,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 1.5,
-          "pm10": 1.5,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 3.3,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 32,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.6,
+          "pm10": 6.3,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -65,7 +80,22 @@
       "name": "Ashley County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 9:52AM CST until November 14 at 8:00AM CST by NWS Jackson MS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T09:52:00-06:00",
+            "expires": "2026-11-13T20:15:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e0a4c1079c696e5ebe78022c2144e648dfc722e.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e0a4c1079c696e5ebe78022c2144e648dfc722e.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -79,20 +109,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 27,
+          "precip_probability_pct": 21,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 71.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 71.0,
-          "low_apparent_temp_f": 52.0,
+          "high_temp_f": 59.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 35.0,
           "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 3,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
             "frost"
@@ -101,15 +131,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 41,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 49,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.1,
-          "pm10": 1.1,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 2.9,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.9,
+          "pm10": 6.7,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -119,7 +149,22 @@
       "name": "Baxter County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -133,37 +178,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 17,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 60.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 23.0,
+          "high_temp_f": 51.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 51.0,
+          "low_apparent_temp_f": 27.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 1.6,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 4.3,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 5.0,
+          "pm10": 5.5,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -191,16 +236,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 24,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 59.0,
-          "low_temp_f": 39.0,
-          "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 35.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 51.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 51.0,
+          "low_apparent_temp_f": 24.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
             "frost"
@@ -209,15 +254,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 24,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.5,
-          "pm10": 2.9,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.1,
+          "pm10": 5.0,
+          "ozone": 53.0,
+          "nitrogen_dioxide": 2.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -227,7 +272,22 @@
       "name": "Boone County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -241,23 +301,23 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 6,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 59.0,
-          "low_temp_f": 41.0,
-          "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 36.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 23.0,
+          "high_temp_f": 50.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 47.0,
+          "low_apparent_temp_f": 26.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -267,11 +327,11 @@
           "category": "Good",
           "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.2,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 4.3,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 5.2,
+          "pm10": 5.6,
+          "ozone": 56.0,
+          "nitrogen_dioxide": 1.6,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -281,7 +341,22 @@
       "name": "Bradley County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -295,128 +370,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 71.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 71.0,
-          "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 33,
-          "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.2,
-          "pm10": 1.3,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 3.0,
-          "observed_at": "2026-11-12T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "05013": {
-      "fips": "05013",
-      "name": "Calhoun County",
-      "state": "AR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 71.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 71.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 30,
-          "category": "Good",
-          "aqi_24h_max": 44,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 0.9,
-          "pm10": 1.0,
-          "ozone": 56.0,
-          "nitrogen_dioxide": 2.4,
-          "observed_at": "2026-11-12T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "05015": {
-      "fips": "05015",
-      "name": "Carroll County",
-      "state": "AR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_probability_pct": 28,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 58.0,
-          "low_temp_f": 42.0,
+          "low_temp_f": 35.0,
           "high_apparent_temp_f": 58.0,
-          "low_apparent_temp_f": 39.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 2,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
             "frost"
@@ -427,13 +394,151 @@
         "air_quality": {
           "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 34,
+          "aqi_24h_max": 37,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.2,
-          "pm10": 2.5,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.8,
+          "pm10": 6.5,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "05013": {
+      "fips": "05013",
+      "name": "Calhoun County",
+      "state": "AR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 34,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 58.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 26,
+          "category": "Good",
+          "aqi_24h_max": 37,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.6,
+          "pm10": 6.4,
+          "ozone": 66.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "05015": {
+      "fips": "05015",
+      "name": "Carroll County",
+      "state": "AR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:29AM CST until November 14 at 9:00AM CST by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:29:00-06:00",
+            "expires": "2026-11-13T22:30:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae42ba47fcaf1510c352217a28d9cec7b70dc6e2.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae42ba47fcaf1510c352217a28d9cec7b70dc6e2.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 12,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 50.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 47.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 10,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 25,
+          "category": "Good",
+          "aqi_24h_max": 33,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 5.3,
+          "pm10": 5.7,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 1.5,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -443,7 +548,22 @@
       "name": "Chicot County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 9:52AM CST until November 14 at 8:00AM CST by NWS Jackson MS",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T09:52:00-06:00",
+            "expires": "2026-11-13T20:15:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e0a4c1079c696e5ebe78022c2144e648dfc722e.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e0a4c1079c696e5ebe78022c2144e648dfc722e.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -457,19 +577,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 24,
+          "precip_probability_pct": 17,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 19.6,
+          "high_temp_f": 58.0,
+          "low_temp_f": 37.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 33.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 17.3,
           "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
@@ -479,15 +599,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 37,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 45,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.4,
-          "pm10": 1.4,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 5.4,
+          "pm10": 7.3,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -497,7 +617,22 @@
       "name": "Clark County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -511,37 +646,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 48,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 43.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 16.1,
+          "high_temp_f": 58.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 34.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 9.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 1.9,
-          "ozone": 53.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 5.3,
+          "pm10": 7.1,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -569,31 +704,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 63.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 63.0,
-          "low_apparent_temp_f": 40.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 52.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 26.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost",
+            "light rain showers"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 30,
           "category": "Good",
-          "aqi_24h_max": 39,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.8,
+          "pm2_5": 3.5,
           "pm10": 3.8,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 4.5,
-          "observed_at": "2026-11-12T11:00",
+          "ozone": 67.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -603,7 +741,22 @@
       "name": "Cleburne County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -617,37 +770,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 62.0,
-          "low_temp_f": 43.0,
-          "high_apparent_temp_f": 62.0,
-          "low_apparent_temp_f": 38.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 24.2,
+          "high_temp_f": 52.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 26.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 39,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.8,
-          "pm10": 0.9,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 3.2,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 3.8,
+          "pm10": 4.5,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -657,7 +810,22 @@
       "name": "Cleveland County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -671,37 +839,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 25,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 69.0,
-          "low_temp_f": 50.0,
-          "high_apparent_temp_f": 69.0,
-          "low_apparent_temp_f": 50.0,
+          "high_temp_f": 57.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 32.0,
           "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 15.0,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 52,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 2.1,
-          "pm10": 2.2,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 35,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.9,
+          "pm10": 6.6,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 1.4,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -729,33 +897,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 53,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 72.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 72.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 5,
+          "high_temp_f": 61.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 61.0,
+          "low_apparent_temp_f": 36.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 1.5,
-          "pm10": 1.6,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 3.4,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 37,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.7,
+          "pm10": 6.3,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -765,7 +933,22 @@
       "name": "Conway County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -779,37 +962,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 66.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 66.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 19.6,
+          "high_temp_f": 57.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 33.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 1.8,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 3.4,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 3.9,
+          "pm10": 5.1,
+          "ozone": 59.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -837,31 +1020,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 63.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 63.0,
-          "low_apparent_temp_f": 43.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 52.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost",
+            "light rain showers"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.7,
-          "pm10": 2.8,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 5.2,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.1,
+          "pm10": 4.6,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -871,7 +1057,22 @@
       "name": "Crawford County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:29AM CST until November 14 at 9:00AM CST by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:29:00-06:00",
+            "expires": "2026-11-13T22:30:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae42ba47fcaf1510c352217a28d9cec7b70dc6e2.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae42ba47fcaf1510c352217a28d9cec7b70dc6e2.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -885,23 +1086,22 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 44,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 64.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 64.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 55.0,
+          "low_temp_f": 37.0,
+          "high_apparent_temp_f": 55.0,
+          "low_apparent_temp_f": 34.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
-            "frost",
             "moderate rain",
             "light rain showers"
           ],
@@ -909,15 +1109,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.4,
-          "pm10": 2.8,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 3.8,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.5,
+          "pm10": 6.0,
+          "ozone": 59.0,
+          "nitrogen_dioxide": 1.6,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -948,28 +1148,30 @@
           "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 62.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 62.0,
-          "low_apparent_temp_f": 43.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 51.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 51.0,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 49,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.2,
-          "pm10": 2.3,
-          "ozone": 34.0,
-          "nitrogen_dioxide": 4.8,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.9,
+          "pm10": 5.7,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 1.4,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -997,31 +1199,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 11,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 63.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 63.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 11.5,
+          "high_temp_f": 51.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 51.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 6.9,
           "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 1,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost",
+            "light rain showers"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
           "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 2.1,
-          "pm10": 2.2,
-          "ozone": 36.0,
-          "nitrogen_dioxide": 5.0,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 32,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.7,
+          "pm10": 5.4,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1031,7 +1236,22 @@
       "name": "Dallas County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1045,37 +1265,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 36,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 68.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 68.0,
-          "low_apparent_temp_f": 49.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 12.7,
+          "high_temp_f": 56.0,
+          "low_temp_f": 33.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 33.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 41,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.2,
-          "pm10": 1.4,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 2.8,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.5,
+          "pm10": 6.2,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1085,7 +1305,22 @@
       "name": "Desha County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1099,37 +1334,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 12,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 69.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 69.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 57.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 1.7,
-          "pm10": 1.8,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 3.7,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 32,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.9,
+          "pm10": 6.7,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1139,7 +1374,22 @@
       "name": "Drew County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1153,37 +1403,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 18,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
+          "high_temp_f": 57.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 13.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 37,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 1.6,
-          "pm10": 1.7,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 3.8,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 34,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.7,
+          "pm10": 6.4,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1193,7 +1443,22 @@
       "name": "Faulkner County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1207,37 +1472,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 67.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 67.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 56.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 33,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.2,
-          "pm10": 1.4,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 3.9,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 3.6,
+          "pm10": 4.7,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1247,7 +1512,22 @@
       "name": "Franklin County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:29AM CST until November 14 at 9:00AM CST by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:29:00-06:00",
+            "expires": "2026-11-13T22:30:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae42ba47fcaf1510c352217a28d9cec7b70dc6e2.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae42ba47fcaf1510c352217a28d9cec7b70dc6e2.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1261,20 +1541,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 64.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 64.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 56.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
             "frost"
@@ -1283,15 +1563,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 45,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.3,
-          "pm10": 2.7,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.3,
+          "pm10": 5.7,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 1.5,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1301,7 +1581,22 @@
       "name": "Fulton County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1315,35 +1610,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 14,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 59.0,
-          "low_temp_f": 38.0,
-          "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 23.0,
+          "high_temp_f": 50.0,
+          "low_temp_f": 25.0,
+          "high_apparent_temp_f": 46.0,
+          "low_apparent_temp_f": 24.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
           "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.2,
-          "pm10": 1.3,
-          "ozone": 38.0,
-          "nitrogen_dioxide": 3.7,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 5.1,
+          "pm10": 5.7,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 0.7,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1353,7 +1650,22 @@
       "name": "Garland County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1367,37 +1679,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 40,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 69.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 69.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 21.9,
+          "high_temp_f": 59.0,
+          "low_temp_f": 33.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 41,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.6,
-          "pm10": 1.9,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 3.1,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.6,
+          "pm10": 6.3,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1407,7 +1719,22 @@
       "name": "Grant County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1421,37 +1748,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 23,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 67.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 67.0,
-          "low_apparent_temp_f": 49.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 15.0,
+          "high_temp_f": 56.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 9.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 55,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 1.6,
-          "pm10": 1.8,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 34,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.7,
+          "pm10": 6.4,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 1.7,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1479,31 +1806,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 63.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 63.0,
-          "low_apparent_temp_f": 42.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 52.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost",
+            "light rain showers"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 33,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.1,
-          "pm10": 3.2,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 4.8,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.4,
+          "pm10": 4.9,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1531,19 +1861,19 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 63,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 24.2,
+          "high_temp_f": 59.0,
+          "low_temp_f": 37.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 37.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -1551,13 +1881,13 @@
         "air_quality": {
           "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 46,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.3,
-          "pm10": 2.5,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.8,
+          "pm10": 6.5,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1567,7 +1897,22 @@
       "name": "Hot Spring County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1581,37 +1926,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 38,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 69.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 69.0,
-          "low_apparent_temp_f": 49.0,
+          "high_temp_f": 58.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 32.0,
           "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 17.3,
+          "max_wind_gust_mph": 9.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 41,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.4,
-          "pm10": 1.5,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 2.9,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.4,
+          "pm10": 6.1,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1639,33 +1984,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 71,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 71.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 71.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 24.2,
+          "high_temp_f": 61.0,
+          "low_temp_f": 38.0,
+          "high_apparent_temp_f": 61.0,
+          "low_apparent_temp_f": 36.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 54,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 2.8,
-          "pm10": 3.1,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 4.8,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 34,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.4,
+          "pm10": 6.0,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1675,7 +2020,22 @@
       "name": "Independence County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1689,35 +2049,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 14,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 63.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 63.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 21.9,
+          "high_temp_f": 53.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 53.0,
+          "low_apparent_temp_f": 26.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 39,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.9,
-          "pm10": 0.9,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 3.4,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.1,
+          "pm10": 4.8,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1727,7 +2089,22 @@
       "name": "Izard County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1741,37 +2118,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 15,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 61.0,
-          "low_temp_f": 43.0,
-          "high_apparent_temp_f": 61.0,
-          "low_apparent_temp_f": 39.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 23.0,
+          "high_temp_f": 52.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 25.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.9,
-          "pm10": 1.0,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 3.7,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.5,
+          "pm10": 5.1,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1781,7 +2158,22 @@
       "name": "Jackson County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1795,35 +2187,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 13,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 44.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 54.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 13.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 24,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 33,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 1.8,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.4,
+          "pm10": 5.1,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1833,7 +2227,22 @@
       "name": "Jefferson County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1847,37 +2256,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 14,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 67.0,
-          "low_temp_f": 50.0,
-          "high_apparent_temp_f": 67.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 19.6,
+          "high_temp_f": 55.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 55.0,
+          "low_apparent_temp_f": 27.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 33,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 58,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 2.5,
-          "pm10": 2.6,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 33,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.8,
+          "pm10": 6.5,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 1.5,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1887,7 +2296,22 @@
       "name": "Johnson County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1901,37 +2325,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 27,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 63.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 63.0,
-          "low_apparent_temp_f": 44.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 21.9,
+          "high_temp_f": 54.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.4,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 3.9,
+          "pm10": 5.2,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1959,33 +2383,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 64,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 71.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 71.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 24.2,
+          "high_temp_f": 60.0,
+          "low_temp_f": 37.0,
+          "high_apparent_temp_f": 60.0,
+          "low_apparent_temp_f": 37.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 48,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.3,
-          "pm10": 2.5,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.3,
+          "pm10": 5.9,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1995,7 +2419,22 @@
       "name": "Lawrence County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2009,35 +2448,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 11,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 63.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 63.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 23.0,
+          "high_temp_f": 53.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 53.0,
+          "low_apparent_temp_f": 27.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 1.8,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 3.8,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.4,
+          "pm10": 5.0,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2065,31 +2506,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 66.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 66.0,
-          "low_apparent_temp_f": 45.0,
+          "high_temp_f": 53.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 53.0,
+          "low_apparent_temp_f": 31.0,
           "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 1,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost",
+            "light rain showers"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 52,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 1.7,
-          "pm10": 1.8,
-          "ozone": 38.0,
-          "nitrogen_dioxide": 4.6,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 31,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.6,
+          "pm10": 5.5,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2099,7 +2543,22 @@
       "name": "Lincoln County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2113,37 +2572,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 15,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 57.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 13.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 33,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 52,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 2.2,
-          "pm10": 2.3,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 4.3,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 33,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.6,
+          "pm10": 6.3,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2171,33 +2630,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 80,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 73.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 73.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 6,
+          "high_temp_f": 62.0,
+          "low_temp_f": 39.0,
+          "high_apparent_temp_f": 62.0,
+          "low_apparent_temp_f": 35.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.7,
-          "pm10": 2.8,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 5.3,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.9,
+          "pm10": 6.3,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 1.5,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2207,7 +2666,22 @@
       "name": "Logan County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2221,37 +2695,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 39,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 23.0,
+          "high_temp_f": 56.0,
+          "low_temp_f": 33.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 2.3,
-          "pm10": 2.6,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 34,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.6,
+          "pm10": 6.2,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2261,7 +2735,22 @@
       "name": "Lonoke County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2275,37 +2764,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 68.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 68.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 21.9,
+          "high_temp_f": 56.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 27.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 13.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 54,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 1.7,
-          "pm10": 1.8,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 4.7,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 32,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.4,
+          "pm10": 5.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.3,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2315,7 +2804,22 @@
       "name": "Madison County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:29AM CST until November 14 at 9:00AM CST by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:29:00-06:00",
+            "expires": "2026-11-13T22:30:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae42ba47fcaf1510c352217a28d9cec7b70dc6e2.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae42ba47fcaf1510c352217a28d9cec7b70dc6e2.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2329,20 +2833,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 23,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 58.0,
-          "low_temp_f": 41.0,
-          "high_apparent_temp_f": 58.0,
-          "low_apparent_temp_f": 39.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 50.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 47.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
             "frost"
@@ -2351,15 +2855,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.4,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 3.2,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.5,
+          "pm10": 5.3,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2369,7 +2873,22 @@
       "name": "Marion County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2383,37 +2902,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 20,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 60.0,
-          "low_temp_f": 42.0,
-          "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 39.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 21.9,
+          "high_temp_f": 51.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 51.0,
+          "low_apparent_temp_f": 25.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
+          "us_aqi": 24,
           "category": "Good",
           "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 1.9,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 4.3,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.9,
+          "pm10": 5.4,
+          "ozone": 59.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2441,33 +2960,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 72,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 72.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 72.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 25.3,
+          "high_temp_f": 61.0,
+          "low_temp_f": 39.0,
+          "high_apparent_temp_f": 61.0,
+          "low_apparent_temp_f": 36.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 48,
+          "aqi_24h_max": 37,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.2,
-          "pm10": 3.4,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 6.2,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 5.3,
+          "pm10": 6.8,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 1.8,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2495,31 +3014,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 42.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 53.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 53.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
           "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 2.7,
-          "pm10": 2.7,
-          "ozone": 36.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 32,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.9,
+          "pm10": 5.5,
+          "ozone": 66.0,
+          "nitrogen_dioxide": 1.5,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2529,7 +3050,22 @@
       "name": "Monroe County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2543,37 +3079,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 6,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 66.0,
-          "low_temp_f": 50.0,
-          "high_apparent_temp_f": 66.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 55.0,
+          "low_temp_f": 33.0,
+          "high_apparent_temp_f": 55.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 13.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 53,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 1.4,
-          "pm10": 1.5,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 32,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.4,
+          "pm10": 5.8,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.4,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2583,7 +3119,22 @@
       "name": "Montgomery County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2597,37 +3148,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 60,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 67.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 67.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 19.6,
+          "high_temp_f": 58.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 31.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 46,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.2,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 3.1,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.5,
+          "pm10": 6.2,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2637,7 +3188,22 @@
       "name": "Nevada County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:31AM CST until November 14 at 9:00AM CST by NWS Shreveport LA",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:31:00-06:00",
+            "expires": "2026-11-14T09:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a3e1225268db3f46e5f06a718ce026d3078081e1.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a3e1225268db3f46e5f06a718ce026d3078081e1.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2651,37 +3217,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 50,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 59.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 35.0,
+          "max_wind_mph": 2.3,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 37,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.6,
-          "pm10": 1.7,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 5.7,
+          "pm10": 7.4,
+          "ozone": 67.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2691,7 +3257,22 @@
       "name": "Newton County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2705,37 +3286,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 11,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 60.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 42.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 23.0,
+          "high_temp_f": 50.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 48.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.6,
-          "pm10": 2.0,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 3.0,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.3,
+          "pm10": 4.9,
+          "ozone": 59.0,
+          "nitrogen_dioxide": 1.3,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2745,7 +3326,22 @@
       "name": "Ouachita County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2759,37 +3355,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 47,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 71.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 71.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 12.7,
+          "high_temp_f": 59.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 34.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 9.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 45,
+          "aqi_24h_max": 37,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.2,
-          "pm10": 1.3,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 3.0,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.5,
+          "pm10": 6.2,
+          "ozone": 66.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2799,7 +3395,22 @@
       "name": "Perry County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2813,37 +3424,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 28,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 68.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 68.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 19.6,
+          "high_temp_f": 57.0,
+          "low_temp_f": 33.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 33.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 1.7,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 3.0,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.3,
+          "pm10": 5.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2871,33 +3482,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 54.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
+            "frost",
             "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 1.4,
-          "pm10": 1.4,
-          "ozone": 42.0,
-          "nitrogen_dioxide": 3.8,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 31,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.8,
+          "pm10": 6.2,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2907,7 +3519,22 @@
       "name": "Pike County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2921,37 +3548,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 64,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 68.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 68.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 17.3,
+          "high_temp_f": 58.0,
+          "low_temp_f": 37.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 34.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.2,
-          "pm10": 2.4,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.7,
+          "pm10": 6.4,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2979,31 +3606,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 10,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 63.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 63.0,
-          "low_apparent_temp_f": 44.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 51.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 51.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost",
+            "light rain showers"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
+          "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 50,
+          "aqi_24h_max": 33,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.5,
-          "pm10": 2.5,
-          "ozone": 34.0,
-          "nitrogen_dioxide": 4.7,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.7,
+          "pm10": 5.4,
+          "ozone": 66.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3013,7 +3643,22 @@
       "name": "Polk County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3027,19 +3672,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 77,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 64.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 64.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 55.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 55.0,
+          "low_apparent_temp_f": 31.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 13.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -3049,15 +3694,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 58,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 4.0,
-          "pm10": 4.4,
-          "ozone": 53.0,
-          "nitrogen_dioxide": 5.0,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 34,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.5,
+          "pm10": 6.2,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3067,7 +3712,22 @@
       "name": "Pope County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3081,37 +3741,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 15,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 56.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 1.9,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 2.8,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 3.6,
+          "pm10": 4.7,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3121,7 +3781,22 @@
       "name": "Prairie County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3135,37 +3810,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 6,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 67.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 67.0,
-          "low_apparent_temp_f": 44.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 19.6,
+          "high_temp_f": 55.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 55.0,
+          "low_apparent_temp_f": 31.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 54,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 1.4,
-          "pm10": 1.5,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 3.7,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 32,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.4,
+          "pm10": 5.9,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3175,7 +3850,22 @@
       "name": "Pulaski County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3189,37 +3879,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 11,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 67.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 67.0,
-          "low_apparent_temp_f": 44.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 56.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 1.4,
-          "pm10": 1.6,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 4.5,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 33,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.5,
+          "pm10": 6.0,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.6,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3229,7 +3919,22 @@
       "name": "Randolph County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3243,35 +3948,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 10,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 62.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 62.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 24.2,
+          "high_temp_f": 52.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 26.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 1.7,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 3.2,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 3.9,
+          "pm10": 4.4,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3299,31 +4006,34 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 51.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 51.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost",
+            "light rain showers"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
           "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 2.1,
-          "pm10": 2.2,
-          "ozone": 36.0,
-          "nitrogen_dioxide": 5.0,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 32,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.7,
+          "pm10": 5.4,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3333,7 +4043,22 @@
       "name": "Saline County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3347,37 +4072,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 26,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 67.0,
-          "low_temp_f": 50.0,
-          "high_apparent_temp_f": 67.0,
-          "low_apparent_temp_f": 48.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 56.0,
+          "low_temp_f": 33.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.5,
-          "pm10": 1.7,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 3.0,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.3,
+          "pm10": 5.9,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3387,7 +4112,22 @@
       "name": "Scott County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3401,128 +4141,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 64,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 21.9,
+          "high_temp_f": 56.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 31.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 27,
-          "category": "Good",
-          "aqi_24h_max": 54,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 2.5,
-          "pm10": 2.9,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-11-12T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "05129": {
-      "fips": "05129",
-      "name": "Searcy County",
-      "state": "AR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 62.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 62.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 27,
-          "category": "Good",
-          "aqi_24h_max": 36,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.4,
-          "pm10": 1.7,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 3.2,
-          "observed_at": "2026-11-12T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "05131": {
-      "fips": "05131",
-      "name": "Sebastian County",
-      "state": "AR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 66.0,
-          "low_temp_f": 43.0,
-          "high_apparent_temp_f": 66.0,
-          "low_apparent_temp_f": 40.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
             "frost"
@@ -3533,13 +4165,151 @@
         "air_quality": {
           "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 2.9,
-          "pm10": 3.3,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 5.3,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 34,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.7,
+          "pm10": 6.5,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "05129": {
+      "fips": "05129",
+      "name": "Searcy County",
+      "state": "AR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 6,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 52.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 23,
+          "category": "Good",
+          "aqi_24h_max": 35,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.2,
+          "pm10": 4.7,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "05131": {
+      "fips": "05131",
+      "name": "Sebastian County",
+      "state": "AR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:29AM CST until November 14 at 9:00AM CST by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:29:00-06:00",
+            "expires": "2026-11-13T22:30:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae42ba47fcaf1510c352217a28d9cec7b70dc6e2.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae42ba47fcaf1510c352217a28d9cec7b70dc6e2.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 57,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 57.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 2,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 22,
+          "category": "Good",
+          "aqi_24h_max": 31,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.9,
+          "pm10": 6.6,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 1.7,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3567,33 +4337,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 78,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 72.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 72.0,
-          "low_apparent_temp_f": 44.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 24.2,
+          "high_temp_f": 63.0,
+          "low_temp_f": 37.0,
+          "high_apparent_temp_f": 63.0,
+          "low_apparent_temp_f": 34.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 46,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.0,
-          "pm10": 3.3,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 5.4,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.2,
+          "pm10": 5.7,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3603,7 +4373,22 @@
       "name": "Sharp County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3617,234 +4402,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 13,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 61.0,
-          "low_temp_f": 42.0,
-          "high_apparent_temp_f": 61.0,
-          "low_apparent_temp_f": 38.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 24.2,
+          "high_temp_f": 51.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 51.0,
+          "low_apparent_temp_f": 25.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 24,
-          "category": "Good",
-          "aqi_24h_max": 38,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.0,
-          "pm10": 1.0,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-11-12T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "05137": {
-      "fips": "05137",
-      "name": "Stone County",
-      "state": "AR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 17,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 60.0,
-          "low_temp_f": 43.0,
-          "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 38.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 26,
-          "category": "Good",
-          "aqi_24h_max": 38,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 0.9,
-          "pm10": 1.0,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 3.7,
-          "observed_at": "2026-11-12T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "05139": {
-      "fips": "05139",
-      "name": "Union County",
-      "state": "AR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 72.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 72.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": 3,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 36,
-          "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 0.8,
-          "pm10": 0.8,
-          "ozone": 57.0,
-          "nitrogen_dioxide": 2.3,
-          "observed_at": "2026-11-12T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "05141": {
-      "fips": "05141",
-      "name": "Van Buren County",
-      "state": "AR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 63.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 63.0,
-          "low_apparent_temp_f": 43.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 28,
-          "category": "Good",
-          "aqi_24h_max": 38,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 0.9,
-          "pm10": 1.2,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 2.9,
-          "observed_at": "2026-11-12T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "05143": {
-      "fips": "05143",
-      "name": "Washington County",
-      "state": "AR",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 59.0,
-          "low_temp_f": 42.0,
-          "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 39.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "frost"
@@ -3855,13 +4426,289 @@
         "air_quality": {
           "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.0,
-          "ozone": 42.0,
-          "nitrogen_dioxide": 3.9,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.6,
+          "pm10": 5.2,
+          "ozone": 66.0,
+          "nitrogen_dioxide": 0.7,
+          "observed_at": "2026-11-13T17:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "05137": {
+      "fips": "05137",
+      "name": "Stone County",
+      "state": "AR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 5,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 50.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 47.0,
+          "low_apparent_temp_f": 26.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 24,
+          "category": "Good",
+          "aqi_24h_max": 35,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.5,
+          "pm10": 5.1,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-11-13T17:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "05139": {
+      "fips": "05139",
+      "name": "Union County",
+      "state": "AR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:31AM CST until November 14 at 9:00AM CST by NWS Shreveport LA",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:31:00-06:00",
+            "expires": "2026-11-14T09:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a3e1225268db3f46e5f06a718ce026d3078081e1.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a3e1225268db3f46e5f06a718ce026d3078081e1.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 48,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 61.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 61.0,
+          "low_apparent_temp_f": 34.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 3,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 27,
+          "category": "Good",
+          "aqi_24h_max": 38,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.7,
+          "pm10": 6.5,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "05141": {
+      "fips": "05141",
+      "name": "Van Buren County",
+      "state": "AR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 7,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 52.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 27.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 23,
+          "category": "Good",
+          "aqi_24h_max": 35,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.8,
+          "pm10": 4.5,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "05143": {
+      "fips": "05143",
+      "name": "Washington County",
+      "state": "AR",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:29AM CST until November 14 at 9:00AM CST by NWS Tulsa OK",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:29:00-06:00",
+            "expires": "2026-11-13T22:30:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae42ba47fcaf1510c352217a28d9cec7b70dc6e2.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ae42ba47fcaf1510c352217a28d9cec7b70dc6e2.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 38,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 51.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 51.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 7,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 27,
+          "category": "Good",
+          "aqi_24h_max": 32,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.4,
+          "pm10": 5.5,
+          "ozone": 56.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3871,7 +4718,22 @@
       "name": "White County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3885,23 +4747,23 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 54.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -3909,13 +4771,13 @@
         "air_quality": {
           "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.9,
-          "pm10": 0.9,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 3.6,
+          "pm10": 4.7,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3925,7 +4787,22 @@
       "name": "Woodruff County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3939,35 +4816,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 50.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 48.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 54.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "frost"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
+          "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 50,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 1.7,
-          "ozone": 38.0,
-          "nitrogen_dioxide": 5.1,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.0,
+          "pm10": 5.0,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 1.4,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3977,7 +4856,22 @@
       "name": "Yell County",
       "state": "AR",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 13 at 10:08AM CST until November 14 at 9:00AM CST by NWS Little Rock AR",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T10:08:00-06:00",
+            "expires": "2026-11-14T08:00:00-06:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7f3d5f8e0fa2afdc0bc04f2c2cec5e728f4c406b.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3991,37 +4885,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 37,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 56.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 9.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 35,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.3,
-          "ozone": 53.0,
-          "nitrogen_dioxide": 3.0,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.6,
+          "pm10": 6.4,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

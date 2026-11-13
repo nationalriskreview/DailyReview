@@ -1,10 +1,10 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-12T11:16:35.409088+00:00",
-  "date": "2026-11-12",
+  "generated_at": "2026-11-13T17:48:45.325230+00:00",
+  "date": "2026-11-13",
   "state": "CA",
   "counties_total": 58,
-  "counties_with_alerts": 30,
+  "counties_with_alerts": 39,
   "counties": {
     "06001": {
       "fips": "06001",
@@ -13,7 +13,21 @@
       "alerts": {
         "weather": [],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Berkeley Electric outage map reports customers without power Friday morning",
+            "url": "https://abcnews4.com/news/local/berkeley-electric-outage-map-reports-4658-customers-without-power-friday-morning",
+            "domain": "abcnews4.com",
+            "seendate": "20261113144500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://abcnews4.com/news/local/berkeley-electric-outage-map-reports-4658-customers-without-power-friday-morning",
+                "domain": "abcnews4.com"
+              }
+            ]
+          }
+        ],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
@@ -25,40 +39,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.6,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 67.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 67.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 58.0,
+          "low_temp_f": 50.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 46.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 36.8,
           "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
+            "moderate rain showers",
             "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 62,
-          "category": "Moderate",
-          "aqi_24h_max": 64,
+          "us_aqi": 35,
+          "category": "Good",
+          "aqi_24h_max": 61,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 15.9,
-          "pm10": 16.6,
-          "ozone": 15.0,
-          "nitrogen_dioxide": 47.4,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 3.3,
+          "pm10": 4.6,
+          "ozone": 77.0,
+          "nitrogen_dioxide": 9.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -71,16 +85,16 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:33AM PST until November 14 at 10:00AM PST by NWS Reno NV",
+            "headline": "Winter Storm Warning issued November 13 at 1:32AM PST until November 14 at 10:00AM PST by NWS Reno NV",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:05:00-08:00",
-            "expires": "2026-11-13T00:45:00-08:00",
+            "effective": "2026-11-12T12:12:00-08:00",
+            "expires": "2026-11-14T02:15:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e46de464708a8211a1f979b4629df14bae2f4ab.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f634a302ebb4dcf89e50291a66ce8ba626a384f.002.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e46de464708a8211a1f979b4629df14bae2f4ab.001.2",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f634a302ebb4dcf89e50291a66ce8ba626a384f.002.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1"
             ],
             "count": 2
           }
@@ -101,35 +115,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.11,
           "precip_probability_pct": 99,
-          "snow_in_24h": 0.0,
+          "snow_in_24h": 5.55,
           "ice_in_24h": 0.0,
-          "high_temp_f": 53.0,
-          "low_temp_f": 35.0,
-          "high_apparent_temp_f": 53.0,
-          "low_apparent_temp_f": 28.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 6,
+          "high_temp_f": 37.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 29.0,
+          "low_apparent_temp_f": 18.0,
+          "max_wind_mph": 29.9,
+          "max_wind_gust_mph": 51.8,
+          "thunder_probability_pct": 10,
           "lightning_activity_level": null,
           "weather": [
             "light snow",
+            "moderate snow",
             "heavy snow"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
+          "us_aqi": 30,
           "category": "Good",
-          "aqi_24h_max": 41,
+          "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
           "pm2_5": 3.6,
-          "pm10": 3.9,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 5.4,
-          "observed_at": "2026-11-12T11:00",
+          "pm10": 4.4,
+          "ozone": 74.0,
+          "nitrogen_dioxide": 2.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -142,15 +157,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:05AM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 12 at 12:12PM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:05:00-08:00",
-            "expires": "2026-11-12T17:00:00-08:00",
+            "effective": "2026-11-12T12:12:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1"
             ],
             "count": 1
           }
@@ -171,38 +186,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 1.15,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 19,
+          "high_temp_f": 59.0,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 44.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 35.7,
+          "thunder_probability_pct": 23,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "light rain showers",
-            "thunderstorms",
             "moderate rain showers",
+            "thunderstorms",
             "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 32,
           "category": "Good",
           "aqi_24h_max": 43,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.0,
-          "pm10": 2.6,
-          "ozone": 76.0,
-          "nitrogen_dioxide": 1.0,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.8,
+          "pm10": 8.8,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 2.3,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -212,7 +226,15 @@
       "name": "Butte County",
       "state": "CA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=39.6653&lon=-121.6032"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -226,40 +248,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_in_24h": 1.12,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 73.0,
-          "low_temp_f": 55.0,
-          "high_apparent_temp_f": 73.0,
-          "low_apparent_temp_f": 55.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 18,
+          "high_temp_f": 62.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 62.0,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 39.1,
+          "thunder_probability_pct": 27,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "moderate rain showers",
-            "thunderstorms"
+            "light rain showers",
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 48,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 50,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.2,
-          "pm10": 3.6,
-          "ozone": 42.0,
-          "nitrogen_dioxide": 7.1,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.9,
+          "pm10": 2.4,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 3.3,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -272,15 +294,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:05AM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 12 at 12:12PM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:05:00-08:00",
-            "expires": "2026-11-12T17:00:00-08:00",
+            "effective": "2026-11-12T12:12:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1"
             ],
             "count": 1
           }
@@ -301,38 +323,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.93,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 72.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 72.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 18,
+          "high_temp_f": 62.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 62.0,
+          "low_apparent_temp_f": 47.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 38.0,
+          "thunder_probability_pct": 21,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "thunderstorms",
-            "light rain showers",
             "moderate rain showers",
+            "thunderstorms",
             "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 24,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 46,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.7,
-          "pm10": 4.0,
-          "ozone": 60.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 3.7,
+          "pm10": 6.9,
+          "ozone": 80.0,
+          "nitrogen_dioxide": 1.4,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -359,35 +380,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.36,
+          "precip_probability_pct": 98,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 59.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 35.7,
+          "thunder_probability_pct": 17,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
-            "fog"
+            "light rain",
+            "light rain showers",
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 33,
+          "us_aqi": 40,
           "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 8.1,
-          "pm10": 8.7,
-          "ozone": 73.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 53,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 2.0,
+          "pm10": 2.8,
+          "ozone": 76.0,
+          "nitrogen_dioxide": 2.8,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -414,36 +437,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.56,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 68.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 68.0,
-          "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 16.1,
+          "high_temp_f": 58.0,
+          "low_temp_f": 50.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 47.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 39.1,
           "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
+            "moderate rain showers",
             "thunderstorms",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 81,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 83,
+          "aqi_24h_max": 81,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 30.3,
-          "pm10": 31.2,
-          "ozone": 3.0,
-          "nitrogen_dioxide": 47.1,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.1,
+          "pm10": 5.5,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 10.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -456,15 +480,29 @@
         "weather": [
           {
             "event": "High Surf Warning",
-            "headline": "High Surf Warning issued November 12 at 2:47AM PST until November 15 at 4:00AM PST by NWS Eureka CA",
+            "headline": "High Surf Warning issued November 13 at 7:30AM PST until November 15 at 4:00AM PST by NWS Eureka CA",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-11-12T02:47:00-08:00",
-            "expires": "2026-11-12T13:00:00-08:00",
+            "effective": "2026-11-13T07:30:00-08:00",
+            "expires": "2026-11-13T20:15:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df7d87a43507ebc54c785230d7511de83e8c5ed5.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a6e632ac25f57d7dd49a6609ebe96feaf68462fc.002.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df7d87a43507ebc54c785230d7511de83e8c5ed5.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a6e632ac25f57d7dd49a6609ebe96feaf68462fc.002.1"
+            ],
+            "count": 1
+          },
+          {
+            "event": "High Wind Warning",
+            "headline": "High Wind Warning issued November 13 at 7:17AM PST until November 13 at 1:00PM PST by NWS Eureka CA",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T07:17:00-08:00",
+            "expires": "2026-11-13T13:00:00-08:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.583ef610567defa09a3c5d38739b1ba47269031a.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.583ef610567defa09a3c5d38739b1ba47269031a.001.1"
             ],
             "count": 1
           }
@@ -482,37 +520,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 2.73,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 64.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 64.0,
-          "low_apparent_temp_f": 44.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 55.0,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 55.0,
+          "low_apparent_temp_f": 40.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 33.4,
+          "thunder_probability_pct": 18,
           "lightning_activity_level": null,
           "weather": [
-            "light rain"
+            "light rain showers",
+            "heavy rain showers",
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
+          "us_aqi": 38,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 40,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.4,
-          "pm10": 4.6,
-          "ozone": 58.0,
-          "nitrogen_dioxide": 2.8,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 2.4,
+          "pm10": 3.9,
+          "ozone": 88.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -525,16 +566,16 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:33AM PST until November 14 at 10:00AM PST by NWS Reno NV",
+            "headline": "Winter Storm Warning issued November 13 at 1:32AM PST until November 14 at 10:00AM PST by NWS Reno NV",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:05:00-08:00",
-            "expires": "2026-11-13T00:45:00-08:00",
+            "effective": "2026-11-12T12:12:00-08:00",
+            "expires": "2026-11-14T02:15:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e46de464708a8211a1f979b4629df14bae2f4ab.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f634a302ebb4dcf89e50291a66ce8ba626a384f.002.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e46de464708a8211a1f979b4629df14bae2f4ab.001.2",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f634a302ebb4dcf89e50291a66ce8ba626a384f.002.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1"
             ],
             "count": 2
           }
@@ -555,38 +596,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 1.4,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 17,
+          "high_temp_f": 52.0,
+          "low_temp_f": 41.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 35.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 35.7,
+          "thunder_probability_pct": 21,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
             "moderate rain showers",
             "thunderstorms",
-            "moderate rain",
-            "fog"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
+          "us_aqi": 40,
           "category": "Good",
           "aqi_24h_max": 47,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.4,
-          "pm10": 3.5,
-          "ozone": 86.0,
-          "nitrogen_dioxide": 2.1,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 2.1,
+          "pm10": 3.1,
+          "ozone": 88.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -598,16 +638,16 @@
       "alerts": {
         "weather": [
           {
-            "event": "Winter Storm Watch",
-            "headline": "Winter Storm Watch issued November 12 at 2:33AM PST until November 17 at 4:00AM PST by NWS Hanford CA",
+            "event": "Winter Storm Warning",
+            "headline": "Winter Storm Warning issued November 13 at 1:41AM PST until November 17 at 4:00AM PST by NWS Hanford CA",
             "severity": "Severe",
-            "urgency": "Future",
-            "effective": "2026-11-12T02:33:00-08:00",
-            "expires": "2026-11-12T10:00:00-08:00",
+            "urgency": "Expected",
+            "effective": "2026-11-13T01:41:00-08:00",
+            "expires": "2026-11-13T11:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fc4942cc7383970a474b19c101a3959c3639ff35.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c29f68d2225f0df2ebbd1d4ba401d4e8e534278.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fc4942cc7383970a474b19c101a3959c3639ff35.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c29f68d2225f0df2ebbd1d4ba401d4e8e534278.001.1"
             ],
             "count": 1
           }
@@ -628,37 +668,38 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_in_24h": 1.06,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 17,
+          "high_temp_f": 69.0,
+          "low_temp_f": 49.0,
+          "high_apparent_temp_f": 69.0,
+          "low_apparent_temp_f": 49.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 25.3,
+          "thunder_probability_pct": 14,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
             "light rain showers",
             "thunderstorms",
-            "moderate rain showers"
+            "moderate rain showers",
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 62,
+          "us_aqi": 55,
           "category": "Moderate",
-          "aqi_24h_max": 62,
+          "aqi_24h_max": 63,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 15.7,
-          "pm10": 17.1,
-          "ozone": 15.0,
-          "nitrogen_dioxide": 25.3,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 8.2,
+          "pm10": 14.1,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 9.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -685,38 +726,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.34,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 69.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 69.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 58.0,
+          "low_temp_f": 50.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 44.0,
+          "max_wind_mph": 23.0,
+          "max_wind_gust_mph": 38.0,
+          "thunder_probability_pct": 18,
           "lightning_activity_level": null,
           "weather": [
-            "smoke",
             "light rain",
-            "moderate rain",
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
+          "us_aqi": 37,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 41,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.1,
-          "pm10": 5.4,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 6.9,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.7,
+          "pm10": 2.1,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 3.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -729,16 +769,16 @@
         "weather": [
           {
             "event": "High Surf Warning",
-            "headline": "High Surf Warning issued November 12 at 2:47AM PST until November 15 at 4:00AM PST by NWS Eureka CA",
+            "headline": "High Surf Warning issued November 13 at 7:30AM PST until November 15 at 4:00AM PST by NWS Eureka CA",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-11-12T02:47:00-08:00",
-            "expires": "2026-11-12T13:00:00-08:00",
+            "effective": "2026-11-13T07:30:00-08:00",
+            "expires": "2026-11-13T20:15:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df7d87a43507ebc54c785230d7511de83e8c5ed5.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a6e632ac25f57d7dd49a6609ebe96feaf68462fc.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df7d87a43507ebc54c785230d7511de83e8c5ed5.001.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df7d87a43507ebc54c785230d7511de83e8c5ed5.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a6e632ac25f57d7dd49a6609ebe96feaf68462fc.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a6e632ac25f57d7dd49a6609ebe96feaf68462fc.003.1"
             ],
             "count": 2
           }
@@ -759,38 +799,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.01,
-          "precip_probability_pct": 8,
+          "precip_in_24h": 1.9,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 65.0,
-          "low_temp_f": 53.0,
+          "low_temp_f": 45.0,
           "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 15,
+          "low_apparent_temp_f": 39.0,
+          "max_wind_mph": 24.2,
+          "max_wind_gust_mph": 41.4,
+          "thunder_probability_pct": 17,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
+            "light rain showers",
             "moderate rain showers",
-            "thunderstorms",
-            "moderate rain",
-            "light rain showers"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 24,
+          "us_aqi": 38,
           "category": "Good",
-          "aqi_24h_max": 34,
+          "aqi_24h_max": 40,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.9,
-          "pm10": 5.0,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 8.3,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 2.2,
+          "pm10": 3.3,
+          "ozone": 87.0,
+          "nitrogen_dioxide": 0.7,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -818,16 +856,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 21,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 83.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 82.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 80.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 32.2,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers"
@@ -836,15 +874,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 46,
+          "aqi_24h_max": 49,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.3,
-          "pm10": 2.1,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 9.6,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 5.3,
+          "pm10": 9.3,
+          "ozone": 81.0,
+          "nitrogen_dioxide": 6.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -857,15 +895,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 11 at 11:43PM PST until November 14 at 4:00PM PST by NWS Las Vegas NV",
+            "headline": "Winter Storm Warning issued November 12 at 11:11PM PST until November 14 at 4:00PM PST by NWS Las Vegas NV",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-11T23:43:00-08:00",
-            "expires": "2026-11-12T13:00:00-08:00",
+            "effective": "2026-11-12T23:11:00-08:00",
+            "expires": "2026-11-13T10:30:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.58fc5913879fd962ca3322794ce0c15395d1853d.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.459813219915b76f60e900dc5626a5b88d678290.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.58fc5913879fd962ca3322794ce0c15395d1853d.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.459813219915b76f60e900dc5626a5b88d678290.001.1"
             ],
             "count": 1
           }
@@ -886,36 +924,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 58,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 57,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 76.0,
-          "low_temp_f": 43.0,
-          "high_apparent_temp_f": 76.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 10,
+          "high_temp_f": 72.0,
+          "low_temp_f": 41.0,
+          "high_apparent_temp_f": 72.0,
+          "low_apparent_temp_f": 33.0,
+          "max_wind_mph": 34.5,
+          "max_wind_gust_mph": 41.4,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "thunderstorms",
             "blowing dust"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 32,
           "category": "Good",
-          "aqi_24h_max": 48,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 9.9,
-          "pm10": 10.8,
-          "ozone": 61.0,
-          "nitrogen_dioxide": 2.6,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 4.6,
+          "pm10": 5.6,
+          "ozone": 84.0,
+          "nitrogen_dioxide": 2.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -942,34 +979,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_in_24h": 0.63,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 82.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 80.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 31.1,
+          "high_temp_f": 71.0,
+          "low_temp_f": 45.0,
+          "high_apparent_temp_f": 71.0,
+          "low_apparent_temp_f": 38.0,
+          "max_wind_mph": 25.3,
+          "max_wind_gust_mph": 40.3,
           "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
-            "light rain"
+            "light rain",
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
-          "category": "Good",
-          "aqi_24h_max": 39,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.8,
-          "pm10": 4.2,
-          "ozone": 28.0,
-          "nitrogen_dioxide": 10.0,
-          "observed_at": "2026-11-12T11:00",
+          "us_aqi": 52,
+          "category": "Moderate",
+          "aqi_24h_max": 52,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 5.9,
+          "pm10": 6.6,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 6.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -996,17 +1034,17 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 83,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 72,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 80.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 6,
+          "high_temp_f": 71.0,
+          "low_temp_f": 50.0,
+          "high_apparent_temp_f": 71.0,
+          "low_apparent_temp_f": 48.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
             "light rain"
@@ -1015,15 +1053,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 55,
+          "us_aqi": 25,
+          "category": "Good",
+          "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 15.0,
-          "pm10": 19.5,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 13.4,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.1,
+          "pm10": 5.5,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 1.5,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1050,38 +1088,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.88,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 13,
+          "high_temp_f": 60.0,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 60.0,
+          "low_apparent_temp_f": 42.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 23.0,
+          "thunder_probability_pct": 14,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
             "light rain showers",
-            "thunderstorms",
-            "moderate rain showers",
-            "moderate rain"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.1,
-          "pm10": 6.5,
-          "ozone": 72.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.5,
+          "pm10": 2.2,
+          "ozone": 83.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1094,15 +1129,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:05AM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 12 at 12:12PM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:05:00-08:00",
-            "expires": "2026-11-12T17:00:00-08:00",
+            "effective": "2026-11-12T12:12:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1"
             ],
             "count": 1
           }
@@ -1123,16 +1158,16 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 99,
+          "precip_in_24h": 0.5,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
+          "high_temp_f": 50.0,
           "low_temp_f": 30.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 28.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 28.8,
+          "high_apparent_temp_f": 44.0,
+          "low_apparent_temp_f": 22.0,
+          "max_wind_mph": 35.7,
+          "max_wind_gust_mph": 52.9,
           "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
@@ -1144,15 +1179,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 39,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.7,
-          "pm10": 7.5,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 7.1,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.8,
+          "pm10": 2.3,
+          "ozone": 85.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1163,10 +1198,116 @@
       "state": "CA",
       "alerts": {
         "weather": [],
-        "protest": [],
+        "protest": [
+          {
+            "title": "New York Bajans protest recall",
+            "url": "https://nationnews.com/2026/11/13/new-york-bajans-protest-recall/",
+            "domain": "nationnews.com",
+            "seendate": "20261113144500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://nationnews.com/2026/11/13/new-york-bajans-protest-recall/",
+                "domain": "nationnews.com"
+              }
+            ]
+          }
+        ],
         "utility_outage": [],
         "transit_disruption": [],
-        "service_provider_outage": [],
+        "service_provider_outage": [
+          {
+            "title": "Hospitals, airlines and governments hit by Microsoft outage as employee risk warnings mount",
+            "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/hospitals-airlines-and-governments-hit-by-microsoft-outage-as-employee-risk-warnings-mount-597311.aspx",
+            "domain": "insurancebusinessmag.com",
+            "seendate": "20261113150000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/hospitals-airlines-and-governments-hit-by-microsoft-outage-as-employee-risk-warnings-mount-597311.aspx",
+                "domain": "insurancebusinessmag.com"
+              }
+            ]
+          },
+          {
+            "title": "Why is the Microsoft outage lasting so long?",
+            "url": "https://www.aol.com/articles/know-global-microsoft-outage-071532000.html",
+            "domain": "aol.com",
+            "seendate": "20261113163000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.aol.com/articles/know-global-microsoft-outage-071532000.html",
+                "domain": "aol.com"
+              }
+            ]
+          },
+          {
+            "title": "Ongoing Microsoft Outage Impacting LASD Communications",
+            "url": "https://www.kabc.com/2026/11/13/ongoing-microsoft-outage-impacting-lasd-communications/",
+            "domain": "kabc.com",
+            "seendate": "20261113164500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.kabc.com/2026/11/13/ongoing-microsoft-outage-impacting-lasd-communications/",
+                "domain": "kabc.com"
+              }
+            ]
+          },
+          {
+            "title": "Microsoft Outlook Outage Drags On - MyNewsLA.com",
+            "url": "https://mynewsla.com/life/2026/11/13/microsoft-outlook-outage-drags-on-repairs-progressing/",
+            "domain": "mynewsla.com",
+            "seendate": "20261113153000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://mynewsla.com/life/2026/11/13/microsoft-outlook-outage-drags-on-repairs-progressing/",
+                "domain": "mynewsla.com"
+              }
+            ]
+          },
+          {
+            "title": "Microsoft Outlook outage hits SoCal users",
+            "url": "https://kesq.com/lifestyle/technology/2026/11/12/microsoft-outlook-outage-hits-socal-users/",
+            "domain": "kesq.com",
+            "seendate": "20261113031500",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://kesq.com/lifestyle/technology/2026/11/12/microsoft-outlook-outage-hits-socal-users/",
+                "domain": "kesq.com"
+              }
+            ]
+          },
+          {
+            "title": "Microsoft Outlook Outage Hits SoCal",
+            "url": "https://mynewsla.com/business/2026/11/12/microsoft-outlook-outage-hits-socal-users-6/",
+            "domain": "mynewsla.com",
+            "seendate": "20261113010000",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://mynewsla.com/business/2026/11/12/microsoft-outlook-outage-hits-socal-users-6/",
+                "domain": "mynewsla.com"
+              }
+            ]
+          },
+          {
+            "title": "Microsoft outage continues to affect users worldwide &#x2013; NBC Los Angeles",
+            "url": "https://www.nbclosangeles.com/news/national-international/microsoft-outage-struggles-to-restore-services/3969993/",
+            "domain": "nbclosangeles.com",
+            "seendate": "20261113131500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.nbclosangeles.com/news/national-international/microsoft-outage-struggles-to-restore-services/3969993/",
+                "domain": "nbclosangeles.com"
+              }
+            ]
+          }
+        ],
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
@@ -1176,38 +1317,41 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 8,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 79,
+          "precip_in_24h": 0.75,
+          "precip_probability_pct": 85,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 82.0,
-          "low_apparent_temp_f": 48.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 10,
+          "high_temp_f": 73.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 73.0,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 25.3,
+          "max_wind_gust_mph": 38.0,
+          "thunder_probability_pct": 13,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "thunderstorms"
+            "moderate rain",
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers",
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 62,
+          "us_aqi": 58,
           "category": "Moderate",
-          "aqi_24h_max": 66,
+          "aqi_24h_max": 68,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 19.4,
-          "pm10": 21.1,
-          "ozone": 18.0,
-          "nitrogen_dioxide": 50.6,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 9.2,
+          "pm10": 10.2,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 32.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1219,16 +1363,16 @@
       "alerts": {
         "weather": [
           {
-            "event": "Winter Storm Watch",
-            "headline": "Winter Storm Watch issued November 12 at 2:33AM PST until November 17 at 4:00AM PST by NWS Hanford CA",
+            "event": "Winter Storm Warning",
+            "headline": "Winter Storm Warning issued November 13 at 1:41AM PST until November 17 at 4:00AM PST by NWS Hanford CA",
             "severity": "Severe",
-            "urgency": "Future",
-            "effective": "2026-11-12T02:33:00-08:00",
-            "expires": "2026-11-12T10:00:00-08:00",
+            "urgency": "Expected",
+            "effective": "2026-11-13T01:41:00-08:00",
+            "expires": "2026-11-13T11:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fc4942cc7383970a474b19c101a3959c3639ff35.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c29f68d2225f0df2ebbd1d4ba401d4e8e534278.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fc4942cc7383970a474b19c101a3959c3639ff35.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c29f68d2225f0df2ebbd1d4ba401d4e8e534278.001.1"
             ],
             "count": 1
           }
@@ -1249,36 +1393,38 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.98,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 75.0,
-          "low_temp_f": 54.0,
-          "high_apparent_temp_f": 75.0,
-          "low_apparent_temp_f": 54.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 17,
+          "high_temp_f": 58.0,
+          "low_temp_f": 49.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 49.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": 14,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
+            "light rain showers",
+            "thunderstorms",
             "moderate rain showers",
-            "thunderstorms"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 43,
-          "category": "Good",
-          "aqi_24h_max": 48,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 8.5,
-          "pm10": 9.6,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 3.9,
-          "observed_at": "2026-11-12T11:00",
+          "us_aqi": 53,
+          "category": "Moderate",
+          "aqi_24h_max": 53,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 5.8,
+          "pm10": 9.1,
+          "ozone": 83.0,
+          "nitrogen_dioxide": 1.8,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1291,15 +1437,15 @@
         "weather": [
           {
             "event": "High Surf Warning",
-            "headline": "High Surf Warning issued November 11 at 10:48PM PST until November 15 at 4:00AM PST by NWS San Francisco CA",
+            "headline": "High Surf Warning issued November 13 at 3:44AM PST until November 15 at 4:00AM PST by NWS San Francisco CA",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-11-11T22:48:00-08:00",
-            "expires": "2026-11-12T15:00:00-08:00",
+            "effective": "2026-11-13T03:44:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f24acdc8bab05264fb6a2dc1481bf8cf8e0da56e.002.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f44cdf38b306227a23905cf0f5ed5f8d4854fc84.002.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f24acdc8bab05264fb6a2dc1481bf8cf8e0da56e.002.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f44cdf38b306227a23905cf0f5ed5f8d4854fc84.002.1"
             ],
             "count": 1
           }
@@ -1320,89 +1466,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 7,
+          "precip_in_24h": 0.84,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
+          "high_temp_f": 57.0,
           "low_temp_f": 52.0,
-          "high_apparent_temp_f": 65.0,
+          "high_apparent_temp_f": 57.0,
           "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 21.9,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 34.5,
           "thunder_probability_pct": 15,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "light rain showers",
-            "thunderstorms",
-            "moderate rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 58,
-          "category": "Moderate",
-          "aqi_24h_max": 59,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.0,
-          "pm10": 17.2,
-          "ozone": 51.0,
-          "nitrogen_dioxide": 16.1,
-          "observed_at": "2026-11-12T11:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06043": {
-      "fips": "06043",
-      "name": "Mariposa County",
-      "state": "CA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Winter Storm Watch",
-            "headline": "Winter Storm Watch issued November 12 at 2:33AM PST until November 17 at 4:00AM PST by NWS Hanford CA",
-            "severity": "Severe",
-            "urgency": "Future",
-            "effective": "2026-11-12T02:33:00-08:00",
-            "expires": "2026-11-12T10:00:00-08:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fc4942cc7383970a474b19c101a3959c3639ff35.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fc4942cc7383970a474b19c101a3959c3639ff35.001.1"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 74.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 74.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 16,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
@@ -1414,15 +1488,87 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 40,
           "category": "Good",
-          "aqi_24h_max": 46,
+          "aqi_24h_max": 61,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 6.9,
+          "pm10": 11.6,
+          "ozone": 86.0,
+          "nitrogen_dioxide": 1.3,
+          "observed_at": "2026-11-13T17:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06043": {
+      "fips": "06043",
+      "name": "Mariposa County",
+      "state": "CA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Winter Storm Warning",
+            "headline": "Winter Storm Warning issued November 13 at 1:41AM PST until November 17 at 4:00AM PST by NWS Hanford CA",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T01:41:00-08:00",
+            "expires": "2026-11-13T11:00:00-08:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c29f68d2225f0df2ebbd1d4ba401d4e8e534278.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c29f68d2225f0df2ebbd1d4ba401d4e8e534278.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.35,
+          "precip_probability_pct": 100,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 55.0,
+          "low_temp_f": 44.0,
+          "high_apparent_temp_f": 55.0,
+          "low_apparent_temp_f": 43.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 17,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain",
+            "moderate rain showers",
+            "thunderstorms",
+            "moderate rain"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 32,
+          "category": "Good",
+          "aqi_24h_max": 48,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.6,
-          "pm10": 3.9,
-          "ozone": 63.0,
-          "nitrogen_dioxide": 2.6,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 2.9,
+          "pm10": 4.6,
+          "ozone": 83.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1435,15 +1581,15 @@
         "weather": [
           {
             "event": "High Surf Warning",
-            "headline": "High Surf Warning issued November 12 at 2:47AM PST until November 15 at 4:00AM PST by NWS Eureka CA",
+            "headline": "High Surf Warning issued November 13 at 7:30AM PST until November 15 at 4:00AM PST by NWS Eureka CA",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-11-12T02:47:00-08:00",
-            "expires": "2026-11-12T13:00:00-08:00",
+            "effective": "2026-11-13T07:30:00-08:00",
+            "expires": "2026-11-13T20:15:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df7d87a43507ebc54c785230d7511de83e8c5ed5.002.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a6e632ac25f57d7dd49a6609ebe96feaf68462fc.003.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.df7d87a43507ebc54c785230d7511de83e8c5ed5.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a6e632ac25f57d7dd49a6609ebe96feaf68462fc.003.1"
             ],
             "count": 1
           }
@@ -1464,37 +1610,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_in_24h": 1.56,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 66.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 66.0,
+          "high_temp_f": 57.0,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 57.0,
           "low_apparent_temp_f": 43.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 17,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 18,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
+            "light rain showers",
             "moderate rain showers",
             "thunderstorms",
-            "light rain showers"
+            "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 38,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.9,
-          "pm10": 4.4,
-          "ozone": 32.0,
-          "nitrogen_dioxide": 9.5,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.2,
+          "pm10": 1.6,
+          "ozone": 86.0,
+          "nitrogen_dioxide": 0.6,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1521,34 +1667,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_in_24h": 0.18,
+          "precip_probability_pct": 90,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 8,
+          "high_temp_f": 66.0,
+          "low_temp_f": 50.0,
+          "high_apparent_temp_f": 66.0,
+          "low_apparent_temp_f": 50.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 11,
           "lightning_activity_level": null,
           "weather": [
-            "light rain"
+            "light rain",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 60,
-          "category": "Moderate",
-          "aqi_24h_max": 60,
+          "us_aqi": 30,
+          "category": "Good",
+          "aqi_24h_max": 58,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 16.2,
-          "pm10": 19.5,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 17.6,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 5.5,
+          "pm10": 7.3,
+          "ozone": 49.0,
+          "nitrogen_dioxide": 7.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1575,17 +1723,17 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.26,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 63.0,
+          "high_temp_f": 47.0,
           "low_temp_f": 35.0,
-          "high_apparent_temp_f": 63.0,
-          "low_apparent_temp_f": 27.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 27.6,
-          "thunder_probability_pct": 5,
+          "high_apparent_temp_f": 41.0,
+          "low_apparent_temp_f": 25.0,
+          "max_wind_mph": 32.2,
+          "max_wind_gust_mph": 48.3,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
@@ -1595,15 +1743,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 37,
           "category": "Good",
-          "aqi_24h_max": 31,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.5,
-          "pm10": 6.4,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 9.1,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.5,
+          "pm10": 2.2,
+          "ozone": 85.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1616,15 +1764,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:33AM PST until November 14 at 10:00AM PST by NWS Reno NV",
+            "headline": "Winter Storm Warning issued November 13 at 1:32AM PST until November 14 at 10:00AM PST by NWS Reno NV",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:33:00-08:00",
-            "expires": "2026-11-13T00:45:00-08:00",
+            "effective": "2026-11-13T01:32:00-08:00",
+            "expires": "2026-11-14T02:15:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e46de464708a8211a1f979b4629df14bae2f4ab.002.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f634a302ebb4dcf89e50291a66ce8ba626a384f.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e46de464708a8211a1f979b4629df14bae2f4ab.002.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f634a302ebb4dcf89e50291a66ce8ba626a384f.001.1"
             ],
             "count": 1
           }
@@ -1645,17 +1793,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 90,
-          "snow_in_24h": 0.0,
+          "precip_in_24h": 0.22,
+          "precip_probability_pct": 89,
+          "snow_in_24h": 0.83,
           "ice_in_24h": 0.0,
-          "high_temp_f": 53.0,
-          "low_temp_f": 32.0,
-          "high_apparent_temp_f": 53.0,
-          "low_apparent_temp_f": 27.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 7,
+          "high_temp_f": 42.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 32.0,
+          "low_apparent_temp_f": 16.0,
+          "max_wind_mph": 34.5,
+          "max_wind_gust_mph": 52.9,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
             "blowing dust",
@@ -1665,15 +1813,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
+          "us_aqi": 40,
           "category": "Good",
-          "aqi_24h_max": 43,
+          "aqi_24h_max": 41,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.0,
-          "pm10": 6.7,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 6.9,
+          "pm10": 7.6,
+          "ozone": 78.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1686,15 +1834,15 @@
         "weather": [
           {
             "event": "High Surf Warning",
-            "headline": "High Surf Warning issued November 11 at 10:48PM PST until November 15 at 4:00AM PST by NWS San Francisco CA",
+            "headline": "High Surf Warning issued November 13 at 3:44AM PST until November 15 at 4:00AM PST by NWS San Francisco CA",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-11-11T22:48:00-08:00",
-            "expires": "2026-11-12T15:00:00-08:00",
+            "effective": "2026-11-13T03:44:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f24acdc8bab05264fb6a2dc1481bf8cf8e0da56e.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f44cdf38b306227a23905cf0f5ed5f8d4854fc84.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f24acdc8bab05264fb6a2dc1481bf8cf8e0da56e.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f44cdf38b306227a23905cf0f5ed5f8d4854fc84.001.1"
             ],
             "count": 1
           }
@@ -1715,17 +1863,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.22,
+          "precip_probability_pct": 94,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 48.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 29.9,
-          "thunder_probability_pct": 7,
+          "high_temp_f": 58.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 46.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 31.1,
+          "thunder_probability_pct": 8,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
@@ -1735,15 +1883,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 33,
+          "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 40,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.2,
-          "pm10": 7.2,
-          "ozone": 72.0,
-          "nitrogen_dioxide": 7.1,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 2.0,
+          "pm10": 3.2,
+          "ozone": 86.0,
+          "nitrogen_dioxide": 1.3,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1770,37 +1918,38 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_in_24h": 0.68,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 66.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 66.0,
-          "low_apparent_temp_f": 48.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 54.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 46.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 36.8,
           "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
+            "moderate rain showers",
             "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
+            "moderate rain",
+            "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
+          "us_aqi": 40,
+          "category": "Good",
           "aqi_24h_max": 62,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 15.9,
-          "pm10": 17.5,
-          "ozone": 27.0,
-          "nitrogen_dioxide": 21.7,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.4,
+          "pm10": 6.7,
+          "ozone": 77.0,
+          "nitrogen_dioxide": 4.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1813,16 +1962,16 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:33AM PST until November 14 at 10:00AM PST by NWS Reno NV",
+            "headline": "Winter Storm Warning issued November 13 at 1:32AM PST until November 14 at 10:00AM PST by NWS Reno NV",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:05:00-08:00",
-            "expires": "2026-11-13T00:45:00-08:00",
+            "effective": "2026-11-12T12:12:00-08:00",
+            "expires": "2026-11-14T02:15:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e46de464708a8211a1f979b4629df14bae2f4ab.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f634a302ebb4dcf89e50291a66ce8ba626a384f.002.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e46de464708a8211a1f979b4629df14bae2f4ab.001.2",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f634a302ebb4dcf89e50291a66ce8ba626a384f.002.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1"
             ],
             "count": 2
           }
@@ -1843,17 +1992,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 1.69,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 64.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 64.0,
-          "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 18,
+          "high_temp_f": 52.0,
+          "low_temp_f": 39.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 40.3,
+          "thunder_probability_pct": 24,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
@@ -1865,15 +2014,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 38,
           "category": "Good",
           "aqi_24h_max": 48,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.2,
-          "pm10": 2.9,
-          "ozone": 77.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 2.7,
+          "pm10": 3.8,
+          "ozone": 84.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1915,35 +2064,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_in_24h": 0.27,
+          "precip_probability_pct": 71,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
-          "low_temp_f": 61.0,
-          "high_apparent_temp_f": 81.0,
-          "low_apparent_temp_f": 61.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 70.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 70.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 11,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "moderate rain showers"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
-          "category": "Moderate",
-          "aqi_24h_max": 58,
+          "us_aqi": 35,
+          "category": "Good",
+          "aqi_24h_max": 63,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 17.3,
-          "pm10": 18.6,
-          "ozone": 29.0,
-          "nitrogen_dioxide": 31.7,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 2.8,
+          "pm10": 3.3,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 11.6,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1956,16 +2105,16 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:33AM PST until November 14 at 10:00AM PST by NWS Reno NV",
+            "headline": "Winter Storm Warning issued November 13 at 1:32AM PST until November 14 at 10:00AM PST by NWS Reno NV",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:05:00-08:00",
-            "expires": "2026-11-13T00:45:00-08:00",
+            "effective": "2026-11-12T12:12:00-08:00",
+            "expires": "2026-11-14T02:15:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e46de464708a8211a1f979b4629df14bae2f4ab.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f634a302ebb4dcf89e50291a66ce8ba626a384f.002.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0e46de464708a8211a1f979b4629df14bae2f4ab.001.2",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2f634a302ebb4dcf89e50291a66ce8ba626a384f.002.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1"
             ],
             "count": 2
           }
@@ -1986,17 +2135,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 1.45,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 74.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 74.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 18,
+          "high_temp_f": 60.0,
+          "low_temp_f": 48.0,
+          "high_apparent_temp_f": 60.0,
+          "low_apparent_temp_f": 45.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 33.4,
+          "thunder_probability_pct": 24,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
@@ -2008,15 +2157,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 38,
           "category": "Good",
           "aqi_24h_max": 48,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.2,
-          "pm10": 2.9,
-          "ozone": 77.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 2.7,
+          "pm10": 3.8,
+          "ozone": 84.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2029,15 +2178,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:05AM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 12 at 12:12PM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:05:00-08:00",
-            "expires": "2026-11-12T17:00:00-08:00",
+            "effective": "2026-11-12T12:12:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1"
             ],
             "count": 1
           }
@@ -2058,17 +2207,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 1.07,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 58.0,
-          "low_temp_f": 38.0,
-          "high_apparent_temp_f": 58.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 44.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 40.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 41.4,
+          "thunder_probability_pct": 17,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
@@ -2081,15 +2230,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 42,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 8.2,
-          "pm10": 8.7,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 22.8,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 1.1,
+          "pm10": 1.5,
+          "ozone": 83.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2117,16 +2266,16 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 19,
+          "precip_probability_pct": 18,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 83.0,
+          "high_temp_f": 80.0,
           "low_temp_f": 56.0,
-          "high_apparent_temp_f": 81.0,
+          "high_apparent_temp_f": 79.0,
           "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 5,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 33.4,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers"
@@ -2135,15 +2284,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 36,
           "category": "Good",
-          "aqi_24h_max": 45,
+          "aqi_24h_max": 48,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.8,
-          "pm10": 9.4,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 15.3,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 10.3,
+          "pm10": 18.2,
+          "ozone": 77.0,
+          "nitrogen_dioxide": 4.3,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2154,7 +2303,21 @@
       "state": "CA",
       "alerts": {
         "weather": [],
-        "protest": [],
+        "protest": [
+          {
+            "title": "'Bring him home': San Diego officials, parents, teachers rally for 8-year-old boy detained by ICE",
+            "url": "https://www.kpbs.org/news/border-immigration/2026/11/12/bring-him-home-san-diego-officials-parents-teachers-rally-for-8-year-old-boy-detained-by-ice",
+            "domain": "kpbs.org",
+            "seendate": "20261113070000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.kpbs.org/news/border-immigration/2026/11/12/bring-him-home-san-diego-officials-parents-teachers-rally-for-8-year-old-boy-detained-by-ice",
+                "domain": "kpbs.org"
+              }
+            ]
+          }
+        ],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
@@ -2167,26 +2330,25 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.6,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 74.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 74.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 16,
+          "high_temp_f": 61.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 61.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 39.1,
+          "thunder_probability_pct": 23,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "light rain showers",
-            "thunderstorms",
-            "moderate rain showers"
+            "moderate rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -2194,13 +2356,13 @@
         "air_quality": {
           "us_aqi": 52,
           "category": "Moderate",
-          "aqi_24h_max": 55,
+          "aqi_24h_max": 54,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.0,
-          "pm10": 8.6,
-          "ozone": 18.0,
-          "nitrogen_dioxide": 35.5,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.9,
+          "pm10": 10.7,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 6.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2227,17 +2389,17 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 82,
+          "precip_in_24h": 0.36,
+          "precip_probability_pct": 94,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 63.0,
-          "low_temp_f": 54.0,
-          "high_apparent_temp_f": 63.0,
-          "low_apparent_temp_f": 54.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 29.9,
-          "thunder_probability_pct": 7,
+          "high_temp_f": 52.0,
+          "low_temp_f": 45.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 40.0,
+          "max_wind_mph": 24.2,
+          "max_wind_gust_mph": 36.8,
+          "thunder_probability_pct": 8,
           "lightning_activity_level": null,
           "weather": [
             "light rain"
@@ -2248,13 +2410,13 @@
         "air_quality": {
           "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 46,
+          "aqi_24h_max": 41,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.4,
-          "pm10": 5.2,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 6.7,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.2,
+          "pm10": 1.9,
+          "ozone": 85.0,
+          "nitrogen_dioxide": 0.8,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2268,7 +2430,47 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "service_provider_outage": [],
+        "service_provider_outage": [
+          {
+            "title": "Hospitals, airlines and governments hit by Microsoft outage as employee risk warnings mount",
+            "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/hospitals-airlines-and-governments-hit-by-microsoft-outage-as-employee-risk-warnings-mount-597311.aspx",
+            "domain": "insurancebusinessmag.com",
+            "seendate": "20261113150000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/hospitals-airlines-and-governments-hit-by-microsoft-outage-as-employee-risk-warnings-mount-597311.aspx",
+                "domain": "insurancebusinessmag.com"
+              }
+            ]
+          },
+          {
+            "title": "Microsoft 365 outage: US government departments and major cities witnessing downtime",
+            "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-us-government-departments-and-major-cities-witnessing-downtime/articleshow/135795801.cms",
+            "domain": "indiatimes.com",
+            "seendate": "20261113093000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-us-government-departments-and-major-cities-witnessing-downtime/articleshow/135795801.cms",
+                "domain": "indiatimes.com"
+              }
+            ]
+          },
+          {
+            "title": "Microsoft outage today: Is it fixed? Outlook, Teams disruptions enter second day as Detroit, Miami, Austin and Baltimore hit",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
+            "domain": "indiatimes.com",
+            "seendate": "20261113123000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
+                "domain": "indiatimes.com"
+              }
+            ]
+          }
+        ],
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
@@ -2278,20 +2480,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 30,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 81.0,
+          "high_temp_f": 77.0,
           "low_temp_f": 51.0,
-          "high_apparent_temp_f": 79.0,
+          "high_apparent_temp_f": 77.0,
           "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 8,
+          "max_wind_mph": 29.9,
+          "max_wind_gust_mph": 38.0,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
@@ -2303,13 +2505,13 @@
         "air_quality": {
           "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 43,
+          "aqi_24h_max": 46,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 1.8,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 10.8,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 5.0,
+          "pm10": 8.8,
+          "ozone": 70.0,
+          "nitrogen_dioxide": 4.8,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2320,10 +2522,51 @@
       "state": "CA",
       "alerts": {
         "weather": [],
-        "protest": [],
+        "protest": [
+          {
+            "title": "'Bring him home': San Diego officials, parents, teachers rally for 8-year-old boy detained by ICE",
+            "url": "https://www.kpbs.org/news/border-immigration/2026/11/12/bring-him-home-san-diego-officials-parents-teachers-rally-for-8-year-old-boy-detained-by-ice",
+            "domain": "kpbs.org",
+            "seendate": "20261113070000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.kpbs.org/news/border-immigration/2026/11/12/bring-him-home-san-diego-officials-parents-teachers-rally-for-8-year-old-boy-detained-by-ice",
+                "domain": "kpbs.org"
+              }
+            ]
+          },
+          {
+            "title": "'Global Conference for Israel' at Chula Vista's Gaylord Pacific prompts protests",
+            "url": "https://www.kpbs.org/news/politics/2026/11/12/global-conference-for-israel-at-chula-vistas-gaylord-pacific-prompts-protests",
+            "domain": "kpbs.org",
+            "seendate": "20261113070000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.kpbs.org/news/politics/2026/11/12/global-conference-for-israel-at-chula-vistas-gaylord-pacific-prompts-protests",
+                "domain": "kpbs.org"
+              }
+            ]
+          }
+        ],
         "utility_outage": [],
         "transit_disruption": [],
-        "service_provider_outage": [],
+        "service_provider_outage": [
+          {
+            "title": "Microsoft outage continues to affect users worldwide &#x2013; NBC 7 San Diego",
+            "url": "https://www.nbcsandiego.com/news/national-international/microsoft-outage-struggles-to-restore-services/4101438/",
+            "domain": "nbcsandiego.com",
+            "seendate": "20261113093000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.nbcsandiego.com/news/national-international/microsoft-outage-struggles-to-restore-services/4101438/",
+                "domain": "nbcsandiego.com"
+              }
+            ]
+          }
+        ],
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
@@ -2333,38 +2576,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_in_24h": 0.48,
+          "precip_probability_pct": 79,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 80.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 80.0,
-          "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 5,
+          "high_temp_f": 68.0,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 68.0,
+          "low_apparent_temp_f": 44.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 26.5,
+          "thunder_probability_pct": 11,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "moderate rain showers"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 24,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.1,
-          "pm10": 2.2,
-          "ozone": 36.0,
-          "nitrogen_dioxide": 0.2,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 58,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 2.3,
+          "pm10": 3.3,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 2.5,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2377,15 +2620,15 @@
         "weather": [
           {
             "event": "High Surf Warning",
-            "headline": "High Surf Warning issued November 11 at 10:48PM PST until November 15 at 4:00AM PST by NWS San Francisco CA",
+            "headline": "High Surf Warning issued November 13 at 3:44AM PST until November 15 at 4:00AM PST by NWS San Francisco CA",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-11-11T22:48:00-08:00",
-            "expires": "2026-11-12T15:00:00-08:00",
+            "effective": "2026-11-13T03:44:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f24acdc8bab05264fb6a2dc1481bf8cf8e0da56e.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f44cdf38b306227a23905cf0f5ed5f8d4854fc84.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f24acdc8bab05264fb6a2dc1481bf8cf8e0da56e.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f44cdf38b306227a23905cf0f5ed5f8d4854fc84.001.1"
             ],
             "count": 1
           }
@@ -2406,37 +2649,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 13,
+          "precip_in_24h": 0.7,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 64.0,
-          "low_temp_f": 60.0,
-          "high_apparent_temp_f": 64.0,
-          "low_apparent_temp_f": 60.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 23.0,
+          "high_temp_f": 62.0,
+          "low_temp_f": 59.0,
+          "high_apparent_temp_f": 62.0,
+          "low_apparent_temp_f": 59.0,
+          "max_wind_mph": 33.4,
+          "max_wind_gust_mph": 41.4,
           "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "light rain showers",
-            "thunderstorms",
-            "moderate rain showers"
+            "moderate rain",
+            "moderate rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 33,
+          "us_aqi": 44,
           "category": "Good",
-          "aqi_24h_max": 42,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 5.9,
-          "pm10": 10.1,
-          "ozone": 78.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 10.2,
+          "pm10": 17.9,
+          "ozone": 85.0,
+          "nitrogen_dioxide": 0.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2463,37 +2706,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.43,
+          "precip_probability_pct": 92,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 75.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 75.0,
-          "low_apparent_temp_f": 49.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 63.0,
+          "low_temp_f": 55.0,
+          "high_apparent_temp_f": 63.0,
+          "low_apparent_temp_f": 55.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 33.4,
+          "thunder_probability_pct": 19,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "thunderstorms",
             "light rain showers",
+            "thunderstorms",
             "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 60,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 65,
+          "aqi_24h_max": 61,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.5,
-          "pm10": 19.4,
-          "ozone": 15.0,
-          "nitrogen_dioxide": 33.4,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 8.1,
+          "pm10": 53.0,
+          "ozone": 58.0,
+          "nitrogen_dioxide": 6.7,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2503,7 +2746,36 @@
       "name": "San Luis Obispo County",
       "state": "CA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "High Surf Warning",
+            "headline": "High Surf Warning issued November 13 at 8:12AM PST until November 15 at 3:00AM PST by NWS Los Angeles/Oxnard CA",
+            "severity": "Moderate",
+            "urgency": "Expected",
+            "effective": "2026-11-13T08:12:00-08:00",
+            "expires": "2026-11-13T14:00:00-08:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.082b3f827ff558b13bbd93ae6bc34fa52dcdb8b2.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.082b3f827ff558b13bbd93ae6bc34fa52dcdb8b2.001.1"
+            ],
+            "count": 1
+          },
+          {
+            "event": "Coastal Flood Warning",
+            "headline": "Coastal Flood Warning issued November 13 at 8:12AM PST until November 14 at 6:00PM PST by NWS Los Angeles/Oxnard CA",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T08:12:00-08:00",
+            "expires": "2026-11-13T14:00:00-08:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.082b3f827ff558b13bbd93ae6bc34fa52dcdb8b2.001.2",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.082b3f827ff558b13bbd93ae6bc34fa52dcdb8b2.001.2"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2517,37 +2789,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_in_24h": 0.46,
+          "precip_probability_pct": 93,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 77.0,
-          "low_temp_f": 50.0,
-          "high_apparent_temp_f": 77.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 61.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 61.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
-            "light rain"
+            "light rain showers",
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 43,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 46,
+          "aqi_24h_max": 43,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.0,
-          "pm10": 10.5,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 7.5,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.6,
+          "pm10": 1.9,
+          "ozone": 67.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2560,15 +2833,15 @@
         "weather": [
           {
             "event": "High Surf Warning",
-            "headline": "High Surf Warning issued November 11 at 10:48PM PST until November 15 at 4:00AM PST by NWS San Francisco CA",
+            "headline": "High Surf Warning issued November 13 at 3:44AM PST until November 15 at 4:00AM PST by NWS San Francisco CA",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-11-11T22:48:00-08:00",
-            "expires": "2026-11-12T15:00:00-08:00",
+            "effective": "2026-11-13T03:44:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f24acdc8bab05264fb6a2dc1481bf8cf8e0da56e.002.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f44cdf38b306227a23905cf0f5ed5f8d4854fc84.002.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f24acdc8bab05264fb6a2dc1481bf8cf8e0da56e.002.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f44cdf38b306227a23905cf0f5ed5f8d4854fc84.002.1"
             ],
             "count": 1
           }
@@ -2589,37 +2862,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 6,
+          "precip_in_24h": 0.63,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 66.0,
-          "low_temp_f": 54.0,
-          "high_apparent_temp_f": 66.0,
-          "low_apparent_temp_f": 54.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 25.3,
+          "high_temp_f": 59.0,
+          "low_temp_f": 50.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 49.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 39.1,
           "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
+            "moderate rain showers",
             "thunderstorms",
-            "light rain showers",
-            "moderate rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 62,
-          "category": "Moderate",
-          "aqi_24h_max": 62,
+          "us_aqi": 36,
+          "category": "Good",
+          "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.6,
-          "pm10": 11.1,
-          "ozone": 51.0,
-          "nitrogen_dioxide": 23.5,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 6.8,
+          "pm10": 11.4,
+          "ozone": 87.0,
+          "nitrogen_dioxide": 4.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2629,7 +2902,36 @@
       "name": "Santa Barbara County",
       "state": "CA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "High Surf Warning",
+            "headline": "High Surf Warning issued November 13 at 8:12AM PST until November 15 at 3:00AM PST by NWS Los Angeles/Oxnard CA",
+            "severity": "Moderate",
+            "urgency": "Expected",
+            "effective": "2026-11-13T08:12:00-08:00",
+            "expires": "2026-11-13T14:00:00-08:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.082b3f827ff558b13bbd93ae6bc34fa52dcdb8b2.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.082b3f827ff558b13bbd93ae6bc34fa52dcdb8b2.001.1"
+            ],
+            "count": 1
+          },
+          {
+            "event": "Coastal Flood Warning",
+            "headline": "Coastal Flood Warning issued November 13 at 8:12AM PST until November 14 at 6:00PM PST by NWS Los Angeles/Oxnard CA",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-13T08:12:00-08:00",
+            "expires": "2026-11-13T14:00:00-08:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.082b3f827ff558b13bbd93ae6bc34fa52dcdb8b2.001.2",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.082b3f827ff558b13bbd93ae6bc34fa52dcdb8b2.001.2"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2643,38 +2945,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_in_24h": 0.44,
+          "precip_probability_pct": 98,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 67.0,
-          "low_temp_f": 59.0,
-          "high_apparent_temp_f": 67.0,
-          "low_apparent_temp_f": 59.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 10,
+          "high_temp_f": 62.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 62.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 7,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
+            "moderate rain showers",
+            "light rain showers",
             "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 33,
+          "us_aqi": 30,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 43,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.3,
-          "pm10": 9.0,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 5.8,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 2.5,
+          "pm10": 3.1,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 2.3,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2688,7 +2991,47 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "service_provider_outage": [],
+        "service_provider_outage": [
+          {
+            "title": "Hospitals, airlines and governments hit by Microsoft outage as employee risk warnings mount",
+            "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/hospitals-airlines-and-governments-hit-by-microsoft-outage-as-employee-risk-warnings-mount-597311.aspx",
+            "domain": "insurancebusinessmag.com",
+            "seendate": "20261113150000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/hospitals-airlines-and-governments-hit-by-microsoft-outage-as-employee-risk-warnings-mount-597311.aspx",
+                "domain": "insurancebusinessmag.com"
+              }
+            ]
+          },
+          {
+            "title": "Microsoft 365 outage: US government departments and major cities witnessing downtime",
+            "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-us-government-departments-and-major-cities-witnessing-downtime/articleshow/135795801.cms",
+            "domain": "indiatimes.com",
+            "seendate": "20261113093000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-us-government-departments-and-major-cities-witnessing-downtime/articleshow/135795801.cms",
+                "domain": "indiatimes.com"
+              }
+            ]
+          },
+          {
+            "title": "Microsoft outage today: Is it fixed? Outlook, Teams disruptions enter second day as Detroit, Miami, Austin and Baltimore hit",
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
+            "domain": "indiatimes.com",
+            "seendate": "20261113123000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
+                "domain": "indiatimes.com"
+              }
+            ]
+          }
+        ],
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
@@ -2696,54 +3039,43 @@
         "amtrak": [],
         "aviation": [],
         "fema": [],
-        "disease": [
-          {
-            "event": "Measles Detected (Wastewater)",
-            "headline": "Measles virus detected in wastewater sample on 2026-10-29",
-            "detection": "Positive",
-            "sampling_date": "2026-10-29",
-            "count": 1,
-            "source": "CDC NWSS Wastewater",
-            "url": "https://data.cdc.gov/resource/akvg-8vrb.json?record_id=610bd934a5b24ba8e167340896d67265",
-            "urls": [
-              "https://data.cdc.gov/resource/akvg-8vrb.json?record_id=610bd934a5b24ba8e167340896d67265"
-            ]
-          }
-        ]
+        "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.42,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 71.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 71.0,
-          "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 23.0,
+          "high_temp_f": 56.0,
+          "low_temp_f": 48.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 46.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 32.2,
           "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
+            "light rain showers",
             "thunderstorms",
-            "light rain showers"
+            "moderate rain showers",
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 42,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 10.8,
-          "pm10": 12.7,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 16.2,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 2.3,
+          "pm10": 2.8,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 5.8,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2756,15 +3088,15 @@
         "weather": [
           {
             "event": "High Surf Warning",
-            "headline": "High Surf Warning issued November 11 at 10:48PM PST until November 15 at 4:00AM PST by NWS San Francisco CA",
+            "headline": "High Surf Warning issued November 13 at 3:44AM PST until November 15 at 4:00AM PST by NWS San Francisco CA",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-11-11T22:48:00-08:00",
-            "expires": "2026-11-12T15:00:00-08:00",
+            "effective": "2026-11-13T03:44:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f24acdc8bab05264fb6a2dc1481bf8cf8e0da56e.002.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f44cdf38b306227a23905cf0f5ed5f8d4854fc84.002.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f24acdc8bab05264fb6a2dc1481bf8cf8e0da56e.002.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f44cdf38b306227a23905cf0f5ed5f8d4854fc84.002.1"
             ],
             "count": 1
           }
@@ -2785,35 +3117,38 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 5,
+          "precip_in_24h": 0.62,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 67.0,
-          "low_temp_f": 52.0,
-          "high_apparent_temp_f": 67.0,
-          "low_apparent_temp_f": 52.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 24.2,
-          "thunder_probability_pct": 10,
+          "high_temp_f": 59.0,
+          "low_temp_f": 50.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 50.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 32.2,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain"
+            "moderate rain showers",
+            "thunderstorms",
+            "moderate rain",
+            "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
-          "aqi_24h_max": 59,
+          "us_aqi": 34,
+          "category": "Good",
+          "aqi_24h_max": 60,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 19.0,
-          "pm10": 21.8,
-          "ozone": 24.0,
-          "nitrogen_dioxide": 40.5,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 2.9,
+          "pm10": 4.3,
+          "ozone": 91.0,
+          "nitrogen_dioxide": 3.3,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2826,15 +3161,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:05AM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 12 at 12:12PM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:05:00-08:00",
-            "expires": "2026-11-12T17:00:00-08:00",
+            "effective": "2026-11-12T12:12:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1"
             ],
             "count": 1
           }
@@ -2855,37 +3190,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_in_24h": 1.09,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 66.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 66.0,
-          "low_apparent_temp_f": 44.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 55.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 55.0,
+          "low_apparent_temp_f": 42.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 43.7,
+          "thunder_probability_pct": 22,
           "lightning_activity_level": null,
           "weather": [
+            "light rain showers",
             "light rain",
-            "moderate rain",
-            "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 24,
+          "us_aqi": 35,
           "category": "Good",
           "aqi_24h_max": 40,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.5,
-          "pm10": 4.8,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 6.0,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.5,
+          "pm10": 2.0,
+          "ozone": 73.0,
+          "nitrogen_dioxide": 1.8,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2898,15 +3233,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:05AM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 12 at 12:12PM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:05:00-08:00",
-            "expires": "2026-11-12T17:00:00-08:00",
+            "effective": "2026-11-12T12:12:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1"
             ],
             "count": 1
           }
@@ -2927,17 +3262,17 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
+          "precip_in_24h": 1.15,
+          "precip_probability_pct": 100,
+          "snow_in_24h": 4.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 51.0,
-          "low_temp_f": 35.0,
-          "high_apparent_temp_f": 51.0,
-          "low_apparent_temp_f": 26.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 39.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 32.0,
+          "low_apparent_temp_f": 20.0,
+          "max_wind_mph": 24.2,
+          "max_wind_gust_mph": 55.2,
+          "thunder_probability_pct": 16,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
@@ -2950,15 +3285,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
+          "us_aqi": 39,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 46,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.4,
-          "pm10": 4.1,
-          "ozone": 70.0,
-          "nitrogen_dioxide": 12.3,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.5,
+          "pm10": 1.9,
+          "ozone": 89.0,
+          "nitrogen_dioxide": 0.7,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2971,15 +3306,15 @@
         "weather": [
           {
             "event": "High Wind Warning",
-            "headline": "High Wind Warning issued November 12 at 12:03AM PST until November 13 at 1:00PM PST by NWS Medford OR",
+            "headline": "High Wind Warning issued November 13 at 2:06AM PST until November 13 at 1:00PM PST by NWS Medford OR",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:03:00-08:00",
-            "expires": "2026-11-12T16:15:00-08:00",
+            "effective": "2026-11-13T02:06:00-08:00",
+            "expires": "2026-11-13T10:15:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91aa508af30e8e583c3cbb067d5b42416d80ef33.002.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.08fe589c5938bb2599f19a2c6ed4ed38d256e1ab.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.91aa508af30e8e583c3cbb067d5b42416d80ef33.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.08fe589c5938bb2599f19a2c6ed4ed38d256e1ab.001.1"
             ],
             "count": 1
           }
@@ -3000,39 +3335,40 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.69,
           "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
+          "snow_in_24h": 6.53,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 37.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 28.0,
-          "max_wind_mph": 26.5,
-          "max_wind_gust_mph": 40.3,
-          "thunder_probability_pct": 12,
+          "high_temp_f": 56.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 18.0,
+          "max_wind_mph": 32.2,
+          "max_wind_gust_mph": 48.3,
+          "thunder_probability_pct": 13,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
             "moderate rain",
-            "moderate rain showers",
-            "thunderstorms",
             "light snow",
+            "light rain showers",
+            "moderate rain showers",
+            "light snow showers",
             "moderate snow"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
+          "us_aqi": 36,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 47,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.8,
-          "pm10": 5.2,
-          "ozone": 58.0,
-          "nitrogen_dioxide": 7.0,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 0.5,
+          "pm10": 0.6,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 1.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3059,36 +3395,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.44,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 72.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 72.0,
-          "low_apparent_temp_f": 45.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 61.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 61.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 33.4,
+          "max_wind_gust_mph": 40.3,
+          "thunder_probability_pct": 18,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "light rain showers",
-            "thunderstorms"
+            "moderate rain showers",
+            "thunderstorms",
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 59,
+          "us_aqi": 51,
           "category": "Moderate",
-          "aqi_24h_max": 63,
+          "aqi_24h_max": 64,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 16.8,
-          "pm10": 18.4,
-          "ozone": 25.0,
-          "nitrogen_dioxide": 20.8,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 3.9,
+          "pm10": 5.2,
+          "ozone": 67.0,
+          "nitrogen_dioxide": 8.7,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3101,15 +3438,15 @@
         "weather": [
           {
             "event": "High Surf Warning",
-            "headline": "High Surf Warning issued November 11 at 10:48PM PST until November 15 at 4:00AM PST by NWS San Francisco CA",
+            "headline": "High Surf Warning issued November 13 at 3:44AM PST until November 15 at 4:00AM PST by NWS San Francisco CA",
             "severity": "Moderate",
             "urgency": "Expected",
-            "effective": "2026-11-11T22:48:00-08:00",
-            "expires": "2026-11-12T15:00:00-08:00",
+            "effective": "2026-11-13T03:44:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f24acdc8bab05264fb6a2dc1481bf8cf8e0da56e.002.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f44cdf38b306227a23905cf0f5ed5f8d4854fc84.002.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f24acdc8bab05264fb6a2dc1481bf8cf8e0da56e.002.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f44cdf38b306227a23905cf0f5ed5f8d4854fc84.002.1"
             ],
             "count": 1
           }
@@ -3130,21 +3467,20 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 6,
+          "precip_in_24h": 0.86,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 64.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 64.0,
-          "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 57.0,
+          "low_temp_f": 49.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 48.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 31.1,
           "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -3152,15 +3488,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 57,
-          "category": "Moderate",
-          "aqi_24h_max": 59,
+          "us_aqi": 36,
+          "category": "Good",
+          "aqi_24h_max": 61,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 16.2,
-          "pm10": 17.8,
-          "ozone": 14.0,
-          "nitrogen_dioxide": 28.2,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 4.4,
+          "pm10": 6.8,
+          "ozone": 83.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3187,38 +3523,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.2,
+          "precip_probability_pct": 93,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 78.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 78.0,
-          "low_apparent_temp_f": 47.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 64.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 64.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 31.1,
+          "thunder_probability_pct": 17,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "thunderstorms",
-            "moderate rain showers",
             "light rain",
-            "fog"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 60,
-          "category": "Moderate",
-          "aqi_24h_max": 61,
+          "us_aqi": 48,
+          "category": "Good",
+          "aqi_24h_max": 59,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.4,
-          "pm10": 24.6,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 18.4,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 7.0,
+          "pm10": 63.8,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 5.2,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3245,34 +3579,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.5,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 73.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 73.0,
-          "low_apparent_temp_f": 44.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 61.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 61.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 38.0,
+          "thunder_probability_pct": 22,
           "lightning_activity_level": null,
           "weather": [
-            "fog"
+            "light rain",
+            "light rain showers",
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 55,
+          "us_aqi": 53,
           "category": "Moderate",
-          "aqi_24h_max": 55,
+          "aqi_24h_max": 56,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.2,
-          "pm10": 11.6,
-          "ozone": 17.0,
-          "nitrogen_dioxide": 23.6,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 2.4,
+          "pm10": 3.0,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 5.5,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3285,15 +3622,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:05AM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 12 at 12:12PM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:05:00-08:00",
-            "expires": "2026-11-12T17:00:00-08:00",
+            "effective": "2026-11-12T12:12:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1"
             ],
             "count": 1
           }
@@ -3314,37 +3651,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_in_24h": 0.45,
+          "precip_probability_pct": 98,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 71.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 71.0,
-          "low_apparent_temp_f": 44.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 61.0,
+          "low_temp_f": 51.0,
+          "high_apparent_temp_f": 61.0,
+          "low_apparent_temp_f": 51.0,
+          "max_wind_mph": 25.3,
+          "max_wind_gust_mph": 41.4,
+          "thunder_probability_pct": 20,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
             "light rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 31,
+          "us_aqi": 45,
           "category": "Good",
-          "aqi_24h_max": 37,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 7.8,
-          "pm10": 8.1,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 10.9,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 2.8,
+          "pm10": 3.4,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 4.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3354,7 +3691,15 @@
       "name": "Trinity County",
       "state": "CA",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=40.6479&lon=-123.1147"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3368,40 +3713,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 1.09,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 56.0,
-          "low_temp_f": 41.0,
-          "high_apparent_temp_f": 56.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 19.6,
-          "thunder_probability_pct": 12,
+          "high_temp_f": 47.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 42.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 33.4,
+          "thunder_probability_pct": 14,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "moderate rain showers",
-            "thunderstorms",
-            "moderate rain"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
+          "us_aqi": 40,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 45,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.3,
-          "pm10": 4.7,
-          "ozone": 70.0,
-          "nitrogen_dioxide": 2.7,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 0.2,
+          "pm10": 0.2,
+          "ozone": 77.0,
+          "nitrogen_dioxide": 1.7,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3413,16 +3756,16 @@
       "alerts": {
         "weather": [
           {
-            "event": "Winter Storm Watch",
-            "headline": "Winter Storm Watch issued November 12 at 2:33AM PST until November 17 at 4:00AM PST by NWS Hanford CA",
+            "event": "Winter Storm Warning",
+            "headline": "Winter Storm Warning issued November 13 at 1:41AM PST until November 17 at 4:00AM PST by NWS Hanford CA",
             "severity": "Severe",
-            "urgency": "Future",
-            "effective": "2026-11-12T02:33:00-08:00",
-            "expires": "2026-11-12T10:00:00-08:00",
+            "urgency": "Expected",
+            "effective": "2026-11-13T01:41:00-08:00",
+            "expires": "2026-11-13T11:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fc4942cc7383970a474b19c101a3959c3639ff35.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c29f68d2225f0df2ebbd1d4ba401d4e8e534278.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fc4942cc7383970a474b19c101a3959c3639ff35.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c29f68d2225f0df2ebbd1d4ba401d4e8e534278.001.1"
             ],
             "count": 1
           }
@@ -3443,38 +3786,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
-          "snow_in_24h": 0.0,
+          "precip_in_24h": 1.69,
+          "precip_probability_pct": 100,
+          "snow_in_24h": 0.07,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 40.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 37.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 11,
+          "high_temp_f": 69.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 69.0,
+          "low_apparent_temp_f": 26.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 31.1,
+          "thunder_probability_pct": 9,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
             "moderate rain",
-            "moderate rain showers",
-            "thunderstorms",
             "light snow"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 35,
           "category": "Good",
-          "aqi_24h_max": 46,
+          "aqi_24h_max": 47,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.3,
-          "pm10": 5.0,
-          "ozone": 59.0,
-          "nitrogen_dioxide": 1.4,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 3.7,
+          "pm10": 5.7,
+          "ozone": 94.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3486,32 +3827,19 @@
       "alerts": {
         "weather": [
           {
-            "event": "Winter Storm Watch",
-            "headline": "Winter Storm Watch issued November 12 at 2:33AM PST until November 17 at 4:00AM PST by NWS Hanford CA",
-            "severity": "Severe",
-            "urgency": "Future",
-            "effective": "2026-11-12T02:33:00-08:00",
-            "expires": "2026-11-12T10:00:00-08:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fc4942cc7383970a474b19c101a3959c3639ff35.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.fc4942cc7383970a474b19c101a3959c3639ff35.001.1"
-            ],
-            "count": 1
-          },
-          {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 12 at 12:05AM PST until November 14 at 10:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 13 at 1:41AM PST until November 17 at 4:00AM PST by NWS Hanford CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-12T00:05:00-08:00",
-            "expires": "2026-11-12T17:00:00-08:00",
+            "effective": "2026-11-12T12:12:00-08:00",
+            "expires": "2026-11-13T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c29f68d2225f0df2ebbd1d4ba401d4e8e534278.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71cb916777d6b7820a7f8d815a569443e8982bae.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6c29f68d2225f0df2ebbd1d4ba401d4e8e534278.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f9c1f77fbcb20154636918abe2886548fa8d2cd7.001.1"
             ],
-            "count": 1
+            "count": 2
           }
         ],
         "protest": [],
@@ -3527,41 +3855,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 1.35,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 65.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 65.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 48.0,
+          "low_temp_f": 39.0,
+          "high_apparent_temp_f": 45.0,
+          "low_apparent_temp_f": 31.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 34.5,
+          "thunder_probability_pct": 16,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain showers",
-            "thunderstorms",
             "moderate rain",
-            "light snow"
+            "moderate rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 38,
           "category": "Good",
-          "aqi_24h_max": 46,
+          "aqi_24h_max": 48,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 3.1,
-          "ozone": 68.0,
-          "nitrogen_dioxide": 2.3,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.6,
+          "pm10": 2.6,
+          "ozone": 88.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3588,34 +3915,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 77,
+          "precip_in_24h": 0.57,
+          "precip_probability_pct": 94,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 80.0,
-          "low_temp_f": 57.0,
-          "high_apparent_temp_f": 80.0,
-          "low_apparent_temp_f": 57.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": 9,
+          "high_temp_f": 70.0,
+          "low_temp_f": 55.0,
+          "high_apparent_temp_f": 70.0,
+          "low_apparent_temp_f": 55.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
-            "light rain"
+            "light rain showers",
+            "moderate rain showers",
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 33,
+          "us_aqi": 47,
           "category": "Good",
-          "aqi_24h_max": 47,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 9.1,
-          "pm10": 9.4,
-          "ozone": 34.0,
-          "nitrogen_dioxide": 25.7,
-          "observed_at": "2026-11-12T11:00",
+          "aqi_24h_max": 52,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 1.9,
+          "pm10": 2.3,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 5.8,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3642,37 +3971,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_in_24h": 0.44,
+          "precip_probability_pct": 99,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 71.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 71.0,
-          "low_apparent_temp_f": 46.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 11.5,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 59.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 36.8,
+          "thunder_probability_pct": 19,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
             "light rain",
-            "light rain showers",
-            "thunderstorms"
+            "moderate rain showers",
+            "thunderstorms",
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 45,
-          "category": "Good",
-          "aqi_24h_max": 56,
+          "us_aqi": 51,
+          "category": "Moderate",
+          "aqi_24h_max": 62,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.4,
-          "pm10": 15.6,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 11.9,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 3.7,
+          "pm10": 4.7,
+          "ozone": 67.0,
+          "nitrogen_dioxide": 6.9,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3699,36 +4028,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_in_24h": 0.95,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 73.0,
-          "low_temp_f": 53.0,
-          "high_apparent_temp_f": 73.0,
-          "low_apparent_temp_f": 53.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 19,
+          "high_temp_f": 61.0,
+          "low_temp_f": 52.0,
+          "high_apparent_temp_f": 61.0,
+          "low_apparent_temp_f": 52.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 36.8,
+          "thunder_probability_pct": 28,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain showers",
-            "thunderstorms"
+            "light rain showers",
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 24,
+          "us_aqi": 50,
           "category": "Good",
-          "aqi_24h_max": 43,
+          "aqi_24h_max": 50,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.9,
-          "pm10": 2.3,
-          "ozone": 58.0,
-          "nitrogen_dioxide": 2.1,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 2.5,
+          "pm10": 3.2,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 2.8,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

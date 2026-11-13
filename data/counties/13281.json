@@ -8,7 +8,23 @@
     "lon": -83.732264
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued November 13 at 11:24AM EST until November 15 at 9:00AM EST by NWS Peachtree City GA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-13T11:24:00-05:00",
+        "expires": "2026-11-14T09:15:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6aacb016135eaa3187dc54a64315c638f8c386b.001.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6aacb016135eaa3187dc54a64315c638f8c386b.001.2",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6aacb016135eaa3187dc54a64315c638f8c386b.001.3"
+        ],
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +38,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.09,
-      "precip_probability_pct": 34,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 2,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 57.0,
-      "low_temp_f": 48.0,
-      "high_apparent_temp_f": 57.0,
-      "low_apparent_temp_f": 43.0,
-      "max_wind_mph": 11.5,
-      "max_wind_gust_mph": 25.3,
-      "thunder_probability_pct": 4,
+      "high_temp_f": 45.0,
+      "low_temp_f": 34.0,
+      "high_apparent_temp_f": 41.0,
+      "low_apparent_temp_f": 28.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 21.9,
+      "thunder_probability_pct": 1,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "thunderstorms"
+        "frost"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 37,
+      "us_aqi": 27,
       "category": "Good",
-      "aqi_24h_max": 44,
+      "aqi_24h_max": 36,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 6.2,
-      "pm10": 6.3,
-      "ozone": 69.0,
-      "nitrogen_dioxide": 2.0,
-      "observed_at": "2026-11-12T11:00",
+      "pm2_5": 1.5,
+      "pm10": 1.8,
+      "ozone": 64.0,
+      "nitrogen_dioxide": 1.2,
+      "observed_at": "2026-11-13T17:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-12",
-  "generated_at": "2026-11-12T11:16:35.409088+00:00"
+  "date": "2026-11-13",
+  "generated_at": "2026-11-13T17:48:45.325230+00:00"
 }

@@ -1,21 +1,43 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-12T11:16:35.409088+00:00",
-  "date": "2026-11-12",
+  "generated_at": "2026-11-13T17:48:45.325230+00:00",
+  "date": "2026-11-13",
   "state": "HI",
   "counties_total": 5,
-  "counties_with_alerts": 1,
+  "counties_with_alerts": 2,
   "counties": {
     "15001": {
       "fips": "15001",
       "name": "Hawaii County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=19.5978&lon=-155.1770"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "service_provider_outage": [],
+        "service_provider_outage": [
+          {
+            "title": "Widespread Microsoft outage affects thousands of state workers' communications in Hawaii",
+            "url": "https://www.kitv.com/news/business/widespread-microsoft-outage-affects-thousands-of-state-workers-communications-in-hawaii/article_ee5c492b-31b5-43c0-94bb-4a8f94602292.html",
+            "domain": "kitv.com",
+            "seendate": "20261113030000",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://www.kitv.com/news/business/widespread-microsoft-outage-affects-thousands-of-state-workers-communications-in-hawaii/article_ee5c492b-31b5-43c0-94bb-4a8f94602292.html",
+                "domain": "kitv.com"
+              }
+            ]
+          }
+        ],
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
@@ -25,21 +47,21 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 40,
+          "precip_in_24h": 1.03,
+          "precip_probability_pct": 83,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 76.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 76.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 21.9,
-          "max_wind_gust_mph": 31.1,
+          "high_temp_f": 72.0,
+          "low_temp_f": 48.0,
+          "high_apparent_temp_f": 72.0,
+          "low_apparent_temp_f": 44.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": null,
-          "lightning_activity_level": 2,
+          "lightning_activity_level": null,
           "weather": [
             "moderate rain showers"
           ],
@@ -47,15 +69,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.6,
-          "pm10": 4.0,
-          "ozone": 65.0,
-          "nitrogen_dioxide": 1.2,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 1.6,
+          "pm10": 2.3,
+          "ozone": 66.0,
+          "nitrogen_dioxide": 1.3,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -69,23 +91,50 @@
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [
+        "service_provider_outage": [
           {
-            "title": "Hazmat crews extinguish fire on Sand Island",
-            "url": "https://www.hawaiinewsnow.com/2026/11/11/hazmat-crews-extinguish-fire-sand-island/",
+            "title": "Widespread Microsoft outage affects thousands of state workers' communications in Hawaii",
+            "url": "https://www.kitv.com/news/business/widespread-microsoft-outage-affects-thousands-of-state-workers-communications-in-hawaii/article_ee5c492b-31b5-43c0-94bb-4a8f94602292.html",
+            "domain": "kitv.com",
+            "seendate": "20261113030000",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://www.kitv.com/news/business/widespread-microsoft-outage-affects-thousands-of-state-workers-communications-in-hawaii/article_ee5c492b-31b5-43c0-94bb-4a8f94602292.html",
+                "domain": "kitv.com"
+              }
+            ]
+          },
+          {
+            "title": "Microsoft 365 outage disrupts workplaces across Hawaii, including government offices",
+            "url": "https://www.hawaiinewsnow.com/2026/11/13/microsoft-365-outage-disrupts-workplaces-across-hawaii-including-government-offices/",
             "domain": "hawaiinewsnow.com",
-            "seendate": "20261112001500",
+            "seendate": "20261113090000",
             "is_new": true,
             "sources": [
               {
-                "url": "https://www.hawaiinewsnow.com/2026/11/11/hazmat-crews-extinguish-fire-sand-island/",
+                "url": "https://www.hawaiinewsnow.com/2026/11/13/microsoft-365-outage-disrupts-workplaces-across-hawaii-including-government-offices/",
                 "domain": "hawaiinewsnow.com"
               }
             ]
           }
         ],
-        "road_closure": [],
+        "hazmat_incident": [],
+        "road_closure": [
+          {
+            "title": "H-1 eastbound closed at Liliha overpass due to vehicle collision",
+            "url": "https://www.staradvertiser.com/2026/11/13/breaking-news/h-1-eastbound-closed-at-liliha-overpass-closed-due-to-vehicle-collision/",
+            "domain": "staradvertiser.com",
+            "seendate": "20261113173000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.staradvertiser.com/2026/11/13/breaking-news/h-1-eastbound-closed-at-liliha-overpass-closed-due-to-vehicle-collision/",
+                "domain": "staradvertiser.com"
+              }
+            ]
+          }
+        ],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -93,14 +142,14 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 14,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 87.0,
+          "high_temp_f": 86.0,
           "low_temp_f": 75.0,
           "high_apparent_temp_f": 88.0,
           "low_apparent_temp_f": 75.0,
@@ -108,20 +157,22 @@
           "max_wind_gust_mph": 24.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "moderate rain showers"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 48,
-          "category": "Good",
-          "aqi_24h_max": 50,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 9.3,
-          "pm10": 16.2,
-          "ozone": 78.0,
+          "us_aqi": 57,
+          "category": "Moderate",
+          "aqi_24h_max": 57,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 12.5,
+          "pm10": 21.4,
+          "ozone": 96.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-12T11:00",
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -148,16 +199,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.06,
-          "precip_probability_pct": 46,
+          "precip_in_24h": 0.01,
+          "precip_probability_pct": 30,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 79.0,
-          "low_temp_f": 75.0,
-          "high_apparent_temp_f": 79.0,
-          "low_apparent_temp_f": 75.0,
-          "max_wind_mph": 32.2,
-          "max_wind_gust_mph": 41.4,
+          "high_temp_f": 78.0,
+          "low_temp_f": 74.0,
+          "high_apparent_temp_f": 78.0,
+          "low_apparent_temp_f": 74.0,
+          "max_wind_mph": 27.6,
+          "max_wind_gust_mph": 35.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -167,15 +218,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
+          "us_aqi": 54,
           "category": "Moderate",
-          "aqi_24h_max": 52,
+          "aqi_24h_max": 55,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.7,
-          "pm10": 16.6,
-          "ozone": 77.0,
+          "pm2_5": 12.1,
+          "pm10": 20.8,
+          "ozone": 95.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-12T11:00",
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -203,31 +254,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 10,
+          "precip_probability_pct": 11,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 86.0,
-          "low_temp_f": 68.0,
-          "high_apparent_temp_f": 87.0,
-          "low_apparent_temp_f": 68.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 85.0,
+          "low_temp_f": 67.0,
+          "high_apparent_temp_f": 86.0,
+          "low_apparent_temp_f": 67.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "moderate rain showers"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
+          "us_aqi": 47,
           "category": "Good",
-          "aqi_24h_max": 39,
+          "aqi_24h_max": 47,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.8,
-          "pm10": 9.6,
-          "ozone": 65.0,
-          "nitrogen_dioxide": 0.4,
-          "observed_at": "2026-11-12T11:00",
+          "pm2_5": 6.0,
+          "pm10": 9.7,
+          "ozone": 74.0,
+          "nitrogen_dioxide": 0.5,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -254,16 +307,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.07,
-          "precip_probability_pct": 43,
+          "precip_in_24h": 0.54,
+          "precip_probability_pct": 46,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 73.0,
+          "high_temp_f": 71.0,
           "low_temp_f": 63.0,
-          "high_apparent_temp_f": 73.0,
+          "high_apparent_temp_f": 71.0,
           "low_apparent_temp_f": 63.0,
-          "max_wind_mph": 29.9,
-          "max_wind_gust_mph": 43.7,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 31.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -273,15 +326,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 47,
-          "category": "Good",
-          "aqi_24h_max": 47,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 7.5,
-          "pm10": 12.8,
-          "ozone": 75.0,
-          "nitrogen_dioxide": 0.2,
-          "observed_at": "2026-11-12T11:00",
+          "us_aqi": 51,
+          "category": "Moderate",
+          "aqi_24h_max": 52,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 7.4,
+          "pm10": 12.7,
+          "ozone": 94.0,
+          "nitrogen_dioxide": 0.3,
+          "observed_at": "2026-11-13T17:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

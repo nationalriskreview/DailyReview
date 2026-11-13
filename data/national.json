@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-12T11:16:35.409088+00:00",
-  "date": "2026-11-12",
+  "generated_at": "2026-11-13T17:48:45.325230+00:00",
+  "date": "2026-11-13",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 146
+      "counties_with_alerts": 477
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 36,
+      "counties_over_threshold": 17,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,43 +30,43 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 24,
+      "counties_with_matches": 87,
       "items_pre_llm": {
-        "protest": 24,
-        "utility_outage": 1,
-        "transit_disruption": 1,
-        "service_provider_outage": 0,
-        "hazmat_incident": 1,
-        "road_closure": 1
+        "protest": 57,
+        "utility_outage": 13,
+        "transit_disruption": 0,
+        "service_provider_outage": 176,
+        "hazmat_incident": 3,
+        "road_closure": 12
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 10,
+      "counties_with_matches": 53,
       "items_post_llm": {
-        "protest": 8,
-        "utility_outage": 0,
-        "transit_disruption": 1,
-        "service_provider_outage": 0,
-        "hazmat_incident": 1,
-        "road_closure": 0
+        "protest": 16,
+        "utility_outage": 6,
+        "transit_disruption": 0,
+        "service_provider_outage": 147,
+        "hazmat_incident": 0,
+        "road_closure": 10
       },
-      "unique_articles": 21,
-      "calls_used": 21,
+      "unique_articles": 193,
+      "calls_used": 193,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 107
+      "counties_with_alerts": 103
     },
     "transit": {
-      "status": "ok",
+      "status": "partial",
       "agencies_total": 11,
-      "agencies_ok": 11,
+      "agencies_ok": 10,
       "agencies_skipped": 0,
-      "items_total": 4,
-      "counties_with_alerts": 3,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -96,7 +96,7 @@
           "id": "path",
           "name": "PATH",
           "status": "ok",
-          "items": 4
+          "items": 0
         },
         {
           "id": "bart",
@@ -119,7 +119,7 @@
         {
           "id": "metra",
           "name": "Metra",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -150,8 +150,8 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 7,
-      "counties_with_detections": 5
+      "positive_samples": 10,
+      "counties_with_detections": 4
     },
     "nndss_notifiable": {
       "status": "ok",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 15,
+      "active_incidents": 13,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -176,7 +176,7 @@
           "key": "aws",
           "name": "Amazon Web Services",
           "status": "ok",
-          "items": 7
+          "items": 0
         },
         {
           "key": "azure",
@@ -200,7 +200,7 @@
           "key": "github",
           "name": "GitHub",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "datadog",
@@ -212,19 +212,19 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 0
+          "items": 2
         },
         {
           "key": "anthropic",
           "name": "Anthropic",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "oracle",
@@ -254,7 +254,7 @@
           "key": "docusign",
           "name": "DocuSign",
           "status": "ok",
-          "items": 3
+          "items": 1
         },
         {
           "key": "cisco_meraki",
@@ -308,7 +308,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "r3wn",
@@ -332,7 +332,7 @@
           "key": "t8fc",
           "name": "t8fc",
           "status": "ok",
-          "items": 0
+          "items": 1
         }
       ]
     }
@@ -340,8 +340,8 @@
   "run_health": {
     "overall": "degraded",
     "counts": {
-      "ok": 13,
-      "partial": 1,
+      "ok": 12,
+      "partial": 2,
       "failed": 1,
       "skipped": 0
     },
@@ -349,7 +349,8 @@
       "amtrak"
     ],
     "partial": [
-      "service_status"
+      "service_status",
+      "transit"
     ],
     "skipped": []
   },
@@ -639,135 +640,91 @@
   "faa_advisories": [],
   "service_outages": [
     {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service is operating normally: [RESOLVED] Elevated API issues and Launch Failures",
-      "impact": "",
-      "status": "",
-      "started": "Wed, 11 Nov 2026 13:11:29 PST",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Elevated API issues and Launch Failures",
-      "impact": "",
-      "status": "",
-      "started": "Wed, 11 Nov 2026 11:54:32 PST",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Elevated API issues and Launch Failures",
-      "impact": "",
-      "status": "",
-      "started": "Wed, 11 Nov 2026 10:54:49 PST",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Elevated API issues and Launch Failures",
-      "impact": "",
-      "status": "",
-      "started": "Wed, 11 Nov 2026 09:59:22 PST",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Elevated API issues and Launch Failures",
-      "impact": "",
-      "status": "",
-      "started": "Wed, 11 Nov 2026 09:38:01 PST",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Elevated API issues and Launch Failures",
-      "impact": "",
-      "status": "",
-      "started": "Wed, 11 Nov 2026 08:40:43 PST",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Amazon Web Services",
-      "key": "aws",
-      "title": "Service impact: Elevated API issues and Launch Failures",
-      "impact": "",
-      "status": "",
-      "started": "Wed, 11 Nov 2026 07:40:33 PST",
-      "updated": "",
-      "url": "https://status.aws.amazon.com/",
+      "provider": "Cloudflare",
+      "key": "cloudflare",
+      "title": "Cloudflare is seeing an issue with Workers API availability",
+      "impact": "minor",
+      "status": "monitoring",
+      "started": "2026-11-13T15:31:13.772Z",
+      "updated": "2026-11-13T15:42:43.996Z",
+      "url": "https://www.cloudflarestatus.com/incidents/e7ktq32gphhe",
       "source": "provider status page"
     },
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Replicate Issue",
+      "title": "Cloudflare is currently having an issue with the r8.im registry used for Replicate model publishing and builds is currently restricted",
       "impact": "minor",
       "status": "identified",
-      "started": "2026-11-12T08:30:17.013Z",
-      "updated": "2026-11-12T09:34:19.802Z",
-      "url": "https://www.cloudflarestatus.com/incidents/1na2mbfshgdh",
+      "started": "2026-11-13T14:55:26.180Z",
+      "updated": "2026-11-13T14:56:27.695Z",
+      "url": "https://www.cloudflarestatus.com/incidents/mc91s22odfvf",
       "source": "provider status page"
     },
     {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Replicate Model Registry Unavailable",
+      "provider": "GitHub",
+      "key": "github",
+      "title": "Incident with Pull Requests",
+      "impact": "major",
+      "status": "monitoring",
+      "started": "2026-11-13T15:47:12.282Z",
+      "updated": "2026-11-13T17:46:11.834Z",
+      "url": "https://stspg.io/qzj7qjdcr8jc",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Zoom",
+      "key": "zoom",
+      "title": "Service Degradation Affecting Microsoft Integrations due to an underlying vendor issue.",
       "impact": "minor",
       "status": "identified",
-      "started": "2026-11-11T04:33:19.016Z",
-      "updated": "2026-11-11T23:51:40.658Z",
-      "url": "https://www.cloudflarestatus.com/incidents/yu63fhh2peb7",
+      "started": "2026-11-12T11:24:50.493-08:00",
+      "updated": "2026-11-13T04:00:06.455-08:00",
+      "url": "https://stspg.io/jth16cll1kcf",
+      "source": "provider status page"
+    },
+    {
+      "provider": "OpenAI",
+      "key": "openai",
+      "title": "Elevated errors affecting the Microsoft 365 connector",
+      "impact": "minor",
+      "status": "monitoring",
+      "started": "2026-11-12T18:29:14Z",
+      "updated": "2026-11-13T16:20:45Z",
+      "url": "https://status.openai.com",
+      "source": "provider status page"
+    },
+    {
+      "provider": "OpenAI",
+      "key": "openai",
+      "title": "Delayed Costs Data in the Compliance API",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-11-13T16:10:07Z",
+      "updated": "2026-11-13T16:10:07Z",
+      "url": "https://status.openai.com",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Anthropic",
+      "key": "anthropic",
+      "title": "Elevated errors affecting the Microsoft 365 connector",
+      "impact": "major",
+      "status": "monitoring",
+      "started": "2026-11-12T17:52:44.926Z",
+      "updated": "2026-11-13T15:40:53.645Z",
+      "url": "https://stspg.io/m0rbx38nmy1c",
       "source": "provider status page"
     },
     {
       "provider": "DocuSign",
       "key": "docusign",
-      "title": "Maintenance for CLM customers on November 20, 2026 at 03:00 UTC (Maint 6215)",
+      "title": "Microsoft outage is causing delays for emails sent to Microsoft-hosted domains (Incident 6228)",
       "impact": "minor",
-      "status": "canceled",
-      "started": "2026-11-11T21:37:00.252259Z",
-      "updated": "2026-11-11T22:33:16.501259Z",
-      "url": "https://health.docusign.com/status/incidents?id=0b98f060952db7c2f3b4fdf7db96cf20",
-      "source": "provider status page"
-    },
-    {
-      "provider": "DocuSign",
-      "key": "docusign",
-      "title": "Maintenance for CLM customers on November 20, 2026 at 03:00 UTC (Maint 6218)",
-      "impact": "minor",
-      "status": "scheduled",
-      "started": "2026-11-11T22:36:47.872389Z",
-      "updated": "2026-11-11T22:37:31.198467Z",
-      "url": "https://health.docusign.com/status/incidents?id=f38eb924dd8aa440856c6365182aee26",
-      "source": "provider status page"
-    },
-    {
-      "provider": "DocuSign",
-      "key": "docusign",
-      "title": "Maintenance for CLM customers on November 21, 2026 at 18:00 UTC (Maint 6216)",
-      "impact": "minor",
-      "status": "scheduled",
-      "started": "2026-11-11T21:37:56.066285Z",
-      "updated": "2026-11-11T22:19:43.880564Z",
-      "url": "https://health.docusign.com/status/incidents?id=34b70a2cce7a54a08f7e4147a82fd521",
+      "status": "monitoring",
+      "started": "2026-11-12T21:40:58.82334Z",
+      "updated": "2026-11-13T16:06:06.734819Z",
+      "url": "https://health.docusign.com/status/incidents?id=c95481a150463fd62a30d5a879b4800c",
       "source": "provider status page"
     },
     {
@@ -777,7 +734,7 @@
       "impact": "minor",
       "status": "identified",
       "started": "2026-11-09T11:45:58.224Z",
-      "updated": "2026-11-11T23:14:09.275Z",
+      "updated": "2026-11-13T17:42:20.576Z",
       "url": "https://stspg.io/q10mz5bghy7j",
       "source": "provider status page"
     },
@@ -794,6 +751,22 @@
     },
     {
       "provider": "m4kp",
+      "impact": "minor",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
+    },
+    {
+      "provider": "x9tz",
+      "impact": "major",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
+    },
+    {
+      "provider": "t8fc",
       "impact": "minor",
       "active_incidents": 1,
       "status": "active",
