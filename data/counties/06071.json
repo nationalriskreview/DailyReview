@@ -12,70 +12,43 @@
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
-    "service_provider_outage": [
-      {
-        "title": "Hospitals, airlines and governments hit by Microsoft outage as employee risk warnings mount",
-        "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/hospitals-airlines-and-governments-hit-by-microsoft-outage-as-employee-risk-warnings-mount-597311.aspx",
-        "domain": "insurancebusinessmag.com",
-        "seendate": "20261113150000",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/hospitals-airlines-and-governments-hit-by-microsoft-outage-as-employee-risk-warnings-mount-597311.aspx",
-            "domain": "insurancebusinessmag.com"
-          }
-        ]
-      },
-      {
-        "title": "Microsoft 365 outage: US government departments and major cities witnessing downtime",
-        "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-us-government-departments-and-major-cities-witnessing-downtime/articleshow/135795801.cms",
-        "domain": "indiatimes.com",
-        "seendate": "20261113093000",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://timesofindia.indiatimes.com/technology/tech-news/microsoft-365-outage-us-government-departments-and-major-cities-witnessing-downtime/articleshow/135795801.cms",
-            "domain": "indiatimes.com"
-          }
-        ]
-      },
-      {
-        "title": "Microsoft outage today: Is it fixed? Outlook, Teams disruptions enter second day as Detroit, Miami, Austin and Baltimore hit",
-        "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
-        "domain": "indiatimes.com",
-        "seendate": "20261113123000",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://economictimes.indiatimes.com/news/international/world-news/microsoft-outage-today-is-it-fixed-outlook-teams-disruptions-enter-second-day-as-detroit-miami-austin-and-baltimore-hi/articleshow/135802449.cms",
-            "domain": "indiatimes.com"
-          }
-        ]
-      }
-    ],
+    "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "airport_closure",
+        "code": "SNA",
+        "name": "John Wayne / Orange County",
+        "city": "Santa Ana",
+        "state": "CA",
+        "reason": "!SNA 11/021 SNA AD AP CLSD 2611140800-2611141415",
+        "start": "Nov 14 at 08:00 UTC.",
+        "reopen": "Nov 14 at 14:15 UTC.",
+        "source": "FAA NAS Status",
+        "url": "https://nasstatus.faa.gov/"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 3,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 7,
+      "precip_in_24h": 0.03,
+      "precip_probability_pct": 34,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 77.0,
-      "low_temp_f": 51.0,
-      "high_apparent_temp_f": 77.0,
-      "low_apparent_temp_f": 51.0,
-      "max_wind_mph": 29.9,
+      "high_temp_f": 73.0,
+      "low_temp_f": 49.0,
+      "high_apparent_temp_f": 73.0,
+      "low_apparent_temp_f": 42.0,
+      "max_wind_mph": 26.5,
       "max_wind_gust_mph": 38.0,
-      "thunder_probability_pct": 5,
+      "thunder_probability_pct": 6,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
@@ -85,18 +58,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 27,
+      "us_aqi": 28,
       "category": "Good",
-      "aqi_24h_max": 46,
+      "aqi_24h_max": 44,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 5.0,
-      "pm10": 8.8,
-      "ozone": 70.0,
-      "nitrogen_dioxide": 4.8,
-      "observed_at": "2026-11-13T17:00",
+      "pm2_5": 4.1,
+      "pm10": 5.6,
+      "ozone": 45.0,
+      "nitrogen_dioxide": 7.9,
+      "observed_at": "2026-11-14T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-13",
-  "generated_at": "2026-11-13T17:48:45.325230+00:00"
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T10:40:59.800267+00:00"
 }

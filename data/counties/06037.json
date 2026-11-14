@@ -9,163 +9,67 @@
   },
   "alerts": {
     "weather": [],
-    "protest": [
-      {
-        "title": "New York Bajans protest recall",
-        "url": "https://nationnews.com/2026/11/13/new-york-bajans-protest-recall/",
-        "domain": "nationnews.com",
-        "seendate": "20261113144500",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://nationnews.com/2026/11/13/new-york-bajans-protest-recall/",
-            "domain": "nationnews.com"
-          }
-        ]
-      }
-    ],
+    "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
-    "service_provider_outage": [
-      {
-        "title": "Hospitals, airlines and governments hit by Microsoft outage as employee risk warnings mount",
-        "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/hospitals-airlines-and-governments-hit-by-microsoft-outage-as-employee-risk-warnings-mount-597311.aspx",
-        "domain": "insurancebusinessmag.com",
-        "seendate": "20261113150000",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.insurancebusinessmag.com/us/news/breaking-news/hospitals-airlines-and-governments-hit-by-microsoft-outage-as-employee-risk-warnings-mount-597311.aspx",
-            "domain": "insurancebusinessmag.com"
-          }
-        ]
-      },
-      {
-        "title": "Why is the Microsoft outage lasting so long?",
-        "url": "https://www.aol.com/articles/know-global-microsoft-outage-071532000.html",
-        "domain": "aol.com",
-        "seendate": "20261113163000",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.aol.com/articles/know-global-microsoft-outage-071532000.html",
-            "domain": "aol.com"
-          }
-        ]
-      },
-      {
-        "title": "Ongoing Microsoft Outage Impacting LASD Communications",
-        "url": "https://www.kabc.com/2026/11/13/ongoing-microsoft-outage-impacting-lasd-communications/",
-        "domain": "kabc.com",
-        "seendate": "20261113164500",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.kabc.com/2026/11/13/ongoing-microsoft-outage-impacting-lasd-communications/",
-            "domain": "kabc.com"
-          }
-        ]
-      },
-      {
-        "title": "Microsoft Outlook Outage Drags On - MyNewsLA.com",
-        "url": "https://mynewsla.com/life/2026/11/13/microsoft-outlook-outage-drags-on-repairs-progressing/",
-        "domain": "mynewsla.com",
-        "seendate": "20261113153000",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://mynewsla.com/life/2026/11/13/microsoft-outlook-outage-drags-on-repairs-progressing/",
-            "domain": "mynewsla.com"
-          }
-        ]
-      },
-      {
-        "title": "Microsoft Outlook outage hits SoCal users",
-        "url": "https://kesq.com/lifestyle/technology/2026/11/12/microsoft-outlook-outage-hits-socal-users/",
-        "domain": "kesq.com",
-        "seendate": "20261113031500",
-        "is_new": false,
-        "sources": [
-          {
-            "url": "https://kesq.com/lifestyle/technology/2026/11/12/microsoft-outlook-outage-hits-socal-users/",
-            "domain": "kesq.com"
-          }
-        ]
-      },
-      {
-        "title": "Microsoft Outlook Outage Hits SoCal",
-        "url": "https://mynewsla.com/business/2026/11/12/microsoft-outlook-outage-hits-socal-users-6/",
-        "domain": "mynewsla.com",
-        "seendate": "20261113010000",
-        "is_new": false,
-        "sources": [
-          {
-            "url": "https://mynewsla.com/business/2026/11/12/microsoft-outlook-outage-hits-socal-users-6/",
-            "domain": "mynewsla.com"
-          }
-        ]
-      },
-      {
-        "title": "Microsoft outage continues to affect users worldwide &#x2013; NBC Los Angeles",
-        "url": "https://www.nbclosangeles.com/news/national-international/microsoft-outage-struggles-to-restore-services/3969993/",
-        "domain": "nbclosangeles.com",
-        "seendate": "20261113131500",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.nbclosangeles.com/news/national-international/microsoft-outage-struggles-to-restore-services/3969993/",
-            "domain": "nbclosangeles.com"
-          }
-        ]
-      }
-    ],
+    "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "airport_closure",
+        "code": "SNA",
+        "name": "John Wayne / Orange County",
+        "city": "Santa Ana",
+        "state": "CA",
+        "reason": "!SNA 11/021 SNA AD AP CLSD 2611140800-2611141415",
+        "start": "Nov 14 at 08:00 UTC.",
+        "reopen": "Nov 14 at 14:15 UTC.",
+        "source": "FAA NAS Status",
+        "url": "https://nasstatus.faa.gov/"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 8,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.75,
-      "precip_probability_pct": 85,
+      "precip_in_24h": 0.19,
+      "precip_probability_pct": 84,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 73.0,
-      "low_temp_f": 53.0,
-      "high_apparent_temp_f": 73.0,
-      "low_apparent_temp_f": 53.0,
-      "max_wind_mph": 25.3,
-      "max_wind_gust_mph": 38.0,
-      "thunder_probability_pct": 13,
+      "high_temp_f": 72.0,
+      "low_temp_f": 49.0,
+      "high_apparent_temp_f": 72.0,
+      "low_apparent_temp_f": 47.0,
+      "max_wind_mph": 27.6,
+      "max_wind_gust_mph": 41.4,
+      "thunder_probability_pct": 10,
       "lightning_activity_level": null,
       "weather": [
-        "moderate rain",
-        "moderate rain showers",
-        "thunderstorms",
-        "light rain showers",
-        "light rain"
+        "light rain",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 58,
-      "category": "Moderate",
-      "aqi_24h_max": 68,
+      "us_aqi": 46,
+      "category": "Good",
+      "aqi_24h_max": 55,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 9.2,
-      "pm10": 10.2,
-      "ozone": 40.0,
-      "nitrogen_dioxide": 32.2,
-      "observed_at": "2026-11-13T17:00",
+      "pm2_5": 10.0,
+      "pm10": 12.7,
+      "ozone": 45.0,
+      "nitrogen_dioxide": 25.5,
+      "observed_at": "2026-11-14T10:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-13",
-  "generated_at": "2026-11-13T17:48:45.325230+00:00"
+  "date": "2026-11-14",
+  "generated_at": "2026-11-14T10:40:59.800267+00:00"
 }
