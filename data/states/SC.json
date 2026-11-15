@@ -1,10 +1,10 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-14T10:40:59.800267+00:00",
-  "date": "2026-11-14",
+  "generated_at": "2026-11-15T11:02:26.149299+00:00",
+  "date": "2026-11-15",
   "state": "SC",
   "counties_total": 46,
-  "counties_with_alerts": 33,
+  "counties_with_alerts": 32,
   "counties": {
     "45001": {
       "fips": "45001",
@@ -29,15 +29,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 58.0,
-          "low_temp_f": 33.0,
+          "low_temp_f": 30.0,
           "high_apparent_temp_f": 58.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [],
@@ -45,15 +45,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 32,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.3,
-          "pm10": 2.4,
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 16.3,
+          "pm10": 16.5,
           "ozone": 32.0,
-          "nitrogen_dioxide": 6.4,
-          "observed_at": "2026-11-14T10:00",
+          "nitrogen_dioxide": 9.8,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -66,15 +66,84 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 8,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 58.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 26.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 24,
+          "category": "Good",
+          "aqi_24h_max": 37,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 12.0,
+          "pm10": 12.1,
+          "ozone": 41.0,
+          "nitrogen_dioxide": 3.9,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45005": {
+      "fips": "45005",
+      "name": "Allendale County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 1:11AM EST until November 15 at 9:00AM EST by NWS Charleston SC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T01:11:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db30906576569643781b559142f004a251ed8589.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db30906576569643781b559142f004a251ed8589.001.1"
             ],
             "count": 1
           }
@@ -99,81 +168,12 @@
           "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 58.0,
-          "low_temp_f": 35.0,
-          "high_apparent_temp_f": 58.0,
-          "low_apparent_temp_f": 31.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 21,
-          "category": "Good",
-          "aqi_24h_max": 34,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 3.2,
-          "pm10": 3.3,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45005": {
-      "fips": "45005",
-      "name": "Allendale County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:07AM EST until November 15 at 9:00AM EST by NWS Charleston SC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T01:07:00-05:00",
-            "expires": "2026-11-14T09:15:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6b2ee83ebc7f84a7cf7c036aeaab2253885e16f.001.2",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6b2ee83ebc7f84a7cf7c036aeaab2253885e16f.001.2"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
           "high_temp_f": 59.0,
-          "low_temp_f": 35.0,
+          "low_temp_f": 32.0,
           "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 35.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 17.3,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 2.3,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -183,15 +183,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 33,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.3,
-          "pm10": 4.4,
-          "ozone": 36.0,
-          "nitrogen_dioxide": 4.5,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 6.5,
+          "pm10": 6.7,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 4.7,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -219,15 +219,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 6,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 57.0,
-          "low_temp_f": 33.0,
-          "high_apparent_temp_f": 57.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
+          "high_temp_f": 58.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [],
@@ -235,15 +235,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 30,
           "category": "Good",
-          "aqi_24h_max": 33,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.1,
-          "pm10": 2.1,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-11-14T10:00",
+          "aqi_24h_max": 55,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 16.6,
+          "pm10": 16.9,
+          "ozone": 39.0,
+          "nitrogen_dioxide": 8.2,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -256,15 +256,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
             ],
             "count": 1
           }
@@ -286,15 +286,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 61.0,
-          "low_temp_f": 35.0,
-          "high_apparent_temp_f": 61.0,
-          "low_apparent_temp_f": 35.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 15.0,
+          "high_temp_f": 60.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 60.0,
+          "low_apparent_temp_f": 31.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -306,13 +306,13 @@
         "air_quality": {
           "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.1,
-          "pm10": 4.1,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 4.3,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 9.0,
+          "pm10": 9.1,
+          "ozone": 42.0,
+          "nitrogen_dioxide": 4.9,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -325,15 +325,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
             ],
             "count": 1
           }
@@ -359,11 +359,11 @@
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 60.0,
-          "low_temp_f": 34.0,
+          "low_temp_f": 31.0,
           "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 16.1,
+          "low_apparent_temp_f": 31.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -373,15 +373,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.3,
-          "pm10": 4.3,
-          "ozone": 36.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 10.7,
+          "pm10": 10.8,
+          "ozone": 45.0,
+          "nitrogen_dioxide": 3.8,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -409,31 +409,33 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 15,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 60.0,
-          "low_temp_f": 43.0,
+          "low_temp_f": 39.0,
           "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 39.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 20.7,
+          "low_apparent_temp_f": 36.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 16.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
-          "weather": [],
+          "weather": [
+            "light rain showers"
+          ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 37,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.4,
-          "pm10": 4.6,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 3.9,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 5.5,
+          "pm10": 5.7,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 4.2,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -446,104 +448,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:07AM EST until November 15 at 9:00AM EST by NWS Charleston SC",
+            "headline": "Freeze Warning issued November 15 at 1:11AM EST until November 15 at 9:00AM EST by NWS Charleston SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T01:07:00-05:00",
-            "expires": "2026-11-14T09:15:00-05:00",
+            "effective": "2026-11-15T01:11:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6b2ee83ebc7f84a7cf7c036aeaab2253885e16f.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db30906576569643781b559142f004a251ed8589.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6b2ee83ebc7f84a7cf7c036aeaab2253885e16f.001.2"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [
-          {
-            "title": "Hewitt Lane Fire",
-            "incident_name": "Hewitt Lane Fire",
-            "id": "2026-SCSCS-267730",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-10-22T17:45:00+00:00",
-            "lat": 33.2627,
-            "lon": -79.314,
-            "acreage": 109,
-            "containment_pct": 90,
-            "cause": "Human",
-            "state": "SC",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-SCSCS-267730",
-            "source": "NIFC WFIGS",
-            "url": "https://irwin.doi.gov/observer/incidents/2026-SCSCS-267730",
-            "distance_miles": 37.2,
-            "threat_level": "Vicinity"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 2,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 60.0,
-          "low_temp_f": 39.0,
-          "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 37.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 27,
-          "category": "Good",
-          "aqi_24h_max": 38,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 9.1,
-          "pm10": 9.3,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45017": {
-      "fips": "45017",
-      "name": "Calhoun County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db30906576569643781b559142f004a251ed8589.001.1"
             ],
             "count": 1
           }
@@ -565,15 +478,84 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 59.0,
-          "low_temp_f": 37.0,
+          "low_temp_f": 32.0,
           "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 28,
+          "category": "Good",
+          "aqi_24h_max": 34,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 8.1,
+          "pm10": 8.2,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 4.0,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45017": {
+      "fips": "45017",
+      "name": "Calhoun County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 1,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 59.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -585,13 +567,13 @@
         "air_quality": {
           "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.3,
-          "pm10": 6.4,
+          "pm2_5": 11.0,
+          "pm10": 11.1,
           "ozone": 40.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-11-14T10:00",
+          "nitrogen_dioxide": 6.6,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -608,34 +590,14 @@
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [
-          {
-            "title": "Hewitt Lane Fire",
-            "incident_name": "Hewitt Lane Fire",
-            "id": "2026-SCSCS-267730",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-10-22T17:45:00+00:00",
-            "lat": 33.2627,
-            "lon": -79.314,
-            "acreage": 109,
-            "containment_pct": 90,
-            "cause": "Human",
-            "state": "SC",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-SCSCS-267730",
-            "source": "NIFC WFIGS",
-            "url": "https://irwin.doi.gov/observer/incidents/2026-SCSCS-267730",
-            "distance_miles": 48.4,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
@@ -643,11 +605,11 @@
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 60.0,
-          "low_temp_f": 43.0,
+          "low_temp_f": 38.0,
           "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 39.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
+          "low_apparent_temp_f": 35.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 13.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [],
@@ -655,15 +617,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 39,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.0,
-          "pm10": 7.2,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 6.1,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 6.8,
+          "pm10": 6.9,
+          "ozone": 48.0,
+          "nitrogen_dioxide": 6.5,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -691,15 +653,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 53.0,
-          "low_temp_f": 34.0,
-          "high_apparent_temp_f": 53.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
+          "high_temp_f": 56.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [],
@@ -707,15 +669,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 36,
           "category": "Good",
-          "aqi_24h_max": 32,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 0.6,
-          "pm10": 0.6,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-11-14T10:00",
+          "aqi_24h_max": 55,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 16.8,
+          "pm10": 16.9,
+          "ozone": 23.0,
+          "nitrogen_dioxide": 13.2,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -746,12 +708,12 @@
           "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 54.0,
-          "low_temp_f": 33.0,
-          "high_apparent_temp_f": 55.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
+          "high_temp_f": 57.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [],
@@ -759,15 +721,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 50,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.2,
-          "pm10": 2.2,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 15.3,
+          "pm10": 15.4,
+          "ozone": 33.0,
+          "nitrogen_dioxide": 8.3,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -780,15 +742,636 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 57.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 33,
+          "category": "Good",
+          "aqi_24h_max": 47,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 14.0,
+          "pm10": 14.1,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 4.8,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45027": {
+      "fips": "45027",
+      "name": "Clarendon County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 3,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 59.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 25,
+          "category": "Good",
+          "aqi_24h_max": 35,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 10.3,
+          "pm10": 10.4,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 5.1,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45029": {
+      "fips": "45029",
+      "name": "Colleton County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 1:11AM EST until November 15 at 9:00AM EST by NWS Charleston SC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T01:11:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db30906576569643781b559142f004a251ed8589.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db30906576569643781b559142f004a251ed8589.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 59.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 26,
+          "category": "Good",
+          "aqi_24h_max": 34,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 6.9,
+          "pm10": 7.0,
+          "ozone": 46.0,
+          "nitrogen_dioxide": 4.8,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45031": {
+      "fips": "45031",
+      "name": "Darlington County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 4:31AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T04:31:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 58.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 1,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 24,
+          "category": "Good",
+          "aqi_24h_max": 40,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 11.9,
+          "pm10": 12.0,
+          "ozone": 42.0,
+          "nitrogen_dioxide": 4.5,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45033": {
+      "fips": "45033",
+      "name": "Dillon County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 4:31AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T04:31:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 57.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 31.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 15.0,
+          "thunder_probability_pct": 1,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 23,
+          "category": "Good",
+          "aqi_24h_max": 39,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 10.7,
+          "pm10": 10.8,
+          "ozone": 39.0,
+          "nitrogen_dioxide": 5.1,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45035": {
+      "fips": "45035",
+      "name": "Dorchester County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 1:11AM EST until November 15 at 9:00AM EST by NWS Charleston SC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T01:11:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db30906576569643781b559142f004a251ed8589.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db30906576569643781b559142f004a251ed8589.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 59.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 26,
+          "category": "Good",
+          "aqi_24h_max": 33,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 9.0,
+          "pm10": 9.2,
+          "ozone": 46.0,
+          "nitrogen_dioxide": 4.9,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45037": {
+      "fips": "45037",
+      "name": "Edgefield County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 1,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 58.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 24,
+          "category": "Good",
+          "aqi_24h_max": 43,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 13.1,
+          "pm10": 13.3,
+          "ozone": 47.0,
+          "nitrogen_dioxide": 5.4,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45039": {
+      "fips": "45039",
+      "name": "Fairfield County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 57.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 8.1,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 23,
+          "category": "Good",
+          "aqi_24h_max": 42,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 13.5,
+          "pm10": 13.7,
+          "ozone": 41.0,
+          "nitrogen_dioxide": 6.9,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45041": {
+      "fips": "45041",
+      "name": "Florence County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 4:31AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T04:31:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 58.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 31.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 1,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 23,
+          "category": "Good",
+          "aqi_24h_max": 36,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 9.9,
+          "pm10": 10.0,
+          "ozone": 41.0,
+          "nitrogen_dioxide": 4.9,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45043": {
+      "fips": "45043",
+      "name": "Georgetown County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 4:31AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T04:31:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1"
             ],
             "count": 1
           }
@@ -813,82 +1396,13 @@
           "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 56.0,
-          "low_temp_f": 36.0,
-          "high_apparent_temp_f": 56.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 29,
-          "category": "Good",
-          "aqi_24h_max": 34,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 9.9,
-          "pm10": 10.0,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 3.7,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45027": {
-      "fips": "45027",
-      "name": "Clarendon County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 60.0,
-          "low_temp_f": 36.0,
-          "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 32.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": null,
+          "high_temp_f": 57.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "frost"
@@ -899,585 +1413,13 @@
         "air_quality": {
           "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 33,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 9.4,
-          "pm10": 9.5,
+          "pm2_5": 8.3,
+          "pm10": 8.4,
           "ozone": 45.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45029": {
-      "fips": "45029",
-      "name": "Colleton County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:07AM EST until November 15 at 9:00AM EST by NWS Charleston SC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T01:07:00-05:00",
-            "expires": "2026-11-14T09:15:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6b2ee83ebc7f84a7cf7c036aeaab2253885e16f.001.2",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6b2ee83ebc7f84a7cf7c036aeaab2253885e16f.001.2"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 60.0,
-          "low_temp_f": 36.0,
-          "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 26,
-          "category": "Good",
-          "aqi_24h_max": 38,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 4.9,
-          "pm10": 5.0,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 4.3,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45031": {
-      "fips": "45031",
-      "name": "Darlington County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:43AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T01:43:00-05:00",
-            "expires": "2026-11-14T14:00:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.001.1"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 58.0,
-          "low_temp_f": 37.0,
-          "high_apparent_temp_f": 58.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 1,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 26,
-          "category": "Good",
-          "aqi_24h_max": 33,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 10.0,
-          "pm10": 10.1,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 3.8,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45033": {
-      "fips": "45033",
-      "name": "Dillon County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:43AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T01:43:00-05:00",
-            "expires": "2026-11-14T14:00:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.001.1"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 11,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 58.0,
-          "low_temp_f": 36.0,
-          "high_apparent_temp_f": 58.0,
-          "low_apparent_temp_f": 32.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 1,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 27,
-          "category": "Good",
-          "aqi_24h_max": 34,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 7.1,
-          "pm10": 7.3,
-          "ozone": 49.0,
           "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45035": {
-      "fips": "45035",
-      "name": "Dorchester County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:07AM EST until November 15 at 9:00AM EST by NWS Charleston SC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T01:07:00-05:00",
-            "expires": "2026-11-14T09:15:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6b2ee83ebc7f84a7cf7c036aeaab2253885e16f.001.2",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6b2ee83ebc7f84a7cf7c036aeaab2253885e16f.001.2"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 60.0,
-          "low_temp_f": 38.0,
-          "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 36.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 25,
-          "category": "Good",
-          "aqi_24h_max": 37,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 8.0,
-          "pm10": 8.1,
-          "ozone": 42.0,
-          "nitrogen_dioxide": 4.8,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45037": {
-      "fips": "45037",
-      "name": "Edgefield County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 58.0,
-          "low_temp_f": 35.0,
-          "high_apparent_temp_f": 58.0,
-          "low_apparent_temp_f": 32.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 23,
-          "category": "Good",
-          "aqi_24h_max": 33,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 4.6,
-          "pm10": 4.6,
-          "ozone": 34.0,
-          "nitrogen_dioxide": 6.6,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45039": {
-      "fips": "45039",
-      "name": "Fairfield County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 56.0,
-          "low_temp_f": 35.0,
-          "high_apparent_temp_f": 56.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 21,
-          "category": "Good",
-          "aqi_24h_max": 33,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 1.7,
-          "pm10": 1.8,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45041": {
-      "fips": "45041",
-      "name": "Florence County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:43AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T01:43:00-05:00",
-            "expires": "2026-11-14T14:00:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.001.1"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 59.0,
-          "low_temp_f": 37.0,
-          "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 1,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 27,
-          "category": "Good",
-          "aqi_24h_max": 35,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 8.6,
-          "pm10": 8.8,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45043": {
-      "fips": "45043",
-      "name": "Georgetown County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:43AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T01:43:00-05:00",
-            "expires": "2026-11-14T14:00:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.002.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.002.1"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [
-          {
-            "title": "Hewitt Lane Fire",
-            "incident_name": "Hewitt Lane Fire",
-            "id": "2026-SCSCS-267730",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-10-22T17:45:00+00:00",
-            "lat": 33.2627,
-            "lon": -79.314,
-            "acreage": 109,
-            "containment_pct": 90,
-            "cause": "Human",
-            "state": "SC",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-SCSCS-267730",
-            "source": "NIFC WFIGS",
-            "url": "https://irwin.doi.gov/observer/incidents/2026-SCSCS-267730",
-            "distance_miles": 10.7,
-            "threat_level": "Immediate"
-          }
-        ],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 2,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 59.0,
-          "low_temp_f": 39.0,
-          "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 36.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 1,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 28,
-          "category": "Good",
-          "aqi_24h_max": 37,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 8.5,
-          "pm10": 8.8,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 3.4,
-          "observed_at": "2026-11-14T10:00",
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1505,31 +1447,31 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 53.0,
-          "low_temp_f": 36.0,
-          "high_apparent_temp_f": 53.0,
-          "low_apparent_temp_f": 32.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 57.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 38,
           "category": "Good",
-          "aqi_24h_max": 32,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 0.8,
-          "pm10": 0.8,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-11-14T10:00",
+          "aqi_24h_max": 56,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 19.3,
+          "pm10": 19.4,
+          "ozone": 20.0,
+          "nitrogen_dioxide": 17.7,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1561,27 +1503,27 @@
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 57.0,
-          "low_temp_f": 33.0,
+          "low_temp_f": 30.0,
           "high_apparent_temp_f": 57.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
-          "thunder_probability_pct": 1,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 10.4,
+          "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 20,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 41,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.4,
-          "pm10": 2.4,
-          "ozone": 36.0,
-          "nitrogen_dioxide": 4.8,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 13.7,
+          "pm10": 13.9,
+          "ozone": 49.0,
+          "nitrogen_dioxide": 4.3,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1594,15 +1536,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:07AM EST until November 15 at 9:00AM EST by NWS Charleston SC",
+            "headline": "Freeze Warning issued November 15 at 1:11AM EST until November 15 at 9:00AM EST by NWS Charleston SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T01:07:00-05:00",
-            "expires": "2026-11-14T09:15:00-05:00",
+            "effective": "2026-11-15T01:11:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6b2ee83ebc7f84a7cf7c036aeaab2253885e16f.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db30906576569643781b559142f004a251ed8589.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6b2ee83ebc7f84a7cf7c036aeaab2253885e16f.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db30906576569643781b559142f004a251ed8589.001.1"
             ],
             "count": 1
           }
@@ -1624,15 +1566,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 60.0,
-          "low_temp_f": 36.0,
-          "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 36.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 16.1,
+          "high_temp_f": 59.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -1642,15 +1584,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 33,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.3,
-          "pm10": 4.4,
-          "ozone": 36.0,
-          "nitrogen_dioxide": 4.5,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 6.5,
+          "pm10": 6.7,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 4.7,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1663,15 +1605,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:43AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
+            "headline": "Freeze Warning issued November 15 at 4:31AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T01:43:00-05:00",
-            "expires": "2026-11-14T14:00:00-05:00",
+            "effective": "2026-11-15T04:31:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.002.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1"
             ],
             "count": 1
           }
@@ -1682,46 +1624,26 @@
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [
-          {
-            "title": "Hewitt Lane Fire",
-            "incident_name": "Hewitt Lane Fire",
-            "id": "2026-SCSCS-267730",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-10-22T17:45:00+00:00",
-            "lat": 33.2627,
-            "lon": -79.314,
-            "acreage": 109,
-            "containment_pct": 90,
-            "cause": "Human",
-            "state": "SC",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-SCSCS-267730",
-            "source": "NIFC WFIGS",
-            "url": "https://irwin.doi.gov/observer/incidents/2026-SCSCS-267730",
-            "distance_miles": 48.7,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 6,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 59.0,
-          "low_temp_f": 39.0,
-          "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 36.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
+          "high_temp_f": 58.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
@@ -1731,15 +1653,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 23,
           "category": "Good",
           "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.8,
-          "pm10": 8.1,
-          "ozone": 51.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 9.4,
+          "pm10": 9.5,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1752,15 +1674,85 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:07AM EST until November 15 at 9:00AM EST by NWS Charleston SC",
+            "headline": "Freeze Warning issued November 15 at 1:11AM EST until November 15 at 9:00AM EST by NWS Charleston SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T01:07:00-05:00",
-            "expires": "2026-11-14T09:15:00-05:00",
+            "effective": "2026-11-15T01:11:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6b2ee83ebc7f84a7cf7c036aeaab2253885e16f.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db30906576569643781b559142f004a251ed8589.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f6b2ee83ebc7f84a7cf7c036aeaab2253885e16f.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.db30906576569643781b559142f004a251ed8589.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 15,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 59.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost",
+            "light rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 25,
+          "category": "Good",
+          "aqi_24h_max": 34,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 5.3,
+          "pm10": 5.5,
+          "ozone": 48.0,
+          "nitrogen_dioxide": 4.9,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45055": {
+      "fips": "45055",
+      "name": "Kershaw County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
             ],
             "count": 1
           }
@@ -1785,12 +1777,12 @@
           "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 60.0,
-          "low_temp_f": 38.0,
-          "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 58.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -1800,84 +1792,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 31,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 39,
+          "aqi_24h_max": 40,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.1,
-          "pm10": 5.3,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 4.8,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45055": {
-      "fips": "45055",
-      "name": "Kershaw County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 57.0,
-          "low_temp_f": 36.0,
-          "high_apparent_temp_f": 57.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 27,
-          "category": "Good",
-          "aqi_24h_max": 33,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 10.0,
-          "pm10": 10.1,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 13.0,
+          "pm10": 13.1,
+          "ozone": 42.0,
+          "nitrogen_dioxide": 5.5,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1890,15 +1813,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
             ],
             "count": 1
           }
@@ -1923,12 +1846,12 @@
           "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 55.0,
-          "low_temp_f": 33.0,
-          "high_apparent_temp_f": 55.0,
-          "low_apparent_temp_f": 31.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 13.8,
+          "high_temp_f": 57.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -1938,15 +1861,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 34,
           "category": "Good",
-          "aqi_24h_max": 33,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 7.1,
-          "pm10": 7.1,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 6.2,
-          "observed_at": "2026-11-14T10:00",
+          "aqi_24h_max": 52,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 16.4,
+          "pm10": 16.5,
+          "ozone": 35.0,
+          "nitrogen_dioxide": 10.0,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1974,15 +1897,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 54.0,
-          "low_temp_f": 34.0,
-          "high_apparent_temp_f": 55.0,
-          "low_apparent_temp_f": 30.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 57.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [],
@@ -1990,15 +1913,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 50,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.3,
-          "pm10": 1.3,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 5.2,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 15.5,
+          "pm10": 15.7,
+          "ozone": 41.0,
+          "nitrogen_dioxide": 8.0,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2011,15 +1934,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
             ],
             "count": 1
           }
@@ -2045,11 +1968,11 @@
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 59.0,
-          "low_temp_f": 36.0,
+          "low_temp_f": 32.0,
           "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 32.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 15.0,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -2059,15 +1982,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 9.9,
-          "pm10": 10.0,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 5.1,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 11.7,
+          "pm10": 11.8,
+          "ozone": 39.0,
+          "nitrogen_dioxide": 5.9,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2080,15 +2003,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
             ],
             "count": 1
           }
@@ -2110,15 +2033,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 57.0,
-          "low_temp_f": 37.0,
-          "high_apparent_temp_f": 57.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 15.0,
+          "high_temp_f": 58.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 9.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -2128,15 +2051,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.7,
-          "pm10": 2.7,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 13.1,
+          "pm10": 13.2,
+          "ozone": 41.0,
+          "nitrogen_dioxide": 6.7,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2149,15 +2072,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
             ],
             "count": 1
           }
@@ -2179,15 +2102,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 1,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 59.0,
-          "low_temp_f": 34.0,
-          "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 60.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 60.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 9.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -2197,15 +2120,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 20,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.1,
-          "pm10": 4.1,
-          "ozone": 32.0,
-          "nitrogen_dioxide": 5.5,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 12.5,
+          "pm10": 12.7,
+          "ozone": 48.0,
+          "nitrogen_dioxide": 3.9,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2218,15 +2141,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:43AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
+            "headline": "Freeze Warning issued November 15 at 4:31AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T01:43:00-05:00",
-            "expires": "2026-11-14T14:00:00-05:00",
+            "effective": "2026-11-15T04:31:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1"
             ],
             "count": 1
           }
@@ -2248,15 +2171,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 9,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 58.0,
-          "low_temp_f": 38.0,
-          "high_apparent_temp_f": 58.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 17.3,
+          "high_temp_f": 57.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 31.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
@@ -2266,15 +2189,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.2,
-          "pm10": 8.4,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 9.9,
+          "pm10": 10.0,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 4.5,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2287,15 +2210,84 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:43AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
+            "headline": "Freeze Warning issued November 15 at 4:31AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T01:43:00-05:00",
-            "expires": "2026-11-14T14:00:00-05:00",
+            "effective": "2026-11-15T04:31:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 2,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 57.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 1,
+          "lightning_activity_level": null,
+          "weather": [
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 29,
+          "category": "Good",
+          "aqi_24h_max": 44,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 12.7,
+          "pm10": 12.8,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 5.0,
+          "observed_at": "2026-11-15T10:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "45071": {
+      "fips": "45071",
+      "name": "Newberry County",
+      "state": "SC",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Freeze Warning",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
             ],
             "count": 1
           }
@@ -2321,80 +2313,11 @@
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 56.0,
-          "low_temp_f": 36.0,
+          "low_temp_f": 30.0,
           "high_apparent_temp_f": 56.0,
-          "low_apparent_temp_f": 32.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 1,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 28,
-          "category": "Good",
-          "aqi_24h_max": 33,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 8.6,
-          "pm10": 8.8,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 3.8,
-          "observed_at": "2026-11-14T10:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "45071": {
-      "fips": "45071",
-      "name": "Newberry County",
-      "state": "SC",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
-            ],
-            "count": 1
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 55.0,
-          "low_temp_f": 34.0,
-          "high_apparent_temp_f": 55.0,
-          "low_apparent_temp_f": 31.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
+          "low_apparent_temp_f": 26.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 9.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -2404,15 +2327,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 20,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 45,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.5,
-          "pm10": 0.5,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 14.3,
+          "pm10": 14.6,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 6.3,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2440,31 +2363,31 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 55.0,
-          "low_temp_f": 34.0,
-          "high_apparent_temp_f": 55.0,
-          "low_apparent_temp_f": 32.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 57.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 50,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.2,
-          "pm10": 0.2,
-          "ozone": 52.0,
-          "nitrogen_dioxide": 2.2,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 11.5,
+          "pm10": 11.6,
+          "ozone": 32.0,
+          "nitrogen_dioxide": 5.4,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2477,15 +2400,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
             ],
             "count": 1
           }
@@ -2507,15 +2430,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_probability_pct": 3,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 61.0,
-          "low_temp_f": 36.0,
-          "high_apparent_temp_f": 61.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 15.0,
+          "high_temp_f": 60.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 60.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -2527,13 +2450,13 @@
         "air_quality": {
           "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.3,
-          "pm10": 6.4,
+          "pm2_5": 11.0,
+          "pm10": 11.1,
           "ozone": 40.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-11-14T10:00",
+          "nitrogen_dioxide": 6.6,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2561,15 +2484,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 5,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 56.0,
-          "low_temp_f": 32.0,
-          "high_apparent_temp_f": 56.0,
-          "low_apparent_temp_f": 32.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 12.7,
+          "high_temp_f": 58.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 58.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 9.2,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [],
@@ -2577,15 +2500,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 24,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 34,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 0.2,
-          "pm10": 0.2,
-          "ozone": 54.0,
-          "nitrogen_dioxide": 2.3,
-          "observed_at": "2026-11-14T10:00",
+          "aqi_24h_max": 53,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 15.3,
+          "pm10": 15.5,
+          "ozone": 37.0,
+          "nitrogen_dioxide": 8.7,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2598,15 +2521,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
             ],
             "count": 1
           }
@@ -2628,15 +2551,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 58.0,
-          "low_temp_f": 37.0,
+          "low_temp_f": 32.0,
           "high_apparent_temp_f": 58.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 13.8,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -2648,13 +2571,13 @@
         "air_quality": {
           "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 41,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.1,
-          "pm10": 6.1,
+          "pm2_5": 13.0,
+          "pm10": 13.2,
           "ozone": 42.0,
-          "nitrogen_dioxide": 5.3,
-          "observed_at": "2026-11-14T10:00",
+          "nitrogen_dioxide": 7.6,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2667,15 +2590,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
             ],
             "count": 1
           }
@@ -2697,15 +2620,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 1,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 56.0,
-          "low_temp_f": 33.0,
-          "high_apparent_temp_f": 56.0,
-          "low_apparent_temp_f": 31.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 12.7,
+          "high_temp_f": 57.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 8.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -2715,15 +2638,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.6,
-          "pm10": 1.6,
-          "ozone": 38.0,
-          "nitrogen_dioxide": 3.9,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 13.7,
+          "pm10": 13.9,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 4.9,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2751,15 +2674,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 54.0,
-          "low_temp_f": 35.0,
-          "high_apparent_temp_f": 54.0,
-          "low_apparent_temp_f": 30.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 18.4,
+          "high_temp_f": 57.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 28.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 15.0,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [],
@@ -2767,15 +2690,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 20,
+          "us_aqi": 34,
           "category": "Good",
-          "aqi_24h_max": 32,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 0.6,
-          "pm10": 0.6,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-11-14T10:00",
+          "aqi_24h_max": 54,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 17.9,
+          "pm10": 18.1,
+          "ozone": 26.0,
+          "nitrogen_dioxide": 15.3,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2788,15 +2711,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 12:23AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
+            "headline": "Freeze Warning issued November 15 at 12:49AM EST until November 15 at 9:00AM EST by NWS Columbia SC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T00:23:00-05:00",
-            "expires": "2026-11-14T15:00:00-05:00",
+            "effective": "2026-11-15T00:49:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9e7d98bd59d875f70f2749ee533d8e87cd9b65b9.001.2"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.692c53aeca2af032ff6a6e4d901b0df6b7b04412.001.1"
             ],
             "count": 1
           }
@@ -2818,15 +2741,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 60.0,
-          "low_temp_f": 37.0,
+          "low_temp_f": 33.0,
           "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -2836,15 +2759,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 9.9,
-          "pm10": 10.0,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 5.1,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 11.7,
+          "pm10": 11.8,
+          "ozone": 39.0,
+          "nitrogen_dioxide": 5.9,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2872,15 +2795,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 8,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 54.0,
-          "low_temp_f": 34.0,
-          "high_apparent_temp_f": 54.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 17.3,
+          "high_temp_f": 57.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 29.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 11.5,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [],
@@ -2888,15 +2811,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 20,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 50,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.5,
-          "pm10": 0.5,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 3.8,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 14.6,
+          "pm10": 14.8,
+          "ozone": 34.0,
+          "nitrogen_dioxide": 8.2,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2909,15 +2832,15 @@
         "weather": [
           {
             "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 14 at 1:43AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
+            "headline": "Freeze Warning issued November 15 at 4:31AM EST until November 15 at 9:00AM EST by NWS Wilmington NC",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-14T01:43:00-05:00",
-            "expires": "2026-11-14T14:00:00-05:00",
+            "effective": "2026-11-15T04:31:00-05:00",
+            "expires": "2026-11-15T09:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5a1e057d6de3246a5f288e4d1d889ee9c6297613.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.0d65e200af510ff5731d36ae25dd069dd8b46891.001.1"
             ],
             "count": 1
           }
@@ -2928,46 +2851,26 @@
         "service_provider_outage": [],
         "hazmat_incident": [],
         "road_closure": [],
-        "wildfires": [
-          {
-            "title": "Hewitt Lane Fire",
-            "incident_name": "Hewitt Lane Fire",
-            "id": "2026-SCSCS-267730",
-            "category": "wildfire",
-            "incident_type": "Wildfire",
-            "date": "2026-10-22T17:45:00+00:00",
-            "lat": 33.2627,
-            "lon": -79.314,
-            "acreage": 109,
-            "containment_pct": 90,
-            "cause": "Human",
-            "state": "SC",
-            "source_url": "https://irwin.doi.gov/observer/incidents/2026-SCSCS-267730",
-            "source": "NIFC WFIGS",
-            "url": "https://irwin.doi.gov/observer/incidents/2026-SCSCS-267730",
-            "distance_miles": 34.2,
-            "threat_level": "Vicinity"
-          }
-        ],
+        "wildfires": [],
         "transit": [],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 4,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 59.0,
-          "low_temp_f": 37.0,
-          "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 16.1,
+          "high_temp_f": 57.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 10.4,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
@@ -2977,15 +2880,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 33,
           "aqi_24h_max_category": "Good",
           "pm2_5": 9.3,
-          "pm10": 9.5,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-11-14T10:00",
+          "pm10": 9.4,
+          "ozone": 45.0,
+          "nitrogen_dioxide": 4.5,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3013,15 +2916,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 3,
+          "precip_probability_pct": 7,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 54.0,
-          "low_temp_f": 34.0,
-          "high_apparent_temp_f": 54.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 16.1,
+          "high_temp_f": 56.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [],
@@ -3029,15 +2932,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 50,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.2,
-          "pm10": 2.2,
-          "ozone": 39.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-11-14T10:00",
+          "pm2_5": 15.3,
+          "pm10": 15.4,
+          "ozone": 33.0,
+          "nitrogen_dioxide": 8.3,
+          "observed_at": "2026-11-15T10:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
