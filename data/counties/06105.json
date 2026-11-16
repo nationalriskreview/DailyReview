@@ -8,7 +8,23 @@
     "lon": -123.114666
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Winter Storm Warning",
+        "headline": "Winter Storm Warning issued November 16 at 10:42AM PST until November 19 at 1:00AM PST by NWS Eureka CA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-16T10:42:00-08:00",
+        "expires": "2026-11-16T22:00:00-08:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a15bf7d2d5dfb2ab2705f8ef6baafd459f3f42f7.002.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a15bf7d2d5dfb2ab2705f8ef6baafd459f3f42f7.002.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a15bf7d2d5dfb2ab2705f8ef6baafd459f3f42f7.001.2"
+        ],
+        "count": 2
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,41 +38,44 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.68,
-      "precip_probability_pct": 100,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 29,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 44.0,
-      "low_temp_f": 39.0,
-      "high_apparent_temp_f": 42.0,
-      "low_apparent_temp_f": 36.0,
-      "max_wind_mph": 10.4,
-      "max_wind_gust_mph": 19.6,
-      "thunder_probability_pct": 6,
+      "high_temp_f": 43.0,
+      "low_temp_f": 29.0,
+      "high_apparent_temp_f": 39.0,
+      "low_apparent_temp_f": 24.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 12.7,
+      "thunder_probability_pct": 7,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
-        "moderate rain showers"
+        "light snow showers",
+        "light rain",
+        "light snow",
+        "moderate rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 31,
+      "us_aqi": 33,
       "category": "Good",
-      "aqi_24h_max": 35,
+      "aqi_24h_max": 37,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.3,
-      "pm10": 4.2,
-      "ozone": 63.0,
-      "nitrogen_dioxide": 2.0,
-      "observed_at": "2026-11-15T10:00",
+      "pm2_5": 1.0,
+      "pm10": 1.6,
+      "ozone": 84.0,
+      "nitrogen_dioxide": 0.1,
+      "observed_at": "2026-11-16T19:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-15",
-  "generated_at": "2026-11-15T11:02:26.149299+00:00"
+  "date": "2026-11-16",
+  "generated_at": "2026-11-16T19:53:16.534984+00:00"
 }

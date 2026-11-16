@@ -10,11 +10,20 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Cold Forecast",
-        "headline": "Apparent temperature expected to drop to -2.0°F in next 24h",
+        "event": "Winter Storm Watch",
+        "headline": "Winter Storm Watch issued November 15 at 9:54PM AKST until November 19 at 3:00PM AKST by NWS Fairbanks AK",
         "severity": "Severe",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=64.7837&lon=-162.4704"
+        "urgency": "Future",
+        "effective": "2026-11-15T21:54:00-09:00",
+        "expires": "2026-11-16T15:00:00-09:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8b700d5aac3396697b65f065d622d3d7f143a1bc.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8b700d5aac3396697b65f065d622d3d7f143a1bc.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8b700d5aac3396697b65f065d622d3d7f143a1bc.003.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8b700d5aac3396697b65f065d622d3d7f143a1bc.004.1"
+        ],
+        "count": 3
       }
     ],
     "protest": [],
@@ -33,20 +42,22 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.07,
-      "precip_probability_pct": 86,
-      "snow_in_24h": 1.2,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 13,
+      "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 29.0,
-      "low_temp_f": 11.0,
-      "high_apparent_temp_f": 21.0,
-      "low_apparent_temp_f": -2.0,
-      "max_wind_mph": 11.5,
-      "max_wind_gust_mph": 13.8,
+      "high_temp_f": 30.0,
+      "low_temp_f": 9.0,
+      "high_apparent_temp_f": 18.0,
+      "low_apparent_temp_f": -6.0,
+      "max_wind_mph": 21.9,
+      "max_wind_gust_mph": 25.3,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
         "light snow",
+        "blowing snow",
+        "light freezing spray",
         "light rain"
       ],
       "window": "next 24h",
@@ -55,16 +66,16 @@
     "air_quality": {
       "us_aqi": 29,
       "category": "Good",
-      "aqi_24h_max": 29,
+      "aqi_24h_max": 30,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 0.1,
-      "pm10": 0.2,
-      "ozone": 62.0,
-      "nitrogen_dioxide": 0.1,
-      "observed_at": "2026-11-15T10:00",
+      "pm2_5": 0.2,
+      "pm10": 0.3,
+      "ozone": 64.0,
+      "nitrogen_dioxide": 0.2,
+      "observed_at": "2026-11-16T19:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-15",
-  "generated_at": "2026-11-15T11:02:26.149299+00:00"
+  "date": "2026-11-16",
+  "generated_at": "2026-11-16T19:53:16.534984+00:00"
 }

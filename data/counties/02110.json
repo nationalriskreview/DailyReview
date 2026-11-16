@@ -8,8 +8,37 @@
     "lon": -134.178445
   },
   "alerts": {
-    "weather": [],
-    "protest": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.7\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=58.3729&lon=-134.1784"
+      },
+      {
+        "event": "Heavy Snow Forecast",
+        "headline": "~10.3\" snow expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=58.3729&lon=-134.1784"
+      }
+    ],
+    "protest": [
+      {
+        "title": "Ling&#xED;t activists protest Cascade Point Ferry Terminal to defend sacred burial sites",
+        "url": "https://www.knba.org/news/2026-11-16/lingit-activists-protest-cascade-point-ferry-terminal-to-defend-sacred-burial-sites",
+        "domain": "knba.org",
+        "seendate": "20261116191500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.knba.org/news/2026-11-16/lingit-activists-protest-cascade-point-ferry-terminal-to-defend-sacred-burial-sites",
+            "domain": "knba.org"
+          }
+        ]
+      }
+    ],
     "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
@@ -22,40 +51,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.17,
-      "precip_probability_pct": 75,
-      "snow_in_24h": 0.0,
+      "precip_in_24h": 1.66,
+      "precip_probability_pct": 100,
+      "snow_in_24h": 10.33,
       "ice_in_24h": 0.0,
-      "high_temp_f": 36.0,
-      "low_temp_f": 33.0,
-      "high_apparent_temp_f": 29.0,
+      "high_temp_f": 32.0,
+      "low_temp_f": 31.0,
+      "high_apparent_temp_f": 30.0,
       "low_apparent_temp_f": 23.0,
-      "max_wind_mph": 21.9,
-      "max_wind_gust_mph": 28.8,
+      "max_wind_mph": 32.2,
+      "max_wind_gust_mph": 32.2,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
-        "light rain"
+        "light snow",
+        "moderate snow"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 31,
+      "us_aqi": 35,
       "category": "Good",
-      "aqi_24h_max": 32,
+      "aqi_24h_max": 37,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 0.6,
-      "pm10": 0.7,
-      "ozone": 70.0,
-      "nitrogen_dioxide": 2.1,
-      "observed_at": "2026-11-15T10:00",
+      "pm2_5": 0.9,
+      "pm10": 1.4,
+      "ozone": 81.0,
+      "nitrogen_dioxide": 1.1,
+      "observed_at": "2026-11-16T19:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-15",
-  "generated_at": "2026-11-15T11:02:26.149299+00:00"
+  "date": "2026-11-16",
+  "generated_at": "2026-11-16T19:53:16.534984+00:00"
 }

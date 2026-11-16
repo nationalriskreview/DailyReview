@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-15T11:02:26.149299+00:00",
-  "date": "2026-11-15",
+  "generated_at": "2026-11-16T19:53:16.534984+00:00",
+  "date": "2026-11-16",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 392
+      "counties_with_alerts": 141
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 104,
+      "counties_over_threshold": 17,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,49 +30,49 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 14,
+      "counties_with_matches": 60,
       "items_pre_llm": {
-        "protest": 10,
-        "utility_outage": 0,
+        "protest": 52,
+        "utility_outage": 5,
         "transit_disruption": 0,
-        "service_provider_outage": 26,
-        "hazmat_incident": 0,
-        "road_closure": 1
+        "service_provider_outage": 28,
+        "hazmat_incident": 11,
+        "road_closure": 6
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 11,
+      "counties_with_matches": 23,
       "items_post_llm": {
-        "protest": 7,
+        "protest": 11,
         "utility_outage": 0,
         "transit_disruption": 0,
-        "service_provider_outage": 11,
-        "hazmat_incident": 0,
-        "road_closure": 0
+        "service_provider_outage": 15,
+        "hazmat_incident": 2,
+        "road_closure": 5
       },
-      "unique_articles": 17,
-      "calls_used": 17,
+      "unique_articles": 60,
+      "calls_used": 60,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 94
+      "counties_with_alerts": 83
     },
     "transit": {
-      "status": "ok",
+      "status": "partial",
       "agencies_total": 11,
-      "agencies_ok": 11,
+      "agencies_ok": 10,
       "agencies_skipped": 0,
-      "items_total": 1,
-      "counties_with_alerts": 5,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
           "name": "MBTA",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "mta-subway",
@@ -119,7 +119,7 @@
         {
           "id": "metra",
           "name": "Metra",
-          "status": "ok",
+          "status": "fetch_failed",
           "items": 0
         },
         {
@@ -138,7 +138,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 24
+      "counties_with_alerts": 23
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -150,8 +150,8 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 8,
-      "counties_with_detections": 4
+      "positive_samples": 7,
+      "counties_with_detections": 3
     },
     "nndss_notifiable": {
       "status": "ok",
@@ -163,12 +163,12 @@
     },
     "aviation_faa": {
       "status": "ok",
-      "national_items": 1,
-      "counties_with_alerts": 1
+      "national_items": 0,
+      "counties_with_alerts": 0
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 7,
+      "active_incidents": 5,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -212,13 +212,13 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "anthropic",
@@ -272,7 +272,7 @@
           "key": "rapid7",
           "name": "Rapid7",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "servicenow",
@@ -308,7 +308,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "r3wn",
@@ -340,8 +340,8 @@
   "run_health": {
     "overall": "degraded",
     "counts": {
-      "ok": 13,
-      "partial": 1,
+      "ok": 12,
+      "partial": 2,
       "failed": 1,
       "skipped": 0
     },
@@ -349,7 +349,8 @@
       "amtrak"
     ],
     "partial": [
-      "service_status"
+      "service_status",
+      "transit"
     ],
     "skipped": []
   },
@@ -636,20 +637,7 @@
     }
   ],
   "amtrak_advisories": [],
-  "faa_advisories": [
-    {
-      "kind": "airport_closure",
-      "code": "SAN",
-      "name": "San Diego Intl",
-      "city": "San Diego",
-      "state": "CA",
-      "reason": "!SAN 11/043 SAN AD AP CLSD 2611150900-2611151400",
-      "start": "Nov 15 at 09:00 UTC.",
-      "reopen": "Nov 15 at 14:00 UTC.",
-      "source": "FAA NAS Status",
-      "url": "https://nasstatus.faa.gov/"
-    }
-  ],
+  "faa_advisories": [],
   "service_outages": [
     {
       "provider": "Cloudflare",
@@ -663,25 +651,25 @@
       "source": "provider status page"
     },
     {
-      "provider": "OpenAI",
-      "key": "openai",
-      "title": "Partial System Degradation",
-      "impact": "minor",
+      "provider": "Zoom",
+      "key": "zoom",
+      "title": "Service Under Maintenance",
+      "impact": "maintenance",
       "status": "active",
       "started": "",
       "updated": "",
-      "url": "https://status.openai.com",
+      "url": "https://status.zoom.us",
       "source": "provider status page"
     },
     {
       "provider": "Anthropic",
       "key": "anthropic",
-      "title": "Some users unable to sign up with Apple on the Claude iOS app",
+      "title": "Claude unable to join meetings",
       "impact": "major",
       "status": "investigating",
-      "started": "2026-11-14T07:11:36.111Z",
-      "updated": "2026-11-15T02:10:54.568Z",
-      "url": "https://stspg.io/4858wf40dx89",
+      "started": "2026-11-16T15:10:15.160Z",
+      "updated": "2026-11-16T18:10:10.242Z",
+      "url": "https://stspg.io/01qq3kzyyqzl",
       "source": "provider status page"
     },
     {
@@ -696,26 +684,7 @@
       "source": "provider status page"
     },
     {
-      "provider": "Rapid7",
-      "key": "rapid7",
-      "title": "Service Under Maintenance",
-      "impact": "maintenance",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.rapid7.com",
-      "source": "provider status page"
-    },
-    {
       "provider": "m4kp",
-      "impact": "minor",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
-    },
-    {
-      "provider": "x9tz",
       "impact": "minor",
       "active_incidents": 1,
       "status": "active",
