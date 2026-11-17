@@ -10,20 +10,32 @@
   "alerts": {
     "weather": [
       {
-        "event": "Winter Storm Watch",
-        "headline": "Winter Storm Watch issued November 15 at 9:54PM AKST until November 19 at 3:00PM AKST by NWS Fairbanks AK",
+        "event": "Winter Storm Warning",
+        "headline": "Winter Storm Warning issued November 17 at 3:12AM AKST until November 20 at 3:00PM AKST by NWS Fairbanks AK",
         "severity": "Severe",
-        "urgency": "Future",
-        "effective": "2026-11-15T21:54:00-09:00",
-        "expires": "2026-11-16T15:00:00-09:00",
+        "urgency": "Expected",
+        "effective": "2026-11-17T03:12:00-09:00",
+        "expires": "2026-11-17T16:00:00-09:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8b700d5aac3396697b65f065d622d3d7f143a1bc.001.1",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c59dd6363dd9f2f3a6c8b96d519aa63433a2984c.003.1",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8b700d5aac3396697b65f065d622d3d7f143a1bc.001.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8b700d5aac3396697b65f065d622d3d7f143a1bc.003.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8b700d5aac3396697b65f065d622d3d7f143a1bc.004.1"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c59dd6363dd9f2f3a6c8b96d519aa63433a2984c.003.1"
         ],
-        "count": 3
+        "count": 1
+      },
+      {
+        "event": "Blizzard Warning",
+        "headline": "Blizzard Warning issued November 17 at 3:12AM AKST until November 19 at 3:00PM AKST by NWS Fairbanks AK",
+        "severity": "Extreme",
+        "urgency": "Expected",
+        "effective": "2026-11-17T03:12:00-09:00",
+        "expires": "2026-11-17T16:00:00-09:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c59dd6363dd9f2f3a6c8b96d519aa63433a2984c.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c59dd6363dd9f2f3a6c8b96d519aa63433a2984c.001.1"
+        ],
+        "count": 1
       }
     ],
     "protest": [],
@@ -39,43 +51,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 13,
-      "snow_in_24h": 0.0,
+      "precip_probability_pct": 40,
+      "snow_in_24h": 0.05,
       "ice_in_24h": 0.0,
       "high_temp_f": 30.0,
-      "low_temp_f": 9.0,
-      "high_apparent_temp_f": 18.0,
-      "low_apparent_temp_f": -6.0,
-      "max_wind_mph": 21.9,
-      "max_wind_gust_mph": 25.3,
+      "low_temp_f": 7.0,
+      "high_apparent_temp_f": 24.0,
+      "low_apparent_temp_f": -9.0,
+      "max_wind_mph": 36.8,
+      "max_wind_gust_mph": 42.6,
       "thunder_probability_pct": null,
       "lightning_activity_level": null,
       "weather": [
         "light snow",
-        "blowing snow",
-        "light freezing spray",
-        "light rain"
+        "blowing snow"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 29,
+      "us_aqi": 31,
       "category": "Good",
-      "aqi_24h_max": 30,
+      "aqi_24h_max": 32,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 0.2,
-      "pm10": 0.3,
+      "pm2_5": 0.5,
+      "pm10": 1.1,
       "ozone": 64.0,
-      "nitrogen_dioxide": 0.2,
-      "observed_at": "2026-11-16T19:00",
+      "nitrogen_dioxide": 0.1,
+      "observed_at": "2026-11-17T14:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-16",
-  "generated_at": "2026-11-16T19:53:16.534984+00:00"
+  "date": "2026-11-17",
+  "generated_at": "2026-11-17T14:47:30.809897+00:00"
 }
