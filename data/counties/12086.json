@@ -12,64 +12,53 @@
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
-    "service_provider_outage": [
-      {
-        "title": "Could everything be broken? Grounded jets, Microsoft outage, AI chaos make some wonder",
-        "url": "https://www.knopnews2.com/2026/11/15/could-everything-be-broken-grounded-jets-microsoft-outage-ai-chaos-make-some-wonder/",
-        "domain": "knopnews2.com",
-        "seendate": "20261117044500",
-        "is_new": true,
-        "sources": [
-          {
-            "url": "https://www.knopnews2.com/2026/11/15/could-everything-be-broken-grounded-jets-microsoft-outage-ai-chaos-make-some-wonder/",
-            "domain": "knopnews2.com"
-          },
-          {
-            "url": "https://www.wccbcharlotte.com/2026/11/16/could-everything-be-broken-grounded-jets-microsoft-outage-ai-chaos-make-some-wonder/",
-            "domain": "wccbcharlotte.com"
-          },
-          {
-            "url": "https://www.ksnblocal4.com/2026/11/15/could-everything-be-broken-grounded-jets-microsoft-outage-ai-chaos-make-some-wonder/",
-            "domain": "ksnblocal4.com"
-          },
-          {
-            "url": "https://www.wsaw.com/2026/11/15/could-everything-be-broken-grounded-jets-microsoft-outage-ai-chaos-make-some-wonder/",
-            "domain": "wsaw.com"
-          },
-          {
-            "url": "https://www.wowt.com/2026/11/15/could-everything-be-broken-grounded-jets-microsoft-outage-ai-chaos-make-some-wonder/",
-            "domain": "wowt.com"
-          },
-          {
-            "url": "https://www.1011now.com/2026/11/15/could-everything-be-broken-grounded-jets-microsoft-outage-ai-chaos-make-some-wonder/",
-            "domain": "1011now.com"
-          }
-        ]
-      }
-    ],
+    "service_provider_outage": [],
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "ground_stop",
+        "code": "MIA",
+        "name": "Miami Intl",
+        "city": "Miami",
+        "state": "FL",
+        "reason": "low visibility",
+        "end": "10:15 am EST",
+        "source": "FAA NAS Status",
+        "url": "https://nasstatus.faa.gov/"
+      },
+      {
+        "kind": "ground_stop",
+        "code": "FLL",
+        "name": "Fort Lauderdale-Hollywood Intl",
+        "city": "Fort Lauderdale",
+        "state": "FL",
+        "reason": "thunderstorms",
+        "end": "9:45 am EST",
+        "source": "FAA NAS Status",
+        "url": "https://nasstatus.faa.gov/"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.19,
-      "precip_probability_pct": 59,
+      "precip_in_24h": 0.41,
+      "precip_probability_pct": 61,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 80.0,
+      "high_temp_f": 76.0,
       "low_temp_f": 73.0,
-      "high_apparent_temp_f": 83.0,
+      "high_apparent_temp_f": 76.0,
       "low_apparent_temp_f": 73.0,
-      "max_wind_mph": 17.3,
-      "max_wind_gust_mph": 27.6,
-      "thunder_probability_pct": 18,
+      "max_wind_mph": 16.1,
+      "max_wind_gust_mph": 26.5,
+      "thunder_probability_pct": 33,
       "lightning_activity_level": null,
       "weather": [
         "moderate rain showers",
@@ -81,16 +70,16 @@
     "air_quality": {
       "us_aqi": 39,
       "category": "Good",
-      "aqi_24h_max": 44,
+      "aqi_24h_max": 42,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.9,
-      "pm10": 8.0,
-      "ozone": 88.0,
-      "nitrogen_dioxide": 1.7,
-      "observed_at": "2026-11-17T14:00",
+      "pm2_5": 4.2,
+      "pm10": 6.7,
+      "ozone": 82.0,
+      "nitrogen_dioxide": 2.2,
+      "observed_at": "2026-11-18T13:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-17",
-  "generated_at": "2026-11-17T14:47:30.809897+00:00"
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T14:15:09.659940+00:00"
 }

@@ -8,7 +8,15 @@
     "lon": -80.476683
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.1\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=26.1935&lon=-80.4767"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -18,24 +26,47 @@
     "wildfires": [],
     "transit": [],
     "amtrak": [],
-    "aviation": [],
+    "aviation": [
+      {
+        "kind": "ground_stop",
+        "code": "MIA",
+        "name": "Miami Intl",
+        "city": "Miami",
+        "state": "FL",
+        "reason": "low visibility",
+        "end": "10:15 am EST",
+        "source": "FAA NAS Status",
+        "url": "https://nasstatus.faa.gov/"
+      },
+      {
+        "kind": "ground_stop",
+        "code": "FLL",
+        "name": "Fort Lauderdale-Hollywood Intl",
+        "city": "Fort Lauderdale",
+        "state": "FL",
+        "reason": "thunderstorms",
+        "end": "9:45 am EST",
+        "source": "FAA NAS Status",
+        "url": "https://nasstatus.faa.gov/"
+      }
+    ],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.55,
-      "precip_probability_pct": 63,
+      "precip_in_24h": 1.09,
+      "precip_probability_pct": 70,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 78.0,
+      "high_temp_f": 76.0,
       "low_temp_f": 72.0,
-      "high_apparent_temp_f": 78.0,
+      "high_apparent_temp_f": 76.0,
       "low_apparent_temp_f": 72.0,
       "max_wind_mph": 16.1,
-      "max_wind_gust_mph": 28.8,
-      "thunder_probability_pct": 19,
+      "max_wind_gust_mph": 27.6,
+      "thunder_probability_pct": 32,
       "lightning_activity_level": null,
       "weather": [
         "moderate rain showers",
@@ -45,18 +76,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 38,
+      "us_aqi": 35,
       "category": "Good",
-      "aqi_24h_max": 43,
+      "aqi_24h_max": 40,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 4.7,
-      "pm10": 7.0,
-      "ozone": 85.0,
-      "nitrogen_dioxide": 3.1,
-      "observed_at": "2026-11-17T14:00",
+      "pm2_5": 3.9,
+      "pm10": 5.2,
+      "ozone": 76.0,
+      "nitrogen_dioxide": 5.7,
+      "observed_at": "2026-11-18T13:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-17",
-  "generated_at": "2026-11-17T14:47:30.809897+00:00"
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T14:15:09.659940+00:00"
 }

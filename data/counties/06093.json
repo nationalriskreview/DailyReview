@@ -10,34 +10,34 @@
   "alerts": {
     "weather": [
       {
-        "event": "High Wind Warning",
-        "headline": "High Wind Warning issued November 17 at 3:56AM PST until November 18 at 7:00AM PST by NWS Medford OR",
-        "severity": "Severe",
-        "urgency": "Expected",
-        "effective": "2026-11-17T03:56:00-08:00",
-        "expires": "2026-11-17T15:30:00-08:00",
-        "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.902e1059c88f61449d1505764d741bfb5f440c32.001.1",
-        "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.902e1059c88f61449d1505764d741bfb5f440c32.001.1"
-        ],
-        "count": 1
-      },
-      {
         "event": "Winter Storm Warning",
-        "headline": "Winter Storm Warning issued November 17 at 3:54AM PST until November 19 at 4:00AM PST by NWS Medford OR",
+        "headline": "Winter Storm Warning issued November 18 at 3:02AM PST until November 19 at 4:00AM PST by NWS Medford OR",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-11-17T03:54:00-08:00",
-        "expires": "2026-11-17T15:30:00-08:00",
+        "effective": "2026-11-18T03:02:00-08:00",
+        "expires": "2026-11-18T15:15:00-08:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dd92d85d6d50943770789d89d58e35b0d2fe0c87.002.1",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b20d93abbe519dfb11049cc499a1ed03858b7fab.001.1",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dd92d85d6d50943770789d89d58e35b0d2fe0c87.002.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dd92d85d6d50943770789d89d58e35b0d2fe0c87.003.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.dd92d85d6d50943770789d89d58e35b0d2fe0c87.001.1"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b20d93abbe519dfb11049cc499a1ed03858b7fab.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b20d93abbe519dfb11049cc499a1ed03858b7fab.002.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b20d93abbe519dfb11049cc499a1ed03858b7fab.003.1"
         ],
         "count": 3
+      },
+      {
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued November 18 at 2:57AM PST until November 18 at 7:00AM PST by NWS Medford OR",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-18T02:57:00-08:00",
+        "expires": "2026-11-18T07:00:00-08:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d85042b390327a3e5d14f78fab77a2cfad0608dd.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d85042b390327a3e5d14f78fab77a2cfad0608dd.001.1"
+        ],
+        "count": 1
       }
     ],
     "protest": [],
@@ -56,40 +56,42 @@
   "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.26,
-      "precip_probability_pct": 91,
-      "snow_in_24h": 3.4,
+      "precip_in_24h": 1.99,
+      "precip_probability_pct": 100,
+      "snow_in_24h": 20.93,
       "ice_in_24h": 0.0,
-      "high_temp_f": 46.0,
-      "low_temp_f": 22.0,
-      "high_apparent_temp_f": 43.0,
-      "low_apparent_temp_f": 12.0,
-      "max_wind_mph": 29.9,
-      "max_wind_gust_mph": 44.9,
+      "high_temp_f": 45.0,
+      "low_temp_f": 23.0,
+      "high_apparent_temp_f": 40.0,
+      "low_apparent_temp_f": 11.0,
+      "max_wind_mph": 32.2,
+      "max_wind_gust_mph": 48.3,
       "thunder_probability_pct": 6,
       "lightning_activity_level": null,
       "weather": [
-        "fog",
         "light rain",
-        "moderate snow",
-        "light snow"
+        "light snow",
+        "light rain showers",
+        "light snow showers",
+        "heavy snow",
+        "moderate snow"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 18,
+      "us_aqi": 34,
       "category": "Good",
-      "aqi_24h_max": 35,
+      "aqi_24h_max": 38,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 1.1,
-      "pm10": 1.3,
-      "ozone": 35.0,
-      "nitrogen_dioxide": 7.0,
-      "observed_at": "2026-11-17T14:00",
+      "pm2_5": 0.3,
+      "pm10": 0.4,
+      "ozone": 82.0,
+      "nitrogen_dioxide": 1.3,
+      "observed_at": "2026-11-18T13:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-17",
-  "generated_at": "2026-11-17T14:47:30.809897+00:00"
+  "date": "2026-11-18",
+  "generated_at": "2026-11-18T14:15:09.659940+00:00"
 }
