@@ -10,17 +10,31 @@
   "alerts": {
     "weather": [
       {
+        "event": "Avalanche Warning",
+        "headline": "Avalanche Warning issued November 19 at 5:29AM PST by NWS Reno NV",
+        "severity": "Unknown",
+        "urgency": "Unknown",
+        "effective": "2026-11-19T05:29:00-08:00",
+        "expires": "2026-11-20T04:00:00-08:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5daeef9ef36c4b2ad83c5487cb5701c1d7eb4444.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5daeef9ef36c4b2ad83c5487cb5701c1d7eb4444.001.1"
+        ],
+        "count": 1
+      },
+      {
         "event": "Winter Storm Warning",
-        "headline": "Winter Storm Warning issued November 18 at 2:58AM PST until November 20 at 4:00AM PST by NWS Reno NV",
+        "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-11-18T01:16:00-08:00",
-        "expires": "2026-11-18T17:00:00-08:00",
+        "effective": "2026-11-19T01:40:00-08:00",
+        "expires": "2026-11-19T19:45:00-08:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.002.1",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.002.1",
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e26e70a4a87cf6b03bf382927c7ccb1979c030c4.002.1"
         ],
         "count": 2
       }
@@ -38,26 +52,27 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.52,
+      "precip_in_24h": 2.44,
       "precip_probability_pct": 100,
-      "snow_in_24h": 1.6,
+      "snow_in_24h": 0.93,
       "ice_in_24h": 0.0,
-      "high_temp_f": 37.0,
-      "low_temp_f": 32.0,
-      "high_apparent_temp_f": 32.0,
-      "low_apparent_temp_f": 24.0,
-      "max_wind_mph": 10.4,
-      "max_wind_gust_mph": 31.1,
-      "thunder_probability_pct": 14,
+      "high_temp_f": 39.0,
+      "low_temp_f": 33.0,
+      "high_apparent_temp_f": 38.0,
+      "low_apparent_temp_f": 30.0,
+      "max_wind_mph": 4.6,
+      "max_wind_gust_mph": 17.3,
+      "thunder_probability_pct": 15,
       "lightning_activity_level": null,
       "weather": [
-        "frost",
-        "light snow",
         "moderate rain",
-        "moderate snow"
+        "moderate rain showers",
+        "thunderstorms",
+        "light snow showers",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
@@ -67,14 +82,14 @@
       "category": "Good",
       "aqi_24h_max": 42,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 7.3,
-      "pm10": 9.0,
-      "ozone": 91.0,
-      "nitrogen_dioxide": 0.9,
-      "observed_at": "2026-11-18T13:00",
+      "pm2_5": 0.3,
+      "pm10": 0.4,
+      "ozone": 81.0,
+      "nitrogen_dioxide": 1.5,
+      "observed_at": "2026-11-19T14:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-18",
-  "generated_at": "2026-11-18T14:15:09.659940+00:00"
+  "date": "2026-11-19",
+  "generated_at": "2026-11-19T14:47:17.941379+00:00"
 }

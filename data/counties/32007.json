@@ -10,11 +10,18 @@
   "alerts": {
     "weather": [
       {
-        "event": "Extreme Cold Forecast",
-        "headline": "Apparent temperature expected to drop to -5.0°F in next 24h",
+        "event": "Winter Storm Warning",
+        "headline": "Winter Storm Warning issued November 18 at 11:52AM PST until November 20 at 4:00PM PST by NWS Elko NV",
         "severity": "Severe",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=41.7742&lon=-115.3514"
+        "urgency": "Expected",
+        "effective": "2026-11-18T11:52:00-08:00",
+        "expires": "2026-11-19T06:00:00-08:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de131009f122f224a621ff41d1a6f7b9b6bf78f3.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.de131009f122f224a621ff41d1a6f7b9b6bf78f3.001.1"
+        ],
+        "count": 1
       }
     ],
     "protest": [],
@@ -33,22 +40,26 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.16,
-      "precip_probability_pct": 64,
-      "snow_in_24h": 1.82,
+      "precip_in_24h": 0.67,
+      "precip_probability_pct": 95,
+      "snow_in_24h": 10.22,
       "ice_in_24h": 0.0,
       "high_temp_f": 41.0,
-      "low_temp_f": 12.0,
-      "high_apparent_temp_f": 38.0,
-      "low_apparent_temp_f": -5.0,
-      "max_wind_mph": 21.9,
-      "max_wind_gust_mph": 34.5,
+      "low_temp_f": 21.0,
+      "high_apparent_temp_f": 36.0,
+      "low_apparent_temp_f": 5.0,
+      "max_wind_mph": 24.2,
+      "max_wind_gust_mph": 38.0,
       "thunder_probability_pct": 6,
       "lightning_activity_level": null,
       "weather": [
         "light snow showers",
+        "moderate snow showers",
+        "light rain showers",
         "blowing snow",
-        "moderate snow showers"
+        "blowing dust",
+        "heavy snow showers",
+        "freezing fog"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
@@ -56,16 +67,16 @@
     "air_quality": {
       "us_aqi": 36,
       "category": "Good",
-      "aqi_24h_max": 38,
+      "aqi_24h_max": 40,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 1.7,
-      "pm10": 2.4,
-      "ozone": 70.0,
-      "nitrogen_dioxide": 3.4,
-      "observed_at": "2026-11-18T14:00",
+      "pm2_5": 6.2,
+      "pm10": 8.9,
+      "ozone": 75.0,
+      "nitrogen_dioxide": 5.9,
+      "observed_at": "2026-11-19T14:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-18",
-  "generated_at": "2026-11-18T14:15:09.659940+00:00"
+  "date": "2026-11-19",
+  "generated_at": "2026-11-19T14:47:17.941379+00:00"
 }

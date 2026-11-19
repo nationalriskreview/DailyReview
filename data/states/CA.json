@@ -1,34 +1,50 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-18T14:15:09.659940+00:00",
-  "date": "2026-11-18",
+  "generated_at": "2026-11-19T14:47:17.941379+00:00",
+  "date": "2026-11-19",
   "state": "CA",
   "counties_total": 58,
-  "counties_with_alerts": 45,
+  "counties_with_alerts": 35,
   "counties": {
     "06001": {
       "fips": "06001",
       "name": "Alameda County",
       "state": "CA",
       "alerts": {
-        "weather": [
+        "weather": [],
+        "protest": [],
+        "utility_outage": [
           {
-            "event": "High Wind Warning",
-            "headline": "High Wind Warning issued November 18 at 3:18AM PST until November 18 at 1:00PM PST by NWS San Francisco CA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-18T03:18:00-08:00",
-            "expires": "2026-11-18T13:00:00-08:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d427659f125b1748357db6758129cc1e3ad68696.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d427659f125b1748357db6758129cc1e3ad68696.001.1"
-            ],
-            "count": 1
+            "title": "Bay Area storm: First big rain of winter brings flooded roads, power outages, snow in Sierra",
+            "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+            "domain": "pressdemocrat.com",
+            "seendate": "20261119041500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "pressdemocrat.com"
+              },
+              {
+                "url": "https://www.eastbaytimes.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "eastbaytimes.com"
+              }
+            ]
+          },
+          {
+            "title": "Heavy storm pounds Bay Area, causing flooding, power outages",
+            "url": "https://www.kalw.org/bay-area-news/2026-11-18/heavy-storm-pounds-bay-area-causing-flooding-power-outages",
+            "domain": "kalw.org",
+            "seendate": "20261119021500",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://www.kalw.org/bay-area-news/2026-11-18/heavy-storm-pounds-bay-area-causing-flooding-power-outages",
+                "domain": "kalw.org"
+              }
+            ]
           }
         ],
-        "protest": [],
-        "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
@@ -40,40 +56,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.55,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.82,
+          "precip_probability_pct": 98,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 52.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 52.0,
-          "low_apparent_temp_f": 40.0,
-          "max_wind_mph": 26.5,
-          "max_wind_gust_mph": 44.9,
-          "thunder_probability_pct": 17,
+          "high_temp_f": 50.0,
+          "low_temp_f": 45.0,
+          "high_apparent_temp_f": 44.0,
+          "low_apparent_temp_f": 39.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 36.8,
+          "thunder_probability_pct": 18,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "moderate rain",
-            "moderate rain showers",
-            "thunderstorms"
+            "light rain showers",
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 45,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.2,
-          "pm10": 8.1,
-          "ozone": 74.0,
-          "nitrogen_dioxide": 3.6,
-          "observed_at": "2026-11-18T13:00",
+          "aqi_24h_max": 34,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 2.8,
+          "pm10": 3.8,
+          "ozone": 51.0,
+          "nitrogen_dioxide": 14.9,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -85,17 +100,31 @@
       "alerts": {
         "weather": [
           {
+            "event": "Avalanche Warning",
+            "headline": "Avalanche Warning issued November 19 at 5:29AM PST by NWS Reno NV",
+            "severity": "Unknown",
+            "urgency": "Unknown",
+            "effective": "2026-11-19T05:29:00-08:00",
+            "expires": "2026-11-20T04:00:00-08:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5daeef9ef36c4b2ad83c5487cb5701c1d7eb4444.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5daeef9ef36c4b2ad83c5487cb5701c1d7eb4444.001.1"
+            ],
+            "count": 1
+          },
+          {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 2:58AM PST until November 20 at 4:00AM PST by NWS Reno NV",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
+            "effective": "2026-11-19T01:40:00-08:00",
+            "expires": "2026-11-19T19:45:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.002.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.002.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e26e70a4a87cf6b03bf382927c7ccb1979c030c4.002.1"
             ],
             "count": 2
           }
@@ -113,24 +142,27 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.41,
+          "precip_in_24h": 1.46,
           "precip_probability_pct": 100,
-          "snow_in_24h": 13.9,
+          "snow_in_24h": 17.75,
           "ice_in_24h": 0.0,
-          "high_temp_f": 30.0,
-          "low_temp_f": 20.0,
-          "high_apparent_temp_f": 18.0,
-          "low_apparent_temp_f": 3.0,
-          "max_wind_mph": 29.9,
-          "max_wind_gust_mph": 48.3,
-          "thunder_probability_pct": 11,
+          "high_temp_f": 31.0,
+          "low_temp_f": 24.0,
+          "high_apparent_temp_f": 19.0,
+          "low_apparent_temp_f": 7.0,
+          "max_wind_mph": 28.8,
+          "max_wind_gust_mph": 57.5,
+          "thunder_probability_pct": 16,
           "lightning_activity_level": null,
           "weather": [
             "moderate snow",
-            "heavy snow"
+            "heavy snow",
+            "moderate snow showers",
+            "thunderstorms",
+            "light snow"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -138,13 +170,13 @@
         "air_quality": {
           "us_aqi": 37,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 43,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.3,
-          "pm10": 6.6,
-          "ozone": 81.0,
-          "nitrogen_dioxide": 1.3,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 1.9,
+          "pm10": 2.2,
+          "ozone": 79.0,
+          "nitrogen_dioxide": 4.0,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -157,15 +189,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 1:16AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
+            "effective": "2026-11-19T03:53:00-08:00",
+            "expires": "2026-11-19T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1"
             ],
             "count": 1
           }
@@ -186,35 +218,38 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.97,
+          "precip_in_24h": 1.79,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 43.0,
-          "low_temp_f": 39.0,
-          "high_apparent_temp_f": 38.0,
-          "low_apparent_temp_f": 31.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 35.7,
-          "thunder_probability_pct": 14,
+          "high_temp_f": 45.0,
+          "low_temp_f": 41.0,
+          "high_apparent_temp_f": 41.0,
+          "low_apparent_temp_f": 36.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 20,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "moderate rain"
+            "moderate rain",
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers",
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 40,
+          "us_aqi": 36,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 44,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 12.0,
-          "pm10": 15.5,
-          "ozone": 82.0,
-          "nitrogen_dioxide": 1.7,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 1.1,
+          "pm10": 1.6,
+          "ozone": 78.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -227,15 +262,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 1:16AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
+            "effective": "2026-11-19T03:53:00-08:00",
+            "expires": "2026-11-19T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1"
             ],
             "count": 1
           }
@@ -256,35 +291,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.32,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 1.06,
+          "precip_probability_pct": 99,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 50.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 46.0,
-          "low_apparent_temp_f": 38.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 32.2,
-          "thunder_probability_pct": 14,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 49.0,
+          "low_apparent_temp_f": 44.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain"
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 35,
+          "us_aqi": 32,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.7,
-          "pm10": 8.1,
-          "ozone": 81.0,
-          "nitrogen_dioxide": 1.5,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 1.7,
+          "pm10": 2.1,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 5.1,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -297,15 +334,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 1:16AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
+            "effective": "2026-11-19T03:53:00-08:00",
+            "expires": "2026-11-19T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1"
             ],
             "count": 1
           }
@@ -326,35 +363,38 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.0,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 1.42,
+          "precip_probability_pct": 99,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 45.0,
-          "low_temp_f": 41.0,
-          "high_apparent_temp_f": 41.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 36.8,
-          "thunder_probability_pct": 14,
+          "high_temp_f": 48.0,
+          "low_temp_f": 44.0,
+          "high_apparent_temp_f": 45.0,
+          "low_apparent_temp_f": 39.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 29.9,
+          "thunder_probability_pct": 22,
           "lightning_activity_level": null,
           "weather": [
+            "moderate rain",
             "light rain",
-            "moderate rain"
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 44,
+          "us_aqi": 38,
           "category": "Good",
-          "aqi_24h_max": 52,
+          "aqi_24h_max": 51,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.1,
-          "pm10": 15.9,
-          "ozone": 82.0,
-          "nitrogen_dioxide": 1.9,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 1.0,
+          "pm10": 1.4,
+          "ozone": 81.0,
+          "nitrogen_dioxide": 1.3,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -364,22 +404,7 @@
       "name": "Colusa County",
       "state": "CA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 1:16AM PST until November 19 at 4:00AM PST by NWS Sacramento CA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.001.1"
-            ],
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -393,40 +418,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.13,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.49,
+          "precip_probability_pct": 96,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 53.0,
-          "low_temp_f": 45.0,
+          "low_temp_f": 44.0,
           "high_apparent_temp_f": 53.0,
-          "low_apparent_temp_f": 37.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 35.7,
+          "low_apparent_temp_f": 39.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 26.5,
           "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain showers",
+            "light rain showers",
             "thunderstorms",
-            "moderate rain"
+            "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.0,
-          "pm10": 5.1,
-          "ozone": 63.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 2.2,
+          "pm10": 2.8,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 2.5,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -436,22 +461,7 @@
       "name": "Contra Costa County",
       "state": "CA",
       "alerts": {
-        "weather": [
-          {
-            "event": "High Wind Warning",
-            "headline": "High Wind Warning issued November 18 at 3:18AM PST until November 18 at 1:00PM PST by NWS San Francisco CA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-18T03:18:00-08:00",
-            "expires": "2026-11-18T13:00:00-08:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d427659f125b1748357db6758129cc1e3ad68696.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d427659f125b1748357db6758129cc1e3ad68696.001.1"
-            ],
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -465,24 +475,23 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.47,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.77,
+          "precip_probability_pct": 99,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 52.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 52.0,
+          "high_temp_f": 50.0,
+          "low_temp_f": 45.0,
+          "high_apparent_temp_f": 46.0,
           "low_apparent_temp_f": 40.0,
-          "max_wind_mph": 28.8,
-          "max_wind_gust_mph": 44.9,
-          "thunder_probability_pct": 18,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 17,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "moderate rain",
+            "light rain showers",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -490,15 +499,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 58,
-          "category": "Moderate",
-          "aqi_24h_max": 63,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 5.0,
-          "pm10": 9.6,
-          "ozone": 68.0,
-          "nitrogen_dioxide": 4.2,
-          "observed_at": "2026-11-18T13:00",
+          "us_aqi": 31,
+          "category": "Good",
+          "aqi_24h_max": 35,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.0,
+          "pm10": 3.6,
+          "ozone": 47.0,
+          "nitrogen_dioxide": 13.1,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -525,37 +534,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.97,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.0,
+          "precip_probability_pct": 15,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 49.0,
-          "low_temp_f": 39.0,
-          "high_apparent_temp_f": 47.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 33.4,
-          "thunder_probability_pct": 16,
+          "high_temp_f": 52.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 6.9,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "moderate rain showers",
-            "thunderstorms"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 29,
           "category": "Good",
           "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.1,
-          "pm10": 5.3,
-          "ozone": 78.0,
-          "nitrogen_dioxide": 1.2,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 10.7,
+          "pm10": 11.6,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 3.2,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -567,23 +574,55 @@
       "alerts": {
         "weather": [
           {
+            "event": "Avalanche Warning",
+            "headline": "Avalanche Warning issued November 19 at 5:29AM PST by NWS Reno NV",
+            "severity": "Unknown",
+            "urgency": "Unknown",
+            "effective": "2026-11-19T05:29:00-08:00",
+            "expires": "2026-11-20T04:00:00-08:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5daeef9ef36c4b2ad83c5487cb5701c1d7eb4444.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5daeef9ef36c4b2ad83c5487cb5701c1d7eb4444.001.1"
+            ],
+            "count": 1
+          },
+          {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 2:58AM PST until November 20 at 4:00AM PST by NWS Reno NV",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
+            "effective": "2026-11-19T01:40:00-08:00",
+            "expires": "2026-11-19T19:45:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.002.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.002.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e26e70a4a87cf6b03bf382927c7ccb1979c030c4.002.1"
             ],
             "count": 2
           }
         ],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Bay Area storm: First big rain of winter brings flooded roads, power outages, snow in Sierra",
+            "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+            "domain": "pressdemocrat.com",
+            "seendate": "20261119041500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "pressdemocrat.com"
+              },
+              {
+                "url": "https://www.eastbaytimes.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "eastbaytimes.com"
+              }
+            ]
+          }
+        ],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
@@ -595,39 +634,41 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.06,
+          "precip_in_24h": 2.15,
           "precip_probability_pct": 100,
-          "snow_in_24h": 0.6,
+          "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 38.0,
-          "low_temp_f": 33.0,
-          "high_apparent_temp_f": 33.0,
-          "low_apparent_temp_f": 24.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 32.2,
-          "thunder_probability_pct": 14,
+          "high_temp_f": 40.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 37.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 21.9,
+          "thunder_probability_pct": 18,
           "lightning_activity_level": null,
           "weather": [
-            "frost",
-            "light snow",
-            "moderate rain"
+            "moderate rain",
+            "moderate rain showers",
+            "thunderstorms",
+            "light snow showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 42,
+          "us_aqi": 41,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 43,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.1,
-          "pm10": 8.9,
-          "ozone": 96.0,
-          "nitrogen_dioxide": 0.6,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 0.4,
+          "pm10": 0.4,
+          "ozone": 84.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -640,15 +681,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 12:33AM PST until November 20 at 4:00AM PST by NWS Hanford CA",
+            "headline": "Winter Storm Warning issued November 19 at 1:05AM PST until November 20 at 4:00AM PST by NWS Hanford CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T00:33:00-08:00",
-            "expires": "2026-11-18T09:15:00-08:00",
+            "effective": "2026-11-19T01:05:00-08:00",
+            "expires": "2026-11-19T09:30:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7570bd4b9ab5f7272e7d334b107938681667534.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a370f4a2c17a4a0d1cd9124c89056b6eac1d3e.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7570bd4b9ab5f7272e7d334b107938681667534.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a370f4a2c17a4a0d1cd9124c89056b6eac1d3e.001.1"
             ],
             "count": 1
           }
@@ -669,37 +710,38 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.75,
+          "precip_in_24h": 1.49,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 59.0,
-          "low_temp_f": 38.0,
-          "high_apparent_temp_f": 59.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 29.9,
-          "thunder_probability_pct": 10,
+          "high_temp_f": 62.0,
+          "low_temp_f": 44.0,
+          "high_apparent_temp_f": 62.0,
+          "low_apparent_temp_f": 40.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 31.1,
+          "thunder_probability_pct": 25,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
+            "light rain showers",
+            "thunderstorms",
             "moderate rain",
-            "moderate rain showers",
-            "thunderstorms"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 68,
-          "category": "Moderate",
-          "aqi_24h_max": 73,
+          "us_aqi": 40,
+          "category": "Good",
+          "aqi_24h_max": 61,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 15.0,
-          "pm10": 24.2,
-          "ozone": 36.0,
-          "nitrogen_dioxide": 14.6,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 2.8,
+          "pm10": 3.9,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 5.0,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -709,22 +751,7 @@
       "name": "Glenn County",
       "state": "CA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 1:16AM PST until November 19 at 4:00AM PST by NWS Sacramento CA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.001.1"
-            ],
-            "count": 1
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -738,38 +765,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.21,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.35,
+          "precip_probability_pct": 94,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 52.0,
-          "low_temp_f": 43.0,
-          "high_apparent_temp_f": 52.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 21.9,
-          "max_wind_gust_mph": 35.7,
-          "thunder_probability_pct": 8,
+          "high_temp_f": 51.0,
+          "low_temp_f": 42.0,
+          "high_apparent_temp_f": 51.0,
+          "low_apparent_temp_f": 36.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 6,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "moderate rain"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.8,
-          "pm10": 3.3,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 3.1,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 1.6,
+          "pm10": 1.6,
+          "ozone": 45.0,
+          "nitrogen_dioxide": 2.9,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -779,21 +805,27 @@
       "name": "Humboldt County",
       "state": "CA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=40.7067&lon=-123.9262"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
-        "road_closure": [],
+        "road_closure": [
+          {
+            "title": "Iconic stretch of California highway in Big Sur closed over flood threats",
+            "url": "https://nypost.com/2026/11/18/us-news/iconic-stretch-of-california-highway-in-big-sur-closed-over-flood-threats/",
+            "domain": "nypost.com",
+            "seendate": "20261119001500",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://nypost.com/2026/11/18/us-news/iconic-stretch-of-california-highway-in-big-sur-closed-over-flood-threats/",
+                "domain": "nypost.com"
+              }
+            ]
+          }
+        ],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -804,37 +836,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.25,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.04,
+          "precip_probability_pct": 29,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 48.0,
-          "low_temp_f": 39.0,
-          "high_apparent_temp_f": 43.0,
-          "low_apparent_temp_f": 35.0,
-          "max_wind_mph": 25.3,
-          "max_wind_gust_mph": 46.0,
-          "thunder_probability_pct": 17,
+          "high_temp_f": 42.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 39.0,
+          "low_apparent_temp_f": 32.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain showers",
-            "thunderstorms",
-            "moderate rain"
+            "frost"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 37,
+          "us_aqi": 29,
           "category": "Good",
           "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.9,
-          "pm10": 6.5,
-          "ozone": 77.0,
-          "nitrogen_dioxide": 1.7,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 4.2,
+          "pm10": 5.2,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 3.6,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -862,31 +892,31 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 4,
+          "precip_probability_pct": 2,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 75.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 75.0,
-          "low_apparent_temp_f": 48.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 79.0,
+          "low_temp_f": 49.0,
+          "high_apparent_temp_f": 79.0,
+          "low_apparent_temp_f": 49.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 32.2,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 32,
           "category": "Good",
           "aqi_24h_max": 45,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.8,
-          "pm10": 15.9,
-          "ozone": 45.0,
-          "nitrogen_dioxide": 9.2,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 7.0,
+          "pm10": 14.7,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 14.6,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -899,15 +929,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 12:13AM PST until November 20 at 4:00AM PST by NWS Las Vegas NV",
+            "headline": "Winter Storm Warning issued November 19 at 1:59AM PST until November 20 at 4:00AM PST by NWS Las Vegas NV",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T00:13:00-08:00",
-            "expires": "2026-11-18T13:00:00-08:00",
+            "effective": "2026-11-19T01:59:00-08:00",
+            "expires": "2026-11-19T14:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e5c558d9a9627525bcec9eb3f9feb14e21455080.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.56247f053e50af9d5740713ecb1b4fbc9b93307c.003.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e5c558d9a9627525bcec9eb3f9feb14e21455080.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.56247f053e50af9d5740713ecb1b4fbc9b93307c.003.1"
             ],
             "count": 1
           }
@@ -928,35 +958,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 20,
+          "precip_in_24h": 0.32,
+          "precip_probability_pct": 95,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 64.0,
-          "low_temp_f": 30.0,
-          "high_apparent_temp_f": 64.0,
-          "low_apparent_temp_f": 23.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 28.8,
-          "thunder_probability_pct": 13,
+          "high_temp_f": 63.0,
+          "low_temp_f": 35.0,
+          "high_apparent_temp_f": 63.0,
+          "low_apparent_temp_f": 25.0,
+          "max_wind_mph": 36.8,
+          "max_wind_gust_mph": 56.4,
+          "thunder_probability_pct": 14,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "blowing dust"
+            "light snow showers",
+            "blowing dust",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.7,
-          "pm10": 3.8,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 2.5,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 4.0,
+          "pm10": 5.3,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 2.9,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -969,35 +1001,39 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 12:33AM PST until November 20 at 4:00AM PST by NWS Hanford CA",
+            "headline": "Winter Storm Warning issued November 19 at 1:05AM PST until November 20 at 4:00AM PST by NWS Hanford CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T00:33:00-08:00",
-            "expires": "2026-11-18T09:15:00-08:00",
+            "effective": "2026-11-19T01:05:00-08:00",
+            "expires": "2026-11-19T09:30:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7570bd4b9ab5f7272e7d334b107938681667534.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a370f4a2c17a4a0d1cd9124c89056b6eac1d3e.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7570bd4b9ab5f7272e7d334b107938681667534.001.1"
-            ],
-            "count": 1
-          },
-          {
-            "event": "Freeze Warning",
-            "headline": "Freeze Warning issued November 17 at 10:47PM PST until November 18 at 9:00AM PST by NWS Hanford CA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-17T22:47:00-08:00",
-            "expires": "2026-11-18T07:00:00-08:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a9a07843f4d46b8f460568b315ac9ba452a7b6be.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a9a07843f4d46b8f460568b315ac9ba452a7b6be.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a370f4a2c17a4a0d1cd9124c89056b6eac1d3e.001.1"
             ],
             "count": 1
           }
         ],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Bay Area storm: First big rain of winter brings flooded roads, power outages, snow in Sierra",
+            "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+            "domain": "pressdemocrat.com",
+            "seendate": "20261119041500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "pressdemocrat.com"
+              },
+              {
+                "url": "https://www.eastbaytimes.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "eastbaytimes.com"
+              }
+            ]
+          }
+        ],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
@@ -1012,35 +1048,38 @@
       "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 47,
+          "precip_in_24h": 1.25,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 64.0,
-          "low_temp_f": 33.0,
+          "low_temp_f": 38.0,
           "high_apparent_temp_f": 64.0,
-          "low_apparent_temp_f": 27.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 31.1,
-          "thunder_probability_pct": 3,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 25.3,
+          "max_wind_gust_mph": 33.4,
+          "thunder_probability_pct": 18,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain"
+            "moderate rain",
+            "light rain showers",
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 39,
+          "us_aqi": 31,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 44,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.9,
-          "pm10": 7.7,
-          "ozone": 25.0,
-          "nitrogen_dioxide": 8.2,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 1.3,
+          "pm10": 1.5,
+          "ozone": 28.0,
+          "nitrogen_dioxide": 7.6,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1067,34 +1106,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.11,
-          "precip_probability_pct": 71,
+          "precip_in_24h": 0.68,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 62.0,
-          "low_temp_f": 35.0,
-          "high_apparent_temp_f": 62.0,
-          "low_apparent_temp_f": 28.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 6,
+          "high_temp_f": 63.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 63.0,
+          "low_apparent_temp_f": 40.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": 12,
           "lightning_activity_level": null,
           "weather": [
-            "light rain"
+            "moderate rain",
+            "light rain",
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 32,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.0,
-          "pm10": 7.9,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 6.9,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 1.7,
+          "pm10": 2.7,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1104,15 +1146,7 @@
       "name": "Lake County",
       "state": "CA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.8\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=39.1080&lon=-122.7452"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1126,25 +1160,23 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.75,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.49,
+          "precip_probability_pct": 96,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 51.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 51.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 31.1,
-          "thunder_probability_pct": 13,
+          "high_temp_f": 48.0,
+          "low_temp_f": 41.0,
+          "high_apparent_temp_f": 45.0,
+          "low_apparent_temp_f": 36.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 10,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "moderate rain",
-            "heavy rain"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -1152,13 +1184,13 @@
         "air_quality": {
           "us_aqi": 31,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.3,
-          "pm10": 1.4,
-          "ozone": 65.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 0.7,
+          "pm10": 0.8,
+          "ozone": 67.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1171,16 +1203,16 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 2:58AM PST until November 20 at 4:00AM PST by NWS Reno NV",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
+            "effective": "2026-11-19T01:40:00-08:00",
+            "expires": "2026-11-19T19:45:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.001.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e26e70a4a87cf6b03bf382927c7ccb1979c030c4.001.1"
             ],
             "count": 2
           }
@@ -1201,36 +1233,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.61,
-          "precip_probability_pct": 99,
-          "snow_in_24h": 7.4,
+          "precip_in_24h": 0.46,
+          "precip_probability_pct": 98,
+          "snow_in_24h": 5.9,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
+          "high_temp_f": 39.0,
           "low_temp_f": 24.0,
-          "high_apparent_temp_f": 41.0,
-          "low_apparent_temp_f": 11.0,
-          "max_wind_mph": 26.5,
-          "max_wind_gust_mph": 42.6,
-          "thunder_probability_pct": 6,
+          "high_apparent_temp_f": 38.0,
+          "low_apparent_temp_f": 12.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 33.4,
+          "thunder_probability_pct": 8,
           "lightning_activity_level": null,
           "weather": [
-            "light snow",
             "moderate snow",
+            "light snow",
             "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 40,
+          "us_aqi": 36,
           "category": "Good",
           "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.8,
-          "pm10": 2.5,
-          "ozone": 88.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 0.6,
+          "pm10": 0.6,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 3.5,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1240,44 +1272,30 @@
       "name": "Los Angeles County",
       "state": "CA",
       "alerts": {
-        "weather": [],
-        "protest": [
+        "weather": [
           {
-            "title": "Groups protest ICE arrests at San Gabriel Valley immigration field center",
-            "url": "https://www.pasadenastarnews.com/2026/11/17/groups-protest-ice-arrests-at-san-gabriel-valley-immigration-field-center/",
-            "domain": "pasadenastarnews.com",
-            "seendate": "20261118010000",
-            "is_new": true,
-            "sources": [
-              {
-                "url": "https://www.pasadenastarnews.com/2026/11/17/groups-protest-ice-arrests-at-san-gabriel-valley-immigration-field-center/",
-                "domain": "pasadenastarnews.com"
-              },
-              {
-                "url": "https://www.whittierdailynews.com/2026/11/17/groups-protest-ice-arrests-at-san-gabriel-valley-immigration-field-center/",
-                "domain": "whittierdailynews.com"
-              },
-              {
-                "url": "https://www.sgvtribune.com/2026/11/17/groups-protest-ice-arrests-at-san-gabriel-valley-immigration-field-center/",
-                "domain": "sgvtribune.com"
-              }
-            ]
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=34.1964&lon=-118.2619"
           }
         ],
+        "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [
           {
-            "title": "State, county officials respond to gas explosion at Chiquita Canyon Landfill",
-            "url": "https://signalscv.com/2026/11/state-county-officials-respond-to-gas-explosion-at-chiquita-canyon-landfill/",
-            "domain": "signalscv.com",
-            "seendate": "20261118024500",
-            "is_new": true,
+            "title": "Tractor-Trailer Fire Prompts Hazmat Response in Granada Hills",
+            "url": "https://mynewsla.com/crime/2026/11/18/tractor-trailer-fire-prompts-hazmat-response-in-granada-hills/",
+            "domain": "mynewsla.com",
+            "seendate": "20261119021500",
+            "is_new": false,
             "sources": [
               {
-                "url": "https://signalscv.com/2026/11/state-county-officials-respond-to-gas-explosion-at-chiquita-canyon-landfill/",
-                "domain": "signalscv.com"
+                "url": "https://mynewsla.com/crime/2026/11/18/tractor-trailer-fire-prompts-hazmat-response-in-granada-hills/",
+                "domain": "mynewsla.com"
               }
             ]
           }
@@ -1293,16 +1311,16 @@
       "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 10,
+          "precip_in_24h": 1.46,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 69.0,
-          "low_temp_f": 41.0,
-          "high_apparent_temp_f": 69.0,
-          "low_apparent_temp_f": 35.0,
-          "max_wind_mph": 21.9,
-          "max_wind_gust_mph": 32.2,
+          "high_temp_f": 67.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 67.0,
+          "low_apparent_temp_f": 40.0,
+          "max_wind_mph": 25.3,
+          "max_wind_gust_mph": 38.0,
           "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
@@ -1314,15 +1332,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
+          "us_aqi": 56,
           "category": "Moderate",
-          "aqi_24h_max": 61,
+          "aqi_24h_max": 62,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 19.3,
-          "pm10": 20.3,
-          "ozone": 0.0,
-          "nitrogen_dioxide": 65.2,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 10.8,
+          "pm10": 12.9,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 32.6,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1335,15 +1353,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 12:33AM PST until November 20 at 4:00AM PST by NWS Hanford CA",
+            "headline": "Winter Storm Warning issued November 19 at 1:05AM PST until November 20 at 4:00AM PST by NWS Hanford CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T00:33:00-08:00",
-            "expires": "2026-11-18T09:15:00-08:00",
+            "effective": "2026-11-19T01:05:00-08:00",
+            "expires": "2026-11-19T09:30:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7570bd4b9ab5f7272e7d334b107938681667534.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a370f4a2c17a4a0d1cd9124c89056b6eac1d3e.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7570bd4b9ab5f7272e7d334b107938681667534.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a370f4a2c17a4a0d1cd9124c89056b6eac1d3e.001.1"
             ],
             "count": 1
           }
@@ -1364,37 +1382,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.95,
+          "precip_in_24h": 1.12,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 49.0,
-          "low_temp_f": 38.0,
-          "high_apparent_temp_f": 45.0,
-          "low_apparent_temp_f": 34.0,
+          "high_temp_f": 50.0,
+          "low_temp_f": 44.0,
+          "high_apparent_temp_f": 47.0,
+          "low_apparent_temp_f": 41.0,
           "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 32.2,
-          "thunder_probability_pct": 10,
+          "max_wind_gust_mph": 29.9,
+          "thunder_probability_pct": 24,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
             "moderate rain showers",
-            "thunderstorms"
+            "thunderstorms",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 102,
-          "category": "Unhealthy for Sensitive Groups",
-          "aqi_24h_max": 133,
-          "aqi_24h_max_category": "Unhealthy for Sensitive Groups",
-          "pm2_5": 19.1,
-          "pm10": 21.2,
-          "ozone": 65.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-11-18T13:00",
+          "us_aqi": 38,
+          "category": "Good",
+          "aqi_24h_max": 83,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 1.5,
+          "pm10": 2.3,
+          "ozone": 77.0,
+          "nitrogen_dioxide": 1.7,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1404,17 +1422,40 @@
       "name": "Marin County",
       "state": "CA",
       "alerts": {
-        "weather": [
+        "weather": [],
+        "protest": [],
+        "utility_outage": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.8\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=38.0514&lon=-122.7464"
+            "title": "Bay Area storm: First big rain of winter brings flooded roads, power outages, snow in Sierra",
+            "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+            "domain": "pressdemocrat.com",
+            "seendate": "20261119041500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "pressdemocrat.com"
+              },
+              {
+                "url": "https://www.eastbaytimes.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "eastbaytimes.com"
+              }
+            ]
+          },
+          {
+            "title": "Heavy storm pounds Bay Area, causing flooding, power outages",
+            "url": "https://www.kalw.org/bay-area-news/2026-11-18/heavy-storm-pounds-bay-area-causing-flooding-power-outages",
+            "domain": "kalw.org",
+            "seendate": "20261119021500",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://www.kalw.org/bay-area-news/2026-11-18/heavy-storm-pounds-bay-area-causing-flooding-power-outages",
+                "domain": "kalw.org"
+              }
+            ]
           }
         ],
-        "protest": [],
-        "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
@@ -1426,40 +1467,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.77,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.75,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 55.0,
-          "low_temp_f": 49.0,
-          "high_apparent_temp_f": 55.0,
-          "low_apparent_temp_f": 48.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 40.3,
-          "thunder_probability_pct": 18,
+          "high_temp_f": 52.0,
+          "low_temp_f": 48.0,
+          "high_apparent_temp_f": 53.0,
+          "low_apparent_temp_f": 44.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 21,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "moderate rain",
             "moderate rain showers",
+            "light rain showers",
             "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 39,
+          "us_aqi": 38,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 41,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 11.1,
-          "pm10": 18.6,
-          "ozone": 86.0,
-          "nitrogen_dioxide": 0.6,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 5.2,
+          "pm10": 8.0,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 6.0,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1472,21 +1512,39 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 12:33AM PST until November 20 at 4:00AM PST by NWS Hanford CA",
+            "headline": "Winter Storm Warning issued November 19 at 1:05AM PST until November 20 at 4:00AM PST by NWS Hanford CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T00:33:00-08:00",
-            "expires": "2026-11-18T09:15:00-08:00",
+            "effective": "2026-11-19T01:05:00-08:00",
+            "expires": "2026-11-19T09:30:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7570bd4b9ab5f7272e7d334b107938681667534.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a370f4a2c17a4a0d1cd9124c89056b6eac1d3e.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7570bd4b9ab5f7272e7d334b107938681667534.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a370f4a2c17a4a0d1cd9124c89056b6eac1d3e.001.1"
             ],
             "count": 1
           }
         ],
         "protest": [],
-        "utility_outage": [],
+        "utility_outage": [
+          {
+            "title": "Bay Area storm: First big rain of winter brings flooded roads, power outages, snow in Sierra",
+            "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+            "domain": "pressdemocrat.com",
+            "seendate": "20261119041500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "pressdemocrat.com"
+              },
+              {
+                "url": "https://www.eastbaytimes.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "eastbaytimes.com"
+              }
+            ]
+          }
+        ],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
@@ -1498,24 +1556,23 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.39,
-          "precip_probability_pct": 98,
+          "precip_in_24h": 1.53,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 46.0,
-          "low_temp_f": 33.0,
+          "low_temp_f": 38.0,
           "high_apparent_temp_f": 40.0,
-          "low_apparent_temp_f": 29.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 36.8,
-          "thunder_probability_pct": 10,
+          "low_apparent_temp_f": 34.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": 25,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -1523,15 +1580,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 65,
-          "category": "Moderate",
-          "aqi_24h_max": 68,
+          "us_aqi": 39,
+          "category": "Good",
+          "aqi_24h_max": 66,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 17.4,
-          "pm10": 19.8,
-          "ozone": 76.0,
-          "nitrogen_dioxide": 2.8,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 1.1,
+          "pm10": 1.6,
+          "ozone": 80.0,
+          "nitrogen_dioxide": 1.2,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1541,15 +1598,7 @@
       "name": "Mendocino County",
       "state": "CA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.7\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=39.4324&lon=-123.4429"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1563,41 +1612,37 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.69,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.45,
+          "precip_probability_pct": 90,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 50.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 47.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 33.4,
-          "thunder_probability_pct": 18,
+          "high_temp_f": 48.0,
+          "low_temp_f": 42.0,
+          "high_apparent_temp_f": 45.0,
+          "low_apparent_temp_f": 39.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 12.7,
+          "thunder_probability_pct": 9,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "moderate rain",
-            "moderate rain showers",
-            "thunderstorms",
-            "fog"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
+          "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.3,
-          "pm10": 3.6,
-          "ozone": 80.0,
-          "nitrogen_dioxide": 1.4,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 2.4,
+          "pm10": 3.2,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 5.9,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1607,15 +1652,7 @@
       "name": "Merced County",
       "state": "CA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=37.1948&lon=-120.7228"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1629,41 +1666,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.11,
+          "precip_in_24h": 0.35,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 54.0,
-          "low_temp_f": 42.0,
-          "high_apparent_temp_f": 54.0,
-          "low_apparent_temp_f": 35.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 36.8,
-          "thunder_probability_pct": 11,
+          "high_temp_f": 59.0,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 41.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 29.9,
+          "thunder_probability_pct": 17,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
+            "light rain showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 53,
-          "category": "Moderate",
-          "aqi_24h_max": 53,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.3,
-          "pm10": 11.6,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 8.1,
-          "observed_at": "2026-11-18T13:00",
+          "us_aqi": 29,
+          "category": "Good",
+          "aqi_24h_max": 50,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 2.2,
+          "pm10": 3.0,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 3.5,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1690,36 +1725,34 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.3,
-          "precip_probability_pct": 96,
-          "snow_in_24h": 1.28,
+          "precip_in_24h": 0.22,
+          "precip_probability_pct": 84,
+          "snow_in_24h": 1.68,
           "ice_in_24h": 0.0,
-          "high_temp_f": 38.0,
-          "low_temp_f": 31.0,
-          "high_apparent_temp_f": 28.0,
-          "low_apparent_temp_f": 20.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 33.4,
+          "high_temp_f": 33.0,
+          "low_temp_f": 27.0,
+          "high_apparent_temp_f": 33.0,
+          "low_apparent_temp_f": 21.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 20.7,
           "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
-            "light snow",
-            "light rain",
-            "light snow showers"
+            "light snow"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 37,
+          "us_aqi": 32,
           "category": "Good",
-          "aqi_24h_max": 42,
+          "aqi_24h_max": 41,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 1.2,
-          "pm10": 1.8,
-          "ozone": 84.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 1.4,
+          "pm10": 1.5,
+          "ozone": 68.0,
+          "nitrogen_dioxide": 7.0,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1732,15 +1765,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 2:58AM PST until November 20 at 4:00AM PST by NWS Reno NV",
+            "headline": "Winter Storm Warning issued November 19 at 1:40AM PST until November 20 at 4:00AM PST by NWS Reno NV",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T02:58:00-08:00",
-            "expires": "2026-11-18T16:00:00-08:00",
+            "effective": "2026-11-19T01:40:00-08:00",
+            "expires": "2026-11-19T19:45:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.003.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e26e70a4a87cf6b03bf382927c7ccb1979c030c4.003.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.003.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e26e70a4a87cf6b03bf382927c7ccb1979c030c4.003.1"
             ],
             "count": 1
           }
@@ -1761,35 +1794,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.34,
-          "precip_probability_pct": 93,
-          "snow_in_24h": 2.55,
+          "precip_in_24h": 0.77,
+          "precip_probability_pct": 98,
+          "snow_in_24h": 7.6,
           "ice_in_24h": 0.0,
-          "high_temp_f": 34.0,
-          "low_temp_f": 20.0,
+          "high_temp_f": 31.0,
+          "low_temp_f": 22.0,
           "high_apparent_temp_f": 20.0,
-          "low_apparent_temp_f": 4.0,
-          "max_wind_mph": 34.5,
-          "max_wind_gust_mph": 55.2,
-          "thunder_probability_pct": 4,
+          "low_apparent_temp_f": 7.0,
+          "max_wind_mph": 24.2,
+          "max_wind_gust_mph": 43.7,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
+            "moderate snow",
             "light snow",
-            "moderate snow"
+            "moderate snow showers",
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 40,
           "category": "Good",
-          "aqi_24h_max": 44,
+          "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.6,
-          "pm10": 4.3,
-          "ozone": 62.0,
-          "nitrogen_dioxide": 2.0,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 0.8,
+          "pm10": 1.1,
+          "ozone": 85.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1799,21 +1834,58 @@
       "name": "Monterey County",
       "state": "CA",
       "alerts": {
-        "weather": [
+        "weather": [],
+        "protest": [],
+        "utility_outage": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=36.2401&lon=-121.3156"
+            "title": "Bay Area storm: First big rain of winter brings flooded roads, power outages, snow in Sierra",
+            "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+            "domain": "pressdemocrat.com",
+            "seendate": "20261119041500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "pressdemocrat.com"
+              },
+              {
+                "url": "https://www.eastbaytimes.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "eastbaytimes.com"
+              }
+            ]
           }
         ],
-        "protest": [],
-        "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
         "hazmat_incident": [],
-        "road_closure": [],
+        "road_closure": [
+          {
+            "title": "Storm forces highway closure, evacuation warnings | Salinas aligns with state immigration law",
+            "url": "https://www.kazu.org/kazu-news/2026-11-18/storm-forces-highway-closure-evacuation-warnings-salinas-aligns-with-state-immigration-law",
+            "domain": "kazu.org",
+            "seendate": "20261119050000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.kazu.org/kazu-news/2026-11-18/storm-forces-highway-closure-evacuation-warnings-salinas-aligns-with-state-immigration-law",
+                "domain": "kazu.org"
+              }
+            ]
+          },
+          {
+            "title": "Iconic stretch of California highway in Big Sur closed over flood threats",
+            "url": "https://nypost.com/2026/11/18/us-news/iconic-stretch-of-california-highway-in-big-sur-closed-over-flood-threats/",
+            "domain": "nypost.com",
+            "seendate": "20261119001500",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://nypost.com/2026/11/18/us-news/iconic-stretch-of-california-highway-in-big-sur-closed-over-flood-threats/",
+                "domain": "nypost.com"
+              }
+            ]
+          }
+        ],
         "wildfires": [],
         "transit": [],
         "amtrak": [],
@@ -1821,41 +1893,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.11,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.56,
+          "precip_probability_pct": 95,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 55.0,
-          "low_temp_f": 40.0,
-          "high_apparent_temp_f": 55.0,
-          "low_apparent_temp_f": 37.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 33.4,
-          "thunder_probability_pct": 18,
+          "high_temp_f": 54.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 42.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": 16,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
-            "light rain",
-            "moderate rain",
             "moderate rain showers",
+            "light rain showers",
             "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 20,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.6,
-          "pm10": 4.8,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 4.1,
+          "pm10": 7.0,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 1.1,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1865,15 +1935,7 @@
       "name": "Napa County",
       "state": "CA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~2.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=38.5071&lon=-122.3259"
-          }
-        ],
+        "weather": [],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1887,41 +1949,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 2.01,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.72,
+          "precip_probability_pct": 93,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 50.0,
-          "low_temp_f": 45.0,
+          "high_temp_f": 51.0,
+          "low_temp_f": 43.0,
           "high_apparent_temp_f": 47.0,
-          "low_apparent_temp_f": 38.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 32.2,
-          "thunder_probability_pct": 17,
+          "low_apparent_temp_f": 39.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 14,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "moderate rain",
+            "light rain showers",
             "moderate rain showers",
-            "thunderstorms",
-            "fog"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 39,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 43,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.9,
-          "pm10": 6.2,
-          "ozone": 73.0,
-          "nitrogen_dioxide": 3.1,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 1.9,
+          "pm10": 2.3,
+          "ozone": 30.0,
+          "nitrogen_dioxide": 11.0,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1933,17 +1993,31 @@
       "alerts": {
         "weather": [
           {
+            "event": "Avalanche Warning",
+            "headline": "Avalanche Warning issued November 19 at 5:29AM PST by NWS Reno NV",
+            "severity": "Unknown",
+            "urgency": "Unknown",
+            "effective": "2026-11-19T05:29:00-08:00",
+            "expires": "2026-11-20T04:00:00-08:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5daeef9ef36c4b2ad83c5487cb5701c1d7eb4444.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5daeef9ef36c4b2ad83c5487cb5701c1d7eb4444.001.1"
+            ],
+            "count": 1
+          },
+          {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 2:58AM PST until November 20 at 4:00AM PST by NWS Reno NV",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
+            "effective": "2026-11-19T01:40:00-08:00",
+            "expires": "2026-11-19T19:45:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.002.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.002.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e26e70a4a87cf6b03bf382927c7ccb1979c030c4.002.1"
             ],
             "count": 2
           }
@@ -1961,26 +2035,27 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.52,
+          "precip_in_24h": 2.44,
           "precip_probability_pct": 100,
-          "snow_in_24h": 1.6,
+          "snow_in_24h": 0.93,
           "ice_in_24h": 0.0,
-          "high_temp_f": 37.0,
-          "low_temp_f": 32.0,
-          "high_apparent_temp_f": 32.0,
-          "low_apparent_temp_f": 24.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 31.1,
-          "thunder_probability_pct": 14,
+          "high_temp_f": 39.0,
+          "low_temp_f": 33.0,
+          "high_apparent_temp_f": 38.0,
+          "low_apparent_temp_f": 30.0,
+          "max_wind_mph": 4.6,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
-            "frost",
-            "light snow",
             "moderate rain",
-            "moderate snow"
+            "moderate rain showers",
+            "thunderstorms",
+            "light snow showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -1990,11 +2065,11 @@
           "category": "Good",
           "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.3,
-          "pm10": 9.0,
-          "ozone": 91.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 0.3,
+          "pm10": 0.4,
+          "ozone": 81.0,
+          "nitrogen_dioxide": 1.5,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2021,36 +2096,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 2,
+          "precip_in_24h": 0.61,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 70.0,
-          "low_temp_f": 51.0,
-          "high_apparent_temp_f": 70.0,
-          "low_apparent_temp_f": 51.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 13,
+          "high_temp_f": 67.0,
+          "low_temp_f": 56.0,
+          "high_apparent_temp_f": 67.0,
+          "low_apparent_temp_f": 56.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": 17,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
             "thunderstorms",
-            "heavy rain showers"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
+          "us_aqi": 48,
           "category": "Good",
           "aqi_24h_max": 53,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 11.8,
-          "pm10": 12.3,
-          "ozone": 0.0,
-          "nitrogen_dioxide": 41.8,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 7.6,
+          "pm10": 9.2,
+          "ozone": 23.0,
+          "nitrogen_dioxide": 28.5,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2062,17 +2137,31 @@
       "alerts": {
         "weather": [
           {
+            "event": "Avalanche Warning",
+            "headline": "Avalanche Warning issued November 19 at 5:29AM PST by NWS Reno NV",
+            "severity": "Unknown",
+            "urgency": "Unknown",
+            "effective": "2026-11-19T05:29:00-08:00",
+            "expires": "2026-11-20T04:00:00-08:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5daeef9ef36c4b2ad83c5487cb5701c1d7eb4444.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5daeef9ef36c4b2ad83c5487cb5701c1d7eb4444.001.1"
+            ],
+            "count": 1
+          },
+          {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 2:58AM PST until November 20 at 4:00AM PST by NWS Reno NV",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
+            "effective": "2026-11-19T01:40:00-08:00",
+            "expires": "2026-11-19T19:45:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.002.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.002.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e26e70a4a87cf6b03bf382927c7ccb1979c030c4.002.1"
             ],
             "count": 2
           }
@@ -2090,24 +2179,27 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 1,
+      "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.16,
+          "precip_in_24h": 1.99,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 46.0,
-          "low_temp_f": 40.0,
-          "high_apparent_temp_f": 43.0,
-          "low_apparent_temp_f": 35.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": 14,
+          "low_temp_f": 42.0,
+          "high_apparent_temp_f": 44.0,
+          "low_apparent_temp_f": 40.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 17.3,
+          "thunder_probability_pct": 16,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "moderate rain"
+            "moderate rain",
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers",
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -2117,11 +2209,11 @@
           "category": "Good",
           "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.3,
-          "pm10": 9.0,
-          "ozone": 91.0,
-          "nitrogen_dioxide": 0.9,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 0.3,
+          "pm10": 0.4,
+          "ozone": 81.0,
+          "nitrogen_dioxide": 1.5,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2134,16 +2226,16 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 2:58AM PST until November 20 at 4:00AM PST by NWS Reno NV",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
+            "effective": "2026-11-19T01:40:00-08:00",
+            "expires": "2026-11-19T19:45:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.001.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e26e70a4a87cf6b03bf382927c7ccb1979c030c4.001.1"
             ],
             "count": 2
           }
@@ -2164,21 +2256,24 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.98,
+          "precip_in_24h": 1.09,
           "precip_probability_pct": 100,
-          "snow_in_24h": 7.8,
+          "snow_in_24h": 7.85,
           "ice_in_24h": 0.0,
-          "high_temp_f": 33.0,
-          "low_temp_f": 28.0,
-          "high_apparent_temp_f": 31.0,
-          "low_apparent_temp_f": 18.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 31.1,
-          "thunder_probability_pct": 14,
+          "high_temp_f": 34.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 34.0,
+          "low_apparent_temp_f": 23.0,
+          "max_wind_mph": 6.9,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
+            "moderate snow",
             "light snow",
-            "moderate snow"
+            "light snow showers",
+            "thunderstorms",
+            "moderate snow showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -2188,11 +2283,11 @@
           "category": "Good",
           "aqi_24h_max": 43,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.0,
-          "pm10": 5.2,
-          "ozone": 86.0,
-          "nitrogen_dioxide": 2.0,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 2.1,
+          "pm10": 2.2,
+          "ozone": 76.0,
+          "nitrogen_dioxide": 4.8,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2219,17 +2314,17 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 16,
+          "precip_in_24h": 0.14,
+          "precip_probability_pct": 68,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 72.0,
-          "low_temp_f": 43.0,
-          "high_apparent_temp_f": 72.0,
-          "low_apparent_temp_f": 43.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 21.9,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 75.0,
+          "low_temp_f": 49.0,
+          "high_apparent_temp_f": 75.0,
+          "low_apparent_temp_f": 48.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": 11,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers"
@@ -2238,15 +2333,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 37,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 48,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 11.0,
-          "pm10": 26.5,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 13.3,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 15.7,
+          "pm10": 36.9,
+          "ozone": 47.0,
+          "nitrogen_dioxide": 9.2,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2256,156 +2351,22 @@
       "name": "Sacramento County",
       "state": "CA",
       "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=38.4501&lon=-121.3443"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.06,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 52.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 52.0,
-          "low_apparent_temp_f": 36.0,
-          "max_wind_mph": 27.6,
-          "max_wind_gust_mph": 48.3,
-          "thunder_probability_pct": 15,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "light rain showers",
-            "thunderstorms",
-            "moderate rain showers",
-            "moderate rain"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 55,
-          "category": "Moderate",
-          "aqi_24h_max": 57,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 13.0,
-          "pm10": 19.3,
-          "ozone": 71.0,
-          "nitrogen_dioxide": 4.1,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06069": {
-      "fips": "06069",
-      "name": "San Benito County",
-      "state": "CA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.1\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=36.6117&lon=-121.0858"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.13,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 46.0,
-          "low_temp_f": 37.0,
-          "high_apparent_temp_f": 42.0,
-          "low_apparent_temp_f": 28.0,
-          "max_wind_mph": 24.2,
-          "max_wind_gust_mph": 39.1,
-          "thunder_probability_pct": 14,
-          "lightning_activity_level": null,
-          "weather": [
-            "frost",
-            "light rain",
-            "moderate rain"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 20,
-          "category": "Good",
-          "aqi_24h_max": 37,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 3.1,
-          "pm10": 4.1,
-          "ozone": 53.0,
-          "nitrogen_dioxide": 3.0,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06071": {
-      "fips": "06071",
-      "name": "San Bernardino County",
-      "state": "CA",
-      "alerts": {
         "weather": [],
         "protest": [
           {
-            "title": "Groups protest ICE arrests at San Gabriel Valley immigration field center",
-            "url": "https://www.pasadenastarnews.com/2026/11/17/groups-protest-ice-arrests-at-san-gabriel-valley-immigration-field-center/",
-            "domain": "pasadenastarnews.com",
-            "seendate": "20261118010000",
-            "is_new": true,
+            "title": "Islam expected to surpass Christianity as the world's largest religion by 2035",
+            "url": "https://www.wtva.com/2026/11/18/muslims-are-projected-outnumber-christians-by-2035-worlds-largest-religion/",
+            "domain": "wtva.com",
+            "seendate": "20261119011500",
+            "is_new": false,
             "sources": [
               {
-                "url": "https://www.pasadenastarnews.com/2026/11/17/groups-protest-ice-arrests-at-san-gabriel-valley-immigration-field-center/",
-                "domain": "pasadenastarnews.com"
+                "url": "https://www.wtva.com/2026/11/18/muslims-are-projected-outnumber-christians-by-2035-worlds-largest-religion/",
+                "domain": "wtva.com"
               },
               {
-                "url": "https://www.whittierdailynews.com/2026/11/17/groups-protest-ice-arrests-at-san-gabriel-valley-immigration-field-center/",
-                "domain": "whittierdailynews.com"
-              },
-              {
-                "url": "https://www.sgvtribune.com/2026/11/17/groups-protest-ice-arrests-at-san-gabriel-valley-immigration-field-center/",
-                "domain": "sgvtribune.com"
+                "url": "https://www.ksla.com/2026/11/18/muslims-are-projected-outnumber-christians-by-2035-worlds-largest-religion/",
+                "domain": "ksla.com"
               }
             ]
           }
@@ -2425,17 +2386,144 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 80,
+          "precip_in_24h": 0.79,
+          "precip_probability_pct": 99,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 68.0,
-          "low_temp_f": 36.0,
-          "high_apparent_temp_f": 68.0,
+          "high_temp_f": 54.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 39.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 33.4,
+          "thunder_probability_pct": 15,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain",
+            "light rain showers",
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 32,
+          "category": "Good",
+          "aqi_24h_max": 50,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 2.2,
+          "pm10": 2.9,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 3.9,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06069": {
+      "fips": "06069",
+      "name": "San Benito County",
+      "state": "CA",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.69,
+          "precip_probability_pct": 92,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 47.0,
+          "low_temp_f": 40.0,
+          "high_apparent_temp_f": 44.0,
           "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 25.3,
-          "thunder_probability_pct": 5,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 33.4,
+          "thunder_probability_pct": 15,
+          "lightning_activity_level": null,
+          "weather": [
+            "moderate rain showers",
+            "light rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 27,
+          "category": "Good",
+          "aqi_24h_max": 37,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 2.5,
+          "pm10": 4.1,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06071": {
+      "fips": "06071",
+      "name": "San Bernardino County",
+      "state": "CA",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [
+          {
+            "title": "Heavy storm pounds Bay Area, causing flooding, power outages",
+            "url": "https://www.kalw.org/bay-area-news/2026-11-18/heavy-storm-pounds-bay-area-causing-flooding-power-outages",
+            "domain": "kalw.org",
+            "seendate": "20261119021500",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://www.kalw.org/bay-area-news/2026-11-18/heavy-storm-pounds-bay-area-causing-flooding-power-outages",
+                "domain": "kalw.org"
+              }
+            ]
+          }
+        ],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.12,
+          "precip_probability_pct": 70,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 67.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 67.0,
+          "low_apparent_temp_f": 41.0,
+          "max_wind_mph": 26.5,
+          "max_wind_gust_mph": 40.3,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
@@ -2445,15 +2533,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 41,
+          "aqi_24h_max": 42,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.3,
-          "pm10": 5.6,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 8.6,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 3.5,
+          "pm10": 6.3,
+          "ozone": 45.0,
+          "nitrogen_dioxide": 7.1,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2480,37 +2568,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 78,
+          "precip_in_24h": 0.65,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 69.0,
-          "low_temp_f": 36.0,
-          "high_apparent_temp_f": 69.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
-          "thunder_probability_pct": 9,
+          "high_temp_f": 66.0,
+          "low_temp_f": 39.0,
+          "high_apparent_temp_f": 66.0,
+          "low_apparent_temp_f": 39.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 26.5,
+          "thunder_probability_pct": 17,
           "lightning_activity_level": null,
           "weather": [
-            "fog",
+            "light rain showers",
             "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
+            "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 27,
           "category": "Good",
           "aqi_24h_max": 45,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.3,
-          "pm10": 5.4,
-          "ozone": 12.0,
-          "nitrogen_dioxide": 3.0,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 7.3,
+          "pm10": 12.8,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 3.4,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2520,30 +2607,449 @@
       "name": "San Francisco County",
       "state": "CA",
       "alerts": {
-        "weather": [
+        "weather": [],
+        "protest": [],
+        "utility_outage": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=37.7272&lon=-123.0322"
-          }
-        ],
-        "protest": [
-          {
-            "title": "Hemlock students march in purple for Ruby Bridges",
-            "url": "https://www.thereporter.com/2026/11/17/hemlock-students-march-for-ruby-bridges/",
-            "domain": "thereporter.com",
-            "seendate": "20261118040000",
+            "title": "Bay Area storm: First big rain of winter brings flooded roads, power outages, snow in Sierra",
+            "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+            "domain": "pressdemocrat.com",
+            "seendate": "20261119041500",
             "is_new": true,
             "sources": [
               {
-                "url": "https://www.thereporter.com/2026/11/17/hemlock-students-march-for-ruby-bridges/",
-                "domain": "thereporter.com"
+                "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "pressdemocrat.com"
               },
               {
-                "url": "https://www.timesheraldonline.com/2026/11/17/hemlock-students-march-for-ruby-bridges/",
-                "domain": "timesheraldonline.com"
+                "url": "https://www.eastbaytimes.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "eastbaytimes.com"
+              }
+            ]
+          }
+        ],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.64,
+          "precip_probability_pct": 96,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 59.0,
+          "low_temp_f": 54.0,
+          "high_apparent_temp_f": 59.0,
+          "low_apparent_temp_f": 54.0,
+          "max_wind_mph": 27.6,
+          "max_wind_gust_mph": 31.1,
+          "thunder_probability_pct": 24,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 45,
+          "category": "Good",
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 4.5,
+          "pm10": 8.1,
+          "ozone": 86.0,
+          "nitrogen_dioxide": 0.4,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06077": {
+      "fips": "06077",
+      "name": "San Joaquin County",
+      "state": "CA",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.72,
+          "precip_probability_pct": 98,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 55.0,
+          "low_temp_f": 49.0,
+          "high_apparent_temp_f": 55.0,
+          "low_apparent_temp_f": 43.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 32.2,
+          "thunder_probability_pct": 16,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain",
+            "light rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 30,
+          "category": "Good",
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 2.7,
+          "pm10": 3.4,
+          "ozone": 65.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06079": {
+      "fips": "06079",
+      "name": "San Luis Obispo County",
+      "state": "CA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=35.3882&lon=-120.4489"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [
+          {
+            "title": "Storm forces highway closure, evacuation warnings | Salinas aligns with state immigration law",
+            "url": "https://www.kazu.org/kazu-news/2026-11-18/storm-forces-highway-closure-evacuation-warnings-salinas-aligns-with-state-immigration-law",
+            "domain": "kazu.org",
+            "seendate": "20261119050000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.kazu.org/kazu-news/2026-11-18/storm-forces-highway-closure-evacuation-warnings-salinas-aligns-with-state-immigration-law",
+                "domain": "kazu.org"
+              }
+            ]
+          }
+        ],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.98,
+          "precip_probability_pct": 100,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 56.0,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 41.0,
+          "max_wind_mph": 27.6,
+          "max_wind_gust_mph": 39.1,
+          "thunder_probability_pct": 15,
+          "lightning_activity_level": null,
+          "weather": [
+            "thunderstorms",
+            "moderate rain",
+            "light rain"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 36,
+          "category": "Good",
+          "aqi_24h_max": 39,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.2,
+          "pm10": 6.8,
+          "ozone": 83.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06081": {
+      "fips": "06081",
+      "name": "San Mateo County",
+      "state": "CA",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [
+          {
+            "title": "Bay Area storm: First big rain of winter brings flooded roads, power outages, snow in Sierra",
+            "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+            "domain": "pressdemocrat.com",
+            "seendate": "20261119041500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "pressdemocrat.com"
+              },
+              {
+                "url": "https://www.eastbaytimes.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "eastbaytimes.com"
+              }
+            ]
+          },
+          {
+            "title": "Heavy storm pounds Bay Area, causing flooding, power outages",
+            "url": "https://www.kalw.org/bay-area-news/2026-11-18/heavy-storm-pounds-bay-area-causing-flooding-power-outages",
+            "domain": "kalw.org",
+            "seendate": "20261119021500",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://www.kalw.org/bay-area-news/2026-11-18/heavy-storm-pounds-bay-area-causing-flooding-power-outages",
+                "domain": "kalw.org"
+              }
+            ]
+          }
+        ],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.83,
+          "precip_probability_pct": 100,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 53.0,
+          "low_temp_f": 48.0,
+          "high_apparent_temp_f": 53.0,
+          "low_apparent_temp_f": 42.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 21,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain showers",
+            "moderate rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 43,
+          "category": "Good",
+          "aqi_24h_max": 43,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 8.1,
+          "pm10": 13.6,
+          "ozone": 74.0,
+          "nitrogen_dioxide": 8.4,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06083": {
+      "fips": "06083",
+      "name": "Santa Barbara County",
+      "state": "CA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~2.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=34.5367&lon=-120.0384"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.95,
+          "precip_probability_pct": 100,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 57.0,
+          "low_temp_f": 45.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 39.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 29.9,
+          "thunder_probability_pct": 15,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain",
+            "thunderstorms",
+            "heavy rain"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 38,
+          "category": "Good",
+          "aqi_24h_max": 40,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 4.4,
+          "pm10": 7.3,
+          "ozone": 79.0,
+          "nitrogen_dioxide": 1.0,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06085": {
+      "fips": "06085",
+      "name": "Santa Clara County",
+      "state": "CA",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [
+          {
+            "title": "Bay Area storm: First big rain of winter brings flooded roads, power outages, snow in Sierra",
+            "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+            "domain": "pressdemocrat.com",
+            "seendate": "20261119041500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.pressdemocrat.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "pressdemocrat.com"
+              },
+              {
+                "url": "https://www.eastbaytimes.com/2026/11/18/bay-area-storm-first-big-rain-of-winter-brings-flooded-roads-power-outages-snow-in-sierra/",
+                "domain": "eastbaytimes.com"
+              }
+            ]
+          }
+        ],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.87,
+          "precip_probability_pct": 99,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 52.0,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 41.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 29.9,
+          "thunder_probability_pct": 18,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 26,
+          "category": "Good",
+          "aqi_24h_max": 36,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 2.8,
+          "pm10": 4.6,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 2.9,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06087": {
+      "fips": "06087",
+      "name": "Santa Cruz County",
+      "state": "CA",
+      "alerts": {
+        "weather": [],
+        "protest": [
+          {
+            "title": "UAW ends Harvard academic workers' walkout without a contract, leaving graduate strikers isolated",
+            "url": "https://www.wsws.org/en/articles/2026/11/19/pujo-n19.html",
+            "domain": "wsws.org",
+            "seendate": "20261119091500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.wsws.org/en/articles/2026/11/19/pujo-n19.html",
+                "domain": "wsws.org"
               }
             ]
           }
@@ -2560,211 +3066,23 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.16,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 60.0,
-          "low_temp_f": 56.0,
-          "high_apparent_temp_f": 60.0,
-          "low_apparent_temp_f": 56.0,
-          "max_wind_mph": 38.0,
-          "max_wind_gust_mph": 43.7,
-          "thunder_probability_pct": 16,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "moderate rain",
-            "moderate rain showers",
-            "thunderstorms",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 41,
-          "category": "Good",
-          "aqi_24h_max": 47,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 16.7,
-          "pm10": 28.7,
-          "ozone": 87.0,
-          "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06077": {
-      "fips": "06077",
-      "name": "San Joaquin County",
-      "state": "CA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.0\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=37.9350&lon=-121.2722"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.02,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.81,
+          "precip_probability_pct": 98,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 53.0,
-          "low_temp_f": 46.0,
-          "high_apparent_temp_f": 53.0,
-          "low_apparent_temp_f": 39.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 44.9,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 55.0,
+          "low_temp_f": 49.0,
+          "high_apparent_temp_f": 55.0,
+          "low_apparent_temp_f": 43.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 29.9,
+          "thunder_probability_pct": 20,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "moderate rain",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 61,
-          "category": "Moderate",
-          "aqi_24h_max": 68,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 12.8,
-          "pm10": 38.0,
-          "ozone": 62.0,
-          "nitrogen_dioxide": 5.4,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06079": {
-      "fips": "06079",
-      "name": "San Luis Obispo County",
-      "state": "CA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.46,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 54.0,
-          "low_temp_f": 40.0,
-          "high_apparent_temp_f": 54.0,
-          "low_apparent_temp_f": 33.0,
-          "max_wind_mph": 29.9,
-          "max_wind_gust_mph": 41.4,
-          "thunder_probability_pct": 15,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "thunderstorms",
-            "moderate rain"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 19,
-          "category": "Good",
-          "aqi_24h_max": 39,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 3.3,
-          "pm10": 4.2,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 5.7,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06081": {
-      "fips": "06081",
-      "name": "San Mateo County",
-      "state": "CA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.6\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=37.4147&lon=-122.3715"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.63,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 56.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 56.0,
-          "low_apparent_temp_f": 44.0,
-          "max_wind_mph": 25.3,
-          "max_wind_gust_mph": 43.7,
-          "thunder_probability_pct": 19,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "moderate rain",
+            "light rain showers",
             "moderate rain showers",
             "thunderstorms"
           ],
@@ -2774,197 +3092,13 @@
         "air_quality": {
           "us_aqi": 35,
           "category": "Good",
-          "aqi_24h_max": 39,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 9.4,
-          "pm10": 15.7,
-          "ozone": 85.0,
-          "nitrogen_dioxide": 1.5,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06083": {
-      "fips": "06083",
-      "name": "Santa Barbara County",
-      "state": "CA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.13,
-          "precip_probability_pct": 78,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 51.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 51.0,
-          "low_apparent_temp_f": 39.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 26.5,
-          "thunder_probability_pct": 1,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 25,
-          "category": "Good",
-          "aqi_24h_max": 40,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 6.4,
-          "pm10": 8.3,
-          "ozone": 50.0,
-          "nitrogen_dioxide": 4.9,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06085": {
-      "fips": "06085",
-      "name": "Santa Clara County",
-      "state": "CA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.6\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=37.2216&lon=-121.6895"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.63,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 53.0,
-          "low_temp_f": 44.0,
-          "high_apparent_temp_f": 53.0,
-          "low_apparent_temp_f": 37.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 31.1,
-          "thunder_probability_pct": 16,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "moderate rain",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 34,
-          "category": "Good",
-          "aqi_24h_max": 43,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 2.9,
-          "pm10": 4.0,
-          "ozone": 63.0,
-          "nitrogen_dioxide": 4.0,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06087": {
-      "fips": "06087",
-      "name": "Santa Cruz County",
-      "state": "CA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.8\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=37.0123&lon=-122.0078"
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.83,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 57.0,
-          "low_temp_f": 48.0,
-          "high_apparent_temp_f": 57.0,
-          "low_apparent_temp_f": 43.0,
-          "max_wind_mph": 21.9,
-          "max_wind_gust_mph": 38.0,
-          "thunder_probability_pct": 16,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "moderate rain",
-            "moderate rain showers",
-            "thunderstorms"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 34,
-          "category": "Good",
           "aqi_24h_max": 37,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.3,
-          "pm10": 10.0,
-          "ozone": 79.0,
-          "nitrogen_dioxide": 2.2,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 3.2,
+          "pm10": 5.0,
+          "ozone": 78.0,
+          "nitrogen_dioxide": 3.4,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2977,174 +3111,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 1:16AM PST until November 19 at 4:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
+            "effective": "2026-11-19T03:53:00-08:00",
+            "expires": "2026-11-19T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.001.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
-            ],
-            "count": 2
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.55,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 43.0,
-          "low_temp_f": 38.0,
-          "high_apparent_temp_f": 43.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 8,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "moderate rain"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 36,
-          "category": "Good",
-          "aqi_24h_max": 37,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 0.6,
-          "pm10": 0.7,
-          "ozone": 82.0,
-          "nitrogen_dioxide": 0.6,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06091": {
-      "fips": "06091",
-      "name": "Sierra County",
-      "state": "CA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 2:58AM PST until November 20 at 4:00AM PST by NWS Reno NV",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.17914bfdbc8d91c379ddb808543144f90df995bf.001.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
-            ],
-            "count": 2
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.28,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 12.5,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 29.0,
-          "low_temp_f": 22.0,
-          "high_apparent_temp_f": 22.0,
-          "low_apparent_temp_f": 7.0,
-          "max_wind_mph": 25.3,
-          "max_wind_gust_mph": 51.8,
-          "thunder_probability_pct": 14,
-          "lightning_activity_level": null,
-          "weather": [
-            "light snow",
-            "moderate snow",
-            "heavy snow"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 38,
-          "category": "Good",
-          "aqi_24h_max": 44,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 4.0,
-          "pm10": 5.2,
-          "ozone": 90.0,
-          "nitrogen_dioxide": 2.2,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06093": {
-      "fips": "06093",
-      "name": "Siskiyou County",
-      "state": "CA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 3:02AM PST until November 19 at 4:00AM PST by NWS Medford OR",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-18T03:02:00-08:00",
-            "expires": "2026-11-18T15:15:00-08:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b20d93abbe519dfb11049cc499a1ed03858b7fab.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b20d93abbe519dfb11049cc499a1ed03858b7fab.001.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b20d93abbe519dfb11049cc499a1ed03858b7fab.002.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b20d93abbe519dfb11049cc499a1ed03858b7fab.003.1"
-            ],
-            "count": 3
-          },
-          {
-            "event": "High Wind Warning",
-            "headline": "High Wind Warning issued November 18 at 2:57AM PST until November 18 at 7:00AM PST by NWS Medford OR",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-18T02:57:00-08:00",
-            "expires": "2026-11-18T07:00:00-08:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d85042b390327a3e5d14f78fab77a2cfad0608dd.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.d85042b390327a3e5d14f78fab77a2cfad0608dd.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1"
             ],
             "count": 1
           }
@@ -3162,141 +3137,63 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.99,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 20.93,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 45.0,
-          "low_temp_f": 23.0,
-          "high_apparent_temp_f": 40.0,
-          "low_apparent_temp_f": 11.0,
-          "max_wind_mph": 32.2,
-          "max_wind_gust_mph": 48.3,
-          "thunder_probability_pct": 6,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "light snow",
-            "light rain showers",
-            "light snow showers",
-            "heavy snow",
-            "moderate snow"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 34,
-          "category": "Good",
-          "aqi_24h_max": 38,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 0.3,
-          "pm10": 0.4,
-          "ozone": 82.0,
-          "nitrogen_dioxide": 1.3,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06095": {
-      "fips": "06095",
-      "name": "Solano County",
-      "state": "CA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.4\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=38.2672&lon=-121.9396"
-          }
-        ],
-        "protest": [
-          {
-            "title": "Hemlock students march in purple for Ruby Bridges",
-            "url": "https://www.thereporter.com/2026/11/17/hemlock-students-march-for-ruby-bridges/",
-            "domain": "thereporter.com",
-            "seendate": "20261118040000",
-            "is_new": true,
-            "sources": [
-              {
-                "url": "https://www.thereporter.com/2026/11/17/hemlock-students-march-for-ruby-bridges/",
-                "domain": "thereporter.com"
-              },
-              {
-                "url": "https://www.timesheraldonline.com/2026/11/17/hemlock-students-march-for-ruby-bridges/",
-                "domain": "timesheraldonline.com"
-              }
-            ]
-          }
-        ],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 2,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.42,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.75,
+          "precip_probability_pct": 84,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 54.0,
-          "low_temp_f": 42.0,
-          "high_apparent_temp_f": 54.0,
-          "low_apparent_temp_f": 30.0,
-          "max_wind_mph": 40.3,
-          "max_wind_gust_mph": 55.2,
-          "thunder_probability_pct": 17,
+          "high_temp_f": 45.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 45.0,
+          "low_apparent_temp_f": 36.0,
+          "max_wind_mph": 3.5,
+          "max_wind_gust_mph": 9.2,
+          "thunder_probability_pct": 10,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain showers",
-            "thunderstorms",
+            "fog",
             "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 53,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 4.8,
-          "pm10": 9.7,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 4.4,
-          "observed_at": "2026-11-18T13:00",
+          "aqi_24h_max": 35,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 0.8,
+          "pm10": 0.8,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 4.3,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "06097": {
-      "fips": "06097",
-      "name": "Sonoma County",
+    "06091": {
+      "fips": "06091",
+      "name": "Sierra County",
       "state": "CA",
       "alerts": {
         "weather": [
           {
-            "event": "Heavy Precipitation Forecast",
-            "headline": "~1.8\" rain expected in next 24h",
-            "severity": "Moderate",
-            "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=38.5252&lon=-122.9261"
+            "event": "Winter Storm Warning",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-19T01:40:00-08:00",
+            "expires": "2026-11-19T19:45:00-08:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.e26e70a4a87cf6b03bf382927c7ccb1979c030c4.001.1"
+            ],
+            "count": 2
           }
         ],
         "protest": [],
@@ -3315,38 +3212,210 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.81,
+          "precip_in_24h": 1.82,
           "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
+          "snow_in_24h": 17.23,
           "ice_in_24h": 0.0,
-          "high_temp_f": 53.0,
-          "low_temp_f": 47.0,
-          "high_apparent_temp_f": 53.0,
-          "low_apparent_temp_f": 43.0,
-          "max_wind_mph": 20.7,
-          "max_wind_gust_mph": 29.9,
-          "thunder_probability_pct": 18,
+          "high_temp_f": 30.0,
+          "low_temp_f": 25.0,
+          "high_apparent_temp_f": 20.0,
+          "low_apparent_temp_f": 14.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 34.5,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "moderate rain",
-            "moderate rain showers",
+            "heavy snow",
+            "heavy snow showers",
             "thunderstorms",
-            "fog"
+            "moderate snow",
+            "moderate snow showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 39,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 43,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.6,
-          "pm10": 8.8,
-          "ozone": 83.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 0.9,
+          "pm10": 1.0,
+          "ozone": 79.0,
+          "nitrogen_dioxide": 3.4,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06093": {
+      "fips": "06093",
+      "name": "Siskiyou County",
+      "state": "CA",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.19,
+          "precip_probability_pct": 74,
+          "snow_in_24h": 2.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 41.0,
+          "low_temp_f": 21.0,
+          "high_apparent_temp_f": 41.0,
+          "low_apparent_temp_f": 15.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 13.8,
+          "thunder_probability_pct": 4,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain",
+            "light snow",
+            "fog",
+            "moderate snow",
+            "frost",
+            "heavy snow"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 40,
+          "category": "Good",
+          "aqi_24h_max": 44,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 2.0,
+          "pm10": 2.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 20.0,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06095": {
+      "fips": "06095",
+      "name": "Solano County",
+      "state": "CA",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.79,
+          "precip_probability_pct": 98,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 57.0,
+          "low_temp_f": 43.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 35.0,
+          "max_wind_mph": 23.0,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": 15,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain",
+            "light rain showers",
+            "thunderstorms",
+            "moderate rain showers"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 17,
+          "category": "Good",
+          "aqi_24h_max": 34,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 1.5,
+          "pm10": 1.8,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 9.2,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06097": {
+      "fips": "06097",
+      "name": "Sonoma County",
+      "state": "CA",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.62,
+          "precip_probability_pct": 98,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 51.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 48.0,
+          "low_apparent_temp_f": 42.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 24.2,
+          "thunder_probability_pct": 17,
+          "lightning_activity_level": null,
+          "weather": [
+            "moderate rain showers",
+            "light rain showers",
+            "thunderstorms"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 31,
+          "category": "Good",
+          "aqi_24h_max": 36,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 2.4,
+          "pm10": 3.0,
+          "ozone": 35.0,
+          "nitrogen_dioxide": 9.4,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3373,37 +3442,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.91,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.59,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 52.0,
-          "low_temp_f": 43.0,
-          "high_apparent_temp_f": 52.0,
-          "low_apparent_temp_f": 36.0,
-          "max_wind_mph": 23.0,
-          "max_wind_gust_mph": 39.1,
-          "thunder_probability_pct": 15,
+          "high_temp_f": 57.0,
+          "low_temp_f": 47.0,
+          "high_apparent_temp_f": 57.0,
+          "low_apparent_temp_f": 41.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 32.2,
+          "thunder_probability_pct": 18,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "moderate rain showers",
+            "light rain showers",
             "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 52,
-          "category": "Moderate",
-          "aqi_24h_max": 54,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.0,
-          "pm10": 41.6,
-          "ozone": 57.0,
-          "nitrogen_dioxide": 5.4,
-          "observed_at": "2026-11-18T13:00",
+          "us_aqi": 28,
+          "category": "Good",
+          "aqi_24h_max": 41,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 2.4,
+          "pm10": 3.0,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 3.6,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3430,35 +3498,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.0,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.8,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 53.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 53.0,
-          "low_apparent_temp_f": 37.0,
-          "max_wind_mph": 25.3,
-          "max_wind_gust_mph": 42.6,
-          "thunder_probability_pct": 9,
+          "high_temp_f": 54.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 44.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 19.6,
+          "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain"
+            "light rain showers",
+            "thunderstorms",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 54,
-          "category": "Moderate",
-          "aqi_24h_max": 59,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 9.4,
-          "pm10": 12.2,
-          "ozone": 77.0,
-          "nitrogen_dioxide": 2.4,
-          "observed_at": "2026-11-18T13:00",
+          "us_aqi": 28,
+          "category": "Good",
+          "aqi_24h_max": 41,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.5,
+          "pm10": 4.2,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 7.1,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3471,86 +3541,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 1:16AM PST until November 19 at 4:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T01:16:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
+            "effective": "2026-11-19T03:53:00-08:00",
+            "expires": "2026-11-19T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.001.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1"
-            ],
-            "count": 2
-          }
-        ],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 1,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 1.26,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 51.0,
-          "low_temp_f": 43.0,
-          "high_apparent_temp_f": 51.0,
-          "low_apparent_temp_f": 34.0,
-          "max_wind_mph": 24.2,
-          "max_wind_gust_mph": 41.4,
-          "thunder_probability_pct": 8,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "moderate rain"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 41,
-          "category": "Good",
-          "aqi_24h_max": 42,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 3.8,
-          "pm10": 4.5,
-          "ozone": 67.0,
-          "nitrogen_dioxide": 2.2,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06105": {
-      "fips": "06105",
-      "name": "Trinity County",
-      "state": "CA",
-      "alerts": {
-        "weather": [
-          {
-            "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 17 at 1:46PM PST until November 19 at 1:00AM PST by NWS Eureka CA",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-17T13:46:00-08:00",
-            "expires": "2026-11-18T15:00:00-08:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9683ba7991ffec7ca59e2cfdffc0630279002367.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9683ba7991ffec7ca59e2cfdffc0630279002367.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1"
             ],
             "count": 1
           }
@@ -3571,36 +3570,89 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.96,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 2.37,
+          "precip_in_24h": 0.37,
+          "precip_probability_pct": 88,
+          "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 37.0,
-          "low_temp_f": 32.0,
-          "high_apparent_temp_f": 34.0,
-          "low_apparent_temp_f": 24.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 32.2,
-          "thunder_probability_pct": 10,
+          "high_temp_f": 53.0,
+          "low_temp_f": 42.0,
+          "high_apparent_temp_f": 53.0,
+          "low_apparent_temp_f": 38.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 16.1,
+          "thunder_probability_pct": 9,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "light snow",
-            "moderate rain"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 30,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 31,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 1.6,
+          "pm10": 1.6,
+          "ozone": 46.0,
+          "nitrogen_dioxide": 3.9,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06105": {
+      "fips": "06105",
+      "name": "Trinity County",
+      "state": "CA",
+      "alerts": {
+        "weather": [],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 0,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 0.21,
+          "precip_probability_pct": 61,
+          "snow_in_24h": 1.4,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 36.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 31.0,
+          "low_apparent_temp_f": 25.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 11.5,
+          "thunder_probability_pct": 5,
+          "lightning_activity_level": null,
+          "weather": [
+            "light snow",
+            "frost"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 26,
+          "category": "Good",
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
           "pm2_5": 0.2,
-          "pm10": 0.2,
-          "ozone": 65.0,
-          "nitrogen_dioxide": 2.9,
-          "observed_at": "2026-11-18T13:00",
+          "pm10": 0.3,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 4.6,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3613,15 +3665,15 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 12:33AM PST until November 20 at 4:00AM PST by NWS Hanford CA",
+            "headline": "Winter Storm Warning issued November 19 at 1:05AM PST until November 20 at 4:00AM PST by NWS Hanford CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T00:33:00-08:00",
-            "expires": "2026-11-18T09:15:00-08:00",
+            "effective": "2026-11-19T01:05:00-08:00",
+            "expires": "2026-11-19T09:30:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7570bd4b9ab5f7272e7d334b107938681667534.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a370f4a2c17a4a0d1cd9124c89056b6eac1d3e.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7570bd4b9ab5f7272e7d334b107938681667534.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a370f4a2c17a4a0d1cd9124c89056b6eac1d3e.001.1"
             ],
             "count": 1
           }
@@ -3642,36 +3694,43 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.32,
-          "precip_probability_pct": 82,
-          "snow_in_24h": 1.4,
+          "precip_in_24h": 2.54,
+          "precip_probability_pct": 100,
+          "snow_in_24h": 18.52,
           "ice_in_24h": 0.0,
           "high_temp_f": 61.0,
-          "low_temp_f": 25.0,
+          "low_temp_f": 28.0,
           "high_apparent_temp_f": 61.0,
-          "low_apparent_temp_f": 22.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 20.7,
-          "thunder_probability_pct": 5,
+          "low_apparent_temp_f": 15.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 31.1,
+          "thunder_probability_pct": 24,
           "lightning_activity_level": null,
           "weather": [
+            "moderate rain",
+            "moderate rain showers",
+            "thunderstorms",
+            "light rain showers",
             "light rain",
             "light snow",
-            "moderate rain"
+            "light snow showers",
+            "moderate snow",
+            "heavy snow",
+            "moderate snow showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 39,
           "category": "Good",
-          "aqi_24h_max": 39,
+          "aqi_24h_max": 40,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.8,
-          "pm10": 1.4,
-          "ozone": 64.0,
-          "nitrogen_dioxide": 1.7,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 1.8,
+          "pm10": 2.8,
+          "ozone": 83.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3684,16 +3743,16 @@
         "weather": [
           {
             "event": "Winter Storm Warning",
-            "headline": "Winter Storm Warning issued November 18 at 1:16AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
+            "headline": "Winter Storm Warning issued November 19 at 3:53AM PST until November 20 at 4:00AM PST by NWS Sacramento CA",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-18T00:33:00-08:00",
-            "expires": "2026-11-18T17:00:00-08:00",
+            "effective": "2026-11-19T01:05:00-08:00",
+            "expires": "2026-11-19T16:00:00-08:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9b05dae0d0f3958db137c602b2111cba74fb0b98.002.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c7570bd4b9ab5f7272e7d334b107938681667534.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2e58b4e9f872e918abdadaa3d98a72a97833a882.001.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.71a370f4a2c17a4a0d1cd9124c89056b6eac1d3e.001.1"
             ],
             "count": 2
           }
@@ -3714,36 +3773,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.05,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 5.05,
+          "precip_in_24h": 2.18,
+          "precip_probability_pct": 99,
+          "snow_in_24h": 7.3,
           "ice_in_24h": 0.0,
-          "high_temp_f": 37.0,
-          "low_temp_f": 26.0,
-          "high_apparent_temp_f": 32.0,
-          "low_apparent_temp_f": 20.0,
+          "high_temp_f": 36.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 30.0,
+          "low_apparent_temp_f": 25.0,
           "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 27.6,
-          "thunder_probability_pct": 8,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": 24,
           "lightning_activity_level": null,
           "weather": [
-            "frost",
             "light snow",
-            "moderate snow"
+            "light snow showers",
+            "thunderstorms",
+            "moderate snow showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 41,
           "category": "Good",
-          "aqi_24h_max": 47,
+          "aqi_24h_max": 44,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 10.2,
-          "pm10": 12.0,
-          "ozone": 87.0,
-          "nitrogen_dioxide": 1.4,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 0.4,
+          "pm10": 0.5,
+          "ozone": 84.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3751,6 +3811,84 @@
     "06111": {
       "fips": "06111",
       "name": "Ventura County",
+      "state": "CA",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=34.3587&lon=-119.1331"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [
+          {
+            "title": "Iconic stretch of California highway in Big Sur closed over flood threats",
+            "url": "https://nypost.com/2026/11/18/us-news/iconic-stretch-of-california-highway-in-big-sur-closed-over-flood-threats/",
+            "domain": "nypost.com",
+            "seendate": "20261119001500",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://nypost.com/2026/11/18/us-news/iconic-stretch-of-california-highway-in-big-sur-closed-over-flood-threats/",
+                "domain": "nypost.com"
+              }
+            ]
+          }
+        ],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 2,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.38,
+          "precip_probability_pct": 100,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 62.0,
+          "low_temp_f": 53.0,
+          "high_apparent_temp_f": 62.0,
+          "low_apparent_temp_f": 53.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 20.7,
+          "thunder_probability_pct": 15,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain",
+            "thunderstorms",
+            "moderate rain"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 27,
+          "category": "Good",
+          "aqi_24h_max": 40,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.0,
+          "pm10": 4.4,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 6.7,
+          "observed_at": "2026-11-19T14:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "06113": {
+      "fips": "06113",
+      "name": "Yolo County",
       "state": "CA",
       "alerts": {
         "weather": [],
@@ -3770,50 +3908,54 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.02,
-          "precip_probability_pct": 23,
+          "precip_in_24h": 0.79,
+          "precip_probability_pct": 98,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 64.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 64.0,
-          "low_apparent_temp_f": 43.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 12.7,
+          "high_temp_f": 54.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 41.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 24.2,
           "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
-            "light rain"
+            "light rain",
+            "light rain showers",
+            "thunderstorms",
+            "moderate rain showers",
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 19,
           "category": "Good",
-          "aqi_24h_max": 41,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.2,
-          "pm10": 9.1,
-          "ozone": 17.0,
-          "nitrogen_dioxide": 16.1,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 3.6,
+          "pm10": 4.5,
+          "ozone": 44.0,
+          "nitrogen_dioxide": 5.2,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "06113": {
-      "fips": "06113",
-      "name": "Yolo County",
+    "06115": {
+      "fips": "06115",
+      "name": "Yuba County",
       "state": "CA",
       "alerts": {
         "weather": [
           {
             "event": "Heavy Precipitation Forecast",
-            "headline": "~1.2\" rain expected in next 24h",
+            "headline": "~1.1\" rain expected in next 24h",
             "severity": "Moderate",
             "source": "nws_forecast",
-            "url": "https://forecast.weather.gov/MapClick.php?lat=38.6796&lon=-121.9027"
+            "url": "https://forecast.weather.gov/MapClick.php?lat=39.2701&lon=-121.3443"
           }
         ],
         "protest": [],
@@ -3832,92 +3974,37 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 1.21,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 1.15,
+          "precip_probability_pct": 99,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 52.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 52.0,
-          "low_apparent_temp_f": 37.0,
-          "max_wind_mph": 24.2,
-          "max_wind_gust_mph": 41.4,
+          "high_temp_f": 50.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 48.0,
+          "low_apparent_temp_f": 44.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 21.9,
           "thunder_probability_pct": 15,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain showers",
+            "light rain showers",
             "thunderstorms",
-            "moderate rain"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 45,
+          "us_aqi": 33,
           "category": "Good",
-          "aqi_24h_max": 48,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.1,
-          "pm10": 9.9,
-          "ozone": 66.0,
-          "nitrogen_dioxide": 3.5,
-          "observed_at": "2026-11-18T13:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "06115": {
-      "fips": "06115",
-      "name": "Yuba County",
-      "state": "CA",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.96,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 50.0,
-          "low_temp_f": 45.0,
-          "high_apparent_temp_f": 46.0,
-          "low_apparent_temp_f": 38.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 39.1,
-          "thunder_probability_pct": 14,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "moderate rain"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 36,
-          "category": "Good",
-          "aqi_24h_max": 38,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 8.8,
-          "pm10": 11.1,
-          "ozone": 83.0,
-          "nitrogen_dioxide": 1.7,
-          "observed_at": "2026-11-18T13:00",
+          "pm2_5": 1.3,
+          "pm10": 1.6,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 2.3,
+          "observed_at": "2026-11-19T14:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
