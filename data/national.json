@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-19T14:47:17.941379+00:00",
-  "date": "2026-11-19",
+  "generated_at": "2026-11-20T14:23:10.386447+00:00",
+  "date": "2026-11-20",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 122
+      "counties_with_alerts": 96
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 33,
+      "counties_over_threshold": 26,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 52,
+      "counties_with_matches": 54,
       "items_pre_llm": {
-        "protest": 63,
-        "utility_outage": 13,
-        "transit_disruption": 0,
-        "service_provider_outage": 6,
-        "hazmat_incident": 4,
-        "road_closure": 10
+        "protest": 82,
+        "utility_outage": 6,
+        "transit_disruption": 9,
+        "service_provider_outage": 1,
+        "hazmat_incident": 3,
+        "road_closure": 1
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 33,
+      "counties_with_matches": 25,
       "items_post_llm": {
-        "protest": 14,
-        "utility_outage": 13,
+        "protest": 34,
+        "utility_outage": 4,
         "transit_disruption": 0,
         "service_provider_outage": 1,
-        "hazmat_incident": 4,
-        "road_closure": 10
+        "hazmat_incident": 3,
+        "road_closure": 1
       },
-      "unique_articles": 57,
-      "calls_used": 57,
+      "unique_articles": 53,
+      "calls_used": 53,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 121
+      "counties_with_alerts": 109
     },
     "transit": {
       "status": "ok",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 3,
+      "active_incidents": 6,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -212,7 +212,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "openai",
@@ -254,7 +254,7 @@
           "key": "docusign",
           "name": "DocuSign",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "cisco_meraki",
@@ -272,7 +272,7 @@
           "key": "rapid7",
           "name": "Rapid7",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "servicenow",
@@ -656,12 +656,34 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Partially Degraded Service",
+      "title": "Network Performance Issues in Miami",
       "impact": "minor",
+      "status": "identified",
+      "started": "2026-11-20T05:00:56.036Z",
+      "updated": "2026-11-20T05:10:34.028Z",
+      "url": "https://www.cloudflarestatus.com/incidents/4lv21sf5fzhm",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Zoom",
+      "key": "zoom",
+      "title": "Service Under Maintenance",
+      "impact": "maintenance",
       "status": "active",
       "started": "",
       "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "url": "https://status.zoom.us",
+      "source": "provider status page"
+    },
+    {
+      "provider": "DocuSign",
+      "key": "docusign",
+      "title": "Maintenance for CLM customers on November 20, 2026 at 03:00 UTC (Maint 6218)",
+      "impact": "minor",
+      "status": "canceled",
+      "started": "2026-11-11T22:36:47.872389Z",
+      "updated": "2026-11-20T03:30:30.198804Z",
+      "url": "https://health.docusign.com/status/incidents?id=f38eb924dd8aa440856c6365182aee26",
       "source": "provider status page"
     },
     {
@@ -673,6 +695,17 @@
       "started": "",
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Rapid7",
+      "key": "rapid7",
+      "title": "Service Under Maintenance",
+      "impact": "maintenance",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.rapid7.com",
       "source": "provider status page"
     },
     {
