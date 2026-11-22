@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-21T13:51:32.732854+00:00",
-  "date": "2026-11-21",
+  "generated_at": "2026-11-22T08:15:02.092378+00:00",
+  "date": "2026-11-22",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 114
+      "counties_with_alerts": 107
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 86,
+      "counties_over_threshold": 84,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,43 +30,43 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 53,
+      "counties_with_matches": 19,
       "items_pre_llm": {
-        "protest": 37,
-        "utility_outage": 1,
-        "transit_disruption": 5,
-        "service_provider_outage": 95,
-        "hazmat_incident": 1,
-        "road_closure": 15
+        "protest": 7,
+        "utility_outage": 0,
+        "transit_disruption": 2,
+        "service_provider_outage": 3,
+        "hazmat_incident": 0,
+        "road_closure": 13
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 40,
+      "counties_with_matches": 8,
       "items_post_llm": {
-        "protest": 22,
+        "protest": 0,
         "utility_outage": 0,
-        "transit_disruption": 5,
-        "service_provider_outage": 23,
-        "hazmat_incident": 1,
-        "road_closure": 10
+        "transit_disruption": 2,
+        "service_provider_outage": 0,
+        "hazmat_incident": 0,
+        "road_closure": 9
       },
-      "unique_articles": 81,
-      "calls_used": 81,
+      "unique_articles": 20,
+      "calls_used": 20,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 109
+      "counties_with_alerts": 150
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 0,
-      "counties_with_alerts": 0,
+      "items_total": 1,
+      "counties_with_alerts": 3,
       "agencies": [
         {
           "id": "mbta",
@@ -96,7 +96,7 @@
           "id": "path",
           "name": "PATH",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "id": "bart",
@@ -212,7 +212,7 @@
           "key": "zoom",
           "name": "Zoom",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "openai",
@@ -308,7 +308,7 @@
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "r3wn",
@@ -665,17 +665,6 @@
       "source": "provider status page"
     },
     {
-      "provider": "Zoom",
-      "key": "zoom",
-      "title": "Service Under Maintenance",
-      "impact": "maintenance",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://status.zoom.us",
-      "source": "provider status page"
-    },
-    {
       "provider": "Palo Alto Networks",
       "key": "palo_alto",
       "title": "Partially Degraded Service",
@@ -688,7 +677,15 @@
     },
     {
       "provider": "m4kp",
-      "impact": "minor",
+      "impact": "maintenance",
+      "active_incidents": 1,
+      "status": "active",
+      "coded": true,
+      "source": "provider status page (coded)"
+    },
+    {
+      "provider": "x9tz",
+      "impact": "maintenance",
       "active_incidents": 1,
       "status": "active",
       "coded": true,
