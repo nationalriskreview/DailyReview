@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-22T08:15:02.092378+00:00",
-  "date": "2026-11-22",
+  "generated_at": "2026-11-23T16:17:27.338463+00:00",
+  "date": "2026-11-23",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 107
+      "counties_with_alerts": 98
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 84,
+      "counties_over_threshold": 85,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,43 +30,43 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 19,
+      "counties_with_matches": 39,
       "items_pre_llm": {
-        "protest": 7,
-        "utility_outage": 0,
-        "transit_disruption": 2,
-        "service_provider_outage": 3,
-        "hazmat_incident": 0,
-        "road_closure": 13
+        "protest": 88,
+        "utility_outage": 3,
+        "transit_disruption": 14,
+        "service_provider_outage": 1,
+        "hazmat_incident": 7,
+        "road_closure": 8
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 8,
+      "counties_with_matches": 39,
       "items_post_llm": {
-        "protest": 0,
-        "utility_outage": 0,
-        "transit_disruption": 2,
-        "service_provider_outage": 0,
-        "hazmat_incident": 0,
-        "road_closure": 9
+        "protest": 88,
+        "utility_outage": 3,
+        "transit_disruption": 14,
+        "service_provider_outage": 1,
+        "hazmat_incident": 7,
+        "road_closure": 8
       },
-      "unique_articles": 20,
-      "calls_used": 20,
+      "unique_articles": 98,
+      "calls_used": 98,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 150
+      "counties_with_alerts": 173
     },
     "transit": {
       "status": "ok",
       "agencies_total": 11,
       "agencies_ok": 11,
       "agencies_skipped": 0,
-      "items_total": 1,
-      "counties_with_alerts": 3,
+      "items_total": 0,
+      "counties_with_alerts": 0,
       "agencies": [
         {
           "id": "mbta",
@@ -96,7 +96,7 @@
           "id": "path",
           "name": "PATH",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "id": "bart",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 4,
+      "active_incidents": 3,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -218,7 +218,7 @@
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "anthropic",
@@ -302,13 +302,13 @@
           "key": "m4kp",
           "name": "m4kp",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "x9tz",
           "name": "x9tz",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "r3wn",
@@ -656,12 +656,23 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Partially Degraded Service",
+      "title": "Cloudflare Workers API – Delayed or Inconsistent Responses",
       "impact": "minor",
-      "status": "active",
-      "started": "",
-      "updated": "",
-      "url": "https://www.cloudflarestatus.com",
+      "status": "investigating",
+      "started": "2026-11-23T13:52:11.144Z",
+      "updated": "2026-11-23T13:52:34.093Z",
+      "url": "https://www.cloudflarestatus.com/incidents/00dp7cliyqqt",
+      "source": "provider status page"
+    },
+    {
+      "provider": "OpenAI",
+      "key": "openai",
+      "title": "Elevated errors with GPT-6 conversations on paid ChatGPT plans",
+      "impact": "minor",
+      "status": "monitoring",
+      "started": "2026-11-23T15:50:14Z",
+      "updated": "2026-11-23T16:12:58Z",
+      "url": "https://status.openai.com",
       "source": "provider status page"
     },
     {
@@ -674,22 +685,6 @@
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
       "source": "provider status page"
-    },
-    {
-      "provider": "m4kp",
-      "impact": "maintenance",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
-    },
-    {
-      "provider": "x9tz",
-      "impact": "maintenance",
-      "active_incidents": 1,
-      "status": "active",
-      "coded": true,
-      "source": "provider status page (coded)"
     }
   ]
 }
