@@ -8,7 +8,22 @@
     "lon": -96.579428
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued November 23 at 11:28PM CST until November 25 at 9:00AM CST by NWS Fort Worth TX",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-23T23:28:00-06:00",
+        "expires": "2026-11-24T13:00:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7bf2474f65b2d3ba17b8e92759bd81b5f81a0dfd.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.7bf2474f65b2d3ba17b8e92759bd81b5f81a0dfd.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,38 +37,40 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 7,
+      "precip_probability_pct": 20,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 57.0,
-      "low_temp_f": 40.0,
-      "high_apparent_temp_f": 57.0,
-      "low_apparent_temp_f": 33.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 19.6,
+      "high_temp_f": 50.0,
+      "low_temp_f": 38.0,
+      "high_apparent_temp_f": 46.0,
+      "low_apparent_temp_f": 32.0,
+      "max_wind_mph": 11.5,
+      "max_wind_gust_mph": 18.4,
       "thunder_probability_pct": 1,
       "lightning_activity_level": null,
-      "weather": [],
+      "weather": [
+        "light rain showers"
+      ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 22,
+      "us_aqi": 20,
       "category": "Good",
-      "aqi_24h_max": 37,
+      "aqi_24h_max": 29,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 2.9,
-      "pm10": 3.6,
-      "ozone": 53.0,
-      "nitrogen_dioxide": 2.9,
-      "observed_at": "2026-11-23T16:00",
+      "pm2_5": 1.5,
+      "pm10": 1.7,
+      "ozone": 42.0,
+      "nitrogen_dioxide": 3.6,
+      "observed_at": "2026-11-24T15:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-23",
-  "generated_at": "2026-11-23T16:17:27.338463+00:00"
+  "date": "2026-11-24",
+  "generated_at": "2026-11-24T16:06:29.256706+00:00"
 }

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-23T16:17:27.338463+00:00",
-  "date": "2026-11-23",
+  "generated_at": "2026-11-24T16:06:29.256706+00:00",
+  "date": "2026-11-24",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 98
+      "counties_with_alerts": 221
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 85,
+      "counties_over_threshold": 40,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 39,
+      "counties_with_matches": 48,
       "items_pre_llm": {
-        "protest": 88,
-        "utility_outage": 3,
-        "transit_disruption": 14,
-        "service_provider_outage": 1,
-        "hazmat_incident": 7,
-        "road_closure": 8
+        "protest": 43,
+        "utility_outage": 6,
+        "transit_disruption": 8,
+        "service_provider_outage": 0,
+        "hazmat_incident": 6,
+        "road_closure": 7
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 39,
+      "counties_with_matches": 48,
       "items_post_llm": {
-        "protest": 88,
-        "utility_outage": 3,
-        "transit_disruption": 14,
-        "service_provider_outage": 1,
-        "hazmat_incident": 7,
-        "road_closure": 8
+        "protest": 43,
+        "utility_outage": 6,
+        "transit_disruption": 8,
+        "service_provider_outage": 0,
+        "hazmat_incident": 6,
+        "road_closure": 7
       },
-      "unique_articles": 98,
-      "calls_used": 98,
+      "unique_articles": 42,
+      "calls_used": 42,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 173
+      "counties_with_alerts": 117
     },
     "transit": {
       "status": "ok",
@@ -150,8 +150,8 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 8,
-      "counties_with_detections": 7
+      "positive_samples": 5,
+      "counties_with_detections": 4
     },
     "nndss_notifiable": {
       "status": "ok",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 3,
+      "active_incidents": 6,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -194,7 +194,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 1
+          "items": 3
         },
         {
           "key": "github",
@@ -218,13 +218,13 @@
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 1
+          "items": 0
         },
         {
           "key": "anthropic",
           "name": "Anthropic",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "oracle",
@@ -272,7 +272,7 @@
           "key": "rapid7",
           "name": "Rapid7",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "servicenow",
@@ -656,23 +656,45 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
+      "title": "Issues with Email Routing in France",
+      "impact": "minor",
+      "status": "identified",
+      "started": "2026-11-24T13:38:40.144Z",
+      "updated": "2026-11-24T14:50:35.525Z",
+      "url": "https://www.cloudflarestatus.com/incidents/x5ma22sji8wi",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Cloudflare",
+      "key": "cloudflare",
+      "title": "Magic Transit Degraded Performance",
+      "impact": "major",
+      "status": "identified",
+      "started": "2026-11-24T11:29:22.902Z",
+      "updated": "2026-11-24T14:58:40.337Z",
+      "url": "https://www.cloudflarestatus.com/incidents/no721jcnlrbh",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Cloudflare",
+      "key": "cloudflare",
       "title": "Cloudflare Workers API – Delayed or Inconsistent Responses",
       "impact": "minor",
-      "status": "investigating",
+      "status": "identified",
       "started": "2026-11-23T13:52:11.144Z",
-      "updated": "2026-11-23T13:52:34.093Z",
+      "updated": "2026-11-24T01:28:49.900Z",
       "url": "https://www.cloudflarestatus.com/incidents/00dp7cliyqqt",
       "source": "provider status page"
     },
     {
-      "provider": "OpenAI",
-      "key": "openai",
-      "title": "Elevated errors with GPT-6 conversations on paid ChatGPT plans",
+      "provider": "Anthropic",
+      "key": "anthropic",
+      "title": "Claude for Microsoft 365 add-in missing for some users",
       "impact": "minor",
-      "status": "monitoring",
-      "started": "2026-11-23T15:50:14Z",
-      "updated": "2026-11-23T16:12:58Z",
-      "url": "https://status.openai.com",
+      "status": "investigating",
+      "started": "2026-11-24T00:10:40.012Z",
+      "updated": "2026-11-24T05:05:21.429Z",
+      "url": "https://stspg.io/ffdq2qfv8frk",
       "source": "provider status page"
     },
     {
@@ -684,6 +706,17 @@
       "started": "",
       "updated": "",
       "url": "https://status.paloaltonetworks.com",
+      "source": "provider status page"
+    },
+    {
+      "provider": "Rapid7",
+      "key": "rapid7",
+      "title": "Service Under Maintenance",
+      "impact": "maintenance",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://status.rapid7.com",
       "source": "provider status page"
     }
   ]

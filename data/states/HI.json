@@ -1,17 +1,32 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-23T16:17:27.338463+00:00",
-  "date": "2026-11-23",
+  "generated_at": "2026-11-24T16:06:29.256706+00:00",
+  "date": "2026-11-24",
   "state": "HI",
   "counties_total": 5,
-  "counties_with_alerts": 0,
+  "counties_with_alerts": 4,
   "counties": {
     "15001": {
       "fips": "15001",
       "name": "Hawaii County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "High Surf Warning",
+            "headline": "High Surf Warning issued November 24 at 3:34AM HST until November 25 at 6:00AM HST by NWS Honolulu HI",
+            "severity": "Moderate",
+            "urgency": "Expected",
+            "effective": "2026-11-24T03:34:00-10:00",
+            "expires": "2026-11-24T16:45:00-10:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1c2ae2d539a73fde6fc6302f0d47ca114c997791.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1c2ae2d539a73fde6fc6302f0d47ca114c997791.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -25,19 +40,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.6,
-          "precip_probability_pct": 42,
+          "precip_in_24h": 0.05,
+          "precip_probability_pct": 32,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 69.0,
-          "low_temp_f": 43.0,
-          "high_apparent_temp_f": 69.0,
-          "low_apparent_temp_f": 41.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 13.8,
+          "high_temp_f": 72.0,
+          "low_temp_f": 45.0,
+          "high_apparent_temp_f": 72.0,
+          "low_apparent_temp_f": 39.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 34.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -47,15 +62,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 20,
+          "us_aqi": 21,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 0.8,
-          "pm10": 1.3,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 2.1,
-          "observed_at": "2026-11-23T15:00",
+          "pm2_5": 0.7,
+          "pm10": 1.0,
+          "ozone": 54.0,
+          "nitrogen_dioxide": 1.8,
+          "observed_at": "2026-11-24T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -65,7 +80,22 @@
       "name": "Honolulu County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "High Surf Warning",
+            "headline": "High Surf Warning issued November 24 at 3:34AM HST until November 25 at 6:00AM HST by NWS Honolulu HI",
+            "severity": "Moderate",
+            "urgency": "Expected",
+            "effective": "2026-11-24T03:34:00-10:00",
+            "expires": "2026-11-24T16:45:00-10:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1c2ae2d539a73fde6fc6302f0d47ca114c997791.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1c2ae2d539a73fde6fc6302f0d47ca114c997791.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -79,19 +109,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
           "precip_probability_pct": 6,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 84.0,
-          "low_temp_f": 71.0,
-          "high_apparent_temp_f": 84.0,
-          "low_apparent_temp_f": 71.0,
+          "high_temp_f": 85.0,
+          "low_temp_f": 72.0,
+          "high_apparent_temp_f": 85.0,
+          "low_apparent_temp_f": 72.0,
           "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 18.4,
+          "max_wind_gust_mph": 31.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -101,15 +131,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 50,
+          "us_aqi": 38,
           "category": "Good",
-          "aqi_24h_max": 52,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 8.2,
-          "pm10": 14.2,
-          "ozone": 81.0,
-          "nitrogen_dioxide": 0.0,
-          "observed_at": "2026-11-23T15:00",
+          "aqi_24h_max": 46,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 5.6,
+          "pm10": 10.0,
+          "ozone": 75.0,
+          "nitrogen_dioxide": 0.1,
+          "observed_at": "2026-11-24T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -137,15 +167,15 @@
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 18,
+          "precip_probability_pct": 15,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 77.0,
           "low_temp_f": 72.0,
           "high_apparent_temp_f": 77.0,
           "low_apparent_temp_f": 72.0,
-          "max_wind_mph": 19.6,
-          "max_wind_gust_mph": 21.9,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 23.0,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -155,15 +185,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 47,
+          "us_aqi": 36,
           "category": "Good",
-          "aqi_24h_max": 53,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 7.8,
-          "pm10": 13.3,
-          "ozone": 84.0,
+          "aqi_24h_max": 40,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 5.7,
+          "pm10": 9.9,
+          "ozone": 79.0,
           "nitrogen_dioxide": 0.1,
-          "observed_at": "2026-11-23T15:00",
+          "observed_at": "2026-11-24T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -173,7 +203,22 @@
       "name": "Kauai County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "High Surf Warning",
+            "headline": "High Surf Warning issued November 24 at 3:34AM HST until November 25 at 6:00AM HST by NWS Honolulu HI",
+            "severity": "Moderate",
+            "urgency": "Expected",
+            "effective": "2026-11-24T03:34:00-10:00",
+            "expires": "2026-11-24T16:45:00-10:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1c2ae2d539a73fde6fc6302f0d47ca114c997791.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1c2ae2d539a73fde6fc6302f0d47ca114c997791.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -187,7 +232,7 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
@@ -195,11 +240,11 @@
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 85.0,
-          "low_temp_f": 64.0,
-          "high_apparent_temp_f": 85.0,
-          "low_apparent_temp_f": 64.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 8.1,
+          "low_temp_f": 63.0,
+          "high_apparent_temp_f": 86.0,
+          "low_apparent_temp_f": 63.0,
+          "max_wind_mph": 5.8,
+          "max_wind_gust_mph": 31.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -209,15 +254,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 41,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 50,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.3,
-          "pm10": 6.6,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 0.8,
-          "observed_at": "2026-11-23T15:00",
+          "pm2_5": 3.7,
+          "pm10": 5.6,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 0.9,
+          "observed_at": "2026-11-24T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -227,7 +272,22 @@
       "name": "Maui County",
       "state": "HI",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "High Surf Warning",
+            "headline": "High Surf Warning issued November 24 at 3:34AM HST until November 25 at 6:00AM HST by NWS Honolulu HI",
+            "severity": "Moderate",
+            "urgency": "Expected",
+            "effective": "2026-11-24T03:34:00-10:00",
+            "expires": "2026-11-24T16:45:00-10:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1c2ae2d539a73fde6fc6302f0d47ca114c997791.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1c2ae2d539a73fde6fc6302f0d47ca114c997791.001.1"
+            ],
+            "count": 1
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -241,19 +301,19 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
           "precip_in_24h": 0.0,
-          "precip_probability_pct": 16,
+          "precip_probability_pct": 15,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 70.0,
           "low_temp_f": 60.0,
           "high_apparent_temp_f": 70.0,
           "low_apparent_temp_f": 60.0,
-          "max_wind_mph": 16.1,
-          "max_wind_gust_mph": 20.7,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 19.6,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
@@ -263,15 +323,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 41,
+          "us_aqi": 36,
           "category": "Good",
-          "aqi_24h_max": 48,
+          "aqi_24h_max": 38,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.0,
-          "pm10": 12.0,
-          "ozone": 81.0,
+          "pm2_5": 5.7,
+          "pm10": 9.7,
+          "ozone": 77.0,
           "nitrogen_dioxide": 0.3,
-          "observed_at": "2026-11-23T15:00",
+          "observed_at": "2026-11-24T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
