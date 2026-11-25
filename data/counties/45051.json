@@ -8,7 +8,22 @@
     "lon": -78.976675
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Coastal Flood Warning",
+        "headline": "Coastal Flood Warning issued November 24 at 8:37PM EST until November 25 at 10:00AM EST by NWS Wilmington NC",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-24T20:37:00-05:00",
+        "expires": "2026-11-25T10:00:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f34c14a37da910ee12d20bb68ae773f880123bb.001.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6f34c14a37da910ee12d20bb68ae773f880123bb.001.2"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,40 +37,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 10,
+      "precip_in_24h": 3.01,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 62.0,
-      "low_temp_f": 47.0,
-      "high_apparent_temp_f": 62.0,
-      "low_apparent_temp_f": 43.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 23.0,
-      "thunder_probability_pct": 4,
+      "high_temp_f": 60.0,
+      "low_temp_f": 46.0,
+      "high_apparent_temp_f": 60.0,
+      "low_apparent_temp_f": 41.0,
+      "max_wind_mph": 19.6,
+      "max_wind_gust_mph": 34.5,
+      "thunder_probability_pct": 27,
       "lightning_activity_level": null,
       "weather": [
-        "fog"
+        "moderate rain showers",
+        "heavy rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 23,
+      "us_aqi": 28,
       "category": "Good",
-      "aqi_24h_max": 26,
+      "aqi_24h_max": 35,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 5.6,
-      "pm10": 5.6,
-      "ozone": 48.0,
-      "nitrogen_dioxide": 4.8,
-      "observed_at": "2026-11-24T15:00",
+      "pm2_5": 3.4,
+      "pm10": 4.5,
+      "ozone": 69.0,
+      "nitrogen_dioxide": 2.6,
+      "observed_at": "2026-11-25T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-24",
-  "generated_at": "2026-11-24T16:06:29.256706+00:00"
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T13:07:06.814039+00:00"
 }

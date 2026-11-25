@@ -8,7 +8,15 @@
     "lon": -80.443536
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.8\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=27.3798&lon=-80.4435"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -19,44 +27,59 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [],
+    "fema": [
+      {
+        "disaster_number": "4956",
+        "declaration_type": "DR",
+        "declaration_title": "SEVERE STORMS AND FLOODING",
+        "incident_type": "Flood",
+        "declared_at": "2026-11-24T00:00:00.000Z",
+        "is_new_today": false,
+        "incident_begin": "2026-10-31T00:00:00.000Z",
+        "incident_end": null,
+        "designated_area": "St. Lucie (County)",
+        "fema_declaration_string": "DR-4956-FL",
+        "source": "https://www.fema.gov/disaster/4956",
+        "url": "https://www.fema.gov/disaster/4956"
+      }
+    ],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.11,
-      "precip_probability_pct": 53,
+      "precip_in_24h": 1.79,
+      "precip_probability_pct": 90,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 76.0,
-      "low_temp_f": 63.0,
-      "high_apparent_temp_f": 76.0,
-      "low_apparent_temp_f": 63.0,
-      "max_wind_mph": 9.2,
-      "max_wind_gust_mph": 16.1,
-      "thunder_probability_pct": 9,
+      "high_temp_f": 73.0,
+      "low_temp_f": 67.0,
+      "high_apparent_temp_f": 73.0,
+      "low_apparent_temp_f": 67.0,
+      "max_wind_mph": 11.5,
+      "max_wind_gust_mph": 20.7,
+      "thunder_probability_pct": 37,
       "lightning_activity_level": null,
       "weather": [
-        "very_light rain showers",
-        "moderate rain showers"
+        "moderate rain showers",
+        "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 19,
+      "us_aqi": 26,
       "category": "Good",
       "aqi_24h_max": 32,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.0,
-      "pm10": 3.6,
-      "ozone": 53.0,
-      "nitrogen_dioxide": 3.9,
-      "observed_at": "2026-11-24T15:00",
+      "pm2_5": 3.5,
+      "pm10": 5.0,
+      "ozone": 58.0,
+      "nitrogen_dioxide": 3.2,
+      "observed_at": "2026-11-25T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-24",
-  "generated_at": "2026-11-24T16:06:29.256706+00:00"
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T13:07:06.814039+00:00"
 }

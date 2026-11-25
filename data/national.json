@@ -1,7 +1,7 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-24T16:06:29.256706+00:00",
-  "date": "2026-11-24",
+  "generated_at": "2026-11-25T13:07:06.814039+00:00",
+  "date": "2026-11-25",
   "data_windows": {
     "national.cdc_han": "7d",
     "national.cdc_outbreaks": "active (CDC US-based outbreaks, workplace-relevant)",
@@ -13,13 +13,13 @@
   "data_sources": {
     "weather_nws_alerts": {
       "status": "ok",
-      "counties_with_alerts": 221
+      "counties_with_alerts": 485
     },
     "weather_nws_forecast": {
       "status": "ok",
       "counties_queried": 3222,
       "counties_with_conditions": 3222,
-      "counties_over_threshold": 40,
+      "counties_over_threshold": 175,
       "retries_used": 0,
       "retry_budget_exhausted": false
     },
@@ -30,35 +30,35 @@
     },
     "gdelt": {
       "status": "ok",
-      "counties_with_matches": 48,
+      "counties_with_matches": 26,
       "items_pre_llm": {
-        "protest": 43,
-        "utility_outage": 6,
-        "transit_disruption": 8,
+        "protest": 30,
+        "utility_outage": 1,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 6,
+        "hazmat_incident": 0,
         "road_closure": 7
       }
     },
     "llm_filter_gemini": {
       "status": "ok",
-      "counties_with_matches": 48,
+      "counties_with_matches": 23,
       "items_post_llm": {
-        "protest": 43,
-        "utility_outage": 6,
-        "transit_disruption": 8,
+        "protest": 25,
+        "utility_outage": 1,
+        "transit_disruption": 0,
         "service_provider_outage": 0,
-        "hazmat_incident": 6,
+        "hazmat_incident": 0,
         "road_closure": 7
       },
-      "unique_articles": 42,
-      "calls_used": 42,
+      "unique_articles": 27,
+      "calls_used": 27,
       "cap": 300,
       "cap_hit": false
     },
     "wildfires_nifc": {
       "status": "ok",
-      "counties_with_alerts": 117
+      "counties_with_alerts": 95
     },
     "transit": {
       "status": "ok",
@@ -138,7 +138,7 @@
     },
     "fema": {
       "status": "ok",
-      "counties_with_alerts": 19
+      "counties_with_alerts": 27
     },
     "disease_cdc_han": {
       "status": "ok",
@@ -150,8 +150,8 @@
     },
     "disease_wastewater": {
       "status": "ok",
-      "positive_samples": 5,
-      "counties_with_detections": 4
+      "positive_samples": 4,
+      "counties_with_detections": 3
     },
     "nndss_notifiable": {
       "status": "ok",
@@ -168,7 +168,7 @@
     },
     "service_status": {
       "status": "partial",
-      "active_incidents": 6,
+      "active_incidents": 5,
       "providers_ok": 26,
       "providers_total": 27,
       "providers": [
@@ -194,7 +194,7 @@
           "key": "cloudflare",
           "name": "Cloudflare",
           "status": "ok",
-          "items": 3
+          "items": 1
         },
         {
           "key": "github",
@@ -218,7 +218,7 @@
           "key": "openai",
           "name": "OpenAI",
           "status": "ok",
-          "items": 0
+          "items": 1
         },
         {
           "key": "anthropic",
@@ -656,44 +656,33 @@
     {
       "provider": "Cloudflare",
       "key": "cloudflare",
-      "title": "Issues with Email Routing in France",
+      "title": "Partially Degraded Service",
       "impact": "minor",
-      "status": "identified",
-      "started": "2026-11-24T13:38:40.144Z",
-      "updated": "2026-11-24T14:50:35.525Z",
-      "url": "https://www.cloudflarestatus.com/incidents/x5ma22sji8wi",
+      "status": "active",
+      "started": "",
+      "updated": "",
+      "url": "https://www.cloudflarestatus.com",
       "source": "provider status page"
     },
     {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Magic Transit Degraded Performance",
-      "impact": "major",
-      "status": "identified",
-      "started": "2026-11-24T11:29:22.902Z",
-      "updated": "2026-11-24T14:58:40.337Z",
-      "url": "https://www.cloudflarestatus.com/incidents/no721jcnlrbh",
-      "source": "provider status page"
-    },
-    {
-      "provider": "Cloudflare",
-      "key": "cloudflare",
-      "title": "Cloudflare Workers API – Delayed or Inconsistent Responses",
+      "provider": "OpenAI",
+      "key": "openai",
+      "title": "ChatGPT and Codex Cloud are experiencing elevated conversation errors",
       "impact": "minor",
       "status": "identified",
-      "started": "2026-11-23T13:52:11.144Z",
-      "updated": "2026-11-24T01:28:49.900Z",
-      "url": "https://www.cloudflarestatus.com/incidents/00dp7cliyqqt",
+      "started": "2026-11-25T11:48:13Z",
+      "updated": "2026-11-25T12:14:44Z",
+      "url": "https://status.openai.com",
       "source": "provider status page"
     },
     {
       "provider": "Anthropic",
       "key": "anthropic",
       "title": "Claude for Microsoft 365 add-in missing for some users",
-      "impact": "minor",
+      "impact": "major",
       "status": "investigating",
       "started": "2026-11-24T00:10:40.012Z",
-      "updated": "2026-11-24T05:05:21.429Z",
+      "updated": "2026-11-24T17:19:32.218Z",
       "url": "https://stspg.io/ffdq2qfv8frk",
       "source": "provider status page"
     },

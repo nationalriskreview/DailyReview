@@ -8,7 +8,36 @@
     "lon": -75.121628
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Coastal Flood Warning",
+        "headline": "Coastal Flood Warning issued November 25 at 5:14AM EST until November 27 at 3:00AM EST by NWS Mount Holly NJ",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-25T05:14:00-05:00",
+        "expires": "2026-11-25T18:00:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a41c191b56fa6a1e00aea7b58705e8556eb46643.004.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a41c191b56fa6a1e00aea7b58705e8556eb46643.004.1"
+        ],
+        "count": 1
+      },
+      {
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued November 25 at 1:34AM EST until November 26 at 10:00PM EST by NWS Mount Holly NJ",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-25T01:34:00-05:00",
+        "expires": "2026-11-25T15:15:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6b616627d91cca21d3d184d19ec516f006faa032.004.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6b616627d91cca21d3d184d19ec516f006faa032.004.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,42 +51,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.01,
-      "precip_probability_pct": 96,
+      "precip_in_24h": 0.0,
+      "precip_probability_pct": 3,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 55.0,
-      "low_temp_f": 33.0,
-      "high_apparent_temp_f": 55.0,
-      "low_apparent_temp_f": 29.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 23.0,
-      "thunder_probability_pct": 11,
+      "high_temp_f": 53.0,
+      "low_temp_f": 28.0,
+      "high_apparent_temp_f": 53.0,
+      "low_apparent_temp_f": 20.0,
+      "max_wind_mph": 12.7,
+      "max_wind_gust_mph": 27.6,
+      "thunder_probability_pct": 28,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
         "light rain",
+        "heavy rain",
+        "thunderstorms",
         "moderate rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 39,
+      "us_aqi": 25,
       "category": "Good",
-      "aqi_24h_max": 60,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 6.4,
-      "pm10": 6.4,
-      "ozone": 50.0,
-      "nitrogen_dioxide": 6.3,
-      "observed_at": "2026-11-24T15:00",
+      "aqi_24h_max": 43,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 6.1,
+      "pm10": 6.6,
+      "ozone": 39.0,
+      "nitrogen_dioxide": 17.2,
+      "observed_at": "2026-11-25T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-24",
-  "generated_at": "2026-11-24T16:06:29.256706+00:00"
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T13:07:06.814039+00:00"
 }

@@ -8,7 +8,37 @@
     "lon": -75.767536
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Coastal Flood Warning",
+        "headline": "Coastal Flood Warning issued November 25 at 4:59AM EST until November 27 at 3:00PM EST by NWS Newport/Morehead City NC",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-25T04:59:00-05:00",
+        "expires": "2026-11-25T17:00:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.43ea175359bf5cd36f47c6981f0d8536624d33a9.002.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.43ea175359bf5cd36f47c6981f0d8536624d33a9.002.1",
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.43ea175359bf5cd36f47c6981f0d8536624d33a9.003.1"
+        ],
+        "count": 2
+      },
+      {
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued November 25 at 12:58AM EST until November 26 at 5:00AM EST by NWS Newport/Morehead City NC",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-25T00:58:00-05:00",
+        "expires": "2026-11-25T09:00:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bd5b9d04190a3341f3071eab0a3570eaf3c62758.001.2",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.bd5b9d04190a3341f3071eab0a3570eaf3c62758.001.2"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,20 +52,20 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.02,
-      "precip_probability_pct": 35,
+      "precip_in_24h": 2.16,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 58.0,
-      "low_temp_f": 53.0,
-      "high_apparent_temp_f": 58.0,
-      "low_apparent_temp_f": 53.0,
-      "max_wind_mph": 23.0,
-      "max_wind_gust_mph": 28.8,
-      "thunder_probability_pct": 30,
+      "high_temp_f": 66.0,
+      "low_temp_f": 55.0,
+      "high_apparent_temp_f": 66.0,
+      "low_apparent_temp_f": 55.0,
+      "max_wind_mph": 38.0,
+      "max_wind_gust_mph": 50.6,
+      "thunder_probability_pct": 17,
       "lightning_activity_level": null,
       "weather": [
         "light rain showers",
@@ -46,18 +76,18 @@
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 27,
+      "us_aqi": 43,
       "category": "Good",
-      "aqi_24h_max": 33,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 5.0,
-      "pm10": 7.1,
-      "ozone": 63.0,
-      "nitrogen_dioxide": 2.1,
-      "observed_at": "2026-11-24T15:00",
+      "aqi_24h_max": 54,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 13.2,
+      "pm10": 21.8,
+      "ozone": 85.0,
+      "nitrogen_dioxide": 0.8,
+      "observed_at": "2026-11-25T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-24",
-  "generated_at": "2026-11-24T16:06:29.256706+00:00"
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T13:07:06.814039+00:00"
 }

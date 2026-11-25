@@ -11,15 +11,15 @@
     "weather": [
       {
         "event": "Flood Warning",
-        "headline": "Flood Warning issued November 24 at 9:11AM EST by NWS Melbourne FL",
+        "headline": "Flood Warning issued November 24 at 8:22PM EST by NWS Melbourne FL",
         "severity": "Severe",
         "urgency": "Immediate",
-        "effective": "2026-11-24T09:11:00-05:00",
-        "expires": "2026-11-24T23:00:00-05:00",
+        "effective": "2026-11-24T20:22:00-05:00",
+        "expires": "2026-11-25T12:00:00-05:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12297f4f76eddc425663258e20602fe6820d2b06.001.1",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ffcc920a7b8cbf24427c6b130d4893f2e786bc08.001.1",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.12297f4f76eddc425663258e20602fe6820d2b06.001.1"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.ffcc920a7b8cbf24427c6b130d4893f2e786bc08.001.1"
         ],
         "count": 1
       }
@@ -34,45 +34,59 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [],
+    "fema": [
+      {
+        "disaster_number": "4956",
+        "declaration_type": "DR",
+        "declaration_title": "SEVERE STORMS AND FLOODING",
+        "incident_type": "Flood",
+        "declared_at": "2026-11-24T00:00:00.000Z",
+        "is_new_today": false,
+        "incident_begin": "2026-10-31T00:00:00.000Z",
+        "incident_end": null,
+        "designated_area": "Brevard (County)",
+        "fema_declaration_string": "DR-4956-FL",
+        "source": "https://www.fema.gov/disaster/4956",
+        "url": "https://www.fema.gov/disaster/4956"
+      }
+    ],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.01,
-      "precip_probability_pct": 29,
+      "precip_in_24h": 1.81,
+      "precip_probability_pct": 91,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 73.0,
-      "low_temp_f": 62.0,
-      "high_apparent_temp_f": 73.0,
-      "low_apparent_temp_f": 62.0,
-      "max_wind_mph": 10.4,
-      "max_wind_gust_mph": 15.0,
-      "thunder_probability_pct": 5,
+      "high_temp_f": 72.0,
+      "low_temp_f": 66.0,
+      "high_apparent_temp_f": 72.0,
+      "low_apparent_temp_f": 66.0,
+      "max_wind_mph": 11.5,
+      "max_wind_gust_mph": 17.3,
+      "thunder_probability_pct": 26,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
-        "very_light rain showers",
-        "moderate rain showers"
+        "moderate rain showers",
+        "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 23,
+      "us_aqi": 31,
       "category": "Good",
-      "aqi_24h_max": 33,
+      "aqi_24h_max": 34,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.8,
+      "pm2_5": 3.0,
       "pm10": 4.8,
-      "ozone": 56.0,
-      "nitrogen_dioxide": 3.3,
-      "observed_at": "2026-11-24T15:00",
+      "ozone": 68.0,
+      "nitrogen_dioxide": 1.4,
+      "observed_at": "2026-11-25T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-24",
-  "generated_at": "2026-11-24T16:06:29.256706+00:00"
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T13:07:06.814039+00:00"
 }

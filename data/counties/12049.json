@@ -8,7 +8,15 @@
     "lon": -81.82158
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.8\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=27.4928&lon=-81.8216"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -19,43 +27,59 @@
     "transit": [],
     "amtrak": [],
     "aviation": [],
-    "fema": [],
+    "fema": [
+      {
+        "disaster_number": "4956",
+        "declaration_type": "DR",
+        "declaration_title": "SEVERE STORMS AND FLOODING",
+        "incident_type": "Flood",
+        "declared_at": "2026-11-24T00:00:00.000Z",
+        "is_new_today": false,
+        "incident_begin": "2026-10-31T00:00:00.000Z",
+        "incident_end": null,
+        "designated_area": "Hardee (County)",
+        "fema_declaration_string": "DR-4956-FL",
+        "source": "https://www.fema.gov/disaster/4956",
+        "url": "https://www.fema.gov/disaster/4956"
+      }
+    ],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 6,
+      "precip_in_24h": 1.77,
+      "precip_probability_pct": 88,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 75.0,
-      "low_temp_f": 62.0,
-      "high_apparent_temp_f": 75.0,
-      "low_apparent_temp_f": 62.0,
-      "max_wind_mph": 8.1,
-      "max_wind_gust_mph": 13.8,
-      "thunder_probability_pct": null,
+      "high_temp_f": 72.0,
+      "low_temp_f": 65.0,
+      "high_apparent_temp_f": 72.0,
+      "low_apparent_temp_f": 65.0,
+      "max_wind_mph": 10.4,
+      "max_wind_gust_mph": 16.1,
+      "thunder_probability_pct": 45,
       "lightning_activity_level": null,
       "weather": [
-        "moderate rain showers"
+        "moderate rain showers",
+        "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 18,
+      "us_aqi": 24,
       "category": "Good",
-      "aqi_24h_max": 29,
+      "aqi_24h_max": 30,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 3.3,
-      "pm10": 3.3,
-      "ozone": 41.0,
-      "nitrogen_dioxide": 5.7,
-      "observed_at": "2026-11-24T15:00",
+      "pm2_5": 3.4,
+      "pm10": 4.3,
+      "ozone": 49.0,
+      "nitrogen_dioxide": 4.4,
+      "observed_at": "2026-11-25T12:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-24",
-  "generated_at": "2026-11-24T16:06:29.256706+00:00"
+  "date": "2026-11-25",
+  "generated_at": "2026-11-25T13:07:06.814039+00:00"
 }
