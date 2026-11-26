@@ -10,36 +10,64 @@
   "alerts": {
     "weather": [
       {
-        "event": "Coastal Flood Warning",
-        "headline": "Coastal Flood Warning issued November 25 at 3:14AM EST until November 26 at 3:00PM EST by NWS Wakefield VA",
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued November 26 at 9:32AM EST until November 26 at 3:30PM EST by NWS Wakefield VA",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-11-25T03:14:00-05:00",
-        "expires": "2026-11-25T16:00:00-05:00",
+        "effective": "2026-11-26T09:32:00-05:00",
+        "expires": "2026-11-26T15:30:00-05:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9851f63573be3bd64e30050f1ff86fba4a1fd46a.005.2",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4c7a751131a12f2f6822aa55f8d797bdcc03c4a1.001.1",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9851f63573be3bd64e30050f1ff86fba4a1fd46a.005.2"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4c7a751131a12f2f6822aa55f8d797bdcc03c4a1.001.1"
+        ],
+        "count": 1
+      },
+      {
+        "event": "Coastal Flood Warning",
+        "headline": "Coastal Flood Warning issued November 26 at 9:10AM EST until November 26 at 3:00PM EST by NWS Wakefield VA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-26T09:10:00-05:00",
+        "expires": "2026-11-26T17:15:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9aedb091e7efbb4d3be511378cde76bad7da58b5.002.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.9aedb091e7efbb4d3be511378cde76bad7da58b5.002.1"
         ],
         "count": 1
       },
       {
         "event": "High Wind Warning",
-        "headline": "High Wind Warning issued November 25 at 1:34AM EST until November 26 at 1:00PM EST by NWS Wakefield VA",
+        "headline": "High Wind Warning issued November 26 at 3:00AM EST until November 26 at 1:00PM EST by NWS Wakefield VA",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-11-25T01:34:00-05:00",
-        "expires": "2026-11-25T16:00:00-05:00",
+        "effective": "2026-11-26T03:00:00-05:00",
+        "expires": "2026-11-26T13:00:00-05:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.edb6521cbd6d38ab42fe8585af1b7d9a10a95487.001.2",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.66c0a7dc7dc2fc70bd27f9d62717d5d720b322a8.002.1",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.edb6521cbd6d38ab42fe8585af1b7d9a10a95487.001.2"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.66c0a7dc7dc2fc70bd27f9d62717d5d720b322a8.002.1"
         ],
         "count": 1
       }
     ],
     "protest": [],
-    "utility_outage": [],
+    "utility_outage": [
+      {
+        "title": "US power outages: Nearly 300,000 customers without electricity; here's what's happening",
+        "url": "https://economictimes.indiatimes.com/news/international/world-news/us-power-outages-nearly-300000-customers-without-electricity-heres-whats-happening/articleshow/136187218.cms",
+        "domain": "indiatimes.com",
+        "seendate": "20261126110000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://economictimes.indiatimes.com/news/international/world-news/us-power-outages-nearly-300000-customers-without-electricity-heres-whats-happening/articleshow/136187218.cms",
+            "domain": "indiatimes.com"
+          }
+        ]
+      }
+    ],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -51,41 +79,44 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 4,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.21,
-      "precip_probability_pct": 76,
+      "precip_in_24h": 2.71,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 60.0,
-      "low_temp_f": 45.0,
-      "high_apparent_temp_f": 54.0,
-      "low_apparent_temp_f": 39.0,
-      "max_wind_mph": 24.2,
-      "max_wind_gust_mph": 40.3,
-      "thunder_probability_pct": null,
+      "high_temp_f": 70.0,
+      "low_temp_f": 52.0,
+      "high_apparent_temp_f": 67.0,
+      "low_apparent_temp_f": 47.0,
+      "max_wind_mph": 35.7,
+      "max_wind_gust_mph": 56.4,
+      "thunder_probability_pct": 18,
       "lightning_activity_level": null,
       "weather": [
-        "light rain",
-        "moderate rain"
+        "heavy rain",
+        "heavy rain showers",
+        "thunderstorms",
+        "moderate rain",
+        "light rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 38,
+      "us_aqi": 49,
       "category": "Good",
-      "aqi_24h_max": 52,
+      "aqi_24h_max": 53,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 12.4,
-      "pm10": 20.4,
-      "ozone": 85.0,
-      "nitrogen_dioxide": 1.6,
-      "observed_at": "2026-11-25T12:00",
+      "pm2_5": 1.7,
+      "pm10": 2.8,
+      "ozone": 76.0,
+      "nitrogen_dioxide": 1.3,
+      "observed_at": "2026-11-26T15:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-25",
-  "generated_at": "2026-11-25T13:07:06.814039+00:00"
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T15:31:22.460209+00:00"
 }

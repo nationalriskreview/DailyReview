@@ -1,17 +1,25 @@
 {
   "schema_version": "1.8",
-  "generated_at": "2026-11-25T13:07:06.814039+00:00",
-  "date": "2026-11-25",
+  "generated_at": "2026-11-26T15:31:22.460209+00:00",
+  "date": "2026-11-26",
   "state": "NY",
   "counties_total": 62,
-  "counties_with_alerts": 9,
+  "counties_with_alerts": 26,
   "counties": {
     "36001": {
       "fips": "36001",
       "name": "Albany County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=42.5882&lon=-73.9740"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -25,39 +33,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.15,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 40.0,
-          "low_temp_f": 23.0,
-          "high_apparent_temp_f": 40.0,
+          "low_temp_f": 25.0,
+          "high_apparent_temp_f": 35.0,
           "low_apparent_temp_f": 23.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 5.8,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 28.8,
           "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
-            "moderate rain",
             "light rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
-          "category": "Good",
-          "aqi_24h_max": 32,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 6.8,
-          "pm10": 7.3,
-          "ozone": 42.0,
-          "nitrogen_dioxide": 13.3,
-          "observed_at": "2026-11-25T12:00",
+          "us_aqi": 51,
+          "category": "Moderate",
+          "aqi_24h_max": 53,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.9,
+          "pm10": 10.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 22.4,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -84,36 +91,37 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.98,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 21.0,
-          "high_apparent_temp_f": 38.0,
-          "low_apparent_temp_f": 21.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
+          "high_temp_f": 40.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 36.0,
+          "low_apparent_temp_f": 24.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 32.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
+            "light snow",
             "light rain",
             "moderate rain",
-            "light rain showers"
+            "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 10.5,
-          "pm10": 10.6,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 13.4,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.4,
+          "pm10": 4.5,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 4.5,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -126,29 +134,29 @@
         "weather": [
           {
             "event": "Coastal Flood Warning",
-            "headline": "Coastal Flood Warning issued November 25 at 4:21AM EST until November 27 at 6:00AM EST by NWS Upton NY",
+            "headline": "Coastal Flood Warning issued November 26 at 4:33AM EST until November 27 at 6:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T04:21:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T04:33:00-05:00",
+            "expires": "2026-11-26T19:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.008.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.003.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.008.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.003.1"
             ],
             "count": 1
           },
           {
             "event": "High Wind Warning",
-            "headline": "High Wind Warning issued November 25 at 3:38AM EST until November 27 at 1:00AM EST by NWS Upton NY",
+            "headline": "High Wind Warning issued November 26 at 3:32AM EST until November 27 at 1:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T03:38:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T03:32:00-05:00",
+            "expires": "2026-11-27T01:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1"
             ],
             "count": 1
           }
@@ -160,44 +168,59 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "MTA Long Island Rail Road",
+            "agency_id": "mta-lirr",
+            "route": "4",
+            "system_outage": false,
+            "effect": "NO_SERVICE",
+            "header": "Westbound service is suspended on the Ronkonkoma Branch due to signal trouble at Hicksville.",
+            "description": "Eastbound\n\nThe 8:47am train from Penn Station to Ronkonkoma is being delayed at Hicksville.\nThe 9:19am train from Penn Station to Ronkonkoma is operating 30-35 minutes late.\nThe 9:47am train from Penn Station to Ronkonkoma is being delayed at Jamaica.\n\nWestbound\n\nThe 9:03am train from Ronkonkoma to Penn Station is being delayed at Bethpage.\nThe 9:31am train from Ronkonkoma to Penn Station is being delayed at Farmingdale.\nThe 10:07am train from Ronkonkoma to Penn Station is being delayed prior to departure.",
+            "start": "2026-11-26T14:40:51+00:00",
+            "end": "",
+            "source": "https://www.mta.info/alerts",
+            "url": "https://www.mta.info/alerts"
+          }
+        ],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.38,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 46.0,
-          "low_temp_f": 34.0,
-          "high_apparent_temp_f": 41.0,
-          "low_apparent_temp_f": 28.0,
-          "max_wind_mph": 12.7,
-          "max_wind_gust_mph": 20.7,
+          "high_temp_f": 54.0,
+          "low_temp_f": 43.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 34.0,
+          "max_wind_mph": 34.5,
+          "max_wind_gust_mph": 58.7,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain"
+            "moderate rain",
+            "heavy rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 50,
           "category": "Good",
           "aqi_24h_max": 51,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.7,
-          "pm10": 11.1,
-          "ozone": 6.0,
-          "nitrogen_dioxide": 49.6,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 9.8,
+          "pm10": 11.6,
+          "ozone": 47.0,
+          "nitrogen_dioxide": 27.7,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -224,16 +247,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.3,
           "precip_probability_pct": 99,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 21.0,
-          "high_apparent_temp_f": 41.0,
-          "low_apparent_temp_f": 21.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 6.9,
+          "high_temp_f": 44.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 37.0,
+          "low_apparent_temp_f": 24.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 35.7,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
@@ -243,15 +266,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 13.1,
-          "pm10": 13.4,
-          "ozone": 34.0,
-          "nitrogen_dioxide": 18.4,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.6,
+          "pm10": 4.6,
+          "ozone": 72.0,
+          "nitrogen_dioxide": 5.0,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -261,7 +284,15 @@
       "name": "Cattaraugus County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=42.2391&lon=-78.6623"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -275,39 +306,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 99,
+          "precip_in_24h": 1.3,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 40.0,
-          "low_temp_f": 19.0,
-          "high_apparent_temp_f": 37.0,
-          "low_apparent_temp_f": 12.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 15.0,
+          "high_temp_f": 38.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 32.0,
+          "low_apparent_temp_f": 20.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 34.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
+            "light snow",
             "light rain",
             "moderate rain",
-            "light rain showers"
+            "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 31,
+          "us_aqi": 29,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 10.0,
-          "pm10": 10.0,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 10.0,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.4,
+          "pm10": 4.6,
+          "ozone": 66.0,
+          "nitrogen_dioxide": 4.0,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -334,16 +366,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 99,
+          "precip_in_24h": 0.34,
+          "precip_probability_pct": 95,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 41.0,
-          "low_temp_f": 24.0,
-          "high_apparent_temp_f": 39.0,
-          "low_apparent_temp_f": 24.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 9.2,
+          "low_temp_f": 27.0,
+          "high_apparent_temp_f": 33.0,
+          "low_apparent_temp_f": 21.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 35.7,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
@@ -354,15 +386,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 34,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.8,
-          "pm10": 8.9,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 18.2,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.5,
+          "pm10": 4.0,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 8.7,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -372,7 +404,15 @@
       "name": "Chautauqua County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=42.3042&lon=-79.4076"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -386,40 +426,40 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.36,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 40.0,
-          "low_temp_f": 23.0,
-          "high_apparent_temp_f": 35.0,
-          "low_apparent_temp_f": 16.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 17.3,
+          "high_temp_f": 39.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 30.0,
+          "low_apparent_temp_f": 19.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 36.8,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
+            "light snow",
             "light rain",
             "moderate rain",
-            "light sleet",
-            "light rain showers"
+            "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 30,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.3,
-          "pm10": 7.4,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 5.4,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.2,
+          "pm10": 4.2,
+          "ozone": 67.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -446,19 +486,20 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 99,
+          "precip_in_24h": 0.52,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 40.0,
-          "low_temp_f": 20.0,
-          "high_apparent_temp_f": 38.0,
-          "low_apparent_temp_f": 20.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 8.1,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 41.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 33.0,
+          "low_apparent_temp_f": 22.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 34.5,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
+            "light snow showers",
             "light rain showers",
             "moderate rain showers"
           ],
@@ -466,15 +507,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 25,
           "category": "Good",
           "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.5,
-          "pm10": 7.6,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 12.6,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.7,
+          "pm10": 4.9,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -501,17 +542,17 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 98,
+          "precip_in_24h": 0.25,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 41.0,
-          "low_temp_f": 17.0,
-          "high_apparent_temp_f": 40.0,
-          "low_apparent_temp_f": 17.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 2,
+          "low_temp_f": 24.0,
+          "high_apparent_temp_f": 33.0,
+          "low_apparent_temp_f": 19.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 36.8,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers"
@@ -520,15 +561,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 24,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.2,
-          "pm10": 6.3,
-          "ozone": 46.0,
-          "nitrogen_dioxide": 9.4,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 4.5,
+          "pm10": 5.7,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 7.7,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -555,35 +596,34 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.24,
+          "precip_probability_pct": 41,
           "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 34.0,
-          "low_temp_f": 17.0,
-          "high_apparent_temp_f": 33.0,
-          "low_apparent_temp_f": 10.0,
+          "ice_in_24h": 0.05,
+          "high_temp_f": 35.0,
+          "low_temp_f": 19.0,
+          "high_apparent_temp_f": 29.0,
+          "low_apparent_temp_f": 14.0,
           "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
+          "max_wind_gust_mph": 12.7,
           "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
-            "light freezing rain",
-            "light rain"
+            "light freezing rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 31,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 46,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.2,
-          "pm10": 3.8,
-          "ozone": 55.0,
-          "nitrogen_dioxide": 3.7,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 12.3,
+          "pm10": 12.3,
+          "ozone": 47.0,
+          "nitrogen_dioxide": 8.3,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -610,36 +650,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.64,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 43.0,
-          "low_temp_f": 23.0,
-          "high_apparent_temp_f": 43.0,
-          "low_apparent_temp_f": 23.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 3.5,
-          "thunder_probability_pct": 7,
+          "high_temp_f": 45.0,
+          "low_temp_f": 26.0,
+          "high_apparent_temp_f": 40.0,
+          "low_apparent_temp_f": 25.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 33.4,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 42,
           "category": "Good",
-          "aqi_24h_max": 31,
+          "aqi_24h_max": 46,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.4,
-          "pm10": 9.0,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 19.7,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 6.1,
+          "pm10": 7.2,
+          "ozone": 51.0,
+          "nitrogen_dioxide": 14.0,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -666,35 +705,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 98,
+          "precip_in_24h": 0.32,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 17.0,
-          "high_apparent_temp_f": 39.0,
-          "low_apparent_temp_f": 17.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 6.9,
+          "high_temp_f": 40.0,
+          "low_temp_f": 24.0,
+          "high_apparent_temp_f": 32.0,
+          "low_apparent_temp_f": 19.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 40.3,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers",
-            "light snow showers"
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 19,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.3,
-          "pm10": 6.3,
-          "ozone": 31.0,
-          "nitrogen_dioxide": 13.0,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 4.1,
+          "pm10": 5.3,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 6.7,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -705,7 +744,64 @@
       "state": "NY",
       "alerts": {
         "weather": [],
-        "protest": [],
+        "protest": [
+          {
+            "title": "NYPD arrests rioters during anti-Israel protest outside Brooklyn kosher deli",
+            "url": "http://www.jpost.com/diaspora/antisemitism/article-916180",
+            "domain": "jpost.com",
+            "seendate": "20261126140000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "http://www.jpost.com/diaspora/antisemitism/article-916180",
+                "domain": "jpost.com"
+              },
+              {
+                "url": "https://www.jpost.com/diaspora/antisemitism/article-916180",
+                "domain": "jpost.com"
+              }
+            ]
+          },
+          {
+            "title": "Anti-Israel NYC agitators clash with counterprotesters at Jewish deli's 'Zionist real estate' event",
+            "url": "https://nypost.com/2026/11/25/us-news/anti-israel-nyc-agitators-clash-with-counterprotesters-at-jewish-delis-zionist-real-estate-event/",
+            "domain": "nypost.com",
+            "seendate": "20261126024500",
+            "is_new": false,
+            "sources": [
+              {
+                "url": "https://nypost.com/2026/11/25/us-news/anti-israel-nyc-agitators-clash-with-counterprotesters-at-jewish-delis-zionist-real-estate-event/",
+                "domain": "nypost.com"
+              }
+            ]
+          },
+          {
+            "title": "Anti-Israel protest targets Brooklyn kosher deli",
+            "url": "https://www.israelnationalnews.com/news/437163",
+            "domain": "israelnationalnews.com",
+            "seendate": "20261126034500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.israelnationalnews.com/news/437163",
+                "domain": "israelnationalnews.com"
+              }
+            ]
+          },
+          {
+            "title": "Pro-Palestinian protesters clash with Israelis, NYPD at Brooklyn real estate event; several arrested",
+            "url": "https://timesofindia.indiatimes.com/world/us/pro-palestinian-protesters-clash-with-israelis-nypd-at-brooklyn-real-estate-event-several-arrested/articleshow/136186433.cms",
+            "domain": "indiatimes.com",
+            "seendate": "20261126103000",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://timesofindia.indiatimes.com/world/us/pro-palestinian-protesters-clash-with-israelis-nypd-at-brooklyn-real-estate-event-several-arrested/articleshow/136186433.cms",
+                "domain": "indiatimes.com"
+              }
+            ]
+          }
+        ],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
@@ -718,20 +814,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 4,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 99,
+          "precip_in_24h": 0.17,
+          "precip_probability_pct": 98,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 44.0,
-          "low_temp_f": 20.0,
-          "high_apparent_temp_f": 44.0,
-          "low_apparent_temp_f": 20.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 3,
+          "low_temp_f": 27.0,
+          "high_apparent_temp_f": 36.0,
+          "low_apparent_temp_f": 24.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 39.1,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers"
@@ -740,15 +836,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 27,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.7,
-          "pm10": 2.9,
+          "pm2_5": 4.9,
+          "pm10": 6.2,
           "ozone": 60.0,
-          "nitrogen_dioxide": 3.1,
-          "observed_at": "2026-11-25T12:00",
+          "nitrogen_dioxide": 8.7,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -775,36 +871,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.79,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 45.0,
-          "low_temp_f": 22.0,
-          "high_apparent_temp_f": 44.0,
-          "low_apparent_temp_f": 20.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": 9,
+          "high_temp_f": 47.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 41.0,
+          "low_apparent_temp_f": 24.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 40.3,
+          "thunder_probability_pct": 5,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 32,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.6,
-          "pm10": 8.1,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 18.2,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 6.0,
+          "pm10": 7.5,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 10.7,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -814,22 +909,16 @@
       "name": "Erie County",
       "state": "NY",
       "alerts": {
-        "weather": [],
-        "protest": [
+        "weather": [
           {
-            "title": "Protesters call for end to ICE flights, demand transparency at Buffalo airport",
-            "url": "https://www.wkbw.com/news/local-news/buffalo/protesters-call-for-end-to-ice-flights-demand-transparency-at-buffalo-airport",
-            "domain": "wkbw.com",
-            "seendate": "20261125060000",
-            "is_new": true,
-            "sources": [
-              {
-                "url": "https://www.wkbw.com/news/local-news/buffalo/protesters-call-for-end-to-ice-flights-demand-transparency-at-buffalo-airport",
-                "domain": "wkbw.com"
-              }
-            ]
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=42.7528&lon=-78.7782"
           }
         ],
+        "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
         "service_provider_outage": [],
@@ -845,37 +934,35 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.35,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 42.0,
-          "low_temp_f": 25.0,
-          "high_apparent_temp_f": 38.0,
-          "low_apparent_temp_f": 18.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 13.8,
+          "high_temp_f": 40.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 34.0,
+          "low_apparent_temp_f": 24.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 40.3,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "light snow",
-            "moderate rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 45,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 54,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 14.8,
-          "pm10": 15.1,
-          "ozone": 34.0,
-          "nitrogen_dioxide": 22.5,
-          "observed_at": "2026-11-25T12:00",
+          "aqi_24h_max": 44,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.6,
+          "pm10": 4.3,
+          "ozone": 53.0,
+          "nitrogen_dioxide": 9.0,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -902,35 +989,34 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.35,
+          "precip_probability_pct": 93,
           "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 34.0,
-          "low_temp_f": 17.0,
-          "high_apparent_temp_f": 34.0,
-          "low_apparent_temp_f": 13.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 12.7,
-          "thunder_probability_pct": 3,
+          "ice_in_24h": 0.03,
+          "high_temp_f": 35.0,
+          "low_temp_f": 25.0,
+          "high_apparent_temp_f": 30.0,
+          "low_apparent_temp_f": 18.0,
+          "max_wind_mph": 9.2,
+          "max_wind_gust_mph": 27.6,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
-            "light freezing rain",
             "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 29,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.4,
-          "pm10": 3.0,
-          "ozone": 61.0,
-          "nitrogen_dioxide": 2.9,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 4.2,
+          "pm10": 4.2,
+          "ozone": 56.0,
+          "nitrogen_dioxide": 3.9,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -957,35 +1043,34 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.27,
+          "precip_probability_pct": 65,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 37.0,
-          "low_temp_f": 14.0,
-          "high_apparent_temp_f": 37.0,
-          "low_apparent_temp_f": 8.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 8.1,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 40.0,
+          "low_temp_f": 21.0,
+          "high_apparent_temp_f": 34.0,
+          "low_apparent_temp_f": 16.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "light freezing rain"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 27,
           "category": "Good",
           "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.7,
-          "pm10": 2.9,
-          "ozone": 59.0,
-          "nitrogen_dioxide": 1.9,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.0,
+          "pm10": 3.0,
+          "ozone": 64.0,
+          "nitrogen_dioxide": 1.6,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1012,35 +1097,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.49,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 37.0,
-          "low_temp_f": 18.0,
-          "high_apparent_temp_f": 34.0,
-          "low_apparent_temp_f": 18.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 6.9,
+          "low_temp_f": 23.0,
+          "high_apparent_temp_f": 28.0,
+          "low_apparent_temp_f": 17.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 34.5,
           "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.5,
-          "pm10": 5.0,
-          "ozone": 47.0,
-          "nitrogen_dioxide": 7.9,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 1.7,
+          "pm10": 1.9,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 3.0,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1050,7 +1135,15 @@
       "name": "Genesee County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=43.0009&lon=-78.1928"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1064,39 +1157,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.49,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 40.0,
-          "low_temp_f": 23.0,
-          "high_apparent_temp_f": 34.0,
-          "low_apparent_temp_f": 17.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 13.8,
+          "high_temp_f": 39.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 32.0,
+          "low_apparent_temp_f": 20.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 34.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
-            "moderate rain",
             "light rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 25,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 39,
+          "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 11.8,
-          "pm10": 12.3,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 22.5,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.6,
+          "pm10": 4.3,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 9.0,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1106,7 +1198,15 @@
       "name": "Greene County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=42.2870&lon=-74.1495"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1120,40 +1220,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.46,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 36.0,
-          "low_temp_f": 22.0,
+          "high_temp_f": 39.0,
+          "low_temp_f": 26.0,
           "high_apparent_temp_f": 34.0,
           "low_apparent_temp_f": 22.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 5,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 34.5,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
-            "light freezing rain",
-            "moderate rain",
             "light rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
-          "category": "Good",
-          "aqi_24h_max": 32,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 6.8,
-          "pm10": 7.3,
-          "ozone": 42.0,
-          "nitrogen_dioxide": 13.3,
-          "observed_at": "2026-11-25T12:00",
+          "us_aqi": 51,
+          "category": "Moderate",
+          "aqi_24h_max": 53,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.9,
+          "pm10": 10.0,
+          "ozone": 40.0,
+          "nitrogen_dioxide": 22.4,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1180,22 +1278,20 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.7,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 37.0,
-          "low_temp_f": 18.0,
-          "high_apparent_temp_f": 37.0,
-          "low_apparent_temp_f": 18.0,
-          "max_wind_mph": 1.2,
-          "max_wind_gust_mph": 3.5,
-          "thunder_probability_pct": 3,
+          "ice_in_24h": 0.01,
+          "high_temp_f": 36.0,
+          "low_temp_f": 23.0,
+          "high_apparent_temp_f": 30.0,
+          "low_apparent_temp_f": 21.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 34.5,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "light freezing rain",
-            "light sleet",
             "moderate rain",
             "moderate freezing rain"
           ],
@@ -1207,11 +1303,11 @@
           "category": "Good",
           "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.5,
-          "pm10": 2.8,
-          "ozone": 58.0,
-          "nitrogen_dioxide": 2.5,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 0.7,
+          "pm10": 0.9,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1238,35 +1334,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.49,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 37.0,
-          "low_temp_f": 18.0,
-          "high_apparent_temp_f": 37.0,
+          "low_temp_f": 24.0,
+          "high_apparent_temp_f": 30.0,
           "low_apparent_temp_f": 18.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": 3,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 38.0,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 31,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.2,
-          "pm10": 2.4,
-          "ozone": 62.0,
-          "nitrogen_dioxide": 1.2,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 0.6,
+          "pm10": 0.8,
+          "ozone": 74.0,
+          "nitrogen_dioxide": 1.8,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1276,90 +1372,13 @@
       "name": "Jefferson County",
       "state": "NY",
       "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 40.0,
-          "low_temp_f": 23.0,
-          "high_apparent_temp_f": 39.0,
-          "low_apparent_temp_f": 16.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "moderate rain",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 22,
-          "category": "Good",
-          "aqi_24h_max": 32,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 4.4,
-          "pm10": 4.5,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 9.7,
-          "observed_at": "2026-11-25T12:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "36047": {
-      "fips": "36047",
-      "name": "Kings County",
-      "state": "NY",
-      "alerts": {
         "weather": [
           {
-            "event": "Coastal Flood Warning",
-            "headline": "Coastal Flood Warning issued November 25 at 4:21AM EST until November 27 at 6:00AM EST by NWS Upton NY",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-25T04:21:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.005.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.005.1"
-            ],
-            "count": 1
-          },
-          {
-            "event": "High Wind Warning",
-            "headline": "High Wind Warning issued November 25 at 3:38AM EST until November 27 at 1:00AM EST by NWS Upton NY",
-            "severity": "Severe",
-            "urgency": "Expected",
-            "effective": "2026-11-25T03:38:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
-            "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1",
-            "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1"
-            ],
-            "count": 1
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.0\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=43.9964&lon=-76.0530"
           }
         ],
         "protest": [],
@@ -1375,20 +1394,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.01,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 47.0,
-          "low_temp_f": 37.0,
-          "high_apparent_temp_f": 42.0,
-          "low_apparent_temp_f": 30.0,
-          "max_wind_mph": 15.0,
-          "max_wind_gust_mph": 23.0,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 43.0,
+          "low_temp_f": 22.0,
+          "high_apparent_temp_f": 36.0,
+          "low_apparent_temp_f": 14.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 28.8,
+          "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
@@ -1398,15 +1417,114 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 19,
+          "category": "Good",
+          "aqi_24h_max": 28,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.9,
+          "pm10": 3.9,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 7.7,
+          "observed_at": "2026-11-26T15:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "36047": {
+      "fips": "36047",
+      "name": "Kings County",
+      "state": "NY",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Coastal Flood Warning",
+            "headline": "Coastal Flood Warning issued November 26 at 4:33AM EST until November 27 at 6:00AM EST by NWS Upton NY",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-26T04:33:00-05:00",
+            "expires": "2026-11-26T19:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.002.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.002.1"
+            ],
+            "count": 1
+          },
+          {
+            "event": "High Wind Warning",
+            "headline": "High Wind Warning issued November 26 at 3:32AM EST until November 27 at 1:00AM EST by NWS Upton NY",
+            "severity": "Severe",
+            "urgency": "Expected",
+            "effective": "2026-11-26T03:32:00-05:00",
+            "expires": "2026-11-27T01:00:00-05:00",
+            "source": "nws_alert",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1",
+            "urls": [
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1"
+            ],
+            "count": 1
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [
+          {
+            "agency": "MTA Long Island Rail Road",
+            "agency_id": "mta-lirr",
+            "route": "4",
+            "system_outage": false,
+            "effect": "NO_SERVICE",
+            "header": "Westbound service is suspended on the Ronkonkoma Branch due to signal trouble at Hicksville.",
+            "description": "Eastbound\n\nThe 8:47am train from Penn Station to Ronkonkoma is being delayed at Hicksville.\nThe 9:19am train from Penn Station to Ronkonkoma is operating 30-35 minutes late.\nThe 9:47am train from Penn Station to Ronkonkoma is being delayed at Jamaica.\n\nWestbound\n\nThe 9:03am train from Ronkonkoma to Penn Station is being delayed at Bethpage.\nThe 9:31am train from Ronkonkoma to Penn Station is being delayed at Farmingdale.\nThe 10:07am train from Ronkonkoma to Penn Station is being delayed prior to departure.",
+            "start": "2026-11-26T14:40:51+00:00",
+            "end": "",
+            "source": "https://www.mta.info/alerts",
+            "url": "https://www.mta.info/alerts"
+          }
+        ],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 3,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.47,
+          "precip_probability_pct": 100,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 55.0,
+          "low_temp_f": 45.0,
+          "high_apparent_temp_f": 55.0,
+          "low_apparent_temp_f": 37.0,
+          "max_wind_mph": 36.8,
+          "max_wind_gust_mph": 62.1,
+          "thunder_probability_pct": 3,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain",
+            "moderate rain",
+            "heavy rain"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 50,
           "category": "Good",
           "aqi_24h_max": 51,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.7,
-          "pm10": 11.1,
-          "ozone": 6.0,
-          "nitrogen_dioxide": 49.6,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 9.8,
+          "pm10": 11.6,
+          "ozone": 47.0,
+          "nitrogen_dioxide": 27.7,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1433,37 +1551,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.89,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 20.0,
-          "high_apparent_temp_f": 41.0,
-          "low_apparent_temp_f": 20.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 8.1,
+          "high_temp_f": 46.0,
+          "low_temp_f": 21.0,
+          "high_apparent_temp_f": 43.0,
+          "low_apparent_temp_f": 16.0,
+          "max_wind_mph": 8.1,
+          "max_wind_gust_mph": 21.9,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "light snow",
-            "moderate rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 29,
           "category": "Good",
           "aqi_24h_max": 33,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.5,
-          "pm10": 3.5,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 6.6,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 1.0,
+          "pm10": 1.2,
+          "ozone": 62.0,
+          "nitrogen_dioxide": 3.3,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1473,7 +1589,15 @@
       "name": "Livingston County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=42.7290&lon=-77.7785"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1487,40 +1611,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.15,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 40.0,
-          "low_temp_f": 23.0,
-          "high_apparent_temp_f": 36.0,
-          "low_apparent_temp_f": 19.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 11.5,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 33.0,
+          "low_apparent_temp_f": 23.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 26.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "light snow",
-            "moderate rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 34,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 18.2,
-          "pm10": 18.5,
-          "ozone": 24.0,
-          "nitrogen_dioxide": 29.8,
-          "observed_at": "2026-11-25T12:00",
+          "aqi_24h_max": 40,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.9,
+          "pm10": 4.9,
+          "ozone": 59.0,
+          "nitrogen_dioxide": 7.0,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1547,17 +1669,17 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 98,
+          "precip_in_24h": 0.23,
+          "precip_probability_pct": 92,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 39.0,
-          "low_temp_f": 21.0,
-          "high_apparent_temp_f": 37.0,
-          "low_apparent_temp_f": 21.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 38.0,
+          "low_temp_f": 26.0,
+          "high_apparent_temp_f": 28.0,
+          "low_apparent_temp_f": 19.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 36.8,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers"
@@ -1566,15 +1688,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 20,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.2,
-          "pm10": 4.3,
-          "ozone": 29.0,
-          "nitrogen_dioxide": 10.6,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 5.7,
+          "pm10": 6.9,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 11.7,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1584,7 +1706,15 @@
       "name": "Monroe County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=43.2503&lon=-77.7005"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -1598,39 +1728,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.51,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 42.0,
-          "low_temp_f": 28.0,
+          "high_temp_f": 44.0,
+          "low_temp_f": 33.0,
           "high_apparent_temp_f": 36.0,
-          "low_apparent_temp_f": 24.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 13.8,
+          "low_apparent_temp_f": 26.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 39.1,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 37,
+          "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 11.6,
-          "pm10": 12.3,
-          "ozone": 43.0,
-          "nitrogen_dioxide": 23.4,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.7,
+          "pm10": 4.5,
+          "ozone": 56.0,
+          "nitrogen_dioxide": 8.8,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1657,35 +1786,34 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.46,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 41.0,
-          "low_temp_f": 22.0,
-          "high_apparent_temp_f": 39.0,
-          "low_apparent_temp_f": 22.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 8.1,
+          "low_temp_f": 25.0,
+          "high_apparent_temp_f": 33.0,
+          "low_apparent_temp_f": 20.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 33.4,
           "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "light rain showers"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 39,
           "category": "Good",
-          "aqi_24h_max": 31,
+          "aqi_24h_max": 43,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.0,
-          "pm10": 6.4,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 10.9,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 7.2,
+          "pm10": 7.9,
+          "ozone": 43.0,
+          "nitrogen_dioxide": 18.5,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1698,30 +1826,30 @@
         "weather": [
           {
             "event": "Coastal Flood Warning",
-            "headline": "Coastal Flood Warning issued November 25 at 4:21AM EST until November 27 at 6:00AM EST by NWS Upton NY",
+            "headline": "Coastal Flood Warning issued November 26 at 4:33AM EST until November 27 at 6:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T04:21:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T04:33:00-05:00",
+            "expires": "2026-11-26T19:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.003.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.001.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.008.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.003.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.006.1"
             ],
             "count": 2
           },
           {
             "event": "High Wind Warning",
-            "headline": "High Wind Warning issued November 25 at 3:38AM EST until November 27 at 1:00AM EST by NWS Upton NY",
+            "headline": "High Wind Warning issued November 26 at 3:32AM EST until November 27 at 1:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T03:38:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T03:32:00-05:00",
+            "expires": "2026-11-27T01:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1"
             ],
             "count": 1
           }
@@ -1733,45 +1861,60 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "MTA Long Island Rail Road",
+            "agency_id": "mta-lirr",
+            "route": "4",
+            "system_outage": false,
+            "effect": "NO_SERVICE",
+            "header": "Westbound service is suspended on the Ronkonkoma Branch due to signal trouble at Hicksville.",
+            "description": "Eastbound\n\nThe 8:47am train from Penn Station to Ronkonkoma is being delayed at Hicksville.\nThe 9:19am train from Penn Station to Ronkonkoma is operating 30-35 minutes late.\nThe 9:47am train from Penn Station to Ronkonkoma is being delayed at Jamaica.\n\nWestbound\n\nThe 9:03am train from Ronkonkoma to Penn Station is being delayed at Bethpage.\nThe 9:31am train from Ronkonkoma to Penn Station is being delayed at Farmingdale.\nThe 10:07am train from Ronkonkoma to Penn Station is being delayed prior to departure.",
+            "start": "2026-11-26T14:40:51+00:00",
+            "end": "",
+            "source": "https://www.mta.info/alerts",
+            "url": "https://www.mta.info/alerts"
+          }
+        ],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.63,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 48.0,
-          "low_temp_f": 34.0,
-          "high_apparent_temp_f": 43.0,
-          "low_apparent_temp_f": 28.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 21.9,
+          "high_temp_f": 53.0,
+          "low_temp_f": 43.0,
+          "high_apparent_temp_f": 53.0,
+          "low_apparent_temp_f": 34.0,
+          "max_wind_mph": 38.0,
+          "max_wind_gust_mph": 61.0,
           "thunder_probability_pct": 20,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
             "moderate rain",
+            "heavy rain",
             "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 43,
           "category": "Good",
-          "aqi_24h_max": 40,
+          "aqi_24h_max": 48,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.7,
-          "pm10": 8.0,
-          "ozone": 24.0,
-          "nitrogen_dioxide": 34.6,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 11.0,
+          "pm10": 14.7,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 17.5,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1784,31 +1927,168 @@
         "weather": [
           {
             "event": "Coastal Flood Warning",
-            "headline": "Coastal Flood Warning issued November 25 at 4:21AM EST until November 27 at 6:00AM EST by NWS Upton NY",
+            "headline": "Coastal Flood Warning issued November 26 at 4:33AM EST until November 27 at 6:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T04:21:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T04:33:00-05:00",
+            "expires": "2026-11-26T19:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.005.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.002.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.005.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.002.1"
             ],
             "count": 1
           },
           {
             "event": "High Wind Warning",
-            "headline": "High Wind Warning issued November 25 at 3:38AM EST until November 27 at 1:00AM EST by NWS Upton NY",
+            "headline": "High Wind Warning issued November 26 at 3:32AM EST until November 27 at 1:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T03:38:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T03:32:00-05:00",
+            "expires": "2026-11-27T01:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1"
             ],
             "count": 1
+          }
+        ],
+        "protest": [
+          {
+            "title": "Three arrested as pro-Palestine and pro-Israeli protestors clash outside Brooklyn deli",
+            "url": "https://www.nydailynews.com/2026/11/25/three-arrested-as-pro-palestine-and-pro-israeli-protestors-clash-outside-brooklyn-deli/",
+            "domain": "nydailynews.com",
+            "seendate": "20261126054500",
+            "is_new": true,
+            "sources": [
+              {
+                "url": "https://www.nydailynews.com/2026/11/25/three-arrested-as-pro-palestine-and-pro-israeli-protestors-clash-outside-brooklyn-deli/",
+                "domain": "nydailynews.com"
+              }
+            ]
+          }
+        ],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [
+          {
+            "agency": "MTA Long Island Rail Road",
+            "agency_id": "mta-lirr",
+            "route": "4",
+            "system_outage": false,
+            "effect": "NO_SERVICE",
+            "header": "Westbound service is suspended on the Ronkonkoma Branch due to signal trouble at Hicksville.",
+            "description": "Eastbound\n\nThe 8:47am train from Penn Station to Ronkonkoma is being delayed at Hicksville.\nThe 9:19am train from Penn Station to Ronkonkoma is operating 30-35 minutes late.\nThe 9:47am train from Penn Station to Ronkonkoma is being delayed at Jamaica.\n\nWestbound\n\nThe 9:03am train from Ronkonkoma to Penn Station is being delayed at Bethpage.\nThe 9:31am train from Ronkonkoma to Penn Station is being delayed at Farmingdale.\nThe 10:07am train from Ronkonkoma to Penn Station is being delayed prior to departure.",
+            "start": "2026-11-26T14:40:51+00:00",
+            "end": "",
+            "source": "https://www.mta.info/alerts",
+            "url": "https://www.mta.info/alerts"
+          },
+          {
+            "agency": "PATH",
+            "agency_id": "path",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "Hoboken and Exchange Place Elevators Severe Storm Shutdown",
+            "description": "08:00 AM: As a precautionary measure, elevators at HOB & EX PL will be closed due to severe weather. HOB closed 9a Thu 11/26-7a Fri 11/27. EXPL closed 10a Thu 11/26-8a Fri 11/27. HBLR will cross-honor riders who need elevator service at HOB, NWPT & EX PL.",
+            "start": "2026-11-26T13:00:01.116000+00:00",
+            "end": "",
+            "source": "https://www.panynj.gov/path/en/alerts.html",
+            "url": "https://www.panynj.gov/path/en/alerts.html",
+            "message_id": "106694",
+            "template": "PATH Elevator - Hoboken HOB - ToNY - Exchange Place EXP - Street"
+          },
+          {
+            "agency": "PATH",
+            "agency_id": "path",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "Hoboken and Exchange Place Elevators Severe Storm Shutdown",
+            "description": "06:15 AM: As a precautionary measure, elevators at HOB & EX PL will be closed due to severe weather. HOB closed 9a Thu 11/26-7a Fri 11/27. EXPL closed 10a Thu 11/26-8a Fri 11/27. HBLR will cross-honor riders who need elevator service at HOB, NWPT & EX PL.",
+            "start": "2026-11-26T11:15:00.662000+00:00",
+            "end": "",
+            "source": "https://www.panynj.gov/path/en/alerts.html",
+            "url": "https://www.panynj.gov/path/en/alerts.html",
+            "message_id": "106689",
+            "template": "PATH Elevator - Hoboken HOB - ToNY - Exchange Place EXP - Street"
+          },
+          {
+            "agency": "PATH",
+            "agency_id": "path",
+            "route": "ALL",
+            "system_outage": true,
+            "effect": "NO_SERVICE",
+            "header": "PATHAlert - Hoboken & Exchange Place station elevator outages",
+            "description": "The Hoboken elevator and Exchange Place station elevators 55 & 66 will be shut down to protect against coastal flooding from anticipated rain. HBLR will cross-honor PATH riders in need of elevator/ ADA access at HOB, EXPL, and NWPT station from 9am 11/26 - 8am 11/27.",
+            "start": "2026-11-26T11:00:02.097000+00:00",
+            "end": "",
+            "source": "https://www.panynj.gov/path/en/alerts.html",
+            "url": "https://www.panynj.gov/path/en/alerts.html",
+            "message_id": "106687",
+            "template": "PATH - Blank Template"
+          }
+        ],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 7,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.41,
+          "precip_probability_pct": 100,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 54.0,
+          "low_temp_f": 43.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 35.0,
+          "max_wind_mph": 29.9,
+          "max_wind_gust_mph": 58.7,
+          "thunder_probability_pct": 2,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain",
+            "moderate rain",
+            "heavy rain"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 50,
+          "category": "Good",
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 9.8,
+          "pm10": 11.6,
+          "ozone": 47.0,
+          "nitrogen_dioxide": 27.7,
+          "observed_at": "2026-11-26T15:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "36063": {
+      "fips": "36063",
+      "name": "Niagara County",
+      "state": "NY",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=43.2727&lon=-78.8129"
           }
         ],
         "protest": [],
@@ -1824,20 +2104,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.49,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 46.0,
-          "low_temp_f": 36.0,
-          "high_apparent_temp_f": 42.0,
-          "low_apparent_temp_f": 31.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
-          "thunder_probability_pct": 2,
+          "high_temp_f": 43.0,
+          "low_temp_f": 31.0,
+          "high_apparent_temp_f": 34.0,
+          "low_apparent_temp_f": 22.0,
+          "max_wind_mph": 24.2,
+          "max_wind_gust_mph": 44.9,
+          "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
@@ -1847,71 +2127,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 51,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.7,
-          "pm10": 11.1,
-          "ozone": 6.0,
-          "nitrogen_dioxide": 49.6,
-          "observed_at": "2026-11-25T12:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "36063": {
-      "fips": "36063",
-      "name": "Niagara County",
-      "state": "NY",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 42.0,
-          "low_temp_f": 25.0,
-          "high_apparent_temp_f": 36.0,
-          "low_apparent_temp_f": 20.0,
-          "max_wind_mph": 11.5,
-          "max_wind_gust_mph": 18.4,
-          "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "light rain",
-            "moderate rain",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 29,
-          "category": "Good",
-          "aqi_24h_max": 38,
+          "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.6,
-          "pm10": 9.1,
-          "ozone": 53.0,
-          "nitrogen_dioxide": 18.0,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.6,
+          "pm10": 4.2,
+          "ozone": 50.0,
+          "nitrogen_dioxide": 11.4,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1938,17 +2162,17 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 99,
+          "precip_in_24h": 0.14,
+          "precip_probability_pct": 79,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 19.0,
-          "high_apparent_temp_f": 41.0,
-          "low_apparent_temp_f": 19.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 44.0,
+          "low_temp_f": 25.0,
+          "high_apparent_temp_f": 36.0,
+          "low_apparent_temp_f": 21.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 34.5,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers"
@@ -1957,15 +2181,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 18,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.4,
-          "pm10": 4.5,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 11.2,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 2.3,
+          "pm10": 2.8,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 5.5,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -1992,16 +2216,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 99,
+          "precip_in_24h": 0.26,
+          "precip_probability_pct": 93,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 40.0,
-          "low_temp_f": 24.0,
-          "high_apparent_temp_f": 38.0,
-          "low_apparent_temp_f": 24.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 8.1,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 31.0,
+          "low_apparent_temp_f": 21.0,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 34.5,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
@@ -2012,15 +2236,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 29,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.7,
-          "pm10": 4.8,
-          "ozone": 21.0,
-          "nitrogen_dioxide": 25.2,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.2,
+          "pm10": 3.7,
+          "ozone": 55.0,
+          "nitrogen_dioxide": 8.4,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2030,7 +2254,15 @@
       "name": "Ontario County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.2\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=42.8564&lon=-77.3035"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2044,76 +2276,20 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.22,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 40.0,
-          "low_temp_f": 24.0,
-          "high_apparent_temp_f": 36.0,
-          "low_apparent_temp_f": 21.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 11.5,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 33.0,
+          "low_apparent_temp_f": 24.0,
+          "max_wind_mph": 13.8,
+          "max_wind_gust_mph": 28.8,
           "thunder_probability_pct": null,
-          "lightning_activity_level": null,
-          "weather": [
-            "moderate rain",
-            "light rain",
-            "light rain showers"
-          ],
-          "window": "next 24h",
-          "source": "nws_gridpoint"
-        },
-        "air_quality": {
-          "us_aqi": 27,
-          "category": "Good",
-          "aqi_24h_max": 45,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 17.9,
-          "pm10": 18.1,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 24.1,
-          "observed_at": "2026-11-25T12:00",
-          "source": "Open-Meteo Air Quality (US EPA AQI)"
-        }
-      }
-    },
-    "36071": {
-      "fips": "36071",
-      "name": "Orange County",
-      "state": "NY",
-      "alerts": {
-        "weather": [],
-        "protest": [],
-        "utility_outage": [],
-        "transit_disruption": [],
-        "service_provider_outage": [],
-        "hazmat_incident": [],
-        "road_closure": [],
-        "wildfires": [],
-        "transit": [],
-        "amtrak": [],
-        "aviation": [],
-        "fema": [],
-        "disease": []
-      },
-      "alert_count": 0,
-      "conditions": {
-        "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 100,
-          "snow_in_24h": 0.0,
-          "ice_in_24h": 0.0,
-          "high_temp_f": 44.0,
-          "low_temp_f": 22.0,
-          "high_apparent_temp_f": 41.0,
-          "low_apparent_temp_f": 22.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 8.1,
-          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
@@ -2125,23 +2301,31 @@
         "air_quality": {
           "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.1,
-          "pm10": 7.7,
-          "ozone": 44.0,
-          "nitrogen_dioxide": 13.8,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 4.1,
+          "pm10": 5.2,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 7.6,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
     },
-    "36073": {
-      "fips": "36073",
-      "name": "Orleans County",
+    "36071": {
+      "fips": "36071",
+      "name": "Orange County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=41.4024&lon=-74.3063"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2155,39 +2339,102 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.13,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 27.0,
-          "high_apparent_temp_f": 36.0,
+          "high_temp_f": 44.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 35.0,
           "low_apparent_temp_f": 22.0,
-          "max_wind_mph": 10.4,
-          "max_wind_gust_mph": 16.1,
-          "thunder_probability_pct": null,
+          "max_wind_mph": 28.8,
+          "max_wind_gust_mph": 46.0,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
             "moderate rain",
-            "light rain showers"
+            "heavy rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 26,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 9.4,
-          "pm10": 9.8,
+          "pm2_5": 6.0,
+          "pm10": 7.4,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 10.0,
+          "observed_at": "2026-11-26T15:00",
+          "source": "Open-Meteo Air Quality (US EPA AQI)"
+        }
+      }
+    },
+    "36073": {
+      "fips": "36073",
+      "name": "Orleans County",
+      "state": "NY",
+      "alerts": {
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.5\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=43.3399&lon=-78.2070"
+          }
+        ],
+        "protest": [],
+        "utility_outage": [],
+        "transit_disruption": [],
+        "service_provider_outage": [],
+        "hazmat_incident": [],
+        "road_closure": [],
+        "wildfires": [],
+        "transit": [],
+        "amtrak": [],
+        "aviation": [],
+        "fema": [],
+        "disease": []
+      },
+      "alert_count": 1,
+      "conditions": {
+        "forecast": {
+          "precip_in_24h": 1.47,
+          "precip_probability_pct": 100,
+          "snow_in_24h": 0.0,
+          "ice_in_24h": 0.0,
+          "high_temp_f": 44.0,
+          "low_temp_f": 32.0,
+          "high_apparent_temp_f": 35.0,
+          "low_apparent_temp_f": 24.0,
+          "max_wind_mph": 23.0,
+          "max_wind_gust_mph": 42.6,
+          "thunder_probability_pct": null,
+          "lightning_activity_level": null,
+          "weather": [
+            "light rain",
+            "moderate rain"
+          ],
+          "window": "next 24h",
+          "source": "nws_gridpoint"
+        },
+        "air_quality": {
+          "us_aqi": 24,
+          "category": "Good",
+          "aqi_24h_max": 31,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.4,
+          "pm10": 4.2,
           "ozone": 54.0,
-          "nitrogen_dioxide": 11.5,
-          "observed_at": "2026-11-25T12:00",
+          "nitrogen_dioxide": 8.3,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2214,36 +2461,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.93,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 23.0,
+          "high_temp_f": 45.0,
+          "low_temp_f": 29.0,
           "high_apparent_temp_f": 39.0,
-          "low_apparent_temp_f": 18.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 11.5,
+          "low_apparent_temp_f": 22.0,
+          "max_wind_mph": 11.5,
+          "max_wind_gust_mph": 27.6,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 32,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 36,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.2,
-          "pm10": 4.4,
-          "ozone": 57.0,
-          "nitrogen_dioxide": 4.8,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 1.4,
+          "pm10": 1.6,
+          "ozone": 63.0,
+          "nitrogen_dioxide": 4.2,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2270,17 +2516,17 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.18,
+          "precip_probability_pct": 95,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 39.0,
-          "low_temp_f": 17.0,
-          "high_apparent_temp_f": 37.0,
-          "low_apparent_temp_f": 17.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 3,
+          "high_temp_f": 37.0,
+          "low_temp_f": 24.0,
+          "high_apparent_temp_f": 29.0,
+          "low_apparent_temp_f": 18.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 39.1,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
             "light rain showers"
@@ -2289,15 +2535,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 20,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 31,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.1,
-          "pm10": 5.2,
-          "ozone": 30.0,
-          "nitrogen_dioxide": 15.1,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 5.7,
+          "pm10": 6.6,
+          "ozone": 48.0,
+          "nitrogen_dioxide": 14.0,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2324,34 +2570,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.79,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 42.0,
-          "low_temp_f": 25.0,
-          "high_apparent_temp_f": 39.0,
-          "low_apparent_temp_f": 22.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 10.4,
+          "high_temp_f": 46.0,
+          "low_temp_f": 34.0,
+          "high_apparent_temp_f": 38.0,
+          "low_apparent_temp_f": 27.0,
+          "max_wind_mph": 26.5,
+          "max_wind_gust_mph": 47.2,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "light rain"
+            "light rain",
+            "moderate rain",
+            "heavy rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 23,
+          "us_aqi": 32,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 39,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 7.6,
-          "pm10": 8.1,
-          "ozone": 37.0,
-          "nitrogen_dioxide": 18.2,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 6.0,
+          "pm10": 7.5,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 10.7,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2364,30 +2612,30 @@
         "weather": [
           {
             "event": "Coastal Flood Warning",
-            "headline": "Coastal Flood Warning issued November 25 at 4:21AM EST until November 27 at 6:00AM EST by NWS Upton NY",
+            "headline": "Coastal Flood Warning issued November 26 at 4:33AM EST until November 27 at 6:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T04:21:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T04:33:00-05:00",
+            "expires": "2026-11-26T19:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.002.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.003.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.002.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.008.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.003.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.005.1"
             ],
             "count": 2
           },
           {
             "event": "High Wind Warning",
-            "headline": "High Wind Warning issued November 25 at 3:38AM EST until November 27 at 1:00AM EST by NWS Upton NY",
+            "headline": "High Wind Warning issued November 26 at 3:32AM EST until November 27 at 1:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T03:38:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T03:32:00-05:00",
+            "expires": "2026-11-27T01:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1"
             ],
             "count": 1
           }
@@ -2399,45 +2647,60 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "MTA Long Island Rail Road",
+            "agency_id": "mta-lirr",
+            "route": "4",
+            "system_outage": false,
+            "effect": "NO_SERVICE",
+            "header": "Westbound service is suspended on the Ronkonkoma Branch due to signal trouble at Hicksville.",
+            "description": "Eastbound\n\nThe 8:47am train from Penn Station to Ronkonkoma is being delayed at Hicksville.\nThe 9:19am train from Penn Station to Ronkonkoma is operating 30-35 minutes late.\nThe 9:47am train from Penn Station to Ronkonkoma is being delayed at Jamaica.\n\nWestbound\n\nThe 9:03am train from Ronkonkoma to Penn Station is being delayed at Bethpage.\nThe 9:31am train from Ronkonkoma to Penn Station is being delayed at Farmingdale.\nThe 10:07am train from Ronkonkoma to Penn Station is being delayed prior to departure.",
+            "start": "2026-11-26T14:40:51+00:00",
+            "end": "",
+            "source": "https://www.mta.info/alerts",
+            "url": "https://www.mta.info/alerts"
+          }
+        ],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.46,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 48.0,
-          "low_temp_f": 35.0,
-          "high_apparent_temp_f": 43.0,
-          "low_apparent_temp_f": 27.0,
-          "max_wind_mph": 17.3,
-          "max_wind_gust_mph": 25.3,
+          "high_temp_f": 56.0,
+          "low_temp_f": 45.0,
+          "high_apparent_temp_f": 56.0,
+          "low_apparent_temp_f": 37.0,
+          "max_wind_mph": 40.3,
+          "max_wind_gust_mph": 62.1,
           "thunder_probability_pct": 20,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
             "moderate rain",
+            "heavy rain",
             "thunderstorms"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 36,
+          "us_aqi": 50,
           "category": "Good",
           "aqi_24h_max": 51,
           "aqi_24h_max_category": "Moderate",
-          "pm2_5": 10.7,
-          "pm10": 11.1,
-          "ozone": 6.0,
-          "nitrogen_dioxide": 49.6,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 9.8,
+          "pm10": 11.6,
+          "ozone": 47.0,
+          "nitrogen_dioxide": 27.7,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2464,35 +2727,34 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.33,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 38.0,
-          "low_temp_f": 20.0,
-          "high_apparent_temp_f": 38.0,
+          "high_temp_f": 40.0,
+          "low_temp_f": 22.0,
+          "high_apparent_temp_f": 32.0,
           "low_apparent_temp_f": 20.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 4.6,
-          "thunder_probability_pct": 5,
+          "max_wind_mph": 21.9,
+          "max_wind_gust_mph": 41.4,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "light rain showers"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 50,
           "category": "Good",
-          "aqi_24h_max": 36,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 12.1,
-          "pm10": 12.7,
-          "ozone": 20.0,
-          "nitrogen_dioxide": 27.6,
-          "observed_at": "2026-11-25T12:00",
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 4.7,
+          "pm10": 5.4,
+          "ozone": 52.0,
+          "nitrogen_dioxide": 9.1,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2505,29 +2767,29 @@
         "weather": [
           {
             "event": "Coastal Flood Warning",
-            "headline": "Coastal Flood Warning issued November 25 at 4:21AM EST until November 27 at 6:00AM EST by NWS Upton NY",
+            "headline": "Coastal Flood Warning issued November 26 at 4:33AM EST until November 27 at 6:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T04:21:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T04:33:00-05:00",
+            "expires": "2026-11-26T19:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.005.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.002.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.005.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.002.1"
             ],
             "count": 1
           },
           {
             "event": "High Wind Warning",
-            "headline": "High Wind Warning issued November 25 at 3:38AM EST until November 27 at 1:00AM EST by NWS Upton NY",
+            "headline": "High Wind Warning issued November 26 at 3:32AM EST until November 27 at 1:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T03:38:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T03:32:00-05:00",
+            "expires": "2026-11-27T01:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1"
             ],
             "count": 1
           }
@@ -2548,35 +2810,36 @@
       "alert_count": 2,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.74,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 46.0,
-          "low_temp_f": 35.0,
-          "high_apparent_temp_f": 41.0,
-          "low_apparent_temp_f": 28.0,
-          "max_wind_mph": 18.4,
-          "max_wind_gust_mph": 26.5,
+          "high_temp_f": 54.0,
+          "low_temp_f": 46.0,
+          "high_apparent_temp_f": 54.0,
+          "low_apparent_temp_f": 37.0,
+          "max_wind_mph": 38.0,
+          "max_wind_gust_mph": 62.1,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain"
+            "moderate rain",
+            "heavy rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 28,
+          "us_aqi": 50,
           "category": "Good",
-          "aqi_24h_max": 39,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 7.0,
-          "pm10": 7.3,
-          "ozone": 28.0,
-          "nitrogen_dioxide": 31.2,
-          "observed_at": "2026-11-25T12:00",
+          "aqi_24h_max": 51,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 11.2,
+          "pm10": 15.5,
+          "ozone": 74.0,
+          "nitrogen_dioxide": 10.4,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2586,7 +2849,15 @@
       "name": "Rockland County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.1\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=41.1546&lon=-74.0247"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -2600,38 +2871,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 99,
+          "precip_in_24h": 1.06,
+          "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 45.0,
-          "low_temp_f": 28.0,
-          "high_apparent_temp_f": 43.0,
-          "low_apparent_temp_f": 24.0,
-          "max_wind_mph": 6.9,
-          "max_wind_gust_mph": 9.2,
+          "high_temp_f": 47.0,
+          "low_temp_f": 37.0,
+          "high_apparent_temp_f": 40.0,
+          "low_apparent_temp_f": 27.0,
+          "max_wind_mph": 26.5,
+          "max_wind_gust_mph": 50.6,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain"
+            "moderate rain",
+            "heavy rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 35,
           "category": "Good",
-          "aqi_24h_max": 34,
+          "aqi_24h_max": 40,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.0,
-          "pm10": 8.5,
-          "ozone": 32.0,
-          "nitrogen_dioxide": 24.1,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 7.3,
+          "pm10": 9.0,
+          "ozone": 53.0,
+          "nitrogen_dioxide": 14.9,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2658,36 +2930,34 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.37,
+          "precip_probability_pct": 86,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 38.0,
-          "low_temp_f": 20.0,
+          "high_temp_f": 42.0,
+          "low_temp_f": 22.0,
           "high_apparent_temp_f": 38.0,
-          "low_apparent_temp_f": 18.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 3,
+          "low_apparent_temp_f": 16.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 18.4,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "light rain showers",
-            "light snow showers"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 31,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.7,
-          "pm10": 6.0,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 9.8,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 1.4,
+          "pm10": 1.5,
+          "ozone": 61.0,
+          "nitrogen_dioxide": 3.1,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2714,36 +2984,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.65,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 41.0,
-          "low_temp_f": 21.0,
-          "high_apparent_temp_f": 41.0,
-          "low_apparent_temp_f": 21.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
+          "low_temp_f": 23.0,
+          "high_apparent_temp_f": 34.0,
+          "low_apparent_temp_f": 18.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 29.9,
           "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 24,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 6.5,
-          "pm10": 7.1,
-          "ozone": 41.0,
-          "nitrogen_dioxide": 13.7,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 2.7,
+          "pm10": 3.0,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 4.5,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2770,36 +3039,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.8,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 39.0,
-          "low_temp_f": 23.0,
-          "high_apparent_temp_f": 39.0,
-          "low_apparent_temp_f": 23.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 5.8,
-          "thunder_probability_pct": 4,
+          "low_temp_f": 26.0,
+          "high_apparent_temp_f": 31.0,
+          "low_apparent_temp_f": 22.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 32.2,
+          "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 18,
-          "category": "Good",
-          "aqi_24h_max": 37,
-          "aqi_24h_max_category": "Good",
-          "pm2_5": 10.6,
-          "pm10": 11.2,
-          "ozone": 29.0,
-          "nitrogen_dioxide": 22.4,
-          "observed_at": "2026-11-25T12:00",
+          "us_aqi": 57,
+          "category": "Moderate",
+          "aqi_24h_max": 58,
+          "aqi_24h_max_category": "Moderate",
+          "pm2_5": 8.1,
+          "pm10": 9.0,
+          "ozone": 38.0,
+          "nitrogen_dioxide": 19.8,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2826,36 +3094,36 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.53,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 36.0,
-          "low_temp_f": 20.0,
-          "high_apparent_temp_f": 33.0,
-          "low_apparent_temp_f": 19.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 8.1,
+          "high_temp_f": 37.0,
+          "low_temp_f": 25.0,
+          "high_apparent_temp_f": 28.0,
+          "low_apparent_temp_f": 18.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 34.5,
           "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
             "light freezing rain",
-            "light rain showers"
+            "light rain",
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 29,
+          "us_aqi": 28,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 2.5,
-          "pm10": 2.7,
-          "ozone": 62.0,
-          "nitrogen_dioxide": 2.4,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 7.5,
+          "pm10": 8.7,
+          "ozone": 48.0,
+          "nitrogen_dioxide": 17.6,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2882,16 +3150,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.5,
+          "precip_probability_pct": 98,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 23.0,
-          "high_apparent_temp_f": 38.0,
-          "low_apparent_temp_f": 23.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 8.1,
+          "high_temp_f": 40.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 33.0,
+          "low_apparent_temp_f": 26.0,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 27.6,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
@@ -2902,15 +3170,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 14.3,
-          "pm10": 14.6,
-          "ozone": 25.0,
-          "nitrogen_dioxide": 26.2,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.2,
+          "pm10": 4.2,
+          "ozone": 71.0,
+          "nitrogen_dioxide": 4.5,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2937,35 +3205,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 98,
+          "precip_in_24h": 0.46,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 42.0,
-          "low_temp_f": 24.0,
-          "high_apparent_temp_f": 39.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 35.0,
           "low_apparent_temp_f": 24.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 8.1,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 27.6,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "moderate rain showers",
-            "light rain showers"
+            "light rain showers",
+            "moderate rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 20,
+          "us_aqi": 22,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 28,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 14.0,
-          "pm10": 14.0,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 15.7,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 4.4,
+          "pm10": 5.4,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 8.2,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -2992,19 +3260,20 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.63,
+          "precip_probability_pct": 99,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 39.0,
-          "low_temp_f": 18.0,
-          "high_apparent_temp_f": 35.0,
-          "low_apparent_temp_f": 15.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 10.4,
-          "thunder_probability_pct": 1,
+          "high_temp_f": 38.0,
+          "low_temp_f": 25.0,
+          "high_apparent_temp_f": 30.0,
+          "low_apparent_temp_f": 18.0,
+          "max_wind_mph": 17.3,
+          "max_wind_gust_mph": 31.1,
+          "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
+            "light snow showers",
             "light rain showers",
             "moderate rain showers"
           ],
@@ -3012,15 +3281,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 12.7,
-          "pm10": 12.8,
-          "ozone": 32.0,
-          "nitrogen_dioxide": 20.5,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.4,
+          "pm10": 4.4,
+          "ozone": 67.0,
+          "nitrogen_dioxide": 4.9,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3033,31 +3302,32 @@
         "weather": [
           {
             "event": "Coastal Flood Warning",
-            "headline": "Coastal Flood Warning issued November 25 at 4:21AM EST until November 27 at 6:00AM EST by NWS Upton NY",
+            "headline": "Coastal Flood Warning issued November 26 at 4:33AM EST until November 27 at 6:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T04:21:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T04:33:00-05:00",
+            "expires": "2026-11-26T19:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.007.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.003.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.007.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.008.1",
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.006.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.003.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.004.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.006.1",
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.007.1"
             ],
-            "count": 3
+            "count": 4
           },
           {
             "event": "High Wind Warning",
-            "headline": "High Wind Warning issued November 25 at 3:38AM EST until November 27 at 1:00AM EST by NWS Upton NY",
+            "headline": "High Wind Warning issued November 26 at 3:32AM EST until November 27 at 1:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T03:38:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T03:32:00-05:00",
+            "expires": "2026-11-27T01:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.22663c65fb6d144d9b3b42a741f410b18c4e8cb5.001.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.f75ee67500475be6b6afa2cdd01a1605f4716733.001.1"
             ],
             "count": 1
           }
@@ -3069,25 +3339,39 @@
         "hazmat_incident": [],
         "road_closure": [],
         "wildfires": [],
-        "transit": [],
+        "transit": [
+          {
+            "agency": "MTA Long Island Rail Road",
+            "agency_id": "mta-lirr",
+            "route": "4",
+            "system_outage": false,
+            "effect": "NO_SERVICE",
+            "header": "Westbound service is suspended on the Ronkonkoma Branch due to signal trouble at Hicksville.",
+            "description": "Eastbound\n\nThe 8:47am train from Penn Station to Ronkonkoma is being delayed at Hicksville.\nThe 9:19am train from Penn Station to Ronkonkoma is operating 30-35 minutes late.\nThe 9:47am train from Penn Station to Ronkonkoma is being delayed at Jamaica.\n\nWestbound\n\nThe 9:03am train from Ronkonkoma to Penn Station is being delayed at Bethpage.\nThe 9:31am train from Ronkonkoma to Penn Station is being delayed at Farmingdale.\nThe 10:07am train from Ronkonkoma to Penn Station is being delayed prior to departure.",
+            "start": "2026-11-26T14:40:51+00:00",
+            "end": "",
+            "source": "https://www.mta.info/alerts",
+            "url": "https://www.mta.info/alerts"
+          }
+        ],
         "amtrak": [],
         "aviation": [],
         "fema": [],
         "disease": []
       },
-      "alert_count": 2,
+      "alert_count": 3,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.31,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 47.0,
-          "low_temp_f": 34.0,
-          "high_apparent_temp_f": 42.0,
-          "low_apparent_temp_f": 27.0,
-          "max_wind_mph": 13.8,
-          "max_wind_gust_mph": 21.9,
+          "high_temp_f": 52.0,
+          "low_temp_f": 44.0,
+          "high_apparent_temp_f": 52.0,
+          "low_apparent_temp_f": 36.0,
+          "max_wind_mph": 38.0,
+          "max_wind_gust_mph": 61.0,
           "thunder_probability_pct": 20,
           "lightning_activity_level": null,
           "weather": [
@@ -3099,15 +3383,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 39,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 46,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 4.4,
-          "pm10": 5.3,
-          "ozone": 48.0,
-          "nitrogen_dioxide": 12.7,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 12.8,
+          "pm10": 18.9,
+          "ozone": 81.0,
+          "nitrogen_dioxide": 2.0,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3134,35 +3418,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 98,
+          "precip_in_24h": 0.28,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 18.0,
-          "high_apparent_temp_f": 38.0,
-          "low_apparent_temp_f": 18.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 9.2,
-          "thunder_probability_pct": 4,
+          "high_temp_f": 43.0,
+          "low_temp_f": 26.0,
+          "high_apparent_temp_f": 34.0,
+          "low_apparent_temp_f": 16.0,
+          "max_wind_mph": 24.2,
+          "max_wind_gust_mph": 46.0,
+          "thunder_probability_pct": 1,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "moderate rain showers"
+            "light snow showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 5.1,
-          "pm10": 5.5,
-          "ozone": 53.0,
-          "nitrogen_dioxide": 8.5,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 5.6,
+          "pm10": 7.0,
+          "ozone": 59.0,
+          "nitrogen_dioxide": 8.9,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3189,35 +3473,35 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.36,
           "precip_probability_pct": 99,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 19.0,
-          "high_apparent_temp_f": 39.0,
-          "low_apparent_temp_f": 19.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 6.9,
+          "high_temp_f": 43.0,
+          "low_temp_f": 27.0,
+          "high_apparent_temp_f": 35.0,
+          "low_apparent_temp_f": 20.0,
+          "max_wind_mph": 20.7,
+          "max_wind_gust_mph": 35.7,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
-            "light rain showers",
-            "moderate rain showers"
+            "light snow showers",
+            "light rain showers"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 31,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 10.8,
-          "pm10": 11.0,
-          "ozone": 35.0,
-          "nitrogen_dioxide": 16.4,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.5,
+          "pm10": 4.6,
+          "ozone": 73.0,
+          "nitrogen_dioxide": 4.4,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3244,16 +3528,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 100,
+          "precip_in_24h": 0.35,
+          "precip_probability_pct": 98,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 42.0,
-          "low_temp_f": 22.0,
-          "high_apparent_temp_f": 42.0,
-          "low_apparent_temp_f": 22.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 5.8,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 35.0,
+          "low_apparent_temp_f": 25.0,
+          "max_wind_mph": 18.4,
+          "max_wind_gust_mph": 32.2,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
@@ -3264,15 +3548,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 11.3,
-          "pm10": 11.6,
-          "ozone": 22.0,
-          "nitrogen_dioxide": 24.2,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.6,
+          "pm10": 4.7,
+          "ozone": 69.0,
+          "nitrogen_dioxide": 5.5,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3282,7 +3566,15 @@
       "name": "Ulster County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.6\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=41.9472&lon=-74.2655"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3296,39 +3588,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.61,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 44.0,
-          "low_temp_f": 24.0,
-          "high_apparent_temp_f": 44.0,
-          "low_apparent_temp_f": 24.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 6.9,
-          "thunder_probability_pct": 5,
+          "high_temp_f": 45.0,
+          "low_temp_f": 30.0,
+          "high_apparent_temp_f": 39.0,
+          "low_apparent_temp_f": 25.0,
+          "max_wind_mph": 12.7,
+          "max_wind_gust_mph": 38.0,
+          "thunder_probability_pct": 4,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.0,
-          "pm10": 3.2,
-          "ozone": 58.0,
-          "nitrogen_dioxide": 3.3,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 5.7,
+          "pm10": 7.0,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 10.5,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3355,22 +3646,21 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.63,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
           "high_temp_f": 41.0,
-          "low_temp_f": 19.0,
-          "high_apparent_temp_f": 39.0,
-          "low_apparent_temp_f": 19.0,
-          "max_wind_mph": 3.5,
-          "max_wind_gust_mph": 4.6,
+          "low_temp_f": 22.0,
+          "high_apparent_temp_f": 36.0,
+          "low_apparent_temp_f": 18.0,
+          "max_wind_mph": 10.4,
+          "max_wind_gust_mph": 24.2,
           "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
@@ -3378,13 +3668,13 @@
         "air_quality": {
           "us_aqi": 26,
           "category": "Good",
-          "aqi_24h_max": 33,
+          "aqi_24h_max": 32,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 3.4,
-          "pm10": 3.8,
-          "ozone": 49.0,
-          "nitrogen_dioxide": 5.7,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 1.5,
+          "pm10": 1.6,
+          "ozone": 66.0,
+          "nitrogen_dioxide": 3.0,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3411,35 +3701,34 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 0.38,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 21.0,
-          "high_apparent_temp_f": 41.0,
-          "low_apparent_temp_f": 21.0,
-          "max_wind_mph": 2.3,
-          "max_wind_gust_mph": 5.8,
+          "high_temp_f": 42.0,
+          "low_temp_f": 23.0,
+          "high_apparent_temp_f": 36.0,
+          "low_apparent_temp_f": 18.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 28.8,
           "thunder_probability_pct": 3,
           "lightning_activity_level": null,
           "weather": [
-            "light rain",
-            "light rain showers"
+            "light rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 34,
           "category": "Good",
-          "aqi_24h_max": 32,
+          "aqi_24h_max": 36,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 9.0,
-          "pm10": 9.7,
-          "ozone": 36.0,
-          "nitrogen_dioxide": 18.5,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 4.4,
+          "pm10": 4.9,
+          "ozone": 49.0,
+          "nitrogen_dioxide": 6.9,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3449,7 +3738,15 @@
       "name": "Wayne County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.4\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=43.2181&lon=-77.0494"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3463,39 +3760,38 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.38,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 26.0,
-          "high_apparent_temp_f": 38.0,
+          "high_temp_f": 42.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 35.0,
           "low_apparent_temp_f": 22.0,
-          "max_wind_mph": 5.8,
-          "max_wind_gust_mph": 10.4,
+          "max_wind_mph": 15.0,
+          "max_wind_gust_mph": 32.2,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain",
-            "light rain showers"
+            "moderate rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 22,
+          "us_aqi": 21,
           "category": "Good",
-          "aqi_24h_max": 34,
+          "aqi_24h_max": 30,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 11.0,
-          "pm10": 11.5,
-          "ozone": 40.0,
-          "nitrogen_dioxide": 21.2,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 3.5,
+          "pm10": 4.2,
+          "ozone": 54.0,
+          "nitrogen_dioxide": 8.4,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3508,15 +3804,15 @@
         "weather": [
           {
             "event": "Coastal Flood Warning",
-            "headline": "Coastal Flood Warning issued November 25 at 4:21AM EST until November 27 at 6:00AM EST by NWS Upton NY",
+            "headline": "Coastal Flood Warning issued November 26 at 4:33AM EST until November 27 at 6:00AM EST by NWS Upton NY",
             "severity": "Severe",
             "urgency": "Expected",
-            "effective": "2026-11-25T04:21:00-05:00",
-            "expires": "2026-11-25T18:00:00-05:00",
+            "effective": "2026-11-26T04:33:00-05:00",
+            "expires": "2026-11-26T19:00:00-05:00",
             "source": "nws_alert",
-            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.003.1",
+            "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.003.1",
             "urls": [
-              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.357dad86fab348f2e4cb5f69acc329eb27b87cce.003.1"
+              "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.c4951226e15f213261de759eeab71abeb55482d2.003.1"
             ],
             "count": 1
           }
@@ -3537,35 +3833,36 @@
       "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.15,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 44.0,
-          "low_temp_f": 27.0,
-          "high_apparent_temp_f": 40.0,
-          "low_apparent_temp_f": 22.0,
-          "max_wind_mph": 9.2,
-          "max_wind_gust_mph": 17.3,
+          "high_temp_f": 47.0,
+          "low_temp_f": 36.0,
+          "high_apparent_temp_f": 39.0,
+          "low_apparent_temp_f": 27.0,
+          "max_wind_mph": 32.2,
+          "max_wind_gust_mph": 52.9,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "moderate rain"
+            "moderate rain",
+            "heavy rain"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 21,
+          "us_aqi": 37,
           "category": "Good",
-          "aqi_24h_max": 35,
+          "aqi_24h_max": 43,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 8.1,
-          "pm10": 8.5,
-          "ozone": 29.0,
-          "nitrogen_dioxide": 27.7,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 7.7,
+          "pm10": 9.6,
+          "ozone": 54.0,
+          "nitrogen_dioxide": 16.0,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3575,7 +3872,15 @@
       "name": "Wyoming County",
       "state": "NY",
       "alerts": {
-        "weather": [],
+        "weather": [
+          {
+            "event": "Heavy Precipitation Forecast",
+            "headline": "~1.3\" rain expected in next 24h",
+            "severity": "Moderate",
+            "source": "nws_forecast",
+            "url": "https://forecast.weather.gov/MapClick.php?lat=42.7014&lon=-78.2286"
+          }
+        ],
         "protest": [],
         "utility_outage": [],
         "transit_disruption": [],
@@ -3589,40 +3894,39 @@
         "fema": [],
         "disease": []
       },
-      "alert_count": 0,
+      "alert_count": 1,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
+          "precip_in_24h": 1.31,
           "precip_probability_pct": 100,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 37.0,
-          "low_temp_f": 22.0,
-          "high_apparent_temp_f": 32.0,
-          "low_apparent_temp_f": 15.0,
-          "max_wind_mph": 8.1,
-          "max_wind_gust_mph": 15.0,
+          "high_temp_f": 38.0,
+          "low_temp_f": 29.0,
+          "high_apparent_temp_f": 29.0,
+          "low_apparent_temp_f": 19.0,
+          "max_wind_mph": 19.6,
+          "max_wind_gust_mph": 34.5,
           "thunder_probability_pct": null,
           "lightning_activity_level": null,
           "weather": [
             "light rain",
-            "light snow",
             "moderate rain",
-            "light rain showers"
+            "fog"
           ],
           "window": "next 24h",
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 38,
+          "us_aqi": 25,
           "category": "Good",
-          "aqi_24h_max": 52,
-          "aqi_24h_max_category": "Moderate",
-          "pm2_5": 15.4,
-          "pm10": 15.6,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 17.7,
-          "observed_at": "2026-11-25T12:00",
+          "aqi_24h_max": 39,
+          "aqi_24h_max_category": "Good",
+          "pm2_5": 3.4,
+          "pm10": 4.3,
+          "ozone": 57.0,
+          "nitrogen_dioxide": 6.3,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }
@@ -3649,16 +3953,16 @@
       "alert_count": 0,
       "conditions": {
         "forecast": {
-          "precip_in_24h": 0.0,
-          "precip_probability_pct": 99,
+          "precip_in_24h": 0.58,
+          "precip_probability_pct": 97,
           "snow_in_24h": 0.0,
           "ice_in_24h": 0.0,
-          "high_temp_f": 41.0,
-          "low_temp_f": 23.0,
-          "high_apparent_temp_f": 38.0,
-          "low_apparent_temp_f": 23.0,
-          "max_wind_mph": 4.6,
-          "max_wind_gust_mph": 9.2,
+          "high_temp_f": 40.0,
+          "low_temp_f": 28.0,
+          "high_apparent_temp_f": 34.0,
+          "low_apparent_temp_f": 25.0,
+          "max_wind_mph": 16.1,
+          "max_wind_gust_mph": 28.8,
           "thunder_probability_pct": 2,
           "lightning_activity_level": null,
           "weather": [
@@ -3669,15 +3973,15 @@
           "source": "nws_gridpoint"
         },
         "air_quality": {
-          "us_aqi": 27,
+          "us_aqi": 23,
           "category": "Good",
-          "aqi_24h_max": 45,
+          "aqi_24h_max": 34,
           "aqi_24h_max_category": "Good",
-          "pm2_5": 17.9,
-          "pm10": 18.1,
-          "ozone": 33.0,
-          "nitrogen_dioxide": 24.1,
-          "observed_at": "2026-11-25T12:00",
+          "pm2_5": 4.1,
+          "pm10": 5.2,
+          "ozone": 60.0,
+          "nitrogen_dioxide": 7.6,
+          "observed_at": "2026-11-26T15:00",
           "source": "Open-Meteo Air Quality (US EPA AQI)"
         }
       }

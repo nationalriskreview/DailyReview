@@ -8,7 +8,15 @@
     "lon": -80.008669
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.3\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=37.7879&lon=-80.0087"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -26,7 +34,7 @@
         "lat": 37.8422,
         "lon": -79.8621,
         "acreage": 2237,
-        "containment_pct": 68,
+        "containment_pct": 89,
         "cause": "Undetermined",
         "state": "VA",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-VAVAF-260136",
@@ -44,8 +52,8 @@
         "date": "2026-11-22T01:14:40+00:00",
         "lat": 38.3136,
         "lon": -79.7914,
-        "acreage": 900,
-        "containment_pct": 40,
+        "acreage": 1507,
+        "containment_pct": 47,
         "cause": "Undetermined",
         "state": "VA",
         "source_url": "https://irwin.doi.gov/observer/incidents/2026-VAVAF-260139",
@@ -61,40 +69,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.3,
-      "precip_probability_pct": 94,
+      "precip_in_24h": 1.3,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 44.0,
-      "low_temp_f": 28.0,
-      "high_apparent_temp_f": 40.0,
-      "low_apparent_temp_f": 28.0,
-      "max_wind_mph": 10.4,
-      "max_wind_gust_mph": 32.2,
-      "thunder_probability_pct": 3,
+      "high_temp_f": 49.0,
+      "low_temp_f": 43.0,
+      "high_apparent_temp_f": 48.0,
+      "low_apparent_temp_f": 37.0,
+      "max_wind_mph": 15.0,
+      "max_wind_gust_mph": 36.8,
+      "thunder_probability_pct": 9,
       "lightning_activity_level": null,
       "weather": [
-        "light rain"
+        "moderate rain",
+        "fog",
+        "light rain",
+        "heavy fog"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 26,
+      "us_aqi": 32,
       "category": "Good",
-      "aqi_24h_max": 32,
+      "aqi_24h_max": 34,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 7.3,
-      "pm10": 7.4,
-      "ozone": 50.0,
-      "nitrogen_dioxide": 7.1,
-      "observed_at": "2026-11-25T12:00",
+      "pm2_5": 0.5,
+      "pm10": 0.6,
+      "ozone": 75.0,
+      "nitrogen_dioxide": 2.9,
+      "observed_at": "2026-11-26T15:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-25",
-  "generated_at": "2026-11-25T13:07:06.814039+00:00"
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T15:31:22.460209+00:00"
 }

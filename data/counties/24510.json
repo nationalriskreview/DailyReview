@@ -8,36 +8,42 @@
     "lon": -76.610476
   },
   "alerts": {
-    "weather": [],
-    "protest": [
+    "weather": [
       {
-        "title": "New Property Tax Exemption Announced to Accelerate Affordable Housing Development Across Maryland",
-        "url": "https://www.wgmd.com/new-property-tax-exemption-announced-to-accelerate-affordable-housing-development-across-maryland/",
-        "domain": "wgmd.com",
-        "seendate": "20261125030000",
+        "event": "High Wind Warning",
+        "headline": "High Wind Warning issued November 26 at 4:29AM EST until November 26 at 7:00PM EST by NWS Baltimore MD/Washington DC",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-26T04:29:00-05:00",
+        "expires": "2026-11-26T12:30:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.643dfb66b98776d9cc519686c424070f1aa3a7a4.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.643dfb66b98776d9cc519686c424070f1aa3a7a4.001.1"
+        ],
+        "count": 1
+      }
+    ],
+    "protest": [],
+    "utility_outage": [
+      {
+        "title": "BGE outage map shows scattered power outages as storm moves through Maryland",
+        "url": "https://wcbm.com/local-story/bge-outage-map-shows-scattered-power-outages-as-storm-moves-through-maryland/",
+        "domain": "wcbm.com",
+        "seendate": "20261126140000",
         "is_new": true,
         "sources": [
           {
-            "url": "https://www.wgmd.com/new-property-tax-exemption-announced-to-accelerate-affordable-housing-development-across-maryland/",
-            "domain": "wgmd.com"
-          }
-        ]
-      },
-      {
-        "title": "Baltimore County teachers protest latest contract proposal",
-        "url": "https://www.wbaltv.com/article/baltimore-county-schools-contract-planning-time-demands/74522978",
-        "domain": "wbaltv.com",
-        "seendate": "20261125001500",
-        "is_new": false,
-        "sources": [
+            "url": "https://wcbm.com/local-story/bge-outage-map-shows-scattered-power-outages-as-storm-moves-through-maryland/",
+            "domain": "wcbm.com"
+          },
           {
-            "url": "https://www.wbaltv.com/article/baltimore-county-schools-contract-planning-time-demands/74522978",
-            "domain": "wbaltv.com"
+            "url": "https://cedarnews.net/newstasks/1199501/bge-outage-map-shows-scattered-power-outages/",
+            "domain": "cedarnews.net"
           }
         ]
       }
     ],
-    "utility_outage": [],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -52,39 +58,39 @@
   "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
-      "precip_probability_pct": 8,
+      "precip_in_24h": 2.38,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 52.0,
-      "low_temp_f": 34.0,
-      "high_apparent_temp_f": 52.0,
-      "low_apparent_temp_f": 27.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 27.6,
-      "thunder_probability_pct": 21,
+      "high_temp_f": 57.0,
+      "low_temp_f": 45.0,
+      "high_apparent_temp_f": 57.0,
+      "low_apparent_temp_f": 36.0,
+      "max_wind_mph": 29.9,
+      "max_wind_gust_mph": 56.4,
+      "thunder_probability_pct": 14,
       "lightning_activity_level": null,
       "weather": [
         "light rain",
         "moderate rain",
-        "thunderstorms"
+        "fog"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 28,
+      "us_aqi": 43,
       "category": "Good",
-      "aqi_24h_max": 48,
+      "aqi_24h_max": 44,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 8.0,
-      "pm10": 8.3,
-      "ozone": 32.0,
-      "nitrogen_dioxide": 21.9,
-      "observed_at": "2026-11-25T12:00",
+      "pm2_5": 4.3,
+      "pm10": 5.1,
+      "ozone": 70.0,
+      "nitrogen_dioxide": 9.4,
+      "observed_at": "2026-11-26T15:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-25",
-  "generated_at": "2026-11-25T13:07:06.814039+00:00"
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T15:31:22.460209+00:00"
 }

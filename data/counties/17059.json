@@ -8,9 +8,31 @@
     "lon": -88.227964
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.5\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=37.7687&lon=-88.2280"
+      }
+    ],
     "protest": [],
-    "utility_outage": [],
+    "utility_outage": [
+      {
+        "title": "Power outages in the Heartland 11/26",
+        "url": "https://www.kfvs12.com/2026/11/26/power-outages-heartland-1126/",
+        "domain": "kfvs12.com",
+        "seendate": "20261126114500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.kfvs12.com/2026/11/26/power-outages-heartland-1126/",
+            "domain": "kfvs12.com"
+          }
+        ]
+      }
+    ],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -22,40 +44,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.29,
-      "precip_probability_pct": 90,
+      "precip_in_24h": 1.53,
+      "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 39.0,
-      "low_temp_f": 33.0,
+      "high_temp_f": 41.0,
+      "low_temp_f": 37.0,
       "high_apparent_temp_f": 34.0,
-      "low_apparent_temp_f": 27.0,
-      "max_wind_mph": 10.4,
-      "max_wind_gust_mph": 15.0,
-      "thunder_probability_pct": 1,
+      "low_apparent_temp_f": 28.0,
+      "max_wind_mph": 18.4,
+      "max_wind_gust_mph": 26.5,
+      "thunder_probability_pct": 22,
       "lightning_activity_level": null,
       "weather": [
+        "moderate rain showers",
         "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 52,
-      "category": "Moderate",
-      "aqi_24h_max": 52,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 7.0,
-      "pm10": 7.5,
-      "ozone": 39.0,
-      "nitrogen_dioxide": 6.1,
-      "observed_at": "2026-11-25T12:00",
+      "us_aqi": 30,
+      "category": "Good",
+      "aqi_24h_max": 43,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 4.3,
+      "pm10": 4.4,
+      "ozone": 42.0,
+      "nitrogen_dioxide": 7.4,
+      "observed_at": "2026-11-26T15:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-25",
-  "generated_at": "2026-11-25T13:07:06.814039+00:00"
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T15:31:22.460209+00:00"
 }

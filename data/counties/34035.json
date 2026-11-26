@@ -11,15 +11,15 @@
     "weather": [
       {
         "event": "High Wind Warning",
-        "headline": "High Wind Warning issued November 25 at 1:34AM EST until November 27 at 1:00AM EST by NWS Mount Holly NJ",
+        "headline": "High Wind Warning issued November 26 at 8:41AM EST until November 27 at 1:00AM EST by NWS Mount Holly NJ",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-11-25T01:34:00-05:00",
-        "expires": "2026-11-25T15:15:00-05:00",
+        "effective": "2026-11-26T08:41:00-05:00",
+        "expires": "2026-11-26T22:15:00-05:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6b616627d91cca21d3d184d19ec516f006faa032.002.2",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d23fdecf24095a3aa71cb2b060327a2c8f4a235.001.1",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6b616627d91cca21d3d184d19ec516f006faa032.002.2"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d23fdecf24095a3aa71cb2b060327a2c8f4a235.001.1"
         ],
         "count": 1
       }
@@ -31,47 +31,63 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
-    "transit": [],
+    "transit": [
+      {
+        "agency": "NJ Transit Rail",
+        "agency_id": "njtransit-rail-rss",
+        "route": "ALL",
+        "system_outage": true,
+        "effect": "NO_SERVICE",
+        "header": "Princeton Shuttle Dinky service is suspended in both directions due to overhead wire issues.",
+        "description": "Princeton Shuttle Dinky service is suspended in both directions due to overhead wire issues.",
+        "start": "2026-11-26T09:51:05-04:00",
+        "end": "",
+        "source": "https://www.njtransit.com/node/2205046",
+        "url": "https://www.njtransit.com/node/2205046"
+      }
+    ],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
+      "precip_in_24h": 1.79,
       "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 48.0,
-      "low_temp_f": 25.0,
-      "high_apparent_temp_f": 45.0,
-      "low_apparent_temp_f": 19.0,
-      "max_wind_mph": 8.1,
-      "max_wind_gust_mph": 16.1,
-      "thunder_probability_pct": 10,
+      "high_temp_f": 52.0,
+      "low_temp_f": 42.0,
+      "high_apparent_temp_f": 52.0,
+      "low_apparent_temp_f": 36.0,
+      "max_wind_mph": 27.6,
+      "max_wind_gust_mph": 55.2,
+      "thunder_probability_pct": 6,
       "lightning_activity_level": null,
       "weather": [
         "light rain",
-        "heavy rain"
+        "moderate rain",
+        "moderate rain showers",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 23,
-      "category": "Good",
-      "aqi_24h_max": 42,
-      "aqi_24h_max_category": "Good",
-      "pm2_5": 9.0,
-      "pm10": 9.4,
-      "ozone": 26.0,
-      "nitrogen_dioxide": 28.6,
-      "observed_at": "2026-11-25T12:00",
+      "us_aqi": 51,
+      "category": "Moderate",
+      "aqi_24h_max": 51,
+      "aqi_24h_max_category": "Moderate",
+      "pm2_5": 8.6,
+      "pm10": 10.2,
+      "ozone": 55.0,
+      "nitrogen_dioxide": 18.6,
+      "observed_at": "2026-11-26T15:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-25",
-  "generated_at": "2026-11-25T13:07:06.814039+00:00"
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T15:31:22.460209+00:00"
 }

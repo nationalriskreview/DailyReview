@@ -10,16 +10,30 @@
   "alerts": {
     "weather": [
       {
-        "event": "Winter Storm Warning",
-        "headline": "Winter Storm Warning issued November 24 at 9:59PM PST until November 27 at 4:00AM PST by NWS Seattle WA",
+        "event": "Coastal Flood Warning",
+        "headline": "Coastal Flood Warning issued November 26 at 2:40AM PST until November 26 at 10:00AM PST by NWS Seattle WA",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-11-24T21:59:00-08:00",
-        "expires": "2026-11-25T06:00:00-08:00",
+        "effective": "2026-11-26T02:40:00-08:00",
+        "expires": "2026-11-26T10:00:00-08:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.25cf1a9b4a62108c32e1ac156b7ae3d26a1b433e.001.3",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4cab40822fe157908caddf76922d9999ca74b0b1.004.1",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.25cf1a9b4a62108c32e1ac156b7ae3d26a1b433e.001.3"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4cab40822fe157908caddf76922d9999ca74b0b1.004.1"
+        ],
+        "count": 1
+      },
+      {
+        "event": "Winter Storm Warning",
+        "headline": "Winter Storm Warning issued November 25 at 11:17PM PST until November 27 at 4:00AM PST by NWS Seattle WA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-25T23:17:00-08:00",
+        "expires": "2026-11-26T10:00:00-08:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.57ff218c78d9d06a8a891698a9961a7e7bf57753.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.57ff218c78d9d06a8a891698a9961a7e7bf57753.001.1"
         ],
         "count": 1
       },
@@ -51,41 +65,44 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 2,
+  "alert_count": 3,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.94,
+      "precip_in_24h": 2.17,
       "precip_probability_pct": 100,
-      "snow_in_24h": 3.0,
+      "snow_in_24h": 6.3,
       "ice_in_24h": 0.0,
       "high_temp_f": 35.0,
-      "low_temp_f": 30.0,
+      "low_temp_f": 32.0,
       "high_apparent_temp_f": 26.0,
-      "low_apparent_temp_f": 17.0,
+      "low_apparent_temp_f": 21.0,
       "max_wind_mph": 26.5,
-      "max_wind_gust_mph": 43.7,
-      "thunder_probability_pct": 6,
+      "max_wind_gust_mph": 47.2,
+      "thunder_probability_pct": 19,
       "lightning_activity_level": null,
       "weather": [
+        "moderate rain",
         "light snow",
-        "light rain"
+        "moderate snow",
+        "light rain showers",
+        "light snow showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 37,
+      "us_aqi": 34,
       "category": "Good",
-      "aqi_24h_max": 38,
+      "aqi_24h_max": 34,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 1.3,
-      "pm10": 1.8,
-      "ozone": 83.0,
-      "nitrogen_dioxide": 1.5,
-      "observed_at": "2026-11-25T12:00",
+      "pm2_5": 1.0,
+      "pm10": 1.2,
+      "ozone": 69.0,
+      "nitrogen_dioxide": 2.8,
+      "observed_at": "2026-11-26T15:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-25",
-  "generated_at": "2026-11-25T13:07:06.814039+00:00"
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T15:31:22.460209+00:00"
 }

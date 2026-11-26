@@ -8,9 +8,38 @@
     "lon": -89.947481
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Winter Storm Warning",
+        "headline": "Winter Storm Warning issued November 26 at 7:56AM CST until November 26 at 3:00PM CST by NWS Paducah KY",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-26T07:56:00-06:00",
+        "expires": "2026-11-26T15:00:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3c3a95ddf92af1a0b898c3adfb58c96bbd73ed38.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.3c3a95ddf92af1a0b898c3adfb58c96bbd73ed38.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
-    "utility_outage": [],
+    "utility_outage": [
+      {
+        "title": "Power outages in the Heartland 11/26",
+        "url": "https://www.kfvs12.com/2026/11/26/power-outages-heartland-1126/",
+        "domain": "kfvs12.com",
+        "seendate": "20261126114500",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.kfvs12.com/2026/11/26/power-outages-heartland-1126/",
+            "domain": "kfvs12.com"
+          }
+        ]
+      }
+    ],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -22,42 +51,43 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.79,
+      "precip_in_24h": 1.09,
       "precip_probability_pct": 100,
-      "snow_in_24h": 0.33,
+      "snow_in_24h": 2.1,
       "ice_in_24h": 0.0,
-      "high_temp_f": 38.0,
+      "high_temp_f": 36.0,
       "low_temp_f": 32.0,
-      "high_apparent_temp_f": 31.0,
+      "high_apparent_temp_f": 29.0,
       "low_apparent_temp_f": 23.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 18.4,
-      "thunder_probability_pct": 1,
+      "max_wind_mph": 16.1,
+      "max_wind_gust_mph": 25.3,
+      "thunder_probability_pct": 21,
       "lightning_activity_level": null,
       "weather": [
-        "light rain showers",
+        "light snow showers",
         "moderate rain showers",
-        "light snow showers"
+        "light rain showers",
+        "thunderstorms"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 55,
-      "category": "Moderate",
-      "aqi_24h_max": 55,
+      "us_aqi": 23,
+      "category": "Good",
+      "aqi_24h_max": 52,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 7.4,
-      "pm10": 8.4,
-      "ozone": 38.0,
-      "nitrogen_dioxide": 5.6,
-      "observed_at": "2026-11-25T12:00",
+      "pm2_5": 4.7,
+      "pm10": 4.8,
+      "ozone": 50.0,
+      "nitrogen_dioxide": 6.6,
+      "observed_at": "2026-11-26T15:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-25",
-  "generated_at": "2026-11-25T13:07:06.814039+00:00"
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T15:31:22.460209+00:00"
 }

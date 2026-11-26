@@ -8,7 +8,15 @@
     "lon": -74.299408
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.4\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=41.0367&lon=-74.2994"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -16,47 +24,62 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
-    "transit": [],
+    "transit": [
+      {
+        "agency": "NJ Transit Rail",
+        "agency_id": "njtransit-rail-rss",
+        "route": "ALL",
+        "system_outage": true,
+        "effect": "NO_SERVICE",
+        "header": "Princeton Shuttle Dinky service is suspended in both directions due to overhead wire issues.",
+        "description": "Princeton Shuttle Dinky service is suspended in both directions due to overhead wire issues.",
+        "start": "2026-11-26T09:51:05-04:00",
+        "end": "",
+        "source": "https://www.njtransit.com/node/2205046",
+        "url": "https://www.njtransit.com/node/2205046"
+      }
+    ],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.0,
+      "precip_in_24h": 1.43,
       "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 46.0,
-      "low_temp_f": 27.0,
-      "high_apparent_temp_f": 45.0,
-      "low_apparent_temp_f": 27.0,
-      "max_wind_mph": 5.8,
-      "max_wind_gust_mph": 8.1,
+      "high_temp_f": 47.0,
+      "low_temp_f": 37.0,
+      "high_apparent_temp_f": 40.0,
+      "low_apparent_temp_f": 28.0,
+      "max_wind_mph": 25.3,
+      "max_wind_gust_mph": 49.5,
       "thunder_probability_pct": 2,
       "lightning_activity_level": null,
       "weather": [
         "light rain",
-        "moderate rain"
+        "moderate rain",
+        "heavy rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 23,
+      "us_aqi": 29,
       "category": "Good",
-      "aqi_24h_max": 32,
+      "aqi_24h_max": 35,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 6.9,
-      "pm10": 7.4,
-      "ozone": 42.0,
-      "nitrogen_dioxide": 15.4,
-      "observed_at": "2026-11-25T12:00",
+      "pm2_5": 6.2,
+      "pm10": 7.6,
+      "ozone": 55.0,
+      "nitrogen_dioxide": 11.5,
+      "observed_at": "2026-11-26T15:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-25",
-  "generated_at": "2026-11-25T13:07:06.814039+00:00"
+  "date": "2026-11-26",
+  "generated_at": "2026-11-26T15:31:22.460209+00:00"
 }
