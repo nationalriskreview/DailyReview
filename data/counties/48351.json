@@ -8,7 +8,22 @@
     "lon": -93.73925
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Freeze Warning",
+        "headline": "Freeze Warning issued November 26 at 11:22PM CST until November 27 at 9:00AM CST by NWS Lake Charles LA",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-26T23:22:00-06:00",
+        "expires": "2026-11-27T09:00:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2d55f4bca6a065ec280db117e5dedb003060a90c.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.2d55f4bca6a065ec280db117e5dedb003060a90c.001.1"
+        ],
+        "count": 1
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -22,40 +37,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 1,
   "conditions": {
     "forecast": {
       "precip_in_24h": 0.0,
-      "precip_probability_pct": 17,
+      "precip_probability_pct": 25,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 56.0,
-      "low_temp_f": 35.0,
-      "high_apparent_temp_f": 56.0,
-      "low_apparent_temp_f": 29.0,
-      "max_wind_mph": 13.8,
-      "max_wind_gust_mph": 23.0,
-      "thunder_probability_pct": 10,
+      "high_temp_f": 61.0,
+      "low_temp_f": 34.0,
+      "high_apparent_temp_f": 61.0,
+      "low_apparent_temp_f": 31.0,
+      "max_wind_mph": 5.8,
+      "max_wind_gust_mph": 13.8,
+      "thunder_probability_pct": 21,
       "lightning_activity_level": null,
       "weather": [
+        "frost",
         "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 38,
+      "us_aqi": 28,
       "category": "Good",
-      "aqi_24h_max": 56,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 5.4,
-      "pm10": 5.5,
-      "ozone": 47.0,
-      "nitrogen_dioxide": 2.9,
-      "observed_at": "2026-11-26T15:00",
+      "aqi_24h_max": 34,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 4.3,
+      "pm10": 4.4,
+      "ozone": 49.0,
+      "nitrogen_dioxide": 4.3,
+      "observed_at": "2026-11-27T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-26",
-  "generated_at": "2026-11-26T15:31:22.460209+00:00"
+  "date": "2026-11-27",
+  "generated_at": "2026-11-27T09:54:02.323324+00:00"
 }

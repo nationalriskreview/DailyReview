@@ -10,22 +10,70 @@
   "alerts": {
     "weather": [
       {
-        "event": "High Wind Warning",
-        "headline": "High Wind Warning issued November 26 at 8:41AM EST until November 27 at 1:00AM EST by NWS Mount Holly NJ",
+        "event": "Coastal Flood Warning",
+        "headline": "Coastal Flood Warning issued November 27 at 2:50AM EST until November 27 at 8:00PM EST by NWS Mount Holly NJ",
         "severity": "Severe",
         "urgency": "Expected",
-        "effective": "2026-11-26T08:41:00-05:00",
-        "expires": "2026-11-26T22:15:00-05:00",
+        "effective": "2026-11-27T02:50:00-05:00",
+        "expires": "2026-11-27T20:00:00-05:00",
         "source": "nws_alert",
-        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d23fdecf24095a3aa71cb2b060327a2c8f4a235.001.1",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2eb954e2d1e6def459c3e0a91443953d2e6e839.009.1",
         "urls": [
-          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.1d23fdecf24095a3aa71cb2b060327a2c8f4a235.001.1"
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b2eb954e2d1e6def459c3e0a91443953d2e6e839.009.1"
         ],
         "count": 1
       }
     ],
     "protest": [],
-    "utility_outage": [],
+    "utility_outage": [
+      {
+        "title": "More than 80,000 power outages in eastern Pa. from Thanksgiving storm",
+        "url": "https://www.pottsmerc.com/2026/11/26/thanksgiving-storm-eastern-pa-power-outages/",
+        "domain": "pottsmerc.com",
+        "seendate": "20261127000000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.pottsmerc.com/2026/11/26/thanksgiving-storm-eastern-pa-power-outages/",
+            "domain": "pottsmerc.com"
+          },
+          {
+            "url": "https://www.thetimes-tribune.com/2026/11/26/thanksgiving-storm-eastern-pa-power-outages/",
+            "domain": "thetimes-tribune.com"
+          },
+          {
+            "url": "https://www.readingeagle.com/2026/11/26/thanksgiving-storm-eastern-pa-power-outages/",
+            "domain": "readingeagle.com"
+          }
+        ]
+      },
+      {
+        "title": "Powerful Thanksgiving Day storm brings flooding, power outages to Northeast, Midwest",
+        "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
+        "domain": "cbsnews.com",
+        "seendate": "20261127003000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://www.cbsnews.com/news/thanksgiving-day-storm-northeast-midwest-flooding-power-outages/",
+            "domain": "cbsnews.com"
+          }
+        ]
+      },
+      {
+        "title": "Boil water advisory issued for parts of West Philadelphia after plant loses power",
+        "url": "https://6abc.com/post/boil-water-advisory-issued-parts-west-philadelphia-plant-loses-power/20088043/",
+        "domain": "6abc.com",
+        "seendate": "20261127030000",
+        "is_new": true,
+        "sources": [
+          {
+            "url": "https://6abc.com/post/boil-water-advisory-issued-parts-west-philadelphia-plant-loses-power/20088043/",
+            "domain": "6abc.com"
+          }
+        ]
+      }
+    ],
     "transit_disruption": [],
     "service_provider_outage": [],
     "hazmat_incident": [],
@@ -37,42 +85,41 @@
     "fema": [],
     "disease": []
   },
-  "alert_count": 1,
+  "alert_count": 4,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.96,
-      "precip_probability_pct": 100,
+      "precip_in_24h": 0.13,
+      "precip_probability_pct": 45,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 56.0,
-      "low_temp_f": 42.0,
-      "high_apparent_temp_f": 56.0,
-      "low_apparent_temp_f": 34.0,
-      "max_wind_mph": 28.8,
-      "max_wind_gust_mph": 58.7,
+      "high_temp_f": 55.0,
+      "low_temp_f": 45.0,
+      "high_apparent_temp_f": 55.0,
+      "low_apparent_temp_f": 39.0,
+      "max_wind_mph": 16.1,
+      "max_wind_gust_mph": 29.9,
       "thunder_probability_pct": 6,
       "lightning_activity_level": null,
       "weather": [
         "light rain",
-        "moderate rain",
         "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 53,
-      "category": "Moderate",
-      "aqi_24h_max": 53,
-      "aqi_24h_max_category": "Moderate",
-      "pm2_5": 8.2,
-      "pm10": 9.8,
-      "ozone": 62.0,
-      "nitrogen_dioxide": 14.8,
-      "observed_at": "2026-11-26T15:00",
+      "us_aqi": 32,
+      "category": "Good",
+      "aqi_24h_max": 50,
+      "aqi_24h_max_category": "Good",
+      "pm2_5": 3.8,
+      "pm10": 3.8,
+      "ozone": 49.0,
+      "nitrogen_dioxide": 7.0,
+      "observed_at": "2026-11-27T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-26",
-  "generated_at": "2026-11-26T15:31:22.460209+00:00"
+  "date": "2026-11-27",
+  "generated_at": "2026-11-27T09:54:02.323324+00:00"
 }

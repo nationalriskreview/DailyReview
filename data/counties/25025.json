@@ -8,7 +8,15 @@
     "lon": -71.018253
   },
   "alerts": {
-    "weather": [],
+    "weather": [
+      {
+        "event": "Heavy Precipitation Forecast",
+        "headline": "~1.1\" rain expected in next 24h",
+        "severity": "Moderate",
+        "source": "nws_forecast",
+        "url": "https://forecast.weather.gov/MapClick.php?lat=42.3386&lon=-71.0183"
+      }
+    ],
     "protest": [],
     "utility_outage": [],
     "transit_disruption": [],
@@ -16,47 +24,63 @@
     "hazmat_incident": [],
     "road_closure": [],
     "wildfires": [],
-    "transit": [],
+    "transit": [
+      {
+        "agency": "MBTA",
+        "agency_id": "mbta",
+        "route": "Boat-Lynn",
+        "system_outage": false,
+        "effect": "NO_SERVICE",
+        "header": "Lynn Ferry: All trips on Friday, November 27, are cancelled due to rough seas.",
+        "description": "",
+        "start": "2026-11-27T08:00:00+00:00",
+        "end": "2026-11-28T08:00:00+00:00",
+        "source": "https://www.mbta.com/alerts",
+        "url": "https://www.mbta.com/alerts"
+      }
+    ],
     "amtrak": [],
     "aviation": [],
     "fema": [],
     "disease": []
   },
-  "alert_count": 0,
+  "alert_count": 2,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 0.63,
+      "precip_in_24h": 1.11,
       "precip_probability_pct": 100,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 52.0,
-      "low_temp_f": 40.0,
-      "high_apparent_temp_f": 52.0,
-      "low_apparent_temp_f": 37.0,
-      "max_wind_mph": 26.5,
-      "max_wind_gust_mph": 46.0,
-      "thunder_probability_pct": 5,
+      "high_temp_f": 59.0,
+      "low_temp_f": 48.0,
+      "high_apparent_temp_f": 59.0,
+      "low_apparent_temp_f": 40.0,
+      "max_wind_mph": 25.3,
+      "max_wind_gust_mph": 48.3,
+      "thunder_probability_pct": 9,
       "lightning_activity_level": null,
       "weather": [
-        "light rain",
-        "heavy rain"
+        "heavy rain",
+        "fog",
+        "moderate rain",
+        "light rain"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 51,
-      "category": "Moderate",
-      "aqi_24h_max": 53,
+      "us_aqi": 35,
+      "category": "Good",
+      "aqi_24h_max": 52,
       "aqi_24h_max_category": "Moderate",
-      "pm2_5": 9.0,
-      "pm10": 12.9,
-      "ozone": 63.0,
-      "nitrogen_dioxide": 11.5,
-      "observed_at": "2026-11-26T15:00",
+      "pm2_5": 2.7,
+      "pm10": 3.5,
+      "ozone": 67.0,
+      "nitrogen_dioxide": 8.2,
+      "observed_at": "2026-11-27T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-26",
-  "generated_at": "2026-11-26T15:31:22.460209+00:00"
+  "date": "2026-11-27",
+  "generated_at": "2026-11-27T09:54:02.323324+00:00"
 }

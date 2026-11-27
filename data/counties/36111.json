@@ -10,11 +10,18 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.6\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=41.9472&lon=-74.2655"
+        "event": "Flood Warning",
+        "headline": "Flood Warning issued November 26 at 9:57PM EST until November 27 at 8:00PM EST by NWS Albany NY",
+        "severity": "Severe",
+        "urgency": "Immediate",
+        "effective": "2026-11-26T21:57:00-05:00",
+        "expires": "2026-11-27T16:15:00-05:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b0aeafa4aa84d35825450be6d9aaaf3bab93b076.001.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.b0aeafa4aa84d35825450be6d9aaaf3bab93b076.001.1"
+        ],
+        "count": 1
       }
     ],
     "protest": [],
@@ -33,38 +40,39 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.61,
-      "precip_probability_pct": 100,
+      "precip_in_24h": 0.47,
+      "precip_probability_pct": 92,
       "snow_in_24h": 0.0,
       "ice_in_24h": 0.0,
-      "high_temp_f": 45.0,
-      "low_temp_f": 30.0,
-      "high_apparent_temp_f": 39.0,
-      "low_apparent_temp_f": 25.0,
-      "max_wind_mph": 12.7,
-      "max_wind_gust_mph": 38.0,
-      "thunder_probability_pct": 4,
+      "high_temp_f": 52.0,
+      "low_temp_f": 41.0,
+      "high_apparent_temp_f": 52.0,
+      "low_apparent_temp_f": 39.0,
+      "max_wind_mph": 8.1,
+      "max_wind_gust_mph": 20.7,
+      "thunder_probability_pct": 5,
       "lightning_activity_level": null,
       "weather": [
+        "moderate rain",
         "light rain",
-        "moderate rain"
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 23,
+      "us_aqi": 35,
       "category": "Good",
-      "aqi_24h_max": 30,
+      "aqi_24h_max": 35,
       "aqi_24h_max_category": "Good",
-      "pm2_5": 5.7,
-      "pm10": 7.0,
-      "ozone": 57.0,
-      "nitrogen_dioxide": 10.5,
-      "observed_at": "2026-11-26T15:00",
+      "pm2_5": 0.3,
+      "pm10": 0.3,
+      "ozone": 73.0,
+      "nitrogen_dioxide": 1.7,
+      "observed_at": "2026-11-27T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-26",
-  "generated_at": "2026-11-26T15:31:22.460209+00:00"
+  "date": "2026-11-27",
+  "generated_at": "2026-11-27T09:54:02.323324+00:00"
 }

@@ -10,11 +10,18 @@
   "alerts": {
     "weather": [
       {
-        "event": "Heavy Precipitation Forecast",
-        "headline": "~1.1\" rain expected in next 24h",
-        "severity": "Moderate",
-        "source": "nws_forecast",
-        "url": "https://forecast.weather.gov/MapClick.php?lat=36.3699&lon=-84.9378"
+        "event": "Winter Storm Warning",
+        "headline": "Winter Storm Warning issued November 26 at 11:52PM CST until November 27 at 12:00PM CST by NWS Nashville TN",
+        "severity": "Severe",
+        "urgency": "Expected",
+        "effective": "2026-11-26T23:52:00-06:00",
+        "expires": "2026-11-27T06:00:00-06:00",
+        "source": "nws_alert",
+        "url": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5ef613166abf690e2e38d98db10cbec49170c48e.002.1",
+        "urls": [
+          "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5ef613166abf690e2e38d98db10cbec49170c48e.002.1"
+        ],
+        "count": 1
       }
     ],
     "protest": [],
@@ -33,39 +40,40 @@
   "alert_count": 1,
   "conditions": {
     "forecast": {
-      "precip_in_24h": 1.05,
-      "precip_probability_pct": 100,
-      "snow_in_24h": 0.0,
+      "precip_in_24h": 0.14,
+      "precip_probability_pct": 88,
+      "snow_in_24h": 0.8,
       "ice_in_24h": 0.0,
-      "high_temp_f": 47.0,
-      "low_temp_f": 36.0,
-      "high_apparent_temp_f": 46.0,
-      "low_apparent_temp_f": 28.0,
-      "max_wind_mph": 12.7,
-      "max_wind_gust_mph": 25.3,
-      "thunder_probability_pct": 18,
+      "high_temp_f": 39.0,
+      "low_temp_f": 31.0,
+      "high_apparent_temp_f": 32.0,
+      "low_apparent_temp_f": 21.0,
+      "max_wind_mph": 13.8,
+      "max_wind_gust_mph": 27.6,
+      "thunder_probability_pct": 10,
       "lightning_activity_level": null,
       "weather": [
-        "moderate rain showers",
-        "light rain showers",
-        "light snow showers"
+        "light snow",
+        "light rain",
+        "light snow showers",
+        "light rain showers"
       ],
       "window": "next 24h",
       "source": "nws_gridpoint"
     },
     "air_quality": {
-      "us_aqi": 31,
+      "us_aqi": 18,
       "category": "Good",
-      "aqi_24h_max": 35,
+      "aqi_24h_max": 23,
       "aqi_24h_max_category": "Good",
       "pm2_5": 0.3,
-      "pm10": 0.4,
-      "ozone": 63.0,
-      "nitrogen_dioxide": 3.0,
-      "observed_at": "2026-11-26T15:00",
+      "pm10": 0.3,
+      "ozone": 34.0,
+      "nitrogen_dioxide": 7.1,
+      "observed_at": "2026-11-27T09:00",
       "source": "Open-Meteo Air Quality (US EPA AQI)"
     }
   },
-  "date": "2026-11-26",
-  "generated_at": "2026-11-26T15:31:22.460209+00:00"
+  "date": "2026-11-27",
+  "generated_at": "2026-11-27T09:54:02.323324+00:00"
 }
